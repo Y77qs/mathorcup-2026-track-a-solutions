@@ -1,0 +1,1122 @@
+{
+  "generatedAt": "2026-10-24T06:24:31.503Z",
+  "input": "report/paper.md",
+  "output": "report/rendered.md",
+  "sha256": "0c98210ef45c3e5dad8e6a7403c659b22b2a34a490923b742c09a770371be3ba",
+  "allowStale": false,
+  "placeholders": 120,
+  "passes": 2,
+  "refs": [
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "mae",
+      "value": 0.7509114931486188
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "mae",
+      "value": 0.6685467308887166
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "bootstrap_mean_top3_inclusion",
+      "value": 0.4615666666666666
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance-unconstrained",
+      "value": 3.486382987639628
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance",
+      "value": 3.501495913841147
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0006",
+      "metricKey": "all-real-base-rate",
+      "value": 0.024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0006",
+      "metricKey": "heldout-real-base-rate",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "train_only_oof_mae_mean",
+      "value": 0.7341036524616643
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "mae",
+      "value": 0.7509114931486188
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "train_only_oof_mae_mean",
+      "value": 0.6743709021994657
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "mae",
+      "value": 0.6685467308887166
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "train_only_oof_mae_mean",
+      "value": 0.6842301704855653
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "mae",
+      "value": 0.6571399342026767
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "mae",
+      "value": 0.6571399342026767
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "mae",
+      "value": 0.6685467308887166
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0004",
+      "path": "experiments/EXP-0001/figures/q1_baseline_per_target_mae.png",
+      "sha256": "3616c81c974256a7c7022d801ef5b3ae47981eee5d4353b5c08bb6698e41c83c"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0001",
+      "path": "experiments/EXP-0002/figures/q1_ridge_per_target_mae.png",
+      "sha256": "dfe3afee3a10b44e95e571171be1defde8994027fe1825dd651f1d065e79b57c"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0002",
+      "path": "experiments/EXP-0002/figures/q1_ridge_scatter.png",
+      "sha256": "70a023f868b1d0eb25567f70996b8c777ebda8cb9bf650266fa62a38ecb38eaf"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0003",
+      "path": "experiments/EXP-0002/figures/q1_ridge_residuals.png",
+      "sha256": "6d8e1bfde7f691c649a61707172698d29edad53338420d5b6d7d97ff74fe9a64"
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0001"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "mae",
+      "value": 0.6685467308887166
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0008",
+      "path": "experiments/EXP-0005/figures/q2_coexpression.png",
+      "sha256": "cfcd448c3085652b4e61d9b7463ec2ecec8ea27daebae484957736c1bca20383"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "coexpression_min_eigen_raw",
+      "value": -0.033607364609620445
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "coexpression_min_eigen_projected",
+      "value": -3.656156013722205e-17
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "coexpression_compounds_matched",
+      "value": 172
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "coexpression_compounds_matched",
+      "value": 172
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0004",
+      "metricKey": "topk-jaccard",
+      "value": 0.19999999999999996
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "bootstrap_mean_top3_inclusion",
+      "value": 0.4615666666666666
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "bootstrap_mean_top3_inclusion_univariate",
+      "value": 0.4573733333333333
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "bootstrap_mean_top3_inclusion_ridge",
+      "value": 0.46575999999999995
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0005",
+      "path": "experiments/EXP-0005/figures/q2_top3_selection_heatmap.png",
+      "sha256": "30d68db3765ab8a7358102ce5c75d4fb5559a4ef25e8776c70d9784cf6f4ef69"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0006",
+      "path": "experiments/EXP-0005/figures/q2_bootstrap_inclusion.png",
+      "sha256": "cbbd115a0819948c549c8e1b802d24d3f072eb06b26e1bfa2fdf8ec814f0de67"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0007",
+      "path": "experiments/EXP-0005/figures/q2_method_jaccard.png",
+      "sha256": "c3f6be1f05d386278fc30a07f54a0508e98b3aedd26eae11e8f0ad2c70e8fa26"
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0002"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0006",
+      "metricKey": "constraint-satisfaction",
+      "value": 0.03666666666666667
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0006",
+      "metricKey": "energy-distance",
+      "value": 1.7428217271209083
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance",
+      "value": 3.501495913841147
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance-unconstrained",
+      "value": 3.486382987639628
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "defect-nonworsen-rate-rawshift",
+      "value": 0.14285714285714285
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance",
+      "value": 3.501495913841147
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "defect-nonworsen-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance-unconstrained",
+      "value": 3.486382987639628
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance",
+      "value": 3.501495913841147
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "profile-consistency",
+      "value": 0.49384528514963294
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "real_sample_constraint_satisfaction",
+      "value": 0.024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "real_sample_constraint_satisfaction",
+      "value": 0.024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "heldout-real-base-rate",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0012",
+      "path": "experiments/EXP-0007/figures/q3_constraint_satisfaction.png",
+      "sha256": "75a51634098f07c25429cebae2ae53906c87fd4742fc6f3fe5ed95b19537ecdc"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "real_sample_constraint_satisfaction",
+      "value": 0.024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "heldout-real-base-rate",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0009",
+      "path": "experiments/EXP-0007/figures/q3_sensory_profiles.png",
+      "sha256": "fb2fa0c0242bd1b5b416fae93937b67d58c231597a7f671a2375bd3901c893ee"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0010",
+      "path": "experiments/EXP-0007/figures/q3_generated_vs_real.png",
+      "sha256": "82879de445a73795d621d7fd53b9f38cf89b58ca0434a41ac9ef0136d2cc840d"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0011",
+      "path": "experiments/EXP-0007/figures/q3_transfer_defects.png",
+      "sha256": "0c698b18b9b8ce4e0aecf7681fc4e21654fea56b278ed5dd91f1ea6faf7be21c"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "transfer-satisfaction-constrained",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "transfer-satisfaction-source",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "transfer-satisfaction-rawshift",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "n_samples",
+      "value": 300
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "n_samples_per_style",
+      "value": 100
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0003"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance-unconstrained",
+      "value": 3.486382987639628
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance",
+      "value": 3.501495913841147
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0006",
+      "metricKey": "all-real-base-rate",
+      "value": 0.024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0006",
+      "metricKey": "heldout-real-base-rate",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0010",
+      "metricKey": "topk-jaccard",
+      "value": 0.22
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0017",
+      "metricKey": "topk-jaccard",
+      "value": 0.21799999999999997
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "mae",
+      "value": 0.758591595965814
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0026",
+      "metricKey": "mae",
+      "value": 1.962372612515533
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0027",
+      "metricKey": "energy-distance",
+      "value": 4.036873666248582
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0027",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0029",
+      "metricKey": "energy-distance",
+      "value": 4.044490946894776
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0029",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0013",
+      "metricKey": "energy-distance",
+      "value": 4.020405626785386
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0014",
+      "metricKey": "energy-distance",
+      "value": 4.038118698985928
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0015",
+      "metricKey": "mae",
+      "value": 0.8446668450194856
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0016",
+      "metricKey": "mae",
+      "value": 0.6055966442672139
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0018",
+      "metricKey": "mae",
+      "value": 0.7713941642358138
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "mae",
+      "value": 0.7566911281178076
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0023",
+      "metricKey": "topk-jaccard",
+      "value": 0.19999999999999996
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0026",
+      "metricKey": "mae",
+      "value": 1.962372612515533
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0026",
+      "metricKey": "mae",
+      "value": 1.962372612515533
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0004"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "mae",
+      "value": 0.758591595965814
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0026",
+      "metricKey": "mae",
+      "value": 1.962372612515533
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0019",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0021",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "mae",
+      "value": 0.7509114931486188
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "mae",
+      "value": 0.6685467308887166
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0001"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "mae",
+      "value": 0.6685467308887166
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "bootstrap_mean_top3_inclusion",
+      "value": 0.4615666666666666
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0004",
+      "metricKey": "topk-jaccard",
+      "value": 0.19999999999999996
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0002"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "real_sample_constraint_satisfaction",
+      "value": 0.024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "transfer-satisfaction-constrained",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "transfer-satisfaction-source",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0003"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0004"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "mae",
+      "value": 0.758591595965814
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0026",
+      "metricKey": "mae",
+      "value": 1.962372612515533
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "count:experiments",
+      "value": 29
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "count:validations",
+      "value": 15
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "count:claims",
+      "value": 4
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "count:figures",
+      "value": 12
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "count:datasets",
+      "value": 6
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "count:splits",
+      "value": 17
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "projectId",
+      "value": "beer-2026-a-v2"
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "stage",
+      "value": "validation"
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "revision",
+      "value": 1577
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "mae",
+      "value": 0.6685467308887166
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "mae",
+      "value": 0.7509114931486188
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "train_only_oof_mae_mean",
+      "value": 0.6743709021994657
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "train_only_oof_mae_mean",
+      "value": 0.7341036524616643
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "bootstrap_mean_top3_inclusion",
+      "value": 0.4615666666666666
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "real_sample_constraint_satisfaction",
+      "value": 0.024
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "heldout-real-base-rate",
+      "value": 0
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance-unconstrained",
+      "value": 3.486382987639628
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance",
+      "value": 3.501495913841147
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "profile-consistency",
+      "value": 0.49384528514963294
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "defect-nonworsen-rate",
+      "value": 1
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "mae",
+      "value": 0.758591595965814
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0026",
+      "metricKey": "mae",
+      "value": 1.962372612515533
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "mae",
+      "value": 0.6685467308887166
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "mae",
+      "value": 0.7509114931486188
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "train_only_oof_mae_mean",
+      "value": 0.6743709021994657
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "train_only_oof_mae_mean",
+      "value": 0.7341036524616643
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "topk-jaccard",
+      "value": 0.22466666666666665
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0005",
+      "metricKey": "bootstrap_mean_top3_inclusion",
+      "value": 0.4615666666666666
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "constraint-satisfaction-unconstrained",
+      "value": 0.04
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "real_sample_constraint_satisfaction",
+      "value": 0.024
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "heldout-real-base-rate",
+      "value": 0
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance-unconstrained",
+      "value": 3.486382987639628
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "energy-distance",
+      "value": 3.501495913841147
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "profile-consistency",
+      "value": 0.49384528514963294
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "defect-nonworsen-rate",
+      "value": 1
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "mae",
+      "value": 0.758591595965814
+    },
+    {
+      "pass": 2,
+      "kind": "metric",
+      "experimentId": "EXP-0026",
+      "metricKey": "mae",
+      "value": 1.962372612515533
+    }
+  ],
+  "staleRefs": [],
+  "warnings": []
+}

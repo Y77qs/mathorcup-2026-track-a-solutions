@@ -1,0 +1,22 @@
+{
+  "figures": [
+    {
+      "name": "q3_baseline_constraint_satisfaction.png",
+      "path": "figures/q3_baseline_constraint_satisfaction.png",
+      "sha256": "bf841dba8ad969a402b14eb48efb9e3d9b067d73a486c708d7c2d36148e10880",
+      "bytes": 41541
+    },
+    {
+      "name": "q3_baseline_profile_scatter.png",
+      "path": "figures/q3_baseline_profile_scatter.png",
+      "sha256": "ad843a548524bd3a74da7f32c5d7ac0fb20b0ecb9e2cac457064f4c4b36c2d69",
+      "bytes": 50960
+    },
+    {
+      "name": "q3_baseline_defect_rates.png",
+      "path": "figures/q3_baseline_defect_rates.png",
+      "sha256": "b91bde897b73bfefacbe3d54f4a20cc80189cbc213a7ec98d05a5032b4e9ef9e",
+      "bytes": 40351
+    }
+  ]
+}

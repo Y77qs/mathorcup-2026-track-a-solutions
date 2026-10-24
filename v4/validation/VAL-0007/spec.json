@@ -1,0 +1,135 @@
+{
+  "checkType": "holdout-metrics",
+  "evaluation": {
+    "kind": "set-stability",
+    "metricKey": "topk-jaccard",
+    "topK": 3,
+    "setsFile": "sets.json",
+    "dimensions": [
+      "A_malt_all",
+      "A_malt_grain",
+      "A_malt_bread",
+      "A_malt_cara",
+      "A_malt_burn",
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_hops_tropical",
+      "A_hops_noble",
+      "A_hops_woody",
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_esters_isoaa",
+      "A_esters_flower",
+      "A_esters_fruity",
+      "F_malt_all",
+      "F_malt_grain",
+      "F_malt_bread",
+      "F_malt_cara",
+      "F_malt_burn",
+      "F_hops_all",
+      "F_hops_citrus",
+      "F_hops_tropical",
+      "F_hops_noble",
+      "F_hops_woody",
+      "F_esters_all",
+      "F_esters_ethac",
+      "F_esters_isoaa",
+      "F_esters_flower",
+      "F_esters_fruity",
+      "acidity",
+      "bitternes",
+      "sweetness",
+      "X4vg",
+      "diacetyl",
+      "dms",
+      "metallic",
+      "stale_hops",
+      "t2n",
+      "orange",
+      "coriander",
+      "clove",
+      "lactic",
+      "acetic",
+      "barnyard",
+      "alcohol",
+      "aftertaste",
+      "body",
+      "co2",
+      "overall"
+    ],
+    "methods": [
+      "spearman_absrho",
+      "ridge_coef",
+      "random_forest_importance"
+    ],
+    "tolerance": 1e-9
+  },
+  "experimentId": "EXP-0005",
+  "validationPlanId": "VP-0005",
+  "provenanceSummary": {
+    "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+    "experiment": {
+      "id": "EXP-0005",
+      "status": "succeeded",
+      "metricsSha256": "7a46385da7d80455ca7167e61414038ec020cb0033ef633bcb6b1a3cff369b90",
+      "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399"
+    },
+    "inputs": [
+      {
+        "kind": "experiment-code",
+        "path": "experiments/EXP-0005/inputs/src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/data/raw/2.csv",
+        "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/data/raw/8.xlsx",
+        "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/src/q2_lib.py",
+        "sha256": "8fca871523a46f3e2d17793cc6c2819ce3ee3c3ed40eb67c86de5a51cd24d198"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/src/q_common.py",
+        "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd"
+      },
+      {
+        "kind": "dataset",
+        "path": "data/processed/q2_raw.csv",
+        "sha256": "cca702e9fb85d001218e1eebeb2c4c4d6bcbf990efd9dafede22217345c260d0"
+      },
+      {
+        "kind": "split-assignment",
+        "path": "data/splits/SPLIT-0002/assignment.csv",
+        "sha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+      },
+      {
+        "kind": "split-train",
+        "path": "data/splits/SPLIT-0002/train.csv",
+        "sha256": "d00925b8264d5a36d8ffa042277dafc75874647b6764fb7e9e9050ef3355d7ee"
+      },
+      {
+        "kind": "split-test",
+        "path": "data/splits/SPLIT-0002/test.csv",
+        "sha256": "998cb973d9073d00862381749be85bbb33435334e88bb7ddeeb4c66067ca3ff5"
+      },
+      {
+        "kind": "evaluation-artifact",
+        "path": "experiments/EXP-0005/sets.json",
+        "sha256": "4ddeb4bdf31d25edfa4f0da55cc69647603922f81469e6ba6200d326b82ec4ae"
+      }
+    ]
+  }
+}

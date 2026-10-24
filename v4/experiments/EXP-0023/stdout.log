@@ -1,0 +1,1 @@
+Q2 baseline: topk-jaccard=0.200000000000 alpha=300 globalA=['kcalperc', 'ethanol..v.v.', 'esters_sum'] globalB=['kcalperc', 'pH', 'color.EBC.']

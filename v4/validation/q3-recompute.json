@@ -1,0 +1,2043 @@
+{
+  "status": "recomputed",
+  "limitation": null,
+  "experimentId": "EXP-0007",
+  "questionId": "Q3",
+  "metricKey": "constraint-satisfaction",
+  "reported": 1.0,
+  "recomputedFromExcessColumns": 1.0,
+  "comparisonReportedVsExcess": {
+    "delta": 0.0,
+    "absolute": 1e-09,
+    "relative": 1e-06,
+    "absOk": true,
+    "relOk": true,
+    "passed": true
+  },
+  "perColumnViolations": {
+    "excess__DMS": 0,
+    "excess__X2.3.butanedione": 0,
+    "excess__X4VG": 0,
+    "excess__acetaldehyde": 0,
+    "excess__DES": 0,
+    "excess__H2S": 0,
+    "excess__SO2.mg.L.": 0
+  },
+  "sampleSize": 300,
+  "independentRecompute": {
+    "available": true,
+    "value": 1.0,
+    "valid": 300,
+    "n": 300,
+    "perColumnViolations": {
+      "excess__DMS": 0,
+      "excess__X2.3.butanedione": 0,
+      "excess__X4VG": 0,
+      "excess__acetaldehyde": 0,
+      "excess__DES": 0,
+      "excess__H2S": 0,
+      "excess__SO2.mg.L.": 0
+    },
+    "excessDetail": [
+      {
+        "compound": "DMS",
+        "thresholdColumn": "thr__DMS",
+        "threshold": 17.25,
+        "transform": "log10",
+        "floor": null,
+        "excessColumn": "excess__DMS"
+      },
+      {
+        "compound": "X2.3.butanedione",
+        "thresholdColumn": "thr__X2.3.butanedione",
+        "threshold": 0.29925,
+        "transform": "raw",
+        "floor": null,
+        "excessColumn": "excess__X2.3.butanedione"
+      },
+      {
+        "compound": "X4VG",
+        "thresholdColumn": "thr__X4VG",
+        "threshold": 0.206333333,
+        "transform": "zeroFloor",
+        "floor": -2.013157381,
+        "excessColumn": "excess__X4VG"
+      },
+      {
+        "compound": "acetaldehyde",
+        "thresholdColumn": "thr__acetaldehyde",
+        "threshold": 50.0,
+        "transform": "log10",
+        "floor": null,
+        "excessColumn": "excess__acetaldehyde"
+      },
+      {
+        "compound": "DES",
+        "thresholdColumn": "thr__DES",
+        "threshold": 1.2,
+        "transform": "log10",
+        "floor": null,
+        "excessColumn": "excess__DES"
+      },
+      {
+        "compound": "H2S",
+        "thresholdColumn": "thr__H2S",
+        "threshold": 3.5,
+        "transform": "log10",
+        "floor": null,
+        "excessColumn": "excess__H2S"
+      },
+      {
+        "compound": "SO2.mg.L.",
+        "thresholdColumn": "thr__SO2.mg.L.",
+        "threshold": 15.33333333,
+        "transform": "log10",
+        "floor": null,
+        "excessColumn": "excess__SO2.mg.L."
+      }
+    ],
+    "thresholdCrossCheck": {
+      "ok": true,
+      "consistent": true,
+      "rows": [
+        {
+          "thresholdColumn": "thr__DMS",
+          "sheetMean": 17.25,
+          "datasetConstant": 17.25,
+          "relativeDiff": 0.0,
+          "sheetUnit": "ug/L",
+          "agreeWithin1e-5": true
+        },
+        {
+          "thresholdColumn": "thr__X2.3.butanedione",
+          "sheetMean": 0.29925,
+          "datasetConstant": 0.29925,
+          "relativeDiff": 0.0,
+          "sheetUnit": "mg/L",
+          "agreeWithin1e-5": true
+        },
+        {
+          "thresholdColumn": "thr__X4VG",
+          "sheetMean": 0.206333333,
+          "datasetConstant": 0.206333333,
+          "relativeDiff": 0.0,
+          "sheetUnit": "mg/L",
+          "agreeWithin1e-5": true
+        },
+        {
+          "thresholdColumn": "thr__acetaldehyde",
+          "sheetMean": 50.0,
+          "datasetConstant": 50.0,
+          "relativeDiff": 0.0,
+          "sheetUnit": "mg/L",
+          "agreeWithin1e-5": true
+        },
+        {
+          "thresholdColumn": "thr__DES",
+          "sheetMean": 1.2,
+          "datasetConstant": 1.2,
+          "relativeDiff": 0.0,
+          "sheetUnit": "ug/L",
+          "agreeWithin1e-5": true
+        },
+        {
+          "thresholdColumn": "thr__H2S",
+          "sheetMean": 3.5,
+          "datasetConstant": 3.5,
+          "relativeDiff": 0.0,
+          "sheetUnit": "ug/L",
+          "agreeWithin1e-5": true
+        },
+        {
+          "thresholdColumn": "thr__SO2.mg.L.",
+          "sheetMean": 15.33333333,
+          "datasetConstant": 15.33333333,
+          "relativeDiff": 0.0,
+          "sheetUnit": "mg/L",
+          "agreeWithin1e-5": true
+        }
+      ],
+      "note": "数据集 thr__* 是约束的实际来源；q3_thresholds 的 thresholdMean 四舍五入到 6 位。"
+    },
+    "excessColumnDisagreements": [],
+    "excessColumnsAgree": true,
+    "reportedVsIndependent": {
+      "delta": 0.0,
+      "absolute": 1e-09,
+      "relative": 1e-06,
+      "absOk": true,
+      "relOk": true,
+      "passed": true
+    }
+  },
+  "baseRateOnRealSamples": {
+    "valid": 6,
+    "n": 250,
+    "value": 0.024,
+    "perColumnViolations": {
+      "excess__DMS": 168,
+      "excess__X2.3.butanedione": 112,
+      "excess__X4VG": 16,
+      "excess__acetaldehyde": 0,
+      "excess__DES": 46,
+      "excess__H2S": 230,
+      "excess__SO2.mg.L.": 0
+    },
+    "note": "250 个真实样本同时满足全部 7 个 excess≤0 的比例；指标天然很低是数据事实。"
+  },
+  "forbiddenInputs": {
+    "ok": true,
+    "features": [
+      "chem__acetaldehyde",
+      "chem__CS2",
+      "chem__DES",
+      "chem__DMS",
+      "chem__ethyl_2.methyl_butyrate",
+      "chem__ethyl_acetate",
+      "chem__ethyl_decanoate",
+      "chem__ethyl_hexanoate",
+      "chem__ethyl_isovalerate",
+      "chem__ethyl_octanoate",
+      "chem__ethyl_propionate",
+      "chem__H2S",
+      "chem__isoamyl_alcohol",
+      "chem__isobutanol",
+      "chem__isobutyl_acetate",
+      "chem__isopentyl_acetate",
+      "chem__MeSH",
+      "chem__octyl_acetate",
+      "chem__phenethyl_acetate",
+      "chem__phenethyl_alcohol",
+      "chem__X4VG",
+      "chem__SO2.mg.L.",
+      "chem__acetic_acid.g.L.",
+      "chem__ammonia.mg.L.",
+      "chem__color.EBC.",
+      "chem__betaglucan.mg.L.",
+      "chem__lactic_acid.mg.L.",
+      "chem__glycerol",
+      "chem__iron",
+      "chem__pH",
+      "chem__protein.g.L.",
+      "chem__bitterness",
+      "chem__GFS",
+      "chem__ethanol..v.v.",
+      "chem__CO2.PSI.",
+      "chem__unfermentables",
+      "chem__kcalperc",
+      "chem__X1.propanol",
+      "chem__X2.3.butanedione",
+      "chem__X3.methylbutanal",
+      "chem__propylene.glycol",
+      "chem__propyl.acetate",
+      "chem__n.pentanol",
+      "chem__X2.methyl.1.butanol",
+      "chem__isopentyl.formate",
+      "chem__ethyl.isobutyrate",
+      "chem__X3.methyl.2.butenal",
+      "chem__X2.methyltetrahydrofuran.3.one",
+      "chem__ethyl.butyrate",
+      "chem__butyl.acetate",
+      "chem__methylpyrazine",
+      "chem__furfural",
+      "chem__ethyl.lactate",
+      "chem__X3Z.hexenol",
+      "chem__n.hexanol",
+      "chem__styrene",
+      "chem__X2.furanmethanol",
+      "chem__X3.methyl.2.hexanol",
+      "chem__X3.furanmethanol",
+      "chem__X2.acetylfuran",
+      "chem__X2.6.dimethyl.pyrazine",
+      "chem__amyl.acetate",
+      "chem__ethyl.tiglate",
+      "chem__benzaldehyde",
+      "chem__X5.methylfurfural",
+      "chem__n.heptanol",
+      "chem__X1.octen.3.ol",
+      "chem__X3.methylthio.propanol",
+      "chem__isomaltol",
+      "chem__X6.methyl.5.hepten.2.one",
+      "chem__X2.pentyl.furan",
+      "chem__ethyl.hex..3E..enoate",
+      "chem__alpha.phellandrene",
+      "chem__dehydroxy.cis.linalool.oxide",
+      "chem__hexyl.acetate",
+      "chem__isopentyl.butanoate",
+      "chem__X2.ethyl.1.hexanol",
+      "chem__beta.phellandrene",
+      "chem__limonene",
+      "chem__eucalyptol",
+      "chem__benzyl.alcohol",
+      "chem__ethyl.hex..2E..enoate",
+      "chem__phenylacetaldehyde",
+      "chem__X.E..beta.ocimene",
+      "chem__prenyl.isobutyrate",
+      "chem__ethyl.furoate",
+      "chem__ortho.cresol",
+      "chem__ethyl.5.methylhexanoate",
+      "chem__X2.acetylpyrrole",
+      "chem__isoamyl.lactate",
+      "chem__n.octanol",
+      "chem__cis.linalool.oxide",
+      "chem__meta.cymenene",
+      "chem__terpinolene",
+      "chem__linalool",
+      "chem__nonan.2.ol",
+      "chem__n.nonanal",
+      "chem__X2.methyl.benzofuran",
+      "chem__heptyl.acetate",
+      "chem__X4.methyl.1.pentanol",
+      "chem__neo.allo.ocimene",
+      "chem__x.methyl.1.octanol",
+      "chem__trans.dihydro.beta.terpineol",
+      "chem__cis.beta.terpineol",
+      "chem__y.methyl.1.octanol",
+      "chem__camphor",
+      "chem__isobutyl.hexanoate",
+      "chem__nerol.oxide",
+      "chem__X.E..2.nonenal",
+      "chem__cis.dihydro.beta.terpineol",
+      "chem__X4.ethyl.phenol",
+      "chem__isoborneol",
+      "chem__ethyl.benzoate",
+      "chem__n.nonanol",
+      "chem__terpinen.4.ol",
+      "chem__diethyl.succinate",
+      "chem__vinyl.caprylate",
+      "chem__X1.alpha.terpineol",
+      "chem__ethyl..E..linalool",
+      "chem__ethyl.nicotinate",
+      "chem__citronellol",
+      "chem__nerol",
+      "chem__hydroxy.methyl.furfural",
+      "chem__E.ocimenone",
+      "chem__cumin.aldehyde",
+      "chem__ethyl.phenylacetate",
+      "chem__isopentyl.hexanoate",
+      "chem__geraniol",
+      "chem__beta.cyclohomocitral",
+      "chem__E.cinnamaldehyde",
+      "chem__n.decanol",
+      "chem__neryl.formate",
+      "chem__X4.ethyl.guaiacol",
+      "chem__X2.undecanone",
+      "chem__trans.dihydro.alpha.terpinyl.acetate",
+      "chem__terpinen.4.ol.acetate",
+      "chem__X2.undecanol",
+      "chem__delta.terpinyl.acetate",
+      "chem__X.E.E..2.4.decadienal",
+      "chem__methyl.geranate",
+      "chem__car.3.en.2.one",
+      "chem__dimethoxy..E..citral",
+      "chem__X2.butyloctanoate",
+      "chem__X4.methoxysalicylaldehyde",
+      "chem__ethyl.hydrocinnamate",
+      "chem__eugenol",
+      "chem__gamma.nonalactone",
+      "chem__methyl.para.anisate",
+      "chem__X.E..beta.damascenone",
+      "chem__ethyl..9..decenoate",
+      "chem__vanillin",
+      "chem__geosmin",
+      "chem__dodecanal",
+      "chem__X4.8.alpha.epoxy.caryophyllane",
+      "chem__E.caryophyllene",
+      "chem__X.E..alpha.ionone",
+      "chem__perillyl.acetate",
+      "chem__beta.humulene",
+      "chem__X2.phenyl.ethyl.butyrate",
+      "chem__X.Z..beta.farnesene",
+      "chem__pentyl.octanoate",
+      "chem__X.E..beta.farnesene",
+      "chem__X2.methylbutyl.octanoate",
+      "chem__alpha.humulene",
+      "chem__neryl.propanoate",
+      "chem__X9.epi..E..caryophyllene",
+      "chem__ethyl..E..cinnamate",
+      "chem__linalool.isovalerate",
+      "chem__alpha.terpinyl.isobutanoate",
+      "chem__n.dodecanol",
+      "chem__germacrene.D",
+      "chem__X.E..beta.ionone",
+      "chem__valencene",
+      "chem__neryl.isobutanoate",
+      "chem__E.methyl.isoeugenol",
+      "chem__X.Z..dihydro.apofarnesal",
+      "chem__butylated.hydroxytoluene",
+      "chem__X.E..dihydro.apofarnesal",
+      "chem__Z.nerolidol",
+      "chem__X.E..ortho.methoxy.cinnamaldehyde",
+      "chem__alpha.calacorene",
+      "chem__E.nerolidol",
+      "chem__dihydroisocaryophyllene.epoxide",
+      "chem__caryophyllene.alcohol",
+      "chem__neryl.isovalerate",
+      "chem__spathulenol",
+      "chem__caryophyllene.oxide",
+      "chem__humulene.epoxide.II",
+      "chem__alloaromadendrene.epoxide",
+      "chem__X1.10.di.epi.cubenol",
+      "chem__isopropyl.laurate",
+      "chem__caryophylla.4.12..8.13..dien.5.alpha.ol",
+      "chem__gamma.eudesmol",
+      "chem__alpha.muurolol",
+      "chem__X1.2.dihydro.8.hydroxy..2E..linalool",
+      "chem__tau.cadinol",
+      "chem__selin.11.en.4.alpha.ol",
+      "chem__alpha.eudesmol",
+      "chem__X14.hydroxy.9.epi..E..caryophyllene",
+      "chem__tau.muurolol",
+      "chem__n.tetradecanol",
+      "chem__foeniculin",
+      "chem__cadalene",
+      "chem__X2.3.dihydro.farnesol",
+      "chem__X2E.6Z.farnesal",
+      "chem__caryophyllene.acetate",
+      "chem__X14.hydroxy.alpha.humulene",
+      "chem__X2Z.6E.farnesal",
+      "chem__X2Z.6Z.farnesol",
+      "chem__X2Z.6E.farnesol",
+      "chem__ambroxide",
+      "chem__benzyl.benzoate",
+      "chem__X2E.6E.methyl.farnesoate",
+      "chem__ethyl.tetradecanoate",
+      "chem__X2.ethylhexylsalicylate",
+      "chem__isopropyl.tetradecanoate",
+      "chem__ethyl.pentadecanoate",
+      "chem__methyl.hexadecanoate",
+      "chem__Z.Z.geranyl.linalool",
+      "chem__ethyl.hexadecanoate",
+      "chem__manool.oxide",
+      "chem__X13.epi.manool.oxide",
+      "chem__isopropyl.hexadecanoate",
+      "chem__manool",
+      "chem__ethyl.octadecanoate",
+      "chem__ethyl.pentanoate",
+      "chem__X2.ethyl.3.methylpyrazine",
+      "chem__esters_sum",
+      "chem__aroma_hops_sum",
+      "chem__acids_sum",
+      "chem__sulfur_sum"
+    ],
+    "datasetColumns": 279,
+    "forbiddenInFeatures": [],
+    "forbiddenInDataset": [],
+    "rawLabelColumnsInFeatures": [],
+    "note": "MDI/SHAP 是同批 250 样本的拟合产物，禁止作输入；Prices 不作核心输入；style/style_holdout 是条件/留出标签，只能编码后作为条件列，不能以原始列名直接当特征。"
+  },
+  "styleHoldout": {
+    "ok": true,
+    "dataset": "DATA-0003",
+    "styleHoldoutValues": [
+      "heldout_style",
+      "train_style"
+    ],
+    "heldOutStyles": [
+      "Kriek",
+      "Lambic",
+      "Tripel"
+    ],
+    "generatedStyleColumn": "style",
+    "generatedStyles": [
+      "Kriek",
+      "Lambic",
+      "Tripel"
+    ],
+    "note": "留出风格是否真的未参与训练只能由模型代码/读取路径静态审查补证；本项只给数据事实。"
+  },
+  "memorization": {
+    "ok": true,
+    "pairs": [
+      [
+        "chem__acetaldehyde",
+        "chem__acetaldehyde"
+      ],
+      [
+        "chem__CS2",
+        "chem__CS2"
+      ],
+      [
+        "chem__DES",
+        "chem__DES"
+      ],
+      [
+        "chem__DMS",
+        "chem__DMS"
+      ],
+      [
+        "chem__ethyl_2.methyl_butyrate",
+        "chem__ethyl_2.methyl_butyrate"
+      ],
+      [
+        "chem__ethyl_acetate",
+        "chem__ethyl_acetate"
+      ],
+      [
+        "chem__ethyl_decanoate",
+        "chem__ethyl_decanoate"
+      ],
+      [
+        "chem__ethyl_hexanoate",
+        "chem__ethyl_hexanoate"
+      ],
+      [
+        "chem__ethyl_isovalerate",
+        "chem__ethyl_isovalerate"
+      ],
+      [
+        "chem__ethyl_octanoate",
+        "chem__ethyl_octanoate"
+      ],
+      [
+        "chem__ethyl_propionate",
+        "chem__ethyl_propionate"
+      ],
+      [
+        "chem__H2S",
+        "chem__H2S"
+      ],
+      [
+        "chem__isoamyl_alcohol",
+        "chem__isoamyl_alcohol"
+      ],
+      [
+        "chem__isobutanol",
+        "chem__isobutanol"
+      ],
+      [
+        "chem__isobutyl_acetate",
+        "chem__isobutyl_acetate"
+      ],
+      [
+        "chem__isopentyl_acetate",
+        "chem__isopentyl_acetate"
+      ],
+      [
+        "chem__MeSH",
+        "chem__MeSH"
+      ],
+      [
+        "chem__octyl_acetate",
+        "chem__octyl_acetate"
+      ],
+      [
+        "chem__phenethyl_acetate",
+        "chem__phenethyl_acetate"
+      ],
+      [
+        "chem__phenethyl_alcohol",
+        "chem__phenethyl_alcohol"
+      ],
+      [
+        "chem__X4VG",
+        "chem__X4VG"
+      ],
+      [
+        "chem__SO2.mg.L.",
+        "chem__SO2.mg.L."
+      ],
+      [
+        "chem__acetic_acid.g.L.",
+        "chem__acetic_acid.g.L."
+      ],
+      [
+        "chem__ammonia.mg.L.",
+        "chem__ammonia.mg.L."
+      ],
+      [
+        "chem__color.EBC.",
+        "chem__color.EBC."
+      ],
+      [
+        "chem__betaglucan.mg.L.",
+        "chem__betaglucan.mg.L."
+      ],
+      [
+        "chem__lactic_acid.mg.L.",
+        "chem__lactic_acid.mg.L."
+      ],
+      [
+        "chem__glycerol",
+        "chem__glycerol"
+      ],
+      [
+        "chem__iron",
+        "chem__iron"
+      ],
+      [
+        "chem__pH",
+        "chem__pH"
+      ],
+      [
+        "chem__protein.g.L.",
+        "chem__protein.g.L."
+      ],
+      [
+        "chem__bitterness",
+        "chem__bitterness"
+      ],
+      [
+        "chem__GFS",
+        "chem__GFS"
+      ],
+      [
+        "chem__ethanol..v.v.",
+        "chem__ethanol..v.v."
+      ],
+      [
+        "chem__CO2.PSI.",
+        "chem__CO2.PSI."
+      ],
+      [
+        "chem__unfermentables",
+        "chem__unfermentables"
+      ],
+      [
+        "chem__kcalperc",
+        "chem__kcalperc"
+      ],
+      [
+        "chem__X1.propanol",
+        "chem__X1.propanol"
+      ],
+      [
+        "chem__X2.3.butanedione",
+        "chem__X2.3.butanedione"
+      ],
+      [
+        "chem__X3.methylbutanal",
+        "chem__X3.methylbutanal"
+      ],
+      [
+        "chem__propylene.glycol",
+        "chem__propylene.glycol"
+      ],
+      [
+        "chem__propyl.acetate",
+        "chem__propyl.acetate"
+      ],
+      [
+        "chem__n.pentanol",
+        "chem__n.pentanol"
+      ],
+      [
+        "chem__X2.methyl.1.butanol",
+        "chem__X2.methyl.1.butanol"
+      ],
+      [
+        "chem__isopentyl.formate",
+        "chem__isopentyl.formate"
+      ],
+      [
+        "chem__ethyl.isobutyrate",
+        "chem__ethyl.isobutyrate"
+      ],
+      [
+        "chem__X3.methyl.2.butenal",
+        "chem__X3.methyl.2.butenal"
+      ],
+      [
+        "chem__X2.methyltetrahydrofuran.3.one",
+        "chem__X2.methyltetrahydrofuran.3.one"
+      ],
+      [
+        "chem__ethyl.butyrate",
+        "chem__ethyl.butyrate"
+      ],
+      [
+        "chem__butyl.acetate",
+        "chem__butyl.acetate"
+      ],
+      [
+        "chem__methylpyrazine",
+        "chem__methylpyrazine"
+      ],
+      [
+        "chem__furfural",
+        "chem__furfural"
+      ],
+      [
+        "chem__ethyl.lactate",
+        "chem__ethyl.lactate"
+      ],
+      [
+        "chem__X3Z.hexenol",
+        "chem__X3Z.hexenol"
+      ],
+      [
+        "chem__n.hexanol",
+        "chem__n.hexanol"
+      ],
+      [
+        "chem__styrene",
+        "chem__styrene"
+      ],
+      [
+        "chem__X2.furanmethanol",
+        "chem__X2.furanmethanol"
+      ],
+      [
+        "chem__X3.methyl.2.hexanol",
+        "chem__X3.methyl.2.hexanol"
+      ],
+      [
+        "chem__X3.furanmethanol",
+        "chem__X3.furanmethanol"
+      ],
+      [
+        "chem__X2.acetylfuran",
+        "chem__X2.acetylfuran"
+      ],
+      [
+        "chem__X2.6.dimethyl.pyrazine",
+        "chem__X2.6.dimethyl.pyrazine"
+      ],
+      [
+        "chem__amyl.acetate",
+        "chem__amyl.acetate"
+      ],
+      [
+        "chem__ethyl.tiglate",
+        "chem__ethyl.tiglate"
+      ],
+      [
+        "chem__benzaldehyde",
+        "chem__benzaldehyde"
+      ],
+      [
+        "chem__X5.methylfurfural",
+        "chem__X5.methylfurfural"
+      ],
+      [
+        "chem__n.heptanol",
+        "chem__n.heptanol"
+      ],
+      [
+        "chem__X1.octen.3.ol",
+        "chem__X1.octen.3.ol"
+      ],
+      [
+        "chem__X3.methylthio.propanol",
+        "chem__X3.methylthio.propanol"
+      ],
+      [
+        "chem__isomaltol",
+        "chem__isomaltol"
+      ],
+      [
+        "chem__X6.methyl.5.hepten.2.one",
+        "chem__X6.methyl.5.hepten.2.one"
+      ],
+      [
+        "chem__X2.pentyl.furan",
+        "chem__X2.pentyl.furan"
+      ],
+      [
+        "chem__ethyl.hex..3E..enoate",
+        "chem__ethyl.hex..3E..enoate"
+      ],
+      [
+        "chem__alpha.phellandrene",
+        "chem__alpha.phellandrene"
+      ],
+      [
+        "chem__dehydroxy.cis.linalool.oxide",
+        "chem__dehydroxy.cis.linalool.oxide"
+      ],
+      [
+        "chem__hexyl.acetate",
+        "chem__hexyl.acetate"
+      ],
+      [
+        "chem__isopentyl.butanoate",
+        "chem__isopentyl.butanoate"
+      ],
+      [
+        "chem__X2.ethyl.1.hexanol",
+        "chem__X2.ethyl.1.hexanol"
+      ],
+      [
+        "chem__beta.phellandrene",
+        "chem__beta.phellandrene"
+      ],
+      [
+        "chem__limonene",
+        "chem__limonene"
+      ],
+      [
+        "chem__eucalyptol",
+        "chem__eucalyptol"
+      ],
+      [
+        "chem__benzyl.alcohol",
+        "chem__benzyl.alcohol"
+      ],
+      [
+        "chem__ethyl.hex..2E..enoate",
+        "chem__ethyl.hex..2E..enoate"
+      ],
+      [
+        "chem__phenylacetaldehyde",
+        "chem__phenylacetaldehyde"
+      ],
+      [
+        "chem__X.E..beta.ocimene",
+        "chem__X.E..beta.ocimene"
+      ],
+      [
+        "chem__prenyl.isobutyrate",
+        "chem__prenyl.isobutyrate"
+      ],
+      [
+        "chem__ethyl.furoate",
+        "chem__ethyl.furoate"
+      ],
+      [
+        "chem__ortho.cresol",
+        "chem__ortho.cresol"
+      ],
+      [
+        "chem__ethyl.5.methylhexanoate",
+        "chem__ethyl.5.methylhexanoate"
+      ],
+      [
+        "chem__X2.acetylpyrrole",
+        "chem__X2.acetylpyrrole"
+      ],
+      [
+        "chem__isoamyl.lactate",
+        "chem__isoamyl.lactate"
+      ],
+      [
+        "chem__n.octanol",
+        "chem__n.octanol"
+      ],
+      [
+        "chem__cis.linalool.oxide",
+        "chem__cis.linalool.oxide"
+      ],
+      [
+        "chem__meta.cymenene",
+        "chem__meta.cymenene"
+      ],
+      [
+        "chem__terpinolene",
+        "chem__terpinolene"
+      ],
+      [
+        "chem__linalool",
+        "chem__linalool"
+      ],
+      [
+        "chem__nonan.2.ol",
+        "chem__nonan.2.ol"
+      ],
+      [
+        "chem__n.nonanal",
+        "chem__n.nonanal"
+      ],
+      [
+        "chem__X2.methyl.benzofuran",
+        "chem__X2.methyl.benzofuran"
+      ],
+      [
+        "chem__heptyl.acetate",
+        "chem__heptyl.acetate"
+      ],
+      [
+        "chem__X4.methyl.1.pentanol",
+        "chem__X4.methyl.1.pentanol"
+      ],
+      [
+        "chem__neo.allo.ocimene",
+        "chem__neo.allo.ocimene"
+      ],
+      [
+        "chem__x.methyl.1.octanol",
+        "chem__x.methyl.1.octanol"
+      ],
+      [
+        "chem__trans.dihydro.beta.terpineol",
+        "chem__trans.dihydro.beta.terpineol"
+      ],
+      [
+        "chem__cis.beta.terpineol",
+        "chem__cis.beta.terpineol"
+      ],
+      [
+        "chem__y.methyl.1.octanol",
+        "chem__y.methyl.1.octanol"
+      ],
+      [
+        "chem__camphor",
+        "chem__camphor"
+      ],
+      [
+        "chem__isobutyl.hexanoate",
+        "chem__isobutyl.hexanoate"
+      ],
+      [
+        "chem__nerol.oxide",
+        "chem__nerol.oxide"
+      ],
+      [
+        "chem__X.E..2.nonenal",
+        "chem__X.E..2.nonenal"
+      ],
+      [
+        "chem__cis.dihydro.beta.terpineol",
+        "chem__cis.dihydro.beta.terpineol"
+      ],
+      [
+        "chem__X4.ethyl.phenol",
+        "chem__X4.ethyl.phenol"
+      ],
+      [
+        "chem__isoborneol",
+        "chem__isoborneol"
+      ],
+      [
+        "chem__ethyl.benzoate",
+        "chem__ethyl.benzoate"
+      ],
+      [
+        "chem__n.nonanol",
+        "chem__n.nonanol"
+      ],
+      [
+        "chem__terpinen.4.ol",
+        "chem__terpinen.4.ol"
+      ],
+      [
+        "chem__diethyl.succinate",
+        "chem__diethyl.succinate"
+      ],
+      [
+        "chem__vinyl.caprylate",
+        "chem__vinyl.caprylate"
+      ],
+      [
+        "chem__X1.alpha.terpineol",
+        "chem__X1.alpha.terpineol"
+      ],
+      [
+        "chem__ethyl..E..linalool",
+        "chem__ethyl..E..linalool"
+      ],
+      [
+        "chem__ethyl.nicotinate",
+        "chem__ethyl.nicotinate"
+      ],
+      [
+        "chem__citronellol",
+        "chem__citronellol"
+      ],
+      [
+        "chem__nerol",
+        "chem__nerol"
+      ],
+      [
+        "chem__hydroxy.methyl.furfural",
+        "chem__hydroxy.methyl.furfural"
+      ],
+      [
+        "chem__E.ocimenone",
+        "chem__E.ocimenone"
+      ],
+      [
+        "chem__cumin.aldehyde",
+        "chem__cumin.aldehyde"
+      ],
+      [
+        "chem__ethyl.phenylacetate",
+        "chem__ethyl.phenylacetate"
+      ],
+      [
+        "chem__isopentyl.hexanoate",
+        "chem__isopentyl.hexanoate"
+      ],
+      [
+        "chem__geraniol",
+        "chem__geraniol"
+      ],
+      [
+        "chem__beta.cyclohomocitral",
+        "chem__beta.cyclohomocitral"
+      ],
+      [
+        "chem__E.cinnamaldehyde",
+        "chem__E.cinnamaldehyde"
+      ],
+      [
+        "chem__n.decanol",
+        "chem__n.decanol"
+      ],
+      [
+        "chem__neryl.formate",
+        "chem__neryl.formate"
+      ],
+      [
+        "chem__X4.ethyl.guaiacol",
+        "chem__X4.ethyl.guaiacol"
+      ],
+      [
+        "chem__X2.undecanone",
+        "chem__X2.undecanone"
+      ],
+      [
+        "chem__trans.dihydro.alpha.terpinyl.acetate",
+        "chem__trans.dihydro.alpha.terpinyl.acetate"
+      ],
+      [
+        "chem__terpinen.4.ol.acetate",
+        "chem__terpinen.4.ol.acetate"
+      ],
+      [
+        "chem__X2.undecanol",
+        "chem__X2.undecanol"
+      ],
+      [
+        "chem__delta.terpinyl.acetate",
+        "chem__delta.terpinyl.acetate"
+      ],
+      [
+        "chem__X.E.E..2.4.decadienal",
+        "chem__X.E.E..2.4.decadienal"
+      ],
+      [
+        "chem__methyl.geranate",
+        "chem__methyl.geranate"
+      ],
+      [
+        "chem__car.3.en.2.one",
+        "chem__car.3.en.2.one"
+      ],
+      [
+        "chem__dimethoxy..E..citral",
+        "chem__dimethoxy..E..citral"
+      ],
+      [
+        "chem__X2.butyloctanoate",
+        "chem__X2.butyloctanoate"
+      ],
+      [
+        "chem__X4.methoxysalicylaldehyde",
+        "chem__X4.methoxysalicylaldehyde"
+      ],
+      [
+        "chem__ethyl.hydrocinnamate",
+        "chem__ethyl.hydrocinnamate"
+      ],
+      [
+        "chem__eugenol",
+        "chem__eugenol"
+      ],
+      [
+        "chem__gamma.nonalactone",
+        "chem__gamma.nonalactone"
+      ],
+      [
+        "chem__methyl.para.anisate",
+        "chem__methyl.para.anisate"
+      ],
+      [
+        "chem__X.E..beta.damascenone",
+        "chem__X.E..beta.damascenone"
+      ],
+      [
+        "chem__ethyl..9..decenoate",
+        "chem__ethyl..9..decenoate"
+      ],
+      [
+        "chem__vanillin",
+        "chem__vanillin"
+      ],
+      [
+        "chem__geosmin",
+        "chem__geosmin"
+      ],
+      [
+        "chem__dodecanal",
+        "chem__dodecanal"
+      ],
+      [
+        "chem__X4.8.alpha.epoxy.caryophyllane",
+        "chem__X4.8.alpha.epoxy.caryophyllane"
+      ],
+      [
+        "chem__E.caryophyllene",
+        "chem__E.caryophyllene"
+      ],
+      [
+        "chem__X.E..alpha.ionone",
+        "chem__X.E..alpha.ionone"
+      ],
+      [
+        "chem__perillyl.acetate",
+        "chem__perillyl.acetate"
+      ],
+      [
+        "chem__beta.humulene",
+        "chem__beta.humulene"
+      ],
+      [
+        "chem__X2.phenyl.ethyl.butyrate",
+        "chem__X2.phenyl.ethyl.butyrate"
+      ],
+      [
+        "chem__X.Z..beta.farnesene",
+        "chem__X.Z..beta.farnesene"
+      ],
+      [
+        "chem__pentyl.octanoate",
+        "chem__pentyl.octanoate"
+      ],
+      [
+        "chem__X.E..beta.farnesene",
+        "chem__X.E..beta.farnesene"
+      ],
+      [
+        "chem__X2.methylbutyl.octanoate",
+        "chem__X2.methylbutyl.octanoate"
+      ],
+      [
+        "chem__alpha.humulene",
+        "chem__alpha.humulene"
+      ],
+      [
+        "chem__neryl.propanoate",
+        "chem__neryl.propanoate"
+      ],
+      [
+        "chem__X9.epi..E..caryophyllene",
+        "chem__X9.epi..E..caryophyllene"
+      ],
+      [
+        "chem__ethyl..E..cinnamate",
+        "chem__ethyl..E..cinnamate"
+      ],
+      [
+        "chem__linalool.isovalerate",
+        "chem__linalool.isovalerate"
+      ],
+      [
+        "chem__alpha.terpinyl.isobutanoate",
+        "chem__alpha.terpinyl.isobutanoate"
+      ],
+      [
+        "chem__n.dodecanol",
+        "chem__n.dodecanol"
+      ],
+      [
+        "chem__germacrene.D",
+        "chem__germacrene.D"
+      ],
+      [
+        "chem__X.E..beta.ionone",
+        "chem__X.E..beta.ionone"
+      ],
+      [
+        "chem__valencene",
+        "chem__valencene"
+      ],
+      [
+        "chem__neryl.isobutanoate",
+        "chem__neryl.isobutanoate"
+      ],
+      [
+        "chem__E.methyl.isoeugenol",
+        "chem__E.methyl.isoeugenol"
+      ],
+      [
+        "chem__X.Z..dihydro.apofarnesal",
+        "chem__X.Z..dihydro.apofarnesal"
+      ],
+      [
+        "chem__butylated.hydroxytoluene",
+        "chem__butylated.hydroxytoluene"
+      ],
+      [
+        "chem__X.E..dihydro.apofarnesal",
+        "chem__X.E..dihydro.apofarnesal"
+      ],
+      [
+        "chem__Z.nerolidol",
+        "chem__Z.nerolidol"
+      ],
+      [
+        "chem__X.E..ortho.methoxy.cinnamaldehyde",
+        "chem__X.E..ortho.methoxy.cinnamaldehyde"
+      ],
+      [
+        "chem__alpha.calacorene",
+        "chem__alpha.calacorene"
+      ],
+      [
+        "chem__E.nerolidol",
+        "chem__E.nerolidol"
+      ],
+      [
+        "chem__dihydroisocaryophyllene.epoxide",
+        "chem__dihydroisocaryophyllene.epoxide"
+      ],
+      [
+        "chem__caryophyllene.alcohol",
+        "chem__caryophyllene.alcohol"
+      ],
+      [
+        "chem__neryl.isovalerate",
+        "chem__neryl.isovalerate"
+      ],
+      [
+        "chem__spathulenol",
+        "chem__spathulenol"
+      ],
+      [
+        "chem__caryophyllene.oxide",
+        "chem__caryophyllene.oxide"
+      ],
+      [
+        "chem__humulene.epoxide.II",
+        "chem__humulene.epoxide.II"
+      ],
+      [
+        "chem__alloaromadendrene.epoxide",
+        "chem__alloaromadendrene.epoxide"
+      ],
+      [
+        "chem__X1.10.di.epi.cubenol",
+        "chem__X1.10.di.epi.cubenol"
+      ],
+      [
+        "chem__isopropyl.laurate",
+        "chem__isopropyl.laurate"
+      ],
+      [
+        "chem__caryophylla.4.12..8.13..dien.5.alpha.ol",
+        "chem__caryophylla.4.12..8.13..dien.5.alpha.ol"
+      ],
+      [
+        "chem__gamma.eudesmol",
+        "chem__gamma.eudesmol"
+      ],
+      [
+        "chem__alpha.muurolol",
+        "chem__alpha.muurolol"
+      ],
+      [
+        "chem__X1.2.dihydro.8.hydroxy..2E..linalool",
+        "chem__X1.2.dihydro.8.hydroxy..2E..linalool"
+      ],
+      [
+        "chem__tau.cadinol",
+        "chem__tau.cadinol"
+      ],
+      [
+        "chem__selin.11.en.4.alpha.ol",
+        "chem__selin.11.en.4.alpha.ol"
+      ],
+      [
+        "chem__alpha.eudesmol",
+        "chem__alpha.eudesmol"
+      ],
+      [
+        "chem__X14.hydroxy.9.epi..E..caryophyllene",
+        "chem__X14.hydroxy.9.epi..E..caryophyllene"
+      ],
+      [
+        "chem__tau.muurolol",
+        "chem__tau.muurolol"
+      ],
+      [
+        "chem__n.tetradecanol",
+        "chem__n.tetradecanol"
+      ],
+      [
+        "chem__foeniculin",
+        "chem__foeniculin"
+      ],
+      [
+        "chem__cadalene",
+        "chem__cadalene"
+      ],
+      [
+        "chem__X2.3.dihydro.farnesol",
+        "chem__X2.3.dihydro.farnesol"
+      ],
+      [
+        "chem__X2E.6Z.farnesal",
+        "chem__X2E.6Z.farnesal"
+      ],
+      [
+        "chem__caryophyllene.acetate",
+        "chem__caryophyllene.acetate"
+      ],
+      [
+        "chem__X14.hydroxy.alpha.humulene",
+        "chem__X14.hydroxy.alpha.humulene"
+      ],
+      [
+        "chem__X2Z.6E.farnesal",
+        "chem__X2Z.6E.farnesal"
+      ],
+      [
+        "chem__X2Z.6Z.farnesol",
+        "chem__X2Z.6Z.farnesol"
+      ],
+      [
+        "chem__X2Z.6E.farnesol",
+        "chem__X2Z.6E.farnesol"
+      ],
+      [
+        "chem__ambroxide",
+        "chem__ambroxide"
+      ],
+      [
+        "chem__benzyl.benzoate",
+        "chem__benzyl.benzoate"
+      ],
+      [
+        "chem__X2E.6E.methyl.farnesoate",
+        "chem__X2E.6E.methyl.farnesoate"
+      ],
+      [
+        "chem__ethyl.tetradecanoate",
+        "chem__ethyl.tetradecanoate"
+      ],
+      [
+        "chem__X2.ethylhexylsalicylate",
+        "chem__X2.ethylhexylsalicylate"
+      ],
+      [
+        "chem__isopropyl.tetradecanoate",
+        "chem__isopropyl.tetradecanoate"
+      ],
+      [
+        "chem__ethyl.pentadecanoate",
+        "chem__ethyl.pentadecanoate"
+      ],
+      [
+        "chem__methyl.hexadecanoate",
+        "chem__methyl.hexadecanoate"
+      ],
+      [
+        "chem__Z.Z.geranyl.linalool",
+        "chem__Z.Z.geranyl.linalool"
+      ],
+      [
+        "chem__ethyl.hexadecanoate",
+        "chem__ethyl.hexadecanoate"
+      ],
+      [
+        "chem__manool.oxide",
+        "chem__manool.oxide"
+      ],
+      [
+        "chem__X13.epi.manool.oxide",
+        "chem__X13.epi.manool.oxide"
+      ],
+      [
+        "chem__isopropyl.hexadecanoate",
+        "chem__isopropyl.hexadecanoate"
+      ],
+      [
+        "chem__manool",
+        "chem__manool"
+      ],
+      [
+        "chem__ethyl.octadecanoate",
+        "chem__ethyl.octadecanoate"
+      ],
+      [
+        "chem__ethyl.pentanoate",
+        "chem__ethyl.pentanoate"
+      ],
+      [
+        "chem__X2.ethyl.3.methylpyrazine",
+        "chem__X2.ethyl.3.methylpyrazine"
+      ],
+      [
+        "chem__esters_sum",
+        "chem__esters_sum"
+      ],
+      [
+        "chem__aroma_hops_sum",
+        "chem__aroma_hops_sum"
+      ],
+      [
+        "chem__acids_sum",
+        "chem__acids_sum"
+      ],
+      [
+        "chem__sulfur_sum",
+        "chem__sulfur_sum"
+      ]
+    ],
+    "generatedRows": 300,
+    "duplicateRows": 0,
+    "duplicateRate": 0.0,
+    "note": "整行完全重复比例；描述性证据，不等同于模型复制训练行。"
+  },
+  "transfer": {
+    "ok": true,
+    "file": "transfer_profiles.csv",
+    "layout": "profiles(style,excess__)",
+    "nRows": 22,
+    "constrained": {
+      "rows": 11,
+      "perCompoundViolationCounts": {
+        "excess__DMS": 3,
+        "excess__X2.3.butanedione": 1,
+        "excess__X4VG": 0,
+        "excess__acetaldehyde": 0,
+        "excess__DES": 0,
+        "excess__H2S": 11,
+        "excess__SO2.mg.L.": 0
+      },
+      "satisfaction": 0.0
+    },
+    "rawshift": {
+      "rows": 11,
+      "perCompoundViolationCounts": {
+        "excess__DMS": 8,
+        "excess__X2.3.butanedione": 11,
+        "excess__X4VG": 0,
+        "excess__acetaldehyde": 0,
+        "excess__DES": 3,
+        "excess__H2S": 11,
+        "excess__SO2.mg.L.": 0
+      },
+      "satisfaction": 0.0
+    },
+    "pairedRawshiftVsConstrained": [
+      {
+        "suffix": "000",
+        "constrainedViolations": 1,
+        "rawshiftViolations": 3,
+        "newUnderShift": [
+          "excess__DMS",
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "001",
+        "constrainedViolations": 1,
+        "rawshiftViolations": 3,
+        "newUnderShift": [
+          "excess__DES",
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "002",
+        "constrainedViolations": 2,
+        "rawshiftViolations": 3,
+        "newUnderShift": [
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "003",
+        "constrainedViolations": 2,
+        "rawshiftViolations": 3,
+        "newUnderShift": [
+          "excess__DMS"
+        ]
+      },
+      {
+        "suffix": "004",
+        "constrainedViolations": 1,
+        "rawshiftViolations": 3,
+        "newUnderShift": [
+          "excess__DMS",
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "005",
+        "constrainedViolations": 1,
+        "rawshiftViolations": 2,
+        "newUnderShift": [
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "006",
+        "constrainedViolations": 2,
+        "rawshiftViolations": 3,
+        "newUnderShift": [
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "007",
+        "constrainedViolations": 1,
+        "rawshiftViolations": 3,
+        "newUnderShift": [
+          "excess__DMS",
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "008",
+        "constrainedViolations": 1,
+        "rawshiftViolations": 4,
+        "newUnderShift": [
+          "excess__DES",
+          "excess__DMS",
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "009",
+        "constrainedViolations": 1,
+        "rawshiftViolations": 2,
+        "newUnderShift": [
+          "excess__X2.3.butanedione"
+        ]
+      },
+      {
+        "suffix": "010",
+        "constrainedViolations": 2,
+        "rawshiftViolations": 4,
+        "newUnderShift": [
+          "excess__DES",
+          "excess__X2.3.butanedione"
+        ]
+      }
+    ],
+    "rawshiftNonworsenRate": 1.0,
+    "source": {
+      "ok": true,
+      "nSourceRows": 11,
+      "perCompoundViolationCounts": {
+        "excess__DMS": 3,
+        "excess__X2.3.butanedione": 1,
+        "excess__X4VG": 0,
+        "excess__acetaldehyde": 0,
+        "excess__DES": 0,
+        "excess__H2S": 11,
+        "excess__SO2.mg.L.": 0
+      },
+      "satisfyingAll7": 0,
+      "rows": [
+        {
+          "sourceRow": 8,
+          "violations": [
+            "excess__H2S"
+          ],
+          "nViolations": 1,
+          "excess": {
+            "excess__DMS": -0.1712469559684755,
+            "excess__X2.3.butanedione": -0.827499425229741,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.9755229000269237,
+            "excess__DES": -0.6158875004354978,
+            "excess__H2S": 1.0518742845812126,
+            "excess__SO2.mg.L.": -0.8891304348550749
+          }
+        },
+        {
+          "sourceRow": 19,
+          "violations": [
+            "excess__H2S"
+          ],
+          "nViolations": 1,
+          "excess": {
+            "excess__DMS": -0.4864530436851672,
+            "excess__X2.3.butanedione": -0.048239492063492095,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.9631904999665551,
+            "excess__DES": -0.047033333305246616,
+            "excess__H2S": 1.1141671411827732,
+            "excess__SO2.mg.L.": -0.504347826299668
+          }
+        },
+        {
+          "sourceRow": 22,
+          "violations": [
+            "excess__DMS",
+            "excess__H2S"
+          ],
+          "nViolations": 2,
+          "excess": {
+            "excess__DMS": 0.5463794212196285,
+            "excess__X2.3.butanedione": -0.8096590576441103,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.9166505000472863,
+            "excess__DES": -0.5374333329261736,
+            "excess__H2S": 3.262324286369849,
+            "excess__SO2.mg.L.": -0.7257856519705661
+          }
+        },
+        {
+          "sourceRow": 23,
+          "violations": [
+            "excess__X2.3.butanedione",
+            "excess__H2S"
+          ],
+          "nViolations": 2,
+          "excess": {
+            "excess__DMS": -0.09806086856070872,
+            "excess__X2.3.butanedione": 0.7506631278195486,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.9320627999991291,
+            "excess__DES": -0.6685750000012349,
+            "excess__H2S": 1.1118099980466374,
+            "excess__SO2.mg.L.": -0.7489130431395169
+          }
+        },
+        {
+          "sourceRow": 24,
+          "violations": [
+            "excess__H2S"
+          ],
+          "nViolations": 1,
+          "excess": {
+            "excess__DMS": -0.12389665278410222,
+            "excess__X2.3.butanedione": -0.8605076290726816,
+            "excess__X4VG": -0.9059620352026078,
+            "excess__acetaldehyde": -0.9835066333443383,
+            "excess__DES": -0.8001004166353725,
+            "excess__H2S": 1.5279992376868252,
+            "excess__SO2.mg.L.": -0.6711017708751259
+          }
+        },
+        {
+          "sourceRow": 36,
+          "violations": [
+            "excess__H2S"
+          ],
+          "nViolations": 1,
+          "excess": {
+            "excess__DMS": -0.6137330435818309,
+            "excess__X2.3.butanedione": -0.8804575873015873,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.9418772000147606,
+            "excess__DES": -0.7547166664074938,
+            "excess__H2S": 0.7636085704031614,
+            "excess__SO2.mg.L.": -0.755434782402199
+          }
+        },
+        {
+          "sourceRow": 41,
+          "violations": [
+            "excess__DMS",
+            "excess__H2S"
+          ],
+          "nViolations": 2,
+          "excess": {
+            "excess__DMS": 0.16867072342906075,
+            "excess__X2.3.butanedione": -0.8912237794486215,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.9971380999998977,
+            "excess__DES": -0.7422083335446621,
+            "excess__H2S": 1.6094014275925175,
+            "excess__SO2.mg.L.": -0.6380434782844262
+          }
+        },
+        {
+          "sourceRow": 51,
+          "violations": [
+            "excess__H2S"
+          ],
+          "nViolations": 1,
+          "excess": {
+            "excess__DMS": -0.1842266667582907,
+            "excess__X2.3.butanedione": -0.9124968822055137,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.9393380000067928,
+            "excess__DES": -0.9896354166607906,
+            "excess__H2S": 0.5968600012228542,
+            "excess__SO2.mg.L.": -0.5956521742890387
+          }
+        },
+        {
+          "sourceRow": 104,
+          "violations": [
+            "excess__H2S"
+          ],
+          "nViolations": 1,
+          "excess": {
+            "excess__DMS": -0.034116232164367766,
+            "excess__X2.3.butanedione": -0.037244609857978284,
+            "excess__X4VG": -0.30328755944638963,
+            "excess__acetaldehyde": -0.9438015000337293,
+            "excess__DES": -0.46742916705656945,
+            "excess__H2S": 2.0273057142120257,
+            "excess__SO2.mg.L.": -0.39347826011475273
+          }
+        },
+        {
+          "sourceRow": 108,
+          "violations": [
+            "excess__H2S"
+          ],
+          "nViolations": 1,
+          "excess": {
+            "excess__DMS": -0.540109275309681,
+            "excess__X2.3.butanedione": -0.21090279365079367,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.9219187999193074,
+            "excess__DES": -0.7389416667147364,
+            "excess__H2S": 0.925660001596361,
+            "excess__SO2.mg.L.": -0.6836956518154729
+          }
+        },
+        {
+          "sourceRow": 171,
+          "violations": [
+            "excess__DMS",
+            "excess__H2S"
+          ],
+          "nViolations": 2,
+          "excess": {
+            "excess__DMS": 0.5859481168785068,
+            "excess__X2.3.butanedione": -0.037244609857978284,
+            "excess__X4VG": -1.0,
+            "excess__acetaldehyde": -0.846934000167647,
+            "excess__DES": -0.2608041670998048,
+            "excess__H2S": 1.1334185731037967,
+            "excess__SO2.mg.L.": -0.6315217388971329
+          }
+        }
+      ],
+      "details": [
+        {
+          "compound": "DMS",
+          "threshold": 17.25,
+          "transform": "log10",
+          "floor": null
+        },
+        {
+          "compound": "X2.3.butanedione",
+          "threshold": 0.29925,
+          "transform": "raw",
+          "floor": null
+        },
+        {
+          "compound": "X4VG",
+          "threshold": 0.206333333,
+          "transform": "zeroFloor",
+          "floor": -2.013157381
+        },
+        {
+          "compound": "acetaldehyde",
+          "threshold": 50.0,
+          "transform": "log10",
+          "floor": null
+        },
+        {
+          "compound": "DES",
+          "threshold": 1.2,
+          "transform": "log10",
+          "floor": null
+        },
+        {
+          "compound": "H2S",
+          "threshold": 3.5,
+          "transform": "log10",
+          "floor": null
+        },
+        {
+          "compound": "SO2.mg.L.",
+          "threshold": 15.33333333,
+          "transform": "log10",
+          "floor": null
+        }
+      ],
+      "note": "源行 = 数据集中全部 Pils/Lager 行；按数据集行序编号，未依赖 modeler 代码。"
+    },
+    "sourceVsDeclared": {
+      "excess__DES": [
+        0,
+        0
+      ],
+      "excess__DMS": [
+        3,
+        3
+      ],
+      "excess__H2S": [
+        11,
+        11
+      ],
+      "excess__SO2.mg.L.": [
+        0,
+        0
+      ],
+      "excess__X2.3.butanedione": [
+        1,
+        1
+      ],
+      "excess__X4VG": [
+        0,
+        0
+      ],
+      "excess__acetaldehyde": [
+        0,
+        0
+      ]
+    },
+    "sourceCountsMatchDeclared": true,
+    "sourceToConstrained": {
+      "pairs": 11,
+      "worsened": 0,
+      "nonworsenRate": 1.0,
+      "detail": [
+        {
+          "pair": 0,
+          "sourceViolations": 1,
+          "constrainedViolations": 1,
+          "newViolations": []
+        },
+        {
+          "pair": 1,
+          "sourceViolations": 1,
+          "constrainedViolations": 1,
+          "newViolations": []
+        },
+        {
+          "pair": 2,
+          "sourceViolations": 2,
+          "constrainedViolations": 2,
+          "newViolations": []
+        },
+        {
+          "pair": 3,
+          "sourceViolations": 2,
+          "constrainedViolations": 2,
+          "newViolations": []
+        },
+        {
+          "pair": 4,
+          "sourceViolations": 1,
+          "constrainedViolations": 1,
+          "newViolations": []
+        },
+        {
+          "pair": 5,
+          "sourceViolations": 1,
+          "constrainedViolations": 1,
+          "newViolations": []
+        },
+        {
+          "pair": 6,
+          "sourceViolations": 2,
+          "constrainedViolations": 2,
+          "newViolations": []
+        },
+        {
+          "pair": 7,
+          "sourceViolations": 1,
+          "constrainedViolations": 1,
+          "newViolations": []
+        },
+        {
+          "pair": 8,
+          "sourceViolations": 1,
+          "constrainedViolations": 1,
+          "newViolations": []
+        },
+        {
+          "pair": 9,
+          "sourceViolations": 1,
+          "constrainedViolations": 1,
+          "newViolations": []
+        },
+        {
+          "pair": 10,
+          "sourceViolations": 2,
+          "constrainedViolations": 2,
+          "newViolations": []
+        }
+      ],
+      "orderBasis": "dataset 行序（聚合计数已与 outputs.sourcePilsLager 核对一致）"
+    },
+    "sourceToConstrainedCellwise": {
+      "perCompound": {
+        "excess__DMS": {
+          "nonworsenCells": 11,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__X2.3.butanedione": {
+          "nonworsenCells": 11,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__X4VG": {
+          "nonworsenCells": 11,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__acetaldehyde": {
+          "nonworsenCells": 11,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__DES": {
+          "nonworsenCells": 11,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__H2S": {
+          "nonworsenCells": 11,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__SO2.mg.L.": {
+          "nonworsenCells": 11,
+          "cells": 11,
+          "newlyViolated": 0
+        }
+      },
+      "nonworsenCells": 77,
+      "cells": 77,
+      "nonworsenRate": 1.0
+    },
+    "sourceToRawshiftCellwise": {
+      "perCompound": {
+        "excess__DMS": {
+          "nonworsenCells": 0,
+          "cells": 11,
+          "newlyViolated": 5
+        },
+        "excess__X2.3.butanedione": {
+          "nonworsenCells": 0,
+          "cells": 11,
+          "newlyViolated": 10
+        },
+        "excess__X4VG": {
+          "nonworsenCells": 0,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__acetaldehyde": {
+          "nonworsenCells": 0,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__DES": {
+          "nonworsenCells": 0,
+          "cells": 11,
+          "newlyViolated": 3
+        },
+        "excess__H2S": {
+          "nonworsenCells": 0,
+          "cells": 11,
+          "newlyViolated": 0
+        },
+        "excess__SO2.mg.L.": {
+          "nonworsenCells": 11,
+          "cells": 11,
+          "newlyViolated": 0
+        }
+      },
+      "nonworsenCells": 11,
+      "cells": 77,
+      "nonworsenRate": 0.14285714285714285
+    },
+    "pairingBasis": "constrained/rawshift 按 sample_id 尾部数字排序，源行按数据集行序；源行与 constrained 的 7 个缺陷值应逐格相同（shift 把缺陷位移 0），若 cellwise constrained 率=1 则配对自洽",
+    "ledgerMetrics": {
+      "defect-nonworsen-rate": 1,
+      "defect-nonworsen-rate-rawshift": 0.14285714285714285,
+      "transfer-satisfaction-constrained": 0,
+      "transfer-satisfaction-rawshift": 0,
+      "transfer-satisfaction-source": 0
+    },
+    "declaredDefectCounts": {
+      "clippedPerCompound": {
+        "DES": 55,
+        "DMS": 200,
+        "H2S": 166,
+        "SO2.mg.L.": 0,
+        "X2.3.butanedione": 182,
+        "X4VG": 5,
+        "acetaldehyde": 1
+      },
+      "generatedUnconstrained": {
+        "excess__DES": 55,
+        "excess__DMS": 200,
+        "excess__H2S": 166,
+        "excess__SO2.mg.L.": 0,
+        "excess__X2.3.butanedione": 182,
+        "excess__X4VG": 5,
+        "excess__acetaldehyde": 1
+      },
+      "realAll250SatisfyingAll7": 6,
+      "realHeldoutSatisfyingAll7": 0,
+      "unassessableDefects": [
+        "X.E..2.nonenal",
+        "3-methyl-2-butenal"
+      ]
+    }
+  },
+  "clipping": {
+    "unconstrainedViolations": {
+      "excess__DMS": 200,
+      "excess__X2.3.butanedione": 182,
+      "excess__X4VG": 5,
+      "excess__acetaldehyde": 1,
+      "excess__DES": 55,
+      "excess__H2S": 166,
+      "excess__SO2.mg.L.": 0
+    },
+    "unconstrainedSatisfaction": 0.04,
+    "declaredClippedPerCompound": {
+      "DES": 55,
+      "DMS": 200,
+      "H2S": 166,
+      "SO2.mg.L.": 0,
+      "X2.3.butanedione": 182,
+      "X4VG": 5,
+      "acetaldehyde": 1
+    },
+    "unconstrainedVsDeclared": {
+      "excess__DMS": [
+        200,
+        200
+      ],
+      "excess__X2.3.butanedione": [
+        182,
+        182
+      ],
+      "excess__X4VG": [
+        5,
+        5
+      ],
+      "excess__acetaldehyde": [
+        1,
+        1
+      ],
+      "excess__DES": [
+        55,
+        55
+      ],
+      "excess__H2S": [
+        166,
+        166
+      ],
+      "excess__SO2.mg.L.": [
+        0,
+        0
+      ]
+    },
+    "unconstrainedCountsMatchDeclared": true,
+    "nRowsUnconstrained": 300,
+    "constrainedRowsExactlyAtBound": {
+      "excess__DMS": 0,
+      "excess__X2.3.butanedione": 0,
+      "excess__X4VG": 0,
+      "excess__acetaldehyde": 0,
+      "excess__DES": 0,
+      "excess__H2S": 0,
+      "excess__SO2.mg.L.": 0
+    },
+    "nRowsConstrained": 300,
+    "note": "'恰好等于阈值' 的行数近似为被投影/裁剪的行数；未投影文件里的违规数应等于 outputs.defectCounts.clippedPerCompound。这直接说明 1.0 的构造来源。"
+  },
+  "baselineComparison": null,
+  "passed": true,
+  "note": "constraint-satisfaction 只证明生成谱满足声明的数值约束，不是真实酿造验证、不是因果结论；trans-2-nonenal 与 Stale hops 在附件里没有数值阈值，属不可评估限制。"
+}

@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v2",
+  "id": "EXP-0022",
+  "questionId": "Q1",
+  "modelId": "MODEL-0019",
+  "modelKind": "baseline",
+  "title": "Q1 pool baseline (TGT-0003): constant per target, DATA-0004 + SPLIT-0008",
+  "assumptions": [
+    "Pool baseline for quality's baseline-required check on target contract TGT-0003.",
+    "No input feature is used: params.features is the empty array and the family is constant-train-median.",
+    "The pool rows are a subset of DATA-0001 with row ids preserved; the holdout is scored once."
+  ],
+  "equations": [
+    "yhat_t = median of TRAIN rows for target t",
+    "mae = (1/50) sum_t MAE_holdout(t)"
+  ],
+  "algorithm": "Constant per target (TRAIN median) on the unexposed Q1 evaluation pool DATA-0004 with split SPLIT-0008 (160/40). Same evaluation contract as the pool candidate (multi-output uniform-average MAE, TGT-0003).",
+  "params": {
+    "features": [],
+    "family": "constant-train-median",
+    "algorithmDetail": "constant per target = TRAIN median of that target (pool baseline)",
+    "stochastic": false,
+    "freezeSources": true,
+    "dependenciesComplete": true,
+    "dependencies": [],
+    "evaluation": {
+      "kind": "multi-output",
+      "metric": "mae",
+      "metricKey": "mae",
+      "targetContractId": "TGT-0003",
+      "predictionsFile": "predictions.csv",
+      "idColumn": "row",
+      "aggregation": "uniform-average",
+      "tolerance": 1e-9
+    },
+    "targetContractId": "TGT-0003",
+    "scope": "pool baseline for TGT-0003 (baseline-required); mapped grade, non-original 0-6"
+  },
+  "datasetId": "DATA-0004",
+  "splitId": "SPLIT-0008",
+  "dataset": {
+    "id": "DATA-0004",
+    "path": "data/processed/q1_pool.csv",
+    "sha256": "52129428f0348591a46036b1da01894097bc2c616f8eb9907b175f6b46288487",
+    "bytes": 705521,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": {
+    "id": "SPLIT-0008",
+    "datasetId": "DATA-0004",
+    "method": "random-holdout",
+    "counts": {
+      "rows": 200,
+      "train": 160,
+      "test": 40
+    },
+    "trainPath": "data/splits/SPLIT-0008/train.csv",
+    "trainSha256": "50025d425f24e4cea2af28624182492b1bdf1ff45de3a7936e18743853fd999a",
+    "testPath": "data/splits/SPLIT-0008/test.csv",
+    "testSha256": "bb1392f171d12de544129857bfc125dbd3d97194df83762967d37c356d846f3d",
+    "assignmentPath": "data/splits/SPLIT-0008/assignment.csv",
+    "assignmentSha256": "756183b13de430e1d244b65b95326f91416732824e1aaabe56b7842fdfa792fd"
+  },
+  "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+  "code": {
+    "path": "src/q1_baseline.py",
+    "sha256": "8dae92eb2937a810c53a458082bb585030c69d269190eca5191360cd102b0693",
+    "bytes": 6432
+  },
+  "dependencies": [
+    {
+      "path": "src/q1_baseline.py",
+      "sha256": "8dae92eb2937a810c53a458082bb585030c69d269190eca5191360cd102b0693",
+      "bytes": 6432
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd",
+      "bytes": 15113
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0022/inputs/src/q1_baseline.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0022/inputs/src/q1_baseline.py",
+        "sha256": "8dae92eb2937a810c53a458082bb585030c69d269190eca5191360cd102b0693",
+        "bytes": 6432,
+        "originalPath": "src/q1_baseline.py"
+      },
+      {
+        "path": "experiments/EXP-0022/inputs/src/q_common.py",
+        "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd",
+        "bytes": 15113,
+        "originalPath": "src/q_common.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q1_baseline.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/src/q1_baseline.py"
+    ],
+    "cwd": "experiments/EXP-0022"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261024,
+    "timeoutSeconds": 600,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/src/q1_baseline.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261024,
+  "timeoutSeconds": 600,
+  "rerunOf": null,
+  "requestSignature": "5decd8b7637c4c416456f3627a8a61a88586c9fab8b76d47b147511d9220061e",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "q1-pool-baseline-split0008",
+  "createdAt": "2026-10-24T06:15:11.989Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0022",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "baseline",
+    "title": "Q1 pool baseline (TGT-0003): constant per target, DATA-0004 + SPLIT-0008",
+    "assumptions": [
+      "Pool baseline for quality's baseline-required check on target contract TGT-0003.",
+      "No input feature is used: params.features is the empty array and the family is constant-train-median.",
+      "The pool rows are a subset of DATA-0001 with row ids preserved; the holdout is scored once."
+    ],
+    "equations": [
+      "yhat_t = median of TRAIN rows for target t",
+      "mae = (1/50) sum_t MAE_holdout(t)"
+    ],
+    "algorithm": "Constant per target (TRAIN median) on the unexposed Q1 evaluation pool DATA-0004 with split SPLIT-0008 (160/40). Same evaluation contract as the pool candidate (multi-output uniform-average MAE, TGT-0003).",
+    "params": {
+      "features": [],
+      "family": "constant-train-median",
+      "algorithmDetail": "constant per target = TRAIN median of that target (pool baseline)",
+      "stochastic": false,
+      "freezeSources": true,
+      "dependenciesComplete": true,
+      "dependencies": [],
+      "evaluation": {
+        "kind": "multi-output",
+        "metric": "mae",
+        "metricKey": "mae",
+        "targetContractId": "TGT-0003",
+        "predictionsFile": "predictions.csv",
+        "idColumn": "row",
+        "aggregation": "uniform-average",
+        "tolerance": 1e-9
+      },
+      "targetContractId": "TGT-0003",
+      "scope": "pool baseline for TGT-0003 (baseline-required); mapped grade, non-original 0-6"
+    },
+    "codeFile": "src/q1_baseline.py",
+    "datasetId": "DATA-0004",
+    "splitId": "SPLIT-0008",
+    "seed": 20261024,
+    "args": [],
+    "timeoutSeconds": 600,
+    "modelId": "MODEL-0019"
+  }
+}

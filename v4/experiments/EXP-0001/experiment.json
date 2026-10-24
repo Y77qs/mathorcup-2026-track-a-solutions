@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v2",
+  "id": "EXP-0001",
+  "questionId": "Q1",
+  "modelId": "MODEL-0001",
+  "modelKind": "baseline",
+  "title": "Q1 baseline: constant per target (train median), 50 mapped-grade outputs",
+  "assumptions": [
+    "The 50 targets are mapped grades, not the original 0-6 scale (mapping uses TRAIN-only zmin/zmax).",
+    "A constant predictor per target is the naive comparator: it uses no chemical feature.",
+    "Holdout rows are scored exactly once by this baseline."
+  ],
+  "equations": [
+    "yhat_t = median_{i in TRAIN}(y_{i,t}) for each of the 50 targets t",
+    "mae = (1/50) * sum_t MAE_holdout(t)"
+  ],
+  "algorithm": "Per-target train median; train-only 5-fold OOF of the same rule reported as a secondary number; holdout MAE averaged uniformly over the 50 mapped targets.",
+  "params": {
+    "features": [],
+    "family": "constant-train-median",
+    "algorithmDetail": "constant per target = TRAIN median of that target",
+    "stochastic": false,
+    "freezeSources": true,
+    "dependenciesComplete": true,
+    "dependencies": [],
+    "evaluation": {
+      "kind": "multi-output",
+      "metric": "mae",
+      "metricKey": "mae",
+      "targetContractId": "TGT-0001",
+      "predictionsFile": "predictions.csv",
+      "idColumn": "row",
+      "aggregation": "uniform-average",
+      "tolerance": 1e-9
+    },
+    "targetContractId": "TGT-0001",
+    "holdoutReuse": 1
+  },
+  "datasetId": "DATA-0001",
+  "splitId": "SPLIT-0001",
+  "dataset": {
+    "id": "DATA-0001",
+    "path": "data/processed/q1_mapped.csv",
+    "sha256": "64651e40fbda83fc70d66fd3164bc0932562da143d0ec1946340ea27c5b5c8ab",
+    "bytes": 880700,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": {
+    "id": "SPLIT-0001",
+    "datasetId": "DATA-0001",
+    "method": "random-holdout",
+    "counts": {
+      "rows": 250,
+      "train": 200,
+      "test": 50
+    },
+    "trainPath": "data/splits/SPLIT-0001/train.csv",
+    "trainSha256": "52129428f0348591a46036b1da01894097bc2c616f8eb9907b175f6b46288487",
+    "testPath": "data/splits/SPLIT-0001/test.csv",
+    "testSha256": "3ec46c406df7f53a86f400dd14ad75f556e5b0fa403dc92ad99d3c8d2816153b",
+    "assignmentPath": "data/splits/SPLIT-0001/assignment.csv",
+    "assignmentSha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+  },
+  "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+  "code": {
+    "path": "src/q1_baseline.py",
+    "sha256": "8dae92eb2937a810c53a458082bb585030c69d269190eca5191360cd102b0693",
+    "bytes": 6432
+  },
+  "dependencies": [
+    {
+      "path": "src/q1_baseline.py",
+      "sha256": "8dae92eb2937a810c53a458082bb585030c69d269190eca5191360cd102b0693",
+      "bytes": 6432
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "a8786bec9df7225cb643be5c54dcc820eefb341c655f3c6289689b9aeab199c6",
+      "bytes": 12727
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0001/inputs/src/q1_baseline.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0001/inputs/src/q1_baseline.py",
+        "sha256": "8dae92eb2937a810c53a458082bb585030c69d269190eca5191360cd102b0693",
+        "bytes": 6432,
+        "originalPath": "src/q1_baseline.py"
+      },
+      {
+        "path": "experiments/EXP-0001/inputs/src/q_common.py",
+        "sha256": "a8786bec9df7225cb643be5c54dcc820eefb341c655f3c6289689b9aeab199c6",
+        "bytes": 12727,
+        "originalPath": "src/q_common.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q1_baseline.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/src/q1_baseline.py"
+    ],
+    "cwd": "experiments/EXP-0001"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261024,
+    "timeoutSeconds": 600,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/src/q1_baseline.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261024,
+  "timeoutSeconds": 600,
+  "rerunOf": null,
+  "requestSignature": "bc01e73a9d840913ce8cb021e8ed9621081ad4b14fd7416001e77d3fb386e776",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "q1-baseline-v1",
+  "createdAt": "2026-10-24T05:55:02.038Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0001",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "baseline",
+    "title": "Q1 baseline: constant per target (train median), 50 mapped-grade outputs",
+    "assumptions": [
+      "The 50 targets are mapped grades, not the original 0-6 scale (mapping uses TRAIN-only zmin/zmax).",
+      "A constant predictor per target is the naive comparator: it uses no chemical feature.",
+      "Holdout rows are scored exactly once by this baseline."
+    ],
+    "equations": [
+      "yhat_t = median_{i in TRAIN}(y_{i,t}) for each of the 50 targets t",
+      "mae = (1/50) * sum_t MAE_holdout(t)"
+    ],
+    "algorithm": "Per-target train median; train-only 5-fold OOF of the same rule reported as a secondary number; holdout MAE averaged uniformly over the 50 mapped targets.",
+    "params": {
+      "features": [],
+      "family": "constant-train-median",
+      "algorithmDetail": "constant per target = TRAIN median of that target",
+      "stochastic": false,
+      "freezeSources": true,
+      "dependenciesComplete": true,
+      "dependencies": [],
+      "evaluation": {
+        "kind": "multi-output",
+        "metric": "mae",
+        "metricKey": "mae",
+        "targetContractId": "TGT-0001",
+        "predictionsFile": "predictions.csv",
+        "idColumn": "row",
+        "aggregation": "uniform-average",
+        "tolerance": 1e-9
+      },
+      "targetContractId": "TGT-0001",
+      "holdoutReuse": 1
+    },
+    "codeFile": "src/q1_baseline.py",
+    "datasetId": "DATA-0001",
+    "splitId": "SPLIT-0001",
+    "seed": 20261024,
+    "args": [],
+    "timeoutSeconds": 600,
+    "modelId": "MODEL-0001"
+  }
+}

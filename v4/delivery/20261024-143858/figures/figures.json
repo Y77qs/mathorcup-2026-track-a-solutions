@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-10-24T06:38:58.229Z",
+  "figures": [
+    {
+      "id": "FIG-0001",
+      "path": "experiments/EXP-0002/figures/q1_ridge_per_target_mae.png",
+      "packagedAs": "figures/FIG-0001-q1_ridge_per_target_mae.png",
+      "sha256": "dfe3afee3a10b44e95e571171be1defde8994027fe1825dd651f1d065e79b57c",
+      "caption": "问题一：选中模型（多输出岭回归，alpha 由训练行内 5 折 CV 选）在 50 个 mapped grade 目标上的留出 MAE，按误差排序；纵轴为 mapped grade 单位（非原始 0–6），标题给出 50 目标均匀平均。",
+      "experimentIds": [
+        "EXP-0002"
+      ],
+      "script": {
+        "path": "src/q1_candidate_ridge.py",
+        "sha256": "2348e3886bf7760f56c44c8f78b3466a0a13fb5cf15379094937af7cb6944841"
+      }
+    },
+    {
+      "id": "FIG-0002",
+      "path": "experiments/EXP-0002/figures/q1_ridge_scatter.png",
+      "packagedAs": "figures/FIG-0002-q1_ridge_scatter.png",
+      "sha256": "70a023f868b1d0eb25567f70996b8c777ebda8cb9bf650266fa62a38ecb38eaf",
+      "caption": "问题一：选中模型（岭回归）的预测值与真值散点（50 个目标 × 50 个留出行），黑线为 y = x；两轴均为 mapped grade 单位。",
+      "experimentIds": [
+        "EXP-0002"
+      ],
+      "script": {
+        "path": "src/q1_candidate_ridge.py",
+        "sha256": "2348e3886bf7760f56c44c8f78b3466a0a13fb5cf15379094937af7cb6944841"
+      }
+    },
+    {
+      "id": "FIG-0003",
+      "path": "experiments/EXP-0002/figures/q1_ridge_residuals.png",
+      "packagedAs": "figures/FIG-0003-q1_ridge_residuals.png",
+      "sha256": "6d8e1bfde7f691c649a61707172698d29edad53338420d5b6d7d97ff74fe9a64",
+      "caption": "问题一：选中模型（岭回归）的残差分布（50 个目标池化），残差 = 预测 − 真值，单位 mapped grade；用于检查误差是否对称、是否被少数越界测试单元格拉偏。",
+      "experimentIds": [
+        "EXP-0002"
+      ],
+      "script": {
+        "path": "src/q1_candidate_ridge.py",
+        "sha256": "2348e3886bf7760f56c44c8f78b3466a0a13fb5cf15379094937af7cb6944841"
+      }
+    },
+    {
+      "id": "FIG-0004",
+      "path": "experiments/EXP-0001/figures/q1_baseline_per_target_mae.png",
+      "packagedAs": "figures/FIG-0004-q1_baseline_per_target_mae.png",
+      "sha256": "3616c81c974256a7c7022d801ef5b3ae47981eee5d4353b5c08bb6698e41c83c",
+      "caption": "问题一：常数基线（逐目标训练中位数，不使用任何化合物特征）的逐目标留出 MAE，与选中模型同数据、同划分、同指标口径对照；纵轴为 mapped grade 单位。",
+      "experimentIds": [
+        "EXP-0001"
+      ],
+      "script": {
+        "path": "src/q1_baseline.py",
+        "sha256": "8dae92eb2937a810c53a458082bb585030c69d269190eca5191360cd102b0693"
+      }
+    },
+    {
+      "id": "FIG-0005",
+      "path": "experiments/EXP-0005/figures/q2_top3_selection_heatmap.png",
+      "packagedAs": "figures/FIG-0005-q2_top3_selection_heatmap.png",
+      "sha256": "30d68db3765ab8a7358102ce5c75d4fb5559a4ef25e8776c70d9784cf6f4ef69",
+      "caption": "问题二：每个感官维度 × 被选关键化合物的关联强度热图；颜色为 |Spearman ρ|（训练行），空白表示三种排序方法都未把该化合物选入该维度的 Top-3。",
+      "experimentIds": [
+        "EXP-0005"
+      ],
+      "script": {
+        "path": "src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061"
+      }
+    },
+    {
+      "id": "FIG-0006",
+      "path": "experiments/EXP-0005/figures/q2_bootstrap_inclusion.png",
+      "packagedAs": "figures/FIG-0006-q2_bootstrap_inclusion.png",
+      "sha256": "cbbd115a0819948c549c8e1b802d24d3f072eb06b26e1bfa2fdf8ec814f0de67",
+      "caption": "问题二：500 次训练行内 bootstrap 重采样下 Top-3 入选频率（spearman-abs 与 ridge-coef 两种估计器平均）；频率越接近 1 表示该名次越不依赖样本偶然性。",
+      "experimentIds": [
+        "EXP-0005"
+      ],
+      "script": {
+        "path": "src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061"
+      }
+    },
+    {
+      "id": "FIG-0007",
+      "path": "experiments/EXP-0005/figures/q2_method_jaccard.png",
+      "packagedAs": "figures/FIG-0007-q2_method_jaccard.png",
+      "sha256": "c3f6be1f05d386278fc30a07f54a0508e98b3aedd26eae11e8f0ad2c70e8fa26",
+      "caption": "问题二：三种排序方法两两的逐维 Top-3 Jaccard 矩阵（每个格子是 50 个维度的平均 Jaccard）；用于判断不同方法是否指向同一批关键化合物。",
+      "experimentIds": [
+        "EXP-0005"
+      ],
+      "script": {
+        "path": "src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061"
+      }
+    },
+    {
+      "id": "FIG-0008",
+      "path": "experiments/EXP-0005/figures/q2_coexpression.png",
+      "packagedAs": "figures/FIG-0008-q2_coexpression.png",
+      "sha256": "cfcd448c3085652b4e61d9b7463ec2ecec8ea27daebae484957736c1bca20383",
+      "caption": "问题二：2.csv 共表达结构。左：2.csv 块在 PSD 投影前后的特征值谱（红=附件原样，蓝=投影后），标题给出全矩阵与块的最小特征值；右：PSD 投影后的相关块热图，仅含进入任一 Top-3 集合的化合物。2.csv 只作结构参考，不是独立外部先验。",
+      "experimentIds": [
+        "EXP-0005"
+      ],
+      "script": {
+        "path": "src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061"
+      }
+    },
+    {
+      "id": "FIG-0009",
+      "path": "experiments/EXP-0007/figures/q3_sensory_profiles.png",
+      "packagedAs": "figures/FIG-0009-q3_sensory_profiles.png",
+      "sha256": "fb2fa0c0242bd1b5b416fae93937b67d58c231597a7f671a2375bd3901c893ee",
+      "caption": "问题三：各风格感官画像（风格条件生成 vs 训练行真实分布）。画像由 Q1 训练行拟合的代理模型近似，不是实测评分，只用于相对比较。",
+      "experimentIds": [
+        "EXP-0007"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "ac3e8f92f98fd145b6e7f5b711f925e9267c9c003cf83f8ace593f47b1e37188"
+      }
+    },
+    {
+      "id": "FIG-0010",
+      "path": "experiments/EXP-0007/figures/q3_generated_vs_real.png",
+      "packagedAs": "figures/FIG-0010-q3_generated_vs_real.png",
+      "sha256": "82879de445a73795d621d7fd53b9f38cf89b58ca0434a41ac9ef0136d2cc840d",
+      "caption": "问题三：生成谱与真实留出谱的逐化合物均值对比（标准化空间），标题给出画像 Spearman；用于判断生成是否只学到中心、没学到离散度。",
+      "experimentIds": [
+        "EXP-0007"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "ac3e8f92f98fd145b6e7f5b711f925e9267c9c003cf83f8ace593f47b1e37188"
+      }
+    },
+    {
+      "id": "FIG-0011",
+      "path": "experiments/EXP-0007/figures/q3_transfer_defects.png",
+      "packagedAs": "figures/FIG-0011-q3_transfer_defects.png",
+      "sha256": "0c698b18b9b8ce4e0aecf7681fc4e21654fea56b278ed5dd91f1ea6faf7be21c",
+      "caption": "问题三：跨风格迁移（Pils/Lager → Tripel）前后 7 项缺陷化合物的超阈比例逐项对比（蓝=Pils/Lager 迁移前，红=全化合物平移，绿=缺陷化合物不平移）；迁移前后均未整体达标这一负结果如实呈现。",
+      "experimentIds": [
+        "EXP-0007"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "ac3e8f92f98fd145b6e7f5b711f925e9267c9c003cf83f8ace593f47b1e37188"
+      }
+    },
+    {
+      "id": "FIG-0012",
+      "path": "experiments/EXP-0007/figures/q3_constraint_satisfaction.png",
+      "packagedAs": "figures/FIG-0012-q3_constraint_satisfaction.png",
+      "sha256": "75a51634098f07c25429cebae2ae53906c87fd4742fc6f3fe5ed95b19537ecdc",
+      "caption": "问题三：约束满足率对照。四根柱依次为风格条件生成（未投影）、风格条件生成（约束投影）、250 个真实样本、49 个留出风格真实样本；约束满足是用后处理投影达成的，不构成独立质量证据，因此必须同时报告未投影版本与真实基率。",
+      "experimentIds": [
+        "EXP-0007"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "ac3e8f92f98fd145b6e7f5b711f925e9267c9c003cf83f8ace593f47b1e37188"
+      }
+    }
+  ]
+}

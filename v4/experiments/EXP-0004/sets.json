@@ -1,0 +1,902 @@
+[
+  {
+    "dimension": "A_malt_all",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_malt_grain",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_malt_bread",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_malt_cara",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_malt_burn",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_hops_all",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_hops_citrus",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_hops_tropical",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_hops_noble",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_hops_woody",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_esters_all",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_esters_ethac",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_esters_isoaa",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_esters_flower",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_esters_fruity",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_malt_all",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_malt_grain",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_malt_bread",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_malt_cara",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_malt_burn",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_hops_all",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_hops_citrus",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_hops_tropical",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_hops_noble",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_hops_woody",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_esters_all",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_esters_ethac",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_esters_isoaa",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_esters_flower",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "F_esters_fruity",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "acidity",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "bitternes",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "sweetness",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "X4vg",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "diacetyl",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "dms",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "metallic",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "stale_hops",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "t2n",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "orange",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "coriander",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "clove",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "lactic",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "acetic",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "barnyard",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "alcohol",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "aftertaste",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "body",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "co2",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "overall",
+    "items": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3"
+  },
+  {
+    "dimension": "A_malt_all",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_malt_grain",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_malt_bread",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_malt_cara",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_malt_burn",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_hops_all",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_hops_citrus",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_hops_tropical",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_hops_noble",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_hops_woody",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_esters_all",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_esters_ethac",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_esters_isoaa",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_esters_flower",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "A_esters_fruity",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_malt_all",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_malt_grain",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_malt_bread",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_malt_cara",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_malt_burn",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_hops_all",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_hops_citrus",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_hops_tropical",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_hops_noble",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_hops_woody",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_esters_all",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_esters_ethac",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_esters_isoaa",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_esters_flower",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "F_esters_fruity",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "acidity",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "bitternes",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "sweetness",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "X4vg",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "diacetyl",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "dms",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "metallic",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "stale_hops",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "t2n",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "orange",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "coriander",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "clove",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "lactic",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "acetic",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "barnyard",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "alcohol",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "aftertaste",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "body",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "co2",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  },
+  {
+    "dimension": "overall",
+    "items": [
+      "pH",
+      "color.EBC.",
+      "acetaldehyde"
+    ],
+    "method": "global_uniform_top3_ridgecoef"
+  }
+]

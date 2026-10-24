@@ -1,0 +1,163 @@
+{
+  "token": "c26c6be434a846eed5f6033a",
+  "experimentId": "EXP-0033",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T06:37:27.602Z",
+  "endedAt": "2026-10-24T06:37:34.483Z",
+  "durationMs": 6881,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "bootstrap_mean_top3_inclusion": 0.4615666666666666,
+    "bootstrap_mean_top3_inclusion_ridge": 0.46575999999999995,
+    "bootstrap_mean_top3_inclusion_univariate": 0.4573733333333333,
+    "bootstrap_replicates": 500,
+    "coexpression_compounds_matched": 172,
+    "coexpression_min_eigen_full_matrix": -0.04241270911948119,
+    "coexpression_min_eigen_projected": -3.656156013722205e-17,
+    "coexpression_min_eigen_raw": -0.033607364609620445,
+    "n_dimensions": 50,
+    "n_features": 231,
+    "n_methods": 3,
+    "ridge_alpha": 300.0,
+    "topk-jaccard": 0.22466666666666665
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0033/figures.json",
+      "sha256": "d07dd7b592f3ad081305b2682270f7fd2ff11d6e1b8e4e028e8b8e4d425a2116",
+      "bytes": 863,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0033/metrics.json",
+      "sha256": "ee0fcd1493fc1cadbda47685c6ef23fc2500929534a5ec739e3fb39c3afe5780",
+      "bytes": 561,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0033/outputs.json",
+      "sha256": "aa3e0fcb9d40fc4e1ecb08d4245176c582dafb7530fda525387c3495e4943ce8",
+      "bytes": 208369,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0033/seed-receipt.json",
+      "sha256": "884893ea21ded490d35ebd7c54fe32eca685c6753afed43489a1a4f7b4fbc00e",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0033/sets.json",
+      "sha256": "4ddeb4bdf31d25edfa4f0da55cc69647603922f81469e6ba6200d326b82ec4ae",
+      "bytes": 24311,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0033/sets_nested.json",
+      "sha256": "82038e1bcb35e2aa299ba533530bf60edb8475b9a90f1ac8eb3831c0587d4be7",
+      "bytes": 14146,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0033/figures/q2_bootstrap_inclusion.png",
+      "sha256": "cbbd115a0819948c549c8e1b802d24d3f072eb06b26e1bfa2fdf8ec814f0de67",
+      "bytes": 149033,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0033/figures/q2_coexpression.png",
+      "sha256": "cfcd448c3085652b4e61d9b7463ec2ecec8ea27daebae484957736c1bca20383",
+      "bytes": 121317,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0033/figures/q2_method_jaccard.png",
+      "sha256": "c3f6be1f05d386278fc30a07f54a0508e98b3aedd26eae11e8f0ad2c70e8fa26",
+      "bytes": 36195,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0033/figures/q2_top3_selection_heatmap.png",
+      "sha256": "30d68db3765ab8a7358102ce5c75d4fb5559a4ef25e8776c70d9784cf6f4ef69",
+      "bytes": 180262,
+      "kind": "figure"
+    }
+  ],
+  "figures": [
+    {
+      "path": "experiments/EXP-0033/figures/q2_bootstrap_inclusion.png",
+      "name": "q2_bootstrap_inclusion.png",
+      "sha256": "cbbd115a0819948c549c8e1b802d24d3f072eb06b26e1bfa2fdf8ec814f0de67",
+      "bytes": 149033,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0033/figures/q2_coexpression.png",
+      "name": "q2_coexpression.png",
+      "sha256": "cfcd448c3085652b4e61d9b7463ec2ecec8ea27daebae484957736c1bca20383",
+      "bytes": 121317,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0033/figures/q2_method_jaccard.png",
+      "name": "q2_method_jaccard.png",
+      "sha256": "c3f6be1f05d386278fc30a07f54a0508e98b3aedd26eae11e8f0ad2c70e8fa26",
+      "bytes": 36195,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0033/figures/q2_top3_selection_heatmap.png",
+      "name": "q2_top3_selection_heatmap.png",
+      "sha256": "30d68db3765ab8a7358102ce5c75d4fb5559a4ef25e8776c70d9784cf6f4ef69",
+      "bytes": 180262,
+      "missing": false
+    },
+    {
+      "path": "figures/q2_bootstrap_inclusion.png",
+      "name": "q2_bootstrap_inclusion.png",
+      "sha256": "cbbd115a0819948c549c8e1b802d24d3f072eb06b26e1bfa2fdf8ec814f0de67",
+      "bytes": 149033,
+      "missing": true
+    },
+    {
+      "path": "figures/q2_coexpression.png",
+      "name": "q2_coexpression.png",
+      "sha256": "cfcd448c3085652b4e61d9b7463ec2ecec8ea27daebae484957736c1bca20383",
+      "bytes": 121317,
+      "missing": true
+    },
+    {
+      "path": "figures/q2_method_jaccard.png",
+      "name": "q2_method_jaccard.png",
+      "sha256": "c3f6be1f05d386278fc30a07f54a0508e98b3aedd26eae11e8f0ad2c70e8fa26",
+      "bytes": 36195,
+      "missing": true
+    },
+    {
+      "path": "figures/q2_top3_selection_heatmap.png",
+      "name": "q2_top3_selection_heatmap.png",
+      "sha256": "30d68db3765ab8a7358102ce5c75d4fb5559a4ef25e8776c70d9784cf6f4ef69",
+      "bytes": 180262,
+      "missing": true
+    }
+  ],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0005/inputs/src/q2_topk.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0005/inputs/src/q2_topk.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0033",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

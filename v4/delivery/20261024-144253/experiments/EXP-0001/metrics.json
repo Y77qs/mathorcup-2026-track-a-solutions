@@ -1,0 +1,9 @@
+{
+  "holdout_mae_mean": 0.7509114931486188,
+  "mae": 0.7509114931486188,
+  "n_holdout_rows": 50,
+  "n_targets": 50,
+  "n_train_rows": 200,
+  "train_mae_mean": 0.7292721319885099,
+  "train_only_oof_mae_mean": 0.7341036524616643
+}

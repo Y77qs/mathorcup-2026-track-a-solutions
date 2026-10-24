@@ -1,0 +1,609 @@
+{
+  "artifacts": {
+    "figures": [
+      {
+        "name": "q1_ridge_per_target_mae.png",
+        "path": "figures/q1_ridge_per_target_mae.png",
+        "sha256": "dfe3afee3a10b44e95e571171be1defde8994027fe1825dd651f1d065e79b57c"
+      },
+      {
+        "name": "q1_ridge_scatter.png",
+        "path": "figures/q1_ridge_scatter.png",
+        "sha256": "70a023f868b1d0eb25567f70996b8c777ebda8cb9bf650266fa62a38ecb38eaf"
+      },
+      {
+        "name": "q1_ridge_residuals.png",
+        "path": "figures/q1_ridge_residuals.png",
+        "sha256": "6d8e1bfde7f691c649a61707172698d29edad53338420d5b6d7d97ff74fe9a64"
+      }
+    ],
+    "predictionTables": {
+      "long": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0032/predictions_long.csv",
+      "nRows": 50,
+      "nTargets": 50,
+      "wide": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0032/predictions.csv"
+    },
+    "seed": 20261024
+  },
+  "cv_alpha_selection": {
+    "alphaMultiplier": 1.0,
+    "criterion": "TRAIN-only 5-fold CV, pooled mean MAE over the 50 targets",
+    "effectiveAlpha": 300.0,
+    "grid": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0,
+      30.0,
+      100.0,
+      300.0,
+      1000.0
+    ],
+    "gridSelected": 300.0,
+    "meanCvMae": {
+      "0.01": 1.4651837260632778,
+      "0.03": 1.4593865842619236,
+      "0.1": 1.4401040207266729,
+      "0.3": 1.3921204388634627,
+      "1.0": 1.276219725586458,
+      "10.0": 0.9266168626030729,
+      "100.0": 0.7047147403544491,
+      "1000.0": 0.680642846009317,
+      "3.0": 1.11367132836545,
+      "30.0": 0.7922819649027842,
+      "300.0": 0.6743709021994657
+    },
+    "seed": 20261024
+  },
+  "evaluation": {
+    "aggregation": "uniform-average over the 50 targets of the holdout MAE",
+    "family": "ridge (L2) multi-output linear",
+    "features": [
+      "chem__acetaldehyde",
+      "chem__CS2",
+      "chem__DES",
+      "chem__DMS",
+      "chem__ethyl_2.methyl_butyrate",
+      "chem__ethyl_acetate",
+      "chem__ethyl_decanoate",
+      "chem__ethyl_hexanoate",
+      "chem__ethyl_isovalerate",
+      "chem__ethyl_octanoate",
+      "chem__ethyl_propionate",
+      "chem__H2S",
+      "chem__isoamyl_alcohol",
+      "chem__isobutanol",
+      "chem__isobutyl_acetate",
+      "chem__isopentyl_acetate",
+      "chem__MeSH",
+      "chem__octyl_acetate",
+      "chem__phenethyl_acetate",
+      "chem__phenethyl_alcohol",
+      "chem__X4VG",
+      "chem__SO2.mg.L.",
+      "chem__acetic_acid.g.L.",
+      "chem__ammonia.mg.L.",
+      "chem__color.EBC.",
+      "chem__betaglucan.mg.L.",
+      "chem__lactic_acid.mg.L.",
+      "chem__glycerol",
+      "chem__iron",
+      "chem__pH",
+      "chem__protein.g.L.",
+      "chem__bitterness",
+      "chem__GFS",
+      "chem__ethanol..v.v.",
+      "chem__CO2.PSI.",
+      "chem__unfermentables",
+      "chem__kcalperc",
+      "chem__X1.propanol",
+      "chem__X2.3.butanedione",
+      "chem__X3.methylbutanal",
+      "chem__propylene.glycol",
+      "chem__propyl.acetate",
+      "chem__n.pentanol",
+      "chem__X2.methyl.1.butanol",
+      "chem__isopentyl.formate",
+      "chem__ethyl.isobutyrate",
+      "chem__X3.methyl.2.butenal",
+      "chem__X2.methyltetrahydrofuran.3.one",
+      "chem__ethyl.butyrate",
+      "chem__butyl.acetate",
+      "chem__methylpyrazine",
+      "chem__furfural",
+      "chem__ethyl.lactate",
+      "chem__X3Z.hexenol",
+      "chem__n.hexanol",
+      "chem__styrene",
+      "chem__X2.furanmethanol",
+      "chem__X3.methyl.2.hexanol",
+      "chem__X3.furanmethanol",
+      "chem__X2.acetylfuran",
+      "chem__X2.6.dimethyl.pyrazine",
+      "chem__amyl.acetate",
+      "chem__ethyl.tiglate",
+      "chem__benzaldehyde",
+      "chem__X5.methylfurfural",
+      "chem__n.heptanol",
+      "chem__X1.octen.3.ol",
+      "chem__X3.methylthio.propanol",
+      "chem__isomaltol",
+      "chem__X6.methyl.5.hepten.2.one",
+      "chem__X2.pentyl.furan",
+      "chem__ethyl.hex..3E..enoate",
+      "chem__alpha.phellandrene",
+      "chem__dehydroxy.cis.linalool.oxide",
+      "chem__hexyl.acetate",
+      "chem__isopentyl.butanoate",
+      "chem__X2.ethyl.1.hexanol",
+      "chem__beta.phellandrene",
+      "chem__limonene",
+      "chem__eucalyptol",
+      "chem__benzyl.alcohol",
+      "chem__ethyl.hex..2E..enoate",
+      "chem__phenylacetaldehyde",
+      "chem__X.E..beta.ocimene",
+      "chem__prenyl.isobutyrate",
+      "chem__ethyl.furoate",
+      "chem__ortho.cresol",
+      "chem__ethyl.5.methylhexanoate",
+      "chem__X2.acetylpyrrole",
+      "chem__isoamyl.lactate",
+      "chem__n.octanol",
+      "chem__cis.linalool.oxide",
+      "chem__meta.cymenene",
+      "chem__terpinolene",
+      "chem__linalool",
+      "chem__nonan.2.ol",
+      "chem__n.nonanal",
+      "chem__X2.methyl.benzofuran",
+      "chem__heptyl.acetate",
+      "chem__X4.methyl.1.pentanol",
+      "chem__neo.allo.ocimene",
+      "chem__x.methyl.1.octanol",
+      "chem__trans.dihydro.beta.terpineol",
+      "chem__cis.beta.terpineol",
+      "chem__y.methyl.1.octanol",
+      "chem__camphor",
+      "chem__isobutyl.hexanoate",
+      "chem__nerol.oxide",
+      "chem__X.E..2.nonenal",
+      "chem__cis.dihydro.beta.terpineol",
+      "chem__X4.ethyl.phenol",
+      "chem__isoborneol",
+      "chem__ethyl.benzoate",
+      "chem__n.nonanol",
+      "chem__terpinen.4.ol",
+      "chem__diethyl.succinate",
+      "chem__vinyl.caprylate",
+      "chem__X1.alpha.terpineol",
+      "chem__ethyl..E..linalool",
+      "chem__ethyl.nicotinate",
+      "chem__citronellol",
+      "chem__nerol",
+      "chem__hydroxy.methyl.furfural",
+      "chem__E.ocimenone",
+      "chem__cumin.aldehyde",
+      "chem__ethyl.phenylacetate",
+      "chem__isopentyl.hexanoate",
+      "chem__geraniol",
+      "chem__beta.cyclohomocitral",
+      "chem__E.cinnamaldehyde",
+      "chem__n.decanol",
+      "chem__neryl.formate",
+      "chem__X4.ethyl.guaiacol",
+      "chem__X2.undecanone",
+      "chem__trans.dihydro.alpha.terpinyl.acetate",
+      "chem__terpinen.4.ol.acetate",
+      "chem__X2.undecanol",
+      "chem__delta.terpinyl.acetate",
+      "chem__X.E.E..2.4.decadienal",
+      "chem__methyl.geranate",
+      "chem__car.3.en.2.one",
+      "chem__dimethoxy..E..citral",
+      "chem__X2.butyloctanoate",
+      "chem__X4.methoxysalicylaldehyde",
+      "chem__ethyl.hydrocinnamate",
+      "chem__eugenol",
+      "chem__gamma.nonalactone",
+      "chem__methyl.para.anisate",
+      "chem__X.E..beta.damascenone",
+      "chem__ethyl..9..decenoate",
+      "chem__vanillin",
+      "chem__geosmin",
+      "chem__dodecanal",
+      "chem__X4.8.alpha.epoxy.caryophyllane",
+      "chem__E.caryophyllene",
+      "chem__X.E..alpha.ionone",
+      "chem__perillyl.acetate",
+      "chem__beta.humulene",
+      "chem__X2.phenyl.ethyl.butyrate",
+      "chem__X.Z..beta.farnesene",
+      "chem__pentyl.octanoate",
+      "chem__X.E..beta.farnesene",
+      "chem__X2.methylbutyl.octanoate",
+      "chem__alpha.humulene",
+      "chem__neryl.propanoate",
+      "chem__X9.epi..E..caryophyllene",
+      "chem__ethyl..E..cinnamate",
+      "chem__linalool.isovalerate",
+      "chem__alpha.terpinyl.isobutanoate",
+      "chem__n.dodecanol",
+      "chem__germacrene.D",
+      "chem__X.E..beta.ionone",
+      "chem__valencene",
+      "chem__neryl.isobutanoate",
+      "chem__E.methyl.isoeugenol",
+      "chem__X.Z..dihydro.apofarnesal",
+      "chem__butylated.hydroxytoluene",
+      "chem__X.E..dihydro.apofarnesal",
+      "chem__Z.nerolidol",
+      "chem__X.E..ortho.methoxy.cinnamaldehyde",
+      "chem__alpha.calacorene",
+      "chem__E.nerolidol",
+      "chem__dihydroisocaryophyllene.epoxide",
+      "chem__caryophyllene.alcohol",
+      "chem__neryl.isovalerate",
+      "chem__spathulenol",
+      "chem__caryophyllene.oxide",
+      "chem__humulene.epoxide.II",
+      "chem__alloaromadendrene.epoxide",
+      "chem__X1.10.di.epi.cubenol",
+      "chem__isopropyl.laurate",
+      "chem__caryophylla.4.12..8.13..dien.5.alpha.ol",
+      "chem__gamma.eudesmol",
+      "chem__alpha.muurolol",
+      "chem__X1.2.dihydro.8.hydroxy..2E..linalool",
+      "chem__tau.cadinol",
+      "chem__selin.11.en.4.alpha.ol",
+      "chem__alpha.eudesmol",
+      "chem__X14.hydroxy.9.epi..E..caryophyllene",
+      "chem__tau.muurolol",
+      "chem__n.tetradecanol",
+      "chem__foeniculin",
+      "chem__cadalene",
+      "chem__X2.3.dihydro.farnesol",
+      "chem__X2E.6Z.farnesal",
+      "chem__caryophyllene.acetate",
+      "chem__X14.hydroxy.alpha.humulene",
+      "chem__X2Z.6E.farnesal",
+      "chem__X2Z.6Z.farnesol",
+      "chem__X2Z.6E.farnesol",
+      "chem__ambroxide",
+      "chem__benzyl.benzoate",
+      "chem__X2E.6E.methyl.farnesoate",
+      "chem__ethyl.tetradecanoate",
+      "chem__X2.ethylhexylsalicylate",
+      "chem__isopropyl.tetradecanoate",
+      "chem__ethyl.pentadecanoate",
+      "chem__methyl.hexadecanoate",
+      "chem__Z.Z.geranyl.linalool",
+      "chem__ethyl.hexadecanoate",
+      "chem__manool.oxide",
+      "chem__X13.epi.manool.oxide",
+      "chem__isopropyl.hexadecanoate",
+      "chem__manool",
+      "chem__ethyl.octadecanoate",
+      "chem__ethyl.pentanoate",
+      "chem__X2.ethyl.3.methylpyrazine",
+      "chem__esters_sum",
+      "chem__aroma_hops_sum",
+      "chem__acids_sum",
+      "chem__sulfur_sum"
+    ],
+    "holdoutReuse": 1,
+    "idColumn": "row",
+    "kind": "multi-output",
+    "metric": "mae",
+    "metricKey": "mae",
+    "predictionsFile": "predictions.csv",
+    "scale": "mapped grade, non-original 0-6 (see data quality report)",
+    "targets": [
+      "A_malt_all",
+      "A_malt_grain",
+      "A_malt_bread",
+      "A_malt_cara",
+      "A_malt_burn",
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_hops_tropical",
+      "A_hops_noble",
+      "A_hops_woody",
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_esters_isoaa",
+      "A_esters_flower",
+      "A_esters_fruity",
+      "F_malt_all",
+      "F_malt_grain",
+      "F_malt_bread",
+      "F_malt_cara",
+      "F_malt_burn",
+      "F_hops_all",
+      "F_hops_citrus",
+      "F_hops_tropical",
+      "F_hops_noble",
+      "F_hops_woody",
+      "F_esters_all",
+      "F_esters_ethac",
+      "F_esters_isoaa",
+      "F_esters_flower",
+      "F_esters_fruity",
+      "acidity",
+      "bitternes",
+      "sweetness",
+      "X4vg",
+      "diacetyl",
+      "dms",
+      "metallic",
+      "stale_hops",
+      "t2n",
+      "orange",
+      "coriander",
+      "clove",
+      "lactic",
+      "acetic",
+      "barnyard",
+      "alcohol",
+      "aftertaste",
+      "body",
+      "co2",
+      "overall"
+    ]
+  },
+  "per_target": {
+    "A_esters_all": {
+      "mae": 0.7668874798295162,
+      "r2": 0.2663848434925026,
+      "rmse": 0.9504130517700711
+    },
+    "A_esters_ethac": {
+      "mae": 0.8848535220476887,
+      "r2": 0.2168235378484492,
+      "rmse": 1.0770900469209803
+    },
+    "A_esters_flower": {
+      "mae": 0.7209360343116947,
+      "r2": 0.019349629904272247,
+      "rmse": 0.9383931950217023
+    },
+    "A_esters_fruity": {
+      "mae": 0.6477911787865657,
+      "r2": 0.19123504140876468,
+      "rmse": 0.8509087857590374
+    },
+    "A_esters_isoaa": {
+      "mae": 0.7420540914262332,
+      "r2": 0.09730449291059529,
+      "rmse": 0.9700689802655272
+    },
+    "A_hops_all": {
+      "mae": 0.6803269607791748,
+      "r2": 0.18877355687244668,
+      "rmse": 0.9750581749338535
+    },
+    "A_hops_citrus": {
+      "mae": 0.9825399779798708,
+      "r2": -0.05927430869051298,
+      "rmse": 1.3722946089390862
+    },
+    "A_hops_noble": {
+      "mae": 0.7279249805447414,
+      "r2": 0.2828271538325303,
+      "rmse": 0.9478350363247509
+    },
+    "A_hops_tropical": {
+      "mae": 0.5863749899257864,
+      "r2": -0.010327632604781867,
+      "rmse": 1.0804240300219567
+    },
+    "A_hops_woody": {
+      "mae": 0.5996203235184401,
+      "r2": 0.1982966125025193,
+      "rmse": 0.7172420921577934
+    },
+    "A_malt_all": {
+      "mae": 0.5473563120915617,
+      "r2": 0.41784888378397256,
+      "rmse": 0.6827367260317404
+    },
+    "A_malt_bread": {
+      "mae": 0.7252940133794162,
+      "r2": 0.015167643003837328,
+      "rmse": 1.134957725886618
+    },
+    "A_malt_burn": {
+      "mae": 0.38432015636386935,
+      "r2": 0.030544260900573827,
+      "rmse": 0.5495216424056948
+    },
+    "A_malt_cara": {
+      "mae": 0.7884627114072706,
+      "r2": 0.3874473806926494,
+      "rmse": 1.0370740440925958
+    },
+    "A_malt_grain": {
+      "mae": 0.7755179975331081,
+      "r2": 0.19445356818488657,
+      "rmse": 1.0622212155837134
+    },
+    "F_esters_all": {
+      "mae": 0.8504250025546902,
+      "r2": 0.2185168253496187,
+      "rmse": 1.0691012576719712
+    },
+    "F_esters_ethac": {
+      "mae": 0.6289702120018336,
+      "r2": 0.3771740565732279,
+      "rmse": 0.8521404569601676
+    },
+    "F_esters_flower": {
+      "mae": 0.6884779035485036,
+      "r2": -0.054569141862917725,
+      "rmse": 0.8951610857765125
+    },
+    "F_esters_fruity": {
+      "mae": 0.7703901665071834,
+      "r2": 0.13471056531198378,
+      "rmse": 1.1163912370929354
+    },
+    "F_esters_isoaa": {
+      "mae": 0.6390909807956591,
+      "r2": 0.019376129066886905,
+      "rmse": 0.876848355068522
+    },
+    "F_hops_all": {
+      "mae": 0.757417818332068,
+      "r2": 0.2842936702525998,
+      "rmse": 0.9553729902613675
+    },
+    "F_hops_citrus": {
+      "mae": 0.7907174566585908,
+      "r2": -0.14453713067048923,
+      "rmse": 1.0685715176693458
+    },
+    "F_hops_noble": {
+      "mae": 0.5994869884800718,
+      "r2": 0.4034931491395526,
+      "rmse": 0.8106251665967683
+    },
+    "F_hops_tropical": {
+      "mae": 0.7202449021549985,
+      "r2": -0.11861894447209376,
+      "rmse": 1.2524128237916585
+    },
+    "F_hops_woody": {
+      "mae": 0.5410780014840398,
+      "r2": 0.026299437917318813,
+      "rmse": 0.7338445647301205
+    },
+    "F_malt_all": {
+      "mae": 0.5082134457051479,
+      "r2": 0.40513379515041203,
+      "rmse": 0.6324664002649344
+    },
+    "F_malt_bread": {
+      "mae": 0.6627287644416563,
+      "r2": 0.11444927693683138,
+      "rmse": 0.9410174196421015
+    },
+    "F_malt_burn": {
+      "mae": 0.49470167048262026,
+      "r2": 0.2888313983072516,
+      "rmse": 0.7206167455535072
+    },
+    "F_malt_cara": {
+      "mae": 0.8379814724149647,
+      "r2": 0.27723830847719966,
+      "rmse": 1.1054893235295304
+    },
+    "F_malt_grain": {
+      "mae": 0.8037617086778874,
+      "r2": 0.10173329822898058,
+      "rmse": 1.0675567688110479
+    },
+    "X4vg": {
+      "mae": 0.663147364074887,
+      "r2": 0.3009305123810304,
+      "rmse": 0.8784270970276445
+    },
+    "acetic": {
+      "mae": 0.40626821166560645,
+      "r2": 0.4619362957240055,
+      "rmse": 0.8824045222506666
+    },
+    "acidity": {
+      "mae": 0.5341083795872226,
+      "r2": 0.6261379483336122,
+      "rmse": 0.7047898687611672
+    },
+    "aftertaste": {
+      "mae": 0.4704562835402879,
+      "r2": 0.6016688131040446,
+      "rmse": 0.5763458074578305
+    },
+    "alcohol": {
+      "mae": 0.5034083909527333,
+      "r2": 0.7579356437034451,
+      "rmse": 0.6343120026369129
+    },
+    "barnyard": {
+      "mae": 0.7954466960218325,
+      "r2": 0.024627844887249117,
+      "rmse": 1.2895826433078241
+    },
+    "bitternes": {
+      "mae": 0.5616495555259298,
+      "r2": 0.585904167462868,
+      "rmse": 0.6850918843452968
+    },
+    "body": {
+      "mae": 0.4747616872652439,
+      "r2": 0.5886010057320172,
+      "rmse": 0.6050052146634791
+    },
+    "clove": {
+      "mae": 0.2597089658722047,
+      "r2": 0.2135773154608136,
+      "rmse": 0.39953423329473126
+    },
+    "co2": {
+      "mae": 0.6848561735090348,
+      "r2": 0.315611827806372,
+      "rmse": 0.8407598272418908
+    },
+    "coriander": {
+      "mae": 0.642647755030824,
+      "r2": 0.1667080434862106,
+      "rmse": 1.2824883338940865
+    },
+    "diacetyl": {
+      "mae": 0.8879965331523213,
+      "r2": -0.0329201884317869,
+      "rmse": 1.1098921942447537
+    },
+    "dms": {
+      "mae": 0.6848361374241612,
+      "r2": -0.04117134304624748,
+      "rmse": 0.9450513911048507
+    },
+    "lactic": {
+      "mae": 0.36922679965899063,
+      "r2": 0.6715198942071219,
+      "rmse": 0.6200441474445144
+    },
+    "metallic": {
+      "mae": 0.7401055790814549,
+      "r2": 0.018780152504524805,
+      "rmse": 0.913900018020829
+    },
+    "orange": {
+      "mae": 0.5295918550073865,
+      "r2": 0.18839270905105232,
+      "rmse": 0.9380596091942538
+    },
+    "overall": {
+      "mae": 0.7964205624492354,
+      "r2": 0.059462787917580084,
+      "rmse": 1.0484879280274912
+    },
+    "stale_hops": {
+      "mae": 0.7717853007823071,
+      "r2": 0.052365525686850045,
+      "rmse": 1.256073402277505
+    },
+    "sweetness": {
+      "mae": 0.740914034737154,
+      "r2": 0.3198619364063814,
+      "rmse": 0.955331707579538
+    },
+    "t2n": {
+      "mae": 1.0560530549321625,
+      "r2": -0.024730820110860918,
+      "rmse": 1.4246916951639366
+    }
+  }
+}

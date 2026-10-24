@@ -1,0 +1,16 @@
+{
+  "figures": [
+    {
+      "name": "q2_baseline_global_importance.png",
+      "path": "figures/q2_baseline_global_importance.png",
+      "sha256": "61c21901dda661ae6a29ee6988b8216980dab5baa4e6d316fa3a0f9b9b95592a",
+      "bytes": 54568
+    },
+    {
+      "name": "q2_baseline_jaccard.png",
+      "path": "figures/q2_baseline_jaccard.png",
+      "sha256": "13fc8228187850702d63555aadbb9a4f88cfe156e30c425ebc6aa3d548e0e429",
+      "bytes": 27189
+    }
+  ]
+}

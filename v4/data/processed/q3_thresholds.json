@@ -1,0 +1,2937 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": {
+    "script": "src/00_prepare_q3.py",
+    "sha256": "9f3d5c6ba2eedabe2bda1b8f02f622fa79ad73f570e97db3e5d35a09dc94305f",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "inputs": {
+    "1.csv": {
+      "path": "data/raw/1.csv",
+      "sha256": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69",
+      "bytes": 700705
+    },
+    "8.xlsx": {
+      "path": "data/raw/8.xlsx",
+      "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+      "bytes": 1740092
+    }
+  },
+  "outputs": {
+    "q3_table.csv": {
+      "path": "data/processed/q3_table.csv",
+      "sha256": "a89872324f27ede6216242645894fbeee3a90c28d2f0ef5d50e08938242cfad3",
+      "bytes": 774382
+    },
+    "q3_table_fields.json": {
+      "path": "data/fieldlists/q3_table_fields.json",
+      "sha256": "6298a718d99044c04252dc1a4330325c0a227c00e6fd951bd9bfed4eb2b86017",
+      "bytes": 105410
+    }
+  },
+  "sheetInventory": {
+    "sheets": [
+      "Sensory thresholds",
+      "Sensory names",
+      "GBM importance MDI",
+      "GBM SHAP Values",
+      "Calibrated chemical dataset",
+      "Beer Prices",
+      "Sheet2"
+    ],
+    "thresholdsSheet": "Sensory thresholds",
+    "thresholdRows": 261,
+    "thresholdColumns": [
+      "field_name_python",
+      "field_name_R",
+      "chemical_name",
+      "chemical_name_short",
+      "calibrated",
+      "origin_paper",
+      "unit",
+      "aging",
+      "off_flavors",
+      "threshold_mean",
+      "threshold_median"
+    ],
+    "nRowsWithNumericThreshold": 43,
+    "nRowsWithOffFlavorFlag": 7,
+    "nRowsWithBoth": 6,
+    "nRowsReturnedByParse": 44,
+    "note": "43 rows carry a threshold_mean and/or threshold_median; 7 rows carry an off_flavors marker; 6 rows carry both. Every other row of the 261 is a compound name without a numeric threshold and is NOT invented into a column."
+  },
+  "nameMatching": {
+    "joinKey": "field_name_R (the R-style name) -> 1.csv column name, exact match",
+    "fieldNameRExactMatchCount": 43,
+    "fieldNamePythonExactMatchCount": 18,
+    "fieldNamePythonNormalisedMatchCount": 39,
+    "nThresholdRowsMatched": 43,
+    "nThresholdRowsUnmatched": 0,
+    "unmatchedThresholdRows": [],
+    "explanation": "The sheet names compounds the way R munges them (\"X2.3.butanedione\", \"acetic_acid.g.L.\"), while 1.csv uses the same munging, so field_name_R is an exact join key for 43/43 threshold rows. The human-readable field_name_python matches only 18/43 exactly (\"2,3-butanedione\", \"X4VG\", \"(E)-2-nonenal\") because it keeps commas/spaces/parentheses; a normalised comparison lifts it to 39/43. chemical_name is a display name (\"Diacetyl\", \"4-vinylguaiacol\") and matches only 24/43 by normalisation. Two mojibake characters (\\u00ce\\u00b1/\\u00ce\\u00b2 for alpha/beta) were repaired before matching; no column was matched by hand."
+  },
+  "thresholdColumns": [
+    {
+      "tableColumn": "thr__acetic_acid.g.L.",
+      "matchedColumn": "acetic_acid.g.L.",
+      "chemicalName": "Acetic acid",
+      "fieldNameR": "acetic_acid.g.L.",
+      "fieldNamePython": "acetic acid.g.L.",
+      "unit": "g/L",
+      "thresholdMean": 0.14025,
+      "thresholdMedian": 0.145,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Wild flora",
+      "sheetRowNumber": 3
+    },
+    {
+      "tableColumn": "thr__bitterness",
+      "matchedColumn": "bitterness",
+      "chemicalName": "Iso-alpha acids",
+      "fieldNameR": "bitterness",
+      "fieldNamePython": "bitterness",
+      "unit": "IBU",
+      "thresholdMean": 5.0,
+      "thresholdMedian": 5.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Hops",
+      "sheetRowNumber": 6
+    },
+    {
+      "tableColumn": "thr__lactic_acid.mg.L.",
+      "matchedColumn": "lactic_acid.mg.L.",
+      "chemicalName": "Lactic acid",
+      "fieldNameR": "lactic_acid.mg.L.",
+      "fieldNamePython": "lactic acid",
+      "unit": "mg/L",
+      "thresholdMean": 416.6666667,
+      "thresholdMedian": 400.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Wild flora",
+      "sheetRowNumber": 7
+    },
+    {
+      "tableColumn": "thr__ethanol..v.v.",
+      "matchedColumn": "ethanol..v.v.",
+      "chemicalName": "Ethanol",
+      "fieldNameR": "ethanol..v.v.",
+      "fieldNamePython": "ethanol..v.v.",
+      "unit": "v/v",
+      "thresholdMean": 1.757256,
+      "thresholdMedian": 1.737199,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 26
+    },
+    {
+      "tableColumn": "thr__isoamyl_alcohol",
+      "matchedColumn": "isoamyl_alcohol",
+      "chemicalName": "Isoamyl alcohol",
+      "fieldNameR": "isoamyl_alcohol",
+      "fieldNamePython": "isoamyl alcohol",
+      "unit": "mg/L",
+      "thresholdMean": 40.015,
+      "thresholdMedian": 45.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms,yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 28
+    },
+    {
+      "tableColumn": "thr__isobutanol",
+      "matchedColumn": "isobutanol",
+      "chemicalName": "Isobutanol",
+      "fieldNameR": "isobutanol",
+      "fieldNamePython": "isobutanol",
+      "unit": "mg/L",
+      "thresholdMean": 80.0,
+      "thresholdMedian": 100.0,
+      "offFlavors": null,
+      "aging": "increase",
+      "calibratedFlag": "yes_gcms,yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 29
+    },
+    {
+      "tableColumn": "thr__phenethyl_alcohol",
+      "matchedColumn": "phenethyl_alcohol",
+      "chemicalName": "Phenethyl alcohol",
+      "fieldNameR": "phenethyl_alcohol",
+      "fieldNamePython": "phenethyl alcohol",
+      "unit": "mg/L",
+      "thresholdMean": 35.01,
+      "thresholdMedian": 32.5,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms, yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 39
+    },
+    {
+      "tableColumn": "thr__acetaldehyde",
+      "matchedColumn": "acetaldehyde",
+      "chemicalName": "Acetaldehyde",
+      "fieldNameR": "acetaldehyde",
+      "fieldNamePython": "acetaldehyde",
+      "unit": "mg/L",
+      "thresholdMean": 50.0,
+      "thresholdMedian": 50.0,
+      "offFlavors": "pungent, rotten-apples, green apple",
+      "aging": "increase",
+      "calibratedFlag": "yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 50
+    },
+    {
+      "tableColumn": "thr__furfural",
+      "matchedColumn": "furfural",
+      "chemicalName": "Furfural",
+      "fieldNameR": "furfural",
+      "fieldNamePython": "furfural",
+      "unit": "mg/L",
+      "thresholdMean": 60.0,
+      "thresholdMedian": 37.5,
+      "offFlavors": null,
+      "aging": "increase",
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Malt",
+      "sheetRowNumber": 58
+    },
+    {
+      "tableColumn": "thr__glycerol",
+      "matchedColumn": "glycerol",
+      "chemicalName": "Glycerol",
+      "fieldNameR": "glycerol",
+      "fieldNamePython": "glycerol",
+      "unit": "g/L",
+      "thresholdMean": 4.433333333,
+      "thresholdMedian": 2.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 64
+    },
+    {
+      "tableColumn": "thr__GFS",
+      "matchedColumn": "GFS",
+      "chemicalName": "Sugars",
+      "fieldNameR": "GFS",
+      "fieldNamePython": "GFS",
+      "unit": "g/L",
+      "thresholdMean": 2.9,
+      "thresholdMedian": 2.9,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Malt",
+      "sheetRowNumber": 65
+    },
+    {
+      "tableColumn": "thr__ethyl_2.methyl_butyrate",
+      "matchedColumn": "ethyl_2.methyl_butyrate",
+      "chemicalName": "Ethyl 2-methylbutyrate",
+      "fieldNameR": "ethyl_2.methyl_butyrate",
+      "fieldNamePython": "ethyl 2-methyl butyrate",
+      "unit": "mg/L",
+      "thresholdMean": 0.027,
+      "thresholdMedian": 0.027,
+      "offFlavors": null,
+      "aging": "increase",
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Others",
+      "sheetRowNumber": 75
+    },
+    {
+      "tableColumn": "thr__ethyl_isovalerate",
+      "matchedColumn": "ethyl_isovalerate",
+      "chemicalName": "Ethyl 3-methylbutyrate",
+      "fieldNameR": "ethyl_isovalerate",
+      "fieldNamePython": "ethyl isovalerate",
+      "unit": "mg/L",
+      "thresholdMean": 0.1,
+      "thresholdMedian": 0.1,
+      "offFlavors": null,
+      "aging": "increase",
+      "calibratedFlag": "yes_gcms,yes",
+      "originPaper": "Others",
+      "sheetRowNumber": 77
+    },
+    {
+      "tableColumn": "thr__ethyl_acetate",
+      "matchedColumn": "ethyl_acetate",
+      "chemicalName": "Ethyl acetate",
+      "fieldNameR": "ethyl_acetate",
+      "fieldNamePython": "ethyl acetate",
+      "unit": "mg/L",
+      "thresholdMean": 24.0,
+      "thresholdMedian": 23.0,
+      "offFlavors": null,
+      "aging": "decrease",
+      "calibratedFlag": "yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 81
+    },
+    {
+      "tableColumn": "thr__ethyl.butyrate",
+      "matchedColumn": "ethyl.butyrate",
+      "chemicalName": "Ethyl butyrate",
+      "fieldNameR": "ethyl.butyrate",
+      "fieldNamePython": "ethyl butyrate",
+      "unit": "mg/L",
+      "thresholdMean": 0.45,
+      "thresholdMedian": 0.45,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 83
+    },
+    {
+      "tableColumn": "thr__ethyl_decanoate",
+      "matchedColumn": "ethyl_decanoate",
+      "chemicalName": "Ethyl decanoate",
+      "fieldNameR": "ethyl_decanoate",
+      "fieldNamePython": "ethyl decanoate",
+      "unit": "mg/L",
+      "thresholdMean": 1.035,
+      "thresholdMedian": 1.035,
+      "offFlavors": null,
+      "aging": "decrease",
+      "calibratedFlag": "yes_gcms, yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 85
+    },
+    {
+      "tableColumn": "thr__ethyl_hexanoate",
+      "matchedColumn": "ethyl_hexanoate",
+      "chemicalName": "Ethyl hexanoate",
+      "fieldNameR": "ethyl_hexanoate",
+      "fieldNamePython": "ethyl hexanoate",
+      "unit": "mg/L",
+      "thresholdMean": 0.23,
+      "thresholdMedian": 0.225,
+      "offFlavors": null,
+      "aging": "decrease",
+      "calibratedFlag": "yes_gcms,yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 88
+    },
+    {
+      "tableColumn": "thr__ethyl.isobutyrate",
+      "matchedColumn": "ethyl.isobutyrate",
+      "chemicalName": "Ethyl isobutyrate",
+      "fieldNameR": "ethyl.isobutyrate",
+      "fieldNamePython": "ethyl isobutyrate",
+      "unit": "mg/L",
+      "thresholdMean": 2.6,
+      "thresholdMedian": 2.6,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 90
+    },
+    {
+      "tableColumn": "thr__ethyl.nicotinate",
+      "matchedColumn": "ethyl.nicotinate",
+      "chemicalName": "Ethyl nicotinate",
+      "fieldNameR": "ethyl.nicotinate",
+      "fieldNamePython": "ethyl nicotinate",
+      "unit": "mg/L",
+      "thresholdMean": 6.0,
+      "thresholdMedian": 6.0,
+      "offFlavors": null,
+      "aging": "increase",
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Others",
+      "sheetRowNumber": 92
+    },
+    {
+      "tableColumn": "thr__ethyl_octanoate",
+      "matchedColumn": "ethyl_octanoate",
+      "chemicalName": "Ethyl octanoate",
+      "fieldNameR": "ethyl_octanoate",
+      "fieldNamePython": "ethyl octanoate",
+      "unit": "mg/L",
+      "thresholdMean": 0.7,
+      "thresholdMedian": 0.75,
+      "offFlavors": null,
+      "aging": "decrease",
+      "calibratedFlag": "yes_gcms, yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 94
+    },
+    {
+      "tableColumn": "thr__ethyl_propionate",
+      "matchedColumn": "ethyl_propionate",
+      "chemicalName": "Ethyl propionate",
+      "fieldNameR": "ethyl_propionate",
+      "fieldNamePython": "ethyl propionate",
+      "unit": "mg/L",
+      "thresholdMean": 10.0,
+      "thresholdMedian": 10.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms, yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 98
+    },
+    {
+      "tableColumn": "thr__isopentyl_acetate",
+      "matchedColumn": "isopentyl_acetate",
+      "chemicalName": "Isoamyl acetate",
+      "fieldNameR": "isopentyl_acetate",
+      "fieldNamePython": "isopentyl acetate",
+      "unit": "mg/L",
+      "thresholdMean": 0.603333333,
+      "thresholdMedian": 0.6,
+      "offFlavors": null,
+      "aging": "decrease",
+      "calibratedFlag": "yes_gcms,yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 103
+    },
+    {
+      "tableColumn": "thr__isobutyl_acetate",
+      "matchedColumn": "isobutyl_acetate",
+      "chemicalName": "Isobutyl acetate",
+      "fieldNameR": "isobutyl_acetate",
+      "fieldNamePython": "isobutyl acetate",
+      "unit": "mg/L",
+      "thresholdMean": 1.0,
+      "thresholdMedian": 1.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms,yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 105
+    },
+    {
+      "tableColumn": "thr__octyl_acetate",
+      "matchedColumn": "octyl_acetate",
+      "chemicalName": "Octyl acetate",
+      "fieldNameR": "octyl_acetate",
+      "fieldNamePython": "octyl acetate",
+      "unit": "mg/L",
+      "thresholdMean": 0.5,
+      "thresholdMedian": 0.5,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms,yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 115
+    },
+    {
+      "tableColumn": "thr__phenethyl_acetate",
+      "matchedColumn": "phenethyl_acetate",
+      "chemicalName": "Phenethyl acetate",
+      "fieldNameR": "phenethyl_acetate",
+      "fieldNamePython": "phenethyl acetate",
+      "unit": "mg/L",
+      "thresholdMean": 1.763333333,
+      "thresholdMedian": 1.29,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms,yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 118
+    },
+    {
+      "tableColumn": "thr__X2.3.butanedione",
+      "matchedColumn": "X2.3.butanedione",
+      "chemicalName": "Diacetyl",
+      "fieldNameR": "X2.3.butanedione",
+      "fieldNamePython": "2,3-butanedione",
+      "unit": "mg/L",
+      "thresholdMean": 0.29925,
+      "thresholdMedian": 0.09,
+      "offFlavors": "butterscotch, popcorn, oily, milky",
+      "aging": "increase",
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 127
+    },
+    {
+      "tableColumn": "thr__ammonia.mg.L.",
+      "matchedColumn": "ammonia.mg.L.",
+      "chemicalName": "Ammonia",
+      "fieldNameR": "ammonia.mg.L.",
+      "fieldNamePython": "ammonia",
+      "unit": "mg/L",
+      "thresholdMean": 2.6,
+      "thresholdMedian": 2.6,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Malt",
+      "sheetRowNumber": 130
+    },
+    {
+      "tableColumn": "thr__iron",
+      "matchedColumn": "iron",
+      "chemicalName": "Iron",
+      "fieldNameR": "iron",
+      "fieldNamePython": "iron",
+      "unit": "mg/L",
+      "thresholdMean": 0.1,
+      "thresholdMedian": 0.1,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Others",
+      "sheetRowNumber": 135
+    },
+    {
+      "tableColumn": "thr__protein.g.L.",
+      "matchedColumn": "protein.g.L.",
+      "chemicalName": "Protein",
+      "fieldNameR": "protein.g.L.",
+      "fieldNamePython": "protein.g.L.",
+      "unit": "g/L",
+      "thresholdMean": 1.023933,
+      "thresholdMedian": 0.846,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Others",
+      "sheetRowNumber": 140
+    },
+    {
+      "tableColumn": "thr__X4VG",
+      "matchedColumn": "X4VG",
+      "chemicalName": "4-vinylguaiacol",
+      "fieldNameR": "X4VG",
+      "fieldNamePython": "X4VG",
+      "unit": "mg/L",
+      "thresholdMean": 0.206333333,
+      "thresholdMedian": 0.2,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 146
+    },
+    {
+      "tableColumn": "thr__methylpyrazine",
+      "matchedColumn": "methylpyrazine",
+      "chemicalName": "Methylpyrazine",
+      "fieldNameR": "methylpyrazine",
+      "fieldNamePython": "methylpyrazine",
+      "unit": "mg/L",
+      "thresholdMean": 1.0,
+      "thresholdMedian": 1.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Malt",
+      "sheetRowNumber": 151
+    },
+    {
+      "tableColumn": "thr__CS2",
+      "matchedColumn": "CS2",
+      "chemicalName": "Carbon disulfide",
+      "fieldNameR": "CS2",
+      "fieldNamePython": "CS2",
+      "unit": "ug/L",
+      "thresholdMean": 50.0,
+      "thresholdMedian": 50.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 153
+    },
+    {
+      "tableColumn": "thr__DES",
+      "matchedColumn": "DES",
+      "chemicalName": "Diethyl sulfide",
+      "fieldNameR": "DES",
+      "fieldNamePython": "DES",
+      "unit": "ug/L",
+      "thresholdMean": 1.2,
+      "thresholdMedian": 1.2,
+      "offFlavors": "rotting vegetables",
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 154
+    },
+    {
+      "tableColumn": "thr__DMS",
+      "matchedColumn": "DMS",
+      "chemicalName": "Dimethyl sulfide",
+      "fieldNameR": "DMS",
+      "fieldNamePython": "DMS",
+      "unit": "ug/L",
+      "thresholdMean": 17.25,
+      "thresholdMedian": 19.0,
+      "offFlavors": "cooked vegetables, onion, garlic, corn, black currant, sulfidic, cabbage, tinned tomato, baked beans",
+      "aging": "increase",
+      "calibratedFlag": "yes",
+      "originPaper": "Malt",
+      "sheetRowNumber": 155
+    },
+    {
+      "tableColumn": "thr__H2S",
+      "matchedColumn": "H2S",
+      "chemicalName": "Hydrogen sulfide",
+      "fieldNameR": "H2S",
+      "fieldNamePython": "H2S",
+      "unit": "ug/L",
+      "thresholdMean": 3.5,
+      "thresholdMedian": 3.5,
+      "offFlavors": "sulfidic, rotten eggs",
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 156
+    },
+    {
+      "tableColumn": "thr__SO2.mg.L.",
+      "matchedColumn": "SO2.mg.L.",
+      "chemicalName": "Sulfur dioxide",
+      "fieldNameR": "SO2.mg.L.",
+      "fieldNamePython": "SO2-mg.L.",
+      "unit": "mg/L",
+      "thresholdMean": 15.33333333,
+      "thresholdMedian": 11.0,
+      "offFlavors": "Burnt matches",
+      "aging": null,
+      "calibratedFlag": "yes",
+      "originPaper": "Yeast",
+      "sheetRowNumber": 159
+    },
+    {
+      "tableColumn": "thr__alpha.humulene",
+      "matchedColumn": "alpha.humulene",
+      "chemicalName": "Alpha-humulene",
+      "fieldNameR": "alpha.humulene",
+      "fieldNamePython": "alpha-humulene",
+      "unit": "mg/L",
+      "thresholdMean": 0.625,
+      "thresholdMedian": 0.625,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Hops",
+      "sheetRowNumber": 168
+    },
+    {
+      "tableColumn": "thr__X1.alpha.terpineol",
+      "matchedColumn": "X1.alpha.terpineol",
+      "chemicalName": "Alpha-terpineol",
+      "fieldNameR": "X1.alpha.terpineol",
+      "fieldNamePython": "1-alpha-terpineol",
+      "unit": "mg/L",
+      "thresholdMean": 1.5,
+      "thresholdMedian": 1.5,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Hops",
+      "sheetRowNumber": 172
+    },
+    {
+      "tableColumn": "thr__E.caryophyllene",
+      "matchedColumn": "E.caryophyllene",
+      "chemicalName": "Caryophyllene",
+      "fieldNameR": "E.caryophyllene",
+      "fieldNamePython": "E-caryophyllene",
+      "unit": "mg/L",
+      "thresholdMean": 0.28,
+      "thresholdMedian": 0.23,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Hops",
+      "sheetRowNumber": 181
+    },
+    {
+      "tableColumn": "thr__citronellol",
+      "matchedColumn": "citronellol",
+      "chemicalName": "Citronellol",
+      "fieldNameR": "citronellol",
+      "fieldNamePython": "citronellol",
+      "unit": "mg/L",
+      "thresholdMean": 0.0245,
+      "thresholdMedian": 0.0245,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Hops",
+      "sheetRowNumber": 189
+    },
+    {
+      "tableColumn": "thr__geraniol",
+      "matchedColumn": "geraniol",
+      "chemicalName": "Geraniol",
+      "fieldNameR": "geraniol",
+      "fieldNamePython": "geraniol",
+      "unit": "mg/L",
+      "thresholdMean": 0.0315,
+      "thresholdMedian": 0.023,
+      "offFlavors": null,
+      "aging": "decrease",
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Hops",
+      "sheetRowNumber": 209
+    },
+    {
+      "tableColumn": "thr__linalool",
+      "matchedColumn": "linalool",
+      "chemicalName": "Linalool",
+      "fieldNameR": "linalool",
+      "fieldNamePython": "linalool",
+      "unit": "mg/L",
+      "thresholdMean": 0.027285,
+      "thresholdMedian": 0.0045,
+      "offFlavors": null,
+      "aging": "decrease",
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Hops",
+      "sheetRowNumber": 214
+    },
+    {
+      "tableColumn": "thr__Z.nerolidol",
+      "matchedColumn": "Z.nerolidol",
+      "chemicalName": "Z-nerolidol",
+      "fieldNameR": "Z.nerolidol",
+      "fieldNamePython": "Z-nerolidol",
+      "unit": "mg/L",
+      "thresholdMean": 25.0,
+      "thresholdMedian": 25.0,
+      "offFlavors": null,
+      "aging": null,
+      "calibratedFlag": "yes_gcms",
+      "originPaper": "Hops",
+      "sheetRowNumber": 250
+    }
+  ],
+  "notParsed": {
+    "compoundsInSheetButWithoutNumericThreshold": [
+      "CO2.PSI.",
+      "E.cinnamaldehyde",
+      "E.methyl.isoeugenol",
+      "E.nerolidol",
+      "E.ocimenone",
+      "MeSH",
+      "X.E..2.nonenal",
+      "X.E..alpha.ionone",
+      "X.E..beta.damascenone",
+      "X.E..beta.farnesene",
+      "X.E..beta.ionone",
+      "X.E..beta.ocimene",
+      "X.E..dihydro.apofarnesal",
+      "X.E..ortho.methoxy.cinnamaldehyde",
+      "X.E.E..2.4.decadienal",
+      "X.Z..beta.farnesene",
+      "X.Z..dihydro.apofarnesal",
+      "X1.10.di.epi.cubenol",
+      "X1.2.dihydro.8.hydroxy..2E..linalool",
+      "X1.octen.3.ol",
+      "X1.propanol",
+      "X13.epi.manool.oxide",
+      "X14.hydroxy.9.epi..E..caryophyllene",
+      "X14.hydroxy.alpha.humulene",
+      "X2.3.dihydro.farnesol",
+      "X2.6.dimethyl.pyrazine",
+      "X2.acetylfuran",
+      "X2.acetylpyrrole",
+      "X2.butyloctanoate",
+      "X2.ethyl.1.hexanol",
+      "X2.ethyl.3.methylpyrazine",
+      "X2.ethylhexylsalicylate",
+      "X2.furanmethanol",
+      "X2.methyl.1.butanol",
+      "X2.methyl.benzofuran",
+      "X2.methylbutyl.octanoate",
+      "X2.methyltetrahydrofuran.3.one",
+      "X2.pentyl.furan",
+      "X2.phenyl.ethyl.butyrate",
+      "X2.undecanol",
+      "X2.undecanone",
+      "X2E.6E.methyl.farnesoate",
+      "X2E.6Z.farnesal",
+      "X2Z.6E.farnesal",
+      "X2Z.6E.farnesol",
+      "X2Z.6Z.farnesol",
+      "X3.furanmethanol",
+      "X3.methyl.2.butenal",
+      "X3.methyl.2.hexanol",
+      "X3.methylbutanal",
+      "X3.methylthio.propanol",
+      "X3Z.hexenol",
+      "X4.8.alpha.epoxy.caryophyllane",
+      "X4.ethyl.guaiacol",
+      "X4.ethyl.phenol",
+      "X4.methoxysalicylaldehyde",
+      "X4.methyl.1.pentanol",
+      "X5.methylfurfural",
+      "X6.methyl.5.hepten.2.one",
+      "X9.epi..E..caryophyllene",
+      "Z.Z.geranyl.linalool",
+      "acids_sum",
+      "alloaromadendrene.epoxide",
+      "alpha.calacorene",
+      "alpha.eudesmol",
+      "alpha.muurolol",
+      "alpha.phellandrene",
+      "alpha.terpinyl.isobutanoate",
+      "ambroxide",
+      "amyl.acetate",
+      "aroma_hops_sum",
+      "benzaldehyde",
+      "benzyl.alcohol",
+      "benzyl.benzoate",
+      "beta.cyclohomocitral",
+      "beta.humulene",
+      "beta.phellandrene",
+      "betaglucan.mg.L.",
+      "butyl.acetate",
+      "butylated.hydroxytoluene",
+      "cadalene",
+      "camphor",
+      "car.3.en.2.one",
+      "caryophylla.4.12..8.13..dien.5.alpha.ol",
+      "caryophyllene.acetate",
+      "caryophyllene.alcohol",
+      "caryophyllene.oxide",
+      "cis.beta.terpineol",
+      "cis.dihydro.beta.terpineol",
+      "cis.linalool.oxide",
+      "color.EBC.",
+      "cumin.aldehyde",
+      "dehydroxy.cis.linalool.oxide",
+      "delta.terpinyl.acetate",
+      "diethyl.succinate",
+      "dihydroisocaryophyllene.epoxide",
+      "dimethoxy..E..citral",
+      "dodecanal",
+      "esters_sum",
+      "ethyl..9..decenoate",
+      "ethyl..E..cinnamate",
+      "ethyl..E..linalool",
+      "ethyl.5.methylhexanoate",
+      "ethyl.benzoate",
+      "ethyl.furoate",
+      "ethyl.hex..2E..enoate",
+      "ethyl.hex..3E..enoate",
+      "ethyl.hexadecanoate",
+      "ethyl.hydrocinnamate",
+      "ethyl.lactate",
+      "ethyl.octadecanoate",
+      "ethyl.pentadecanoate",
+      "ethyl.pentanoate",
+      "ethyl.phenylacetate",
+      "ethyl.tetradecanoate",
+      "ethyl.tiglate",
+      "eucalyptol",
+      "eugenol",
+      "foeniculin",
+      "gamma.eudesmol",
+      "gamma.nonalactone",
+      "geosmin",
+      "germacrene.D",
+      "heptyl.acetate",
+      "hexyl.acetate",
+      "humulene.epoxide.II",
+      "hydroxy.methyl.furfural",
+      "isoamyl.lactate",
+      "isoborneol",
+      "isobutyl.hexanoate",
+      "isomaltol",
+      "isopentyl.butanoate",
+      "isopentyl.formate",
+      "isopentyl.hexanoate",
+      "isopropyl.hexadecanoate",
+      "isopropyl.laurate",
+      "isopropyl.tetradecanoate",
+      "kcalperc",
+      "limonene",
+      "linalool.isovalerate",
+      "manool",
+      "manool.oxide",
+      "meta.cymenene",
+      "methyl.geranate",
+      "methyl.hexadecanoate",
+      "methyl.para.anisate",
+      "n.decanol",
+      "n.dodecanol",
+      "n.heptanol",
+      "n.hexanol",
+      "n.nonanal",
+      "n.nonanol",
+      "n.octanol",
+      "n.pentanol",
+      "n.tetradecanol",
+      "neo.allo.ocimene",
+      "nerol",
+      "nerol.oxide",
+      "neryl.formate",
+      "neryl.isobutanoate",
+      "neryl.isovalerate",
+      "neryl.propanoate",
+      "nonan.2.ol",
+      "ortho.cresol",
+      "pH",
+      "pentyl.octanoate",
+      "perillyl.acetate",
+      "phenylacetaldehyde",
+      "prenyl.isobutyrate",
+      "propyl.acetate",
+      "propylene.glycol",
+      "selin.11.en.4.alpha.ol",
+      "spathulenol",
+      "styrene",
+      "sulfur_sum",
+      "tau.cadinol",
+      "tau.muurolol",
+      "terpinen.4.ol",
+      "terpinen.4.ol.acetate",
+      "terpinolene",
+      "trans.dihydro.alpha.terpinyl.acetate",
+      "trans.dihydro.beta.terpineol",
+      "unfermentables",
+      "valencene",
+      "vanillin",
+      "vinyl.caprylate",
+      "x.methyl.1.octanol",
+      "y.methyl.1.octanol"
+    ],
+    "rowsNamingOneOfThoseCompounds": [
+      {
+        "matchedColumn": "X.E..beta.damascenone",
+        "fieldNameR": "X.E..beta.damascenone",
+        "sheetRowNumber": 5,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X6.methyl.5.hepten.2.one",
+        "fieldNameR": "X6.methyl.5.hepten.2.one",
+        "sheetRowNumber": 8,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X1.octen.3.ol",
+        "fieldNameR": "X1.octen.3.ol",
+        "sheetRowNumber": 9,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X1.propanol",
+        "fieldNameR": "X1.propanol",
+        "sheetRowNumber": 10,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.ethyl.1.hexanol",
+        "fieldNameR": "X2.ethyl.1.hexanol",
+        "sheetRowNumber": 11,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.methyl.1.butanol",
+        "fieldNameR": "X2.methyl.1.butanol",
+        "sheetRowNumber": 13,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "nonan.2.ol",
+        "fieldNameR": "nonan.2.ol",
+        "sheetRowNumber": 14,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.undecanol",
+        "fieldNameR": "X2.undecanol",
+        "sheetRowNumber": 15,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.3.dihydro.farnesol",
+        "fieldNameR": "X2.3.dihydro.farnesol",
+        "sheetRowNumber": 17,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X3.furanmethanol",
+        "fieldNameR": "X3.furanmethanol",
+        "sheetRowNumber": 18,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X3.methyl.2.hexanol",
+        "fieldNameR": "X3.methyl.2.hexanol",
+        "sheetRowNumber": 19,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X3.methylbutanal",
+        "fieldNameR": "X3.methylbutanal",
+        "sheetRowNumber": 20,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X4.methyl.1.pentanol",
+        "fieldNameR": "X4.methyl.1.pentanol",
+        "sheetRowNumber": 21,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "benzyl.alcohol",
+        "fieldNameR": "benzyl.alcohol",
+        "sheetRowNumber": 23,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X3Z.hexenol",
+        "fieldNameR": "X3Z.hexenol",
+        "sheetRowNumber": 25,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.furanmethanol",
+        "fieldNameR": "X2.furanmethanol",
+        "sheetRowNumber": 27,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X3.methylthio.propanol",
+        "fieldNameR": "X3.methylthio.propanol",
+        "sheetRowNumber": 30,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.decanol",
+        "fieldNameR": "n.decanol",
+        "sheetRowNumber": 31,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.dodecanol",
+        "fieldNameR": "n.dodecanol",
+        "sheetRowNumber": 32,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.heptanol",
+        "fieldNameR": "n.heptanol",
+        "sheetRowNumber": 33,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.hexanol",
+        "fieldNameR": "n.hexanol",
+        "sheetRowNumber": 34,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.nonanol",
+        "fieldNameR": "n.nonanol",
+        "sheetRowNumber": 35,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.octanol",
+        "fieldNameR": "n.octanol",
+        "sheetRowNumber": 36,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.pentanol",
+        "fieldNameR": "n.pentanol",
+        "sheetRowNumber": 37,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.tetradecanol",
+        "fieldNameR": "n.tetradecanol",
+        "sheetRowNumber": 38,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "x.methyl.1.octanol",
+        "fieldNameR": "x.methyl.1.octanol",
+        "sheetRowNumber": 40,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "y.methyl.1.octanol",
+        "fieldNameR": "y.methyl.1.octanol",
+        "sheetRowNumber": 41,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2Z.6E.farnesol",
+        "fieldNameR": "X2Z.6E.farnesol",
+        "sheetRowNumber": 42,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2Z.6Z.farnesol",
+        "fieldNameR": "X2Z.6Z.farnesol",
+        "sheetRowNumber": 43,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X3.methyl.2.butenal",
+        "fieldNameR": "X3.methyl.2.butenal",
+        "sheetRowNumber": 45,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X4.methoxysalicylaldehyde",
+        "fieldNameR": "X4.methoxysalicylaldehyde",
+        "sheetRowNumber": 47,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "hydroxy.methyl.furfural",
+        "fieldNameR": "hydroxy.methyl.furfural",
+        "sheetRowNumber": 48,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X5.methylfurfural",
+        "fieldNameR": "X5.methylfurfural",
+        "sheetRowNumber": 49,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "benzaldehyde",
+        "fieldNameR": "benzaldehyde",
+        "sheetRowNumber": 51,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "E.cinnamaldehyde",
+        "fieldNameR": "E.cinnamaldehyde",
+        "sheetRowNumber": 52,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "cumin.aldehyde",
+        "fieldNameR": "cumin.aldehyde",
+        "sheetRowNumber": 53,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "dodecanal",
+        "fieldNameR": "dodecanal",
+        "sheetRowNumber": 54,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.E..2.nonenal",
+        "fieldNameR": "X.E..2.nonenal",
+        "sheetRowNumber": 55,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.E..ortho.methoxy.cinnamaldehyde",
+        "fieldNameR": "X.E..ortho.methoxy.cinnamaldehyde",
+        "sheetRowNumber": 56,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.E.E..2.4.decadienal",
+        "fieldNameR": "X.E.E..2.4.decadienal",
+        "sheetRowNumber": 57,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "n.nonanal",
+        "fieldNameR": "n.nonanal",
+        "sheetRowNumber": 59,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "phenylacetaldehyde",
+        "fieldNameR": "phenylacetaldehyde",
+        "sheetRowNumber": 61,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "vanillin",
+        "fieldNameR": "vanillin",
+        "sheetRowNumber": 62,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "betaglucan.mg.L.",
+        "fieldNameR": "betaglucan.mg.L.",
+        "sheetRowNumber": 63,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.butyloctanoate",
+        "fieldNameR": "X2.butyloctanoate",
+        "sheetRowNumber": 66,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.ethylhexylsalicylate",
+        "fieldNameR": "X2.ethylhexylsalicylate",
+        "sheetRowNumber": 67,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.methylbutyl.octanoate",
+        "fieldNameR": "X2.methylbutyl.octanoate",
+        "sheetRowNumber": 68,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.phenyl.ethyl.butyrate",
+        "fieldNameR": "X2.phenyl.ethyl.butyrate",
+        "sheetRowNumber": 69,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "amyl.acetate",
+        "fieldNameR": "amyl.acetate",
+        "sheetRowNumber": 70,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "benzyl.benzoate",
+        "fieldNameR": "benzyl.benzoate",
+        "sheetRowNumber": 71,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "butyl.acetate",
+        "fieldNameR": "butyl.acetate",
+        "sheetRowNumber": 72,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "diethyl.succinate",
+        "fieldNameR": "diethyl.succinate",
+        "sheetRowNumber": 73,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.hex..2E..enoate",
+        "fieldNameR": "ethyl.hex..2E..enoate",
+        "sheetRowNumber": 74,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.hex..3E..enoate",
+        "fieldNameR": "ethyl.hex..3E..enoate",
+        "sheetRowNumber": 76,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.5.methylhexanoate",
+        "fieldNameR": "ethyl.5.methylhexanoate",
+        "sheetRowNumber": 79,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl..9..decenoate",
+        "fieldNameR": "ethyl..9..decenoate",
+        "sheetRowNumber": 80,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.benzoate",
+        "fieldNameR": "ethyl.benzoate",
+        "sheetRowNumber": 82,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl..E..cinnamate",
+        "fieldNameR": "ethyl..E..cinnamate",
+        "sheetRowNumber": 84,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.furoate",
+        "fieldNameR": "ethyl.furoate",
+        "sheetRowNumber": 86,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.hexadecanoate",
+        "fieldNameR": "ethyl.hexadecanoate",
+        "sheetRowNumber": 87,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.hydrocinnamate",
+        "fieldNameR": "ethyl.hydrocinnamate",
+        "sheetRowNumber": 89,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.lactate",
+        "fieldNameR": "ethyl.lactate",
+        "sheetRowNumber": 91,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.octadecanoate",
+        "fieldNameR": "ethyl.octadecanoate",
+        "sheetRowNumber": 93,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.pentadecanoate",
+        "fieldNameR": "ethyl.pentadecanoate",
+        "sheetRowNumber": 95,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.pentanoate",
+        "fieldNameR": "ethyl.pentanoate",
+        "sheetRowNumber": 96,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.phenylacetate",
+        "fieldNameR": "ethyl.phenylacetate",
+        "sheetRowNumber": 97,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.tetradecanoate",
+        "fieldNameR": "ethyl.tetradecanoate",
+        "sheetRowNumber": 99,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl.tiglate",
+        "fieldNameR": "ethyl.tiglate",
+        "sheetRowNumber": 100,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "heptyl.acetate",
+        "fieldNameR": "heptyl.acetate",
+        "sheetRowNumber": 101,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "hexyl.acetate",
+        "fieldNameR": "hexyl.acetate",
+        "sheetRowNumber": 102,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isoamyl.lactate",
+        "fieldNameR": "isoamyl.lactate",
+        "sheetRowNumber": 104,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isobutyl.hexanoate",
+        "fieldNameR": "isobutyl.hexanoate",
+        "sheetRowNumber": 106,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isopentyl.butanoate",
+        "fieldNameR": "isopentyl.butanoate",
+        "sheetRowNumber": 107,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isopentyl.formate",
+        "fieldNameR": "isopentyl.formate",
+        "sheetRowNumber": 108,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isopentyl.hexanoate",
+        "fieldNameR": "isopentyl.hexanoate",
+        "sheetRowNumber": 109,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isopropyl.hexadecanoate",
+        "fieldNameR": "isopropyl.hexadecanoate",
+        "sheetRowNumber": 110,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isopropyl.laurate",
+        "fieldNameR": "isopropyl.laurate",
+        "sheetRowNumber": 111,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isopropyl.tetradecanoate",
+        "fieldNameR": "isopropyl.tetradecanoate",
+        "sheetRowNumber": 112,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "methyl.hexadecanoate",
+        "fieldNameR": "methyl.hexadecanoate",
+        "sheetRowNumber": 113,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "propyl.acetate",
+        "fieldNameR": "propyl.acetate",
+        "sheetRowNumber": 114,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "pentyl.octanoate",
+        "fieldNameR": "pentyl.octanoate",
+        "sheetRowNumber": 116,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "perillyl.acetate",
+        "fieldNameR": "perillyl.acetate",
+        "sheetRowNumber": 117,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "prenyl.isobutyrate",
+        "fieldNameR": "prenyl.isobutyrate",
+        "sheetRowNumber": 119,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "vinyl.caprylate",
+        "fieldNameR": "vinyl.caprylate",
+        "sheetRowNumber": 120,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.acetylfuran",
+        "fieldNameR": "X2.acetylfuran",
+        "sheetRowNumber": 121,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.methyl.benzofuran",
+        "fieldNameR": "X2.methyl.benzofuran",
+        "sheetRowNumber": 122,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.pentyl.furan",
+        "fieldNameR": "X2.pentyl.furan",
+        "sheetRowNumber": 123,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isomaltol",
+        "fieldNameR": "isomaltol",
+        "sheetRowNumber": 124,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.methyltetrahydrofuran.3.one",
+        "fieldNameR": "X2.methyltetrahydrofuran.3.one",
+        "sheetRowNumber": 125,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.undecanone",
+        "fieldNameR": "X2.undecanone",
+        "sheetRowNumber": 126,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "gamma.nonalactone",
+        "fieldNameR": "gamma.nonalactone",
+        "sheetRowNumber": 128,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.acetylpyrrole",
+        "fieldNameR": "X2.acetylpyrrole",
+        "sheetRowNumber": 129,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "butylated.hydroxytoluene",
+        "fieldNameR": "butylated.hydroxytoluene",
+        "sheetRowNumber": 131,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "kcalperc",
+        "fieldNameR": "kcalperc",
+        "sheetRowNumber": 132,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "CO2.PSI.",
+        "fieldNameR": "CO2.PSI.",
+        "sheetRowNumber": 133,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "color.EBC.",
+        "fieldNameR": "color.EBC.",
+        "sheetRowNumber": 134,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "selin.11.en.4.alpha.ol",
+        "fieldNameR": "selin.11.en.4.alpha.ol",
+        "sheetRowNumber": 136,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "pH",
+        "fieldNameR": "pH",
+        "sheetRowNumber": 138,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "propylene.glycol",
+        "fieldNameR": "propylene.glycol",
+        "sheetRowNumber": 139,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "styrene",
+        "fieldNameR": "styrene",
+        "sheetRowNumber": 141,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "unfermentables",
+        "fieldNameR": "unfermentables",
+        "sheetRowNumber": 142,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X4.ethyl.guaiacol",
+        "fieldNameR": "X4.ethyl.guaiacol",
+        "sheetRowNumber": 144,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X4.ethyl.phenol",
+        "fieldNameR": "X4.ethyl.phenol",
+        "sheetRowNumber": 145,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ortho.cresol",
+        "fieldNameR": "ortho.cresol",
+        "sheetRowNumber": 148,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.ethyl.3.methylpyrazine",
+        "fieldNameR": "X2.ethyl.3.methylpyrazine",
+        "sheetRowNumber": 149,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2.6.dimethyl.pyrazine",
+        "fieldNameR": "X2.6.dimethyl.pyrazine",
+        "sheetRowNumber": 150,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "MeSH",
+        "fieldNameR": "MeSH",
+        "sheetRowNumber": 157,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X1.2.dihydro.8.hydroxy..2E..linalool",
+        "fieldNameR": "X1.2.dihydro.8.hydroxy..2E..linalool",
+        "sheetRowNumber": 160,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X14.hydroxy.alpha.humulene",
+        "fieldNameR": "X14.hydroxy.alpha.humulene",
+        "sheetRowNumber": 161,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2E.6E.methyl.farnesoate",
+        "fieldNameR": "X2E.6E.methyl.farnesoate",
+        "sheetRowNumber": 162,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X4.8.alpha.epoxy.caryophyllane",
+        "fieldNameR": "X4.8.alpha.epoxy.caryophyllane",
+        "sheetRowNumber": 163,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X9.epi..E..caryophyllene",
+        "fieldNameR": "X9.epi..E..caryophyllene",
+        "sheetRowNumber": 164,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "alloaromadendrene.epoxide",
+        "fieldNameR": "alloaromadendrene.epoxide",
+        "sheetRowNumber": 165,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "alpha.calacorene",
+        "fieldNameR": "alpha.calacorene",
+        "sheetRowNumber": 166,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "alpha.muurolol",
+        "fieldNameR": "alpha.muurolol",
+        "sheetRowNumber": 169,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "alpha.phellandrene",
+        "fieldNameR": "alpha.phellandrene",
+        "sheetRowNumber": 170,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ambroxide",
+        "fieldNameR": "ambroxide",
+        "sheetRowNumber": 173,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "beta.phellandrene",
+        "fieldNameR": "beta.phellandrene",
+        "sheetRowNumber": 175,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "cadalene",
+        "fieldNameR": "cadalene",
+        "sheetRowNumber": 176,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "camphor",
+        "fieldNameR": "camphor",
+        "sheetRowNumber": 178,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "car.3.en.2.one",
+        "fieldNameR": "car.3.en.2.one",
+        "sheetRowNumber": 179,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "caryophylla.4.12..8.13..dien.5.alpha.ol",
+        "fieldNameR": "caryophylla.4.12..8.13..dien.5.alpha.ol",
+        "sheetRowNumber": 180,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X14.hydroxy.9.epi..E..caryophyllene",
+        "fieldNameR": "X14.hydroxy.9.epi..E..caryophyllene",
+        "sheetRowNumber": 182,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "caryophyllene.acetate",
+        "fieldNameR": "caryophyllene.acetate",
+        "sheetRowNumber": 183,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "caryophyllene.alcohol",
+        "fieldNameR": "caryophyllene.alcohol",
+        "sheetRowNumber": 184,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "caryophyllene.oxide",
+        "fieldNameR": "caryophyllene.oxide",
+        "sheetRowNumber": 185,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "cis.dihydro.beta.terpineol",
+        "fieldNameR": "cis.dihydro.beta.terpineol",
+        "sheetRowNumber": 186,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "cis.linalool.oxide",
+        "fieldNameR": "cis.linalool.oxide",
+        "sheetRowNumber": 187,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "cis.beta.terpineol",
+        "fieldNameR": "cis.beta.terpineol",
+        "sheetRowNumber": 188,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "dehydroxy.cis.linalool.oxide",
+        "fieldNameR": "dehydroxy.cis.linalool.oxide",
+        "sheetRowNumber": 190,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "dimethoxy..E..citral",
+        "fieldNameR": "dimethoxy..E..citral",
+        "sheetRowNumber": 192,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.E..beta.ocimene",
+        "fieldNameR": "X.E..beta.ocimene",
+        "sheetRowNumber": 193,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.E..dihydro.apofarnesal",
+        "fieldNameR": "X.E..dihydro.apofarnesal",
+        "sheetRowNumber": 194,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "E.nerolidol",
+        "fieldNameR": "E.nerolidol",
+        "sheetRowNumber": 195,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.E..alpha.ionone",
+        "fieldNameR": "X.E..alpha.ionone",
+        "sheetRowNumber": 196,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.E..beta.farnesene",
+        "fieldNameR": "X.E..beta.farnesene",
+        "sheetRowNumber": 197,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.E..beta.ionone",
+        "fieldNameR": "X.E..beta.ionone",
+        "sheetRowNumber": 198,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2E.6Z.farnesal",
+        "fieldNameR": "X2E.6Z.farnesal",
+        "sheetRowNumber": 200,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X1.10.di.epi.cubenol",
+        "fieldNameR": "X1.10.di.epi.cubenol",
+        "sheetRowNumber": 201,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "ethyl..E..linalool",
+        "fieldNameR": "ethyl..E..linalool",
+        "sheetRowNumber": 202,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "eucalyptol",
+        "fieldNameR": "eucalyptol",
+        "sheetRowNumber": 203,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "eugenol",
+        "fieldNameR": "eugenol",
+        "sheetRowNumber": 204,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "foeniculin",
+        "fieldNameR": "foeniculin",
+        "sheetRowNumber": 205,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "gamma.eudesmol",
+        "fieldNameR": "gamma.eudesmol",
+        "sheetRowNumber": 206,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "geosmin",
+        "fieldNameR": "geosmin",
+        "sheetRowNumber": 208,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "germacrene.D",
+        "fieldNameR": "germacrene.D",
+        "sheetRowNumber": 210,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "humulene.epoxide.II",
+        "fieldNameR": "humulene.epoxide.II",
+        "sheetRowNumber": 211,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "isoborneol",
+        "fieldNameR": "isoborneol",
+        "sheetRowNumber": 212,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "limonene",
+        "fieldNameR": "limonene",
+        "sheetRowNumber": 213,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "linalool.isovalerate",
+        "fieldNameR": "linalool.isovalerate",
+        "sheetRowNumber": 216,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "manool",
+        "fieldNameR": "manool",
+        "sheetRowNumber": 217,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X13.epi.manool.oxide",
+        "fieldNameR": "X13.epi.manool.oxide",
+        "sheetRowNumber": 218,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "manool.oxide",
+        "fieldNameR": "manool.oxide",
+        "sheetRowNumber": 219,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "meta.cymenene",
+        "fieldNameR": "meta.cymenene",
+        "sheetRowNumber": 220,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "methyl.geranate",
+        "fieldNameR": "methyl.geranate",
+        "sheetRowNumber": 222,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "E.methyl.isoeugenol",
+        "fieldNameR": "E.methyl.isoeugenol",
+        "sheetRowNumber": 223,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "methyl.para.anisate",
+        "fieldNameR": "methyl.para.anisate",
+        "sheetRowNumber": 224,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "neo.allo.ocimene",
+        "fieldNameR": "neo.allo.ocimene",
+        "sheetRowNumber": 227,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "nerol",
+        "fieldNameR": "nerol",
+        "sheetRowNumber": 228,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "nerol.oxide",
+        "fieldNameR": "nerol.oxide",
+        "sheetRowNumber": 229,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "neryl.formate",
+        "fieldNameR": "neryl.formate",
+        "sheetRowNumber": 230,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "neryl.isobutanoate",
+        "fieldNameR": "neryl.isobutanoate",
+        "sheetRowNumber": 231,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "neryl.isovalerate",
+        "fieldNameR": "neryl.isovalerate",
+        "sheetRowNumber": 232,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "neryl.propanoate",
+        "fieldNameR": "neryl.propanoate",
+        "sheetRowNumber": 233,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "E.ocimenone",
+        "fieldNameR": "E.ocimenone",
+        "sheetRowNumber": 235,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "spathulenol",
+        "fieldNameR": "spathulenol",
+        "sheetRowNumber": 236,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "tau.cadinol",
+        "fieldNameR": "tau.cadinol",
+        "sheetRowNumber": 237,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "tau.muurolol",
+        "fieldNameR": "tau.muurolol",
+        "sheetRowNumber": 238,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "terpinen.4.ol",
+        "fieldNameR": "terpinen.4.ol",
+        "sheetRowNumber": 240,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "terpinen.4.ol.acetate",
+        "fieldNameR": "terpinen.4.ol.acetate",
+        "sheetRowNumber": 241,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "terpinolene",
+        "fieldNameR": "terpinolene",
+        "sheetRowNumber": 242,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "delta.terpinyl.acetate",
+        "fieldNameR": "delta.terpinyl.acetate",
+        "sheetRowNumber": 243,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "dihydroisocaryophyllene.epoxide",
+        "fieldNameR": "dihydroisocaryophyllene.epoxide",
+        "sheetRowNumber": 244,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "trans.dihydro.alpha.terpinyl.acetate",
+        "fieldNameR": "trans.dihydro.alpha.terpinyl.acetate",
+        "sheetRowNumber": 245,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "trans.dihydro.beta.terpineol",
+        "fieldNameR": "trans.dihydro.beta.terpineol",
+        "sheetRowNumber": 246,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "valencene",
+        "fieldNameR": "valencene",
+        "sheetRowNumber": 248,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.Z..dihydro.apofarnesal",
+        "fieldNameR": "X.Z..dihydro.apofarnesal",
+        "sheetRowNumber": 249,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X.Z..beta.farnesene",
+        "fieldNameR": "X.Z..beta.farnesene",
+        "sheetRowNumber": 251,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "X2Z.6E.farnesal",
+        "fieldNameR": "X2Z.6E.farnesal",
+        "sheetRowNumber": 252,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "Z.Z.geranyl.linalool",
+        "fieldNameR": "Z.Z.geranyl.linalool",
+        "sheetRowNumber": 253,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "alpha.eudesmol",
+        "fieldNameR": "alpha.eudesmol",
+        "sheetRowNumber": 254,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "alpha.terpinyl.isobutanoate",
+        "fieldNameR": "alpha.terpinyl.isobutanoate",
+        "sheetRowNumber": 256,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "beta.cyclohomocitral",
+        "fieldNameR": "beta.cyclohomocitral",
+        "sheetRowNumber": 257,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "beta.humulene",
+        "fieldNameR": "beta.humulene",
+        "sheetRowNumber": 258,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "sulfur_sum",
+        "fieldNameR": "sulfur_sum",
+        "sheetRowNumber": 259,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "acids_sum",
+        "fieldNameR": "acids_sum",
+        "sheetRowNumber": 260,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "aroma_hops_sum",
+        "fieldNameR": "aroma_hops_sum",
+        "sheetRowNumber": 261,
+        "hasNumericThreshold": false
+      },
+      {
+        "matchedColumn": "esters_sum",
+        "fieldNameR": "esters_sum",
+        "sheetRowNumber": 262,
+        "hasNumericThreshold": false
+      }
+    ],
+    "nSheetRowsWithoutThreshold": 218,
+    "nThresholdRowsWrittenAsColumns": 43,
+    "compoundsInSheetWithNumericThreshold": [
+      "CS2",
+      "DES",
+      "DMS",
+      "E.caryophyllene",
+      "GFS",
+      "H2S",
+      "SO2.mg.L.",
+      "X1.alpha.terpineol",
+      "X2.3.butanedione",
+      "X4VG",
+      "Z.nerolidol",
+      "acetaldehyde",
+      "acetic_acid.g.L.",
+      "alpha.humulene",
+      "ammonia.mg.L.",
+      "bitterness",
+      "citronellol",
+      "ethanol..v.v.",
+      "ethyl.butyrate",
+      "ethyl.isobutyrate",
+      "ethyl.nicotinate",
+      "ethyl_2.methyl_butyrate",
+      "ethyl_acetate",
+      "ethyl_decanoate",
+      "ethyl_hexanoate",
+      "ethyl_isovalerate",
+      "ethyl_octanoate",
+      "ethyl_propionate",
+      "furfural",
+      "geraniol",
+      "glycerol",
+      "iron",
+      "isoamyl_alcohol",
+      "isobutanol",
+      "isobutyl_acetate",
+      "isopentyl_acetate",
+      "lactic_acid.mg.L.",
+      "linalool",
+      "methylpyrazine",
+      "octyl_acetate",
+      "phenethyl_acetate",
+      "phenethyl_alcohol",
+      "protein.g.L."
+    ],
+    "defectCompoundsNamedByProblem": {
+      "DMS": {
+        "resolved": true,
+        "sheetRowNumber": 155,
+        "fieldNameR": "DMS",
+        "chemicalName": "Dimethyl sulfide",
+        "unit": "ug/L",
+        "thresholdMean": 17.25,
+        "thresholdMedian": 19.0,
+        "thresholdColumnWritten": "thr__DMS",
+        "matchedColumn": "DMS",
+        "matchMethod": "field_name_R exact match to a 1.csv column"
+      },
+      "Diacetyl": {
+        "resolved": true,
+        "sheetRowNumber": 127,
+        "fieldNameR": "X2.3.butanedione",
+        "chemicalName": "Diacetyl",
+        "unit": "mg/L",
+        "thresholdMean": 0.29925,
+        "thresholdMedian": 0.09,
+        "thresholdColumnWritten": "thr__X2.3.butanedione",
+        "matchedColumn": "X2.3.butanedione",
+        "matchMethod": "field_name_R exact match to a 1.csv column"
+      },
+      "4VG": {
+        "resolved": true,
+        "sheetRowNumber": 146,
+        "fieldNameR": "X4VG",
+        "chemicalName": "4-vinylguaiacol",
+        "unit": "mg/L",
+        "thresholdMean": 0.206333333,
+        "thresholdMedian": 0.2,
+        "thresholdColumnWritten": "thr__X4VG",
+        "matchedColumn": "X4VG",
+        "matchMethod": "field_name_R exact match to a 1.csv column"
+      },
+      "trans-2-nonenal": {
+        "resolved": false,
+        "sheetRowNumber": 55,
+        "fieldNameR": "X.E..2.nonenal",
+        "chemicalName": "E-2-nonenal",
+        "unit": "mg/L",
+        "thresholdMean": null,
+        "thresholdMedian": null,
+        "thresholdColumnWritten": null,
+        "matchedColumn": "X.E..2.nonenal",
+        "matchMethod": "semantic match: (E)-2-nonenal == 1.csv X.E..2.nonenal (R name munging)",
+        "reason": "the compound IS present in the sheet and in 1.csv (X.E..2.nonenal) but the sheet carries no numeric threshold for it (threshold_mean and threshold_median are both empty): the defect constraint cannot be evaluated against a numeric threshold from this attachment."
+      },
+      "Stale hops": {
+        "resolved": false,
+        "reason": "the 'Stale hops' compound/descriptor does not occur in the 8.xlsx 'Sensory thresholds' sheet at all, so no threshold can be parsed. In this dataset \"stale hops\" is a SENSORY descriptor (4.csv target \"stale_hops\", 7.csv descriptors), not a measured compound."
+      }
+    },
+    "defectCompoundsMissing": [
+      "Stale hops",
+      "trans-2-nonenal"
+    ]
+  },
+  "crossCheckAgainstQ1Q2Tables": {
+    "checked": true,
+    "source": "data/processed/q1_mapped.csv",
+    "nChemColumnsCompared": 231,
+    "columnNamesIdentical": true,
+    "valuesBitIdentical": true,
+    "rowColumnIdentical": true,
+    "beerColumnIdentical": true,
+    "verdict": "the Q3 chemical/physical block is bit-identical to q1_mapped.csv: the three datasets differ only in what they add (mapped targets / raw targets / style+thresholds), not in the features"
+  },
+  "defectThresholdSetUsed": {
+    "source": "data/processed/data_quality.json",
+    "checked": true,
+    "decidedAt": "data layer (data-engineer), before any Q3 modelling",
+    "rule": "A compound is a DEFECT constraint only if (a) the problem statement names it among the defect compounds OR 8.xlsx carries an off_flavors marker for it, AND (b) 8.xlsx carries a real numeric threshold for it. Thresholds that merely describe a typical/detection level (bitterness 5 IBU, ethanol 1.76 %v/v, protein 1.02 g/L ...) are REFERENCE levels: they stay in the dataset as thr__ columns but must never be used to declare a defect.",
+    "declaredDefectColumns": [
+      "thr__DMS",
+      "thr__X2.3.butanedione",
+      "thr__X4VG",
+      "thr__acetaldehyde",
+      "thr__DES",
+      "thr__H2S",
+      "thr__SO2.mg.L."
+    ],
+    "nDeclared": 7,
+    "allPresentInThisTable": true,
+    "missingFromTable": [],
+    "notEvaluable": [
+      {
+        "label": "trans-2-nonenal",
+        "column": "X.E..2.nonenal",
+        "reason": "the compound exists in the sheet AND in 1.csv (X.E..2.nonenal), but the sheet has no numeric threshold for it: the defect constraint is NOT evaluable from this attachment and no value is invented."
+      },
+      {
+        "label": "Stale hops",
+        "column": null,
+        "reason": "\"stale hops\" is not a compound row of the 'Sensory thresholds' sheet at all: in this dataset it is a SENSORY descriptor (4.csv target \"stale_hops\", 7.csv descriptors), so there is no concentration and no threshold to compare."
+      }
+    ],
+    "referenceOnlyColumns": [
+      "thr__CS2",
+      "thr__E.caryophyllene",
+      "thr__GFS",
+      "thr__X1.alpha.terpineol",
+      "thr__Z.nerolidol",
+      "thr__acetic_acid.g.L.",
+      "thr__alpha.humulene",
+      "thr__ammonia.mg.L.",
+      "thr__bitterness",
+      "thr__citronellol",
+      "thr__ethanol..v.v.",
+      "thr__ethyl.butyrate",
+      "thr__ethyl.isobutyrate",
+      "thr__ethyl.nicotinate",
+      "thr__ethyl_2.methyl_butyrate",
+      "thr__ethyl_acetate",
+      "thr__ethyl_decanoate",
+      "thr__ethyl_hexanoate",
+      "thr__ethyl_isovalerate",
+      "thr__ethyl_octanoate",
+      "thr__ethyl_propionate",
+      "thr__furfural",
+      "thr__geraniol",
+      "thr__glycerol",
+      "thr__iron",
+      "thr__isoamyl_alcohol",
+      "thr__isobutanol",
+      "thr__isobutyl_acetate",
+      "thr__isopentyl_acetate",
+      "thr__lactic_acid.mg.L.",
+      "thr__linalool",
+      "thr__methylpyrazine",
+      "thr__octyl_acetate",
+      "thr__phenethyl_acetate",
+      "thr__phenethyl_alcohol",
+      "thr__protein.g.L."
+    ],
+    "verdict": "all 7 declared defect-threshold columns are present in q3_table.csv; the other 36 threshold columns are reference levels and must NOT be used as defect limits"
+  },
+  "exceedanceCheck": {
+    "acetic_acid.g.L.": {
+      "thresholdMean": 0.14025,
+      "unit": "g/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (g/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 154,
+      "fractionAboveThreshold": 0.616,
+      "rawConcentrationRange": [
+        0.0175,
+        3.2599999995
+      ]
+    },
+    "bitterness": {
+      "thresholdMean": 5.0,
+      "unit": "IBU",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (IBU); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 216,
+      "fractionAboveThreshold": 0.864,
+      "rawConcentrationRange": [
+        0.0717499999,
+        62.250499991
+      ]
+    },
+    "lactic_acid.mg.L.": {
+      "thresholdMean": 416.6666667,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 43,
+      "fractionAboveThreshold": 0.172,
+      "rawConcentrationRange": [
+        20.4999999974,
+        7187.5000050032
+      ]
+    },
+    "ethanol..v.v.": {
+      "thresholdMean": 1.757256,
+      "unit": "v/v",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (v/v); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 244,
+      "fractionAboveThreshold": 0.976,
+      "rawConcentrationRange": [
+        0.035,
+        11.6399999916
+      ]
+    },
+    "isoamyl_alcohol": {
+      "thresholdMean": 40.015,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 129,
+      "fractionAboveThreshold": 0.516,
+      "rawConcentrationRange": [
+        0.1858499998,
+        102.0961849464
+      ]
+    },
+    "isobutanol": {
+      "thresholdMean": 80.0,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.04774,
+        33.3959599842
+      ]
+    },
+    "phenethyl_alcohol": {
+      "thresholdMean": 35.01,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 6,
+      "fractionAboveThreshold": 0.024,
+      "rawConcentrationRange": [
+        0.9085000007,
+        77.4471700332
+      ]
+    },
+    "acetaldehyde": {
+      "thresholdMean": 50.0,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.0125075,
+        18.5621200016
+      ]
+    },
+    "furfural": {
+      "thresholdMean": 60.0,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        6.45e-08,
+        1.818860513
+      ]
+    },
+    "glycerol": {
+      "thresholdMean": 4.433333333,
+      "unit": "g/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (g/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 7,
+      "fractionAboveThreshold": 0.028,
+      "rawConcentrationRange": [
+        0.1600000001,
+        5.9750000052
+      ]
+    },
+    "GFS": {
+      "thresholdMean": 2.9,
+      "unit": "g/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (g/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 45,
+      "fractionAboveThreshold": 0.18,
+      "rawConcentrationRange": [
+        0.0025,
+        82.0850000902
+      ]
+    },
+    "ethyl_2.methyl_butyrate": {
+      "thresholdMean": 0.027,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 17,
+      "fractionAboveThreshold": 0.068,
+      "rawConcentrationRange": [
+        0.0006375,
+        0.2886800002
+      ]
+    },
+    "ethyl_isovalerate": {
+      "thresholdMean": 0.1,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 2,
+      "fractionAboveThreshold": 0.008,
+      "rawConcentrationRange": [
+        3.25833e-05,
+        0.1384050001
+      ]
+    },
+    "ethyl_acetate": {
+      "thresholdMean": 24.0,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 164,
+      "fractionAboveThreshold": 0.656,
+      "rawConcentrationRange": [
+        0.251565,
+        130.907420116
+      ]
+    },
+    "ethyl.butyrate": {
+      "thresholdMean": 0.45,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 8,
+      "fractionAboveThreshold": 0.032,
+      "rawConcentrationRange": [
+        0.000205621,
+        1.883683746
+      ]
+    },
+    "ethyl_decanoate": {
+      "thresholdMean": 1.035,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.0010575,
+        0.6501550003
+      ]
+    },
+    "ethyl_hexanoate": {
+      "thresholdMean": 0.23,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 129,
+      "fractionAboveThreshold": 0.516,
+      "rawConcentrationRange": [
+        0.003335,
+        0.8351050001
+      ]
+    },
+    "ethyl.isobutyrate": {
+      "thresholdMean": 2.6,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        5e-10,
+        0.885719554
+      ]
+    },
+    "ethyl.nicotinate": {
+      "thresholdMean": 6.0,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        2.4e-07,
+        0.305614725
+      ]
+    },
+    "ethyl_octanoate": {
+      "thresholdMean": 0.7,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 66,
+      "fractionAboveThreshold": 0.264,
+      "rawConcentrationRange": [
+        0.00989,
+        2.0001649978
+      ]
+    },
+    "ethyl_propionate": {
+      "thresholdMean": 10.0,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.0036075,
+        0.8168249992
+      ]
+    },
+    "isopentyl_acetate": {
+      "thresholdMean": 0.603333333,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 211,
+      "fractionAboveThreshold": 0.844,
+      "rawConcentrationRange": [
+        0.06464,
+        13.0815749857
+      ]
+    },
+    "isobutyl_acetate": {
+      "thresholdMean": 1.0,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.0005425,
+        0.4703450004
+      ]
+    },
+    "octyl_acetate": {
+      "thresholdMean": 0.5,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.00035075,
+        0.036085
+      ]
+    },
+    "phenethyl_acetate": {
+      "thresholdMean": 1.763333333,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.0060025,
+        1.2805149995
+      ]
+    },
+    "X2.3.butanedione": {
+      "thresholdMean": 0.29925,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 112,
+      "fractionAboveThreshold": 0.448,
+      "rawConcentrationRange": [
+        5.9e-08,
+        121.7310182
+      ]
+    },
+    "ammonia.mg.L.": {
+      "thresholdMean": 2.6,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 219,
+      "fractionAboveThreshold": 0.876,
+      "rawConcentrationRange": [
+        0.1400000001,
+        201.0300001594
+      ]
+    },
+    "iron": {
+      "thresholdMean": 0.1,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 112,
+      "fractionAboveThreshold": 0.448,
+      "rawConcentrationRange": [
+        0.002,
+        5.0350000013
+      ]
+    },
+    "protein.g.L.": {
+      "thresholdMean": 1.023933,
+      "unit": "g/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (g/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 249,
+      "fractionAboveThreshold": 0.996,
+      "rawConcentrationRange": [
+        0.2000000002,
+        35.1999999612
+      ]
+    },
+    "X4VG": {
+      "thresholdMean": 0.206333333,
+      "unit": "mg/L",
+      "chemTransform": "zeroFloor",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 16,
+      "fractionAboveThreshold": 0.064,
+      "rawConcentrationRange": [
+        0.0097015833,
+        0.68483
+      ]
+    },
+    "methylpyrazine": {
+      "thresholdMean": 1.0,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        2.4e-08,
+        0.896099334
+      ]
+    },
+    "CS2": {
+      "thresholdMean": 50.0,
+      "unit": "ug/L",
+      "chemTransform": "zeroFloor",
+      "assumedConcentrationUnit": "same as the threshold unit (ug/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.0071401666,
+        0.9805
+      ]
+    },
+    "DES": {
+      "thresholdMean": 1.2,
+      "unit": "ug/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (ug/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 46,
+      "fractionAboveThreshold": 0.184,
+      "rawConcentrationRange": [
+        0.0124375,
+        4.6951200039
+      ]
+    },
+    "DMS": {
+      "thresholdMean": 17.25,
+      "unit": "ug/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (ug/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 168,
+      "fractionAboveThreshold": 0.672,
+      "rawConcentrationRange": [
+        1.1122725005,
+        520.4516347466
+      ]
+    },
+    "H2S": {
+      "thresholdMean": 3.5,
+      "unit": "ug/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (ug/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 230,
+      "fractionAboveThreshold": 0.92,
+      "rawConcentrationRange": [
+        0.0259375,
+        49.4413099628
+      ]
+    },
+    "SO2.mg.L.": {
+      "thresholdMean": 15.33333333,
+      "unit": "mg/L",
+      "chemTransform": "log10",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.1,
+        11.8499999906
+      ]
+    },
+    "alpha.humulene": {
+      "thresholdMean": 0.625,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 5,
+      "fractionAboveThreshold": 0.02,
+      "rawConcentrationRange": [
+        0.000879728,
+        6.0622472
+      ]
+    },
+    "X1.alpha.terpineol": {
+      "thresholdMean": 1.5,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 26,
+      "fractionAboveThreshold": 0.104,
+      "rawConcentrationRange": [
+        0.019008189,
+        10.78934238
+      ]
+    },
+    "E.caryophyllene": {
+      "thresholdMean": 0.28,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 14,
+      "fractionAboveThreshold": 0.056,
+      "rawConcentrationRange": [
+        1.64e-05,
+        40.92665991
+      ]
+    },
+    "citronellol": {
+      "thresholdMean": 0.0245,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 231,
+      "fractionAboveThreshold": 0.924,
+      "rawConcentrationRange": [
+        0.006587682,
+        11.74178698
+      ]
+    },
+    "geraniol": {
+      "thresholdMean": 0.0315,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 190,
+      "fractionAboveThreshold": 0.76,
+      "rawConcentrationRange": [
+        6.3e-06,
+        2.225405554
+      ]
+    },
+    "linalool": {
+      "thresholdMean": 0.027285,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 246,
+      "fractionAboveThreshold": 0.984,
+      "rawConcentrationRange": [
+        0.013179154,
+        32.48474769
+      ]
+    },
+    "Z.nerolidol": {
+      "thresholdMean": 25.0,
+      "unit": "mg/L",
+      "chemTransform": "raw",
+      "assumedConcentrationUnit": "same as the threshold unit (mg/L); 1.csv carries no unit of its own, so this is an assumption, not a verified fact",
+      "nSamplesAboveThreshold": 0,
+      "fractionAboveThreshold": 0.0,
+      "rawConcentrationRange": [
+        0.000224199,
+        2.743348644
+      ]
+    }
+  },
+  "exceedanceInterpretation": "These fractions are a UNIT/TRANSFORM sanity check, not a defect classification. They are computed as raw_concentration > threshold_mean, with raw = 10**value for log10/zero-floor columns and raw = value for raw columns. They behave as expected for the named defect compounds (DMS 0.672, diacetyl 0.448, 4VG 0.064, DES 0.184, H2S 0.920 above threshold; acetaldehyde 0.000 and CS2 0.000 because those thresholds are far above the measured range), which is why the assumed unit alignment is credible. But the sheet mixes true off-flavour thresholds with ordinary sensory/typical levels (bitterness 5 IBU, ethanol 1.76 %v/v, protein 1.02 g/L are above-threshold for 86-99%% of samples and are NOT defects). Q3 must therefore restrict \"defect\" to the compounds the problem names plus the 7 off_flavors-flagged rows, and report the rest as reference levels.",
+  "styleHoldout": {
+    "heldoutStyles": [
+      "Tripel",
+      "Kriek",
+      "Lambic"
+    ],
+    "rowsHeldout": 49,
+    "rowsTrain": 201,
+    "styleCounts": {
+      "Blond": 31,
+      "Tripel": 28,
+      "Strong ale": 18,
+      "Hoppy": 17,
+      "Stout/Porter": 13,
+      "Wheat": 12,
+      "Amber": 12,
+      "Brown": 12,
+      "Lambic": 11,
+      "Pils/Lager": 11,
+      "Dubbel": 10,
+      "Kriek": 10,
+      "Saison": 10,
+      "Christmas": 9,
+      "Low/No alcohol": 8,
+      "Fruitbeer": 8,
+      "West Flanders ale": 7,
+      "Brett/cofermented": 6,
+      "Scotch": 5,
+      "Flanders old brown": 5,
+      "Brut": 4,
+      "Faro": 3
+    },
+    "note": "A style-level holdout is the only honest way to test cross-style transfer: the problem asks for generation under a held-out style, so 49 rows of Tripel/Kriek/Lambic are labelled heldout_style and the remaining 201 rows train_style. The Q3 random split registered on this table is a separate, row-level split for the unconditional baseline."
+  },
+  "imputation": {
+    "policy": "train-row median of the same column (identical to data_quality.json missingHandling)",
+    "seed": 20261024,
+    "trainRowCount": 200,
+    "testRowCount": 50,
+    "nColumns": 9,
+    "nCells": 73,
+    "perColumn": {
+      "X2.3.butanedione": {
+        "nMissing": 9,
+        "trainMedian": 0.2881045505,
+        "missingRowPositions": [
+          13,
+          25,
+          31,
+          69,
+          77,
+          91,
+          104,
+          171,
+          232
+        ]
+      },
+      "X3.methylbutanal": {
+        "nMissing": 7,
+        "trainMedian": 0.098372981,
+        "missingRowPositions": [
+          0,
+          25,
+          33,
+          171,
+          191,
+          203,
+          232
+        ]
+      },
+      "ethyl.isobutyrate": {
+        "nMissing": 1,
+        "trainMedian": 0.042502772,
+        "missingRowPositions": [
+          105
+        ]
+      },
+      "methylpyrazine": {
+        "nMissing": 12,
+        "trainMedian": 0.0002779585,
+        "missingRowPositions": [
+          35,
+          48,
+          52,
+          75,
+          90,
+          149,
+          171,
+          182,
+          195,
+          232,
+          238,
+          246
+        ]
+      },
+      "furfural": {
+        "nMissing": 1,
+        "trainMedian": 0.007750873,
+        "missingRowPositions": [
+          52
+        ]
+      },
+      "amyl.acetate": {
+        "nMissing": 27,
+        "trainMedian": 0.002458984,
+        "missingRowPositions": [
+          6,
+          7,
+          9,
+          17,
+          43,
+          49,
+          50,
+          59,
+          62,
+          67,
+          70,
+          74,
+          121,
+          124,
+          131,
+          141,
+          144,
+          146,
+          162,
+          163,
+          170,
+          192,
+          213,
+          220,
+          227,
+          241,
+          244
+        ]
+      },
+      "phenylacetaldehyde": {
+        "nMissing": 1,
+        "trainMedian": 0.011750932,
+        "missingRowPositions": [
+          173
+        ]
+      },
+      "ethyl.nicotinate": {
+        "nMissing": 2,
+        "trainMedian": 0.010360708,
+        "missingRowPositions": [
+          0,
+          131
+        ]
+      },
+      "aroma_hops_sum": {
+        "nMissing": 13,
+        "trainMedian": 1.991638091,
+        "missingRowPositions": [
+          21,
+          47,
+          48,
+          56,
+          66,
+          71,
+          90,
+          125,
+          138,
+          139,
+          145,
+          209,
+          217
+        ]
+      }
+    },
+    "crossCheckAgainstDataQualityJson": {
+      "checked": true,
+      "source": "data/processed/data_quality.json",
+      "columnsCompared": 9,
+      "mismatches": [],
+      "verdict": "the train-row medians used here are identical to the ones recorded by 00_prepare_q1q2.py"
+    }
+  },
+  "forbiddenInputs": {
+    "gbmImportanceMDI": "NOT written: it is a model output fitted on these same 250 samples (target leakage).",
+    "gbmSHAPValues": "NOT written: same reason.",
+    "beerPrices": "NOT written and not a core input: 7 price columns with heavy NA; style/ABV metadata cannot explain compound spectra.",
+    "calibratedChemicalDataset": "used only as the scale reference for the 70 alignable columns (data_quality.json -> scaleAudit / calibratedCrossCheck); it is not a column of q3_table.csv."
+  },
+  "notes": [
+    "Thresholds are constants from the attachment, not fitted quantities; they are the same in every row by construction, so any per-row variation would be a bug.",
+    "The threshold unit is the sheet unit (mg/L or ug/L per compound, per the sheet). 1.csv carries no unit, so turning chem__ values into an OAV needs the transform from data_quality.json AND the unit assumption recorded in exceedanceCheck.assumedConcentrationUnit.",
+    "The five defect compounds named by the problem are resolved one by one in notParsed.defectCompoundsNamedByProblem; two of them (trans-2-nonenal, Stale hops) genuinely have no numeric threshold in the attachment and must be reported as such rather than fixed by assumption."
+  ]
+}

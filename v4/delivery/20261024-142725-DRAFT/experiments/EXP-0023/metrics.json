@@ -1,0 +1,7 @@
+{
+  "n_dimensions": 50,
+  "n_features": 231,
+  "n_methods": 2,
+  "ridge_alpha": 300.0,
+  "topk-jaccard": 0.19999999999999996
+}

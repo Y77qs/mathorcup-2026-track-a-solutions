@@ -1,0 +1,22 @@
+{
+  "figures": [
+    {
+      "name": "q1_hgb_per_target_mae.png",
+      "path": "figures/q1_hgb_per_target_mae.png",
+      "sha256": "4b96e9a46a23fd79b8193fc768fc244428915e1db2931c27c412d9c27487551e",
+      "bytes": 74491
+    },
+    {
+      "name": "q1_hgb_scatter.png",
+      "path": "figures/q1_hgb_scatter.png",
+      "sha256": "2d5da4eb8594042217fd040b8ee1ffeee869ed29772f41ba82ab4bb37314e541",
+      "bytes": 109583
+    },
+    {
+      "name": "q1_hgb_residuals.png",
+      "path": "figures/q1_hgb_residuals.png",
+      "sha256": "40b091c2f91c95004d9f228750733157d0495847fea8e0a1c7b24a9345c28da2",
+      "bytes": 28224
+    }
+  ]
+}

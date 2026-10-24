@@ -1,0 +1,19 @@
+{
+  "constraint-satisfaction": 1.0,
+  "constraint-satisfaction-unconstrained": 0.04833333333333333,
+  "defect-nonworsen-rate": 1.0,
+  "defect-nonworsen-rate-rawshift": 0.17142857142857143,
+  "energy-distance": 4.020405626785386,
+  "energy-distance-unconstrained": 4.010935251744056,
+  "heldout-real-base-rate": 0.0,
+  "n_holdout_rows": 40,
+  "n_samples": 600,
+  "n_samples_per_style": 200,
+  "n_train_rows": 160,
+  "profile-consistency": 0.4852171316938933,
+  "real_sample_constraint_satisfaction": 0.02,
+  "shrinkage": 0.25,
+  "transfer-satisfaction-constrained": 0.0,
+  "transfer-satisfaction-rawshift": 0.0,
+  "transfer-satisfaction-source": 0.0
+}

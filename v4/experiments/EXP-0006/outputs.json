@@ -1,0 +1,95 @@
+{
+  "artifacts": {
+    "figures": [
+      {
+        "name": "q3_baseline_constraint_satisfaction.png",
+        "path": "figures/q3_baseline_constraint_satisfaction.png",
+        "sha256": "bf841dba8ad969a402b14eb48efb9e3d9b067d73a486c708d7c2d36148e10880"
+      },
+      {
+        "name": "q3_baseline_profile_scatter.png",
+        "path": "figures/q3_baseline_profile_scatter.png",
+        "sha256": "ad843a548524bd3a74da7f32c5d7ac0fb20b0ecb9e2cac457064f4c4b36c2d69"
+      },
+      {
+        "name": "q3_baseline_defect_rates.png",
+        "path": "figures/q3_baseline_defect_rates.png",
+        "sha256": "b91bde897b73bfefacbe3d54f4a20cc80189cbc213a7ec98d05a5032b4e9ef9e"
+      }
+    ],
+    "samplesFile": "generated_profiles.csv",
+    "seed": 20261024
+  },
+  "defectCounts": {
+    "generated": {
+      "excess__DES": 86,
+      "excess__DMS": 197,
+      "excess__H2S": 196,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 167,
+      "excess__X4VG": 17,
+      "excess__acetaldehyde": 3
+    },
+    "realAll250": {
+      "excess__DES": 46,
+      "excess__DMS": 168,
+      "excess__H2S": 230,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 112,
+      "excess__X4VG": 16,
+      "excess__acetaldehyde": 0
+    },
+    "realAll250SatisfyingAll7": 6,
+    "realHeldoutSatisfyingAll7": 0,
+    "realHeldoutStyles": {
+      "excess__DES": 6,
+      "excess__DMS": 35,
+      "excess__H2S": 47,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 25,
+      "excess__X4VG": 0,
+      "excess__acetaldehyde": 0
+    },
+    "scaleAuditBasis": "runner-dependency-snapshot",
+    "thresholdsOriginalUnits": {
+      "DES": 1.2,
+      "DMS": 17.25,
+      "H2S": 3.5,
+      "SO2.mg.L.": 15.33333333,
+      "X2.3.butanedione": 0.29925,
+      "X4VG": 0.206333333,
+      "acetaldehyde": 50.0
+    }
+  },
+  "evaluation": {
+    "definition": "fraction of generated rows with all seven excess__<compound> <= 0, excess = inverse_transform(chem__<compound>)/thr__<compound> - 1 ; generated_profiles.csv carries BOTH the chem__ values and their excess__ values so a reviewer can recompute excess independently",
+    "family": "unconditional global Gaussian, independent per compound (baseline)",
+    "kind": "constraint-satisfaction",
+    "metricKey": "constraint-satisfaction",
+    "modelContractId": "MCON-0001",
+    "samplesFile": "generated_profiles.csv",
+    "scope": "generation reasonableness / constraint satisfaction; NOT a real brewing validation",
+    "tolerance": 1e-09,
+    "unassessableDefects": [
+      "X.E..2.nonenal",
+      "3-methyl-2-butenal"
+    ]
+  },
+  "perStyle": {
+    "Kriek": {
+      "energyDistance": 7.10793169919173,
+      "n": 10,
+      "profileSpearman": -0.09503981775346093
+    },
+    "Lambic": {
+      "energyDistance": 2.626530247395496,
+      "n": 11,
+      "profileSpearman": -0.06031172725325649
+    },
+    "Tripel": {
+      "energyDistance": 1.289895223427221,
+      "n": 28,
+      "profileSpearman": 0.06337837574719134
+    }
+  }
+}

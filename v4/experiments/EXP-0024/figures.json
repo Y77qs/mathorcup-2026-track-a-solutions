@@ -1,0 +1,22 @@
+{
+  "figures": [
+    {
+      "name": "q1_baseline_per_target_mae.png",
+      "path": "figures/q1_baseline_per_target_mae.png",
+      "sha256": "1a21f4c6c8036d6dc7437824cda54c11b1c5c1556448dcf774bcc6a5853507bc",
+      "bytes": 74744
+    },
+    {
+      "name": "q1_baseline_scatter.png",
+      "path": "figures/q1_baseline_scatter.png",
+      "sha256": "b63c8e52054b72cb9acb50f036df691eba6c3ea2436729e0ea6219471e004db8",
+      "bytes": 118187
+    },
+    {
+      "name": "q1_baseline_residuals.png",
+      "path": "figures/q1_baseline_residuals.png",
+      "sha256": "e803c174807769bbd6b06126b5e79d099ac6fdd98167cbbbe90fc978e2d9e449",
+      "bytes": 26097
+    }
+  ]
+}

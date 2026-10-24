@@ -1,0 +1,10 @@
+{
+  "alpha": 300.0,
+  "holdout_mae_mean": 0.7713941642358138,
+  "mae": 0.7713941642358138,
+  "n_features": 231,
+  "n_holdout_rows": 40,
+  "n_targets": 50,
+  "n_train_rows": 160,
+  "train_only_oof_mae_mean": 0.6765258575469274
+}

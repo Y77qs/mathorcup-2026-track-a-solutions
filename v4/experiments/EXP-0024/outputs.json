@@ -1,0 +1,345 @@
+{
+  "artifacts": {
+    "figures": [
+      {
+        "name": "q1_baseline_per_target_mae.png",
+        "path": "figures/q1_baseline_per_target_mae.png",
+        "sha256": "1a21f4c6c8036d6dc7437824cda54c11b1c5c1556448dcf774bcc6a5853507bc"
+      },
+      {
+        "name": "q1_baseline_scatter.png",
+        "path": "figures/q1_baseline_scatter.png",
+        "sha256": "b63c8e52054b72cb9acb50f036df691eba6c3ea2436729e0ea6219471e004db8"
+      },
+      {
+        "name": "q1_baseline_residuals.png",
+        "path": "figures/q1_baseline_residuals.png",
+        "sha256": "e803c174807769bbd6b06126b5e79d099ac6fdd98167cbbbe90fc978e2d9e449"
+      }
+    ],
+    "note": "no holdout information is used to fit the constant",
+    "predictionTables": {
+      "long": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0024/predictions_long.csv",
+      "nRows": 40,
+      "nTargets": 50,
+      "wide": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0024/predictions.csv"
+    },
+    "seed": 20261024
+  },
+  "evaluation": {
+    "aggregation": "uniform-average over the 50 targets of the holdout MAE",
+    "family": "constant-per-target (train median)",
+    "features": [],
+    "holdoutReuse": 1,
+    "idColumn": "row",
+    "kind": "multi-output",
+    "metric": "mae",
+    "metricKey": "mae",
+    "predictionsFile": "predictions.csv",
+    "scale": "mapped grade, non-original 0-6 (see data quality report)",
+    "targets": [
+      "A_malt_all",
+      "A_malt_grain",
+      "A_malt_bread",
+      "A_malt_cara",
+      "A_malt_burn",
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_hops_tropical",
+      "A_hops_noble",
+      "A_hops_woody",
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_esters_isoaa",
+      "A_esters_flower",
+      "A_esters_fruity",
+      "F_malt_all",
+      "F_malt_grain",
+      "F_malt_bread",
+      "F_malt_cara",
+      "F_malt_burn",
+      "F_hops_all",
+      "F_hops_citrus",
+      "F_hops_tropical",
+      "F_hops_noble",
+      "F_hops_woody",
+      "F_esters_all",
+      "F_esters_ethac",
+      "F_esters_isoaa",
+      "F_esters_flower",
+      "F_esters_fruity",
+      "acidity",
+      "bitternes",
+      "sweetness",
+      "X4vg",
+      "diacetyl",
+      "dms",
+      "metallic",
+      "stale_hops",
+      "t2n",
+      "orange",
+      "coriander",
+      "clove",
+      "lactic",
+      "acetic",
+      "barnyard",
+      "alcohol",
+      "aftertaste",
+      "body",
+      "co2",
+      "overall"
+    ]
+  },
+  "per_target": {
+    "A_esters_all": {
+      "mae": 0.9711706378142251,
+      "r2": -0.0002806522801432898,
+      "rmse": 1.1899780347517843
+    },
+    "A_esters_ethac": {
+      "mae": 1.0190611029696377,
+      "r2": -0.005387525285446282,
+      "rmse": 1.1786543218238301
+    },
+    "A_esters_flower": {
+      "mae": 0.7237711487915076,
+      "r2": -0.02285806012471192,
+      "rmse": 0.9705240614189549
+    },
+    "A_esters_fruity": {
+      "mae": 0.5630226424284472,
+      "r2": -0.01175846086024035,
+      "rmse": 0.8156076140806906
+    },
+    "A_esters_isoaa": {
+      "mae": 1.0220828248184401,
+      "r2": -0.013166011810057165,
+      "rmse": 1.1955306879927152
+    },
+    "A_hops_all": {
+      "mae": 0.7775013331073499,
+      "r2": -0.2022128394716407,
+      "rmse": 0.9673274208480444
+    },
+    "A_hops_citrus": {
+      "mae": 1.0641103256094253,
+      "r2": -0.23686357412652437,
+      "rmse": 1.4908350884296542
+    },
+    "A_hops_noble": {
+      "mae": 0.7278443410027428,
+      "r2": -0.01683859168630053,
+      "rmse": 0.9097881690492113
+    },
+    "A_hops_tropical": {
+      "mae": 0.7395997800152674,
+      "r2": -0.2858481685340133,
+      "rmse": 1.2749767516833885
+    },
+    "A_hops_woody": {
+      "mae": 0.768922257161525,
+      "r2": -0.07115719847017044,
+      "rmse": 1.1072715421780435
+    },
+    "A_malt_all": {
+      "mae": 0.8090645287991253,
+      "r2": -0.05131852428997341,
+      "rmse": 1.0955043857810707
+    },
+    "A_malt_bread": {
+      "mae": 0.5810460090949225,
+      "r2": -0.07185560153806692,
+      "rmse": 0.7853424996754139
+    },
+    "A_malt_burn": {
+      "mae": 0.47453862472590763,
+      "r2": -0.050483683356379316,
+      "rmse": 0.970016145647739
+    },
+    "A_malt_cara": {
+      "mae": 1.0914105636638975,
+      "r2": -0.042065369501233185,
+      "rmse": 1.4859359795791356
+    },
+    "A_malt_grain": {
+      "mae": 0.7435084166025502,
+      "r2": -0.045331158253589354,
+      "rmse": 1.0141284768901606
+    },
+    "F_esters_all": {
+      "mae": 0.9090134419326752,
+      "r2": -0.019407940855829864,
+      "rmse": 1.1107013757788
+    },
+    "F_esters_ethac": {
+      "mae": 0.7659466031222002,
+      "r2": -0.05791643728638052,
+      "rmse": 0.9251380019573289
+    },
+    "F_esters_flower": {
+      "mae": 0.5331160527219251,
+      "r2": -0.1604576436449372,
+      "rmse": 0.7050526550972994
+    },
+    "F_esters_fruity": {
+      "mae": 0.5676311547657249,
+      "r2": -0.0035225257693023426,
+      "rmse": 0.7546572313151796
+    },
+    "F_esters_isoaa": {
+      "mae": 0.6787652940805249,
+      "r2": -0.11887157456634068,
+      "rmse": 0.9745816601285412
+    },
+    "F_hops_all": {
+      "mae": 0.8825229375232997,
+      "r2": -0.11709166886987732,
+      "rmse": 1.1271238237569163
+    },
+    "F_hops_citrus": {
+      "mae": 0.776778421800775,
+      "r2": -0.07997368763061985,
+      "rmse": 1.16905487827465
+    },
+    "F_hops_noble": {
+      "mae": 0.7608478494092998,
+      "r2": -0.1336821208619141,
+      "rmse": 0.9911682183468619
+    },
+    "F_hops_tropical": {
+      "mae": 0.8732492133062774,
+      "r2": -0.3513645145697144,
+      "rmse": 1.2870843674507677
+    },
+    "F_hops_woody": {
+      "mae": 0.7410325336348152,
+      "r2": -0.024798405709677285,
+      "rmse": 1.0157644032500923
+    },
+    "F_malt_all": {
+      "mae": 0.7769877319081501,
+      "r2": -0.0010683304689089734,
+      "rmse": 1.0318499405447097
+    },
+    "F_malt_bread": {
+      "mae": 0.9490791779322725,
+      "r2": -0.19493053314214226,
+      "rmse": 1.206805350405649
+    },
+    "F_malt_burn": {
+      "mae": 0.67423208318193,
+      "r2": -0.09410293198428832,
+      "rmse": 1.1474939449401396
+    },
+    "F_malt_cara": {
+      "mae": 0.8983862980324101,
+      "r2": -0.04895410054119087,
+      "rmse": 1.2735403075024172
+    },
+    "F_malt_grain": {
+      "mae": 0.8423291613500001,
+      "r2": -0.005481769116043367,
+      "rmse": 1.0915896748364526
+    },
+    "X4vg": {
+      "mae": 0.5251505130127525,
+      "r2": -0.0807364796453598,
+      "rmse": 0.8662400613365402
+    },
+    "acetic": {
+      "mae": 0.5206029567392747,
+      "r2": -0.14488803893199065,
+      "rmse": 1.4227043016123502
+    },
+    "acidity": {
+      "mae": 0.7191127105046002,
+      "r2": -0.15837189473788915,
+      "rmse": 1.5520913354019052
+    },
+    "aftertaste": {
+      "mae": 0.674230581222275,
+      "r2": -0.0021686152183553187,
+      "rmse": 0.9713890949078235
+    },
+    "alcohol": {
+      "mae": 1.0193647100117151,
+      "r2": -0.0010033401421400967,
+      "rmse": 1.2992477099231443
+    },
+    "barnyard": {
+      "mae": 0.7180454337851272,
+      "r2": -0.10369358097696613,
+      "rmse": 1.2071740883652764
+    },
+    "bitternes": {
+      "mae": 0.8490394434636247,
+      "r2": -0.00864264328903519,
+      "rmse": 1.1143041977010482
+    },
+    "body": {
+      "mae": 0.91634276141965,
+      "r2": -0.05725163148118506,
+      "rmse": 1.091664672878209
+    },
+    "clove": {
+      "mae": 0.11502040442360248,
+      "r2": -0.09403892765854382,
+      "rmse": 0.3119569187981564
+    },
+    "co2": {
+      "mae": 1.09686202455075,
+      "r2": -0.11341033926936395,
+      "rmse": 1.2606941947164445
+    },
+    "coriander": {
+      "mae": 0.252235531255678,
+      "r2": -0.11070609938302312,
+      "rmse": 0.6056262206799224
+    },
+    "diacetyl": {
+      "mae": 0.7665952914716101,
+      "r2": -0.04083660232318542,
+      "rmse": 0.9648584394712837
+    },
+    "dms": {
+      "mae": 0.7732694702231228,
+      "r2": -0.002246313380507736,
+      "rmse": 0.9511356171086958
+    },
+    "lactic": {
+      "mae": 0.610803109497975,
+      "r2": -0.17167315566475216,
+      "rmse": 1.5426950375654769
+    },
+    "metallic": {
+      "mae": 0.8481360358041752,
+      "r2": -0.018201959233449028,
+      "rmse": 1.0112899219566804
+    },
+    "orange": {
+      "mae": 0.3620647929967741,
+      "r2": -0.14278908436059035,
+      "rmse": 0.9181636164612165
+    },
+    "overall": {
+      "mae": 0.8994235026069999,
+      "r2": -0.0004742862782438628,
+      "rmse": 1.0920172257182403
+    },
+    "stale_hops": {
+      "mae": 0.71313421783952,
+      "r2": -0.10459190365948001,
+      "rmse": 1.1781901877827454
+    },
+    "sweetness": {
+      "mae": 0.6942132628517201,
+      "r2": -0.02817087093821713,
+      "rmse": 0.9215093540480245
+    },
+    "t2n": {
+      "mae": 1.0543371609021779,
+      "r2": -0.13029745001505288,
+      "rmse": 1.2232800757335787
+    }
+  }
+}

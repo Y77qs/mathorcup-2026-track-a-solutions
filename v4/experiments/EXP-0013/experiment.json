@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v2",
+  "id": "EXP-0013",
+  "questionId": "Q3",
+  "modelId": "MODEL-0012",
+  "modelKind": "candidate",
+  "title": "Q3 robustness R5 (ROB-0003): n=200/style, shrinkage x0.5, unexposed pool DATA-0006, new split seed 20261025",
+  "assumptions": [
+    "Pre-registered robustness perturbation (ROB-0003): sample budget 100->200 per style and covariance shrinkage halved; RNG seed changes to the registered seed.",
+    "Fitting uses ONLY style_holdout == train_style rows of the pool (160 rows); the pool's 40 held-out-style rows are used only for distributional comparison.",
+    "The pool rows are a subset of DATA-0003 with row ids preserved; no row was invented.",
+    "Generation reasonableness / constraint satisfaction / distributional consistency, NOT a real brewing validation."
+  ],
+  "equations": [
+    "lambda = clip(0.5 * shrinkage_multiplier, 0, 1)",
+    "z_style ~ Normal(mu_style, (1-lambda)Cov + lambda diag(Cov))",
+    "constrained: defect compounds clipped to thr when excess > 0",
+    "energy-distance = sqrt(2E||X-Y|| - E||X-X'|| - E||Y-Y'||) in standardised space"
+  ],
+  "algorithm": "Same style-conditional generator + defect-constraint projection as EXP-0007, with the PRE-REGISTERED robustness perturbation params.generator={n_samples_per_style:200, shrinkage_multiplier:0.5} (lambda=0.25) on the UNEXPOSED evaluation pool DATA-0006 with a new split (SPLIT-0012, seed 20261025). Emits both constraint-satisfaction (native recompute) and energy-distance (ROB-0003 metricKey).",
+  "params": {
+    "featuresSource": "same 231 chem__* columns as EXP-0007 (DATA-0006 chem block)",
+    "family": "style-conditional-gaussian-constrained",
+    "stochastic": false,
+    "freezeSources": true,
+    "dependenciesComplete": true,
+    "dependencies": [
+      "data/processed/data_quality.json",
+      "data/processed/q1_mapped.csv",
+      "data/splits/SPLIT-0001/train.csv"
+    ],
+    "evaluation": {
+      "kind": "constraint-satisfaction",
+      "metricKey": "constraint-satisfaction",
+      "modelContractId": "MCON-0001",
+      "samplesFile": "generated_profiles.csv",
+      "tolerance": 1e-9
+    },
+    "generator": {
+      "n_samples_per_style": 200,
+      "shrinkage_multiplier": 0.5
+    },
+    "priorStyleMapping": {
+      "Tripel": [
+        "Strong ale",
+        "Dubbel"
+      ],
+      "Kriek": [
+        "Fruitbeer"
+      ],
+      "Lambic": [
+        "Faro",
+        "Flanders old brown",
+        "West Flanders ale",
+        "Brett/cofermented"
+      ]
+    },
+    "transfer": {
+      "sourceStyle": "Pils/Lager",
+      "targetStyle": "Tripel"
+    },
+    "robustnessPlanId": "ROB-0003",
+    "scope": "generation reasonableness / constraint satisfaction / distributional consistency; NOT a real brewing validation; no causal claim"
+  },
+  "datasetId": "DATA-0006",
+  "splitId": "SPLIT-0012",
+  "dataset": {
+    "id": "DATA-0006",
+    "path": "data/processed/q3_pool.csv",
+    "sha256": "06d8ee5f4c4a22e8c2861a3e06eb39b1135684231615fb02930e16a9b007bc2d",
+    "bytes": 620697,
+    "targetColumn": "style",
+    "profileHash": null
+  },
+  "split": {
+    "id": "SPLIT-0012",
+    "datasetId": "DATA-0006",
+    "method": "random-holdout",
+    "counts": {
+      "rows": 200,
+      "train": 160,
+      "test": 40
+    },
+    "trainPath": "data/splits/SPLIT-0012/train.csv",
+    "trainSha256": "dbe765baf0e09e51ffcda5edb473b0c93969f40ab8033b73cd401600249b4d51",
+    "testPath": "data/splits/SPLIT-0012/test.csv",
+    "testSha256": "86b6f3c46f87b936f578d688bd6d74811e0258123bf9efd08432202a6f99985c",
+    "assignmentPath": "data/splits/SPLIT-0012/assignment.csv",
+    "assignmentSha256": "756183b13de430e1d244b65b95326f91416732824e1aaabe56b7842fdfa792fd"
+  },
+  "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+  "code": {
+    "path": "src/q3_generate.py",
+    "sha256": "636e025894b1ad56b4c4262bd12912370538c9b90a6063299cd9b0edd746e234",
+    "bytes": 23237
+  },
+  "dependencies": [
+    {
+      "path": "data/processed/data_quality.json",
+      "sha256": "249dc17c52c2c9b954dfa09c4cfbea0ac1ff24d38f711b32d411a7558c714dcc",
+      "bytes": 261107
+    },
+    {
+      "path": "data/processed/q1_mapped.csv",
+      "sha256": "64651e40fbda83fc70d66fd3164bc0932562da143d0ec1946340ea27c5b5c8ab",
+      "bytes": 880700
+    },
+    {
+      "path": "data/splits/SPLIT-0001/train.csv",
+      "sha256": "52129428f0348591a46036b1da01894097bc2c616f8eb9907b175f6b46288487",
+      "bytes": 705521
+    },
+    {
+      "path": "src/q3_generate.py",
+      "sha256": "636e025894b1ad56b4c4262bd12912370538c9b90a6063299cd9b0edd746e234",
+      "bytes": 23237
+    },
+    {
+      "path": "src/q3_lib.py",
+      "sha256": "7750e1ce99ed14beb4535fee48f356bdebb31098e88d8afca98c6196d322b78d",
+      "bytes": 13979
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd",
+      "bytes": 15113
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0013/inputs/src/q3_generate.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0013/inputs/data/processed/data_quality.json",
+        "sha256": "249dc17c52c2c9b954dfa09c4cfbea0ac1ff24d38f711b32d411a7558c714dcc",
+        "bytes": 261107,
+        "originalPath": "data/processed/data_quality.json"
+      },
+      {
+        "path": "experiments/EXP-0013/inputs/data/processed/q1_mapped.csv",
+        "sha256": "64651e40fbda83fc70d66fd3164bc0932562da143d0ec1946340ea27c5b5c8ab",
+        "bytes": 880700,
+        "originalPath": "data/processed/q1_mapped.csv"
+      },
+      {
+        "path": "experiments/EXP-0013/inputs/data/splits/SPLIT-0001/train.csv",
+        "sha256": "52129428f0348591a46036b1da01894097bc2c616f8eb9907b175f6b46288487",
+        "bytes": 705521,
+        "originalPath": "data/splits/SPLIT-0001/train.csv"
+      },
+      {
+        "path": "experiments/EXP-0013/inputs/src/q3_generate.py",
+        "sha256": "636e025894b1ad56b4c4262bd12912370538c9b90a6063299cd9b0edd746e234",
+        "bytes": 23237,
+        "originalPath": "src/q3_generate.py"
+      },
+      {
+        "path": "experiments/EXP-0013/inputs/src/q3_lib.py",
+        "sha256": "7750e1ce99ed14beb4535fee48f356bdebb31098e88d8afca98c6196d322b78d",
+        "bytes": 13979,
+        "originalPath": "src/q3_lib.py"
+      },
+      {
+        "path": "experiments/EXP-0013/inputs/src/q_common.py",
+        "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd",
+        "bytes": 15113,
+        "originalPath": "src/q_common.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q3_generate.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/src/q3_generate.py"
+    ],
+    "cwd": "experiments/EXP-0013"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261027,
+    "timeoutSeconds": 600,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/src/q3_generate.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261027,
+  "timeoutSeconds": 600,
+  "rerunOf": null,
+  "requestSignature": "9fdc08bed6f21611f85e5cc843765831f3e7a2b682b27741e6bdde4999903e17",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "q3-rob-r5-n200-shr05-split0012",
+  "createdAt": "2026-10-24T06:07:15.324Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0013",
+  "registration": {
+    "questionId": "Q3",
+    "modelKind": "candidate",
+    "title": "Q3 robustness R5 (ROB-0003): n=200/style, shrinkage x0.5, unexposed pool DATA-0006, new split seed 20261025",
+    "assumptions": [
+      "Pre-registered robustness perturbation (ROB-0003): sample budget 100->200 per style and covariance shrinkage halved; RNG seed changes to the registered seed.",
+      "Fitting uses ONLY style_holdout == train_style rows of the pool (160 rows); the pool's 40 held-out-style rows are used only for distributional comparison.",
+      "The pool rows are a subset of DATA-0003 with row ids preserved; no row was invented.",
+      "Generation reasonableness / constraint satisfaction / distributional consistency, NOT a real brewing validation."
+    ],
+    "equations": [
+      "lambda = clip(0.5 * shrinkage_multiplier, 0, 1)",
+      "z_style ~ Normal(mu_style, (1-lambda)Cov + lambda diag(Cov))",
+      "constrained: defect compounds clipped to thr when excess > 0",
+      "energy-distance = sqrt(2E||X-Y|| - E||X-X'|| - E||Y-Y'||) in standardised space"
+    ],
+    "algorithm": "Same style-conditional generator + defect-constraint projection as EXP-0007, with the PRE-REGISTERED robustness perturbation params.generator={n_samples_per_style:200, shrinkage_multiplier:0.5} (lambda=0.25) on the UNEXPOSED evaluation pool DATA-0006 with a new split (SPLIT-0012, seed 20261025). Emits both constraint-satisfaction (native recompute) and energy-distance (ROB-0003 metricKey).",
+    "params": {
+      "featuresSource": "same 231 chem__* columns as EXP-0007 (DATA-0006 chem block)",
+      "family": "style-conditional-gaussian-constrained",
+      "stochastic": false,
+      "freezeSources": true,
+      "dependenciesComplete": true,
+      "dependencies": [
+        "data/processed/data_quality.json",
+        "data/processed/q1_mapped.csv",
+        "data/splits/SPLIT-0001/train.csv"
+      ],
+      "evaluation": {
+        "kind": "constraint-satisfaction",
+        "metricKey": "constraint-satisfaction",
+        "modelContractId": "MCON-0001",
+        "samplesFile": "generated_profiles.csv",
+        "tolerance": 1e-9
+      },
+      "generator": {
+        "n_samples_per_style": 200,
+        "shrinkage_multiplier": 0.5
+      },
+      "priorStyleMapping": {
+        "Tripel": [
+          "Strong ale",
+          "Dubbel"
+        ],
+        "Kriek": [
+          "Fruitbeer"
+        ],
+        "Lambic": [
+          "Faro",
+          "Flanders old brown",
+          "West Flanders ale",
+          "Brett/cofermented"
+        ]
+      },
+      "transfer": {
+        "sourceStyle": "Pils/Lager",
+        "targetStyle": "Tripel"
+      },
+      "robustnessPlanId": "ROB-0003",
+      "scope": "generation reasonableness / constraint satisfaction / distributional consistency; NOT a real brewing validation; no causal claim"
+    },
+    "codeFile": "src/q3_generate.py",
+    "datasetId": "DATA-0006",
+    "splitId": "SPLIT-0012",
+    "seed": 20261027,
+    "args": [],
+    "timeoutSeconds": 600,
+    "modelId": "MODEL-0012"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "checkType": "baseline-compare",
+  "metric": "mae",
+  "tolerance": {
+    "absolute": 1e-9,
+    "relative": 0.000001,
+    "source": "checks[i].tolerance"
+  },
+  "candidateMetric": 0.6685467308887166,
+  "baselineMetric": 0.7509114931486188,
+  "metricDirection": "minimize",
+  "mode": "improve",
+  "baselineExperimentId": "EXP-0001",
+  "expectedHashes": {},
+  "experimentId": "EXP-0002",
+  "validationPlanId": "VP-0009",
+  "provenanceSummary": {
+    "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+    "experiment": {
+      "id": "EXP-0002",
+      "status": "succeeded",
+      "metricsSha256": "bdba526db2872f8f41d1dac880735fc39ae3cfbd15265aaab16bfd36c642959a",
+      "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399"
+    },
+    "inputs": [
+      {
+        "kind": "experiment-code",
+        "path": "experiments/EXP-0002/inputs/src/q1_candidate_ridge.py",
+        "sha256": "2348e3886bf7760f56c44c8f78b3466a0a13fb5cf15379094937af7cb6944841"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0002/inputs/src/q1_candidate_ridge.py",
+        "sha256": "2348e3886bf7760f56c44c8f78b3466a0a13fb5cf15379094937af7cb6944841"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0002/inputs/src/q_common.py",
+        "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd"
+      },
+      {
+        "kind": "dataset",
+        "path": "data/processed/q1_mapped.csv",
+        "sha256": "64651e40fbda83fc70d66fd3164bc0932562da143d0ec1946340ea27c5b5c8ab"
+      },
+      {
+        "kind": "split-assignment",
+        "path": "data/splits/SPLIT-0001/assignment.csv",
+        "sha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+      },
+      {
+        "kind": "split-train",
+        "path": "data/splits/SPLIT-0001/train.csv",
+        "sha256": "52129428f0348591a46036b1da01894097bc2c616f8eb9907b175f6b46288487"
+      },
+      {
+        "kind": "split-test",
+        "path": "data/splits/SPLIT-0001/test.csv",
+        "sha256": "3ec46c406df7f53a86f400dd14ad75f556e5b0fa403dc92ad99d3c8d2816153b"
+      }
+    ]
+  }
+}

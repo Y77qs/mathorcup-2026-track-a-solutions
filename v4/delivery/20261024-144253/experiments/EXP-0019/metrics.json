@@ -1,0 +1,15 @@
+{
+  "bootstrap_mean_top3_inclusion": 0.4615666666666666,
+  "bootstrap_mean_top3_inclusion_ridge": 0.46575999999999995,
+  "bootstrap_mean_top3_inclusion_univariate": 0.4573733333333333,
+  "bootstrap_replicates": 500,
+  "coexpression_compounds_matched": 172,
+  "coexpression_min_eigen_full_matrix": -0.04241270911948119,
+  "coexpression_min_eigen_projected": -3.656156013722205e-17,
+  "coexpression_min_eigen_raw": -0.033607364609620445,
+  "n_dimensions": 50,
+  "n_features": 231,
+  "n_methods": 3,
+  "ridge_alpha": 300.0,
+  "topk-jaccard": 0.22466666666666665
+}

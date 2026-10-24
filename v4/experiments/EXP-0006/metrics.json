@@ -1,0 +1,11 @@
+{
+  "all-real-base-rate": 0.024,
+  "constraint-satisfaction": 0.03666666666666667,
+  "energy-distance": 1.7428217271209083,
+  "heldout-real-base-rate": 0.0,
+  "n_holdout_rows": 49,
+  "n_samples": 300,
+  "n_train_rows": 201,
+  "profile-consistency": -0.014984715434490547,
+  "real_sample_constraint_satisfaction": 0.024
+}

@@ -1,0 +1,1676 @@
+[
+  {
+    "name": "row",
+    "type": "integer",
+    "unit": null,
+    "description": "ORIGINAL 0-based row position in 1.csv/4.csv — NOT renumbered: this pool is a row subset of DATA-0003 kept in parent file order, so `row` is still the id of the same beer sample in the parent dataset. The gaps are the rows used as the main split SPLIT-0003 test set (50 of 250); 200 rows are kept."
+  },
+  {
+    "name": "beer",
+    "type": "integer",
+    "unit": null,
+    "description": "beer column: a permutation of 1..250 (identical in 1.csv/4.csv), not the row number."
+  },
+  {
+    "name": "beer_id",
+    "type": "string",
+    "unit": null,
+    "description": "1.csv beer_id; not a join key (the 4.csv/7.csv copies are truncated)."
+  },
+  {
+    "name": "style",
+    "type": "string",
+    "unit": null,
+    "description": "tasting_category_fine copied unchanged: the 22-level beer-style label that Q3 conditions on. This is a CONDITION, not a predicted label."
+  },
+  {
+    "name": "style_holdout",
+    "type": "string",
+    "unit": null,
+    "description": "heldout_style when style is one of ['Tripel', 'Kriek', 'Lambic'] (style-transfer test set), train_style otherwise. It is a declared style-level holdout, not a random row split."
+  },
+  {
+    "name": "chem__acetaldehyde",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'acetaldehyde', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__CS2",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'CS2', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__DES",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'DES', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__DMS",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'DMS', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl_2.methyl_butyrate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl_2.methyl_butyrate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl_acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl_acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl_decanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl_decanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl_hexanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl_hexanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl_isovalerate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl_isovalerate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl_octanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl_octanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl_propionate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl_propionate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__H2S",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'H2S', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isoamyl_alcohol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isoamyl_alcohol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isobutanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isobutanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isobutyl_acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isobutyl_acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isopentyl_acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isopentyl_acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__MeSH",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'MeSH', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__octyl_acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'octyl_acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__phenethyl_acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'phenethyl_acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__phenethyl_alcohol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'phenethyl_alcohol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X4VG",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X4VG', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__SO2.mg.L.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'SO2.mg.L.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__acetic_acid.g.L.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'acetic_acid.g.L.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ammonia.mg.L.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ammonia.mg.L.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__color.EBC.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'color.EBC.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__betaglucan.mg.L.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'betaglucan.mg.L.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__lactic_acid.mg.L.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'lactic_acid.mg.L.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__glycerol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'glycerol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__iron",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'iron', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__pH",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'pH', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__protein.g.L.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'protein.g.L.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__bitterness",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'bitterness', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__GFS",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'GFS', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethanol..v.v.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethanol..v.v.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__CO2.PSI.",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'CO2.PSI.', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__unfermentables",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'unfermentables', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__kcalperc",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'kcalperc', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X1.propanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X1.propanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.3.butanedione",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.3.butanedione', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X3.methylbutanal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X3.methylbutanal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__propylene.glycol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'propylene.glycol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__propyl.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'propyl.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.pentanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.pentanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.methyl.1.butanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.methyl.1.butanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isopentyl.formate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isopentyl.formate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.isobutyrate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.isobutyrate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X3.methyl.2.butenal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X3.methyl.2.butenal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.methyltetrahydrofuran.3.one",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.methyltetrahydrofuran.3.one', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.butyrate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.butyrate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__butyl.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'butyl.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__methylpyrazine",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'methylpyrazine', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__furfural",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'furfural', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.lactate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.lactate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X3Z.hexenol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X3Z.hexenol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.hexanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.hexanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__styrene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'styrene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.furanmethanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.furanmethanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X3.methyl.2.hexanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X3.methyl.2.hexanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X3.furanmethanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X3.furanmethanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.acetylfuran",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.acetylfuran', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.6.dimethyl.pyrazine",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.6.dimethyl.pyrazine', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__amyl.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'amyl.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.tiglate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.tiglate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__benzaldehyde",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'benzaldehyde', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X5.methylfurfural",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X5.methylfurfural', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.heptanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.heptanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X1.octen.3.ol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X1.octen.3.ol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X3.methylthio.propanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X3.methylthio.propanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isomaltol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isomaltol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X6.methyl.5.hepten.2.one",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X6.methyl.5.hepten.2.one', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.pentyl.furan",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.pentyl.furan', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.hex..3E..enoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.hex..3E..enoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__alpha.phellandrene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'alpha.phellandrene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__dehydroxy.cis.linalool.oxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'dehydroxy.cis.linalool.oxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__hexyl.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'hexyl.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isopentyl.butanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isopentyl.butanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.ethyl.1.hexanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.ethyl.1.hexanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__beta.phellandrene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'beta.phellandrene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__limonene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'limonene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__eucalyptol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'eucalyptol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__benzyl.alcohol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'benzyl.alcohol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.hex..2E..enoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.hex..2E..enoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__phenylacetaldehyde",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'phenylacetaldehyde', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E..beta.ocimene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E..beta.ocimene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__prenyl.isobutyrate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'prenyl.isobutyrate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.furoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.furoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ortho.cresol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ortho.cresol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.5.methylhexanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.5.methylhexanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.acetylpyrrole",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.acetylpyrrole', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isoamyl.lactate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isoamyl.lactate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.octanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.octanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__cis.linalool.oxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'cis.linalool.oxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__meta.cymenene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'meta.cymenene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__terpinolene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'terpinolene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__linalool",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'linalool', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__nonan.2.ol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'nonan.2.ol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.nonanal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.nonanal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.methyl.benzofuran",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.methyl.benzofuran', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__heptyl.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'heptyl.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X4.methyl.1.pentanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X4.methyl.1.pentanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__neo.allo.ocimene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'neo.allo.ocimene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__x.methyl.1.octanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'x.methyl.1.octanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__trans.dihydro.beta.terpineol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'trans.dihydro.beta.terpineol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__cis.beta.terpineol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'cis.beta.terpineol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__y.methyl.1.octanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'y.methyl.1.octanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__camphor",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'camphor', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isobutyl.hexanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isobutyl.hexanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__nerol.oxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'nerol.oxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E..2.nonenal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E..2.nonenal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__cis.dihydro.beta.terpineol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'cis.dihydro.beta.terpineol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X4.ethyl.phenol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X4.ethyl.phenol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isoborneol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isoborneol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.benzoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.benzoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.nonanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.nonanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__terpinen.4.ol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'terpinen.4.ol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__diethyl.succinate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'diethyl.succinate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__vinyl.caprylate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'vinyl.caprylate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X1.alpha.terpineol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X1.alpha.terpineol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl..E..linalool",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl..E..linalool', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.nicotinate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.nicotinate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__citronellol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'citronellol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__nerol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'nerol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__hydroxy.methyl.furfural",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'hydroxy.methyl.furfural', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__E.ocimenone",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'E.ocimenone', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__cumin.aldehyde",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'cumin.aldehyde', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.phenylacetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.phenylacetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isopentyl.hexanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isopentyl.hexanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__geraniol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'geraniol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__beta.cyclohomocitral",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'beta.cyclohomocitral', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__E.cinnamaldehyde",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'E.cinnamaldehyde', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.decanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.decanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__neryl.formate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'neryl.formate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X4.ethyl.guaiacol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X4.ethyl.guaiacol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.undecanone",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.undecanone', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__trans.dihydro.alpha.terpinyl.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'trans.dihydro.alpha.terpinyl.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__terpinen.4.ol.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'terpinen.4.ol.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.undecanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.undecanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__delta.terpinyl.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'delta.terpinyl.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E.E..2.4.decadienal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E.E..2.4.decadienal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__methyl.geranate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'methyl.geranate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__car.3.en.2.one",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'car.3.en.2.one', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__dimethoxy..E..citral",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'dimethoxy..E..citral', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.butyloctanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.butyloctanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X4.methoxysalicylaldehyde",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X4.methoxysalicylaldehyde', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.hydrocinnamate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.hydrocinnamate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__eugenol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'eugenol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__gamma.nonalactone",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'gamma.nonalactone', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__methyl.para.anisate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'methyl.para.anisate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E..beta.damascenone",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E..beta.damascenone', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl..9..decenoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl..9..decenoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__vanillin",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'vanillin', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__geosmin",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'geosmin', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__dodecanal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'dodecanal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X4.8.alpha.epoxy.caryophyllane",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X4.8.alpha.epoxy.caryophyllane', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__E.caryophyllene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'E.caryophyllene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E..alpha.ionone",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E..alpha.ionone', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__perillyl.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'perillyl.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__beta.humulene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'beta.humulene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.phenyl.ethyl.butyrate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.phenyl.ethyl.butyrate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.Z..beta.farnesene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.Z..beta.farnesene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__pentyl.octanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'pentyl.octanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E..beta.farnesene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E..beta.farnesene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.methylbutyl.octanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.methylbutyl.octanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__alpha.humulene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'alpha.humulene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__neryl.propanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'neryl.propanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X9.epi..E..caryophyllene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X9.epi..E..caryophyllene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl..E..cinnamate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl..E..cinnamate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__linalool.isovalerate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'linalool.isovalerate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__alpha.terpinyl.isobutanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'alpha.terpinyl.isobutanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.dodecanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.dodecanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__germacrene.D",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'germacrene.D', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E..beta.ionone",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E..beta.ionone', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__valencene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'valencene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__neryl.isobutanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'neryl.isobutanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__E.methyl.isoeugenol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'E.methyl.isoeugenol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.Z..dihydro.apofarnesal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.Z..dihydro.apofarnesal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__butylated.hydroxytoluene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'butylated.hydroxytoluene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E..dihydro.apofarnesal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E..dihydro.apofarnesal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__Z.nerolidol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'Z.nerolidol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X.E..ortho.methoxy.cinnamaldehyde",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X.E..ortho.methoxy.cinnamaldehyde', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__alpha.calacorene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'alpha.calacorene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__E.nerolidol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'E.nerolidol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__dihydroisocaryophyllene.epoxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'dihydroisocaryophyllene.epoxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__caryophyllene.alcohol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'caryophyllene.alcohol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__neryl.isovalerate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'neryl.isovalerate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__spathulenol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'spathulenol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__caryophyllene.oxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'caryophyllene.oxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__humulene.epoxide.II",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'humulene.epoxide.II', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__alloaromadendrene.epoxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'alloaromadendrene.epoxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X1.10.di.epi.cubenol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X1.10.di.epi.cubenol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isopropyl.laurate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isopropyl.laurate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__caryophylla.4.12..8.13..dien.5.alpha.ol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'caryophylla.4.12..8.13..dien.5.alpha.ol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__gamma.eudesmol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'gamma.eudesmol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__alpha.muurolol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'alpha.muurolol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X1.2.dihydro.8.hydroxy..2E..linalool",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X1.2.dihydro.8.hydroxy..2E..linalool', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__tau.cadinol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'tau.cadinol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__selin.11.en.4.alpha.ol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'selin.11.en.4.alpha.ol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__alpha.eudesmol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'alpha.eudesmol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X14.hydroxy.9.epi..E..caryophyllene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X14.hydroxy.9.epi..E..caryophyllene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__tau.muurolol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'tau.muurolol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__n.tetradecanol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'n.tetradecanol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__foeniculin",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'foeniculin', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__cadalene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'cadalene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.3.dihydro.farnesol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.3.dihydro.farnesol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2E.6Z.farnesal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2E.6Z.farnesal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__caryophyllene.acetate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'caryophyllene.acetate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X14.hydroxy.alpha.humulene",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X14.hydroxy.alpha.humulene', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2Z.6E.farnesal",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2Z.6E.farnesal', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2Z.6Z.farnesol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2Z.6Z.farnesol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2Z.6E.farnesol",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2Z.6E.farnesol', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ambroxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ambroxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__benzyl.benzoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'benzyl.benzoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2E.6E.methyl.farnesoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2E.6E.methyl.farnesoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.tetradecanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.tetradecanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.ethylhexylsalicylate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.ethylhexylsalicylate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isopropyl.tetradecanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isopropyl.tetradecanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.pentadecanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.pentadecanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__methyl.hexadecanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'methyl.hexadecanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__Z.Z.geranyl.linalool",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'Z.Z.geranyl.linalool', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.hexadecanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.hexadecanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__manool.oxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'manool.oxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X13.epi.manool.oxide",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X13.epi.manool.oxide', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__isopropyl.hexadecanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'isopropyl.hexadecanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__manool",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'manool', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.octadecanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.octadecanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__ethyl.pentanoate",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'ethyl.pentanoate', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__X2.ethyl.3.methylpyrazine",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'X2.ethyl.3.methylpyrazine', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__esters_sum",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'esters_sum', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__aroma_hops_sum",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'aroma_hops_sum', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__acids_sum",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'acids_sum', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "chem__sulfur_sum",
+    "type": "number",
+    "unit": null,
+    "description": "1.csv column 'sulfur_sum', value unchanged from the raw attachment (missing cells imputed with the train-row median; see data_quality.json). Scale: see data_quality.json scaleAudit (log10 / raw / zero-floor). The column carries no unit in any attachment."
+  },
+  {
+    "name": "thr__acetic_acid.g.L.",
+    "type": "number",
+    "unit": "g/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Acetic acid' parsed from 8.xlsx \"Sensory thresholds\" row 3 (field 'acetic_acid.g.L.'); the same value in every row. Median alternative = 0.145. An OAV needs the concentration in the same unit: chem__acetic_acid.g.L. must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__bitterness",
+    "type": "number",
+    "unit": "IBU",
+    "description": "constant sensory threshold (threshold_mean) of 'Iso-alpha acids' parsed from 8.xlsx \"Sensory thresholds\" row 6 (field 'bitterness'); the same value in every row. Median alternative = 5.0. An OAV needs the concentration in the same unit: chem__bitterness must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__lactic_acid.mg.L.",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Lactic acid' parsed from 8.xlsx \"Sensory thresholds\" row 7 (field 'lactic_acid.mg.L.'); the same value in every row. Median alternative = 400.0. An OAV needs the concentration in the same unit: chem__lactic_acid.mg.L. must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethanol..v.v.",
+    "type": "number",
+    "unit": "v/v",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethanol' parsed from 8.xlsx \"Sensory thresholds\" row 26 (field 'ethanol..v.v.'); the same value in every row. Median alternative = 1.737199. An OAV needs the concentration in the same unit: chem__ethanol..v.v. must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__isoamyl_alcohol",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Isoamyl alcohol' parsed from 8.xlsx \"Sensory thresholds\" row 28 (field 'isoamyl_alcohol'); the same value in every row. Median alternative = 45.0. An OAV needs the concentration in the same unit: chem__isoamyl_alcohol must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__isobutanol",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Isobutanol' parsed from 8.xlsx \"Sensory thresholds\" row 29 (field 'isobutanol'); the same value in every row. Median alternative = 100.0. An OAV needs the concentration in the same unit: chem__isobutanol must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__phenethyl_alcohol",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Phenethyl alcohol' parsed from 8.xlsx \"Sensory thresholds\" row 39 (field 'phenethyl_alcohol'); the same value in every row. Median alternative = 32.5. An OAV needs the concentration in the same unit: chem__phenethyl_alcohol must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__acetaldehyde",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Acetaldehyde' parsed from 8.xlsx \"Sensory thresholds\" row 50 (field 'acetaldehyde'); the same value in every row. Median alternative = 50.0. An OAV needs the concentration in the same unit: chem__acetaldehyde must first be converted back to raw concentration if its scale is log10. Off-flavour marker: 'pungent, rotten-apples, green apple'."
+  },
+  {
+    "name": "thr__furfural",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Furfural' parsed from 8.xlsx \"Sensory thresholds\" row 58 (field 'furfural'); the same value in every row. Median alternative = 37.5. An OAV needs the concentration in the same unit: chem__furfural must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__glycerol",
+    "type": "number",
+    "unit": "g/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Glycerol' parsed from 8.xlsx \"Sensory thresholds\" row 64 (field 'glycerol'); the same value in every row. Median alternative = 2.0. An OAV needs the concentration in the same unit: chem__glycerol must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__GFS",
+    "type": "number",
+    "unit": "g/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Sugars' parsed from 8.xlsx \"Sensory thresholds\" row 65 (field 'GFS'); the same value in every row. Median alternative = 2.9. An OAV needs the concentration in the same unit: chem__GFS must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl_2.methyl_butyrate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl 2-methylbutyrate' parsed from 8.xlsx \"Sensory thresholds\" row 75 (field 'ethyl_2.methyl_butyrate'); the same value in every row. Median alternative = 0.027. An OAV needs the concentration in the same unit: chem__ethyl_2.methyl_butyrate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl_isovalerate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl 3-methylbutyrate' parsed from 8.xlsx \"Sensory thresholds\" row 77 (field 'ethyl_isovalerate'); the same value in every row. Median alternative = 0.1. An OAV needs the concentration in the same unit: chem__ethyl_isovalerate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl_acetate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl acetate' parsed from 8.xlsx \"Sensory thresholds\" row 81 (field 'ethyl_acetate'); the same value in every row. Median alternative = 23.0. An OAV needs the concentration in the same unit: chem__ethyl_acetate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl.butyrate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl butyrate' parsed from 8.xlsx \"Sensory thresholds\" row 83 (field 'ethyl.butyrate'); the same value in every row. Median alternative = 0.45. An OAV needs the concentration in the same unit: chem__ethyl.butyrate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl_decanoate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl decanoate' parsed from 8.xlsx \"Sensory thresholds\" row 85 (field 'ethyl_decanoate'); the same value in every row. Median alternative = 1.035. An OAV needs the concentration in the same unit: chem__ethyl_decanoate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl_hexanoate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl hexanoate' parsed from 8.xlsx \"Sensory thresholds\" row 88 (field 'ethyl_hexanoate'); the same value in every row. Median alternative = 0.225. An OAV needs the concentration in the same unit: chem__ethyl_hexanoate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl.isobutyrate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl isobutyrate' parsed from 8.xlsx \"Sensory thresholds\" row 90 (field 'ethyl.isobutyrate'); the same value in every row. Median alternative = 2.6. An OAV needs the concentration in the same unit: chem__ethyl.isobutyrate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl.nicotinate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl nicotinate' parsed from 8.xlsx \"Sensory thresholds\" row 92 (field 'ethyl.nicotinate'); the same value in every row. Median alternative = 6.0. An OAV needs the concentration in the same unit: chem__ethyl.nicotinate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl_octanoate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl octanoate' parsed from 8.xlsx \"Sensory thresholds\" row 94 (field 'ethyl_octanoate'); the same value in every row. Median alternative = 0.75. An OAV needs the concentration in the same unit: chem__ethyl_octanoate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__ethyl_propionate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ethyl propionate' parsed from 8.xlsx \"Sensory thresholds\" row 98 (field 'ethyl_propionate'); the same value in every row. Median alternative = 10.0. An OAV needs the concentration in the same unit: chem__ethyl_propionate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__isopentyl_acetate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Isoamyl acetate' parsed from 8.xlsx \"Sensory thresholds\" row 103 (field 'isopentyl_acetate'); the same value in every row. Median alternative = 0.6. An OAV needs the concentration in the same unit: chem__isopentyl_acetate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__isobutyl_acetate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Isobutyl acetate' parsed from 8.xlsx \"Sensory thresholds\" row 105 (field 'isobutyl_acetate'); the same value in every row. Median alternative = 1.0. An OAV needs the concentration in the same unit: chem__isobutyl_acetate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__octyl_acetate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Octyl acetate' parsed from 8.xlsx \"Sensory thresholds\" row 115 (field 'octyl_acetate'); the same value in every row. Median alternative = 0.5. An OAV needs the concentration in the same unit: chem__octyl_acetate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__phenethyl_acetate",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Phenethyl acetate' parsed from 8.xlsx \"Sensory thresholds\" row 118 (field 'phenethyl_acetate'); the same value in every row. Median alternative = 1.29. An OAV needs the concentration in the same unit: chem__phenethyl_acetate must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__X2.3.butanedione",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Diacetyl' parsed from 8.xlsx \"Sensory thresholds\" row 127 (field 'X2.3.butanedione'); the same value in every row. Median alternative = 0.09. An OAV needs the concentration in the same unit: chem__X2.3.butanedione must first be converted back to raw concentration if its scale is log10. Off-flavour marker: 'butterscotch, popcorn, oily, milky'."
+  },
+  {
+    "name": "thr__ammonia.mg.L.",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Ammonia' parsed from 8.xlsx \"Sensory thresholds\" row 130 (field 'ammonia.mg.L.'); the same value in every row. Median alternative = 2.6. An OAV needs the concentration in the same unit: chem__ammonia.mg.L. must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__iron",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Iron' parsed from 8.xlsx \"Sensory thresholds\" row 135 (field 'iron'); the same value in every row. Median alternative = 0.1. An OAV needs the concentration in the same unit: chem__iron must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__protein.g.L.",
+    "type": "number",
+    "unit": "g/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Protein' parsed from 8.xlsx \"Sensory thresholds\" row 140 (field 'protein.g.L.'); the same value in every row. Median alternative = 0.846. An OAV needs the concentration in the same unit: chem__protein.g.L. must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__X4VG",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of '4-vinylguaiacol' parsed from 8.xlsx \"Sensory thresholds\" row 146 (field 'X4VG'); the same value in every row. Median alternative = 0.2. An OAV needs the concentration in the same unit: chem__X4VG must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__methylpyrazine",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Methylpyrazine' parsed from 8.xlsx \"Sensory thresholds\" row 151 (field 'methylpyrazine'); the same value in every row. Median alternative = 1.0. An OAV needs the concentration in the same unit: chem__methylpyrazine must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__CS2",
+    "type": "number",
+    "unit": "ug/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Carbon disulfide' parsed from 8.xlsx \"Sensory thresholds\" row 153 (field 'CS2'); the same value in every row. Median alternative = 50.0. An OAV needs the concentration in the same unit: chem__CS2 must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__DES",
+    "type": "number",
+    "unit": "ug/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Diethyl sulfide' parsed from 8.xlsx \"Sensory thresholds\" row 154 (field 'DES'); the same value in every row. Median alternative = 1.2. An OAV needs the concentration in the same unit: chem__DES must first be converted back to raw concentration if its scale is log10. Off-flavour marker: 'rotting vegetables'."
+  },
+  {
+    "name": "thr__DMS",
+    "type": "number",
+    "unit": "ug/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Dimethyl sulfide' parsed from 8.xlsx \"Sensory thresholds\" row 155 (field 'DMS'); the same value in every row. Median alternative = 19.0. An OAV needs the concentration in the same unit: chem__DMS must first be converted back to raw concentration if its scale is log10. Off-flavour marker: 'cooked vegetables, onion, garlic, corn, black currant, sulfidic, cabbage, tinned tomato, baked beans'."
+  },
+  {
+    "name": "thr__H2S",
+    "type": "number",
+    "unit": "ug/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Hydrogen sulfide' parsed from 8.xlsx \"Sensory thresholds\" row 156 (field 'H2S'); the same value in every row. Median alternative = 3.5. An OAV needs the concentration in the same unit: chem__H2S must first be converted back to raw concentration if its scale is log10. Off-flavour marker: 'sulfidic, rotten eggs'."
+  },
+  {
+    "name": "thr__SO2.mg.L.",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Sulfur dioxide' parsed from 8.xlsx \"Sensory thresholds\" row 159 (field 'SO2.mg.L.'); the same value in every row. Median alternative = 11.0. An OAV needs the concentration in the same unit: chem__SO2.mg.L. must first be converted back to raw concentration if its scale is log10. Off-flavour marker: 'Burnt matches'."
+  },
+  {
+    "name": "thr__alpha.humulene",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Alpha-humulene' parsed from 8.xlsx \"Sensory thresholds\" row 168 (field 'alpha.humulene'); the same value in every row. Median alternative = 0.625. An OAV needs the concentration in the same unit: chem__alpha.humulene must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__X1.alpha.terpineol",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Alpha-terpineol' parsed from 8.xlsx \"Sensory thresholds\" row 172 (field 'X1.alpha.terpineol'); the same value in every row. Median alternative = 1.5. An OAV needs the concentration in the same unit: chem__X1.alpha.terpineol must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__E.caryophyllene",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Caryophyllene' parsed from 8.xlsx \"Sensory thresholds\" row 181 (field 'E.caryophyllene'); the same value in every row. Median alternative = 0.23. An OAV needs the concentration in the same unit: chem__E.caryophyllene must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__citronellol",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Citronellol' parsed from 8.xlsx \"Sensory thresholds\" row 189 (field 'citronellol'); the same value in every row. Median alternative = 0.0245. An OAV needs the concentration in the same unit: chem__citronellol must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__geraniol",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Geraniol' parsed from 8.xlsx \"Sensory thresholds\" row 209 (field 'geraniol'); the same value in every row. Median alternative = 0.023. An OAV needs the concentration in the same unit: chem__geraniol must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__linalool",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Linalool' parsed from 8.xlsx \"Sensory thresholds\" row 214 (field 'linalool'); the same value in every row. Median alternative = 0.0045. An OAV needs the concentration in the same unit: chem__linalool must first be converted back to raw concentration if its scale is log10."
+  },
+  {
+    "name": "thr__Z.nerolidol",
+    "type": "number",
+    "unit": "mg/L",
+    "description": "constant sensory threshold (threshold_mean) of 'Z-nerolidol' parsed from 8.xlsx \"Sensory thresholds\" row 250 (field 'Z.nerolidol'); the same value in every row. Median alternative = 25.0. An OAV needs the concentration in the same unit: chem__Z.nerolidol must first be converted back to raw concentration if its scale is log10."
+  }
+]

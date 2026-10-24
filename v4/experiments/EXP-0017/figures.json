@@ -1,0 +1,28 @@
+{
+  "figures": [
+    {
+      "name": "q2_top3_selection_heatmap.png",
+      "path": "figures/q2_top3_selection_heatmap.png",
+      "sha256": "820488742b6d8dc8a09cb842ea683ea42aa1bf85f0b0229cdc1944c19feeb94d",
+      "bytes": 182057
+    },
+    {
+      "name": "q2_bootstrap_inclusion.png",
+      "path": "figures/q2_bootstrap_inclusion.png",
+      "sha256": "c54bff7e53b9203e1f8693c25020d3afc57989e13624a2919e265ccf65dd1f9a",
+      "bytes": 128092
+    },
+    {
+      "name": "q2_method_jaccard.png",
+      "path": "figures/q2_method_jaccard.png",
+      "sha256": "20ffe0a2b8c236ea2c177c2c6ff581ed1b5eba81d60004cfd556eb4142c61757",
+      "bytes": 35748
+    },
+    {
+      "name": "q2_coexpression.png",
+      "path": "figures/q2_coexpression.png",
+      "sha256": "12fe80c72c99274604e0f64d9589296ed52d0a2528351dce232993b5aff0fe8f",
+      "bytes": 121163
+    }
+  ]
+}

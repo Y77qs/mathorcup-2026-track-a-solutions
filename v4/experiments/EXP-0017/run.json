@@ -1,0 +1,15 @@
+{
+  "pid": 55849,
+  "token": "4a18e0d6f877d19afd0bcf92",
+  "experimentId": "EXP-0017",
+  "startedAt": "2026-10-24T06:10:04.201Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0017/inputs/src/q2_topk.py"
+  ],
+  "childPid": 55852,
+  "childPgid": 55852,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2"
+}

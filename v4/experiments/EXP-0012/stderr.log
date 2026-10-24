@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0002/inputs/src/q1_candidate_ridge.py", line 19, in <module>
+    import q_common as C
+ModuleNotFoundError: No module named 'q_common'

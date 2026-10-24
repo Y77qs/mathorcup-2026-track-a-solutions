@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-10-24T06:27:25.431Z",
+  "final": false,
+  "qualityBlockers": [
+    {
+      "checkType": "robustness-execution",
+      "checkId": "QC-0023",
+      "objectId": "Q1",
+      "state": "needs_review",
+      "code": "VMU_PACK_MODELING_CONTEST_ROBUSTNESS_METHOD_INVALID",
+      "message": "perturbations executed correctly, but the stability hypothesis failed; a precisely bound negative-result claim and fresh independent plan/claim reviews are required",
+      "hint": "retain the failed decision, limitations and raw evidence; do not change the threshold to force stability"
+    }
+  ],
+  "engineeringBlockers": [
+    {
+      "name": "independent-rerun",
+      "code": "NO_INDEPENDENT_RERUN",
+      "message": "no passing independent rerun for: Q1 — re-run the experiment in a NEW experiment id and compare against the tolerance declared in contest.yaml (modeling_validate {action:\"run\", checkType:\"independent-rerun\"})"
+    },
+    {
+      "name": "selection:Q1",
+      "code": "PROVISIONAL_SELECTION",
+      "message": "explicitly select with selectionPhase:validated after fresh evidence is complete"
+    },
+    {
+      "name": "selection:Q2",
+      "code": "PROVISIONAL_SELECTION",
+      "message": "explicitly select with selectionPhase:validated after fresh evidence is complete"
+    },
+    {
+      "name": "selection:Q3",
+      "code": "PROVISIONAL_SELECTION",
+      "message": "explicitly select with selectionPhase:validated after fresh evidence is complete"
+    },
+    {
+      "name": "frozen",
+      "code": "NOT_FROZEN",
+      "message": "the delivery has not been frozen: modeling_project {action:\"freeze\"} fixes the ids the paper may reference"
+    },
+    {
+      "name": "checkpoints",
+      "code": "CHECKPOINTS_UNMET",
+      "message": "3 checkpoint blocker(s) before/at delivery: [validation] question Q1: required check \"independent-rerun\" has not passed; [validation] question Q1 has no passing independent rerun; [delivery] the delivery has not been frozen — this is a draft, not a final delivery"
+    }
+  ],
+  "reviewScope": {
+    "reviewed": [
+      "source-anchor",
+      "requirement-coverage",
+      "target-lineage",
+      "baseline-required",
+      "baseline-required",
+      "baseline-required",
+      "baseline-required",
+      "metric-definition",
+      "claim-scope",
+      "analysis-evidence",
+      "analysis-evidence",
+      "analysis-evidence",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "model-condition",
+      "review-provenance",
+      "review-independence",
+      "critical-findings",
+      "robustness-plan",
+      "robustness-plan",
+      "robustness-execution",
+      "robustness-plan",
+      "robustness-execution",
+      "holdout-reuse"
+    ],
+    "notReviewed": [
+      "robustness-execution",
+      "runcontrol-preflight",
+      "runcontrol-resume",
+      "runcontrol-progress",
+      "runcontrol-budget",
+      "runcontrol-approval"
+    ],
+    "assumptions": [
+      "optional checks not applicable: runcontrol-preflight, runcontrol-resume, runcontrol-progress, runcontrol-budget, runcontrol-approval"
+    ]
+  }
+}

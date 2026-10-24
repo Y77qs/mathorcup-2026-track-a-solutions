@@ -1,0 +1,192 @@
+{
+  "token": "4a18e0d6f877d19afd0bcf92",
+  "experimentId": "EXP-0017",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T06:10:04.201Z",
+  "endedAt": "2026-10-24T06:10:10.722Z",
+  "durationMs": 6520,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "bootstrap_mean_top3_inclusion": 0.45293333333333335,
+    "bootstrap_mean_top3_inclusion_ridge_coef": 0.45293333333333335,
+    "bootstrap_replicates": 500,
+    "coexpression_compounds_matched": 172,
+    "coexpression_min_eigen_full_matrix": -0.04241270911948119,
+    "coexpression_min_eigen_projected": -3.656156013722205e-17,
+    "coexpression_min_eigen_raw": -0.033607364609620445,
+    "n_dimensions": 50,
+    "n_features": 231,
+    "n_methods": 3,
+    "ridge_alpha": 300.0,
+    "topk-jaccard": 0.21799999999999997
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0017/figures.json",
+      "sha256": "619cdd6d130343c05faf81d5327397ba1df49857a71d2e79d74a715c1bdfa37d",
+      "bytes": 863,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0017/metrics.json",
+      "sha256": "987730d6c1dfdf4563f3af5e07d5834a24a084c21640f24bd92fdb42d3e4a129",
+      "bytes": 501,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0017/outputs.json",
+      "sha256": "20c7e6c8e7aafde1b2c9cfab5500684d4dc8e89121e37c1a059c143531e388ed",
+      "bytes": 139815,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0017/seed-receipt.json",
+      "sha256": "884893ea21ded490d35ebd7c54fe32eca685c6753afed43489a1a4f7b4fbc00e",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0017/sets.json",
+      "sha256": "f3322de59295e3c43605a6b42a5d688bb50df2eeaf704c491de15744e4372edc",
+      "bytes": 24377,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0017/sets_nested.json",
+      "sha256": "cd706fc42557d5162d844357189d226cce8732d73ff5ec962fd578c7d5ceff2e",
+      "bytes": 14261,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0017/figures/q2_bootstrap_inclusion.png",
+      "sha256": "c54bff7e53b9203e1f8693c25020d3afc57989e13624a2919e265ccf65dd1f9a",
+      "bytes": 128092,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0017/figures/q2_coexpression.png",
+      "sha256": "12fe80c72c99274604e0f64d9589296ed52d0a2528351dce232993b5aff0fe8f",
+      "bytes": 121163,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0017/figures/q2_method_jaccard.png",
+      "sha256": "20ffe0a2b8c236ea2c177c2c6ff581ed1b5eba81d60004cfd556eb4142c61757",
+      "bytes": 35748,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0017/figures/q2_top3_selection_heatmap.png",
+      "sha256": "820488742b6d8dc8a09cb842ea683ea42aa1bf85f0b0229cdc1944c19feeb94d",
+      "bytes": 182057,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0017/inputs/data/raw/2.csv",
+      "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+      "bytes": 1000771,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0017/inputs/data/raw/8.xlsx",
+      "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+      "bytes": 1740092,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0017/inputs/src/q2_lib.py",
+      "sha256": "8fca871523a46f3e2d17793cc6c2819ce3ee3c3ed40eb67c86de5a51cd24d198",
+      "bytes": 17300,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0017/inputs/src/q2_topk.py",
+      "sha256": "92e7aa09ae26bc49d2e96ddf5e43f3b841d853727cf2e1ef9651ad4dad643cd6",
+      "bytes": 15734,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0017/inputs/src/q_common.py",
+      "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd",
+      "bytes": 15113,
+      "kind": "file"
+    }
+  ],
+  "figures": [
+    {
+      "path": "experiments/EXP-0017/figures/q2_bootstrap_inclusion.png",
+      "name": "q2_bootstrap_inclusion.png",
+      "sha256": "c54bff7e53b9203e1f8693c25020d3afc57989e13624a2919e265ccf65dd1f9a",
+      "bytes": 128092,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0017/figures/q2_coexpression.png",
+      "name": "q2_coexpression.png",
+      "sha256": "12fe80c72c99274604e0f64d9589296ed52d0a2528351dce232993b5aff0fe8f",
+      "bytes": 121163,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0017/figures/q2_method_jaccard.png",
+      "name": "q2_method_jaccard.png",
+      "sha256": "20ffe0a2b8c236ea2c177c2c6ff581ed1b5eba81d60004cfd556eb4142c61757",
+      "bytes": 35748,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0017/figures/q2_top3_selection_heatmap.png",
+      "name": "q2_top3_selection_heatmap.png",
+      "sha256": "820488742b6d8dc8a09cb842ea683ea42aa1bf85f0b0229cdc1944c19feeb94d",
+      "bytes": 182057,
+      "missing": false
+    },
+    {
+      "path": "figures/q2_bootstrap_inclusion.png",
+      "name": "q2_bootstrap_inclusion.png",
+      "sha256": "c54bff7e53b9203e1f8693c25020d3afc57989e13624a2919e265ccf65dd1f9a",
+      "bytes": 128092,
+      "missing": true
+    },
+    {
+      "path": "figures/q2_coexpression.png",
+      "name": "q2_coexpression.png",
+      "sha256": "12fe80c72c99274604e0f64d9589296ed52d0a2528351dce232993b5aff0fe8f",
+      "bytes": 121163,
+      "missing": true
+    },
+    {
+      "path": "figures/q2_method_jaccard.png",
+      "name": "q2_method_jaccard.png",
+      "sha256": "20ffe0a2b8c236ea2c177c2c6ff581ed1b5eba81d60004cfd556eb4142c61757",
+      "bytes": 35748,
+      "missing": true
+    },
+    {
+      "path": "figures/q2_top3_selection_heatmap.png",
+      "name": "q2_top3_selection_heatmap.png",
+      "sha256": "820488742b6d8dc8a09cb842ea683ea42aa1bf85f0b0229cdc1944c19feeb94d",
+      "bytes": 182057,
+      "missing": true
+    }
+  ],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0017/inputs/src/q2_topk.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0017/inputs/src/q2_topk.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0017",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

@@ -1,0 +1,6 @@
+% LaTeX header used when building report/paper.tex from report/rendered.md.
+% Cosmetic only: dense tables are set smaller so wide identifiers do not run
+% into the right margin; no content, number or image is changed.
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\footnotesize}
+\setlength{\emergencystretch}{2em}

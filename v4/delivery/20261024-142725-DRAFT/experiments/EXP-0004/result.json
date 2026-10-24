@@ -1,0 +1,133 @@
+{
+  "token": "03870af39d6f1e81e0583acf",
+  "experimentId": "EXP-0004",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T05:59:33.992Z",
+  "endedAt": "2026-10-24T05:59:35.335Z",
+  "durationMs": 1343,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "n_dimensions": 50,
+    "n_features": 231,
+    "n_methods": 2,
+    "ridge_alpha": 300.0,
+    "topk-jaccard": 0.19999999999999996
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0004/figures.json",
+      "sha256": "9b59474f70869e01f5f70f286a44ca57d26410a804efedf4c72ae40444cebff4",
+      "bytes": 458,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0004/metrics.json",
+      "sha256": "4c55aa2869ca0c1b75183addcd48ae13d6b30ea6f7bd124e4339324afc55cc91",
+      "bytes": 127,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0004/outputs.json",
+      "sha256": "31582522027b97f6c21c7e097c1215c9416543d65f7d3d1d7fe964fbe033de72",
+      "bytes": 4613,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0004/seed-receipt.json",
+      "sha256": "884893ea21ded490d35ebd7c54fe32eca685c6753afed43489a1a4f7b4fbc00e",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0004/sets.json",
+      "sha256": "40548bc36ef515ac41cc44a2994c3b9b7d901a5eebd4cf587f3824e57c4c8bb9",
+      "bytes": 16069,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0004/sets_nested.json",
+      "sha256": "6054d5f1238abc0105551ecff46b8fa0e435c28c34cf131546665ea14f3d2401",
+      "bytes": 8541,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0004/figures/q2_baseline_global_importance.png",
+      "sha256": "b5431365383adcb3ca35edebd1479b40302b758ed4dbb0b84d8238989743cd4e",
+      "bytes": 53906,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0004/figures/q2_baseline_jaccard.png",
+      "sha256": "13fc8228187850702d63555aadbb9a4f88cfe156e30c425ebc6aa3d548e0e429",
+      "bytes": 27189,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0004/inputs/src/q2_baseline.py",
+      "sha256": "d0cf426da48e0c0ac6616179057e0de7c40d23a4bdbdb678e598adb28f478e15",
+      "bytes": 5889,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0004/inputs/src/q2_lib.py",
+      "sha256": "8fca871523a46f3e2d17793cc6c2819ce3ee3c3ed40eb67c86de5a51cd24d198",
+      "bytes": 17300,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0004/inputs/src/q_common.py",
+      "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd",
+      "bytes": 15113,
+      "kind": "file"
+    }
+  ],
+  "figures": [
+    {
+      "path": "experiments/EXP-0004/figures/q2_baseline_global_importance.png",
+      "name": "q2_baseline_global_importance.png",
+      "sha256": "b5431365383adcb3ca35edebd1479b40302b758ed4dbb0b84d8238989743cd4e",
+      "bytes": 53906,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0004/figures/q2_baseline_jaccard.png",
+      "name": "q2_baseline_jaccard.png",
+      "sha256": "13fc8228187850702d63555aadbb9a4f88cfe156e30c425ebc6aa3d548e0e429",
+      "bytes": 27189,
+      "missing": false
+    },
+    {
+      "path": "figures/q2_baseline_global_importance.png",
+      "name": "q2_baseline_global_importance.png",
+      "sha256": "b5431365383adcb3ca35edebd1479b40302b758ed4dbb0b84d8238989743cd4e",
+      "bytes": 53906,
+      "missing": true
+    },
+    {
+      "path": "figures/q2_baseline_jaccard.png",
+      "name": "q2_baseline_jaccard.png",
+      "sha256": "13fc8228187850702d63555aadbb9a4f88cfe156e30c425ebc6aa3d548e0e429",
+      "bytes": 27189,
+      "missing": true
+    }
+  ],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0004/inputs/src/q2_baseline.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0004/inputs/src/q2_baseline.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0004",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

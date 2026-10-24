@@ -1,0 +1,22 @@
+{
+  "figures": [
+    {
+      "name": "q1_ridge_per_target_mae.png",
+      "path": "figures/q1_ridge_per_target_mae.png",
+      "sha256": "acd4edb531f2392f79f0cd0d2361ebcba22b5ab000bdfd424dd58749932ca5a1",
+      "bytes": 71272
+    },
+    {
+      "name": "q1_ridge_scatter.png",
+      "path": "figures/q1_ridge_scatter.png",
+      "sha256": "adcc7c419305f0ebe6f637f98dfb0533407f6a829dd475db5d90e4223d6b5362",
+      "bytes": 45920
+    },
+    {
+      "name": "q1_ridge_residuals.png",
+      "path": "figures/q1_ridge_residuals.png",
+      "sha256": "a36b1dc9557201bd24356cb02692b0d74b84452fd0f04c0faee4e6b7becc4c46",
+      "bytes": 29056
+    }
+  ]
+}

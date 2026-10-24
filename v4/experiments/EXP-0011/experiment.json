@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v2",
+  "id": "EXP-0011",
+  "questionId": "Q2",
+  "modelId": "MODEL-0011",
+  "modelKind": "candidate",
+  "title": "Q2 robustness R4 (ROB-0002): univariate ranking replaced by Kendall tau-b, NEW split seed 20261025",
+  "assumptions": [
+    "Pre-registered robustness perturbation (ROB-0002): the univariate association measure changes from Spearman to Kendall tau-b.",
+    "Only TRAIN rows of SPLIT-0006 are used.",
+    "The methods array in the evaluation object names exactly the methods that appear in sets.json."
+  ],
+  "equations": [
+    "score_j = |Kendall tau-b(chem_j, sensory_d)| (rank variant)",
+    "topk-jaccard = mean_d mean_{a<b} Jaccard(Top3_da, Top3_db)"
+  ],
+  "algorithm": "Same set-stability protocol as EXP-0005, with the PRE-REGISTERED robustness perturbation params.ranking_variant=\"kendall\": the univariate ranking becomes |Kendall tau-b| while ridge_coef and random_forest_importance stay; evaluated on a NEW split (SPLIT-0006). The bootstrap uses the ridge estimator only (an 11 550-pair Kendall recomputation per resample is not affordable) and says so in outputs.",
+  "params": {
+    "featuresSource": "same 231 chem__* columns as EXP-0005 (DATA-0002 chem block)",
+    "family": "multi-method-top3",
+    "stochastic": false,
+    "freezeSources": true,
+    "dependenciesComplete": true,
+    "dependencies": [
+      "data/raw/2.csv",
+      "data/raw/8.xlsx"
+    ],
+    "evaluation": {
+      "kind": "set-stability",
+      "metricKey": "topk-jaccard",
+      "topK": 3,
+      "setsFile": "sets.json",
+      "dimensions": [
+        "A_malt_all",
+        "A_malt_grain",
+        "A_malt_bread",
+        "A_malt_cara",
+        "A_malt_burn",
+        "A_hops_all",
+        "A_hops_citrus",
+        "A_hops_tropical",
+        "A_hops_noble",
+        "A_hops_woody",
+        "A_esters_all",
+        "A_esters_ethac",
+        "A_esters_isoaa",
+        "A_esters_flower",
+        "A_esters_fruity",
+        "F_malt_all",
+        "F_malt_grain",
+        "F_malt_bread",
+        "F_malt_cara",
+        "F_malt_burn",
+        "F_hops_all",
+        "F_hops_citrus",
+        "F_hops_tropical",
+        "F_hops_noble",
+        "F_hops_woody",
+        "F_esters_all",
+        "F_esters_ethac",
+        "F_esters_isoaa",
+        "F_esters_flower",
+        "F_esters_fruity",
+        "acidity",
+        "bitternes",
+        "sweetness",
+        "X4vg",
+        "diacetyl",
+        "dms",
+        "metallic",
+        "stale_hops",
+        "t2n",
+        "orange",
+        "coriander",
+        "clove",
+        "lactic",
+        "acetic",
+        "barnyard",
+        "alcohol",
+        "aftertaste",
+        "body",
+        "co2",
+        "overall"
+      ],
+      "methods": [
+        "kendall_absrho",
+        "ridge_coef",
+        "random_forest_importance"
+      ],
+      "tolerance": 1e-9
+    },
+    "bootstrap": {
+      "replicates": 500,
+      "seed": 20261024
+    },
+    "ranking_variant": "kendall",
+    "targetContractId": "TGT-0002",
+    "robustnessPlanId": "ROB-0002",
+    "scope": "descriptive contemporaneous association on TRAIN rows only; not causal, not external validation"
+  },
+  "datasetId": "DATA-0002",
+  "splitId": "SPLIT-0006",
+  "dataset": {
+    "id": "DATA-0002",
+    "path": "data/processed/q2_raw.csv",
+    "sha256": "cca702e9fb85d001218e1eebeb2c4c4d6bcbf990efd9dafede22217345c260d0",
+    "bytes": 859205,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": {
+    "id": "SPLIT-0006",
+    "datasetId": "DATA-0002",
+    "method": "random-holdout",
+    "counts": {
+      "rows": 250,
+      "train": 200,
+      "test": 50
+    },
+    "trainPath": "data/splits/SPLIT-0006/train.csv",
+    "trainSha256": "b98b1e29488d47467fcdac0d6ceff1e480e51040b7c804e576912452512358a1",
+    "testPath": "data/splits/SPLIT-0006/test.csv",
+    "testSha256": "c4836b6da5c24b5a34f58cd9d5fddf92b3751f86c2f70c97b60a5675958bf948",
+    "assignmentPath": "data/splits/SPLIT-0006/assignment.csv",
+    "assignmentSha256": "46f88b60c1b836fbb47331e49b0eea05c10b749e4f1552bc7a76db4ccbfe6392"
+  },
+  "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+  "code": {
+    "path": "src/q2_topk.py",
+    "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061",
+    "bytes": 15825
+  },
+  "dependencies": [
+    {
+      "path": "data/raw/2.csv",
+      "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+      "bytes": 1000771
+    },
+    {
+      "path": "data/raw/8.xlsx",
+      "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+      "bytes": 1740092
+    },
+    {
+      "path": "src/q2_lib.py",
+      "sha256": "8fca871523a46f3e2d17793cc6c2819ce3ee3c3ed40eb67c86de5a51cd24d198",
+      "bytes": 17300
+    },
+    {
+      "path": "src/q2_topk.py",
+      "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061",
+      "bytes": 15825
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd",
+      "bytes": 15113
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0011/inputs/src/q2_topk.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0011/inputs/data/raw/2.csv",
+        "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+        "bytes": 1000771,
+        "originalPath": "data/raw/2.csv"
+      },
+      {
+        "path": "experiments/EXP-0011/inputs/data/raw/8.xlsx",
+        "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+        "bytes": 1740092,
+        "originalPath": "data/raw/8.xlsx"
+      },
+      {
+        "path": "experiments/EXP-0011/inputs/src/q2_lib.py",
+        "sha256": "8fca871523a46f3e2d17793cc6c2819ce3ee3c3ed40eb67c86de5a51cd24d198",
+        "bytes": 17300,
+        "originalPath": "src/q2_lib.py"
+      },
+      {
+        "path": "experiments/EXP-0011/inputs/src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061",
+        "bytes": 15825,
+        "originalPath": "src/q2_topk.py"
+      },
+      {
+        "path": "experiments/EXP-0011/inputs/src/q_common.py",
+        "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd",
+        "bytes": 15113,
+        "originalPath": "src/q_common.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q2_topk.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/src/q2_topk.py"
+    ],
+    "cwd": "experiments/EXP-0011"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261024,
+    "timeoutSeconds": 600,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/src/q2_topk.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261024,
+  "timeoutSeconds": 600,
+  "rerunOf": null,
+  "requestSignature": "ce989655ca18a22c4317df8b70527aed8ac5d4f3f0052518e0ef7f1743c9393e",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "q2-rob-r4-kendall-split0006",
+  "createdAt": "2026-10-24T06:02:53.465Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0011",
+  "registration": {
+    "questionId": "Q2",
+    "modelKind": "candidate",
+    "title": "Q2 robustness R4 (ROB-0002): univariate ranking replaced by Kendall tau-b, NEW split seed 20261025",
+    "assumptions": [
+      "Pre-registered robustness perturbation (ROB-0002): the univariate association measure changes from Spearman to Kendall tau-b.",
+      "Only TRAIN rows of SPLIT-0006 are used.",
+      "The methods array in the evaluation object names exactly the methods that appear in sets.json."
+    ],
+    "equations": [
+      "score_j = |Kendall tau-b(chem_j, sensory_d)| (rank variant)",
+      "topk-jaccard = mean_d mean_{a<b} Jaccard(Top3_da, Top3_db)"
+    ],
+    "algorithm": "Same set-stability protocol as EXP-0005, with the PRE-REGISTERED robustness perturbation params.ranking_variant=\"kendall\": the univariate ranking becomes |Kendall tau-b| while ridge_coef and random_forest_importance stay; evaluated on a NEW split (SPLIT-0006). The bootstrap uses the ridge estimator only (an 11 550-pair Kendall recomputation per resample is not affordable) and says so in outputs.",
+    "params": {
+      "featuresSource": "same 231 chem__* columns as EXP-0005 (DATA-0002 chem block)",
+      "family": "multi-method-top3",
+      "stochastic": false,
+      "freezeSources": true,
+      "dependenciesComplete": true,
+      "dependencies": [
+        "data/raw/2.csv",
+        "data/raw/8.xlsx"
+      ],
+      "evaluation": {
+        "kind": "set-stability",
+        "metricKey": "topk-jaccard",
+        "topK": 3,
+        "setsFile": "sets.json",
+        "dimensions": [
+          "A_malt_all",
+          "A_malt_grain",
+          "A_malt_bread",
+          "A_malt_cara",
+          "A_malt_burn",
+          "A_hops_all",
+          "A_hops_citrus",
+          "A_hops_tropical",
+          "A_hops_noble",
+          "A_hops_woody",
+          "A_esters_all",
+          "A_esters_ethac",
+          "A_esters_isoaa",
+          "A_esters_flower",
+          "A_esters_fruity",
+          "F_malt_all",
+          "F_malt_grain",
+          "F_malt_bread",
+          "F_malt_cara",
+          "F_malt_burn",
+          "F_hops_all",
+          "F_hops_citrus",
+          "F_hops_tropical",
+          "F_hops_noble",
+          "F_hops_woody",
+          "F_esters_all",
+          "F_esters_ethac",
+          "F_esters_isoaa",
+          "F_esters_flower",
+          "F_esters_fruity",
+          "acidity",
+          "bitternes",
+          "sweetness",
+          "X4vg",
+          "diacetyl",
+          "dms",
+          "metallic",
+          "stale_hops",
+          "t2n",
+          "orange",
+          "coriander",
+          "clove",
+          "lactic",
+          "acetic",
+          "barnyard",
+          "alcohol",
+          "aftertaste",
+          "body",
+          "co2",
+          "overall"
+        ],
+        "methods": [
+          "kendall_absrho",
+          "ridge_coef",
+          "random_forest_importance"
+        ],
+        "tolerance": 1e-9
+      },
+      "bootstrap": {
+        "replicates": 500,
+        "seed": 20261024
+      },
+      "ranking_variant": "kendall",
+      "targetContractId": "TGT-0002",
+      "robustnessPlanId": "ROB-0002",
+      "scope": "descriptive contemporaneous association on TRAIN rows only; not causal, not external validation"
+    },
+    "codeFile": "src/q2_topk.py",
+    "datasetId": "DATA-0002",
+    "splitId": "SPLIT-0006",
+    "seed": 20261024,
+    "args": [],
+    "timeoutSeconds": 600,
+    "modelId": "MODEL-0011"
+  }
+}

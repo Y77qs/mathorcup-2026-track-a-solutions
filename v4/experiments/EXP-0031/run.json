@@ -1,0 +1,15 @@
+{
+  "pid": 58048,
+  "token": "2d069db9a37fecf14e57dfbf",
+  "experimentId": "EXP-0031",
+  "startedAt": "2026-10-24T06:37:04.153Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0002/inputs/src/q1_candidate_ridge.py"
+  ],
+  "childPid": 58051,
+  "childPgid": 58051,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2"
+}

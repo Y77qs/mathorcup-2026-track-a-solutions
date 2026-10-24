@@ -1,0 +1,98 @@
+{
+  "checkType": "split-integrity",
+  "metric": "mae",
+  "tolerance": {
+    "absolute": 1e-9,
+    "relative": 0.000001,
+    "source": "checks[i].tolerance"
+  },
+  "assignment": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/data/splits/SPLIT-0002/assignment.csv",
+  "train": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/data/splits/SPLIT-0002/train.csv",
+  "test": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/data/splits/SPLIT-0002/test.csv",
+  "method": "random-holdout",
+  "timeColumn": null,
+  "expectedRows": 250,
+  "expectedHashes": {
+    "assignment": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e",
+    "train": "d00925b8264d5a36d8ffa042277dafc75874647b6764fb7e9e9050ef3355d7ee",
+    "test": "998cb973d9073d00862381749be85bbb33435334e88bb7ddeeb4c66067ca3ff5"
+  },
+  "experimentId": "EXP-0005",
+  "validationPlanId": "VP-0002",
+  "provenanceSummary": {
+    "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+    "experiment": {
+      "id": "EXP-0005",
+      "status": "succeeded",
+      "metricsSha256": "7a46385da7d80455ca7167e61414038ec020cb0033ef633bcb6b1a3cff369b90",
+      "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399"
+    },
+    "inputs": [
+      {
+        "kind": "experiment-code",
+        "path": "experiments/EXP-0005/inputs/src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/data/raw/2.csv",
+        "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/data/raw/8.xlsx",
+        "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/src/q2_lib.py",
+        "sha256": "8fca871523a46f3e2d17793cc6c2819ce3ee3c3ed40eb67c86de5a51cd24d198"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/src/q2_topk.py",
+        "sha256": "4e9831299fcb110e5a48e10419c8fef62ba075812373cc99cdbf668084c2e061"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0005/inputs/src/q_common.py",
+        "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd"
+      },
+      {
+        "kind": "dataset",
+        "path": "data/processed/q2_raw.csv",
+        "sha256": "cca702e9fb85d001218e1eebeb2c4c4d6bcbf990efd9dafede22217345c260d0"
+      },
+      {
+        "kind": "split-assignment",
+        "path": "data/splits/SPLIT-0002/assignment.csv",
+        "sha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+      },
+      {
+        "kind": "split-train",
+        "path": "data/splits/SPLIT-0002/train.csv",
+        "sha256": "d00925b8264d5a36d8ffa042277dafc75874647b6764fb7e9e9050ef3355d7ee"
+      },
+      {
+        "kind": "split-test",
+        "path": "data/splits/SPLIT-0002/test.csv",
+        "sha256": "998cb973d9073d00862381749be85bbb33435334e88bb7ddeeb4c66067ca3ff5"
+      },
+      {
+        "kind": "split-artifact",
+        "path": "data/splits/SPLIT-0002/assignment.csv",
+        "sha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+      },
+      {
+        "kind": "split-artifact",
+        "path": "data/splits/SPLIT-0002/train.csv",
+        "sha256": "d00925b8264d5a36d8ffa042277dafc75874647b6764fb7e9e9050ef3355d7ee"
+      },
+      {
+        "kind": "split-artifact",
+        "path": "data/splits/SPLIT-0002/test.csv",
+        "sha256": "998cb973d9073d00862381749be85bbb33435334e88bb7ddeeb4c66067ca3ff5"
+      }
+    ]
+  }
+}

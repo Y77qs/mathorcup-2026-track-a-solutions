@@ -1,0 +1,506 @@
+{
+  "global_uniform_top3": {
+    "A_esters_all": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_esters_ethac": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_esters_flower": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_esters_fruity": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_esters_isoaa": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_hops_all": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_hops_citrus": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_hops_noble": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_hops_tropical": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_hops_woody": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_malt_all": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_malt_bread": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_malt_burn": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_malt_cara": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "A_malt_grain": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_esters_all": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_esters_ethac": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_esters_flower": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_esters_fruity": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_esters_isoaa": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_hops_all": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_hops_citrus": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_hops_noble": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_hops_tropical": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_hops_woody": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_malt_all": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_malt_bread": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_malt_burn": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_malt_cara": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "F_malt_grain": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "X4vg": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "acetic": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "acidity": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "aftertaste": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "alcohol": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "barnyard": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "bitternes": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "body": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "clove": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "co2": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "coriander": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "diacetyl": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "dms": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "lactic": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "metallic": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "orange": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "overall": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "stale_hops": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "sweetness": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ],
+    "t2n": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "esters_sum"
+    ]
+  },
+  "global_uniform_top3_ridgecoef": {
+    "A_esters_all": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_esters_ethac": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_esters_flower": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_esters_fruity": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_esters_isoaa": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_hops_all": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_hops_citrus": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_hops_noble": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_hops_tropical": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_hops_woody": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_malt_all": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_malt_bread": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_malt_burn": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_malt_cara": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "A_malt_grain": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_esters_all": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_esters_ethac": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_esters_flower": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_esters_fruity": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_esters_isoaa": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_hops_all": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_hops_citrus": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_hops_noble": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_hops_tropical": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_hops_woody": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_malt_all": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_malt_bread": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_malt_burn": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_malt_cara": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_malt_grain": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "X4vg": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "acetic": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "acidity": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "aftertaste": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "alcohol": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "barnyard": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "bitternes": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "body": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "clove": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "co2": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "coriander": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "diacetyl": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "dms": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "lactic": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "metallic": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "orange": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "overall": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "stale_hops": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "sweetness": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "t2n": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ]
+  }
+}

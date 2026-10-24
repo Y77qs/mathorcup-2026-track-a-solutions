@@ -1,0 +1,15 @@
+{
+  "pid": 54149,
+  "token": "213748eba07eca5665d2185c",
+  "experimentId": "EXP-0007",
+  "startedAt": "2026-10-24T06:01:23.172Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/experiments/EXP-0007/inputs/src/q3_generate.py"
+  ],
+  "childPid": 54152,
+  "childPgid": 54152,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2"
+}

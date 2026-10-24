@@ -1,0 +1,758 @@
+{
+  "kendall_absrho": {
+    "A_esters_all": [
+      "ethyl.butyrate",
+      "kcalperc",
+      "esters_sum"
+    ],
+    "A_esters_ethac": [
+      "E.nerolidol",
+      "X2.3.dihydro.farnesol",
+      "X2E.6Z.farnesal"
+    ],
+    "A_esters_flower": [
+      "X.E..dihydro.apofarnesal",
+      "E.caryophyllene",
+      "acetaldehyde"
+    ],
+    "A_esters_fruity": [
+      "beta.phellandrene",
+      "lactic_acid.mg.L.",
+      "iron"
+    ],
+    "A_esters_isoaa": [
+      "n.hexanol",
+      "ethyl.butyrate",
+      "isopentyl_acetate"
+    ],
+    "A_hops_all": [
+      "linalool",
+      "aroma_hops_sum",
+      "cis.dihydro.beta.terpineol"
+    ],
+    "A_hops_citrus": [
+      "cis.dihydro.beta.terpineol",
+      "citronellol",
+      "linalool"
+    ],
+    "A_hops_noble": [
+      "linalool",
+      "ethyl_decanoate",
+      "ethyl_octanoate"
+    ],
+    "A_hops_tropical": [
+      "DMS",
+      "X4.methyl.1.pentanol",
+      "X3.furanmethanol"
+    ],
+    "A_hops_woody": [
+      "neryl.propanoate",
+      "X.E..ortho.methoxy.cinnamaldehyde",
+      "alpha.calacorene"
+    ],
+    "A_malt_all": [
+      "color.EBC.",
+      "protein.g.L.",
+      "methylpyrazine"
+    ],
+    "A_malt_bread": [
+      "kcalperc",
+      "color.EBC.",
+      "protein.g.L."
+    ],
+    "A_malt_burn": [
+      "color.EBC.",
+      "y.methyl.1.octanol",
+      "methylpyrazine"
+    ],
+    "A_malt_cara": [
+      "color.EBC.",
+      "protein.g.L.",
+      "kcalperc"
+    ],
+    "A_malt_grain": [
+      "valencene",
+      "isoborneol",
+      "terpinen.4.ol"
+    ],
+    "F_esters_all": [
+      "kcalperc",
+      "acetaldehyde",
+      "ethyl_acetate"
+    ],
+    "F_esters_ethac": [
+      "ethyl_acetate",
+      "ethanol..v.v.",
+      "glycerol"
+    ],
+    "F_esters_flower": [
+      "X.E..dihydro.apofarnesal",
+      "beta.phellandrene",
+      "isopentyl.butanoate"
+    ],
+    "F_esters_fruity": [
+      "beta.phellandrene",
+      "octyl_acetate",
+      "protein.g.L."
+    ],
+    "F_esters_isoaa": [
+      "X4.methyl.1.pentanol",
+      "isopentyl_acetate",
+      "ethyl.butyrate"
+    ],
+    "F_hops_all": [
+      "bitterness",
+      "cis.dihydro.beta.terpineol",
+      "ethyl_octanoate"
+    ],
+    "F_hops_citrus": [
+      "geosmin",
+      "delta.terpinyl.acetate",
+      "nerol"
+    ],
+    "F_hops_noble": [
+      "bitterness",
+      "ethyl_octanoate",
+      "ethyl_decanoate"
+    ],
+    "F_hops_tropical": [
+      "DMS",
+      "terpinolene",
+      "geraniol"
+    ],
+    "F_hops_woody": [
+      "cis.dihydro.beta.terpineol",
+      "ethyl.tetradecanoate",
+      "bitterness"
+    ],
+    "F_malt_all": [
+      "kcalperc",
+      "pH",
+      "color.EBC."
+    ],
+    "F_malt_bread": [
+      "acetaldehyde",
+      "kcalperc",
+      "ethanol..v.v."
+    ],
+    "F_malt_burn": [
+      "MeSH",
+      "ethanol..v.v.",
+      "color.EBC."
+    ],
+    "F_malt_cara": [
+      "kcalperc",
+      "color.EBC.",
+      "protein.g.L."
+    ],
+    "F_malt_grain": [
+      "isoborneol",
+      "X2.3.butanedione",
+      "X.E..beta.ionone"
+    ],
+    "X4vg": [
+      "X4VG",
+      "ethyl.furoate",
+      "delta.terpinyl.acetate"
+    ],
+    "acetic": [
+      "ethyl_isovalerate",
+      "neryl.formate",
+      "isopentyl_acetate"
+    ],
+    "acidity": [
+      "pH",
+      "prenyl.isobutyrate",
+      "X4.ethyl.phenol"
+    ],
+    "aftertaste": [
+      "ethyl_isovalerate",
+      "ethyl_decanoate",
+      "X.E..2.nonenal"
+    ],
+    "alcohol": [
+      "ethanol..v.v.",
+      "kcalperc",
+      "esters_sum"
+    ],
+    "barnyard": [
+      "gamma.eudesmol",
+      "n.hexanol",
+      "alloaromadendrene.epoxide"
+    ],
+    "bitternes": [
+      "bitterness",
+      "cis.dihydro.beta.terpineol",
+      "ethyl_octanoate"
+    ],
+    "body": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "glycerol"
+    ],
+    "clove": [
+      "limonene",
+      "cis.dihydro.beta.terpineol",
+      "X2.3.butanedione"
+    ],
+    "co2": [
+      "ethanol..v.v.",
+      "ethyl_octanoate",
+      "esters_sum"
+    ],
+    "coriander": [
+      "limonene",
+      "X2.methyl.benzofuran",
+      "cis.beta.terpineol"
+    ],
+    "diacetyl": [
+      "eugenol",
+      "beta.phellandrene",
+      "cis.dihydro.beta.terpineol"
+    ],
+    "dms": [
+      "protein.g.L.",
+      "terpinen.4.ol",
+      "x.methyl.1.octanol"
+    ],
+    "lactic": [
+      "ethyl.furoate",
+      "acids_sum",
+      "prenyl.isobutyrate"
+    ],
+    "metallic": [
+      "iron",
+      "ethyl_isovalerate",
+      "cis.dihydro.beta.terpineol"
+    ],
+    "orange": [
+      "camphor",
+      "limonene",
+      "beta.phellandrene"
+    ],
+    "overall": [
+      "esters_sum",
+      "n.hexanol",
+      "kcalperc"
+    ],
+    "stale_hops": [
+      "alloaromadendrene.epoxide",
+      "n.hexanol",
+      "X1.octen.3.ol"
+    ],
+    "sweetness": [
+      "iron",
+      "ethyl_decanoate",
+      "bitterness"
+    ],
+    "t2n": [
+      "vinyl.caprylate",
+      "X2Z.6E.farnesal",
+      "cis.linalool.oxide"
+    ]
+  },
+  "random_forest_importance": {
+    "A_esters_all": [
+      "isopentyl_acetate",
+      "ethyl.butyrate",
+      "n.hexanol"
+    ],
+    "A_esters_ethac": [
+      "X2.3.dihydro.farnesol",
+      "X2E.6Z.farnesal",
+      "isopentyl_acetate"
+    ],
+    "A_esters_flower": [
+      "octyl_acetate",
+      "X.E..alpha.ionone",
+      "X3.furanmethanol"
+    ],
+    "A_esters_fruity": [
+      "esters_sum",
+      "kcalperc",
+      "beta.phellandrene"
+    ],
+    "A_esters_isoaa": [
+      "esters_sum",
+      "n.hexanol",
+      "isopentyl_acetate"
+    ],
+    "A_hops_all": [
+      "linalool",
+      "aroma_hops_sum",
+      "ethyl_octanoate"
+    ],
+    "A_hops_citrus": [
+      "cis.dihydro.beta.terpineol",
+      "aroma_hops_sum",
+      "nerol.oxide"
+    ],
+    "A_hops_noble": [
+      "ethyl_octanoate",
+      "iron",
+      "aroma_hops_sum"
+    ],
+    "A_hops_tropical": [
+      "isopentyl.butanoate",
+      "X2.undecanol",
+      "caryophyllene.acetate"
+    ],
+    "A_hops_woody": [
+      "X1.octen.3.ol",
+      "caryophyllene.alcohol",
+      "isobutyl.hexanoate"
+    ],
+    "A_malt_all": [
+      "color.EBC.",
+      "protein.g.L.",
+      "pH"
+    ],
+    "A_malt_bread": [
+      "color.EBC.",
+      "acetaldehyde",
+      "pH"
+    ],
+    "A_malt_burn": [
+      "color.EBC.",
+      "pH",
+      "protein.g.L."
+    ],
+    "A_malt_cara": [
+      "protein.g.L.",
+      "color.EBC.",
+      "GFS"
+    ],
+    "A_malt_grain": [
+      "isobutanol",
+      "isoborneol",
+      "terpinen.4.ol"
+    ],
+    "F_esters_all": [
+      "kcalperc",
+      "isopentyl_acetate",
+      "esters_sum"
+    ],
+    "F_esters_ethac": [
+      "ethyl_acetate",
+      "glycerol",
+      "acetaldehyde"
+    ],
+    "F_esters_flower": [
+      "furfural",
+      "X.E..dihydro.apofarnesal",
+      "phenethyl_acetate"
+    ],
+    "F_esters_fruity": [
+      "X.E..beta.ionone",
+      "X.E..alpha.ionone",
+      "MeSH"
+    ],
+    "F_esters_isoaa": [
+      "isopentyl_acetate",
+      "esters_sum",
+      "X4.methyl.1.pentanol"
+    ],
+    "F_hops_all": [
+      "X.E..2.nonenal",
+      "bitterness",
+      "cis.dihydro.beta.terpineol"
+    ],
+    "F_hops_citrus": [
+      "methyl.geranate",
+      "neryl.propanoate",
+      "protein.g.L."
+    ],
+    "F_hops_noble": [
+      "bitterness",
+      "nerol.oxide",
+      "ethyl_octanoate"
+    ],
+    "F_hops_tropical": [
+      "isopentyl.butanoate",
+      "nerol.oxide",
+      "cis.dihydro.beta.terpineol"
+    ],
+    "F_hops_woody": [
+      "cis.dihydro.beta.terpineol",
+      "isobutanol",
+      "tau.muurolol"
+    ],
+    "F_malt_all": [
+      "color.EBC.",
+      "kcalperc",
+      "pH"
+    ],
+    "F_malt_bread": [
+      "kcalperc",
+      "ethyl.tiglate",
+      "MeSH"
+    ],
+    "F_malt_burn": [
+      "color.EBC.",
+      "pH",
+      "ethyl.tetradecanoate"
+    ],
+    "F_malt_cara": [
+      "color.EBC.",
+      "acetaldehyde",
+      "kcalperc"
+    ],
+    "F_malt_grain": [
+      "n.heptanol",
+      "ethyl_hexanoate",
+      "ethanol..v.v."
+    ],
+    "X4vg": [
+      "X4VG",
+      "X.E.E..2.4.decadienal",
+      "delta.terpinyl.acetate"
+    ],
+    "acetic": [
+      "perillyl.acetate",
+      "acids_sum",
+      "lactic_acid.mg.L."
+    ],
+    "acidity": [
+      "pH",
+      "lactic_acid.mg.L.",
+      "butyl.acetate"
+    ],
+    "aftertaste": [
+      "ethyl_decanoate",
+      "ethyl_octanoate",
+      "bitterness"
+    ],
+    "alcohol": [
+      "ethanol..v.v.",
+      "kcalperc",
+      "esters_sum"
+    ],
+    "barnyard": [
+      "alloaromadendrene.epoxide",
+      "alpha.eudesmol",
+      "X1.octen.3.ol"
+    ],
+    "bitternes": [
+      "bitterness",
+      "iron",
+      "X.E..2.nonenal"
+    ],
+    "body": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "glycerol"
+    ],
+    "clove": [
+      "isobutyl_acetate",
+      "isobutanol",
+      "phenethyl_alcohol"
+    ],
+    "co2": [
+      "CO2.PSI.",
+      "esters_sum",
+      "ethanol..v.v."
+    ],
+    "coriander": [
+      "camphor",
+      "ethyl..E..linalool",
+      "linalool"
+    ],
+    "diacetyl": [
+      "eugenol",
+      "isoamyl.lactate",
+      "lactic_acid.mg.L."
+    ],
+    "dms": [
+      "protein.g.L.",
+      "glycerol",
+      "benzaldehyde"
+    ],
+    "lactic": [
+      "pH",
+      "acids_sum",
+      "prenyl.isobutyrate"
+    ],
+    "metallic": [
+      "iron",
+      "ethyl_isovalerate",
+      "H2S"
+    ],
+    "orange": [
+      "camphor",
+      "aroma_hops_sum",
+      "ethyl..E..linalool"
+    ],
+    "overall": [
+      "unfermentables",
+      "styrene",
+      "n.hexanol"
+    ],
+    "stale_hops": [
+      "alpha.eudesmol",
+      "X.E..ortho.methoxy.cinnamaldehyde",
+      "alloaromadendrene.epoxide"
+    ],
+    "sweetness": [
+      "GFS",
+      "iron",
+      "ethyl_decanoate"
+    ],
+    "t2n": [
+      "X2.ethylhexylsalicylate",
+      "glycerol",
+      "n.dodecanol"
+    ]
+  },
+  "ridge_coef": {
+    "A_esters_all": [
+      "acetaldehyde",
+      "pH",
+      "X2.methyltetrahydrofuran.3.one"
+    ],
+    "A_esters_ethac": [
+      "X2E.6Z.farnesal",
+      "terpinen.4.ol.acetate",
+      "n.tetradecanol"
+    ],
+    "A_esters_flower": [
+      "X2.methyltetrahydrofuran.3.one",
+      "X.E..alpha.ionone",
+      "X1.octen.3.ol"
+    ],
+    "A_esters_fruity": [
+      "X2.methyltetrahydrofuran.3.one",
+      "beta.phellandrene",
+      "X1.10.di.epi.cubenol"
+    ],
+    "A_esters_isoaa": [
+      "amyl.acetate",
+      "n.tetradecanol",
+      "ethyl.hexadecanoate"
+    ],
+    "A_hops_all": [
+      "iron",
+      "geosmin",
+      "kcalperc"
+    ],
+    "A_hops_citrus": [
+      "trans.dihydro.beta.terpineol",
+      "cis.beta.terpineol",
+      "geosmin"
+    ],
+    "A_hops_noble": [
+      "iron",
+      "phenethyl_acetate",
+      "X2Z.6Z.farnesol"
+    ],
+    "A_hops_tropical": [
+      "ethyl.nicotinate",
+      "citronellol",
+      "eucalyptol"
+    ],
+    "A_hops_woody": [
+      "iron",
+      "ethyl_2.methyl_butyrate",
+      "hydroxy.methyl.furfural"
+    ],
+    "A_malt_all": [
+      "color.EBC.",
+      "protein.g.L.",
+      "pH"
+    ],
+    "A_malt_bread": [
+      "furfural",
+      "CS2",
+      "color.EBC."
+    ],
+    "A_malt_burn": [
+      "color.EBC.",
+      "pH",
+      "protein.g.L."
+    ],
+    "A_malt_cara": [
+      "color.EBC.",
+      "GFS",
+      "SO2.mg.L."
+    ],
+    "A_malt_grain": [
+      "valencene",
+      "propylene.glycol",
+      "car.3.en.2.one"
+    ],
+    "F_esters_all": [
+      "acetaldehyde",
+      "kcalperc",
+      "n.tetradecanol"
+    ],
+    "F_esters_ethac": [
+      "glycerol",
+      "n.tetradecanol",
+      "ethyl.hydrocinnamate"
+    ],
+    "F_esters_flower": [
+      "X2.methyltetrahydrofuran.3.one",
+      "eucalyptol",
+      "phenethyl_acetate"
+    ],
+    "F_esters_fruity": [
+      "beta.phellandrene",
+      "X2.methyltetrahydrofuran.3.one",
+      "cadalene"
+    ],
+    "F_esters_isoaa": [
+      "X2.methyltetrahydrofuran.3.one",
+      "amyl.acetate",
+      "n.tetradecanol"
+    ],
+    "F_hops_all": [
+      "ethyl_isovalerate",
+      "iron",
+      "terpinolene"
+    ],
+    "F_hops_citrus": [
+      "geosmin",
+      "phenethyl_alcohol",
+      "Z.Z.geranyl.linalool"
+    ],
+    "F_hops_noble": [
+      "X14.hydroxy.alpha.humulene",
+      "citronellol",
+      "iron"
+    ],
+    "F_hops_tropical": [
+      "ethyl.nicotinate",
+      "X2.3.butanedione",
+      "terpinolene"
+    ],
+    "F_hops_woody": [
+      "H2S",
+      "CS2",
+      "manool"
+    ],
+    "F_malt_all": [
+      "color.EBC.",
+      "pH",
+      "protein.g.L."
+    ],
+    "F_malt_bread": [
+      "CS2",
+      "cumin.aldehyde",
+      "terpinen.4.ol"
+    ],
+    "F_malt_burn": [
+      "color.EBC.",
+      "pH",
+      "protein.g.L."
+    ],
+    "F_malt_cara": [
+      "color.EBC.",
+      "GFS",
+      "protein.g.L."
+    ],
+    "F_malt_grain": [
+      "terpinen.4.ol",
+      "X2.3.butanedione",
+      "n.pentanol"
+    ],
+    "X4vg": [
+      "X4VG",
+      "camphor",
+      "neryl.isovalerate"
+    ],
+    "acetic": [
+      "lactic_acid.mg.L.",
+      "pH",
+      "X2.furanmethanol"
+    ],
+    "acidity": [
+      "lactic_acid.mg.L.",
+      "acids_sum",
+      "pH"
+    ],
+    "aftertaste": [
+      "ethyl_isovalerate",
+      "kcalperc",
+      "protein.g.L."
+    ],
+    "alcohol": [
+      "kcalperc",
+      "ethanol..v.v.",
+      "glycerol"
+    ],
+    "barnyard": [
+      "methyl.para.anisate",
+      "X2.3.butanedione",
+      "GFS"
+    ],
+    "bitternes": [
+      "bitterness",
+      "iron",
+      "cis.dihydro.beta.terpineol"
+    ],
+    "body": [
+      "kcalperc",
+      "color.EBC.",
+      "glycerol"
+    ],
+    "clove": [
+      "propyl.acetate",
+      "caryophyllene.acetate",
+      "limonene"
+    ],
+    "co2": [
+      "kcalperc",
+      "X3.methyl.2.hexanol",
+      "nerol"
+    ],
+    "coriander": [
+      "X1.octen.3.ol",
+      "x.methyl.1.octanol",
+      "geraniol"
+    ],
+    "diacetyl": [
+      "X2.butyloctanoate",
+      "beta.phellandrene",
+      "amyl.acetate"
+    ],
+    "dms": [
+      "protein.g.L.",
+      "phenethyl_alcohol",
+      "isopropyl.laurate"
+    ],
+    "lactic": [
+      "pH",
+      "lactic_acid.mg.L.",
+      "acids_sum"
+    ],
+    "metallic": [
+      "iron",
+      "neryl.formate",
+      "ethyl_isovalerate"
+    ],
+    "orange": [
+      "X1.alpha.terpineol",
+      "geraniol",
+      "limonene"
+    ],
+    "overall": [
+      "unfermentables",
+      "n.tetradecanol",
+      "pH"
+    ],
+    "stale_hops": [
+      "methyl.para.anisate",
+      "X2.3.butanedione",
+      "GFS"
+    ],
+    "sweetness": [
+      "GFS",
+      "neo.allo.ocimene",
+      "protein.g.L."
+    ],
+    "t2n": [
+      "cis.linalool.oxide",
+      "glycerol",
+      "caryophyllene.acetate"
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "artifacts": {
+    "figures": [
+      {
+        "name": "q3_sensory_profiles.png",
+        "path": "figures/q3_sensory_profiles.png",
+        "sha256": "fb2fa0c0242bd1b5b416fae93937b67d58c231597a7f671a2375bd3901c893ee"
+      },
+      {
+        "name": "q3_constraint_satisfaction.png",
+        "path": "figures/q3_constraint_satisfaction.png",
+        "sha256": "75a51634098f07c25429cebae2ae53906c87fd4742fc6f3fe5ed95b19537ecdc"
+      },
+      {
+        "name": "q3_transfer_defects.png",
+        "path": "figures/q3_transfer_defects.png",
+        "sha256": "0c698b18b9b8ce4e0aecf7681fc4e21654fea56b278ed5dd91f1ea6faf7be21c"
+      },
+      {
+        "name": "q3_generated_vs_real.png",
+        "path": "figures/q3_generated_vs_real.png",
+        "sha256": "82879de445a73795d621d7fd53b9f38cf89b58ca0434a41ac9ef0136d2cc840d"
+      }
+    ],
+    "samplesFile": "generated_profiles.csv",
+    "seed": 20261024,
+    "transferFile": "transfer_profiles.csv",
+    "unconstrainedFile": "generated_profiles_unconstrained.csv"
+  },
+  "defectCounts": {
+    "clippedPerCompound": {
+      "DES": 55,
+      "DMS": 200,
+      "H2S": 166,
+      "SO2.mg.L.": 0,
+      "X2.3.butanedione": 182,
+      "X4VG": 5,
+      "acetaldehyde": 1
+    },
+    "generatedConstrained": {
+      "excess__DES": 0,
+      "excess__DMS": 0,
+      "excess__H2S": 0,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 0,
+      "excess__X4VG": 0,
+      "excess__acetaldehyde": 0
+    },
+    "generatedUnconstrained": {
+      "excess__DES": 55,
+      "excess__DMS": 200,
+      "excess__H2S": 166,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 182,
+      "excess__X4VG": 5,
+      "excess__acetaldehyde": 1
+    },
+    "realAll250": {
+      "excess__DES": 46,
+      "excess__DMS": 168,
+      "excess__H2S": 230,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 112,
+      "excess__X4VG": 16,
+      "excess__acetaldehyde": 0
+    },
+    "realAll250SatisfyingAll7": 6,
+    "realHeldoutSatisfyingAll7": 0,
+    "scaleAuditBasis": "runner-dependency-snapshot",
+    "sourcePilsLager": {
+      "excess__DES": 0,
+      "excess__DMS": 3,
+      "excess__H2S": 11,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 1,
+      "excess__X4VG": 0,
+      "excess__acetaldehyde": 0
+    },
+    "thresholdsOriginalUnits": {
+      "DES": 1.2,
+      "DMS": 17.25,
+      "H2S": 3.5,
+      "SO2.mg.L.": 15.33333333,
+      "X2.3.butanedione": 0.29925,
+      "X4VG": 0.206333333,
+      "acetaldehyde": 50.0
+    },
+    "transferConstrained": {
+      "excess__DES": 0,
+      "excess__DMS": 3,
+      "excess__H2S": 11,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 1,
+      "excess__X4VG": 0,
+      "excess__acetaldehyde": 0
+    },
+    "transferRawshift": {
+      "excess__DES": 3,
+      "excess__DMS": 8,
+      "excess__H2S": 11,
+      "excess__SO2.mg.L.": 0,
+      "excess__X2.3.butanedione": 11,
+      "excess__X4VG": 0,
+      "excess__acetaldehyde": 0
+    },
+    "unassessableDefects": [
+      "X.E..2.nonenal",
+      "3-methyl-2-butenal"
+    ]
+  },
+  "evaluation": {
+    "definition": "fraction of generated rows with all seven excess__<compound> <= 0, excess = inverse_transform(chem__<compound>)/thr__<compound> - 1 ; generated_profiles.csv carries BOTH chem__ values and excess__ values so excess is independently recomputable",
+    "family": "style-conditional multivariate Gaussian + defect-constraint projection",
+    "generator": {
+      "covariance": "shared covariance shrunk toward its diagonal: (1-lam)*Cov + lam*diag(Cov)",
+      "n_samples_per_style": 100,
+      "shrinkage": 0.5,
+      "shrinkageMultiplier": 1.0
+    },
+    "holdoutStyles": [
+      "Tripel",
+      "Kriek",
+      "Lambic"
+    ],
+    "kind": "constraint-satisfaction",
+    "metricKey": "constraint-satisfaction",
+    "modelContractId": "MCON-0001",
+    "priorStyleMapping": {
+      "Kriek": [
+        "Fruitbeer"
+      ],
+      "Lambic": [
+        "Faro",
+        "Flanders old brown",
+        "West Flanders ale",
+        "Brett/cofermented"
+      ],
+      "Tripel": [
+        "Strong ale",
+        "Dubbel"
+      ]
+    },
+    "samplesFile": "generated_profiles.csv",
+    "scope": "generation reasonableness / constraint satisfaction / distributional consistency; NOT a real brewing validation; no causal claim",
+    "sensoryProfile": "Ridge proxy fitted on the registered Q1 TRAIN rows; SURROGATE, not measured ratings, not the Q1 final model",
+    "tolerance": 1e-09,
+    "transfer": {
+      "shift": "x' = x_source + (mu_target - mu_source) in standardised space; the seven defect compounds stay unshifted in the constrained variant",
+      "sourceStyle": "Pils/Lager",
+      "targetStyle": "Tripel"
+    },
+    "unassessableDefects": [
+      "X.E..2.nonenal",
+      "3-methyl-2-butenal"
+    ]
+  },
+  "perStyle": {
+    "energy": {
+      "Kriek": {
+        "constrained": 7.0541479647297285,
+        "nReal": 10,
+        "unconstrained": 7.064803785871711
+      },
+      "Lambic": {
+        "constrained": 2.1035831275179318,
+        "nReal": 11,
+        "unconstrained": 2.0950411861386744
+      },
+      "Tripel": {
+        "constrained": 1.346756649275782,
+        "nReal": 28,
+        "unconstrained": 1.2993039909084998
+      }
+    },
+    "generation": {
+      "Kriek": {
+        "nPoolRows": 8,
+        "nSamples": 100,
+        "priorStyles": [
+          "Fruitbeer"
+        ]
+      },
+      "Lambic": {
+        "nPoolRows": 21,
+        "nSamples": 100,
+        "priorStyles": [
+          "Faro",
+          "Flanders old brown",
+          "West Flanders ale",
+          "Brett/cofermented"
+        ]
+      },
+      "Tripel": {
+        "nPoolRows": 28,
+        "nSamples": 100,
+        "priorStyles": [
+          "Strong ale",
+          "Dubbel"
+        ]
+      }
+    },
+    "profile": {
+      "Kriek": {
+        "constrained": 0.5376594170447244,
+        "unconstrained": 0.5200266749742012
+      },
+      "Lambic": {
+        "constrained": 0.550043809264199,
+        "unconstrained": 0.5491812535290796
+      },
+      "Tripel": {
+        "constrained": 0.39383262913997547,
+        "unconstrained": 0.4368241204073288
+      }
+    }
+  },
+  "sensoryProxy": {
+    "alpha": 300.0,
+    "basis": {
+      "q1Mapped": "runner-dependency-snapshot",
+      "splitTrain": "runner-dependency-snapshot"
+    },
+    "features": 231,
+    "label": "Ridge proxy fitted on registered Q1 TRAIN rows; NOT the Q1 final model; NOT measured ratings",
+    "nRows": 200,
+    "note": "profiles in figures/metrics come from this surrogate model",
+    "targets": [
+      "A_malt_all",
+      "A_malt_grain",
+      "A_malt_bread",
+      "A_malt_cara",
+      "A_malt_burn",
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_hops_tropical",
+      "A_hops_noble",
+      "A_hops_woody",
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_esters_isoaa",
+      "A_esters_flower",
+      "A_esters_fruity",
+      "F_malt_all",
+      "F_malt_grain",
+      "F_malt_bread",
+      "F_malt_cara",
+      "F_malt_burn",
+      "F_hops_all",
+      "F_hops_citrus",
+      "F_hops_tropical",
+      "F_hops_noble",
+      "F_hops_woody",
+      "F_esters_all",
+      "F_esters_ethac",
+      "F_esters_isoaa",
+      "F_esters_flower",
+      "F_esters_fruity",
+      "acidity",
+      "bitternes",
+      "sweetness",
+      "X4vg",
+      "diacetyl",
+      "dms",
+      "metallic",
+      "stale_hops",
+      "t2n",
+      "orange",
+      "coriander",
+      "clove",
+      "lactic",
+      "acetic",
+      "barnyard",
+      "alcohol",
+      "aftertaste",
+      "body",
+      "co2",
+      "overall"
+    ]
+  },
+  "transfer": {
+    "deltaDefectZeroed": true,
+    "nSourceRows": 11,
+    "nonworsen": {
+      "constrained": 1.0,
+      "rawshift": 0.14285714285714285
+    },
+    "satisfaction": {
+      "constrained": 0.0,
+      "rawshift": 0.0,
+      "source": 0.0
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "column": "X2.methyltetrahydrofuran.3.one",
+  "rowId0based": 73,
+  "csvDataRow1based": 75,
+  "beer": 156,
+  "rawFile": {
+    "path": "data/raw/1.csv",
+    "sha256": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69"
+  },
+  "rawValue": 12596.43287,
+  "columnN": 250,
+  "columnNA": 0,
+  "columnMedianAll250": 0.052860078,
+  "columnMedianWithoutRow73": 0.052685651,
+  "columnSecondLargest": 76.832805,
+  "columnSecondLargestRowId": 105,
+  "ratioToMedian": 239086.6,
+  "ratioToSecondLargest": 163.95,
+  "isColumnMax": true,
+  "ordersOfMagnitudeAboveMedian": 5.38,
+  "carriedUnchangedInto": {
+    "DATA-0001": {
+      "path": "data/processed/q1_mapped.csv",
+      "value": 12596.43287,
+      "identicalToRaw": true
+    },
+    "DATA-0002": {
+      "path": "data/processed/q2_raw.csv",
+      "value": 12596.43287,
+      "identicalToRaw": true
+    },
+    "DATA-0003": {
+      "path": "data/processed/q3_table.csv",
+      "value": 12596.43287,
+      "identicalToRaw": true
+    }
+  },
+  "valuesModifiedAnywhere": false,
+  "standardisation": {
+    "splitId": "SPLIT-0015",
+    "splitDataset": "DATA-0004",
+    "row73InTestSet": true,
+    "trainRows": 160,
+    "trainMeanThisColumn": 0.449253,
+    "trainStdThisColumn": 2.572235,
+    "zOfRow73ThisColumn": 4896.9,
+    "maxAbsZAnyColumnOnSameTrainRows": 12.607,
+    "note": "row 73 is a TEST row here, so the train statistics do not contain it: the row standardised with train statistics lands ~4897 standard deviations out, while the largest |z| any of the 231 chemical columns reaches inside the training rows is 12.6."
+  },
+  "rowId73InTestOfSplits": [
+    "SPLIT-0005",
+    "SPLIT-0015"
+  ],
+  "measuredImpact": {
+    "experimentId": "EXP-0026",
+    "model": "ridge-L2-multioutput",
+    "nHoldoutRows": 40,
+    "holdoutMeanMae": 1.962373,
+    "perRowMaeAtRow73": 51.541841,
+    "meanMaeOverOtherHoldoutRows": 0.691104,
+    "maxPerRowMaeOtherRows": 1.497628,
+    "predictionRangeOverall": [
+      -123.196,
+      349.041
+    ],
+    "predictionRangeAtRow73": [
+      -123.196,
+      349.041
+    ],
+    "truthRangeAtRow73": [
+      0.041,
+      6.0
+    ],
+    "comparisonRunsWithoutRow73InTest": {
+      "EXP-0016": 0.605597,
+      "EXP-0025": 0.758592
+    },
+    "statement": "One single sample owns the whole blow-up: the linear Ridge extrapolates that row to the [-123, 349] mapped-grade range while its true grades are 0.04-6, giving that row a per-row MAE of 51.5 and lifting the 40-row holdout mean MAE from 0.691 (the other 39 rows) to 1.962. The same model on splits where row 73 is not a test row lands at 0.61-0.76."
+  },
+  "policy": "REGISTERED, NOT FIXED. No CSV value is altered, no row is dropped, no winsorising and no re-imputation is applied: the outlier is an original data fact and is reported as a data-quality defect. Any robustness statement must therefore either (a) report metrics with and without this row, or (b) use a non-linear / outlier-robust learner; silently trimming it would hide a real property of the attachment.",
+  "whereWritten": "report/data-quality.md section 14 (and referenced from the Q1 limitations)"
+}

@@ -1,0 +1,103 @@
+{
+  "checkType": "split-integrity",
+  "metric": "mae",
+  "tolerance": {
+    "absolute": 1e-9,
+    "relative": 0.000001,
+    "source": "checks[i].tolerance"
+  },
+  "assignment": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/data/splits/SPLIT-0003/assignment.csv",
+  "train": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/data/splits/SPLIT-0003/train.csv",
+  "test": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2/data/splits/SPLIT-0003/test.csv",
+  "method": "random-holdout",
+  "timeColumn": null,
+  "expectedRows": 250,
+  "expectedHashes": {
+    "assignment": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e",
+    "train": "06d8ee5f4c4a22e8c2861a3e06eb39b1135684231615fb02930e16a9b007bc2d",
+    "test": "9588112f41cc1f1c175b382688f3ffd4caba9d54bd95802e1d42e66c049f432b"
+  },
+  "experimentId": "EXP-0007",
+  "validationPlanId": "VP-0003",
+  "provenanceSummary": {
+    "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+    "experiment": {
+      "id": "EXP-0007",
+      "status": "succeeded",
+      "metricsSha256": "6b8c90f252f4dd32f9283144ca761cdf260101c1b087eef0cbc24b9ce70138f2",
+      "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399"
+    },
+    "inputs": [
+      {
+        "kind": "experiment-code",
+        "path": "experiments/EXP-0007/inputs/src/q3_generate.py",
+        "sha256": "ac3e8f92f98fd145b6e7f5b711f925e9267c9c003cf83f8ace593f47b1e37188"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0007/inputs/data/processed/data_quality.json",
+        "sha256": "249dc17c52c2c9b954dfa09c4cfbea0ac1ff24d38f711b32d411a7558c714dcc"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0007/inputs/data/processed/q1_mapped.csv",
+        "sha256": "64651e40fbda83fc70d66fd3164bc0932562da143d0ec1946340ea27c5b5c8ab"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0007/inputs/data/splits/SPLIT-0001/train.csv",
+        "sha256": "52129428f0348591a46036b1da01894097bc2c616f8eb9907b175f6b46288487"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0007/inputs/src/q3_generate.py",
+        "sha256": "ac3e8f92f98fd145b6e7f5b711f925e9267c9c003cf83f8ace593f47b1e37188"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0007/inputs/src/q3_lib.py",
+        "sha256": "7750e1ce99ed14beb4535fee48f356bdebb31098e88d8afca98c6196d322b78d"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0007/inputs/src/q_common.py",
+        "sha256": "55e65a2a0bccfa059559d3772e255ea133d1fe2f75c76257ef694c583db246dd"
+      },
+      {
+        "kind": "dataset",
+        "path": "data/processed/q3_table.csv",
+        "sha256": "a89872324f27ede6216242645894fbeee3a90c28d2f0ef5d50e08938242cfad3"
+      },
+      {
+        "kind": "split-assignment",
+        "path": "data/splits/SPLIT-0003/assignment.csv",
+        "sha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+      },
+      {
+        "kind": "split-train",
+        "path": "data/splits/SPLIT-0003/train.csv",
+        "sha256": "06d8ee5f4c4a22e8c2861a3e06eb39b1135684231615fb02930e16a9b007bc2d"
+      },
+      {
+        "kind": "split-test",
+        "path": "data/splits/SPLIT-0003/test.csv",
+        "sha256": "9588112f41cc1f1c175b382688f3ffd4caba9d54bd95802e1d42e66c049f432b"
+      },
+      {
+        "kind": "split-artifact",
+        "path": "data/splits/SPLIT-0003/assignment.csv",
+        "sha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+      },
+      {
+        "kind": "split-artifact",
+        "path": "data/splits/SPLIT-0003/train.csv",
+        "sha256": "06d8ee5f4c4a22e8c2861a3e06eb39b1135684231615fb02930e16a9b007bc2d"
+      },
+      {
+        "kind": "split-artifact",
+        "path": "data/splits/SPLIT-0003/test.csv",
+        "sha256": "9588112f41cc1f1c175b382688f3ffd4caba9d54bd95802e1d42e66c049f432b"
+      }
+    ]
+  }
+}

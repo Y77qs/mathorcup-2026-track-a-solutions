@@ -1,0 +1,28 @@
+{
+  "figures": [
+    {
+      "name": "q3_sensory_profiles.png",
+      "path": "figures/q3_sensory_profiles.png",
+      "sha256": "f19ce1ebe8beb514031776976166935f9f41b70f6c6f3d65cc94696a9c71f601",
+      "bytes": 83024
+    },
+    {
+      "name": "q3_constraint_satisfaction.png",
+      "path": "figures/q3_constraint_satisfaction.png",
+      "sha256": "feeeaa6b5c1b806c983e511ec617232f2fcfce812c38473e1323626e28b7381c",
+      "bytes": 45925
+    },
+    {
+      "name": "q3_transfer_defects.png",
+      "path": "figures/q3_transfer_defects.png",
+      "sha256": "309989ca78f5d5d702303612e7531e83061a5af280ff24580718c93d766a3457",
+      "bytes": 51340
+    },
+    {
+      "name": "q3_generated_vs_real.png",
+      "path": "figures/q3_generated_vs_real.png",
+      "sha256": "ec13a870a8a9e130dabae311cc1f299a97ab37a0a01b2df825bc28fb183729cc",
+      "bytes": 138059
+    }
+  ]
+}
