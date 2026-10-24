@@ -1,0 +1,7 @@
+[build] target=minimal  workdir=/Users/baozhashizitou/Documents/MATHORCUP/A/report/tex  2026-10-23 21:48:29
+[build] pandoc: minimal.md -> minimal.tex
+[build] xelatex pass 1
+[build] xelatex pass 2
+[build] OK  pdf=/Users/baozhashizitou/Documents/MATHORCUP/A/report/tex/minimal.pdf  pages=2  overfull_hbox=0
+[build] 完整 LaTeX 日志: /Users/baozhashizitou/Documents/MATHORCUP/A/report/tex/_build/minimal.log
+[build] 编译命令: cd /Users/baozhashizitou/Documents/MATHORCUP/A/report/tex && /usr/local/bin/xelatex -interaction=nonstopmode -halt-on-error -output-directory=_build minimal.tex （两遍）

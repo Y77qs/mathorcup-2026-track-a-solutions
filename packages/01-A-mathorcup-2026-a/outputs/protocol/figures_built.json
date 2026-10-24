@@ -1,0 +1,32 @@
+{
+  "q1_per_dim": {
+    "path": "/Users/baozhashizitou/Documents/MATHORCUP/A/figures/q1_per_dim_r2.png",
+    "meta": {
+      "n_dims": 50,
+      "mean_candidate": 0.220579478860721,
+      "mean_baseline": -0.024635435726754987,
+      "n_positive": 43
+    }
+  },
+  "q1_compare": {
+    "path": "/Users/baozhashizitou/Documents/MATHORCUP/A/figures/q1_model_comparison.png",
+    "meta": {
+      "n_families": 8,
+      "best": "B3_extratrees",
+      "best_oof_r2": 0.231900276852883
+    }
+  },
+  "q2_jaccard": {
+    "path": "/Users/baozhashizitou/Documents/MATHORCUP/A/figures/q2_method_agreement.png",
+    "meta": {
+      "mean_offdiag": 0.20000000000000004,
+      "max_offdiag": 0.5
+    }
+  },
+  "q2_top3": {
+    "path": "/Users/baozhashizitou/Documents/MATHORCUP/A/figures/q2_top3_heatmap.png",
+    "meta": {
+      "dims_plotted": 10
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "B_primary": 300.0,
+  "B_secondary": 20.0,
+  "frac_seats_agg_ge_0.80": 0.18666666666666668,
+  "frac_seats_m1_ge_0.80": 0.14666666666666667,
+  "frac_seats_m4_ge_0.80": 0.09333333333333334,
+  "freq_ge_080_share": 0.18666666666666668,
+  "jaccard_mean": 0.18666666666666668,
+  "n_final_seats": 150.0,
+  "n_seats_agg_ge_0.80": 28.0,
+  "n_top3_slots_stable": 28.0,
+  "prior_rank_corr_mean": 0.6281971149210783,
+  "r2": 0.45,
+  "r2_50dim": 0.45,
+  "r2_overall": 0.4166666666666667,
+  "top3_stability": 0.45,
+  "top3_stability_agg": 0.45,
+  "top3_stability_m1": 0.36617777777777777,
+  "top3_stability_m4": 0.2387777777777778
+}

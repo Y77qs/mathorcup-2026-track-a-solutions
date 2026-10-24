@@ -1,0 +1,686 @@
+{
+  "files": {
+    "1.csv": {
+      "sha256": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69",
+      "bytes": 700705
+    },
+    "2.csv": {
+      "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+      "bytes": 1000771
+    },
+    "3.xlsx": {
+      "sha256": "fe4dcabd48431e6d677c095962ea9c447e10e509c4f3f8dd511a48c5541ab587",
+      "bytes": 163364
+    },
+    "4.csv": {
+      "sha256": "43a7b38682ed81ce64d97ebc1874c09dffac023ade4877f34e3c83ef7d42dc1c",
+      "bytes": 162887
+    },
+    "5.csv": {
+      "sha256": "c512eed108de6f98e0c6ed66497ed2319745d30ca7f6f4acac4f175a4bdcde9a",
+      "bytes": 48044
+    },
+    "6.csv": {
+      "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+      "bytes": 42937
+    },
+    "7.csv": {
+      "sha256": "2083138df46640e20b46f7e76ec32cf9b380fd34e019269afd819edeb546ff5e",
+      "bytes": 588816
+    },
+    "8.xlsx": {
+      "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+      "bytes": 1740092
+    },
+    "数据说明.txt": {
+      "sha256": "40813e273e081ae0dc6d6fa76838c5cdbaa721335df3648b4b29d5f76b6378d7",
+      "bytes": 614
+    }
+  },
+  "shapes": {
+    "1.csv": [
+      250,
+      234
+    ],
+    "2.csv": [
+      231,
+      231
+    ],
+    "4.csv": [
+      250,
+      53
+    ],
+    "5.csv": [
+      50,
+      50
+    ],
+    "6.csv": [
+      44,
+      50
+    ],
+    "7.csv": [
+      250,
+      189
+    ]
+  },
+  "C1_n_samples": {
+    "1.csv_rows": 250,
+    "unique_beer": 250,
+    "unique_beer_id": 250,
+    "statement_says": 226,
+    "verdict": "data=250; statement 226 为笔误"
+  },
+  "C2_corr_type": {
+    "n_pairs": 116,
+    "max_abs_err_vs_spearman": 4.996003610813204e-16,
+    "max_abs_err_vs_pearson": 0.345849734727833,
+    "median_abs_err_vs_spearman": 1.249000902703301e-16,
+    "median_abs_err_vs_pearson": 0.050434310933334,
+    "examples": [
+      {
+        "a": "geraniol",
+        "b": "eugenol",
+        "pearson": -0.088369,
+        "spearman": 0.053738,
+        "file_2csv": 0.053738,
+        "err_spearman": 0.0,
+        "err_pearson": 0.142107
+      },
+      {
+        "a": "geraniol",
+        "b": "acids_sum",
+        "pearson": -0.176638,
+        "spearman": -0.161461,
+        "file_2csv": -0.161461,
+        "err_spearman": 0.0,
+        "err_pearson": 0.015176
+      },
+      {
+        "a": "geraniol",
+        "b": "methylpyrazine",
+        "pearson": -0.069839,
+        "spearman": -0.041298,
+        "file_2csv": -0.041298,
+        "err_spearman": 0.0,
+        "err_pearson": 0.028541
+      },
+      {
+        "a": "protein.g.L.",
+        "b": "phenylacetaldehyde",
+        "pearson": -0.064938,
+        "spearman": -0.001058,
+        "file_2csv": -0.001058,
+        "err_spearman": 0.0,
+        "err_pearson": 0.06388
+      },
+      {
+        "a": "protein.g.L.",
+        "b": "nerol",
+        "pearson": -0.16921,
+        "spearman": -0.248052,
+        "file_2csv": -0.248052,
+        "err_spearman": 0.0,
+        "err_pearson": 0.078842
+      },
+      {
+        "a": "protein.g.L.",
+        "b": "citronellol",
+        "pearson": -0.108786,
+        "spearman": -0.144566,
+        "file_2csv": -0.144566,
+        "err_spearman": 0.0,
+        "err_pearson": 0.03578
+      }
+    ],
+    "verdict": "2.csv = Spearman（题面'皮尔逊'为误写）"
+  },
+  "C3_scorecard": {
+    "sheets": [
+      "beer_1",
+      "beer_2",
+      "beer_3",
+      "beer_4",
+      "beer_5",
+      "beer_6",
+      "beer_7",
+      "beer_8",
+      "beer_9",
+      "beer_10",
+      "beer_11",
+      "beer_12",
+      "summary"
+    ],
+    "n_beer_sheets": 12,
+    "statement_says": 10,
+    "per_sheet": {
+      "beer_1": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_2": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_3": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_4": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_5": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_6": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_7": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_8": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_9": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_10": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_11": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "beer_12": {
+        "shape": [
+          101,
+          33
+        ],
+        "numeric_cells": 107,
+        "cells_gt0": 91
+      },
+      "summary": {
+        "shape": [
+          13,
+          52
+        ],
+        "numeric_cells": 156,
+        "cells_gt0": 0
+      }
+    },
+    "summary_numeric_sum_of_scores": 0.0,
+    "summary_header": [
+      "A_malt_all",
+      "A_malt_grain",
+      "A_malt_bread",
+      "A_malt_cara",
+      "A_malt_burn",
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_hops_tropical",
+      "A_hops_noble",
+      "A_hops_woody",
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_esters_isoaa",
+      "A_esters_flower",
+      "A_ester_fruity",
+      "F_malt_all",
+      "F_malt_grain",
+      "F_malt_bread",
+      "F_malt_cara",
+      "F_malt_burn",
+      "F_hops_all",
+      "F_hops_citrus",
+      "F_hops_tropical",
+      "F_hops_noble",
+      "F_hops_woody",
+      "F_esters_all",
+      "F_esters_ethac",
+      "F_esters_isoaa",
+      "F_esters_flower",
+      "F_ester_fruity",
+      "body",
+      "bitternes",
+      "co2",
+      "aftertaste",
+      "alcohol",
+      "sweetness",
+      "acidity",
+      "dms",
+      "metallic",
+      "4vg",
+      "t2n",
+      "diacetyl",
+      "stale_hops",
+      "orange",
+      "coriander",
+      "clove",
+      "lactic",
+      "acetic",
+      "barnyard",
+      "overall"
+    ],
+    "verdict": "3.xlsx 为空白评分卡模板（维度与 0-6 刻度的定义），不含已评分样本"
+  },
+  "C5_dims": {
+    "n_aroma": 15,
+    "n_flavour": 15,
+    "n_palate": 20,
+    "n_total": 50,
+    "target_cols_in_4csv": [
+      "A_malt_all",
+      "A_malt_grain",
+      "A_malt_bread",
+      "A_malt_cara",
+      "A_malt_burn",
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_hops_tropical",
+      "A_hops_noble",
+      "A_hops_woody",
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_esters_isoaa",
+      "A_esters_flower",
+      "A_esters_fruity",
+      "F_malt_all",
+      "F_malt_grain",
+      "F_malt_bread",
+      "F_malt_cara",
+      "F_malt_burn",
+      "F_hops_all",
+      "F_hops_citrus",
+      "F_hops_tropical",
+      "F_hops_noble",
+      "F_hops_woody",
+      "F_esters_all",
+      "F_esters_ethac",
+      "F_esters_isoaa",
+      "F_esters_flower",
+      "F_esters_fruity",
+      "acidity",
+      "bitternes",
+      "sweetness",
+      "X4vg",
+      "diacetyl",
+      "dms",
+      "metallic",
+      "stale_hops",
+      "t2n",
+      "orange",
+      "coriander",
+      "clove",
+      "lactic",
+      "acetic",
+      "barnyard",
+      "alcohol",
+      "aftertaste",
+      "body",
+      "co2",
+      "overall"
+    ],
+    "verdict": "50 维（Aroma 15 + Flavour 15 + 口感/缺陷/总体 20），题面'约 40'为近似说法"
+  },
+  "C4_cross_corr_shape": {
+    "6.csv": [
+      44,
+      50
+    ],
+    "statement_says": [
+      46,
+      50
+    ],
+    "verdict": "实测 44x50"
+  },
+  "C6_targets_continuous": {
+    "min_unique": 106,
+    "max_unique": 250,
+    "n_missing": 0,
+    "example_dims": {
+      "A_malt_all": 249,
+      "A_malt_grain": 249,
+      "A_malt_bread": 228,
+      "A_malt_cara": 209,
+      "A_malt_burn": 172,
+      "A_hops_all": 247
+    },
+    "verdict": "4.csv 各列 172-249 个不同取值，确为连续标准化值，不是整数化后的 z"
+  },
+  "C7_log_base": {
+    "n_checks": 36,
+    "median_rel_err_log10": 7.836166947759456e-10,
+    "median_rel_err_ln": 0.6076327558340838,
+    "examples": [
+      {
+        "beer": 10,
+        "col": "acetaldehyde",
+        "log10_value": -0.64174146,
+        "calibrated": 0.22817,
+        "10^v": 0.22817,
+        "exp(v)": 0.52637497,
+        "rel_err_log10": 0.0,
+        "rel_err_ln": 1.30694204
+      },
+      {
+        "beer": 10,
+        "col": "DMS",
+        "log10_value": 0.0462112,
+        "calibrated": 0.0,
+        "10^v": 1.1122725,
+        "exp(v)": 1.04729558,
+        "rel_err_log10": 1112272500539.4053,
+        "rel_err_ln": 1047295576426.7828
+      },
+      {
+        "beer": 10,
+        "col": "ethyl_acetate",
+        "log10_value": -0.59934978,
+        "calibrated": 0.251565,
+        "10^v": 0.251565,
+        "exp(v)": 0.5491686,
+        "rel_err_log10": 0.0,
+        "rel_err_ln": 1.18300876
+      },
+      {
+        "beer": 10,
+        "col": "linalool",
+        "log10_value": 22.05570187,
+        "calibrated": 22.05570186,
+        "10^v": 1.1368466071556828e+22,
+        "exp(v)": 3790265362.1949935,
+        "rel_err_log10": 5.154434051177191e+20,
+        "rel_err_ln": 171849681.47189322
+      },
+      {
+        "beer": 10,
+        "col": "bitterness",
+        "log10_value": 0.54344718,
+        "calibrated": 3.495,
+        "10^v": 3.495,
+        "exp(v)": 1.72193245,
+        "rel_err_log10": 0.0,
+        "rel_err_ln": 0.50731546
+      },
+      {
+        "beer": 10,
+        "col": "pH",
+        "log10_value": 0.62479758,
+        "calibrated": 4.215,
+        "10^v": 4.215,
+        "exp(v)": 1.86786782,
+        "rel_err_log10": 0.0,
+        "rel_err_ln": 0.55685224
+      }
+    ],
+    "verdict": "底数 = log10；负值对应原始浓度 < 1"
+  },
+  "C9_beer_id": {
+    "1csv_unique_beer_id": 250,
+    "4csv_unique_beer_id": 96,
+    "4csv_example": [
+      5410230000000,
+      5410780000000,
+      5410230000000
+    ],
+    "1csv_example": [
+      5410228202929,
+      5410783031019,
+      5410228142003
+    ],
+    "order_of_beer_column_equal": true,
+    "verdict": "4/7.csv 的 beer_id 已脱敏（尾数归零）；三表 beer 列顺序完全一致，按 beer 连接"
+  },
+  "C10_ratebeer_na": {
+    "cols_all_missing": [
+      "palate_acetaldehyde",
+      "palate_acetate",
+      "palate_dentist"
+    ],
+    "n_cols_with_na": 3,
+    "shape": [
+      250,
+      189
+    ]
+  },
+  "C11_missing": {
+    "n_missing_cells": 73,
+    "n_cols_with_missing": 9,
+    "n_rows_with_missing": 63,
+    "by_column": {
+      "amyl.acetate": 27,
+      "aroma_hops_sum": 13,
+      "methylpyrazine": 12,
+      "X2.3.butanedione": 9,
+      "X3.methylbutanal": 7,
+      "ethyl.nicotinate": 2,
+      "ethyl.isobutyrate": 1,
+      "furfural": 1,
+      "phenylacetaldehyde": 1
+    },
+    "verdict": "73 个缺失，集中在 9 列 63 行"
+  },
+  "C11b_missing_mechanism": {
+    "chi2_style_vs_missing": 23.007333974406677,
+    "p_style": 0.343587501470502,
+    "target_mean_shift": {
+      "A_hops_all": {
+        "mean_with_missing": 0.06697065076190477,
+        "mean_complete": -0.02173903400534759,
+        "diff": 0.08870968476725236
+      },
+      "A_esters_all": {
+        "mean_with_missing": 0.05950202180952379,
+        "mean_complete": 0.03444415094117646,
+        "diff": 0.025057870868347328
+      },
+      "F_malt_all": {
+        "mean_with_missing": -0.2512363161269841,
+        "mean_complete": 0.13029332666310162,
+        "diff": -0.3815296427900857
+      },
+      "overall": {
+        "mean_with_missing": 0.012631495476190474,
+        "mean_complete": -0.014962164935828871,
+        "diff": 0.027593660412019345
+      }
+    },
+    "verdict": "缺失与风格分布无显著关联；样本量小，仅供参考"
+  },
+  "C12_aggregates": {
+    "agg_cols": [
+      "kcalperc",
+      "acids_sum",
+      "esters_sum",
+      "aroma_hops_sum",
+      "sulfur_sum"
+    ],
+    "top_correlates": {
+      "kcalperc": {
+        "top_corr_cols": [
+          [
+            "acetaldehyde",
+            0.6869314290663369
+          ],
+          [
+            "esters_sum",
+            0.6423553420484666
+          ],
+          [
+            "glycerol",
+            0.6370366171028028
+          ]
+        ]
+      },
+      "acids_sum": {
+        "top_corr_cols": [
+          [
+            "acetic_acid.g.L.",
+            0.9384215266354071
+          ],
+          [
+            "lactic_acid.mg.L.",
+            0.8154470655757707
+          ],
+          [
+            "pH",
+            -0.5837133004814109
+          ]
+        ]
+      },
+      "esters_sum": {
+        "top_corr_cols": [
+          [
+            "ethyl_acetate",
+            0.8644881605878303
+          ],
+          [
+            "isobutyl_acetate",
+            0.8513189035490715
+          ],
+          [
+            "isopentyl_acetate",
+            0.8389856752987263
+          ]
+        ]
+      },
+      "aroma_hops_sum": {
+        "top_corr_cols": [
+          [
+            "linalool",
+            0.7257103562918464
+          ],
+          [
+            "geraniol",
+            0.55220449002329
+          ],
+          [
+            "X1.alpha.terpineol",
+            0.536808908409152
+          ]
+        ]
+      },
+      "sulfur_sum": {
+        "top_corr_cols": [
+          [
+            "DMS",
+            0.7266379709263883
+          ],
+          [
+            "MeSH",
+            0.5930253638920386
+          ],
+          [
+            "H2S",
+            0.5622169729611688
+          ]
+        ]
+      }
+    },
+    "leak_note": "8.xlsx 的 GBM importance MDI / GBM SHAP Values 是用 4.csv 目标训练的产物，只能作外部对照，禁止作特征"
+  },
+  "x8_sheets": {
+    "Sensory thresholds": {
+      "rows": 261,
+      "with_threshold": 43,
+      "off_flavor_rows": 7
+    },
+    "Sensory names": {
+      "rows": 101
+    },
+    "Calibrated chemical dataset": {
+      "shape": [
+        250,
+        73
+      ]
+    },
+    "GBM importance MDI": {
+      "rows": 231
+    },
+    "GBM SHAP Values": {
+      "shape": [
+        500,
+        236
+      ]
+    }
+  },
+  "class_balance": {
+    "Blond": 31,
+    "Tripel": 28,
+    "Strong ale": 18,
+    "Hoppy": 17,
+    "Stout/Porter": 13,
+    "Wheat": 12,
+    "Amber": 12,
+    "Brown": 12,
+    "Lambic": 11,
+    "Pils/Lager": 11,
+    "Dubbel": 10,
+    "Kriek": 10,
+    "Saison": 10,
+    "Christmas": 9,
+    "Low/No alcohol": 8,
+    "Fruitbeer": 8,
+    "West Flanders ale": 7,
+    "Brett/cofermented": 6,
+    "Scotch": 5,
+    "Flanders old brown": 5,
+    "Brut": 4,
+    "Faro": 3
+  },
+  "feature_kinds": {
+    "n_features": 231,
+    "n_all_missing": 0,
+    "n_constant": 0
+  }
+}

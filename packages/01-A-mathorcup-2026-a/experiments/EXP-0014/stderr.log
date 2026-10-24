@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_final.py", line 329, in <module>
+    main()
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_final.py", line 112, in main
+    locked = select_and_freeze(X, Y, family_map)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_final.py", line 59, in select_and_freeze
+    spec, pick, score = M.inner_select(fam["spec"], fam["candidates"], X, Y, family_map,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_models.py", line 208, in inner_select
+    for cand in candidates:
+                ^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

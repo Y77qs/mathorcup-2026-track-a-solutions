@@ -1,0 +1,8 @@
+[B0] split=SPLIT-0001 train=200 test=50 dims=50
+{
+  "oof_r2_mean": -0.006798487558518986,
+  "holdout_r2_mean": -0.024635435726754987,
+  "holdout_mae_mean": 0.40973703823113206,
+  "holdout_spearman_mean": NaN
+}
+[B0] predictions -> outputs/q1/B0_constant_predictions.csv (12500, 7)

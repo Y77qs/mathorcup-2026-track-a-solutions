@@ -1,0 +1,986 @@
+{
+  "generatedAt": "2026-10-23T14:19:23.316Z",
+  "input": "report/paper.md",
+  "output": "report/rendered.md",
+  "sha256": "7d501161e354f796472abe2a56025154ef0fc98316bdf1a76a915a2e8a8dfe49",
+  "allowStale": false,
+  "placeholders": 113,
+  "passes": 1,
+  "refs": [
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0006"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "corr_vs_recomputed",
+      "value": 0.9999650982634769
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "max_abs_diff_vs_recomputed",
+      "value": 0.04782963240779675
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prereg_hit_rate",
+      "value": 0.09722222222222222
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prereg_hits",
+      "value": 14
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prereg_seats",
+      "value": 144
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "count:experiments",
+      "value": 45
+    },
+    {
+      "pass": 1,
+      "kind": "value",
+      "name": "count:validations",
+      "value": 28
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0015",
+      "metricKey": "r2_50dim",
+      "value": -0.024635435726754987
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0015",
+      "metricKey": "r2",
+      "value": -0.014456198175549995
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0015",
+      "metricKey": "holdout_r2_mean",
+      "value": -0.024635435726754987
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0015",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.40973703823113206
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0015",
+      "metricKey": "oof_r2_mean",
+      "value": -0.006798487558518986
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "r2_50dim",
+      "value": 0.220579478860721
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "oof_r2_50dim",
+      "value": 0.22853053542533686
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.34222836844691396
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_spearman_mean",
+      "value": 0.40853870147359067
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_n_dims_r2_positive",
+      "value": 43
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "r2",
+      "value": 0.04819587620111854
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "mae",
+      "value": 0.4122747595853167
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "n_features",
+      "value": 231
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "n_trees",
+      "value": 150
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "max_features",
+      "value": 0.2
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0001"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "r2_50dim",
+      "value": 0.220579478860721
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.34222836844691396
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_spearman_mean",
+      "value": 0.40853870147359067
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_n_dims_r2_positive",
+      "value": 43
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0015",
+      "metricKey": "r2_50dim",
+      "value": -0.024635435726754987
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__A_hops_tropical",
+      "value": -0.32129760928760054
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__A_hops_woody",
+      "value": -0.0029165752661146627
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__A_malt_grain",
+      "value": -0.019820652393321536
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__F_hops_all",
+      "value": 0.5266168056605479
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__A_malt_all",
+      "value": 0.44419351581368693
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0013",
+      "path": "figures/q1_per_dim_r2_final.png",
+      "sha256": "17123fbcdb43e159dc62c24c9061edae3c3bd044cc6987481e5f53918f74400e"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__dms",
+      "value": 0.14992229968397364
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__diacetyl",
+      "value": 0.12669387506872143
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0002"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__dms",
+      "value": 0.14992229968397364
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_r2__diacetyl",
+      "value": 0.12669387506872143
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0014",
+      "path": "figures/q1_confusion_final.png",
+      "sha256": "4f579d79e45f171013a56d389a161cd0459bdbd1b78e515e6f72f7010745d5e2"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0015",
+      "path": "figures/q1_calibration_final.png",
+      "sha256": "a7ea8765cfec4674e6780859bf8d57fe824d77a9930d671324c6d26d718abcfa"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0029",
+      "metricKey": "r2_50dim",
+      "value": 0.2535737468473862
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "r2_50dim",
+      "value": 0.220579478860721
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0025",
+      "metricKey": "holdout_n_dims_r2_positive",
+      "value": 43
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_nodes",
+      "value": 231
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_edges_primary",
+      "value": 3918
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "edge_density",
+      "value": 0.14748729531338228
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_modules",
+      "value": 7
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_modules_ge3",
+      "value": 3
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "tau_primary",
+      "value": 0.3
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "tau_fdr_equivalent",
+      "value": 0.14392829248503
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "modularity",
+      "value": 0.3183346799520214
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "ari_spectral_core_kcore",
+      "value": 0.16107375716167407
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "corr_vs_recomputed",
+      "value": 0.9999650982634769
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "max_abs_diff_vs_recomputed",
+      "value": 0.04782963240779675
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "rank_numerical_2csv",
+      "value": 226
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_negative_eigenvalues_2csv",
+      "value": 5
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "condition_number_abs_2csv",
+      "value": 788.7679151902172
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "condition_number_recomputed",
+      "value": 93539.17798579863
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_pairs_abs_rho_gt_0.9",
+      "value": 9
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0003"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_nodes",
+      "value": 231
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_edges_primary",
+      "value": 3918
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "edge_density",
+      "value": 0.14748729531338228
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_modules",
+      "value": 7
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "modularity",
+      "value": 0.3183346799520214
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "ari_spectral_core_kcore",
+      "value": 0.16107375716167407
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "rank_numerical_2csv",
+      "value": 226
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "jaccard_mean",
+      "value": 0.18666666666666668
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "jaccard_median",
+      "value": 0.15
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "n_dims_jaccard_ge_0.5",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "n_conf_4of4",
+      "value": 11
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "n_conf_3of4",
+      "value": 21
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "n_conf_le2of4",
+      "value": 118
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prereg_hit_rate",
+      "value": 0.09722222222222222
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prereg_hits",
+      "value": 14
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prereg_seats",
+      "value": 144
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prior_spearman_mean",
+      "value": 0.6281971149210783
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prior_top10_overlap_mean",
+      "value": 0.5980000000000001
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "top3_stability",
+      "value": 0.23639999999999997
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "freq_ge_080_share",
+      "value": 0.09333333333333334
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "n_slots_stable",
+      "value": 14
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "m3_ledoitwolf_shrinkage",
+      "value": 0.21893303034919764
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "m4_n_q_global_lt_0.05",
+      "value": 2721
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0002",
+      "path": "figures/q2_method_agreement.png",
+      "sha256": "6f7c0c607f2077c77585e0a7ae26a8129bcacced566a2fc6e45ca48c11d42389"
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0010"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "jaccard_mean",
+      "value": 0.18666666666666668
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prereg_hit_rate",
+      "value": 0.09722222222222222
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prior_spearman_mean",
+      "value": 0.6281971149210783
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "top3_stability",
+      "value": 0.23639999999999997
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0022",
+      "metricKey": "gen_style_fidelity",
+      "value": 0.9940350877192983
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0003",
+      "path": "figures/q2_top3_heatmap.png",
+      "sha256": "ee9e9b73e140eac1a7f516c8cb9843190b72dc9c2e0ab8ea30aea3f4a05bffe7"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "freq_ge_080_share",
+      "value": 0.09333333333333334
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "n_slots_stable",
+      "value": 14
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "top3_stability",
+      "value": 0.23639999999999997
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "gen_style_fidelity",
+      "value": 0.994
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0019",
+      "metricKey": "style_hit_macro",
+      "value": 0.9972727272727272
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "style_hit_macro",
+      "value": 0.994
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0019",
+      "metricKey": "ed_over_dref_tripel",
+      "value": 0.1261751505609254
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "ed_over_dref_tripel",
+      "value": 0.12642883908887026
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "energy_distance_ratio_mean",
+      "value": 0.20612890148826987
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "diversity_ratio_mean",
+      "value": 0.7518559039668244
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0019",
+      "metricKey": "transfer_tripel_hit_rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "transfer_tripel_hit_rate",
+      "value": 0.5454545454545454
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0019",
+      "metricKey": "transfer_feasible_rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "transfer_feasible_rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0019",
+      "metricKey": "defect_violation_rate",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "defect_violation_rate",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0022",
+      "metricKey": "style_hit_macro",
+      "value": 0.9940350877192983
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0022",
+      "metricKey": "ed_over_dref_tripel",
+      "value": 0.142484
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0022",
+      "metricKey": "diversity_ratio",
+      "value": 0.7518559039668244
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0022",
+      "metricKey": "energy_distance_ratio",
+      "value": 0.20612890148826987
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0023",
+      "metricKey": "gen_style_fidelity",
+      "value": 0.7948245614035088
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0023",
+      "metricKey": "ed_over_dref_tripel",
+      "value": 0.194823
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0023",
+      "metricKey": "energy_distance_ratio",
+      "value": 0.24148457713656665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0023",
+      "metricKey": "diversity_ratio",
+      "value": 0.12137449372971756
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0011"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "ed_over_dref_tripel",
+      "value": 0.12642883908887026
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0019",
+      "metricKey": "ed_over_dref_tripel",
+      "value": 0.1261751505609254
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "style_hit_macro",
+      "value": 0.994
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0019",
+      "metricKey": "style_hit_macro",
+      "value": 0.9972727272727272
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "gen_style_fidelity",
+      "value": 0.994
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "transfer_tripel_hit_rate",
+      "value": 0.5454545454545454
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "transfer_feasible_rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0004",
+      "path": "figures/q3_spectra_pca.png",
+      "sha256": "66c089090a8358e0356b2ed18baa2886f3c637a0f56d2053025f87110ae243fd"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0005",
+      "path": "figures/q3_style_fidelity.png",
+      "sha256": "9db96713845e432b6bda1dd33fc8ecf022fe16ab6c556d60b6e7852a456a189f"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0006",
+      "path": "figures/q3_defect_oav.png",
+      "sha256": "e03e43b3a2fb0f1b79224c229315be6759a9d31d5c7cfeb82164aa7182227160"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "transfer_tripel_hit_rate",
+      "value": 0.5454545454545454
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0023",
+      "metricKey": "diversity_ratio",
+      "value": 0.12137449372971756
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0023",
+      "metricKey": "gen_style_fidelity",
+      "value": 0.7948245614035088
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0024",
+      "metricKey": "profile_spearman_placeholder",
+      "value": 0.4073149259703881
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0030",
+      "metricKey": "profile_spearman_delivered",
+      "value": 0.934437775110044
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0029",
+      "metricKey": "oof_r2_mean",
+      "value": 0.25451158623613646
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "tau_primary",
+      "value": 0.3
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_edges_primary",
+      "value": 3918
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "n_modules",
+      "value": 7
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "rank_numerical_2csv",
+      "value": 226
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "jaccard_mean",
+      "value": 0.18666666666666668
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "n_dims_jaccard_ge_0.5",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0041",
+      "metricKey": "prereg_hit_rate",
+      "value": 0.09722222222222222
+    }
+  ],
+  "staleRefs": [],
+  "warnings": []
+}

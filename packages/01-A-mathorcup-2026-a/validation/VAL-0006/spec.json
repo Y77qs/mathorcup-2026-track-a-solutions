@@ -1,0 +1,68 @@
+{
+  "checkType": "holdout-metrics",
+  "metric": "r2_overall",
+  "tolerance": {
+    "absolute": 0.000001,
+    "relative": 0.000001,
+    "source": "checks[i].tolerance"
+  },
+  "predictionsPath": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0012/predictions.csv",
+  "truthPath": "/Users/baozhashizitou/Documents/MATHORCUP/A/data/splits/SPLIT-0002/test.csv",
+  "keyColumn": "row",
+  "truthColumn": "overall",
+  "predColumn": "y_pred",
+  "reported": -0.014456198175549995,
+  "metricDefinition": null,
+  "expectedHashes": {
+    "predictions": "8d667ac3ad96ae4b4535a15f5bea540c921269462261b7633bc2a841629da438",
+    "truth": "56f3f16200f521a263ed6e046d9ef8b99bcd73b200208e7c14f555200d4dda6a"
+  },
+  "experimentId": "EXP-0012",
+  "validationPlanId": "VP-0004",
+  "provenanceSummary": {
+    "configSha256": "a89e9e2f2caaaddd7498c20312f25e8ba783c9509515b3fcd942522ef7c339eb",
+    "experiment": {
+      "id": "EXP-0012",
+      "status": "succeeded",
+      "metricsSha256": "83aa7cc257c88b7441ae8ff68405ff2fbd279b19ac679398a8b4066322a53216",
+      "configSha256": "d5e615d909f35bd39ef3e769021668fb91766f6835ae1233c68ce3969c5c1683"
+    },
+    "inputs": [
+      {
+        "kind": "experiment-code",
+        "path": "src/08_baseline_constant.py",
+        "sha256": "7063c79489cd65fa0cb9b5bc3c83cc1a63994ab41670855b661d43896391fcf2"
+      },
+      {
+        "kind": "dataset",
+        "path": "data/clean/model_table.csv",
+        "sha256": "c5ef4195703f4aa32a155236e867b41f99519d71b01d464e28c1d7f03e5bb3dc"
+      },
+      {
+        "kind": "split-assignment",
+        "path": "data/splits/SPLIT-0002/assignment.csv",
+        "sha256": "4a032d281d3b85f860e0322868afde68503abf13260cdf52496a276ed5a0855e"
+      },
+      {
+        "kind": "split-train",
+        "path": "data/splits/SPLIT-0002/train.csv",
+        "sha256": "dbe66088d43d5af6cb686499369e1bf7bdde31fb5ed3de69e787507f4abc0208"
+      },
+      {
+        "kind": "split-test",
+        "path": "data/splits/SPLIT-0002/test.csv",
+        "sha256": "56f3f16200f521a263ed6e046d9ef8b99bcd73b200208e7c14f555200d4dda6a"
+      },
+      {
+        "kind": "predictions",
+        "path": "experiments/EXP-0012/predictions.csv",
+        "sha256": "8d667ac3ad96ae4b4535a15f5bea540c921269462261b7633bc2a841629da438"
+      },
+      {
+        "kind": "holdout-truth",
+        "path": "data/splits/SPLIT-0002/test.csv",
+        "sha256": "56f3f16200f521a263ed6e046d9ef8b99bcd73b200208e7c14f555200d4dda6a"
+      }
+    ]
+  }
+}

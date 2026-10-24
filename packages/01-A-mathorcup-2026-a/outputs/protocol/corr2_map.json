@@ -1,0 +1,7 @@
+{
+  "n_features": 231,
+  "n_named": 209,
+  "n_positional_only": 22,
+  "positional_agreement_among_named": 1.0,
+  "verdict": "2.csv 行列用化学全名，与 1.csv 列名按名字几乎对不上；但 2.csv 第 i 行/列 ≡ 1.csv 第 i 个特征列（位置映射，209 个可命名的全部位置一致）"
+}

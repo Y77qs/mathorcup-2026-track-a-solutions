@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "script": "analysis/scripts/corr_forensics.py"
+  },
+  "2csv": {
+    "verdict": "Spearman (pairwise complete), NOT Pearson",
+    "spearman_max_abs_error": 7.771561172376096e-16,
+    "spearman_median_abs_error": 8.326672684688674e-17,
+    "spearman_elementwise_corr": 1.0,
+    "pearson_max_abs_error": 1.1234263749065518,
+    "pearson_median_abs_error": 0.06219000311021162,
+    "pearson_elementwise_corr": 0.7717639187059291,
+    "listwise_spearman_max_abs_error": 0.14312468857381716,
+    "log10_pearson_max_abs_error": 1.0166950730564321,
+    "log10_pearson_median_abs_error": 0.06726052928774712,
+    "min_eigenvalue_2csv": -0.04241270911948124,
+    "min_eigenvalue_recomputed_spearman": -0.04241270911948124,
+    "is_psd": false,
+    "pearson_sign_disagreements": 4501,
+    "pearson_sign_disagreements_frac": 0.169433465085639,
+    "n_elements_abs_diff_lt_1e-12": 53361,
+    "n_offdiag_total": 26565,
+    "nan_in_1csv_features": 73,
+    "row_names_equal": true,
+    "mapping_bijective": true,
+    "n_unmapped": 0
+  },
+  "5csv": {
+    "is_spearman_of_4csv": true,
+    "spearman_max_abs_error": 6.661338147750939e-16,
+    "pearson_max_abs_error": 0.5406449806734217,
+    "shape": [
+      50,
+      50
+    ],
+    "mapping_complete": true
+  },
+  "6csv": {
+    "is_spearman_cross_1csv_4csv": true,
+    "spearman_max_abs_error": 6.661338147750939e-16,
+    "pearson_max_abs_error": 0.46180164391213063,
+    "shape_actual": [
+      44,
+      50
+    ],
+    "shape_statement": "46x50",
+    "mapping_complete": true
+  }
+}

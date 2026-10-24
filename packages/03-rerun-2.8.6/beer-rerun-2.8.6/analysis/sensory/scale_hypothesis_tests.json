@@ -1,0 +1,60 @@
+{
+  "n_rows": 250,
+  "n_cols": 50,
+  "n_cells": 12500,
+  "global_mean": 0.005427925735279997,
+  "global_sd_ddof1": 0.5777967265606708,
+  "global_min": -2.150728655,
+  "global_max": 6.172383248,
+  "H1_per_column_zscore": {
+    "verdict": "REJECTED",
+    "n_cols_with_abs_sd_minus_1_le_0.05": 0,
+    "n_cols_with_sd_gt_0.95": 0,
+    "sd_min": 0.3696592855908294,
+    "sd_max": 0.8584632026985457,
+    "sd_mean": 0.5679420039224566,
+    "sd_quantiles": {
+      "0.05": 0.41941240251444284,
+      "0.25": 0.48701021886209034,
+      "0.5": 0.5536199937708703,
+      "0.75": 0.6581195796559826,
+      "0.95": 0.7421798790964464
+    }
+  },
+  "H2_centering": {
+    "verdict": "APPROXIMATELY_CENTERED_BUT_NOT_EXACT",
+    "n_cols_exact_mean_0": 0,
+    "n_cols_abs_mean_le_0.1": 50,
+    "abs_mean_min": 0.0006158065559999955,
+    "abs_mean_max": 0.062832603384,
+    "abs_mean_mean": 0.021182137363120003
+  },
+  "H3_raw_0_6": {
+    "verdict": "REJECTED",
+    "n_integer_columns": 0,
+    "n_cols_all_within_0_6": 0,
+    "n_cells_below_0": 7617,
+    "n_cells_above_6": 1,
+    "pct_cells_outside_0_6": 60.944
+  },
+  "feasible_affine_map_if_raw_in_0_6": {
+    "model": "x_raw = a_col + b * z_col, b>0",
+    "b_max_global": 0.931546807049781,
+    "b_max_global_col": "clove",
+    "comment": "任何逐列仿射反演都只能给出 (a,b) 的一个可行区间；b 的可行上界由列内极差决定，而每列的原点 a 完全不可识别（标准化已抹去列均值）。"
+  },
+  "mapping_disagreement": {
+    "mean_abs_diff_overall": 1.5214719349522583,
+    "max_abs_diff_overall": 4.942365413930239,
+    "mean_abs_diff_median_over_cols": 1.561560899442315,
+    "spearman_all_one": true,
+    "rmse_scale_factor_minmax_min": 0.931546807049781,
+    "rmse_scale_factor_minmax_max": 2.9498273888837883
+  },
+  "mean3_sd1_mapping": {
+    "n_cells_out_of_0_6": 205,
+    "pct_cells_out_of_0_6": 1.64,
+    "max_value": 14.090046429673762,
+    "worst_col": "clove"
+  }
+}

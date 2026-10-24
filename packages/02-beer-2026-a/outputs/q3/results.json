@@ -1,0 +1,65 @@
+{
+  "question": "Q3",
+  "constraintSatisfaction": 1.0,
+  "defectNonworsen": {
+    "raw": 0.3333333333333333,
+    "constrained": 1.0
+  },
+  "exceedRate": {
+    "before": 0.0909090909090909,
+    "afterRaw": 0.3181818181818182,
+    "afterConstrained": 0.0909090909090909
+  },
+  "energy": {
+    "seenStyles": 1.271674487929916,
+    "holdoutGenerated": 4.476652364091987,
+    "holdoutSourceBaseline": 5.342473160660233,
+    "holdoutTransferredRaw": 4.6289854733445575,
+    "holdoutTransferredConstrained": 4.618642887053379
+  },
+  "transferGain": {
+    "raw": 0.7134876873156745,
+    "constrained": 0.7238302736068528
+  },
+  "nDefectChecks": 42.0,
+  "nDefectChecksWithThreshold": 24.0,
+  "perStyleAdapt": {
+    "Kriek": {
+      "energy_generated_vs_eval": 9.351710929410816,
+      "energy_source_baseline_vs_eval": 9.946351083670999,
+      "energy_transferred_constrained_vs_eval": 9.477974997629579,
+      "energy_transferred_raw_vs_eval": 9.479053991507664,
+      "gain_constrained_vs_source": 0.46837608604142034,
+      "gain_raw_vs_source": 0.46729709216333504,
+      "n_adapt": 3,
+      "n_eval": 7
+    },
+    "Lambic": {
+      "energy_generated_vs_eval": 1.956603300245641,
+      "energy_source_baseline_vs_eval": 3.5391798400575003,
+      "energy_transferred_constrained_vs_eval": 2.1043859956407798,
+      "energy_transferred_raw_vs_eval": 2.108105685500512,
+      "gain_constrained_vs_source": 1.4347938444167205,
+      "gain_raw_vs_source": 1.4310741545569883,
+      "n_adapt": 3,
+      "n_eval": 8
+    },
+    "Tripel": {
+      "energy_generated_vs_eval": 2.1216428626195056,
+      "energy_source_baseline_vs_eval": 2.541888558252197,
+      "energy_transferred_constrained_vs_eval": 2.2735676678897794,
+      "energy_transferred_raw_vs_eval": 2.299796743025497,
+      "gain_constrained_vs_source": 0.2683208903624177,
+      "gain_raw_vs_source": 0.2420918152267002,
+      "n_adapt": 5,
+      "n_eval": 23
+    }
+  },
+  "baselineComparison": {
+    "unconditionalGlobalEnergy": 3.718739352848362,
+    "sourceIdentityEnergy": 4.51705463028622,
+    "fewShotGeneratedEnergy": 4.476652364091987,
+    "constrainedTransferEnergy": 4.618642887053379,
+    "finding": "无条件全局高斯的能量距离（3.719）低于 few-shot 生成（4.477）与约束迁移（4.619）：在 Tripel/Kriek/Lambic 上，3–5 例 few-shot 原型不足以刻画风格分布，能量距离指标偏好全局中心"
+  }
+}

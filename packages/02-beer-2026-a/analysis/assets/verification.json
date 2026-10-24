@@ -1,0 +1,1513 @@
+{
+ "files": {
+  "1.csv": {
+   "size": 700705,
+   "sha256": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69"
+  },
+  "2.csv": {
+   "size": 1000771,
+   "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c"
+  },
+  "3.xlsx": {
+   "size": 163364,
+   "sha256": "fe4dcabd48431e6d677c095962ea9c447e10e509c4f3f8dd511a48c5541ab587"
+  },
+  "4.csv": {
+   "size": 162887,
+   "sha256": "43a7b38682ed81ce64d97ebc1874c09dffac023ade4877f34e3c83ef7d42dc1c"
+  },
+  "5.csv": {
+   "size": 48044,
+   "sha256": "c512eed108de6f98e0c6ed66497ed2319745d30ca7f6f4acac4f175a4bdcde9a"
+  },
+  "6.csv": {
+   "size": 42937,
+   "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae"
+  },
+  "7.csv": {
+   "size": 588816,
+   "sha256": "2083138df46640e20b46f7e76ec32cf9b380fd34e019269afd819edeb546ff5e"
+  },
+  "8.xlsx": {
+   "size": 1740092,
+   "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a"
+  },
+  "数据说明.txt": {
+   "size": 614,
+   "sha256": "40813e273e081ae0dc6d6fa76838c5cdbaa721335df3648b4b29d5f76b6378d7"
+  }
+ },
+ "pdf": {
+  "name": "2026年MathorCup大数据挑战赛-赛道A初赛.pdf",
+  "sha256": "494025cf76c5d47af576927fcf6cd3a073d61db5842d56aaf0ad4da5f4660a78",
+  "size": 178332
+ },
+ "csv1": {
+  "shape": [
+   250,
+   234
+  ],
+  "n_meta": 3,
+  "n_features": 231,
+  "missing_total": 73,
+  "missing_cols": {
+   "X2.3.butanedione": 9,
+   "X3.methylbutanal": 7,
+   "ethyl.isobutyrate": 1,
+   "methylpyrazine": 12,
+   "furfural": 1,
+   "amyl.acetate": 27,
+   "phenylacetaldehyde": 1,
+   "ethyl.nicotinate": 2,
+   "aroma_hops_sum": 13
+  },
+  "n_beer_unique": 250,
+  "n_beer_id_unique": 250,
+  "n_category": 22,
+  "categories": [
+   "Amber",
+   "Blond",
+   "Brett/cofermented",
+   "Brown",
+   "Brut",
+   "Christmas",
+   "Dubbel",
+   "Faro",
+   "Flanders old brown",
+   "Fruitbeer",
+   "Hoppy",
+   "Kriek",
+   "Lambic",
+   "Low/No alcohol",
+   "Pils/Lager",
+   "Saison",
+   "Scotch",
+   "Stout/Porter",
+   "Strong ale",
+   "Tripel",
+   "West Flanders ale",
+   "Wheat"
+  ]
+ },
+ "targets": {
+  "n": 50,
+  "A": [
+   "A_malt_all",
+   "A_malt_grain",
+   "A_malt_bread",
+   "A_malt_cara",
+   "A_malt_burn",
+   "A_hops_all",
+   "A_hops_citrus",
+   "A_hops_tropical",
+   "A_hops_noble",
+   "A_hops_woody",
+   "A_esters_all",
+   "A_esters_ethac",
+   "A_esters_isoaa",
+   "A_esters_flower",
+   "A_esters_fruity"
+  ],
+  "F": [
+   "F_malt_all",
+   "F_malt_grain",
+   "F_malt_bread",
+   "F_malt_cara",
+   "F_malt_burn",
+   "F_hops_all",
+   "F_hops_citrus",
+   "F_hops_tropical",
+   "F_hops_noble",
+   "F_hops_woody",
+   "F_esters_all",
+   "F_esters_ethac",
+   "F_esters_isoaa",
+   "F_esters_flower",
+   "F_esters_fruity"
+  ],
+  "other": [
+   "acidity",
+   "bitternes",
+   "sweetness",
+   "X4vg",
+   "diacetyl",
+   "dms",
+   "metallic",
+   "stale_hops",
+   "t2n",
+   "orange",
+   "coriander",
+   "clove",
+   "lactic",
+   "acetic",
+   "barnyard",
+   "alcohol",
+   "aftertaste",
+   "body",
+   "co2",
+   "overall"
+  ],
+  "order": [
+   "A_malt_all",
+   "A_malt_grain",
+   "A_malt_bread",
+   "A_malt_cara",
+   "A_malt_burn",
+   "A_hops_all",
+   "A_hops_citrus",
+   "A_hops_tropical",
+   "A_hops_noble",
+   "A_hops_woody",
+   "A_esters_all",
+   "A_esters_ethac",
+   "A_esters_isoaa",
+   "A_esters_flower",
+   "A_esters_fruity",
+   "F_malt_all",
+   "F_malt_grain",
+   "F_malt_bread",
+   "F_malt_cara",
+   "F_malt_burn",
+   "F_hops_all",
+   "F_hops_citrus",
+   "F_hops_tropical",
+   "F_hops_noble",
+   "F_hops_woody",
+   "F_esters_all",
+   "F_esters_ethac",
+   "F_esters_isoaa",
+   "F_esters_flower",
+   "F_esters_fruity",
+   "acidity",
+   "bitternes",
+   "sweetness",
+   "X4vg",
+   "diacetyl",
+   "dms",
+   "metallic",
+   "stale_hops",
+   "t2n",
+   "orange",
+   "coriander",
+   "clove",
+   "lactic",
+   "acetic",
+   "barnyard",
+   "alcohol",
+   "aftertaste",
+   "body",
+   "co2",
+   "overall"
+  ],
+  "n_missing": 0
+ },
+ "csv4_scale": {
+  "global_mean": 0.005427925735279997,
+  "global_sd": 0.5777967265606708,
+  "col_mean_absmax": 0.062832603384,
+  "col_sd_min": 0.3696592855908294,
+  "col_sd_median": 0.5536199937708703,
+  "col_sd_max": 0.8584632026985457,
+  "col_sd_all_close_1": false,
+  "n_integer_cols": 0,
+  "n_unique_min": 106,
+  "n_unique_median": 229.0,
+  "n_unique_max": 250,
+  "range_width_min": 2.03401732,
+  "range_width_median": 3.165494668,
+  "range_width_max": 6.440900183,
+  "n_cols_range_le_6": 49,
+  "centered_raw_feasible_cols": 49,
+  "centered_raw_mu_interval_width_median": 2.848020686,
+  "per_col": [
+   {
+    "column": "A_malt_all",
+    "mean": 0.036547,
+    "sd": 0.71686,
+    "min": -1.552115,
+    "max": 2.876477,
+    "n_unique": 249,
+    "skew": 0.98991,
+    "range_width": 4.428592,
+    "is_integer": false
+   },
+   {
+    "column": "A_malt_grain",
+    "mean": 0.017976,
+    "sd": 0.457226,
+    "min": -0.970582,
+    "max": 1.759243,
+    "n_unique": 249,
+    "skew": 0.97779,
+    "range_width": 2.729825,
+    "is_integer": false
+   },
+   {
+    "column": "A_malt_bread",
+    "mean": 0.046913,
+    "sd": 0.522844,
+    "min": -0.689773,
+    "max": 2.462207,
+    "n_unique": 228,
+    "skew": 1.999732,
+    "range_width": 3.151979,
+    "is_integer": false
+   },
+   {
+    "column": "A_malt_cara",
+    "mean": 0.02538,
+    "sd": 0.62797,
+    "min": -0.599111,
+    "max": 2.193258,
+    "n_unique": 209,
+    "skew": 1.456996,
+    "range_width": 2.792369,
+    "is_integer": false
+   },
+   {
+    "column": "A_malt_burn",
+    "mean": 0.01921,
+    "sd": 0.680534,
+    "min": -0.447275,
+    "max": 4.104158,
+    "n_unique": 172,
+    "skew": 3.499201,
+    "range_width": 4.551433,
+    "is_integer": false
+   },
+   {
+    "column": "A_hops_all",
+    "mean": 0.000616,
+    "sd": 0.660258,
+    "min": -1.362202,
+    "max": 2.487832,
+    "n_unique": 247,
+    "skew": 0.706405,
+    "range_width": 3.850033,
+    "is_integer": false
+   },
+   {
+    "column": "A_hops_citrus",
+    "mean": -0.012235,
+    "sd": 0.486743,
+    "min": -0.579851,
+    "max": 1.817998,
+    "n_unique": 205,
+    "skew": 1.469689,
+    "range_width": 2.397848,
+    "is_integer": false
+   },
+   {
+    "column": "A_hops_tropical",
+    "mean": 0.007915,
+    "sd": 0.61107,
+    "min": -0.52359,
+    "max": 3.063614,
+    "n_unique": 195,
+    "skew": 3.171026,
+    "range_width": 3.587204,
+    "is_integer": false
+   },
+   {
+    "column": "A_hops_noble",
+    "mean": 0.001042,
+    "sd": 0.53612,
+    "min": -1.0269,
+    "max": 2.12345,
+    "n_unique": 245,
+    "skew": 0.547419,
+    "range_width": 3.15035,
+    "is_integer": false
+   },
+   {
+    "column": "A_hops_woody",
+    "mean": -0.019918,
+    "sd": 0.369659,
+    "min": -0.522916,
+    "max": 1.511101,
+    "n_unique": 189,
+    "skew": 1.59715,
+    "range_width": 2.034017,
+    "is_integer": false
+   },
+   {
+    "column": "A_esters_all",
+    "mean": 0.040759,
+    "sd": 0.602876,
+    "min": -1.69959,
+    "max": 1.670572,
+    "n_unique": 250,
+    "skew": 0.185506,
+    "range_width": 3.370162,
+    "is_integer": false
+   },
+   {
+    "column": "A_esters_ethac",
+    "mean": -0.005202,
+    "sd": 0.498725,
+    "min": -0.848914,
+    "max": 1.788857,
+    "n_unique": 239,
+    "skew": 0.631076,
+    "range_width": 2.637771,
+    "is_integer": false
+   },
+   {
+    "column": "A_esters_isoaa",
+    "mean": 0.044706,
+    "sd": 0.538926,
+    "min": -0.868878,
+    "max": 2.171746,
+    "n_unique": 246,
+    "skew": 0.970551,
+    "range_width": 3.040624,
+    "is_integer": false
+   },
+   {
+    "column": "A_esters_flower",
+    "mean": -0.029951,
+    "sd": 0.424169,
+    "min": -0.52888,
+    "max": 1.856814,
+    "n_unique": 217,
+    "skew": 1.466863,
+    "range_width": 2.385694,
+    "is_integer": false
+   },
+   {
+    "column": "A_esters_fruity",
+    "mean": 0.011241,
+    "sd": 0.504563,
+    "min": -0.689069,
+    "max": 2.40617,
+    "n_unique": 242,
+    "skew": 1.836986,
+    "range_width": 3.095239,
+    "is_integer": false
+   },
+   {
+    "column": "F_malt_all",
+    "mean": 0.034148,
+    "sd": 0.687236,
+    "min": -1.649828,
+    "max": 2.466214,
+    "n_unique": 248,
+    "skew": 0.522593,
+    "range_width": 4.116042,
+    "is_integer": false
+   },
+   {
+    "column": "F_malt_grain",
+    "mean": 0.012318,
+    "sd": 0.449673,
+    "min": -1.239844,
+    "max": 1.372628,
+    "n_unique": 249,
+    "skew": 0.416279,
+    "range_width": 2.612472,
+    "is_integer": false
+   },
+   {
+    "column": "F_malt_bread",
+    "mean": 0.030944,
+    "sd": 0.487551,
+    "min": -0.742979,
+    "max": 1.991661,
+    "n_unique": 239,
+    "skew": 0.945782,
+    "range_width": 2.73464,
+    "is_integer": false
+   },
+   {
+    "column": "F_malt_cara",
+    "mean": 0.025089,
+    "sd": 0.572102,
+    "min": -0.555756,
+    "max": 2.368488,
+    "n_unique": 214,
+    "skew": 1.361256,
+    "range_width": 2.924245,
+    "is_integer": false
+   },
+   {
+    "column": "F_malt_burn",
+    "mean": 0.026066,
+    "sd": 0.68364,
+    "min": -0.538201,
+    "max": 2.94956,
+    "n_unique": 202,
+    "skew": 2.407522,
+    "range_width": 3.487761,
+    "is_integer": false
+   },
+   {
+    "column": "F_hops_all",
+    "mean": 0.02135,
+    "sd": 0.694117,
+    "min": -1.265566,
+    "max": 2.201119,
+    "n_unique": 248,
+    "skew": 0.494731,
+    "range_width": 3.466685,
+    "is_integer": false
+   },
+   {
+    "column": "F_hops_citrus",
+    "mean": -0.018682,
+    "sd": 0.44863,
+    "min": -0.667823,
+    "max": 1.950996,
+    "n_unique": 205,
+    "skew": 1.467603,
+    "range_width": 2.618819,
+    "is_integer": false
+   },
+   {
+    "column": "F_hops_tropical",
+    "mean": 0.010889,
+    "sd": 0.509693,
+    "min": -0.430394,
+    "max": 2.762132,
+    "n_unique": 182,
+    "skew": 2.587913,
+    "range_width": 3.192526,
+    "is_integer": false
+   },
+   {
+    "column": "F_hops_noble",
+    "mean": 0.014672,
+    "sd": 0.612327,
+    "min": -1.167382,
+    "max": 2.364434,
+    "n_unique": 245,
+    "skew": 0.883337,
+    "range_width": 3.531817,
+    "is_integer": false
+   },
+   {
+    "column": "F_hops_woody",
+    "mean": -0.001203,
+    "sd": 0.465141,
+    "min": -0.646237,
+    "max": 2.027262,
+    "n_unique": 185,
+    "skew": 1.802412,
+    "range_width": 2.673499,
+    "is_integer": false
+   },
+   {
+    "column": "F_esters_all",
+    "mean": 0.058227,
+    "sd": 0.584394,
+    "min": -1.208515,
+    "max": 1.993642,
+    "n_unique": 250,
+    "skew": 0.520702,
+    "range_width": 3.202158,
+    "is_integer": false
+   },
+   {
+    "column": "F_esters_ethac",
+    "mean": 0.009098,
+    "sd": 0.496726,
+    "min": -0.876467,
+    "max": 1.873784,
+    "n_unique": 241,
+    "skew": 0.883548,
+    "range_width": 2.750251,
+    "is_integer": false
+   },
+   {
+    "column": "F_esters_isoaa",
+    "mean": 0.062833,
+    "sd": 0.567421,
+    "min": -0.726983,
+    "max": 3.063108,
+    "n_unique": 238,
+    "skew": 1.700315,
+    "range_width": 3.790091,
+    "is_integer": false
+   },
+   {
+    "column": "F_esters_flower",
+    "mean": -0.00492,
+    "sd": 0.41552,
+    "min": -0.432919,
+    "max": 2.084233,
+    "n_unique": 183,
+    "skew": 2.065122,
+    "range_width": 2.517152,
+    "is_integer": false
+   },
+   {
+    "column": "F_esters_fruity",
+    "mean": 0.019499,
+    "sd": 0.505423,
+    "min": -0.690181,
+    "max": 2.329356,
+    "n_unique": 237,
+    "skew": 1.796328,
+    "range_width": 3.019537,
+    "is_integer": false
+   },
+   {
+    "column": "acidity",
+    "mean": 0.011382,
+    "sd": 0.858463,
+    "min": -0.725543,
+    "max": 3.781348,
+    "n_unique": 198,
+    "skew": 2.329807,
+    "range_width": 4.506891,
+    "is_integer": false
+   },
+   {
+    "column": "bitternes",
+    "mean": -0.022596,
+    "sd": 0.73095,
+    "min": -1.696521,
+    "max": 2.328005,
+    "n_unique": 247,
+    "skew": 0.214218,
+    "range_width": 4.024526,
+    "is_integer": false
+   },
+   {
+    "column": "sweetness",
+    "mean": 0.02581,
+    "sd": 0.680522,
+    "min": -1.010874,
+    "max": 2.945475,
+    "n_unique": 248,
+    "skew": 1.266446,
+    "range_width": 3.956349,
+    "is_integer": false
+   },
+   {
+    "column": "X4vg",
+    "mean": -0.026798,
+    "sd": 0.651703,
+    "min": -0.701431,
+    "max": 3.35503,
+    "n_unique": 197,
+    "skew": 2.278042,
+    "range_width": 4.056462,
+    "is_integer": false
+   },
+   {
+    "column": "diacetyl",
+    "mean": -0.009442,
+    "sd": 0.517195,
+    "min": -0.657462,
+    "max": 2.189226,
+    "n_unique": 227,
+    "skew": 1.655418,
+    "range_width": 2.846688,
+    "is_integer": false
+   },
+   {
+    "column": "dms",
+    "mean": -0.020415,
+    "sd": 0.50042,
+    "min": -0.759448,
+    "max": 2.317194,
+    "n_unique": 230,
+    "skew": 1.288816,
+    "range_width": 3.076642,
+    "is_integer": false
+   },
+   {
+    "column": "metallic",
+    "mean": -0.030126,
+    "sd": 0.48683,
+    "min": -0.737226,
+    "max": 2.026226,
+    "n_unique": 217,
+    "skew": 1.050733,
+    "range_width": 2.763452,
+    "is_integer": false
+   },
+   {
+    "column": "stale_hops",
+    "mean": -0.048843,
+    "sd": 0.441538,
+    "min": -0.387535,
+    "max": 2.731075,
+    "n_unique": 180,
+    "skew": 2.65654,
+    "range_width": 3.11861,
+    "is_integer": false
+   },
+   {
+    "column": "t2n",
+    "mean": -0.023775,
+    "sd": 0.400419,
+    "min": -0.513371,
+    "max": 1.647049,
+    "n_unique": 212,
+    "skew": 1.152652,
+    "range_width": 2.160419,
+    "is_integer": false
+   },
+   {
+    "column": "orange",
+    "mean": 0.017678,
+    "sd": 0.683522,
+    "min": -0.297577,
+    "max": 4.774455,
+    "n_unique": 131,
+    "skew": 4.531167,
+    "range_width": 5.072031,
+    "is_integer": false
+   },
+   {
+    "column": "coriander",
+    "mean": -0.009573,
+    "sd": 0.452697,
+    "min": -0.239478,
+    "max": 3.936707,
+    "n_unique": 106,
+    "skew": 4.404828,
+    "range_width": 4.176185,
+    "is_integer": false
+   },
+   {
+    "column": "clove",
+    "mean": -0.030999,
+    "sd": 0.559365,
+    "min": -0.268517,
+    "max": 6.172383,
+    "n_unique": 119,
+    "skew": 6.805462,
+    "range_width": 6.4409,
+    "is_integer": false
+   },
+   {
+    "column": "lactic",
+    "mean": 0.010067,
+    "sd": 0.73522,
+    "min": -0.428248,
+    "max": 3.826023,
+    "n_unique": 110,
+    "skew": 2.725336,
+    "range_width": 4.254271,
+    "is_integer": false
+   },
+   {
+    "column": "acetic",
+    "mean": 0.003125,
+    "sd": 0.747874,
+    "min": -0.417192,
+    "max": 4.396779,
+    "n_unique": 106,
+    "skew": 3.207789,
+    "range_width": 4.813971,
+    "is_integer": false
+   },
+   {
+    "column": "barnyard",
+    "mean": -0.049312,
+    "sd": 0.449169,
+    "min": -0.378252,
+    "max": 2.752413,
+    "n_unique": 172,
+    "skew": 2.667143,
+    "range_width": 3.130665,
+    "is_integer": false
+   },
+   {
+    "column": "alcohol",
+    "mean": -0.018513,
+    "sd": 0.758258,
+    "min": -2.150729,
+    "max": 1.741369,
+    "n_unique": 247,
+    "skew": -0.229209,
+    "range_width": 3.892098,
+    "is_integer": false
+   },
+   {
+    "column": "aftertaste",
+    "mean": 0.01739,
+    "sd": 0.62166,
+    "min": -2.100345,
+    "max": 1.976962,
+    "n_unique": 250,
+    "skew": -0.129385,
+    "range_width": 4.077306,
+    "is_integer": false
+   },
+   {
+    "column": "body",
+    "mean": 0.002363,
+    "sd": 0.565851,
+    "min": -1.862278,
+    "max": 1.716344,
+    "n_unique": 247,
+    "skew": 0.028863,
+    "range_width": 3.578622,
+    "is_integer": false
+   },
+   {
+    "column": "co2",
+    "mean": -0.003344,
+    "sd": 0.589429,
+    "min": -1.739428,
+    "max": 1.439582,
+    "n_unique": 248,
+    "skew": -0.008243,
+    "range_width": 3.17901,
+    "is_integer": false
+   },
+   {
+    "column": "overall",
+    "mean": -0.008009,
+    "sd": 0.547875,
+    "min": -1.735965,
+    "max": 1.34565,
+    "n_unique": 250,
+    "skew": -0.534539,
+    "range_width": 3.081614,
+    "is_integer": false
+   }
+  ]
+ },
+ "xlsx3": {
+  "sheetnames": [
+   "beer_1",
+   "beer_2",
+   "beer_3",
+   "beer_4",
+   "beer_5",
+   "beer_6",
+   "beer_7",
+   "beer_8",
+   "beer_9",
+   "beer_10",
+   "beer_11",
+   "beer_12",
+   "summary"
+  ],
+  "n_sheets": 13,
+  "summary_shape": [
+   13,
+   52
+  ],
+  "summary_header": [
+   "Beer",
+   "A_malt_all",
+   "A_malt_grain",
+   "A_malt_bread",
+   "A_malt_cara",
+   "A_malt_burn",
+   "A_hops_all",
+   "A_hops_citrus",
+   "A_hops_tropical",
+   "A_hops_noble",
+   "A_hops_woody",
+   "A_esters_all",
+   "A_esters_ethac",
+   "A_esters_isoaa",
+   "A_esters_flower",
+   "A_ester_fruity",
+   "F_malt_all",
+   "F_malt_grain",
+   "F_malt_bread",
+   "F_malt_cara",
+   "F_malt_burn",
+   "F_hops_all",
+   "F_hops_citrus",
+   "F_hops_tropical",
+   "F_hops_noble",
+   "F_hops_woody",
+   "F_esters_all",
+   "F_esters_ethac",
+   "F_esters_isoaa",
+   "F_esters_flower",
+   "F_ester_fruity",
+   "body",
+   "bitternes",
+   "co2",
+   "aftertaste",
+   "alcohol",
+   "sweetness",
+   "acidity",
+   "dms",
+   "metallic",
+   "4vg",
+   "t2n",
+   "diacetyl",
+   "stale_hops",
+   "orange",
+   "coriander",
+   "clove",
+   "lactic",
+   "acetic",
+   "barnyard",
+   "overall",
+   "comments"
+  ],
+  "summary_n_sensory": 50,
+  "summary_sensory_header": [
+   "A_malt_all",
+   "A_malt_grain",
+   "A_malt_bread",
+   "A_malt_cara",
+   "A_malt_burn",
+   "A_hops_all",
+   "A_hops_citrus",
+   "A_hops_tropical",
+   "A_hops_noble",
+   "A_hops_woody",
+   "A_esters_all",
+   "A_esters_ethac",
+   "A_esters_isoaa",
+   "A_esters_flower",
+   "A_ester_fruity",
+   "F_malt_all",
+   "F_malt_grain",
+   "F_malt_bread",
+   "F_malt_cara",
+   "F_malt_burn",
+   "F_hops_all",
+   "F_hops_citrus",
+   "F_hops_tropical",
+   "F_hops_noble",
+   "F_hops_woody",
+   "F_esters_all",
+   "F_esters_ethac",
+   "F_esters_isoaa",
+   "F_esters_flower",
+   "F_ester_fruity",
+   "body",
+   "bitternes",
+   "co2",
+   "aftertaste",
+   "alcohol",
+   "sweetness",
+   "acidity",
+   "dms",
+   "metallic",
+   "4vg",
+   "t2n",
+   "diacetyl",
+   "stale_hops",
+   "orange",
+   "coriander",
+   "clove",
+   "lactic",
+   "acetic",
+   "barnyard",
+   "overall"
+  ],
+  "summary_max_abs_value": 0.0,
+  "beer": {
+   "beer_1": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 1
+   },
+   "beer_2": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 2
+   },
+   "beer_3": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 3
+   },
+   "beer_4": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 4
+   },
+   "beer_5": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 5
+   },
+   "beer_6": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 6
+   },
+   "beer_7": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 7
+   },
+   "beer_8": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 8
+   },
+   "beer_9": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 9
+   },
+   "beer_10": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 10
+   },
+   "beer_11": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 11
+   },
+   "beer_12": {
+    "dims": [
+     101,
+     33
+    ],
+    "nonempty_cells": 316,
+    "numeric_cells": 253,
+    "n_formulas": 54,
+    "formula_examples": [
+     "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)",
+     "=IF(ISBLANK(C10),0,Q7)",
+     "=IF(ISBLANK(S10),0,AG7)"
+    ],
+    "Q_nonzero_scores": [],
+    "AG_nonzero_scores": [],
+    "beer_no_S3": 12
+   }
+  },
+  "beer_identical_templates": true,
+  "summary_vs_targets": {
+   "unmatched_summary": [],
+   "unmatched_targets": [],
+   "exact_same_order": false
+  }
+ },
+ "mapping": {
+  "R_to_display_n": 261,
+  "csv1_to_display_coverage": 231,
+  "sensory_trained_panel_n": 50,
+  "sensory_map_n": 50,
+  "target_to_5col_n": 50,
+  "target_to_5col_missing": []
+ },
+ "corr2": {
+  "shape": [
+   231,
+   231
+  ],
+  "index_eq_columns_order": true,
+  "positional_match_with_1csv": true,
+  "name_examples": {
+   "acetaldehyde": "Acetaldehyde",
+   "CS2": "Carbon disulfide",
+   "DES": "Diethyl sulfide",
+   "ethyl_2.methyl_butyrate": "Ethyl 2-methylbutyrate",
+   "sulfur_sum": "Total sulfur compounds"
+  },
+  "max_abs_err_spearman": 6.661338147750939e-16,
+  "median_abs_err_spearman": 8.326672684688674e-17,
+  "max_abs_err_pearson": 1.1234263749065516,
+  "median_abs_err_pearson": 0.06180733548539144,
+  "symmetry_max_abs": 0.0,
+  "diag_all_one": true,
+  "nan_count": 0,
+  "min_eig": -0.04241270911948124,
+  "range": [
+   -0.663595210809322,
+   1.0
+  ],
+  "decisive_pair": {
+   "feature1": "X3.methylbutanal",
+   "feature1_display": "3-methylbutanal",
+   "feature2": "ethyl.pentanoate",
+   "feature2_display": "Ethyl pentanoate",
+   "2csv_value": -0.447483568491351,
+   "recomputed_spearman": -0.44748356849135107,
+   "recomputed_pearson": 0.6759428064152007
+  }
+ },
+ "corr5": {
+  "shape": [
+   50,
+   50
+  ],
+  "n_targets": 50,
+  "n_missing_targets": [],
+  "max_abs_err_spearman": 5.551115123125783e-16,
+  "median_abs_err_spearman": 6.938893903907228e-17,
+  "diag_all_one": true,
+  "symmetry_max_abs": 0.0,
+  "col_order_matches_targets": true
+ },
+ "corr6": {
+  "shape": [
+   44,
+   50
+  ],
+  "n_rows": 44,
+  "n_cols": 50,
+  "col_order_same_as_5csv": true,
+  "n_cols_matched_targets": 50,
+  "rows_mapped_to_1csv": 44,
+  "rows_unmapped": [],
+  "cols_mapped_to_targets": 50,
+  "cols_unmapped": [],
+  "max_abs_err_spearman": 6.661338147750939e-16,
+  "median_abs_err_spearman": 5.551115123125783e-17
+ },
+ "xlsx8": {
+  "Sensory thresholds": {
+   "dims": [
+    262,
+    11
+   ],
+   "header": [
+    "field_name_python",
+    "field_name_R",
+    "chemical_name",
+    "chemical_name_short",
+    "calibrated",
+    "origin_paper",
+    "unit",
+    "aging",
+    "off_flavors",
+    "threshold_mean",
+    "threshold_median"
+   ],
+   "n_rows": 261,
+   "n_threshold_numeric": 43,
+   "n_off_flavors": 7,
+   "n_calibrated_yes": 23
+  },
+  "Sensory names": {
+   "dims": [
+    102,
+    8
+   ],
+   "header": [
+    "dataset",
+    "R_name",
+    "Category_Paper",
+    "Category",
+    "CleanName_Paper",
+    "CleanName_PaperLong",
+    "CleanName_PanelFeedback",
+    "DataType"
+   ],
+   "n_rows": 102,
+   "dataset_counts": {
+    "Ratebeer": 51,
+    "Trained panel": 50
+   },
+   "n_trained_R_name_in_targets": 50,
+   "n_ratebeer": 51
+  },
+  "GBM importance MDI": {
+   "dims": [
+    232,
+    2
+   ],
+   "header": [
+    "",
+    "0"
+   ],
+   "n_rows": 232,
+   "shape": [
+    232,
+    2
+   ]
+  },
+  "GBM SHAP Values": {
+   "dims": [
+    501,
+    236
+   ],
+   "header": [
+    "data",
+    "beer",
+    "beer_id",
+    "tasting_category_fine",
+    "acetaldehyde",
+    "CS2",
+    "DES",
+    "DMS",
+    "ethyl_2.methyl_butyrate",
+    "ethyl_acetate",
+    "ethyl_decanoate",
+    "ethyl_hexanoate"
+   ],
+   "n_rows": 501,
+   "shape": [
+    501,
+    236
+   ],
+   "first_col_counts": {
+    "SHAP": 250,
+    "concentration": 250,
+    "data": 1
+   },
+   "first_row_meta": [
+    "data",
+    "beer",
+    "beer_id",
+    "tasting_category_fin"
+   ]
+  },
+  "Calibrated chemical dataset": {
+   "dims": [
+    251,
+    73
+   ],
+   "header": [
+    "beer",
+    "beer_id",
+    "tasting_category_fine",
+    "acetaldehyde",
+    "CS2",
+    "DES",
+    "DMS",
+    "ethyl_2.methyl_butyrate",
+    "ethyl_acetate",
+    "ethyl_decanoate",
+    "ethyl_hexanoate",
+    "ethyl_isovalerate"
+   ],
+   "n_rows": 251,
+   "shape": [
+    250,
+    73
+   ],
+   "columns": [
+    "beer",
+    "beer_id",
+    "tasting_category_fine",
+    "acetaldehyde",
+    "CS2",
+    "DES",
+    "DMS",
+    "ethyl_2.methyl_butyrate",
+    "ethyl_acetate",
+    "ethyl_decanoate",
+    "ethyl_hexanoate",
+    "ethyl_isovalerate",
+    "ethyl_octanoate",
+    "ethyl_propionate",
+    "H2S",
+    "isoamyl_alcohol",
+    "isobutanol",
+    "isobutyl_acetate",
+    "isopentyl_acetate",
+    "MeSH",
+    "octyl_acetate",
+    "phenethyl_acetate",
+    "phenethyl_alcohol",
+    "X4VG",
+    "SO2.mg.L.",
+    "acetic_acid.g.L.",
+    "ammonia.mg.L.",
+    "color.EBC.",
+    "betaglucan.mg.L.",
+    "lactic_acid.mg.L.",
+    "glycerol",
+    "iron",
+    "pH",
+    "protein.g.L.",
+    "bitterness",
+    "GFS",
+    "ethanol..v.v.",
+    "CO2.PSI.",
+    "unfermentables",
+    "kcalperc",
+    "X2.3.butanedione",
+    "X3.methylbutanal",
+    "ethyl.isobutyrate",
+    "ethyl.butyrate",
+    "X2.methyltetrahydrofuran.3.one",
+    "methylpyrazine",
+    "furfural",
+    "X3Z.hexenol",
+    "n.hexanol",
+    "styrene",
+    "ethyl.pentanoate",
+    "amyl.acetate",
+    "benzaldehyde",
+    "X5.methylfurfural",
+    "X2.ethyl.3.methylpyrazine",
+    "hexyl.acetate",
+    "benzyl.alcohol",
+    "phenylacetaldehyde",
+    "X.E..beta.ocimene",
+    "linalool",
+    "X.E..2.nonenal",
+    "diethyl.succinate",
+    "X1.alpha.terpineol",
+    "ethyl.nicotinate",
+    "citronellol",
+    "geraniol",
+    "X.E.E..2.4.decadienal",
+    "eugenol",
+    "gamma.nonalactone",
+    "X.E..beta.damascenone",
+    "E.caryophyllene",
+    "alpha.humulene",
+    "Z.nerolidol"
+   ],
+   "n_chem_cols": 70
+  },
+  "Beer Prices": {
+   "dims": [
+    251,
+    11
+   ],
+   "header": [
+    "beer",
+    "beer_id",
+    "tasting_category",
+    "ABV",
+    "Price_TotalWine_USA",
+    "Price_Colruyt_Belgium",
+    "Price_Delhaize_Belgium",
+    "Price_BeerHawk_UK",
+    "Price_TheBelgianBeerShop_globa",
+    "Price_TheBelgianShop_global",
+    "Price_BeerOfBelgium_global"
+   ],
+   "n_rows": 251,
+   "shape": [
+    250,
+    11
+   ],
+   "na_total": 1005,
+   "columns": [
+    "beer",
+    "beer_id",
+    "tasting_category",
+    "ABV",
+    "Price_TotalWine_USA",
+    "Price_Colruyt_Belgium",
+    "Price_Delhaize_Belgium",
+    "Price_BeerHawk_UK",
+    "Price_TheBelgianBeerShop_global",
+    "Price_TheBelgianShop_global",
+    "Price_BeerOfBelgium_global"
+   ]
+  },
+  "Sheet2": {
+   "dims": [
+    1,
+    1
+   ],
+   "header": [],
+   "n_rows": 0
+  }
+ },
+ "csv7": {
+  "shape": [
+   250,
+   189
+  ],
+  "n_sensory": 186,
+  "na_total": 750,
+  "n_all_na_cols": 3,
+  "all_na_cols": [
+   "palate_acetaldehyde",
+   "palate_acetate",
+   "palate_dentist"
+  ],
+  "meta_equal_4csv": true,
+  "sd_median": 1.0029977654691786,
+  "sd_all_close_1": false,
+  "mean_absmax": 0.06127701185599998
+ },
+ "discrepancies": [
+  {
+   "claim": "题面：226 种不同啤酒",
+   "actual_desc": "1.csv 唯一 beer 数",
+   "actual": 250,
+   "claim_holds": false
+  },
+  {
+   "claim": "题面：2.csv 单元格为皮尔逊相关系数",
+   "actual_desc": "2.csv 与 Spearman 重算 max|err|",
+   "actual": 6.661338147750939e-16,
+   "claim_holds": true
+  },
+  {
+   "claim": "题面：3.xlsx 10 个 sheet",
+   "actual_desc": "3.xlsx 实际 sheet 数",
+   "actual": 13,
+   "claim_holds": false
+  },
+  {
+   "claim": "题面：Aroma+Flavour 共约 40 个感官维度",
+   "actual_desc": "4.csv 感官列数",
+   "actual": 50,
+   "claim_holds": false
+  },
+  {
+   "claim": "题面：6.csv 46×50",
+   "actual_desc": "6.csv 实际 shape",
+   "actual": [
+    44,
+    50
+   ],
+   "claim_holds": false
+  },
+  {
+   "claim": "题面：7.csv 187 个感官属性",
+   "actual_desc": "7.csv 感官列数",
+   "actual": 186,
+   "claim_holds": false
+  },
+  {
+   "claim": "题面：1.csv 200 多种风味化合物",
+   "actual_desc": "1.csv 特征列数",
+   "actual": 231,
+   "claim_holds": true
+  }
+ ]
+}

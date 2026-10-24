@@ -1,0 +1,61 @@
+{
+  "token": "a74beaf6be85aff4e4b7848a",
+  "experimentId": "EXP-0010",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T04:35:46.695Z",
+  "endedAt": "2026-10-24T04:35:47.080Z",
+  "durationMs": 384,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "globalMeanAbsRho.MeSH": 0.20514575408907962,
+    "globalMeanAbsRho.acetaldehyde": 0.20730023552477136,
+    "globalMeanAbsRho.bitterness": 0.2067701817519221,
+    "globalMeanAbsRho.esters_sum": 0.228620490676219,
+    "globalMeanAbsRho.ethanol..v.v.": 0.24671503972321632,
+    "globalMeanAbsRho.ethyl_octanoate": 0.21477846746435045,
+    "globalMeanAbsRho.glycerol": 0.20852174890421626,
+    "globalMeanAbsRho.isopentyl_acetate": 0.21037310829918762,
+    "globalMeanAbsRho.kcalperc": 0.24350175174376498,
+    "globalMeanAbsRho.n.hexanol": 0.21255159089145295,
+    "jaccard_global_vs_perdim": 0.09,
+    "n_dims": 50.0,
+    "n_features": 231.0,
+    "n_train": 200.0,
+    "topK": 3.0,
+    "topk_jaccard": 0.09
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0010/metrics.json",
+      "sha256": "72553713efa239a16f6965d50585b0fd33a816548e5061d7792210a403566260",
+      "bytes": 682,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0010/outputs.json",
+      "sha256": "b64dd57eefc9485fa61bf0b15119341e961de0aae436bea2a6d9c88f47f91e76",
+      "bytes": 5342,
+      "kind": "json"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q2_baseline.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q2_baseline.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0010",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

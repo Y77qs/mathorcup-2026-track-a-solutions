@@ -1,0 +1,9 @@
+== Q3 generate ==
+locked: A {'k': 15}
+n per style: required=200 others=100
+  seed 42: rows=2500 clipped=0.0000 neg_lin=0 agg_ok=True
+  seed 7: rows=2500 clipped=0.0000 neg_lin=0 agg_ok=True
+  seed 2024: rows=2500 clipped=0.0000 neg_lin=0 agg_ok=True
+  seed 123: rows=2500 clipped=0.0000 neg_lin=0 agg_ok=True
+  seed 9: rows=2500 clipped=0.0000 neg_lin=0 agg_ok=True
+[done] generated_spectra.csv + generation_diagnostics.json

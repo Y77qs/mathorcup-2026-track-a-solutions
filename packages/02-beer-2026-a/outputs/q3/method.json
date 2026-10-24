@@ -1,0 +1,12 @@
+{
+  "question": "Q3",
+  "generator": "per-style Gaussian with shrinkage lambda=n/(n+5)",
+  "transfer": "x' = x_source + (mu_T_fewshot - mu_source)",
+  "constraint": "缺陷列（DMS/Diacetyl/4VG/furfural 等）位移为 0，缺陷 OAV 不变",
+  "evaluation": [
+    "energy distance（生成/迁移 vs 留出样本）",
+    "缺陷 OAV 不恶化比例",
+    "超阈值比例"
+  ],
+  "sensoryImage": "用 EXP-0002 同配置的 Ridge（DATA-0002 训练行）把生成谱映射为 50 维 mapped grade（派生预测）"
+}

@@ -1,0 +1,31 @@
+{
+  "n_target_dims": 50,
+  "n_matched_to_sensory_names": 50,
+  "n_in_6csv": 50,
+  "n_in_5csv": 50,
+  "category_paper_counts": {
+    "Taste": 30,
+    "Aroma": 15,
+    "Palate": 4,
+    "Overall": 1
+  },
+  "origin_group_counts": {
+    "Yeast": 12,
+    "Others": 12,
+    "Malt": 10,
+    "Hops": 10,
+    "Wild flora": 3,
+    "NaN": 3
+  },
+  "unmatched": [],
+  "not_in_6csv": [],
+  "6csv_shape": [
+    44,
+    50
+  ],
+  "5csv_shape": [
+    50,
+    50
+  ],
+  "verdict": "A_*/F_* 通过 R_name 对齐；Category_Paper 给出 Aroma/Taste/Palate/Overall 四类；6.csv 覆盖 44 个化学指标 × 50 个感官属性"
+}

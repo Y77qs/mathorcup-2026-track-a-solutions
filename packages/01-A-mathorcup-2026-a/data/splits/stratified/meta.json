@@ -1,0 +1,26 @@
+{
+  "method":"stratified-random-holdout",
+  "stratify":"tasting_category_fine",
+  "testFraction":0.2,
+  "seed":42,
+  "rows":250,
+  "train":200,
+  "test":50,
+  "columns":284,
+  "schema":"DATA-0002 model_table 全列（3 键 + 231 特征 + 50 目标）；train\/test 与 SPLIT-0002 同 schema",
+  "disjoint":true,
+  "coverage":250,
+  "n_styles":22,
+  "min_class":{
+    "style":"Faro",
+    "n":3
+  },
+  "every_class_in_test":true,
+  "role":"稳健性复核（robustness），非主评估口径",
+  "files":{
+    "train":"data\/splits\/stratified\/train.csv",
+    "test":"data\/splits\/stratified\/test.csv",
+    "assignment":"data\/splits\/stratified\/assignment.csv"
+  },
+  "authoritative_ledger_split":"SPLIT-0001（data\/splits\/SPLIT-0001\/assignment.csv，由 modeling_data register-split 生成；主评估口径）"
+}

@@ -1,0 +1,232 @@
+col_1csv,name_2csv,via,positional_name,positional_agrees_with_name
+acetaldehyde,Acetaldehyde,threshold:chemical_name_short,Acetaldehyde,True
+CS2,Carbon disulfide,threshold:chemical_name_short,Carbon disulfide,True
+DES,Diethyl sulfide,threshold:chemical_name_short,Diethyl sulfide,True
+DMS,Dimethyl sulfide,threshold:chemical_name_short,Dimethyl sulfide,True
+ethyl_2.methyl_butyrate,Ethyl 2-methylbutyrate,threshold:chemical_name_short,Ethyl 2-methylbutyrate,True
+ethyl_acetate,Ethyl acetate,threshold:chemical_name_short,Ethyl acetate,True
+ethyl_decanoate,Ethyl decanoate,threshold:chemical_name_short,Ethyl decanoate,True
+ethyl_hexanoate,Ethyl hexanoate,threshold:chemical_name_short,Ethyl hexanoate,True
+ethyl_isovalerate,Ethyl 3-methylbutyrate,threshold:chemical_name_short,Ethyl 3-methylbutyrate,True
+ethyl_octanoate,Ethyl octanoate,threshold:chemical_name_short,Ethyl octanoate,True
+ethyl_propionate,Ethyl propionate,threshold:chemical_name_short,Ethyl propionate,True
+H2S,Hydrogen sulfide,threshold:chemical_name_short,Hydrogen sulfide,True
+isoamyl_alcohol,Isoamyl alcohol,threshold:chemical_name_short,Isoamyl alcohol,True
+isobutanol,Isobutanol,threshold:chemical_name_short,Isobutanol,True
+isobutyl_acetate,Isobutyl acetate,threshold:chemical_name_short,Isobutyl acetate,True
+isopentyl_acetate,Isoamyl acetate,threshold:chemical_name_short,Isoamyl acetate,True
+MeSH,Methanethiol,threshold:chemical_name_short,Methanethiol,True
+octyl_acetate,Octyl acetate,threshold:chemical_name_short,Octyl acetate,True
+phenethyl_acetate,Phenethyl acetate,threshold:chemical_name_short,Phenethyl acetate,True
+phenethyl_alcohol,Phenethyl alcohol,threshold:chemical_name_short,Phenethyl alcohol,True
+X4VG,4-vinylguaiacol,threshold:chemical_name_short,4-vinylguaiacol,True
+SO2.mg.L.,Sulfur dioxide,threshold:chemical_name_short,Sulfur dioxide,True
+acetic_acid.g.L.,Acetic acid,threshold:chemical_name_short,Acetic acid,True
+ammonia.mg.L.,Ammonia,threshold:chemical_name_short,Ammonia,True
+color.EBC.,Color,threshold:chemical_name_short,Color,True
+betaglucan.mg.L.,Betaglucan,threshold:chemical_name_short,Betaglucan,True
+lactic_acid.mg.L.,Lactic acid,threshold:chemical_name_short,Lactic acid,True
+glycerol,Glycerol,threshold:chemical_name_short,Glycerol,True
+iron,Iron,threshold:chemical_name_short,Iron,True
+pH,pH,threshold:chemical_name_short,pH,True
+protein.g.L.,Protein,threshold:chemical_name_short,Protein,True
+bitterness,Iso-alpha acids,threshold:chemical_name_short,Iso-alpha acids,True
+GFS,Sugars,threshold:chemical_name_short,Sugars,True
+ethanol..v.v.,Ethanol,threshold:chemical_name_short,Ethanol,True
+CO2.PSI.,Carbon dioxide,threshold:chemical_name_short,Carbon dioxide,True
+unfermentables,Unfermentables,threshold:chemical_name_short,Unfermentables,True
+kcalperc,Caloric value,threshold:chemical_name_short,Caloric value,True
+X1.propanol,1-propanol,threshold:chemical_name_short,1-propanol,True
+X2.3.butanedione,Diacetyl,threshold:chemical_name_short,Diacetyl,True
+X3.methylbutanal,3-methylbutanal,threshold:chemical_name_short,3-methylbutanal,True
+propylene.glycol,Propylene glycol,threshold:chemical_name_short,Propylene glycol,True
+propyl.acetate,N-propyl acetate,threshold:chemical_name_short,N-propyl acetate,True
+n.pentanol,N-pentanol,threshold:chemical_name_short,N-pentanol,True
+X2.methyl.1.butanol,2-methyl-1-butanol,threshold:chemical_name_short,2-methyl-1-butanol,True
+isopentyl.formate,Isopentyl formate,threshold:chemical_name_short,Isopentyl formate,True
+ethyl.isobutyrate,Ethyl isobutyrate,threshold:chemical_name_short,Ethyl isobutyrate,True
+X3.methyl.2.butenal,3-methyl-2-butenal,threshold:chemical_name_short,3-methyl-2-butenal,True
+X2.methyltetrahydrofuran.3.one,2-methyltetrahydrofuran-3-one,threshold:chemical_name_short,2-methyltetrahydrofuran-3-one,True
+ethyl.butyrate,Ethyl butyrate,threshold:chemical_name_short,Ethyl butyrate,True
+butyl.acetate,Butyl acetate,threshold:chemical_name_short,Butyl acetate,True
+methylpyrazine,Methylpyrazine,threshold:chemical_name_short,Methylpyrazine,True
+furfural,Furfural,threshold:chemical_name_short,Furfural,True
+ethyl.lactate,Ethyl lactate,threshold:chemical_name_short,Ethyl lactate,True
+X3Z.hexenol,Cis-3-hexenol,threshold:chemical_name_short,Cis-3-hexenol,True
+n.hexanol,N-hexanol,threshold:chemical_name_short,N-hexanol,True
+styrene,Styrene,threshold:chemical_name_short,Styrene,True
+X2.furanmethanol,Furfuryl alcohol,threshold:chemical_name_short,Furfuryl alcohol,True
+X3.methyl.2.hexanol,3-methyl-2-hexanol,threshold:chemical_name_short,3-methyl-2-hexanol,True
+X3.furanmethanol,3-furanmethanol,threshold:chemical_name_short,3-furanmethanol,True
+X2.acetylfuran,2-acetylfuran,threshold:chemical_name_short,2-acetylfuran,True
+X2.6.dimethyl.pyrazine,"2,6-dimethylpyrazine",threshold:chemical_name_short,"2,6-dimethylpyrazine",True
+amyl.acetate,Amyl acetate,threshold:chemical_name_short,Amyl acetate,True
+ethyl.tiglate,Ethyl tiglate,threshold:chemical_name_short,Ethyl tiglate,True
+benzaldehyde,Benzaldehyde,threshold:chemical_name_short,Benzaldehyde,True
+X5.methylfurfural,5-methylfurfural,threshold:chemical_name_short,5-methylfurfural,True
+n.heptanol,N-heptanol,threshold:chemical_name_short,N-heptanol,True
+X1.octen.3.ol,1-octen-3-ol,threshold:chemical_name_short,1-octen-3-ol,True
+X3.methylthio.propanol,Methionol,threshold:chemical_name_short,Methionol,True
+isomaltol,Isomaltol,threshold:chemical_name_short,Isomaltol,True
+X6.methyl.5.hepten.2.one,Methyl heptenone,threshold:chemical_name_short,Methyl heptenone,True
+X2.pentyl.furan,2-pentyl furan,threshold:chemical_name_short,2-pentyl furan,True
+ethyl.hex..3E..enoate,Ethyl 3-hexanoate,threshold:chemical_name_short,Ethyl 3-hexanoate,True
+alpha.phellandrene,α-phellandrene,positional(index),α-phellandrene,False
+dehydroxy.cis.linalool.oxide,Dehydroxy-cis-linalool oxide,threshold:chemical_name_short,Dehydroxy-cis-linalool oxide,True
+hexyl.acetate,Hexyl acetate,threshold:chemical_name_short,Hexyl acetate,True
+isopentyl.butanoate,Isopentyl butanoate,threshold:chemical_name_short,Isopentyl butanoate,True
+X2.ethyl.1.hexanol,2-ethyl-1-hexanol,threshold:chemical_name_short,2-ethyl-1-hexanol,True
+beta.phellandrene,Beta-phellandrene,positional(index),Beta-phellandrene,False
+limonene,Limonene,threshold:chemical_name_short,Limonene,True
+eucalyptol,Eucalyptol,threshold:chemical_name_short,Eucalyptol,True
+benzyl.alcohol,Benzyl alcohol,threshold:chemical_name_short,Benzyl alcohol,True
+ethyl.hex..2E..enoate,Ethyl 2-hexenoate,threshold:chemical_name_short,Ethyl 2-hexenoate,True
+phenylacetaldehyde,Phenylacetaldehyde,threshold:chemical_name_short,Phenylacetaldehyde,True
+X.E..beta.ocimene,E-β-ocimene,positional(index),E-β-ocimene,False
+prenyl.isobutyrate,Prenyl isobutyrate,threshold:chemical_name_short,Prenyl isobutyrate,True
+ethyl.furoate,Ethyl furoate,threshold:chemical_name_short,Ethyl furoate,True
+ortho.cresol,O-cresol,threshold:chemical_name_short,O-cresol,True
+ethyl.5.methylhexanoate,Ethyl 5-methylhexanoate,threshold:chemical_name_short,Ethyl 5-methylhexanoate,True
+X2.acetylpyrrole,2-acetylpyrrole,threshold:chemical_name_short,2-acetylpyrrole,True
+isoamyl.lactate,Isoamyl lactate,threshold:chemical_name_short,Isoamyl lactate,True
+n.octanol,N-octanol,threshold:chemical_name_short,N-octanol,True
+cis.linalool.oxide,Cis-linalool oxide,threshold:chemical_name_short,Cis-linalool oxide,True
+meta.cymenene,Meta-cymenene,threshold:chemical_name_short,Meta-cymenene,True
+terpinolene,Terpinolene,threshold:chemical_name_short,Terpinolene,True
+linalool,Linalool,threshold:chemical_name_short,Linalool,True
+nonan.2.ol,2-nonanol,threshold:chemical_name_short,2-nonanol,True
+n.nonanal,N-nonanal,threshold:chemical_name_short,N-nonanal,True
+X2.methyl.benzofuran,2-methyl-benzofuran,threshold:chemical_name_short,2-methyl-benzofuran,True
+heptyl.acetate,Heptyl acetate,threshold:chemical_name_short,Heptyl acetate,True
+X4.methyl.1.pentanol,4-methyl-1-pentanol,threshold:chemical_name_short,4-methyl-1-pentanol,True
+neo.allo.ocimene,Neo-allo-ocimene,threshold:chemical_name_short,Neo-allo-ocimene,True
+x.methyl.1.octanol,X-methyl-1-octanol,threshold:chemical_name_short,X-methyl-1-octanol,True
+trans.dihydro.beta.terpineol,Trans-dihydro-β-terpineol,positional(index),Trans-dihydro-β-terpineol,False
+cis.beta.terpineol,Cis-β-terpineol,positional(index),Cis-β-terpineol,False
+y.methyl.1.octanol,Y-methyl-1-octanol,threshold:chemical_name_short,Y-methyl-1-octanol,True
+camphor,Camphor,threshold:chemical_name_short,Camphor,True
+isobutyl.hexanoate,Isobutyl hexanoate,threshold:chemical_name_short,Isobutyl hexanoate,True
+nerol.oxide,Nerol oxide,threshold:chemical_name_short,Nerol oxide,True
+X.E..2.nonenal,E-2-nonenal,threshold:chemical_name_short,E-2-nonenal,True
+cis.dihydro.beta.terpineol,Cis-dihydro-β-terpineol,positional(index),Cis-dihydro-β-terpineol,False
+X4.ethyl.phenol,4-ethyl-phenol,threshold:chemical_name_short,4-ethyl-phenol,True
+isoborneol,Isoborneol,threshold:chemical_name_short,Isoborneol,True
+ethyl.benzoate,Ethyl benzoate,threshold:chemical_name_short,Ethyl benzoate,True
+n.nonanol,N-nonanol,threshold:chemical_name_short,N-nonanol,True
+terpinen.4.ol,Terpinen-4-ol,threshold:chemical_name_short,Terpinen-4-ol,True
+diethyl.succinate,Diethyl succinate,threshold:chemical_name_short,Diethyl succinate,True
+vinyl.caprylate,Vinyl caprylate,threshold:chemical_name_short,Vinyl caprylate,True
+X1.alpha.terpineol,Alpha-terpineol,positional(index),Alpha-terpineol,False
+ethyl..E..linalool,Ethyl linalool,threshold:chemical_name_short,Ethyl linalool,True
+ethyl.nicotinate,Ethyl nicotinate,threshold:chemical_name_short,Ethyl nicotinate,True
+citronellol,Citronellol,threshold:chemical_name_short,Citronellol,True
+nerol,Nerol,threshold:chemical_name_short,Nerol,True
+hydroxy.methyl.furfural,5-hydroxymethylfurfural,threshold:chemical_name_short,5-hydroxymethylfurfural,True
+E.ocimenone,Ocimenone,threshold:chemical_name_short,Ocimenone,True
+cumin.aldehyde,Cumin aldehyde,threshold:chemical_name_short,Cumin aldehyde,True
+ethyl.phenylacetate,Ethyl phenylacetate,threshold:chemical_name_short,Ethyl phenylacetate,True
+isopentyl.hexanoate,Isopentyl hexanoate,threshold:chemical_name_short,Isopentyl hexanoate,True
+geraniol,Geraniol,threshold:chemical_name_short,Geraniol,True
+beta.cyclohomocitral,β-cyclohomocitral,positional(index),β-cyclohomocitral,False
+E.cinnamaldehyde,Cinnamaldehyde,threshold:chemical_name_short,Cinnamaldehyde,True
+n.decanol,N-decanol,threshold:chemical_name_short,N-decanol,True
+neryl.formate,Neryl formate,threshold:chemical_name_short,Neryl formate,True
+X4.ethyl.guaiacol,4-ethyl-guaiacol,threshold:chemical_name_short,4-ethyl-guaiacol,True
+X2.undecanone,2-undecanone,threshold:chemical_name_short,2-undecanone,True
+trans.dihydro.alpha.terpinyl.acetate,Trans-dihydro-α-terpinyl acetate,positional(index),Trans-dihydro-α-terpinyl acetate,False
+terpinen.4.ol.acetate,Terpinen-4-ol acetate,threshold:chemical_name_short,Terpinen-4-ol acetate,True
+X2.undecanol,2-undecanol,threshold:chemical_name_short,2-undecanol,True
+delta.terpinyl.acetate,Terpiryl acetate,threshold:chemical_name_short,Terpiryl acetate,True
+X.E.E..2.4.decadienal,"E,E-2,4-decadienal",threshold:chemical_name_short,"E,E-2,4-decadienal",True
+methyl.geranate,Methyl geranate,threshold:chemical_name_short,Methyl geranate,True
+car.3.en.2.one,Car-3-en-2-one,threshold:chemical_name_short,Car-3-en-2-one,True
+dimethoxy..E..citral,Dimethoxy-E-citral,threshold:chemical_name_short,Dimethoxy-E-citral,True
+X2.butyloctanoate,2-butyl octanoate,threshold:chemical_name_short,2-butyl octanoate,True
+X4.methoxysalicylaldehyde,4-methoxysalicylaldehyde,threshold:chemical_name_short,4-methoxysalicylaldehyde,True
+ethyl.hydrocinnamate,Ethyl hydrocinnamate,threshold:chemical_name_short,Ethyl hydrocinnamate,True
+eugenol,Eugenol,threshold:chemical_name_short,Eugenol,True
+gamma.nonalactone,Gamma-nonalactone,threshold:chemical_name_short,Gamma-nonalactone,True
+methyl.para.anisate,Methyl para-anisate,threshold:chemical_name_short,Methyl para-anisate,True
+X.E..beta.damascenone,E-β-damascenone,positional(index),E-β-damascenone,False
+ethyl..9..decenoate,Ethyl 9-decenoate,threshold:chemical_name_short,Ethyl 9-decenoate,True
+vanillin,Vanillin,threshold:chemical_name_short,Vanillin,True
+geosmin,Geosmin,threshold:chemical_name_short,Geosmin,True
+dodecanal,Dodecanal,threshold:chemical_name_short,Dodecanal,True
+X4.8.alpha.epoxy.caryophyllane,"4,8-α-epoxy-caryophyllane",positional(index),"4,8-α-epoxy-caryophyllane",False
+E.caryophyllene,Caryophyllene,threshold:chemical_name_short,Caryophyllene,True
+X.E..alpha.ionone,E-α-ionone,positional(index),E-α-ionone,False
+perillyl.acetate,Perillyl acetate,threshold:chemical_name_short,Perillyl acetate,True
+beta.humulene,β-humulene,positional(index),β-humulene,False
+X2.phenyl.ethyl.butyrate,2-phenyl ethyl butyrate,threshold:chemical_name_short,2-phenyl ethyl butyrate,True
+X.Z..beta.farnesene,Z-β-farnesene,positional(index),Z-β-farnesene,False
+pentyl.octanoate,Pentyl octanoate,threshold:chemical_name_short,Pentyl octanoate,True
+X.E..beta.farnesene,E-β-farnesene,positional(index),E-β-farnesene,False
+X2.methylbutyl.octanoate,2-methylbutyl octanoate,threshold:chemical_name_short,2-methylbutyl octanoate,True
+alpha.humulene,Alpha-humulene,positional(index),Alpha-humulene,False
+neryl.propanoate,Neryl propanoate,threshold:chemical_name_short,Neryl propanoate,True
+X9.epi..E..caryophyllene,9-epi-E-caryophyllene,threshold:chemical_name_short,9-epi-E-caryophyllene,True
+ethyl..E..cinnamate,Ethyl cinnamate,threshold:chemical_name_short,Ethyl cinnamate,True
+linalool.isovalerate,Linalool isovalerate,threshold:chemical_name_short,Linalool isovalerate,True
+alpha.terpinyl.isobutanoate,α-terpinyl isobutanoate,positional(index),α-terpinyl isobutanoate,False
+n.dodecanol,N-dodecanol,threshold:chemical_name_short,N-dodecanol,True
+germacrene.D,Germacrene D,threshold:chemical_name_short,Germacrene D,True
+X.E..beta.ionone,E-β-ionone,positional(index),E-β-ionone,False
+valencene,Valencene,threshold:chemical_name_short,Valencene,True
+neryl.isobutanoate,Neryl isobutanoate,threshold:chemical_name_short,Neryl isobutanoate,True
+E.methyl.isoeugenol,Methyl isoeugenol,threshold:chemical_name_short,Methyl isoeugenol,True
+X.Z..dihydro.apofarnesal,Z-dihydro-apofarnesal,threshold:chemical_name_short,Z-dihydro-apofarnesal,True
+butylated.hydroxytoluene,Butylated hydroxytoluene,threshold:chemical_name_short,Butylated hydroxytoluene,True
+X.E..dihydro.apofarnesal,E-dihydro-apofarnesal,threshold:chemical_name_short,E-dihydro-apofarnesal,True
+Z.nerolidol,Z-nerolidol,threshold:chemical_name_short,Z-nerolidol,True
+X.E..ortho.methoxy.cinnamaldehyde,E-ortho-methoxy cinnamaldehyde,threshold:chemical_name_short,E-ortho-methoxy cinnamaldehyde,True
+alpha.calacorene,α-calacorene,positional(index),α-calacorene,False
+E.nerolidol,E-nerolidol,threshold:chemical_name_short,E-nerolidol,True
+dihydroisocaryophyllene.epoxide,Tobacarol,threshold:chemical_name_short,Tobacarol,True
+caryophyllene.alcohol,Caryophyllene alcohol,threshold:chemical_name_short,Caryophyllene alcohol,True
+neryl.isovalerate,Neryl isovalerate,threshold:chemical_name_short,Neryl isovalerate,True
+spathulenol,Spathulenol,threshold:chemical_name_short,Spathulenol,True
+caryophyllene.oxide,Caryophyllene oxide,threshold:chemical_name_short,Caryophyllene oxide,True
+humulene.epoxide.II,Humulene epoxide II,threshold:chemical_name_short,Humulene epoxide II,True
+alloaromadendrene.epoxide,Allo-aromadendrene epoxide,threshold:chemical_name_short,Allo-aromadendrene epoxide,True
+X1.10.di.epi.cubenol,Epicubenol,threshold:chemical_name_short,Epicubenol,True
+isopropyl.laurate,Isopropyl laurate,threshold:chemical_name_short,Isopropyl laurate,True
+caryophylla.4.12..8.13..dien.5.alpha.ol,"Caryophylla-4,8-dien-5-ol",threshold:chemical_name_short,"Caryophylla-4,8-dien-5-ol",True
+gamma.eudesmol,Gamma-eudesmol,threshold:chemical_name_short,Gamma-eudesmol,True
+alpha.muurolol,α-muurolol,positional(index),α-muurolol,False
+X1.2.dihydro.8.hydroxy..2E..linalool,"1,2-dihydro-8-hydroxy-2E-linalool",threshold:chemical_name_short,"1,2-dihydro-8-hydroxy-2E-linalool",True
+tau.cadinol,Tau-cadinol,threshold:chemical_name_short,Tau-cadinol,True
+selin.11.en.4.alpha.ol,Kongol,threshold:chemical_name_short,Kongol,True
+alpha.eudesmol,α-eudesmol,positional(index),α-eudesmol,False
+X14.hydroxy.9.epi..E..caryophyllene,14-hydroxy-9-epi-(E)-caryophyllene,threshold:chemical_name_short,14-hydroxy-9-epi-(E)-caryophyllene,True
+tau.muurolol,Tau-muurolol,threshold:chemical_name_short,Tau-muurolol,True
+n.tetradecanol,N-tetradecanol,threshold:chemical_name_short,N-tetradecanol,True
+foeniculin,Eoeniculin,threshold:chemical_name_short,Eoeniculin,True
+cadalene,Cadalene,threshold:chemical_name_short,Cadalene,True
+X2.3.dihydro.farnesol,"2,3-dihydro-farnesol",threshold:chemical_name_short,"2,3-dihydro-farnesol",True
+X2E.6Z.farnesal,"E,Z-farnesal",threshold:chemical_name_short,"E,Z-farnesal",True
+caryophyllene.acetate,Caryophyllene acetate,threshold:chemical_name_short,Caryophyllene acetate,True
+X14.hydroxy.alpha.humulene,14-hydroxy-α-humulene,positional(index),14-hydroxy-α-humulene,False
+X2Z.6E.farnesal,"Z,E-farnesal",threshold:chemical_name_short,"Z,E-farnesal",True
+X2Z.6Z.farnesol,"Z,Z-farnesol",threshold:chemical_name_short,"Z,Z-farnesol",True
+X2Z.6E.farnesol,"Z,E-farnesol",threshold:chemical_name_short,"Z,E-farnesol",True
+ambroxide,Ambroxide,threshold:chemical_name_short,Ambroxide,True
+benzyl.benzoate,Benzyl benzoate,threshold:chemical_name_short,Benzyl benzoate,True
+X2E.6E.methyl.farnesoate,"2E,6E-methyl farnesoate",threshold:chemical_name_short,"2E,6E-methyl farnesoate",True
+ethyl.tetradecanoate,Ethyl tetradecanoate,threshold:chemical_name_short,Ethyl tetradecanoate,True
+X2.ethylhexylsalicylate,2-ethylhexyl acrylate,threshold:chemical_name_short,2-ethylhexyl acrylate,True
+isopropyl.tetradecanoate,Isopropyl tetradecanoate,threshold:chemical_name_short,Isopropyl tetradecanoate,True
+ethyl.pentadecanoate,Ethyl pentadecanoate,threshold:chemical_name_short,Ethyl pentadecanoate,True
+methyl.hexadecanoate,Methyl hexadecanoate,threshold:chemical_name_short,Methyl hexadecanoate,True
+Z.Z.geranyl.linalool,"Z,Z-geranyl linalool",threshold:chemical_name_short,"Z,Z-geranyl linalool",True
+ethyl.hexadecanoate,Ethyl hexadecanoate,threshold:chemical_name_short,Ethyl hexadecanoate,True
+manool.oxide,Manool oxide,threshold:chemical_name_short,Manool oxide,True
+X13.epi.manool.oxide,13-epi manool oxide,threshold:chemical_name_short,13-epi manool oxide,True
+isopropyl.hexadecanoate,Isopropyl hexadecanoate,threshold:chemical_name_short,Isopropyl hexadecanoate,True
+manool,Manool,threshold:chemical_name_short,Manool,True
+ethyl.octadecanoate,Ethyl octadecanoate,threshold:chemical_name_short,Ethyl octadecanoate,True
+ethyl.pentanoate,Ethyl pentanoate,threshold:chemical_name_short,Ethyl pentanoate,True
+X2.ethyl.3.methylpyrazine,2-ethyl-3-methylpyrazine,threshold:chemical_name_short,2-ethyl-3-methylpyrazine,True
+esters_sum,Total ester compounds,threshold:chemical_name_short,Total ester compounds,True
+aroma_hops_sum,Total hop aroma compounds,threshold:chemical_name_short,Total hop aroma compounds,True
+acids_sum,Total acids,threshold:chemical_name_short,Total acids,True
+sulfur_sum,Total sulfur compounds,threshold:chemical_name_short,Total sulfur compounds,True

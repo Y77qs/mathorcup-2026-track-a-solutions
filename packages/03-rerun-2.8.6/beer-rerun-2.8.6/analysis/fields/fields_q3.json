@@ -1,0 +1,1752 @@
+[
+  {
+    "name": "beer",
+    "type": "number",
+    "unit": "id",
+    "description": "样本主键（1..250）",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "beer_id",
+    "type": "number",
+    "unit": "id",
+    "description": "1.csv 整数 id（仅引用）",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "tasting_category_fine",
+    "type": "categorical",
+    "unit": "label",
+    "description": "风格标签（22 类），Q3 的条件变量",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "acetaldehyde",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "CS2",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "DES",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "DMS",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl_2.methyl_butyrate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl_acetate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl_decanoate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl_hexanoate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl_isovalerate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl_octanoate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl_propionate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "H2S",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isoamyl_alcohol",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isobutanol",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isobutyl_acetate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isopentyl_acetate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "MeSH",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "octyl_acetate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "phenethyl_acetate",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "phenethyl_alcohol",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X4VG",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "SO2.mg.L.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "acetic_acid.g.L.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ammonia.mg.L.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "color.EBC.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 色度列；量程核对显示为 log10(EBC)（推断）",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "betaglucan.mg.L.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "lactic_acid.mg.L.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "glycerol",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "iron",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "pH",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv pH 列；量程核对显示为 log10(pH)（推断；非 8.xlsx 标定实测）",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "protein.g.L.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "bitterness",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 苦度列；量程核对显示为 log10(IBU)（推断）",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "GFS",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethanol..v.v.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 酒精度列；量程核对显示为 log10(% v/v)（推断）",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "CO2.PSI.",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 二氧化碳列；量程核对显示为 log10(PSI)（推断）",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "unfermentables",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "kcalperc",
+    "type": "number",
+    "unit": "log10(concentration)",
+    "description": "1.csv 化合物列；尺度=log10(浓度)",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X1.propanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.3.butanedione",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.036
+  },
+  {
+    "name": "X3.methylbutanal",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.028
+  },
+  {
+    "name": "propylene.glycol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "propyl.acetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.pentanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.methyl.1.butanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isopentyl.formate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.isobutyrate",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.004
+  },
+  {
+    "name": "X3.methyl.2.butenal",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.methyltetrahydrofuran.3.one",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.butyrate",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "butyl.acetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "methylpyrazine",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.048
+  },
+  {
+    "name": "furfural",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.004
+  },
+  {
+    "name": "ethyl.lactate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X3Z.hexenol",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.hexanol",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "styrene",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.furanmethanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X3.methyl.2.hexanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X3.furanmethanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.acetylfuran",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.6.dimethyl.pyrazine",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "amyl.acetate",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.108
+  },
+  {
+    "name": "ethyl.tiglate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "benzaldehyde",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X5.methylfurfural",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.heptanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X1.octen.3.ol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X3.methylthio.propanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isomaltol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X6.methyl.5.hepten.2.one",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.pentyl.furan",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.hex..3E..enoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "alpha.phellandrene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "dehydroxy.cis.linalool.oxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "hexyl.acetate",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isopentyl.butanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.ethyl.1.hexanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "beta.phellandrene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "limonene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "eucalyptol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "benzyl.alcohol",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.hex..2E..enoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "phenylacetaldehyde",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.004
+  },
+  {
+    "name": "X.E..beta.ocimene",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "prenyl.isobutyrate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.furoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ortho.cresol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.5.methylhexanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.acetylpyrrole",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isoamyl.lactate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.octanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "cis.linalool.oxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "meta.cymenene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "terpinolene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "linalool",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "nonan.2.ol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.nonanal",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.methyl.benzofuran",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "heptyl.acetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X4.methyl.1.pentanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "neo.allo.ocimene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "x.methyl.1.octanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "trans.dihydro.beta.terpineol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "cis.beta.terpineol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "y.methyl.1.octanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "camphor",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isobutyl.hexanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "nerol.oxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.E..2.nonenal",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "cis.dihydro.beta.terpineol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X4.ethyl.phenol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isoborneol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.benzoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.nonanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "terpinen.4.ol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "diethyl.succinate",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "vinyl.caprylate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X1.alpha.terpineol",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl..E..linalool",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.nicotinate",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.008
+  },
+  {
+    "name": "citronellol",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "nerol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "hydroxy.methyl.furfural",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "E.ocimenone",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "cumin.aldehyde",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.phenylacetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isopentyl.hexanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "geraniol",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "beta.cyclohomocitral",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "E.cinnamaldehyde",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.decanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "neryl.formate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X4.ethyl.guaiacol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.undecanone",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "trans.dihydro.alpha.terpinyl.acetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "terpinen.4.ol.acetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.undecanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "delta.terpinyl.acetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.E.E..2.4.decadienal",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "methyl.geranate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "car.3.en.2.one",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "dimethoxy..E..citral",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.butyloctanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X4.methoxysalicylaldehyde",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.hydrocinnamate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "eugenol",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "gamma.nonalactone",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "methyl.para.anisate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.E..beta.damascenone",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl..9..decenoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "vanillin",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "geosmin",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "dodecanal",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X4.8.alpha.epoxy.caryophyllane",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "E.caryophyllene",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.E..alpha.ionone",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "perillyl.acetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "beta.humulene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.phenyl.ethyl.butyrate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.Z..beta.farnesene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "pentyl.octanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.E..beta.farnesene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.methylbutyl.octanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "alpha.humulene",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "neryl.propanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X9.epi..E..caryophyllene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl..E..cinnamate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "linalool.isovalerate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "alpha.terpinyl.isobutanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.dodecanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "germacrene.D",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.E..beta.ionone",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "valencene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "neryl.isobutanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "E.methyl.isoeugenol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.Z..dihydro.apofarnesal",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "butylated.hydroxytoluene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.E..dihydro.apofarnesal",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "Z.nerolidol",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X.E..ortho.methoxy.cinnamaldehyde",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "alpha.calacorene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "E.nerolidol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "dihydroisocaryophyllene.epoxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "caryophyllene.alcohol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "neryl.isovalerate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "spathulenol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "caryophyllene.oxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "humulene.epoxide.II",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "alloaromadendrene.epoxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X1.10.di.epi.cubenol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isopropyl.laurate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "caryophylla.4.12..8.13..dien.5.alpha.ol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "gamma.eudesmol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "alpha.muurolol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X1.2.dihydro.8.hydroxy..2E..linalool",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "tau.cadinol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "selin.11.en.4.alpha.ol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "alpha.eudesmol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X14.hydroxy.9.epi..E..caryophyllene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "tau.muurolol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "n.tetradecanol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "foeniculin",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "cadalene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.3.dihydro.farnesol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2E.6Z.farnesal",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "caryophyllene.acetate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X14.hydroxy.alpha.humulene",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2Z.6E.farnesal",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2Z.6Z.farnesol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2Z.6E.farnesol",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ambroxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "benzyl.benzoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2E.6E.methyl.farnesoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.tetradecanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.ethylhexylsalicylate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isopropyl.tetradecanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.pentadecanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "methyl.hexadecanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "Z.Z.geranyl.linalool",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.hexadecanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "manool.oxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X13.epi.manool.oxide",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "isopropyl.hexadecanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "manool",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.octadecanoate",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "ethyl.pentanoate",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "X2.ethyl.3.methylpyrazine",
+    "type": "number",
+    "unit": "concentration",
+    "description": "1.csv 化合物列；尺度=原始浓度",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "esters_sum",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "aroma_hops_sum",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.052
+  },
+  {
+    "name": "acids_sum",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "sulfur_sum",
+    "type": "number",
+    "unit": "unknown",
+    "description": "1.csv 化合物列；尺度=未核验",
+    "missingRatio": 0.0
+  },
+  {
+    "name": "style_holdout",
+    "type": "number",
+    "unit": "flag",
+    "description": "1=该风格整体留出（跨风格迁移评估集）",
+    "missingRatio": null
+  },
+  {
+    "name": "split_role",
+    "type": "number",
+    "unit": "label",
+    "description": "train / style_holdout（显式构造，非随机划分）",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold__DMS",
+    "type": "number",
+    "unit": "mg/L (mostly)",
+    "description": "8.xlsx Sensory thresholds 的 threshold_mean（参考常数，逐样本重复）；用于 OAV/超过阈值检查，不是观测值",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold_unit__DMS",
+    "type": "number",
+    "unit": "label",
+    "description": "阈值单位（来自 8.xlsx）",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold__X2.3.butanedione",
+    "type": "number",
+    "unit": "mg/L (mostly)",
+    "description": "8.xlsx Sensory thresholds 的 threshold_mean（参考常数，逐样本重复）；用于 OAV/超过阈值检查，不是观测值",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold_unit__X2.3.butanedione",
+    "type": "number",
+    "unit": "label",
+    "description": "阈值单位（来自 8.xlsx）",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold__X4VG",
+    "type": "number",
+    "unit": "mg/L (mostly)",
+    "description": "8.xlsx Sensory thresholds 的 threshold_mean（参考常数，逐样本重复）；用于 OAV/超过阈值检查，不是观测值",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold_unit__X4VG",
+    "type": "number",
+    "unit": "label",
+    "description": "阈值单位（来自 8.xlsx）",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold__X.E..2.nonenal",
+    "type": "number",
+    "unit": "mg/L (mostly)",
+    "description": "8.xlsx Sensory thresholds 的 threshold_mean（参考常数，逐样本重复）；用于 OAV/超过阈值检查，不是观测值",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold_unit__X.E..2.nonenal",
+    "type": "number",
+    "unit": "label",
+    "description": "阈值单位（来自 8.xlsx）",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold__X3.methyl.2.butenal",
+    "type": "number",
+    "unit": "mg/L (mostly)",
+    "description": "8.xlsx Sensory thresholds 的 threshold_mean（参考常数，逐样本重复）；用于 OAV/超过阈值检查，不是观测值",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold_unit__X3.methyl.2.butenal",
+    "type": "number",
+    "unit": "label",
+    "description": "阈值单位（来自 8.xlsx）",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold__furfural",
+    "type": "number",
+    "unit": "mg/L (mostly)",
+    "description": "8.xlsx Sensory thresholds 的 threshold_mean（参考常数，逐样本重复）；用于 OAV/超过阈值检查，不是观测值",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold_unit__furfural",
+    "type": "number",
+    "unit": "label",
+    "description": "阈值单位（来自 8.xlsx）",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold__X5.methylfurfural",
+    "type": "number",
+    "unit": "mg/L (mostly)",
+    "description": "8.xlsx Sensory thresholds 的 threshold_mean（参考常数，逐样本重复）；用于 OAV/超过阈值检查，不是观测值",
+    "missingRatio": null
+  },
+  {
+    "name": "threshold_unit__X5.methylfurfural",
+    "type": "number",
+    "unit": "label",
+    "description": "阈值单位（来自 8.xlsx）",
+    "missingRatio": null
+  }
+]

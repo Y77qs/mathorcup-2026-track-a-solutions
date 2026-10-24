@@ -1,0 +1,4 @@
+[fig] q1_per_dim: /Users/baozhashizitou/Documents/MATHORCUP/A/figures/q1_per_dim_r2.png {'n_dims': 50, 'mean_candidate': 0.220579478860721, 'mean_baseline': -0.024635435726754987, 'n_positive': 43}
+[fig] q1_compare: /Users/baozhashizitou/Documents/MATHORCUP/A/figures/q1_model_comparison.png {'n_families': 8, 'best': 'B3_extratrees', 'best_oof_r2': 0.231900276852883}
+[fig] q2_jaccard: /Users/baozhashizitou/Documents/MATHORCUP/A/figures/q2_method_agreement.png {'mean_offdiag': nan, 'max_offdiag': nan}
+[fig] q2_top3: /Users/baozhashizitou/Documents/MATHORCUP/A/figures/q2_top3_heatmap.png {'dims_plotted': 10}

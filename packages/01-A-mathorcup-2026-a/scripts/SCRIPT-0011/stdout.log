@@ -1,0 +1,33 @@
+== stratified split (seed 42) ==
+train=200 test=50 styles=22 every_class_in_test=True min_class={'style': 'Faro', 'n': 3}
+
+== class counts (total / train / test) ==
+             style  n_total  n_train  n_test
+             Blond       31       25       6
+            Tripel       28       22       6
+        Strong ale       18       14       4
+             Hoppy       17       14       3
+      Stout/Porter       13       10       3
+             Amber       12       10       2
+             Brown       12       10       2
+             Wheat       12       10       2
+            Lambic       11        9       2
+        Pils/Lager       11        9       2
+            Dubbel       10        8       2
+             Kriek       10        8       2
+            Saison       10        8       2
+         Christmas        9        7       2
+         Fruitbeer        8        6       2
+    Low/No alcohol        8        6       2
+ West Flanders ale        7        6       1
+ Brett/cofermented        6        5       1
+Flanders old brown        5        4       1
+            Scotch        5        4       1
+              Brut        4        3       1
+              Faro        3        2       1
+
+== vs lead provisional == {'path': 'data/splits/assignment_lead_provisional.csv', 'n_test_lead': 50, 'test_sets_equal': True, 'n_differing_beers': 0}
+
+== vs official SPLIT-0001 == {'path': 'data/splits/SPLIT-0001/assignment.csv', 'exists': True, 'n_test_official': 50, 'test_sets_equal': False, 'n_differing_beers': 92, 'n_test_styles_official': 21, 'test_styles_missing_official': ['West Flanders ale'], 'official_is_stratified': False}
+
+conclusion: 主评估口径 = 台账 SPLIT-0001（未分层，test 缺 West Flanders ale）；分层稳健性版（22/22 类进 test，与 Lead provisional 逐 beer 一致）落在 data/splits/stratified/，两版 test 集差异 92 个 beer。modelers 只准用这两条路径，不得自造第三版。

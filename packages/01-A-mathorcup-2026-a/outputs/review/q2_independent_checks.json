@@ -1,0 +1,424 @@
+{
+  "status": "partial",
+  "files": {
+    "top3_per_dimension.csv": true,
+    "selection_frequency.csv": false,
+    "method_jaccard.csv": true
+  },
+  "missing_reason": "top3/selection_frequency/method_jaccard 尚未全部产出；multiplicity 与静态泄漏扫描已可独立计算",
+  "multiplicity": {
+    "n_tests": 11550,
+    "n_significant_bh_q05": 2714,
+    "n_dims_with_any_significant": 50,
+    "expected_under_null": 577.5,
+    "note": "50 维 x 231 化合物的 pairwise-complete Spearman；BH 在全部 50*231 个检验上做",
+    "vs_model_univariate_fdr": {
+      "n_joined": 11550,
+      "n_model_rows": 11550,
+      "n_sig_model": 2721,
+      "n_sig_reviewer": 2714,
+      "overlap": 2712,
+      "jaccard": 0.9959603378626515,
+      "p_spearman": 0.9999427206898359
+    }
+  },
+  "top3": {
+    "n_rows": 150,
+    "n_dims": 50
+  },
+  "stability": {
+    "jaccard": {
+      "n_rows": 500,
+      "mean": 0.217,
+      "min": 0.0,
+      "max": 1.0,
+      "share_ge_0.50": 0.264
+    }
+  },
+  "prior_consistency": {
+    "dims_mapped": 50,
+    "n_6csv_compounds": 44,
+    "n_dims_tested": 42,
+    "mean_delta_abs_r": 0.17684562573967938,
+    "n_dims_top3_higher_uncorrected": 26,
+    "n_dims_top3_higher_BH_q05": 0,
+    "rows": [
+      {
+        "dim": "A_esters_all",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.32153958726040005,
+        "mean_abs_r_rest": 0.13920985340354886,
+        "p_one_sided": 0.0012080942313500453,
+        "q_bh": 0.32153958726040005
+      },
+      {
+        "dim": "A_esters_isoaa",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.282814598235267,
+        "mean_abs_r_rest": 0.09107155865581817,
+        "p_one_sided": 0.022727272727272728,
+        "q_bh": 0.282814598235267
+      },
+      {
+        "dim": "A_hops_all",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.378521434579482,
+        "mean_abs_r_rest": 0.19985601573435943,
+        "p_one_sided": 0.021141649048625793,
+        "q_bh": 0.378521434579482
+      },
+      {
+        "dim": "A_hops_noble",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.2990400283652165,
+        "mean_abs_r_rest": 0.18562434080546494,
+        "p_one_sided": 0.12790697674418602,
+        "q_bh": 0.2990400283652165
+      },
+      {
+        "dim": "A_hops_tropical",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.314181234582899,
+        "mean_abs_r_rest": 0.09984851461063624,
+        "p_one_sided": 0.022727272727272728,
+        "q_bh": 0.314181234582899
+      },
+      {
+        "dim": "A_hops_woody",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.117213945004482,
+        "mean_abs_r_rest": 0.0775265224219695,
+        "p_one_sided": 0.20454545454545459,
+        "q_bh": 0.117213945004482
+      },
+      {
+        "dim": "A_malt_all",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.444688512862101,
+        "mean_abs_r_rest": 0.14507624213429618,
+        "p_one_sided": 0.00015101177891875566,
+        "q_bh": 0.444688512862101
+      },
+      {
+        "dim": "A_malt_bread",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.212773770556752,
+        "mean_abs_r_rest": 0.1273997917089747,
+        "p_one_sided": 0.15909090909090912,
+        "q_bh": 0.212773770556752
+      },
+      {
+        "dim": "A_malt_burn",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.23806042486853402,
+        "mean_abs_r_rest": 0.10640847916206278,
+        "p_one_sided": 0.021141649048625793,
+        "q_bh": 0.23806042486853402
+      },
+      {
+        "dim": "A_malt_cara",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.37311981005535966,
+        "mean_abs_r_rest": 0.15110104341053027,
+        "p_one_sided": 0.007701600724856538,
+        "q_bh": 0.37311981005535966
+      },
+      {
+        "dim": "F_esters_all",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.428764280646915,
+        "mean_abs_r_rest": 0.16219563916887897,
+        "p_one_sided": 7.550588945937783e-05,
+        "q_bh": 0.428764280646915
+      },
+      {
+        "dim": "F_esters_ethac",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.38078216857497604,
+        "mean_abs_r_rest": 0.1821869917339757,
+        "p_one_sided": 0.04439746300211417,
+        "q_bh": 0.38078216857497604
+      },
+      {
+        "dim": "F_esters_fruity",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.209064763424716,
+        "mean_abs_r_rest": 0.09964637070489017,
+        "p_one_sided": 0.13636363636363638,
+        "q_bh": 0.209064763424716
+      },
+      {
+        "dim": "F_esters_isoaa",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.1404195201605,
+        "mean_abs_r_rest": 0.11131600432683467,
+        "p_one_sided": 0.3181818181818182,
+        "q_bh": 0.1404195201605
+      },
+      {
+        "dim": "F_hops_all",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.413090726238815,
+        "mean_abs_r_rest": 0.21827141966229102,
+        "p_one_sided": 0.026427061310782242,
+        "q_bh": 0.413090726238815
+      },
+      {
+        "dim": "F_hops_citrus",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.237802921721483,
+        "mean_abs_r_rest": 0.10382534961121972,
+        "p_one_sided": 0.06818181818181818,
+        "q_bh": 0.237802921721483
+      },
+      {
+        "dim": "F_hops_noble",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.425842499842932,
+        "mean_abs_r_rest": 0.2039284473577216,
+        "p_one_sided": 0.11363636363636365,
+        "q_bh": 0.425842499842932
+      },
+      {
+        "dim": "F_hops_tropical",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.187732286527166,
+        "mean_abs_r_rest": 0.08796353598181433,
+        "p_one_sided": 0.11363636363636365,
+        "q_bh": 0.187732286527166
+      },
+      {
+        "dim": "F_hops_woody",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.22918922293962551,
+        "mean_abs_r_rest": 0.14266308732016877,
+        "p_one_sided": 0.12790697674418602,
+        "q_bh": 0.22918922293962551
+      },
+      {
+        "dim": "F_malt_all",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.46284707511617534,
+        "mean_abs_r_rest": 0.1792803737677729,
+        "p_one_sided": 0.00173663545756569,
+        "q_bh": 0.46284707511617534
+      },
+      {
+        "dim": "F_malt_bread",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.2325574762842485,
+        "mean_abs_r_rest": 0.17100971215661045,
+        "p_one_sided": 0.27061310782241016,
+        "q_bh": 0.2325574762842485
+      },
+      {
+        "dim": "F_malt_burn",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.32921190105713966,
+        "mean_abs_r_rest": 0.1761085028531523,
+        "p_one_sided": 0.03458169737239505,
+        "q_bh": 0.32921190105713966
+      },
+      {
+        "dim": "F_malt_cara",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.34675211653974936,
+        "mean_abs_r_rest": 0.16679076406720678,
+        "p_one_sided": 0.01109936575052854,
+        "q_bh": 0.34675211653974936
+      },
+      {
+        "dim": "X4vg",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.472617529612283,
+        "mean_abs_r_rest": 0.17488215315351985,
+        "p_one_sided": 0.022727272727272728,
+        "q_bh": 0.472617529612283
+      },
+      {
+        "dim": "acetic",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.3489998064862515,
+        "mean_abs_r_rest": 0.14215107939119548,
+        "p_one_sided": 0.004228329809725159,
+        "q_bh": 0.3489998064862515
+      },
+      {
+        "dim": "acidity",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.40998749534173,
+        "mean_abs_r_rest": 0.1531581253059195,
+        "p_one_sided": 0.0063424947145877385,
+        "q_bh": 0.40998749534173
+      },
+      {
+        "dim": "aftertaste",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.41756437585109935,
+        "mean_abs_r_rest": 0.23879158347609683,
+        "p_one_sided": 0.017894895801872545,
+        "q_bh": 0.41756437585109935
+      },
+      {
+        "dim": "alcohol",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.7167340372125149,
+        "mean_abs_r_rest": 0.2695053996030878,
+        "p_one_sided": 0.0005285412262156448,
+        "q_bh": 0.7167340372125149
+      },
+      {
+        "dim": "barnyard",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.172287650162135,
+        "mean_abs_r_rest": 0.06399230057152822,
+        "p_one_sided": 0.045454545454545456,
+        "q_bh": 0.172287650162135
+      },
+      {
+        "dim": "bitternes",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.5914039676432984,
+        "mean_abs_r_rest": 0.23905131697754456,
+        "p_one_sided": 0.0005285412262156448,
+        "q_bh": 0.5914039676432984
+      },
+      {
+        "dim": "body",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.659702559081719,
+        "mean_abs_r_rest": 0.24196474369395127,
+        "p_one_sided": 7.550588945937783e-05,
+        "q_bh": 0.659702559081719
+      },
+      {
+        "dim": "clove",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.132622882148304,
+        "mean_abs_r_rest": 0.08605727733526465,
+        "p_one_sided": 0.20454545454545459,
+        "q_bh": 0.132622882148304
+      },
+      {
+        "dim": "co2",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.461118377486717,
+        "mean_abs_r_rest": 0.2001054549461098,
+        "p_one_sided": 0.09090909090909091,
+        "q_bh": 0.461118377486717
+      },
+      {
+        "dim": "coriander",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.14114709272822,
+        "mean_abs_r_rest": 0.0810949830889194,
+        "p_one_sided": 0.18181818181818185,
+        "q_bh": 0.14114709272822
+      },
+      {
+        "dim": "dms",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.151694140171273,
+        "mean_abs_r_rest": 0.08733133121224253,
+        "p_one_sided": 0.11363636363636365,
+        "q_bh": 0.151694140171273
+      },
+      {
+        "dim": "lactic",
+        "n_top_mapped": 3,
+        "mean_abs_r_top": 0.4252836711319807,
+        "mean_abs_r_rest": 0.184663713038095,
+        "p_one_sided": 0.0003020235578375113,
+        "q_bh": 0.4252836711319807
+      },
+      {
+        "dim": "metallic",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.24724451322296,
+        "mean_abs_r_rest": 0.0906208076633773,
+        "p_one_sided": 0.0010570824524312897,
+        "q_bh": 0.24724451322296
+      },
+      {
+        "dim": "orange",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.21253225568888,
+        "mean_abs_r_rest": 0.12379610792499292,
+        "p_one_sided": 0.13636363636363638,
+        "q_bh": 0.21253225568888
+      },
+      {
+        "dim": "overall",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.283916862669803,
+        "mean_abs_r_rest": 0.1250160346236643,
+        "p_one_sided": 0.016913319238900635,
+        "q_bh": 0.283916862669803
+      },
+      {
+        "dim": "stale_hops",
+        "n_top_mapped": 1,
+        "mean_abs_r_top": 0.128944467168869,
+        "mean_abs_r_rest": 0.06394622795684833,
+        "p_one_sided": 0.13636363636363638,
+        "q_bh": 0.128944467168869
+      },
+      {
+        "dim": "sweetness",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.3667780120560545,
+        "mean_abs_r_rest": 0.11539673771990995,
+        "p_one_sided": 0.004228329809725159,
+        "q_bh": 0.3667780120560545
+      },
+      {
+        "dim": "t2n",
+        "n_top_mapped": 2,
+        "mean_abs_r_top": 0.1706948399901115,
+        "mean_abs_r_rest": 0.07993462179013895,
+        "p_one_sided": 0.009513742071881607,
+        "q_bh": 0.1706948399901115
+      }
+    ]
+  },
+  "static_leakage_scan": {
+    "note": "只匹配真实 I/O 调用（read_csv/load_*），不匹配注释文本",
+    "files": {
+      "q2_baseline.py": {},
+      "q2_common.py": {},
+      "q2_figs.py": {},
+      "q2_graph.py": {},
+      "q2_prereg.py": {},
+      "q2_select.py": {
+        "load_corr_cross": 1
+      },
+      "q2_stability.py": {},
+      "q3_baseline.py": {},
+      "q3_eval.py": {},
+      "q3_exp_family.py": {},
+      "q3_figs.py": {},
+      "q3_generate.py": {},
+      "q3_models.py": {},
+      "q3_transfer.py": {},
+      "q3_utils.py": {}
+    }
+  },
+  "aux_matrix_provenance": {
+    "2csv": {
+      "n_pairs_sampled": 690,
+      "max_abs_diff": 6.106226635438361e-16,
+      "verdict": "2.csv == Spearman(1.csv)（同数据派生，不是外部图）"
+    },
+    "5csv": {
+      "n_pairs": 1275,
+      "max_abs_diff": 6.106226635438361e-16,
+      "verdict": "5.csv == Spearman(4.csv)（同数据派生，不是外部先验）"
+    },
+    "6csv": {
+      "n_rows_mapped": 44,
+      "n_pairs": 2200,
+      "max_abs_diff": 6.661338147750939e-16,
+      "verdict": "6.csv == 同数据 Spearman(1.csv,4.csv)（不是独立先验；拿它做“独立核对”是循环验证）"
+    }
+  }
+}

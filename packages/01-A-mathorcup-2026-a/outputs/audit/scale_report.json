@@ -1,0 +1,303 @@
+{
+  "generated_by": "src/02_scale.py",
+  "inputs": {
+    "1.csv": "data/raw/1.csv",
+    "calibrated": "data/raw/8.xlsx#Calibrated chemical dataset",
+    "thresholds": "data/raw/8.xlsx#Sensory thresholds"
+  },
+  "universe": {
+    "n_feature_columns": 231,
+    "n_covered_by_calibrated": 70,
+    "n_unverified": 161,
+    "scale_verdict_counts": {
+      "unverified": 161,
+      "log10": 37,
+      "linear": 33
+    },
+    "log10_columns": [
+      "acetaldehyde",
+      "CS2",
+      "DES",
+      "DMS",
+      "ethyl_2.methyl_butyrate",
+      "ethyl_acetate",
+      "ethyl_decanoate",
+      "ethyl_hexanoate",
+      "ethyl_isovalerate",
+      "ethyl_octanoate",
+      "ethyl_propionate",
+      "H2S",
+      "isoamyl_alcohol",
+      "isobutanol",
+      "isobutyl_acetate",
+      "isopentyl_acetate",
+      "MeSH",
+      "octyl_acetate",
+      "phenethyl_acetate",
+      "phenethyl_alcohol",
+      "X4VG",
+      "SO2.mg.L.",
+      "acetic_acid.g.L.",
+      "ammonia.mg.L.",
+      "color.EBC.",
+      "betaglucan.mg.L.",
+      "lactic_acid.mg.L.",
+      "glycerol",
+      "iron",
+      "pH",
+      "protein.g.L.",
+      "bitterness",
+      "GFS",
+      "ethanol..v.v.",
+      "CO2.PSI.",
+      "unfermentables",
+      "kcalperc"
+    ],
+    "linear_columns": [
+      "X2.3.butanedione",
+      "X3.methylbutanal",
+      "ethyl.isobutyrate",
+      "X2.methyltetrahydrofuran.3.one",
+      "ethyl.butyrate",
+      "methylpyrazine",
+      "furfural",
+      "X3Z.hexenol",
+      "n.hexanol",
+      "styrene",
+      "amyl.acetate",
+      "benzaldehyde",
+      "X5.methylfurfural",
+      "hexyl.acetate",
+      "benzyl.alcohol",
+      "phenylacetaldehyde",
+      "X.E..beta.ocimene",
+      "linalool",
+      "X.E..2.nonenal",
+      "diethyl.succinate",
+      "X1.alpha.terpineol",
+      "ethyl.nicotinate",
+      "citronellol",
+      "geraniol",
+      "X.E.E..2.4.decadienal",
+      "eugenol",
+      "gamma.nonalactone",
+      "X.E..beta.damascenone",
+      "E.caryophyllene",
+      "alpha.humulene",
+      "Z.nerolidol",
+      "ethyl.pentanoate",
+      "X2.ethyl.3.methylpyrazine"
+    ]
+  },
+  "criterion": {
+    "rel_tolerance_median": 1e-06,
+    "H_log10": "conc = 10^(1.csv值) 与 calibrated 的中位相对误差 < 1e-6",
+    "H_linear": "conc = 1.csv值 与 calibrated 的中位相对误差 < 1e-6",
+    "unverified": "无 8.xlsx 浓度表覆盖 -> 不判定，只记录取值形态"
+  },
+  "censoring": {
+    "total_calibrated_zero_cells_in_log10_cols": 755,
+    "n_log10_cols_with_zero": 25,
+    "max_abs_err_of_ratio_vs_half": 5.52e-10,
+    "relation": "calibrated==0 的每一行都满足 10^(1.csv值) = 该列最小正 calibrated / 2（LOD/2 左删失替换）",
+    "note": "因此 1.csv 中这些单元格不是真实测量值而是 LOD/2 替换；建模时应作为删失处理或至少标记。"
+  },
+  "unverified": {
+    "n_cols": 161,
+    "n_with_negative": 145,
+    "n_with_shared_floor": 142,
+    "shared_floor_value": -1.81781854,
+    "shared_floor_10pow": 0.015211829884302173,
+    "shared_floor_cells_total": 6807,
+    "n_no_negative_and_max_le_10": 16,
+    "range_min": -1.81781854,
+    "range_max": 9.62304446,
+    "note": "无 8.xlsx 浓度表可校验 -> 一律 unverified；含负值/共享地板值者不可能是原始浓度，log 尺度可能性高，但底数与物理单位未验证，不臆造。"
+  },
+  "opening_question_answer": "1.csv 与 8.xlsx 'Calibrated chemical dataset' 的关系：8.xlsx 的 70 列把 1.csv 中对应 70 列的尺度拆开了——37 列在 1.csv 里是 log10(浓度)（10^v 与 calibrated 的中位相对误差 5.93e-10），33 列在 1.csv 里已经是线性浓度（v 与 calibrated 完全一致，中位相对误差 0.00e+00）。因此 1.csv 是**混合尺度**表，8.xlsx calibrated 是作者的去对数统一浓度表；两者并非同一张表的冗余副本。此外 calibrated==0 的行（log10 列共 755 个单元格）在 1.csv 中不是 0，而是 log10(该列最小正浓度/2)，即 LOD/2 左删失替换（最大比例偏差 5.5e-10）。其余 161 列无外部浓度表可校验，一律标 unverified。",
+  "unit_alignment": {
+    "conclusion": "43 个有阈值的化合物全部落在 calibrated 覆盖的 70 列内、尺度已验证；log10 列的 10^v 与 linear 列的 v 都等于作者浓度（calibrated），而 8.xlsx 阈值表给出的 unit 与 calibrated 同源同量纲，故 OAV = 还原后浓度 / threshold_mean 无需再做单位换算或量级平移。",
+    "linear_columns_conclusion": "1.csv 为线性（原值）的 33 列中，有 13 个带阈值化合物：linalool / citronellol / geraniol / X1.alpha.terpineol / alpha.humulene / E.caryophyllene / Z.nerolidol / X2.3.butanedione / furfural / methylpyrazine / ethyl.butyrate / ethyl.isobutyrate / ethyl.nicotinate / X.E..2.nonenal 等；它们的 1.csv 值直接等于 calibrated 浓度（相对误差 ~1e-10），单位即阈值表 unit，无需 10^v 还原（如 linalool 0.0132–32.5 mg/L vs 阈值 0.0273 mg/L，OAV 中位数 13.6）。",
+    "evidence": {
+      "DMS": {
+        "scale_verdict": "log10",
+        "1csv_range": [
+          0.0462112,
+          2.716380377
+        ],
+        "concentration_range": [
+          1.1122725005394052,
+          520.4516347465662
+        ],
+        "unit": "ug/L",
+        "threshold_mean": 17.25,
+        "oav_median": 1.404939565122075,
+        "oav_max": 30.171109260670505,
+        "argument": "1.csv 该列为 log10：10^v 与 calibrated 逐行吻合（中位相对误差 7.0e-10），10^v 范围 [1.112, 520.5] ug/L，与阈值 17.25 ug/L 同量级；若误按线性解读，OAV 中位数只有 0.0803（量级不合理或与 calibrated 矛盾）。"
+      },
+      "linalool": {
+        "scale_verdict": "linear",
+        "1csv_range": [
+          0.013179154,
+          32.48474769
+        ],
+        "concentration_range": [
+          0.013179154,
+          32.48474769
+        ],
+        "unit": "mg/L",
+        "threshold_mean": 0.027285,
+        "oav_median": 13.582965658786879,
+        "oav_max": 1190.5716580538758,
+        "argument": "1.csv 该列等于 calibrated 原值（中位相对误差 0.0e+00），即线性浓度，范围 [0.01318, 32.48] mg/L；若误按 log10 解读，10^v 最大将达 3.053e+32，远超该列阈值 0.02729 mg/L，荒谬。"
+      },
+      "X2.3.butanedione": {
+        "scale_verdict": "linear",
+        "1csv_range": [
+          5.9e-08,
+          121.7310182
+        ],
+        "concentration_range": [
+          5.9e-08,
+          121.7310182
+        ],
+        "unit": "mg/L",
+        "threshold_mean": 0.29925,
+        "oav_median": 0.9512861654135337,
+        "oav_max": 406.7870282372598,
+        "argument": "1.csv 该列等于 calibrated 原值（中位相对误差 0.0e+00），即线性浓度，范围 [5.9e-08, 121.7] mg/L；若误按 log10 解读，10^v 最大将达 5.383e+121，远超该列阈值 0.2993 mg/L，荒谬。"
+      },
+      "ethanol..v.v.": {
+        "scale_verdict": "log10",
+        "1csv_range": [
+          -1.455931956,
+          1.06595298
+        ],
+        "concentration_range": [
+          0.034999999971771126,
+          11.639999991587638
+        ],
+        "unit": "v/v",
+        "threshold_mean": 1.757256,
+        "oav_median": 4.093029128693988,
+        "oav_max": 6.623963720475354,
+        "argument": "1.csv 该列为 log10：10^v 与 calibrated 逐行吻合（中位相对误差 6.0e-10），10^v 范围 [0.035, 11.64] v/v，与阈值 1.757 v/v 同量级；若误按线性解读，OAV 中位数只有 0.488（量级不合理或与 calibrated 矛盾）。"
+      },
+      "geraniol": {
+        "scale_verdict": "linear",
+        "1csv_range": [
+          6.3e-06,
+          2.225405554
+        ],
+        "concentration_range": [
+          6.3e-06,
+          2.225405554
+        ],
+        "unit": "mg/L",
+        "threshold_mean": 0.0315,
+        "oav_median": 4.378341936507937,
+        "oav_max": 70.64779536507936,
+        "argument": "1.csv 该列等于 calibrated 原值（中位相对误差 0.0e+00），即线性浓度，范围 [6.3e-06, 2.225] mg/L；若误按 log10 解读，10^v 最大将达 168，远超该列阈值 0.0315 mg/L，荒谬。"
+      },
+      "alpha.humulene": {
+        "scale_verdict": "linear",
+        "1csv_range": [
+          0.000879728,
+          6.0622472
+        ],
+        "concentration_range": [
+          0.000879728,
+          6.0622472
+        ],
+        "unit": "mg/L",
+        "threshold_mean": 0.625,
+        "oav_median": 0.0189991936,
+        "oav_max": 9.699595519999999,
+        "argument": "1.csv 该列等于 calibrated 原值（中位相对误差 0.0e+00），即线性浓度，范围 [0.0008797, 6.062] mg/L；若误按 log10 解读，10^v 最大将达 1.154e+06，远超该列阈值 0.625 mg/L，荒谬。"
+      },
+      "bitterness": {
+        "scale_verdict": "log10",
+        "1csv_range": [
+          -1.144178095,
+          1.794142844
+        ],
+        "concentration_range": [
+          0.0717499999329196,
+          62.250499990990356
+        ],
+        "unit": "IBU",
+        "threshold_mean": 5.0,
+        "oav_median": 3.63239999826867,
+        "oav_max": 12.450099998198072,
+        "argument": "1.csv 该列为 log10：10^v 与 calibrated 逐行吻合（中位相对误差 5.3e-10），10^v 范围 [0.07175, 62.25] IBU，与阈值 5 IBU 同量级；若误按线性解读，OAV 中位数只有 0.252（量级不合理或与 calibrated 矛盾）。"
+      },
+      "acetaldehyde": {
+        "scale_verdict": "log10",
+        "1csv_range": [
+          -1.902829488,
+          1.268627576
+        ],
+        "concentration_range": [
+          0.012507500012802946,
+          18.562120001593847
+        ],
+        "unit": "mg/L",
+        "threshold_mean": 50.0,
+        "oav_median": 0.08209564994082134,
+        "oav_max": 0.3712424000318769,
+        "argument": "1.csv 该列为 log10：10^v 与 calibrated 逐行吻合（中位相对误差 5.7e-10），10^v 范围 [0.01251, 18.56] mg/L，与阈值 50 mg/L 同量级；若误按线性解读，OAV 中位数只有 0.0123（量级不合理或与 calibrated 矛盾）。"
+      }
+    },
+    "n_threshold_compounds": 43,
+    "n_threshold_mapped_to_1csv": 43,
+    "unmatched_threshold_field_names": [],
+    "oav_median_in_1e-3_to_1e2": "39/43",
+    "oav_median_outliers_below_1e-3": [
+      {
+        "compound": "Z.nerolidol",
+        "oav_median": 0.00039706174,
+        "unit": "mg/L",
+        "threshold_mean": 25.0,
+        "conc_max": 2.743348644
+      },
+      {
+        "compound": "methylpyrazine",
+        "oav_median": 0.0002934455,
+        "unit": "mg/L",
+        "threshold_mean": 1.0,
+        "conc_max": 0.896099334
+      },
+      {
+        "compound": "CS2",
+        "oav_median": 0.000142803333,
+        "unit": "ug/L",
+        "threshold_mean": 50.0,
+        "conc_max": 0.980499999991
+      },
+      {
+        "compound": "furfural",
+        "oav_median": 0.000138230183,
+        "unit": "mg/L",
+        "threshold_mean": 60.0,
+        "conc_max": 1.818860513
+      }
+    ],
+    "outlier_interpretation": "4 个低于 1e-3 的化合物（Z.nerolidol、methylpyrazine、CS2、furfural）不是尺度错误迹象：它们的实测浓度整体远低于收录阈值（如 furfural 实测 ≤1.82 mg/L vs 阈值 60 mg/L），属于'该化合物在啤酒中通常不构成风味贡献'的化学事实，报告中如实保留。"
+  },
+  "missing_policy_note": "1.csv 的 73 个 NaN 是真实缺失（与 8.xlsx 的 calibrated==0 非检出标记不同），本脚本不插补；插补只在建模折内进行。",
+  "outputs": [
+    "outputs/audit/scale_identification.csv",
+    "outputs/audit/oav_summary.csv",
+    "outputs/audit/scale_report.json"
+  ],
+  "paper_ready_numbers": {
+    "n_log10": 37,
+    "n_linear": 33,
+    "n_unverified": 161,
+    "n_threshold_compounds": 43,
+    "oav_magnitude_ok": "39/43",
+    "log10_median_relerr": 5.93e-10,
+    "linear_median_relerr": 0.0,
+    "n_censored_cells": 755
+  }
+}

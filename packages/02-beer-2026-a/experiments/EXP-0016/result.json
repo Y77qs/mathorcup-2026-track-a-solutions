@@ -1,0 +1,51 @@
+{
+  "token": "1679ecf8a3f5e5d6aaa48fa8",
+  "experimentId": "EXP-0016",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T04:38:09.306Z",
+  "endedAt": "2026-10-24T04:38:10.068Z",
+  "durationMs": 761,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "alpha": 1000.0,
+    "mae": 0.6804670815061572,
+    "n_features": 231.0,
+    "n_targets": 50.0,
+    "n_train": 200.0,
+    "oof_mae_mean": 0.6804670815061572
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0016/metrics.json",
+      "sha256": "857d1164f8805e07d3f8a95e390efd0f106588a66d1b9c6a15340c014752fccb",
+      "bytes": 153,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0016/inputs/src/q1_trainonly.py",
+      "sha256": "e79097da2b54522f8a162e34a437d2ed89405254be5c95eb98b8cba60a181c9f",
+      "bytes": 3488,
+      "kind": "file"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0016/inputs/src/q1_trainonly.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0016/inputs/src/q1_trainonly.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0016",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

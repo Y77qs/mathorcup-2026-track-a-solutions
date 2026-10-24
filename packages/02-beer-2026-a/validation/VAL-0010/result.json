@@ -1,0 +1,35 @@
+{
+  "checkType": "leakage",
+  "passed": false,
+  "observed": {
+    "maxAbsCorrelation": null,
+    "threshold": 0.999,
+    "forbiddenColumns": [],
+    "forbiddenUsed": [],
+    "checkedColumns": 0,
+    "skippedColumns": 0
+  },
+  "expected": {
+    "forbiddenUsed": [],
+    "maxAbsCorrelation": "below 0.999"
+  },
+  "delta": null,
+  "message": "leakage detected: declared feature column(s) are not in the feature table: ['1.csv 231 化合物/理化特征', '2.csv 231x231 Spearman 相关矩阵（PSD 投影后使用）']",
+  "details": {
+    "violations": [
+      {
+        "kind": "declared-feature-missing",
+        "columns": [
+          "1.csv 231 化合物/理化特征",
+          "2.csv 231x231 Spearman 相关矩阵（PSD 投影后使用）"
+        ],
+        "message": "declared feature column(s) are not in the feature table: ['1.csv 231 化合物/理化特征', '2.csv 231x231 Spearman 相关矩阵（PSD 投影后使用）']"
+      }
+    ],
+    "correlations": [],
+    "skipped": [],
+    "usedBasis": "declared featureColumns (experiment.params.features)",
+    "forbiddenPresentButUnused": [],
+    "featuresPath": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/data/clean/q2_raw.csv"
+  }
+}

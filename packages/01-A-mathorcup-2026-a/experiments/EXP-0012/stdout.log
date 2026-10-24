@@ -1,0 +1,9 @@
+[B0] split=SPLIT-0002 train=200 test=50 dims=50
+[B0] emitted; in_runner= True
+{
+  "oof_r2_mean": -0.006798,
+  "holdout_r2_mean": -0.024635,
+  "holdout_mae_mean": 0.409737,
+  "holdout_r2_overall": -0.014456
+}
+[B0] predictions -> outputs/q1/B0_constant_predictions.csv (12500, 7)

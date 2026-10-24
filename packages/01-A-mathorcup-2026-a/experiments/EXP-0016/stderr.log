@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_baseline.py", line 155, in <module>
+    main()
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_baseline.py", line 82, in main
+    if int(sp.loc[sp.beer == b, "split"].iloc[0]) == "train"])
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'train'

@@ -1,0 +1,6 @@
+  [CV A {'k': 15, 'anchor': True}] fold0: n_styles=22 hit=0.992 ed_ratio=0.230
+  [CV A {'k': 15, 'anchor': True}] fold1: n_styles=22 hit=0.995 ed_ratio=0.194
+  [CV A {'k': 15, 'anchor': True}] fold2: n_styles=21 hit=0.994 ed_ratio=0.205
+  [CV A {'k': 15, 'anchor': True}] fold3: n_styles=19 hit=0.995 ed_ratio=0.213
+  [CV A {'k': 15, 'anchor': True}] fold4: n_styles=18 hit=0.993 ed_ratio=0.216
+{"family": "A", "config": {"k": 15, "anchor": true}, "score": 0.7879061862310284, "mean_hit_rate": 0.9940350877192983, "mean_ed_ratio": 0.20612890148826987, "mean_diversity_ratio": 0.7518559039668244, "admissible": true}

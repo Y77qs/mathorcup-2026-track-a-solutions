@@ -1,0 +1,6 @@
+/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/common.py:457: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  r = spearmanr(y_true[:, j], y_pred[:, j]).statistic
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/08_baseline_constant.py:78: RuntimeWarning: Mean of empty slice
+  f"{tag}_spearman_mean": float(np.nanmean(C.spearman_per_col(y, p))),

@@ -1,0 +1,8 @@
+[build] target=paper  workdir=/Users/baozhashizitou/Documents/MATHORCUP/A/report  2026-10-23 22:19:27
+[build] pandoc: rendered.md -> paper.tex
+[build] pandoc: rendered.md (typeset: tex/build/typeset.md) -> paper.tex
+[build] xelatex pass 1
+[build] xelatex pass 2
+[build] OK  pdf=/Users/baozhashizitou/Documents/MATHORCUP/A/report/paper.pdf  pages=47  overfull_hbox=0
+[build] 完整 LaTeX 日志: /Users/baozhashizitou/Documents/MATHORCUP/A/report/tex/build/paper.log
+[build] 编译命令: cd /Users/baozhashizitou/Documents/MATHORCUP/A/report && /usr/local/bin/xelatex -interaction=nonstopmode -halt-on-error -output-directory=tex/build paper.tex （两遍）

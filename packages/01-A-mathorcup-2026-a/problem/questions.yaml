@@ -1,0 +1,75 @@
+# 题面三小问的结构化拆解（供 modeling_project {action:"plan", fromFile:"problem/questions.yaml"}）
+# 字段语义见 tools/modeling_project plan；metric 为该问评价指标（缺省用 contest.yaml primaryMetric）。
+
+questions:
+  - id: Q1
+    title: 数据缺失条件下的感官评分（0–6 分级）
+    objective: "以 data/raw/1.csv 的 231 个化合物/理化特征为输入，为全部 250 个啤酒样本输出 3.xlsx summary 表头所定义的 50 个感官维度的 0–6 整数分级评分（Aroma 15 维 + Flavour 15 维 + 口感/缺陷/总体 20 维），并同时给出潜在连续强度 ẑ 与分级不确定性；显式处理 1.csv 的 73 个真实缺失值，并用可审计的单调标定把标准化目标 4.csv 映射回 0–6 等级。"
+    inputs:
+      - data/raw/1.csv（250×231 特征，缺失 73 个）
+      - data/raw/4.csv（250×50 标准化连续感官目标，Q1 标签）
+      - data/raw/3.xlsx（summary 表头=50 维定义与 0–6 刻度）
+      - data/raw/8.xlsx（Sensory thresholds / Calibrated chemical dataset：log10 与 OAV 标定依据）
+    outputs:
+      - outputs/q1/pred_z.csv（250×50 潜在连续强度）
+      - outputs/q1/scores_0_6.csv（250×50 整数分级 + 宽度）
+      - outputs/q1/metrics_holdout.json、outputs/q1/model_comparison.csv
+      - figures/q1_*.png
+    constraints:
+      - 一切插补/标准化/特征选择只在训练折内拟合，禁止跨折泄漏
+      - 禁止使用 4.csv 以外的目标信息作特征；7.csv（Ratebeer 侧感官）与 5/6.csv（由目标算出的相关矩阵）不得进入 Q1 特征
+      - 8.xlsx 的 "GBM importance MDI" / "GBM SHAP Values" 是目标泄漏产物，只能作外部对照
+      - z→0–6 标定必须显式声明规则并给出至少两套标定的敏感性
+      - 5 个聚合列（kcalperc/acids_sum/esters_sum/aroma_hops_sum/sulfur_sum）需做包含/排除消融
+    evaluation: "训练内 5 折 × 5 重复 OOF 选型；锁定后单次 20% 留出（50 样本）评估。主指标 R²（每维计算后取均值）， 辅以 MAE、Spearman ρ、分级二次加权 κ（QWK）、分级 MAE 与逐等级混淆。要求候选优于常数基线， 并报告分层误差（按风格、按缺失行/完整行、按维度族）。"
+    metric: r2
+    needsData: true
+    needsBaseline: true
+
+  - id: Q2
+    title: 化合物–风味分析：每维度 Top-3 关键化合物
+    objective: "以 data/raw/2.csv（231×231 Spearman）构建化合物共表达图，结合 1.csv 的特征与 4.csv 的 感官目标，对 50 个感官维度分别给出 Top-3 关键化合物，并用 bootstrap 入选频率与跨方法 Jaccard 系数量化稳定性，最后做化学合理性论证（阈值/OAV、类群归属、已知风味化学）。"
+    inputs:
+      - data/raw/2.csv（化合物 Spearman 相关，已实测确认为 Spearman）
+      - data/raw/1.csv（250×231 特征）
+      - data/raw/4.csv（50 维感官目标）
+      - data/raw/6.csv（44×50 化学–感官交叉相关，独立先验对照）
+      - data/raw/8.xlsx（Sensory thresholds：43 个化合物的阈值与 off_flavors 标记、origin_paper 类群）
+    outputs:
+      - outputs/q2/top3_per_dimension.csv
+      - outputs/q2/selection_frequency.csv（bootstrap 频率）
+      - outputs/q2/method_jaccard.csv
+      - outputs/q2/coexpression_graph_edges.csv + figures/q2_*.png
+    constraints:
+      - 共线性必须处理（相关图聚类/岭或弹性网/偏相关），不得以单变量相关冒充关键因素
+      - 50 维 × 231 化合物需做多重比较校正（BH-FDR）
+      - 6.csv 只能作独立的先验核对，不得用于挑选 Top-3（避免循环验证）
+      - 区分方向、关联强度、预测贡献与因果效应，结论只声明关联
+      - 稳定性阈值须预先登记（bootstrap ≥ 200 次，入选频率阈值与 Jaccard 阈值在验证协议中固定）
+    evaluation: "(i) bootstrap 入选频率（Top-3 每席位 ≥0.80 视为稳定）；(ii) 四种方法（岭回归系数、随机森林置换重要性、 偏相关/图 lasso、单变量 Spearman）两两 Top-3 Jaccard 均值 ≥0.50 视为跨方法一致； (iii) 与 6.csv 独立 |r| 的 Spearman 秩相关 >0 且显著；(iv) 化学机制逐维核对（阈值/OAV 与类群）。"
+    metric: top3_stability
+    needsData: true
+    needsBaseline: true
+
+  - id: Q3
+    title: 风格条件生成、"风味指纹"与跨风格迁移
+    objective: "以 tasting_category_fine（22 类）为条件标签，学习化合物谱的风格条件生成模型；在给定风格 （Tripel、Kriek、Lambic 必做）下生成合理的化合物谱并输出其感官画像；实现跨风格迁移 （Pils/Lager → Tripel），并要求 DMS、Diacetyl、4VG、trans-2-nonenal、Stale hops 五类缺陷 化合物的 OAV（浓度/阈值）不恶化。"
+    inputs:
+      - data/raw/1.csv（250×231 化合物谱 + tasting_category_fine）
+      - data/raw/8.xlsx（Sensory thresholds：缺陷化合物阈值；用于 OAV 与缺陷判定）
+      - outputs/q1 训练好的 z 预测器（用作"感官画像"的前向映射；只做推理不改参数）
+    outputs:
+      - outputs/q3/generated_spectra.csv（风格条件生成样本）
+      - outputs/q3/sensory_profiles.csv（生成谱的 50 维感官画像）
+      - outputs/q3/transfer_pils_to_tripel.csv（迁移前后谱与 OAV 对照）
+      - outputs/q3/metrics.json + figures/q3_*.png
+    constraints:
+      - 生成化合物必须非负且在训练观测支撑范围内（逐化合物上下界与总和约束）
+      - 4.csv 不得参与生成模型训练，只能用于评估感官画像的一致性
+      - Kriek(10)/Lambic(11) 等小类须报告样本量与 bootstrap 不确定度，不得声称精确刻画
+      - 缺陷约束必须是硬约束（优化可行域），不是事后筛选
+      - 不得把观察性风格差异写成"保证的干预收益"
+    evaluation: "(i) 风格保真度：用留出风格分类器判别生成样本是否被判为目标风格（命中率）； (ii) 分布吻合：每风格生成集与留出真值的能量距离/MMD； (iii) 缺陷越阈率：五类缺陷 OAV>1 的比例； (iv) 感官画像一致性：生成谱经 Q1 映射后的画像与同风格真值画像的秩相关与 MAE； (v) 迁移后五类缺陷 OAV 不增（硬性通过/不通过）。"
+    metric: gen_style_fidelity
+    needsData: true
+    needsBaseline: true

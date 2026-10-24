@@ -1,0 +1,10 @@
+{
+  "admissible": 1,
+  "diversity_ratio": 0.7518559039668244,
+  "energy_distance_ratio": 0.20612890148826987,
+  "gen_style_fidelity": 0.9940350877192983,
+  "n_features": 231.0,
+  "seed": 42.0,
+  "selection_score": 0.7879061862310284,
+  "stochastic": 1
+}

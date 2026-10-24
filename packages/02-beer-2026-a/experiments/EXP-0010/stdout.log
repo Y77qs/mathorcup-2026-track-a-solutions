@@ -1,0 +1,10 @@
+{
+  "topk_jaccard": 0.09,
+  "n_dims": 50,
+  "n_features": 231,
+  "globalTop3": [
+    "ethanol..v.v.",
+    "kcalperc",
+    "esters_sum"
+  ]
+}

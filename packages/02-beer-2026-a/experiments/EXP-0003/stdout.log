@@ -1,0 +1,8 @@
+{
+  "family": "gbm",
+  "alpha": 0.0,
+  "oof_mae_mean": 0.6891755903181582,
+  "holdout_mae_mean": 0.7080210833625707,
+  "holdout_r2_mean": 0.12888811361172473,
+  "tuning": {}
+}

@@ -1,0 +1,66 @@
+{
+  "token": "1ed48ad276e2dc767d3eb277",
+  "experimentId": "EXP-0019",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-23T13:48:42.332Z",
+  "endedAt": "2026-10-23T13:48:51.454Z",
+  "durationMs": 9122,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "baseline_holdout_accuracy": 0.42,
+    "defect_violation_rate": 0.0,
+    "ed_over_dref_tripel": 0.1261751505609254,
+    "n_features": 231.0,
+    "r2": 0.423009420982131,
+    "r2_50dim": 0.39799919967987196,
+    "seed": 42.0,
+    "stochastic": 1.0,
+    "style_hit_kriek": 1.0,
+    "style_hit_lambic": 1.0,
+    "style_hit_macro": 0.9972727272727272,
+    "style_hit_tripel": 0.99,
+    "transfer_feasible_rate": 1.0,
+    "transfer_tripel_hit_before": 0.0,
+    "transfer_tripel_hit_rate": 1.0
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0019/metrics.json",
+      "sha256": "3bc96bd0c646530adbbc425009d65e6d37ca27e35a5c0bd1b6cea95b01f1fe01",
+      "bytes": 466,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0019/outputs.json",
+      "sha256": "f554d2e20de5f44746f51359bd832aa4f3f3e3ca7f73d2ecc520d74fbf95fda0",
+      "bytes": 526154,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0019/predictions.csv",
+      "sha256": "f494e2461d3c5986f6cd7912245db2641aadcb15254149aeb9fae0b4876f1cea",
+      "bytes": 6046,
+      "kind": "predictions"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_baseline.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_baseline.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0019",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

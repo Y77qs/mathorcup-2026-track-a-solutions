@@ -1,0 +1,10 @@
+/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/lib/python3.12/site-packages/sklearn/manifold/_spectral_embedding.py:325: UserWarning: Graph is not fully connected, spectral embedding may not work as expected.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_graph.py", line 368, in <module>
+    main()
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_graph.py", line 349, in main
+    emit_metrics({
+  File "/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py", line 217, in emit_metrics
+    raise ValueError('metric %r is %r (NaN/Infinity); a metric must be a real measurement' % (key, value))
+ValueError: metric 'condition_number_2csv' is inf (NaN/Infinity); a metric must be a real measurement

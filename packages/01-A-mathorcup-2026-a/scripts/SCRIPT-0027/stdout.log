@@ -1,0 +1,65 @@
+== Q3 model layer ==
+split: data/splits/SPLIT-0002/assignment.csv train=200 test=50 | stratified: data/splits/stratified/assignment.csv
+[1] style classifier 5-fold CV on train ...
+    selected classifier: logreg_raw acc=0.530 macroF1=0.462
+    - logreg_raw: acc=0.530 macroF1=0.462
+    - logreg_pca20: acc=0.491 macroF1=0.416
+    - hgb: acc=0.505 macroF1=0.388
+[2] inner CV for family A (PCA k) ...
+  [CV A {'k': 6}] fold0: n_styles=22 hit=0.999 ed_ratio=0.238
+  [CV A {'k': 6}] fold1: n_styles=22 hit=1.000 ed_ratio=0.201
+  [CV A {'k': 6}] fold2: n_styles=21 hit=1.000 ed_ratio=0.212
+  [CV A {'k': 6}] fold3: n_styles=19 hit=0.999 ed_ratio=0.218
+  [CV A {'k': 6}] fold4: n_styles=18 hit=1.000 ed_ratio=0.222
+    A k=6: score=0.787 hit=1.000 ed_ratio=0.213 div=0.588
+  [CV A {'k': 10}] fold0: n_styles=22 hit=0.998 ed_ratio=0.232
+  [CV A {'k': 10}] fold1: n_styles=22 hit=0.997 ed_ratio=0.196
+  [CV A {'k': 10}] fold2: n_styles=21 hit=0.998 ed_ratio=0.210
+  [CV A {'k': 10}] fold3: n_styles=19 hit=0.998 ed_ratio=0.215
+  [CV A {'k': 10}] fold4: n_styles=18 hit=0.997 ed_ratio=0.219
+    A k=10: score=0.789 hit=0.998 ed_ratio=0.209 div=0.685
+  [CV A {'k': 15}] fold0: n_styles=22 hit=0.992 ed_ratio=0.230
+  [CV A {'k': 15}] fold1: n_styles=22 hit=0.995 ed_ratio=0.194
+  [CV A {'k': 15}] fold2: n_styles=21 hit=0.994 ed_ratio=0.205
+  [CV A {'k': 15}] fold3: n_styles=19 hit=0.995 ed_ratio=0.213
+  [CV A {'k': 15}] fold4: n_styles=18 hit=0.993 ed_ratio=0.216
+    A k=15: score=0.788 hit=0.994 ed_ratio=0.206 div=0.752
+[3] VAE overfitting diagnostics for [(8, 0.05), (8, 0.2), (12, 0.05), (12, 0.2)] ...
+    VAE latent8_beta0.05: train 0.7102 holdout 0.8309 const 0.9868 relgap 0.203 best_epoch 16
+    VAE latent8_beta0.2: train 0.7960 holdout 0.9061 const 0.9868 relgap 0.154 best_epoch 20
+    VAE latent12_beta0.05: train 0.7262 holdout 0.8356 const 0.9868 relgap 0.161 best_epoch 21
+    VAE latent12_beta0.2: train 0.8167 holdout 0.9022 const 0.9868 relgap 0.120 best_epoch 21
+[4] inner CV for family B (VAE latent x beta) ...
+  [CV B {'latent': 8, 'beta': 0.05}] fold0: n_styles=22 hit=0.965 ed_ratio=0.259
+  [CV B {'latent': 8, 'beta': 0.05}] fold1: n_styles=22 hit=0.527 ed_ratio=0.215
+  [CV B {'latent': 8, 'beta': 0.05}] fold2: n_styles=21 hit=0.540 ed_ratio=0.224
+  [CV B {'latent': 8, 'beta': 0.05}] fold3: n_styles=19 hit=0.686 ed_ratio=0.240
+  [CV B {'latent': 8, 'beta': 0.05}] fold4: n_styles=18 hit=0.999 ed_ratio=0.240
+    B latent=8 beta=0.05: score=0.539 hit=0.771 ed_ratio=0.232 div=0.259 admissible=False
+  [CV B {'latent': 8, 'beta': 0.2}] fold0: n_styles=22 hit=0.814 ed_ratio=0.268
+  [CV B {'latent': 8, 'beta': 0.2}] fold1: n_styles=22 hit=0.689 ed_ratio=0.225
+  [CV B {'latent': 8, 'beta': 0.2}] fold2: n_styles=21 hit=0.767 ed_ratio=0.234
+  [CV B {'latent': 8, 'beta': 0.2}] fold3: n_styles=19 hit=0.754 ed_ratio=0.250
+  [CV B {'latent': 8, 'beta': 0.2}] fold4: n_styles=18 hit=0.656 ed_ratio=0.249
+    B latent=8 beta=0.2: score=0.553 hit=0.795 ed_ratio=0.241 div=0.121 admissible=False
+  [CV B {'latent': 12, 'beta': 0.05}] fold0: n_styles=22 hit=0.680 ed_ratio=0.258
+  [CV B {'latent': 12, 'beta': 0.05}] fold1: n_styles=22 hit=0.426 ed_ratio=0.213
+  [CV B {'latent': 12, 'beta': 0.05}] fold2: n_styles=21 hit=0.565 ed_ratio=0.222
+  [CV B {'latent': 12, 'beta': 0.05}] fold3: n_styles=19 hit=0.632 ed_ratio=0.239
+  [CV B {'latent': 12, 'beta': 0.05}] fold4: n_styles=18 hit=0.978 ed_ratio=0.243
+    B latent=12 beta=0.05: score=0.462 hit=0.693 ed_ratio=0.231 div=0.243 admissible=False
+  [CV B {'latent': 12, 'beta': 0.2}] fold0: n_styles=22 hit=0.692 ed_ratio=0.266
+  [CV B {'latent': 12, 'beta': 0.2}] fold1: n_styles=22 hit=0.624 ed_ratio=0.220
+  [CV B {'latent': 12, 'beta': 0.2}] fold2: n_styles=21 hit=0.624 ed_ratio=0.234
+  [CV B {'latent': 12, 'beta': 0.2}] fold3: n_styles=19 hit=0.675 ed_ratio=0.246
+  [CV B {'latent': 12, 'beta': 0.2}] fold4: n_styles=18 hit=0.637 ed_ratio=0.248
+    B latent=12 beta=0.2: score=0.459 hit=0.699 ed_ratio=0.239 div=0.145 admissible=False
+[5] inner CV for family C (KDE) ...
+  [CV C {'k': 10}] fold0: n_styles=22 hit=0.336 ed_ratio=0.225
+  [CV C {'k': 10}] fold1: n_styles=22 hit=0.378 ed_ratio=0.189
+  [CV C {'k': 10}] fold2: n_styles=21 hit=0.400 ed_ratio=0.204
+  [CV C {'k': 10}] fold3: n_styles=19 hit=0.369 ed_ratio=0.210
+  [CV C {'k': 10}] fold4: n_styles=18 hit=0.419 ed_ratio=0.214
+    C k=10: score=0.195 hit=0.398 ed_ratio=0.203 div=0.788
+[selected] A {'k': 15} score=0.788 (unconstrained best: A {'k': 10} 0.789; tie_break=3 tied)
+[done] model_selection.json / style_classifier_report.json / leakage_manifest.json

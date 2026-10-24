@@ -1,0 +1,10 @@
+{
+  "bootstrap_primary_meta": {
+    "B": 300,
+    "m4_top1_mode_share_mean": 0.45393333333333336,
+    "ridge_alpha": "fixed per-dim full-data 5-fold inner-CV alpha",
+    "rows": 90000,
+    "runtime_seconds": 5.3,
+    "seed_rule": "default_rng(42+(rep-1)); indices=rng.integers(0,250,250)"
+  }
+}

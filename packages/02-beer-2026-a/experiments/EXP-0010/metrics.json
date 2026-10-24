@@ -1,0 +1,18 @@
+{
+  "globalMeanAbsRho.MeSH": 0.20514575408907962,
+  "globalMeanAbsRho.acetaldehyde": 0.20730023552477136,
+  "globalMeanAbsRho.bitterness": 0.2067701817519221,
+  "globalMeanAbsRho.esters_sum": 0.228620490676219,
+  "globalMeanAbsRho.ethanol..v.v.": 0.24671503972321632,
+  "globalMeanAbsRho.ethyl_octanoate": 0.21477846746435045,
+  "globalMeanAbsRho.glycerol": 0.20852174890421626,
+  "globalMeanAbsRho.isopentyl_acetate": 0.21037310829918762,
+  "globalMeanAbsRho.kcalperc": 0.24350175174376498,
+  "globalMeanAbsRho.n.hexanol": 0.21255159089145295,
+  "jaccard_global_vs_perdim": 0.09,
+  "n_dims": 50.0,
+  "n_features": 231.0,
+  "n_train": 200.0,
+  "topK": 3.0,
+  "topk_jaccard": 0.09
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0015/inputs/src/q1_trainonly.py", line 73, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0015/inputs/src/q1_trainonly.py", line 64, in main
+    _mc.emit_metrics(m)
+  File "/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py", line 224, in emit_metrics
+    raise TypeError('metric %r has type %s; emit a finite number (a string is not a measurement)'
+TypeError: metric 'evaluation_use' has type str; emit a finite number (a string is not a measurement)

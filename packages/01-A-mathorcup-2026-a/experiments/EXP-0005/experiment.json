@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "projectId": "mathorcup-2026-a",
+  "id": "EXP-0005",
+  "questionId": "Q1",
+  "modelId": "MODEL-0005",
+  "modelKind": "evaluation",
+  "title": "运行器契约探针（非科学实验，仅环境探测）",
+  "assumptions": [
+    "仅用于发现运行器契约；指标为占位，不参与任何模型比较"
+  ],
+  "equations": [],
+  "algorithm": "环境探针：定位 modeling_contract 注入方式与实验产物目录（不产生科学结论）",
+  "params": {
+    "family": "probe",
+    "features": [
+      "acetaldehyde"
+    ],
+    "predictionTime": "same-time"
+  },
+  "datasetId": "DATA-0002",
+  "splitId": "SPLIT-0002",
+  "dataset": {
+    "id": "DATA-0002",
+    "path": "data/clean/model_table.csv",
+    "sha256": "c5ef4195703f4aa32a155236e867b41f99519d71b01d464e28c1d7f03e5bb3dc",
+    "bytes": 856101,
+    "targetColumn": null,
+    "profileHash": null
+  },
+  "split": {
+    "id": "SPLIT-0002",
+    "datasetId": "DATA-0002",
+    "method": "random-holdout",
+    "counts": {
+      "rows": 250,
+      "train": 200,
+      "test": 50
+    },
+    "trainPath": "data/splits/SPLIT-0002/train.csv",
+    "trainSha256": "dbe66088d43d5af6cb686499369e1bf7bdde31fb5ed3de69e787507f4abc0208",
+    "testPath": "data/splits/SPLIT-0002/test.csv",
+    "testSha256": "56f3f16200f521a263ed6e046d9ef8b99bcd73b200208e7c14f555200d4dda6a",
+    "assignmentPath": "data/splits/SPLIT-0002/assignment.csv",
+    "assignmentSha256": "4a032d281d3b85f860e0322868afde68503abf13260cdf52496a276ed5a0855e"
+  },
+  "configSha256": "d5e615d909f35bd39ef3e769021668fb91766f6835ae1233c68ce3969c5c1683",
+  "code": {
+    "path": "src/probe_contract.py",
+    "sha256": "41247ddfe7e0f66fd17ddc7d5534c76b173c751afe92618731ba383edb3eec41",
+    "bytes": 3116
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/probe_contract.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/A/src/probe_contract.py"
+    ],
+    "cwd": "experiments/EXP-0005"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 42,
+    "timeoutSeconds": 600,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/A/src/probe_contract.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 42,
+  "timeoutSeconds": 600,
+  "rerunOf": null,
+  "idempotencyKey": null,
+  "createdAt": "2026-10-23T13:33:28.721Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0005",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "evaluation",
+    "title": "运行器契约探针（非科学实验，仅环境探测）",
+    "assumptions": [
+      "仅用于发现运行器契约；指标为占位，不参与任何模型比较"
+    ],
+    "equations": [],
+    "algorithm": "环境探针：定位 modeling_contract 注入方式与实验产物目录（不产生科学结论）",
+    "params": {
+      "family": "probe",
+      "features": [
+        "acetaldehyde"
+      ],
+      "predictionTime": "same-time"
+    },
+    "codeFile": "src/probe_contract.py",
+    "datasetId": "DATA-0002",
+    "splitId": "SPLIT-0002",
+    "seed": 42,
+    "args": [],
+    "timeoutSeconds": 600,
+    "modelId": "MODEL-0005"
+  }
+}

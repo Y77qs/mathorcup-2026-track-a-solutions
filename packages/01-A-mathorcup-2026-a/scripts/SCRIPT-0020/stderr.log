@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_prereg.py", line 149, in <module>
+    _add("coriander", ["linalool", "geraniol"],
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_prereg.py", line 29, in _add
+    assert len(compounds) == len(signs), dim
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: coriander

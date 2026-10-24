@@ -1,0 +1,34 @@
+{
+  "token": "e5d07d2e404230649bdcffe7",
+  "experimentId": "EXP-0002",
+  "status": "failed",
+  "exitCode": 1,
+  "startedAt": "2026-10-23T13:26:08.143Z",
+  "endedAt": "2026-10-23T13:26:09.684Z",
+  "durationMs": 1541,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [],
+  "figures": [],
+  "failure": {
+    "code": "NONZERO_EXIT",
+    "message": "the script exited with code 1; stderr tail: File \"/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_graph.py\", line 349, in main\n    emit_metrics({\n  File \"/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py\", line 217, in emit_metrics\n    raise ValueError('metric %r is %r (NaN/Infinity); a metric must be a real measurement' % (key, value))\nValueError: metric 'condition_number_2csv' is inf (NaN/Infinity); a metric must be a real measurement"
+  },
+  "error": "the script exited with code 1; stderr tail: File \"/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_graph.py\", line 349, in main\n    emit_metrics({\n  File \"/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py\", line 217, in emit_metrics\n    raise ValueError('metric %r is %r (NaN/Infinity); a metric must be a real measurement' % (key, value))\nValueError: metric 'condition_number_2csv' is inf (NaN/Infinity); a metric must be a real measurement",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_graph.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_graph.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0002",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

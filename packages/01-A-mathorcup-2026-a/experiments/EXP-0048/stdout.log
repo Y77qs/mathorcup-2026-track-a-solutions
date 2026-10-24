@@ -1,0 +1,85 @@
+  secondary rep 1/20 done (13.0s)
+  secondary rep 2/20 done (26.0s)
+  secondary rep 3/20 done (38.6s)
+  secondary rep 4/20 done (51.2s)
+  secondary rep 5/20 done (63.6s)
+  secondary rep 6/20 done (77.0s)
+  secondary rep 7/20 done (90.1s)
+  secondary rep 8/20 done (104.3s)
+  secondary rep 9/20 done (120.0s)
+  secondary rep 10/20 done (136.0s)
+  secondary rep 11/20 done (152.6s)
+  secondary rep 12/20 done (169.3s)
+  secondary rep 13/20 done (185.2s)
+  secondary rep 14/20 done (201.4s)
+  secondary rep 15/20 done (217.2s)
+  secondary rep 16/20 done (233.0s)
+  secondary rep 17/20 done (248.3s)
+  secondary rep 18/20 done (266.4s)
+  secondary rep 19/20 done (283.0s)
+  secondary rep 20/20 done (300.0s)
+secondary stage: 20 reps, 15000 rows, 300.0s
+{
+  "protocol": {
+    "B_primary": 300,
+    "B_secondary": 20,
+    "frequency_threshold": 0.8,
+    "jaccard_threshold": 0.5,
+    "top3_aggregation": "Borda (sum of 4 method ranks); mean rank used for ordering",
+    "seed_rule": "default_rng(42+(rep-1)); indices=rng.integers(0,250,250)",
+    "resampling": "with replacement, n=250; standardization refit inside each resample",
+    "m1_inner_alpha": "bootstrap fits use per-dim alpha fixed at the full-data 5-fold inner-CV value (from _stage_m1m4.npz); re-selecting alpha on duplicate-row resamples is degenerate (EXP-0042 timed out; GCV picks alpha=0.01 on rank-deficient resamples)",
+    "secondary_note": "M2/M3/AGG use B=20 only (protocol allows <=30 for time budget); their stability evidence is weaker than M1/M4 B=300."
+  },
+  "by_method": {
+    "M1": {
+      "B": 300,
+      "mean_freq_of_final_top3_seats": 0.36617777777777777,
+      "n_seats_ge_0.80": 22,
+      "frac_seats_ge_0.80": 0.14666666666666667,
+      "n_seats_freq_1.0": 3,
+      "mc_se": 0.023094010767585032
+    },
+    "M2": {
+      "B": 20,
+      "mean_freq_of_final_top3_seats": 0.28633333333333333,
+      "n_seats_ge_0.80": 25,
+      "frac_seats_ge_0.80": 0.16666666666666666,
+      "n_seats_freq_1.0": 10,
+      "mc_se": 0.0894427190999916
+    },
+    "M3": {
+      "B": 20,
+      "mean_freq_of_final_top3_seats": 0.1406666666666667,
+      "n_seats_ge_0.80": 4,
+      "frac_seats_ge_0.80": 0.02666666666666667,
+      "n_seats_freq_1.0": 2,
+      "mc_se": 0.0894427190999916
+    },
+    "M4": {
+      "B": 300,
+      "mean_freq_of_final_top3_seats": 0.2387777777777778,
+      "n_seats_ge_0.80": 14,
+      "frac_seats_ge_0.80": 0.09333333333333334,
+      "n_seats_freq_1.0": 5,
+      "mc_se": 0.023094010767585032
+    },
+    "AGG": {
+      "B": 20,
+      "mean_freq_of_final_top3_seats": 0.45,
+      "n_seats_ge_0.80": 28,
+      "frac_seats_ge_0.80": 0.18666666666666668,
+      "n_seats_freq_1.0": 9,
+      "mc_se": 0.0894427190999916
+    }
+  },
+  "primary_secondary_consistency": {
+    "M1": true,
+    "M4": true
+  },
+  "n_final_seats": 150,
+  "limitations": [
+    "bootstrap 只在 250 个样本内重采样，不能外推到其他啤酒/风格分布",
+    "M2/M3/AGG 的 B=20 使频率分辨率只有 0.05，0.80 阈值附近不稳定"
+  ]
+}

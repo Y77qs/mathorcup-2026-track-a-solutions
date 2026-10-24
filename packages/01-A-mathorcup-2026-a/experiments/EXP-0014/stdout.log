@@ -1,0 +1,4 @@
+[final:primary] train=200 test=50 source=dataset
+[lock] pls: {'params': {'n_components': 8}, 'inner_r2': 0.200981, 'kind': 'pls'}
+[lock] et: {'params': {'max_features': 0.3, 'min_samples_leaf': 1}, 'inner_r2': 0.225575, 'kind': 'et'}
+[lock] rf: {'params': {'max_features': 0.3, 'min_samples_leaf': 1}, 'inner_r2': 0.219247, 'kind': 'rf'}

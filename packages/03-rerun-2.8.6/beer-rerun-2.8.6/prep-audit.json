@@ -1,0 +1,100 @@
+{
+ "project": "/Users/baozhashizitou/Documents/MATHORCUP/work/beer-rerun-2.8.6",
+ "packVersion": "2.8.6",
+ "prepScope": "Phase 0-2 (init/plan/data/contracts+requirements)",
+ "configSha256": "cae08b254ec1e03c215ffc9699957a7e47ca28a8962c36f9beb8c91cf92607f3",
+ "ledgerConfigSha256": "cae08b254ec1e03c215ffc9699957a7e47ca28a8962c36f9beb8c91cf92607f3",
+ "configShaMatch": true,
+ "revision": 31,
+ "stage": "intake",
+ "counts": {
+  "questions": 3,
+  "datasets": 3,
+  "splits": 2,
+  "models": 0,
+  "experiments": 0,
+  "validationPlans": 0,
+  "claims": 0,
+  "qualityChecks": 0,
+  "reviews": 0,
+  "robustnessPlans": 0
+ },
+ "datasets": [
+  {
+   "id": "DATA-0001",
+   "path": "data/clean/q2_raw.csv",
+   "fields": 284,
+   "parent": null
+  },
+  {
+   "id": "DATA-0002",
+   "path": "data/clean/q1_mapped.csv",
+   "fields": 284,
+   "parent": "DATA-0001"
+  },
+  {
+   "id": "DATA-0003",
+   "path": "data/clean/q3.csv",
+   "fields": 250,
+   "parent": null
+  }
+ ],
+ "splits": [
+  {
+   "id": "SPLIT-0001",
+   "dataset": "DATA-0001",
+   "counts": {
+    "rows": 250,
+    "train": 200,
+    "test": 50
+   },
+   "assignment": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+  },
+  {
+   "id": "SPLIT-0002",
+   "dataset": "DATA-0002",
+   "counts": {
+    "rows": 250,
+    "train": 200,
+    "test": 50
+   },
+   "assignment": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+  }
+ ],
+ "splitsSameAssignment": true,
+ "qualityRecords": {
+  "requirements": 6,
+  "targetContracts": 3,
+  "modelContracts": 3,
+  "stale": 0
+ },
+ "readOnlyCheckResults": {
+  "source-anchor": "passed",
+  "model-condition": "passed",
+  "target-lineage": "needs_review",
+  "requirement-coverage": "failed",
+  "baseline-required": "failed"
+ },
+ "checkpoints": {
+  "intake": "passed",
+  "data-ready": "passed",
+  "baseline-ready": "pending (3 NO_BASELINE)",
+  "writing": "pending (NO_CLAIM+NO_PAPER)",
+  "delivery": "pending (NOT_FROZEN)"
+ },
+ "oneWayDoors": {
+  "experiments": 0,
+  "validationPlans": 0,
+  "claims": 0,
+  "qualityChecks": 0,
+  "reviews": 0,
+  "robustnessPlans": 0,
+  "configChanged": false
+ },
+ "verdict": "PASS_PREP_READY_FOR_PHASE3",
+ "notes": [
+  "No experiments/baselines/plans were run in prep.",
+  "Q1 0-6 vs mapped grade needs an independent review decision before coverage.",
+  "GUI preset/monitor not manually verified; runtime used directly."
+ ]
+}

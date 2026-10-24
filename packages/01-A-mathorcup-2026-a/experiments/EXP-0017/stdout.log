@@ -1,0 +1,5 @@
+[final:primary] train=200 test=50 source=dataset
+[lock] pls: {'params': {'n_components': 8}, 'inner_r2': 0.200981, 'kind': 'pls', 'selection': 'inner 3-fold CV on train 200'}
+[lock] et: {'params': {'max_features': 0.3, 'min_samples_leaf': 1}, 'inner_r2': 0.225575, 'kind': 'et', 'selection': 'inner 3-fold CV on train 200'}
+[lock] rf: {'params': {'max_features': 0.3, 'min_samples_leaf': 1}, 'inner_r2': 0.219247, 'kind': 'rf', 'selection': 'inner 3-fold CV on train 200'}
+[lock] hgb: {'params': {'max_iter': 150, 'learning_rate': 0.06, 'max_leaf_nodes': 8, 'min_samples_leaf': 10, 'l2_regularization': 1.0}, 'inner_r2': None, 'kind': 'hgb', 'selection': 'fixed a priori'}

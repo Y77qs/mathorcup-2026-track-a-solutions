@@ -1,0 +1,16 @@
+{
+  "constraint_satisfaction": 1.0,
+  "energy_holdout_generated_mean": 3.718739352848362,
+  "energy_holdout_source_baseline_mean": 4.51705463028622,
+  "n_features": 231.0,
+  "n_holdout_styles": 3.0,
+  "perStyle.Kriek.energy_global_generated_vs_style": 7.117114905619748,
+  "perStyle.Kriek.energy_source_identity_vs_style": 7.535505660769098,
+  "perStyle.Kriek.n_style": 10.0,
+  "perStyle.Lambic.energy_global_generated_vs_style": 2.650760830565965,
+  "perStyle.Lambic.energy_source_identity_vs_style": 3.4773231666730364,
+  "perStyle.Lambic.n_style": 11.0,
+  "perStyle.Tripel.energy_global_generated_vs_style": 1.3883423223593736,
+  "perStyle.Tripel.energy_source_identity_vs_style": 2.538335063416525,
+  "perStyle.Tripel.n_style": 28.0
+}

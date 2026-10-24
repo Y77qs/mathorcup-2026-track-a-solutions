@@ -1,0 +1,122 @@
+{
+  "holdout_styles": [
+    "Tripel",
+    "Kriek",
+    "Lambic"
+  ],
+  "unknown_styles": [],
+  "all_styles": [
+    "Amber",
+    "Blond",
+    "Brett/cofermented",
+    "Brown",
+    "Brut",
+    "Christmas",
+    "Dubbel",
+    "Faro",
+    "Flanders old brown",
+    "Fruitbeer",
+    "Hoppy",
+    "Kriek",
+    "Lambic",
+    "Low/No alcohol",
+    "Pils/Lager",
+    "Saison",
+    "Scotch",
+    "Stout/Porter",
+    "Strong ale",
+    "Tripel",
+    "West Flanders ale",
+    "Wheat"
+  ],
+  "n_styles": 22,
+  "counts": {
+    "train": 201,
+    "style_holdout": 49
+  },
+  "rationale": "跨风格迁移必须整类留出；Tripel/Kriek/Lambic 作为目标风格留出，其余风格训练",
+  "defect_spec": {
+    "DMS": [
+      {
+        "compound": "DMS",
+        "has_threshold": true,
+        "threshold_mean": 17.25,
+        "threshold_median": 19.0,
+        "unit": "ug/L",
+        "scale_in_1csv": "log10",
+        "zero_floor_encoded": false
+      }
+    ],
+    "Diacetyl": [
+      {
+        "compound": "X2.3.butanedione",
+        "has_threshold": true,
+        "threshold_mean": 0.29925,
+        "threshold_median": 0.09,
+        "unit": "mg/L",
+        "scale_in_1csv": "linear",
+        "zero_floor_encoded": false
+      }
+    ],
+    "4VG": [
+      {
+        "compound": "X4VG",
+        "has_threshold": true,
+        "threshold_mean": 0.206333333,
+        "threshold_median": 0.2,
+        "unit": "mg/L",
+        "scale_in_1csv": "log10",
+        "zero_floor_encoded": true
+      }
+    ],
+    "trans-2-nonenal": [
+      {
+        "compound": "X.E..2.nonenal",
+        "has_threshold": false,
+        "threshold_mean": null,
+        "threshold_median": null,
+        "unit": "mg/L",
+        "scale_in_1csv": "linear",
+        "zero_floor_encoded": false
+      }
+    ],
+    "Stale hops": [
+      {
+        "compound": "X3.methyl.2.butenal",
+        "has_threshold": false,
+        "threshold_mean": null,
+        "threshold_median": null,
+        "unit": null,
+        "scale_in_1csv": "unverified",
+        "zero_floor_encoded": false
+      },
+      {
+        "compound": "furfural",
+        "has_threshold": true,
+        "threshold_mean": 60.0,
+        "threshold_median": 37.5,
+        "unit": "mg/L",
+        "scale_in_1csv": "linear",
+        "zero_floor_encoded": false
+      },
+      {
+        "compound": "X5.methylfurfural",
+        "has_threshold": false,
+        "threshold_mean": null,
+        "threshold_median": null,
+        "unit": "mg/L",
+        "scale_in_1csv": "linear",
+        "zero_floor_encoded": false
+      },
+      {
+        "compound": "X.E..2.nonenal",
+        "has_threshold": false,
+        "threshold_mean": null,
+        "threshold_median": null,
+        "unit": "mg/L",
+        "scale_in_1csv": "linear",
+        "zero_floor_encoded": false
+      }
+    ]
+  }
+}

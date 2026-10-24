@@ -1,0 +1,17 @@
+{
+  "pid": 57797,
+  "token": "fffc385eb6157c8d39318412",
+  "experimentId": "EXP-0039",
+  "startedAt": "2026-10-23T14:02:33.418Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_select.py",
+    "--stage",
+    "m1m4"
+  ],
+  "childPid": 57812,
+  "childPgid": 57812,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/A"
+}

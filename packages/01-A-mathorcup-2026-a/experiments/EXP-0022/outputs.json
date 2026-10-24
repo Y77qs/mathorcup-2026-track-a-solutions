@@ -1,0 +1,260 @@
+{
+  "cv_per_style": [
+    {
+      "diversity_ratio": 0.732902,
+      "ed_ratio": 0.195132,
+      "hit_rate": 0.996667,
+      "n_test": 10,
+      "n_train": 8.0,
+      "score": 0.801535,
+      "style": "Amber"
+    },
+    {
+      "diversity_ratio": 0.710921,
+      "ed_ratio": 0.151904,
+      "hit_rate": 0.993333,
+      "n_test": 22,
+      "n_train": 17.6,
+      "score": 0.84143,
+      "style": "Blond"
+    },
+    {
+      "diversity_ratio": 0.613742,
+      "ed_ratio": 0.247035,
+      "hit_rate": 0.996667,
+      "n_test": 5,
+      "n_train": 4.0,
+      "score": 0.749631,
+      "style": "Brett/cofermented"
+    },
+    {
+      "diversity_ratio": 0.830778,
+      "ed_ratio": 0.213494,
+      "hit_rate": 0.966667,
+      "n_test": 9,
+      "n_train": 7.2,
+      "score": 0.753173,
+      "style": "Brown"
+    },
+    {
+      "diversity_ratio": 0.665878,
+      "ed_ratio": 0.322663,
+      "hit_rate": 1.0,
+      "n_test": 3,
+      "n_train": 2.0,
+      "score": 0.677337,
+      "style": "Brut"
+    },
+    {
+      "diversity_ratio": 0.662415,
+      "ed_ratio": 0.22235,
+      "hit_rate": 0.986667,
+      "n_test": 7,
+      "n_train": 5.6,
+      "score": 0.764317,
+      "style": "Christmas"
+    },
+    {
+      "diversity_ratio": 0.948664,
+      "ed_ratio": 0.232999,
+      "hit_rate": 0.98,
+      "n_test": 8,
+      "n_train": 6.4,
+      "score": 0.747001,
+      "style": "Dubbel"
+    },
+    {
+      "diversity_ratio": null,
+      "ed_ratio": null,
+      "hit_rate": 1.0,
+      "n_test": 2,
+      "n_train": 1.0,
+      "score": 0.0,
+      "style": "Faro"
+    },
+    {
+      "diversity_ratio": 0.802763,
+      "ed_ratio": 0.263943,
+      "hit_rate": 1.0,
+      "n_test": 4,
+      "n_train": 3.0,
+      "score": 0.736057,
+      "style": "Flanders old brown"
+    },
+    {
+      "diversity_ratio": 0.550918,
+      "ed_ratio": 0.218131,
+      "hit_rate": 1.0,
+      "n_test": 7,
+      "n_train": 5.6,
+      "score": 0.781869,
+      "style": "Fruitbeer"
+    },
+    {
+      "diversity_ratio": 0.852423,
+      "ed_ratio": 0.161864,
+      "hit_rate": 1.0,
+      "n_test": 16,
+      "n_train": 12.8,
+      "score": 0.838136,
+      "style": "Hoppy"
+    },
+    {
+      "diversity_ratio": 0.681867,
+      "ed_ratio": 0.18315,
+      "hit_rate": 1.0,
+      "n_test": 9,
+      "n_train": 7.2,
+      "score": 0.81685,
+      "style": "Kriek"
+    },
+    {
+      "diversity_ratio": 0.830679,
+      "ed_ratio": 0.232379,
+      "hit_rate": 1.0,
+      "n_test": 8,
+      "n_train": 6.4,
+      "score": 0.767621,
+      "style": "Lambic"
+    },
+    {
+      "diversity_ratio": 0.588233,
+      "ed_ratio": 0.203133,
+      "hit_rate": 1.0,
+      "n_test": 7,
+      "n_train": 5.6,
+      "score": 0.796867,
+      "style": "Low/No alcohol"
+    },
+    {
+      "diversity_ratio": 0.957893,
+      "ed_ratio": 0.218695,
+      "hit_rate": 1.0,
+      "n_test": 8,
+      "n_train": 6.4,
+      "score": 0.781305,
+      "style": "Pils/Lager"
+    },
+    {
+      "diversity_ratio": 0.814776,
+      "ed_ratio": 0.217507,
+      "hit_rate": 0.983333,
+      "n_test": 8,
+      "n_train": 6.4,
+      "score": 0.765826,
+      "style": "Saison"
+    },
+    {
+      "diversity_ratio": 0.722001,
+      "ed_ratio": 0.279401,
+      "hit_rate": 0.983333,
+      "n_test": 3,
+      "n_train": 2.0,
+      "score": 0.703932,
+      "style": "Scotch"
+    },
+    {
+      "diversity_ratio": 0.658467,
+      "ed_ratio": 0.215056,
+      "hit_rate": 0.993333,
+      "n_test": 10,
+      "n_train": 8.0,
+      "score": 0.778278,
+      "style": "Stout/Porter"
+    },
+    {
+      "diversity_ratio": 0.754462,
+      "ed_ratio": 0.173116,
+      "hit_rate": 0.996667,
+      "n_test": 13,
+      "n_train": 10.4,
+      "score": 0.82355,
+      "style": "Strong ale"
+    },
+    {
+      "diversity_ratio": 0.6963,
+      "ed_ratio": 0.142484,
+      "hit_rate": 1.0,
+      "n_test": 23,
+      "n_train": 18.4,
+      "score": 0.857516,
+      "style": "Tripel"
+    },
+    {
+      "diversity_ratio": 0.77563,
+      "ed_ratio": 0.226774,
+      "hit_rate": 1.0,
+      "n_test": 7,
+      "n_train": 5.6,
+      "score": 0.773226,
+      "style": "West Flanders ale"
+    },
+    {
+      "diversity_ratio": 0.821428,
+      "ed_ratio": 0.197301,
+      "hit_rate": 0.993333,
+      "n_test": 11,
+      "n_train": 8.8,
+      "score": 0.796032,
+      "style": "Wheat"
+    }
+  ],
+  "cv_required_styles": [
+    {
+      "diversity_ratio": 0.681867,
+      "ed_ratio": 0.18315,
+      "hit_rate": 1.0,
+      "n_test": 9,
+      "n_train": 7.2,
+      "score": 0.81685,
+      "style": "Kriek"
+    },
+    {
+      "diversity_ratio": 0.830679,
+      "ed_ratio": 0.232379,
+      "hit_rate": 1.0,
+      "n_test": 8,
+      "n_train": 6.4,
+      "score": 0.767621,
+      "style": "Lambic"
+    },
+    {
+      "diversity_ratio": 0.6963,
+      "ed_ratio": 0.142484,
+      "hit_rate": 1.0,
+      "n_test": 23,
+      "n_train": 18.4,
+      "score": 0.857516,
+      "style": "Tripel"
+    }
+  ],
+  "experiment_config": {
+    "admissible": true,
+    "config": {
+      "anchor": true,
+      "k": 15
+    },
+    "evaluation": "training-only 5-fold stratified CV",
+    "family": "A",
+    "mean_diversity_ratio": 0.7518559039668244,
+    "mean_ed_ratio": 0.20612890148826987,
+    "mean_hit_rate": 0.9940350877192983,
+    "n_features": 231,
+    "n_gen_per_style_per_fold": 60,
+    "score": 0.7879061862310284,
+    "seed": 42,
+    "split": {
+      "n_styles_test": 21,
+      "n_styles_train": 22,
+      "n_test": 50,
+      "n_train": 200,
+      "name": "primary",
+      "path": "data/splits/SPLIT-0002/assignment.csv",
+      "sha256": "4a032d281d3b85f860e0322868afde68503abf13260cdf52496a276ed5a0855e",
+      "test_missing_styles": [
+        "West Flanders ale"
+      ]
+    },
+    "stochastic": true
+  }
+}

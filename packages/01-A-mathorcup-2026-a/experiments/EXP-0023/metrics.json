@@ -1,0 +1,15 @@
+{
+  "admissible": 0,
+  "diversity_ratio": 0.12137449372971756,
+  "ed_over_dref_tripel": 0.194823,
+  "energy_distance_ratio": 0.24148457713656665,
+  "gen_style_fidelity": 0.7948245614035088,
+  "n_features": 231.0,
+  "r2": 0.805177,
+  "r2_overall": 0.805177,
+  "seed": 42.0,
+  "selection_score": 0.553339984266942,
+  "stochastic": 1,
+  "style_hit_macro": 0.7948245614035088,
+  "style_hit_tripel": 1.0
+}

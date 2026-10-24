@@ -1,0 +1,2 @@
+/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/lib/python3.12/site-packages/sklearn/model_selection/_split.py:812: UserWarning: The least populated class in y has only 2 members, which is less than n_splits=5.
+  warnings.warn(

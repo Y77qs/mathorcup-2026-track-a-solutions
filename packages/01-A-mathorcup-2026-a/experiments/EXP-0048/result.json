@@ -1,0 +1,65 @@
+{
+  "token": "acba454c4c3968857ae25e9d",
+  "experimentId": "EXP-0048",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-23T14:22:29.171Z",
+  "endedAt": "2026-10-23T14:27:29.641Z",
+  "durationMs": 300469,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "B_primary": 300.0,
+    "B_secondary": 20.0,
+    "frac_seats_agg_ge_0.80": 0.18666666666666668,
+    "frac_seats_m1_ge_0.80": 0.14666666666666667,
+    "frac_seats_m4_ge_0.80": 0.09333333333333334,
+    "freq_ge_080_share": 0.18666666666666668,
+    "jaccard_mean": 0.18666666666666668,
+    "n_final_seats": 150.0,
+    "n_seats_agg_ge_0.80": 28.0,
+    "n_top3_slots_stable": 28.0,
+    "prior_rank_corr_mean": 0.6281971149210783,
+    "r2": 0.45,
+    "r2_50dim": 0.45,
+    "r2_overall": 0.4166666666666667,
+    "top3_stability": 0.45,
+    "top3_stability_agg": 0.45,
+    "top3_stability_m1": 0.36617777777777777,
+    "top3_stability_m4": 0.2387777777777778
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0048/metrics.json",
+      "sha256": "7e997abb12f65ca2f30a185f80e2f0ed90438b1bd644c553a42734c46c57bca0",
+      "bytes": 623,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0048/outputs.json",
+      "sha256": "5214a75f9a80ad9babf132309626887bd0d0f923e0e6b0caed0a47081e02eac2",
+      "bytes": 2419,
+      "kind": "json"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_stability.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_stability.py",
+    "--stages",
+    "m2_m3"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0048",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

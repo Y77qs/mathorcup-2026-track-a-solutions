@@ -1,0 +1,91 @@
+\contentsline {section}{摘要}{2}{section*.2}%
+\contentsline {section}{\numberline {1}问题重述}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}问题的背景}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}三个任务}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}本文的交付边界}{3}{subsection.1.3}%
+\contentsline {section}{\numberline {2}问题分析}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}从``能建模''到``可核对''}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}任务一的分析}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}任务二的分析}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}任务三的分析}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}技术路线}{5}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}评价协议：先登记、后比较}{6}{subsection.2.6}%
+\contentsline {section}{\numberline {3}数据核实与预处理}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}数据资产}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}题面与数据的一致性核对}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}缺失机制与处理政策}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}混合尺度：\(\log _{10}\) 认定与不可验证列}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}LOD/2 左删失替代码}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}目标表性质与``\(z\to 0\)--\(6\)''标定问题}{10}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}2.csv 是 Spearman 的复算证据}{10}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}连接键、脱敏与行序}{11}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}数据划分}{11}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}泄漏清单}{12}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}气味活度值与缺陷化合物的阈值可用性}{12}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}本章数值的来源与可复算性}{13}{subsection.3.12}%
+\contentsline {section}{\numberline {4}假设与符号}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}基本假设}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}符号说明}{13}{subsection.4.2}%
+\contentsline {section}{\numberline {5}问题一模型：缺失条件下的 50 维感官评分}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}任务形式化}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}折内预处理}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}候选模型族}{15}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}选型与锁定协议}{16}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}分级标定：从连续值到 0--6}{16}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}评价指标}{18}{subsection.5.6}%
+\contentsline {section}{\numberline {6}问题二模型：共表达图与稳定 Top-3}{18}{section.6}%
+\contentsline {subsection}{\numberline {6.1}共表达图的构建}{18}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}关键化合物选择的四种打分}{18}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}稳定性与多重比较}{19}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}同数据一致性检查与化学合理性}{20}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}结论边界}{20}{subsection.6.5}%
+\contentsline {section}{\numberline {7}问题三模型：风格条件生成与受限迁移}{20}{section.7}%
+\contentsline {subsection}{\numberline {7.1}生成空间与预处理}{20}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}三族条件生成模型}{21}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}选型判据与可采纳性}{21}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}感官画像}{22}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}跨风格迁移：硬约束可行域}{22}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}评价指标}{22}{subsection.7.6}%
+\contentsline {section}{\numberline {8}结果与验证}{23}{section.8}%
+\contentsline {subsection}{\numberline {8.1}台账事实的四个等级}{23}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}问题一：常数基线、锁定候选与分级敏感性}{23}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}口径纪律：两个 \(R^2\) 不能混用}{23}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}锁定候选：三路等权融合}{24}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}分级敏感性：QWK 只能读作标定一致性}{25}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}备选：更强的四路融合（未改选）}{27}{subsubsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.3}问题二：共表达图、共识 Top-3 与``不可辨识''这一结果}{27}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}共表达图的结构}{27}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}关键化合物：跨方法一致性很差}{28}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}与同数据线性结构的一致性：不是外部验证}{31}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}稳定性：尚无任何席位可标``稳定''}{31}{subsubsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.4}问题三：生成、缺陷偏移与``部分迁移''}{31}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}主候选与对照}{31}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}负结果一：生成模型在分布拟合上没有超过基线}{32}{subsubsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.3}负结果二：生成侧缺陷越阈率系统性高于真实同风格}{33}{subsubsection.8.4.3}%
+\contentsline {subsubsection}{\numberline {8.4.4}负结果三：只能``部分迁移''}{34}{subsubsection.8.4.4}%
+\contentsline {subsubsection}{\numberline {8.4.5}条件 VAE：模式坍塌}{34}{subsubsection.8.4.5}%
+\contentsline {subsubsection}{\numberline {8.4.6}感官画像的版本}{34}{subsubsection.8.4.6}%
+\contentsline {subsection}{\numberline {8.5}失败与未完成项}{35}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}验证状态}{36}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}不可复现验证的处置：\texttt {VAL-0012}}{37}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}预注册与实际结果的偏离}{38}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}台账四类事实对照表}{38}{subsection.8.9}%
+\contentsline {section}{\numberline {9}稳健性与敏感性}{39}{section.9}%
+\contentsline {subsection}{\numberline {9.1}划分敏感性}{39}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}标定敏感性}{39}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}缺失与尺度处理敏感性}{40}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}模型与随机性敏感性}{40}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}消融与稳健性（开发运行，未登记）}{40}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}图阈值敏感性}{41}{subsection.9.6}%
+\contentsline {section}{\numberline {10}模型评价与局限}{41}{section.10}%
+\contentsline {subsection}{\numberline {10.1}优点}{41}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}局限}{42}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}数据边界：每一处边界影响哪条结论}{42}{subsubsection.10.2.1}%
+\contentsline {section}{\numberline {11}结论与建议}{43}{section.11}%
+\contentsline {subsection}{\numberline {11.1}结论}{43}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}对实践的建议}{44}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}后续工作}{44}{subsection.11.3}%
+\contentsline {section}{参考文献}{44}{section*.11}%
+\contentsline {section}{附录 A 复现说明}{46}{section*.12}%
+\contentsline {section}{附录 B 代码与数据清单}{46}{section*.13}%
+\contentsline {section}{附录 C AI 使用说明}{47}{section*.14}%

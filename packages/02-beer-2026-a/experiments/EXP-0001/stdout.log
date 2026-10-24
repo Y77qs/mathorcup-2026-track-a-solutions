@@ -1,0 +1,7 @@
+{
+  "holdout_mae_mean": 0.8011105565397745,
+  "oof_mae_mean": 0.7855967333648494,
+  "holdout_r2_mean": -0.03938361507982333,
+  "n_test": 50,
+  "n_targets": 50
+}

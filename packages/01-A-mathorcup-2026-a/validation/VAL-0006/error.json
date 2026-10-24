@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-23T13:37:42.274Z",
+  "code": "VMU_PACK_MODELING_CONTEST_INVALID_ARGUMENT",
+  "message": "validate.py refused the check spec: holdout-metrics cannot recompute metric 'r2_overall'; this script recomputes ['rmse', 'mae', 'mse', 'r2', 'accuracy', 'f1', 'mape', 'accuracy5', 'weighted-score']. A metric without a definition here would be 'verified' by copying the reported number — declare a decomposable metric or validate it by another check type",
+  "hint": "fix the declared plan params / the recorded evidence named in the message"
+}

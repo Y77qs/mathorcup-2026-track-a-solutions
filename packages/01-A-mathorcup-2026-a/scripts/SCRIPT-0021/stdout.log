@@ -1,0 +1,18 @@
+{
+  "createdAt": "2026-10-23T13:23:54.652663+00:00",
+  "csvPath": "outputs/q2/preregistered_expectations.csv",
+  "csvSha256": "e0eb4e5d18635a026fd26b09b5dc180f6ef5bab079ddf2ce8c2debd6afc541f6",
+  "n_dims_total": 50,
+  "n_dims_preregistered": 48,
+  "n_dims_exploratory": 2,
+  "n_seats_preregistered": 144,
+  "hit_rate_denominator": "n_dims_preregistered * 3 (final Top-3 seats on preregistered dims only)",
+  "statement": "本表在 Q2 任何选择方法运行之前生成；只读了 1.csv 的列名做存在性校验，未读 2.csv/4.csv/6.csv 的数值。命中率必须在选择结果产生之后用本表对照计算，阈值与维度集合不得事后调整。",
+  "sign_convention": "+1 = 该化合物越高、该感官维度越强；-1 = 相反",
+  "exploratory_dims": [
+    "aftertaste",
+    "overall"
+  ]
+}
+
+wrote /Users/baozhashizitou/Documents/MATHORCUP/A/outputs/q2/preregistered_expectations.csv

@@ -1,0 +1,147 @@
+{
+  "checkType": "leakage",
+  "passed": true,
+  "observed": {
+    "maxAbsCorrelation": null,
+    "threshold": 0.999,
+    "forbiddenColumns": [],
+    "forbiddenUsed": [],
+    "checkedColumns": 0,
+    "skippedColumns": 231
+  },
+  "expected": {
+    "forbiddenUsed": [],
+    "maxAbsCorrelation": "below 0.999"
+  },
+  "delta": null,
+  "message": "no forbidden input is used and no feature reaches |r| 0.999 (max None over 0 numeric feature(s))",
+  "details": {
+    "violations": [],
+    "correlations": [],
+    "skipped": [
+      {
+        "column": "acetaldehyde",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "CS2",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "DES",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "DMS",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "ethyl_2.methyl_butyrate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "ethyl_acetate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "ethyl_decanoate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "ethyl_hexanoate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "ethyl_isovalerate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "ethyl_octanoate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "ethyl_propionate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "H2S",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "isoamyl_alcohol",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "isobutanol",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "isobutyl_acetate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "isopentyl_acetate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "MeSH",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "octyl_acetate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "phenethyl_acetate",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "phenethyl_alcohol",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "X4VG",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "SO2.mg.L.",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "acetic_acid.g.L.",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "ammonia.mg.L.",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "color.EBC.",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "betaglucan.mg.L.",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "lactic_acid.mg.L.",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "glycerol",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "iron",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      },
+      {
+        "column": "pH",
+        "why": "fewer than 3 finite numeric pairs (n=0)"
+      }
+    ],
+    "usedBasis": "declared featureColumns (experiment.params.features)",
+    "forbiddenPresentButUnused": [],
+    "featuresPath": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/data/clean/q3.csv"
+  }
+}

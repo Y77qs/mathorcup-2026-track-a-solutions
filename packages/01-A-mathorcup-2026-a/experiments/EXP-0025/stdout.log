@@ -1,0 +1,15 @@
+[Q1final] split=SPLIT-0002 train=200 test=50 feats=231 dims=50
+  fold 0: r2_50dim=+0.2244
+  fold 1: r2_50dim=+0.2160
+  fold 2: r2_50dim=+0.1863
+  fold 3: r2_50dim=+0.2074
+  fold 4: r2_50dim=+0.2187
+[Q1final] bundle -> /Users/baozhashizitou/Documents/MATHORCUP/A/outputs/q1/model_bundle.pkl.gz 38.00 MB
+{
+  "r2_50dim": 0.2206,
+  "holdout_r2_mean": 0.2206,
+  "holdout_mae_mean": 0.3422,
+  "holdout_spearman_mean": 0.4085,
+  "holdout_n_dims_r2_positive": 43.0,
+  "r2": 0.0482
+}

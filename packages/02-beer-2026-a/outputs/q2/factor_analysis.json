@@ -1,0 +1,1111 @@
+{
+  "question": "Q2",
+  "kind": "factor analysis (contemporaneous association, not causal)",
+  "nFeatures": 231.0,
+  "nDims": 50.0,
+  "topK": 3.0,
+  "methodJaccard": {
+    "A_B": 0.22799999999999998,
+    "A_C": 0.614,
+    "B_C": 0.16
+  },
+  "bootstrapStability": 0.47836,
+  "psdMinEigRaw2csv": -0.042412709119481015,
+  "perDimension": [
+    {
+      "dimension": "A_malt_all",
+      "methodA": [
+        "color.EBC.",
+        "protein.g.L.",
+        "methylpyrazine"
+      ],
+      "methodB": [
+        "color.EBC.",
+        "pH",
+        "X2.acetylfuran"
+      ],
+      "methodC": [
+        "color.EBC.",
+        "protein.g.L.",
+        "kcalperc"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.6346666666666666,
+      "top1_abs_rho": 0.5441100199791425
+    },
+    {
+      "dimension": "A_malt_grain",
+      "methodA": [
+        "terpinen.4.ol",
+        "beta.phellandrene",
+        "X2.acetylpyrrole"
+      ],
+      "methodB": [
+        "furfural",
+        "X5.methylfurfural",
+        "phenylacetaldehyde"
+      ],
+      "methodC": [
+        "X5.methylfurfural",
+        "X2.acetylpyrrole",
+        "X2.acetylfuran"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.252,
+      "top1_abs_rho": 0.2459561634746619
+    },
+    {
+      "dimension": "A_malt_bread",
+      "methodA": [
+        "color.EBC.",
+        "glycerol",
+        "CO2.PSI."
+      ],
+      "methodB": [
+        "color.EBC.",
+        "furfural",
+        "gamma.nonalactone"
+      ],
+      "methodC": [
+        "color.EBC.",
+        "glycerol",
+        "kcalperc"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.36533333333333334,
+      "top1_abs_rho": 0.3410998388929692
+    },
+    {
+      "dimension": "A_malt_cara",
+      "methodA": [
+        "color.EBC.",
+        "protein.g.L.",
+        "X2.ethyl.1.hexanol"
+      ],
+      "methodB": [
+        "color.EBC.",
+        "GFS",
+        "X2.acetylfuran"
+      ],
+      "methodC": [
+        "color.EBC.",
+        "protein.g.L.",
+        "kcalperc"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.654,
+      "top1_abs_rho": 0.5530475974474478
+    },
+    {
+      "dimension": "A_malt_burn",
+      "methodA": [
+        "pH",
+        "color.EBC.",
+        "y.methyl.1.octanol"
+      ],
+      "methodB": [
+        "color.EBC.",
+        "pH",
+        "protein.g.L."
+      ],
+      "methodC": [
+        "pH",
+        "color.EBC.",
+        "y.methyl.1.octanol"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.45133333333333336,
+      "top1_abs_rho": 0.2990729695704971
+    },
+    {
+      "dimension": "A_hops_all",
+      "methodA": [
+        "ethyl_octanoate",
+        "aroma_hops_sum",
+        "X.E..2.nonenal"
+      ],
+      "methodB": [
+        "iron",
+        "aroma_hops_sum",
+        "ethyl_octanoate"
+      ],
+      "methodC": [
+        "X.E..2.nonenal",
+        "ethyl_decanoate",
+        "ethyl_octanoate"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.4453333333333333,
+      "top1_abs_rho": 0.47543124235462464
+    },
+    {
+      "dimension": "A_hops_citrus",
+      "methodA": [
+        "citronellol",
+        "aroma_hops_sum",
+        "humulene.epoxide.II"
+      ],
+      "methodB": [
+        "geraniol",
+        "X5.methylfurfural",
+        "color.EBC."
+      ],
+      "methodC": [
+        "X1.2.dihydro.8.hydroxy..2E..linalool",
+        "aroma_hops_sum",
+        "citronellol"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.30066666666666664,
+      "top1_abs_rho": 0.376509895498832
+    },
+    {
+      "dimension": "A_hops_tropical",
+      "methodA": [
+        "DMS",
+        "methyl.geranate",
+        "citronellol"
+      ],
+      "methodB": [
+        "ethyl.nicotinate",
+        "caryophyllene.acetate",
+        "DMS"
+      ],
+      "methodC": [
+        "citronellol",
+        "linalool",
+        "methyl.geranate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.3566666666666667,
+      "top1_abs_rho": 0.33366234980410214
+    },
+    {
+      "dimension": "A_hops_noble",
+      "methodA": [
+        "ethyl_octanoate",
+        "ethyl_decanoate",
+        "X.E..2.nonenal"
+      ],
+      "methodB": [
+        "ethyl_octanoate",
+        "ethyl_decanoate",
+        "manool"
+      ],
+      "methodC": [
+        "ethyl_decanoate",
+        "ethyl_octanoate",
+        "isopentyl.hexanoate"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.6833333333333332,
+      "top1_abs_rho": 0.5029173887170985
+    },
+    {
+      "dimension": "A_hops_woody",
+      "methodA": [
+        "ethyl.tetradecanoate",
+        "X2.phenyl.ethyl.butyrate",
+        "X2.methylbutyl.octanoate"
+      ],
+      "methodB": [
+        "iron",
+        "X.E..ortho.methoxy.cinnamaldehyde",
+        "ethyl_2.methyl_butyrate"
+      ],
+      "methodC": [
+        "X2.methylbutyl.octanoate",
+        "ethyl.tetradecanoate",
+        "X2.phenyl.ethyl.butyrate"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.206,
+      "top1_abs_rho": 0.3063700644120244
+    },
+    {
+      "dimension": "A_esters_all",
+      "methodA": [
+        "kcalperc",
+        "n.hexanol",
+        "acetaldehyde"
+      ],
+      "methodB": [
+        "acetaldehyde",
+        "kcalperc",
+        "protein.g.L."
+      ],
+      "methodC": [
+        "kcalperc",
+        "esters_sum",
+        "ethyl_acetate"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.5846666666666667,
+      "top1_abs_rho": 0.4104687617190428
+    },
+    {
+      "dimension": "A_esters_ethac",
+      "methodA": [
+        "ethyl_acetate",
+        "esters_sum",
+        "ethanol..v.v."
+      ],
+      "methodB": [
+        "ethyl_acetate",
+        "terpinen.4.ol.acetate",
+        "unfermentables"
+      ],
+      "methodC": [
+        "esters_sum",
+        "ethyl_acetate",
+        "ethanol..v.v."
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.45333333333333337,
+      "top1_abs_rho": 0.3998058943500745
+    },
+    {
+      "dimension": "A_esters_isoaa",
+      "methodA": [
+        "n.hexanol",
+        "isopentyl_acetate",
+        "esters_sum"
+      ],
+      "methodB": [
+        "n.hexanol",
+        "acetaldehyde",
+        "ambroxide"
+      ],
+      "methodC": [
+        "n.hexanol",
+        "isopentyl_acetate",
+        "esters_sum"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.4346666666666667,
+      "top1_abs_rho": 0.3322993059317005
+    },
+    {
+      "dimension": "A_esters_flower",
+      "methodA": [
+        "acetaldehyde",
+        "n.hexanol",
+        "Z.Z.geranyl.linalool"
+      ],
+      "methodB": [
+        "X2.methyltetrahydrofuran.3.one",
+        "beta.phellandrene",
+        "terpinen.4.ol.acetate"
+      ],
+      "methodC": [
+        "n.hexanol",
+        "acetaldehyde",
+        "Z.Z.geranyl.linalool"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.17866666666666667,
+      "top1_abs_rho": 0.21711739455207188
+    },
+    {
+      "dimension": "A_esters_fruity",
+      "methodA": [
+        "benzaldehyde",
+        "eugenol",
+        "lactic_acid.mg.L."
+      ],
+      "methodB": [
+        "X2.methyltetrahydrofuran.3.one",
+        "beta.phellandrene",
+        "meta.cymenene"
+      ],
+      "methodC": [
+        "neryl.formate",
+        "X4.ethyl.guaiacol",
+        "eugenol"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.24,
+      "top1_abs_rho": 0.23020853216711656
+    },
+    {
+      "dimension": "F_malt_all",
+      "methodA": [
+        "color.EBC.",
+        "kcalperc",
+        "ethanol..v.v."
+      ],
+      "methodB": [
+        "color.EBC.",
+        "pH",
+        "X2.6.dimethyl.pyrazine"
+      ],
+      "methodC": [
+        "kcalperc",
+        "ethanol..v.v.",
+        "acetaldehyde"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.6553333333333334,
+      "top1_abs_rho": 0.49052359756307007
+    },
+    {
+      "dimension": "F_malt_grain",
+      "methodA": [
+        "X.E..2.nonenal",
+        "X2.3.butanedione",
+        "terpinen.4.ol"
+      ],
+      "methodB": [
+        "terpinen.4.ol",
+        "octyl_acetate",
+        "X2.3.butanedione"
+      ],
+      "methodC": [
+        "isoborneol",
+        "terpinen.4.ol",
+        "X1.octen.3.ol"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.272,
+      "top1_abs_rho": 0.2599086926489087
+    },
+    {
+      "dimension": "F_malt_bread",
+      "methodA": [
+        "esters_sum",
+        "ethyl.butyrate",
+        "glycerol"
+      ],
+      "methodB": [
+        "color.EBC.",
+        "CO2.PSI.",
+        "terpinen.4.ol"
+      ],
+      "methodC": [
+        "esters_sum",
+        "isopentyl_acetate",
+        "ethyl.butyrate"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.322,
+      "top1_abs_rho": 0.3816740131901004
+    },
+    {
+      "dimension": "F_malt_cara",
+      "methodA": [
+        "color.EBC.",
+        "kcalperc",
+        "acetaldehyde"
+      ],
+      "methodB": [
+        "color.EBC.",
+        "GFS",
+        "kcalperc"
+      ],
+      "methodC": [
+        "kcalperc",
+        "color.EBC.",
+        "acetaldehyde"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.8186666666666667,
+      "top1_abs_rho": 0.4755480651560562
+    },
+    {
+      "dimension": "F_malt_burn",
+      "methodA": [
+        "pH",
+        "bitterness",
+        "ethanol..v.v."
+      ],
+      "methodB": [
+        "color.EBC.",
+        "pH",
+        "protein.g.L."
+      ],
+      "methodC": [
+        "ethanol..v.v.",
+        "pH",
+        "MeSH"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.634,
+      "top1_abs_rho": 0.4741215213742295
+    },
+    {
+      "dimension": "F_hops_all",
+      "methodA": [
+        "bitterness",
+        "ethyl_octanoate",
+        "cis.dihydro.beta.terpineol"
+      ],
+      "methodB": [
+        "cis.dihydro.beta.terpineol",
+        "iron",
+        "manool"
+      ],
+      "methodC": [
+        "bitterness",
+        "cis.dihydro.beta.terpineol",
+        "X.E..2.nonenal"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.58,
+      "top1_abs_rho": 0.5912082802070051
+    },
+    {
+      "dimension": "F_hops_citrus",
+      "methodA": [
+        "humulene.epoxide.II",
+        "X2.undecanol",
+        "nerol.oxide"
+      ],
+      "methodB": [
+        "geraniol",
+        "color.EBC.",
+        "geosmin"
+      ],
+      "methodC": [
+        "humulene.epoxide.II",
+        "nerol.oxide",
+        "X2.undecanol"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.2773333333333333,
+      "top1_abs_rho": 0.31531266124488966
+    },
+    {
+      "dimension": "F_hops_tropical",
+      "methodA": [
+        "hexyl.acetate",
+        "DMS",
+        "geraniol"
+      ],
+      "methodB": [
+        "caryophyllene.acetate",
+        "GFS",
+        "DMS"
+      ],
+      "methodC": [
+        "DMS",
+        "geraniol",
+        "hexyl.acetate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.3866666666666667,
+      "top1_abs_rho": 0.2944601355013036
+    },
+    {
+      "dimension": "F_hops_noble",
+      "methodA": [
+        "bitterness",
+        "ethyl_octanoate",
+        "ethyl_decanoate"
+      ],
+      "methodB": [
+        "cis.dihydro.beta.terpineol",
+        "iron",
+        "manool"
+      ],
+      "methodC": [
+        "ethyl_octanoate",
+        "bitterness",
+        "ethyl_decanoate"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.6699999999999999,
+      "top1_abs_rho": 0.5484627399370999
+    },
+    {
+      "dimension": "F_hops_woody",
+      "methodA": [
+        "bitterness",
+        "X9.epi..E..caryophyllene",
+        "ethyl.tetradecanoate"
+      ],
+      "methodB": [
+        "manool",
+        "cis.dihydro.beta.terpineol",
+        "iron"
+      ],
+      "methodC": [
+        "ethyl.tetradecanoate",
+        "ethyl_decanoate",
+        "alpha.muurolol"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.4046666666666667,
+      "top1_abs_rho": 0.38332807728135526
+    },
+    {
+      "dimension": "F_esters_all",
+      "methodA": [
+        "kcalperc",
+        "protein.g.L.",
+        "acetaldehyde"
+      ],
+      "methodB": [
+        "kcalperc",
+        "acetaldehyde",
+        "protein.g.L."
+      ],
+      "methodC": [
+        "kcalperc",
+        "ethyl_acetate",
+        "esters_sum"
+      ],
+      "jaccard_A_B": 1.0,
+      "stability_A": 0.7120000000000001,
+      "top1_abs_rho": 0.5192184804620117
+    },
+    {
+      "dimension": "F_esters_ethac",
+      "methodA": [
+        "ethyl_acetate",
+        "ethanol..v.v.",
+        "glycerol"
+      ],
+      "methodB": [
+        "ethyl_acetate",
+        "heptyl.acetate",
+        "kcalperc"
+      ],
+      "methodC": [
+        "ethyl_acetate",
+        "ethanol..v.v.",
+        "esters_sum"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.7333333333333334,
+      "top1_abs_rho": 0.5500966404309541
+    },
+    {
+      "dimension": "F_esters_isoaa",
+      "methodA": [
+        "kcalperc",
+        "n.hexanol",
+        "protein.g.L."
+      ],
+      "methodB": [
+        "X2.methyltetrahydrofuran.3.one",
+        "kcalperc",
+        "X13.epi.manool.oxide"
+      ],
+      "methodC": [
+        "kcalperc",
+        "n.hexanol",
+        "isopentyl_acetate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.5646666666666667,
+      "top1_abs_rho": 0.3396111364679317
+    },
+    {
+      "dimension": "F_esters_flower",
+      "methodA": [
+        "isopentyl.butanoate",
+        "X5.methylfurfural",
+        "beta.phellandrene"
+      ],
+      "methodB": [
+        "X2.methyltetrahydrofuran.3.one",
+        "beta.phellandrene",
+        "eucalyptol"
+      ],
+      "methodC": [
+        "beta.phellandrene",
+        "isopentyl.butanoate",
+        "X5.methylfurfural"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.306,
+      "top1_abs_rho": 0.2514515315719341
+    },
+    {
+      "dimension": "F_esters_fruity",
+      "methodA": [
+        "DES",
+        "acids_sum",
+        "humulene.epoxide.II"
+      ],
+      "methodB": [
+        "beta.phellandrene",
+        "X2.methyltetrahydrofuran.3.one",
+        "kcalperc"
+      ],
+      "methodC": [
+        "acids_sum",
+        "protein.g.L.",
+        "acetic_acid.g.L."
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.4253333333333333,
+      "top1_abs_rho": 0.30561026508609
+    },
+    {
+      "dimension": "acidity",
+      "methodA": [
+        "acids_sum",
+        "pH",
+        "X4.ethyl.guaiacol"
+      ],
+      "methodB": [
+        "lactic_acid.mg.L.",
+        "acids_sum",
+        "pH"
+      ],
+      "methodC": [
+        "X4.ethyl.guaiacol",
+        "acids_sum",
+        "ethyl.phenylacetate"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.45,
+      "top1_abs_rho": 0.4651442137921946
+    },
+    {
+      "dimension": "bitternes",
+      "methodA": [
+        "bitterness",
+        "ethyl_octanoate",
+        "ethyl_decanoate"
+      ],
+      "methodB": [
+        "cis.dihydro.beta.terpineol",
+        "bitterness",
+        "iron"
+      ],
+      "methodC": [
+        "bitterness",
+        "ethyl_octanoate",
+        "ethyl_decanoate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.7853333333333333,
+      "top1_abs_rho": 0.7071287085644447
+    },
+    {
+      "dimension": "sweetness",
+      "methodA": [
+        "ethyl_decanoate",
+        "pentyl.octanoate",
+        "GFS"
+      ],
+      "methodB": [
+        "GFS",
+        "kcalperc",
+        "protein.g.L."
+      ],
+      "methodC": [
+        "pentyl.octanoate",
+        "ethyl_decanoate",
+        "X2.butyloctanoate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.4246666666666667,
+      "top1_abs_rho": 0.40539578691812184
+    },
+    {
+      "dimension": "X4vg",
+      "methodA": [
+        "X4VG",
+        "delta.terpinyl.acetate",
+        "X2Z.6E.farnesol"
+      ],
+      "methodB": [
+        "X4VG",
+        "tau.cadinol",
+        "delta.terpinyl.acetate"
+      ],
+      "methodC": [
+        "X4VG",
+        "prenyl.isobutyrate",
+        "neryl.formate"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.5433333333333333,
+      "top1_abs_rho": 0.486115866115095
+    },
+    {
+      "dimension": "diacetyl",
+      "methodA": [
+        "eugenol",
+        "ethyl_decanoate",
+        "alpha.calacorene"
+      ],
+      "methodB": [
+        "beta.phellandrene",
+        "X2.phenyl.ethyl.butyrate",
+        "dehydroxy.cis.linalool.oxide"
+      ],
+      "methodC": [
+        "X2.methylbutyl.octanoate",
+        "pentyl.octanoate",
+        "eugenol"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.47466666666666674,
+      "top1_abs_rho": 0.3874319397209721
+    },
+    {
+      "dimension": "dms",
+      "methodA": [
+        "protein.g.L.",
+        "color.EBC.",
+        "X5.methylfurfural"
+      ],
+      "methodB": [
+        "SO2.mg.L.",
+        "color.EBC.",
+        "protein.g.L."
+      ],
+      "methodC": [
+        "protein.g.L.",
+        "color.EBC.",
+        "X5.methylfurfural"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.432,
+      "top1_abs_rho": 0.3374766312458518
+    },
+    {
+      "dimension": "metallic",
+      "methodA": [
+        "iron",
+        "ethyl_isovalerate",
+        "H2S"
+      ],
+      "methodB": [
+        "iron",
+        "ethyl_isovalerate",
+        "germacrene.D"
+      ],
+      "methodC": [
+        "iron",
+        "E.nerolidol",
+        "H2S"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.27133333333333337,
+      "top1_abs_rho": 0.27120694532336537
+    },
+    {
+      "dimension": "stale_hops",
+      "methodA": [
+        "X2.undecanol",
+        "X.E..ortho.methoxy.cinnamaldehyde",
+        "alloaromadendrene.epoxide"
+      ],
+      "methodB": [
+        "GFS",
+        "gamma.eudesmol",
+        "X.E..ortho.methoxy.cinnamaldehyde"
+      ],
+      "methodC": [
+        "alloaromadendrene.epoxide",
+        "X2.undecanol",
+        "X.E..ortho.methoxy.cinnamaldehyde"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.4073333333333333,
+      "top1_abs_rho": 0.3131920392851821
+    },
+    {
+      "dimension": "t2n",
+      "methodA": [
+        "beta.phellandrene",
+        "terpinen.4.ol",
+        "geraniol"
+      ],
+      "methodB": [
+        "germacrene.D",
+        "kcalperc",
+        "glycerol"
+      ],
+      "methodC": [
+        "beta.phellandrene",
+        "linalool",
+        "terpinen.4.ol"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.24400000000000002,
+      "top1_abs_rho": 0.2630996069008701
+    },
+    {
+      "dimension": "orange",
+      "methodA": [
+        "camphor",
+        "ethyl..E..linalool",
+        "terpinen.4.ol"
+      ],
+      "methodB": [
+        "X1.alpha.terpineol",
+        "geraniol",
+        "limonene"
+      ],
+      "methodC": [
+        "camphor",
+        "terpinen.4.ol",
+        "ethyl..E..linalool"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.4733333333333334,
+      "top1_abs_rho": 0.37020990619872435
+    },
+    {
+      "dimension": "coriander",
+      "methodA": [
+        "X2.methyl.benzofuran",
+        "X4VG",
+        "E.ocimenone"
+      ],
+      "methodB": [
+        "x.methyl.1.octanol",
+        "geraniol",
+        "limonene"
+      ],
+      "methodC": [
+        "ethyl..E..linalool",
+        "terpinen.4.ol",
+        "X2.methyl.benzofuran"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.18400000000000002,
+      "top1_abs_rho": 0.22633838449446533
+    },
+    {
+      "dimension": "clove",
+      "methodA": [
+        "limonene",
+        "X3.methyl.2.butenal",
+        "octyl_acetate"
+      ],
+      "methodB": [
+        "linalool",
+        "limonene",
+        "alloaromadendrene.epoxide"
+      ],
+      "methodC": [
+        "limonene",
+        "eucalyptol",
+        "beta.cyclohomocitral"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.414,
+      "top1_abs_rho": 0.3675853272561536
+    },
+    {
+      "dimension": "lactic",
+      "methodA": [
+        "acids_sum",
+        "pH",
+        "ethyl.furoate"
+      ],
+      "methodB": [
+        "pH",
+        "lactic_acid.mg.L.",
+        "bitterness"
+      ],
+      "methodC": [
+        "acids_sum",
+        "ethyl.furoate",
+        "perillyl.acetate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.5026666666666667,
+      "top1_abs_rho": 0.5012562523082853
+    },
+    {
+      "dimension": "acetic",
+      "methodA": [
+        "X4.ethyl.guaiacol",
+        "prenyl.isobutyrate",
+        "neryl.formate"
+      ],
+      "methodB": [
+        "acids_sum",
+        "lactic_acid.mg.L.",
+        "acetic_acid.g.L."
+      ],
+      "methodC": [
+        "X4.ethyl.guaiacol",
+        "prenyl.isobutyrate",
+        "neryl.formate"
+      ],
+      "jaccard_A_B": 0.0,
+      "stability_A": 0.39866666666666667,
+      "top1_abs_rho": 0.4154415567320756
+    },
+    {
+      "dimension": "barnyard",
+      "methodA": [
+        "X2.undecanol",
+        "gamma.eudesmol",
+        "neryl.formate"
+      ],
+      "methodB": [
+        "GFS",
+        "gamma.eudesmol",
+        "propyl.acetate"
+      ],
+      "methodC": [
+        "X2.undecanol",
+        "alloaromadendrene.epoxide",
+        "neryl.formate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.38000000000000006,
+      "top1_abs_rho": 0.2923692107588042
+    },
+    {
+      "dimension": "alcohol",
+      "methodA": [
+        "ethanol..v.v.",
+        "kcalperc",
+        "esters_sum"
+      ],
+      "methodB": [
+        "kcalperc",
+        "ethanol..v.v.",
+        "acetaldehyde"
+      ],
+      "methodC": [
+        "ethanol..v.v.",
+        "kcalperc",
+        "esters_sum"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.8593333333333333,
+      "top1_abs_rho": 0.8145174990693279
+    },
+    {
+      "dimension": "aftertaste",
+      "methodA": [
+        "ethyl_octanoate",
+        "ethyl_decanoate",
+        "X.E..2.nonenal"
+      ],
+      "methodB": [
+        "ethyl_octanoate",
+        "cis.dihydro.beta.terpineol",
+        "kcalperc"
+      ],
+      "methodC": [
+        "ethyl_octanoate",
+        "ethyl_decanoate",
+        "ethanol..v.v."
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.6733333333333332,
+      "top1_abs_rho": 0.5468041701042525
+    },
+    {
+      "dimension": "body",
+      "methodA": [
+        "ethanol..v.v.",
+        "kcalperc",
+        "ethyl_hexanoate"
+      ],
+      "methodB": [
+        "kcalperc",
+        "color.EBC.",
+        "acetaldehyde"
+      ],
+      "methodC": [
+        "ethanol..v.v.",
+        "kcalperc",
+        "ethyl_hexanoate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.7366666666666667,
+      "top1_abs_rho": 0.713871539360719
+    },
+    {
+      "dimension": "co2",
+      "methodA": [
+        "ethyl_octanoate",
+        "ethanol..v.v.",
+        "CO2.PSI."
+      ],
+      "methodB": [
+        "ethyl_octanoate",
+        "X3.methyl.2.hexanol",
+        "kcalperc"
+      ],
+      "methodC": [
+        "ethyl_octanoate",
+        "ethanol..v.v.",
+        "ethyl_hexanoate"
+      ],
+      "jaccard_A_B": 0.2,
+      "stability_A": 0.6566666666666666,
+      "top1_abs_rho": 0.5384469130904572
+    },
+    {
+      "dimension": "overall",
+      "methodA": [
+        "esters_sum",
+        "ethyl_acetate",
+        "ethyl_octanoate"
+      ],
+      "methodB": [
+        "unfermentables",
+        "ethyl_acetate",
+        "esters_sum"
+      ],
+      "methodC": [
+        "esters_sum",
+        "ethyl_acetate",
+        "ethyl_octanoate"
+      ],
+      "jaccard_A_B": 0.5,
+      "stability_A": 0.6040000000000001,
+      "top1_abs_rho": 0.34848271206780157
+    }
+  ],
+  "mostStable": [
+    {
+      "dimension": "alcohol",
+      "stability_A": 0.8593333333333333
+    },
+    {
+      "dimension": "F_malt_cara",
+      "stability_A": 0.8186666666666667
+    },
+    {
+      "dimension": "bitternes",
+      "stability_A": 0.7853333333333333
+    },
+    {
+      "dimension": "body",
+      "stability_A": 0.7366666666666667
+    },
+    {
+      "dimension": "F_esters_ethac",
+      "stability_A": 0.7333333333333334
+    }
+  ],
+  "leastStable": [
+    {
+      "dimension": "t2n",
+      "stability_A": 0.24400000000000002
+    },
+    {
+      "dimension": "A_esters_fruity",
+      "stability_A": 0.24
+    },
+    {
+      "dimension": "A_hops_woody",
+      "stability_A": 0.206
+    },
+    {
+      "dimension": "coriander",
+      "stability_A": 0.18400000000000002
+    },
+    {
+      "dimension": "A_esters_flower",
+      "stability_A": 0.17866666666666667
+    }
+  ],
+  "interpretation": "A(Spearman) 与 C(网络平滑) 一致性高；B(Ridge 系数) 与 A 差异大 → Top-3 方法依赖，只能交付候选簇 + 入选频率；2.csv 为实测 Spearman 且非 PSD（已投影）。"
+}

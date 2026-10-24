@@ -1,0 +1,35 @@
+{
+  "token": "177b3b4a9fe9f7438933e58e",
+  "experimentId": "EXP-0004",
+  "status": "failed",
+  "exitCode": 0,
+  "startedAt": "2026-10-23T13:32:28.932Z",
+  "endedAt": "2026-10-23T13:32:31.206Z",
+  "durationMs": 2273,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": "the script exited without writing metrics.json: an experiment with no measured outcome is not a success (call modeling_contract.emit_metrics({...}) from the script)",
+  "outputs": [],
+  "figures": [],
+  "failure": {
+    "code": "NO_OUTPUT",
+    "message": "the script exited without writing metrics.json: an experiment with no measured outcome is not a success (call modeling_contract.emit_metrics({...}) from the script)",
+    "hint": "import modeling_contract and call emit_metrics({...}) before the script exits"
+  },
+  "error": "the script exited without writing metrics.json: an experiment with no measured outcome is not a success (call modeling_contract.emit_metrics({...}) from the script)",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/08b_baseline_ridge.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/08b_baseline_ridge.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0004",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

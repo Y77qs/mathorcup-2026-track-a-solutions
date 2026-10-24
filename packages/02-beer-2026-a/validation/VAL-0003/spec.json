@@ -1,0 +1,75 @@
+{
+  "checkType": "holdout-metrics",
+  "evaluation": {
+    "kind": "multi-output",
+    "targetContractId": "TGT-0001",
+    "metric": "mae",
+    "metricKey": "mae",
+    "predictionsFile": "predictions.csv",
+    "idColumn": "row",
+    "aggregation": "uniform-average"
+  },
+  "experimentId": "EXP-0002",
+  "validationPlanId": "VP-0001",
+  "provenanceSummary": {
+    "configSha256": "45f3b9b2291b2de1c176327ba5a95820ae11be3d4a1be1ab0bcf7ef45eb91aa5",
+    "experiment": {
+      "id": "EXP-0002",
+      "status": "succeeded",
+      "metricsSha256": "0bd1cccaea2ca84addcc15f031d1e7521c10ad7fbb22ca412ffcc3f04a15facd",
+      "configSha256": "7759c324128249593a812ad4ab02713cbe3343c25fb114ee27fad76508ce0501"
+    },
+    "inputs": [
+      {
+        "kind": "experiment-code",
+        "path": "src/q1_candidate.py",
+        "sha256": "b8fd8bb4d4293f6041be1490b0736876cc713efbdb1f086e81b6520fa0186887"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "src/emit.py",
+        "sha256": "f5bb77c493345d55e475b2797f9a8c42d087fa0c739abc37fc48d136882408c8"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "src/lib.py",
+        "sha256": "fbc2c314fa8d92d9357ca730c7dfdd4db5b8b49f0739c12cc40beab0864b271e"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "src/q1_candidate.py",
+        "sha256": "b8fd8bb4d4293f6041be1490b0736876cc713efbdb1f086e81b6520fa0186887"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "src/q1_common.py",
+        "sha256": "2793024515d363cb199bc8a8a194c62744ebb523850c55b7c2fc8c19a9325636"
+      },
+      {
+        "kind": "dataset",
+        "path": "data/clean/q1_mapped.csv",
+        "sha256": "28a7108210a5abf6171ecd99b92e5899c96d81f78113f1b8f29bf973af67e3dd"
+      },
+      {
+        "kind": "split-assignment",
+        "path": "data/splits/SPLIT-0002/assignment.csv",
+        "sha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+      },
+      {
+        "kind": "split-train",
+        "path": "data/splits/SPLIT-0002/train.csv",
+        "sha256": "69e50db79ef4a0bfefacbe24817e56f0d6f3b19cbaf51954b57ffbb773af26a9"
+      },
+      {
+        "kind": "split-test",
+        "path": "data/splits/SPLIT-0002/test.csv",
+        "sha256": "dc8a58a04baf408daa3da8462ec99d885d167ffe0bcf95c84c0988cd17188a82"
+      },
+      {
+        "kind": "evaluation-artifact",
+        "path": "experiments/EXP-0002/predictions.csv",
+        "sha256": "186fabdf342bb365ad38740e71df5ebe381f130f6348e79d96819c9bee371968"
+      }
+    ]
+  }
+}

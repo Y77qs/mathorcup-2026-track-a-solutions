@@ -1,0 +1,293 @@
+{
+  "checkType": "leakage",
+  "passed": true,
+  "observed": {
+    "maxAbsCorrelation": 0.40131074852276954,
+    "threshold": 0.999,
+    "forbiddenColumns": [
+      "A_malt_all",
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_hops_all",
+      "A_hops_citrus",
+      "acidity",
+      "bitternes",
+      "sweetness",
+      "X4vg",
+      "diacetyl",
+      "dms",
+      "metallic",
+      "stale_hops",
+      "t2n",
+      "orange",
+      "coriander",
+      "clove",
+      "lactic",
+      "acetic",
+      "barnyard",
+      "alcohol",
+      "aftertaste",
+      "body",
+      "co2",
+      "overall",
+      "GBM importance MDI",
+      "GBM SHAP Values",
+      "6.csv cross-correlation rows",
+      "7.csv Ratebeer palate columns"
+    ],
+    "forbiddenUsed": [],
+    "checkedColumns": 231,
+    "skippedColumns": 0
+  },
+  "expected": {
+    "forbiddenUsed": [],
+    "maxAbsCorrelation": "below 0.999"
+  },
+  "delta": null,
+  "message": "no forbidden input is used and no feature reaches |r| 0.999 (max 0.401310748523 over 231 numeric feature(s))",
+  "details": {
+    "violations": [],
+    "correlations": [
+      {
+        "column": "ethyl_acetate",
+        "correlation": 0.40131074852276954,
+        "absCorrelation": 0.40131074852276954,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "esters_sum",
+        "correlation": 0.39820438708495143,
+        "absCorrelation": 0.39820438708495143,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "ethyl_octanoate",
+        "correlation": 0.37369069591980597,
+        "absCorrelation": 0.37369069591980597,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "ethyl_hexanoate",
+        "correlation": 0.34470115436324356,
+        "absCorrelation": 0.34470115436324356,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "kcalperc",
+        "correlation": 0.3326496739360366,
+        "absCorrelation": 0.3326496739360366,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "isobutyl_acetate",
+        "correlation": 0.31973411778013267,
+        "absCorrelation": 0.31973411778013267,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "ethanol..v.v.",
+        "correlation": 0.3039938131587651,
+        "absCorrelation": 0.3039938131587651,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "isopentyl.hexanoate",
+        "correlation": 0.29956198762992403,
+        "absCorrelation": 0.29956198762992403,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X2.butyloctanoate",
+        "correlation": 0.2907325268939419,
+        "absCorrelation": 0.2907325268939419,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "acetaldehyde",
+        "correlation": 0.2836259243529331,
+        "absCorrelation": 0.2836259243529331,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "ethyl_decanoate",
+        "correlation": 0.28227615494883246,
+        "absCorrelation": 0.28227615494883246,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "isopentyl_acetate",
+        "correlation": 0.28066900866233846,
+        "absCorrelation": 0.28066900866233846,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "glycerol",
+        "correlation": 0.2698896618322799,
+        "absCorrelation": 0.2698896618322799,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "MeSH",
+        "correlation": 0.2644371766175164,
+        "absCorrelation": 0.2644371766175164,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "unfermentables",
+        "correlation": 0.26100516126016166,
+        "absCorrelation": 0.26100516126016166,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "ethyl.hexadecanoate",
+        "correlation": 0.2519865774572409,
+        "absCorrelation": 0.2519865774572409,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X3.methyl.2.hexanol",
+        "correlation": -0.24943902064833715,
+        "absCorrelation": 0.24943902064833715,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "pentyl.octanoate",
+        "correlation": 0.2441127649025444,
+        "absCorrelation": 0.2441127649025444,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "isoamyl_alcohol",
+        "correlation": 0.23643474078136512,
+        "absCorrelation": 0.23643474078136512,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "DMS",
+        "correlation": 0.22807542953325044,
+        "absCorrelation": 0.22807542953325044,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "trans.dihydro.alpha.terpinyl.acetate",
+        "correlation": 0.22453688312618314,
+        "absCorrelation": 0.22453688312618314,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "isopentyl.formate",
+        "correlation": 0.20965558184173982,
+        "absCorrelation": 0.20965558184173982,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "cis.linalool.oxide",
+        "correlation": -0.2023845551098284,
+        "absCorrelation": 0.2023845551098284,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "betaglucan.mg.L.",
+        "correlation": 0.19966985360340594,
+        "absCorrelation": 0.19966985360340594,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "ethyl.tetradecanoate",
+        "correlation": 0.19956327779986466,
+        "absCorrelation": 0.19956327779986466,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "Z.Z.geranyl.linalool",
+        "correlation": 0.19353391451232058,
+        "absCorrelation": 0.19353391451232058,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "nerol.oxide",
+        "correlation": 0.19329280094330856,
+        "absCorrelation": 0.19329280094330856,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "sulfur_sum",
+        "correlation": 0.18576296653020727,
+        "absCorrelation": 0.18576296653020727,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "DES",
+        "correlation": 0.18558140903790374,
+        "absCorrelation": 0.18558140903790374,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X2.methylbutyl.octanoate",
+        "correlation": 0.17849072979652186,
+        "absCorrelation": 0.17849072979652186,
+        "forbidden": false,
+        "pairs": 250
+      }
+    ],
+    "skipped": [],
+    "usedBasis": "declared featureColumns (experiment.params.features)",
+    "forbiddenPresentButUnused": [
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_malt_all",
+      "X4vg",
+      "acetic",
+      "acidity",
+      "aftertaste",
+      "alcohol",
+      "barnyard",
+      "bitternes",
+      "body",
+      "clove",
+      "co2",
+      "coriander",
+      "diacetyl",
+      "dms",
+      "lactic",
+      "metallic",
+      "orange",
+      "overall",
+      "stale_hops",
+      "sweetness",
+      "t2n"
+    ],
+    "featuresPath": "/Users/baozhashizitou/Documents/MATHORCUP/A/data/clean/model_table.csv"
+  }
+}

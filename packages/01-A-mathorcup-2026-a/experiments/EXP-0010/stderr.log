@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_exp_family.py", line 113, in <module>
+    main()
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_exp_family.py", line 97, in main
+    E.emit_output("cv_per_style", out["per_style"], area="q3_exp")
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/emit.py", line 82, in emit_output
+    return _mc.emit_output(name, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py", line 285, in emit_output
+    merged[key] = _jsonable(value, 'output ' + key)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py", line 143, in _jsonable
+    return [_jsonable(v, name + '[' + str(i) + ']') for i, v in enumerate(value)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py", line 149, in _jsonable
+    out[k] = _jsonable(v, name + '.' + k)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py", line 130, in _jsonable
+    raise ValueError('value %r is not finite (NaN/Infinity); a metric must be a real measurement' % (name,))
+ValueError: value 'output cv_per_style[7].ed_ratio' is not finite (NaN/Infinity); a metric must be a real measurement

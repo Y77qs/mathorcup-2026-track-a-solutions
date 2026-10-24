@@ -1,0 +1,7 @@
+{
+  "topk_jaccard": 0.22799999999999998,
+  "jaccard_A_C": 0.614,
+  "jaccard_B_C": 0.16,
+  "bootstrap_stability_A": 0.47836,
+  "psd_min_eig_raw_2csv": -0.042412709119481015
+}

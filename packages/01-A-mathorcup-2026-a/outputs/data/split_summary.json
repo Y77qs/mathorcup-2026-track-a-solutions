@@ -1,0 +1,287 @@
+{
+  "generated_by": "src/04_split.py",
+  "canonical": {
+    "method": "stratified-random-holdout",
+    "stratify": "tasting_category_fine",
+    "testFraction": 0.2,
+    "seed": 42,
+    "rows": 250,
+    "train": 200,
+    "test": 50,
+    "columns": 284,
+    "schema": "DATA-0002 model_table 全列（3 键 + 231 特征 + 50 目标）；train/test 与 SPLIT-0002 同 schema",
+    "disjoint": true,
+    "coverage": 250,
+    "n_styles": 22,
+    "min_class": {
+      "style": "Faro",
+      "n": 3
+    },
+    "every_class_in_test": true,
+    "role": "稳健性复核（robustness），非主评估口径",
+    "files": {
+      "train": "data/splits/stratified/train.csv",
+      "test": "data/splits/stratified/test.csv",
+      "assignment": "data/splits/stratified/assignment.csv"
+    },
+    "authoritative_ledger_split": "SPLIT-0001（data/splits/SPLIT-0001/assignment.csv，由 modeling_data register-split 生成；主评估口径）"
+  },
+  "class_counts": [
+    {
+      "style": "Blond",
+      "n_total": 31,
+      "n_train": 25,
+      "n_test": 6
+    },
+    {
+      "style": "Tripel",
+      "n_total": 28,
+      "n_train": 22,
+      "n_test": 6
+    },
+    {
+      "style": "Strong ale",
+      "n_total": 18,
+      "n_train": 14,
+      "n_test": 4
+    },
+    {
+      "style": "Hoppy",
+      "n_total": 17,
+      "n_train": 14,
+      "n_test": 3
+    },
+    {
+      "style": "Stout/Porter",
+      "n_total": 13,
+      "n_train": 10,
+      "n_test": 3
+    },
+    {
+      "style": "Amber",
+      "n_total": 12,
+      "n_train": 10,
+      "n_test": 2
+    },
+    {
+      "style": "Brown",
+      "n_total": 12,
+      "n_train": 10,
+      "n_test": 2
+    },
+    {
+      "style": "Wheat",
+      "n_total": 12,
+      "n_train": 10,
+      "n_test": 2
+    },
+    {
+      "style": "Lambic",
+      "n_total": 11,
+      "n_train": 9,
+      "n_test": 2
+    },
+    {
+      "style": "Pils/Lager",
+      "n_total": 11,
+      "n_train": 9,
+      "n_test": 2
+    },
+    {
+      "style": "Dubbel",
+      "n_total": 10,
+      "n_train": 8,
+      "n_test": 2
+    },
+    {
+      "style": "Kriek",
+      "n_total": 10,
+      "n_train": 8,
+      "n_test": 2
+    },
+    {
+      "style": "Saison",
+      "n_total": 10,
+      "n_train": 8,
+      "n_test": 2
+    },
+    {
+      "style": "Christmas",
+      "n_total": 9,
+      "n_train": 7,
+      "n_test": 2
+    },
+    {
+      "style": "Fruitbeer",
+      "n_total": 8,
+      "n_train": 6,
+      "n_test": 2
+    },
+    {
+      "style": "Low/No alcohol",
+      "n_total": 8,
+      "n_train": 6,
+      "n_test": 2
+    },
+    {
+      "style": "West Flanders ale",
+      "n_total": 7,
+      "n_train": 6,
+      "n_test": 1
+    },
+    {
+      "style": "Brett/cofermented",
+      "n_total": 6,
+      "n_train": 5,
+      "n_test": 1
+    },
+    {
+      "style": "Flanders old brown",
+      "n_total": 5,
+      "n_train": 4,
+      "n_test": 1
+    },
+    {
+      "style": "Scotch",
+      "n_total": 5,
+      "n_train": 4,
+      "n_test": 1
+    },
+    {
+      "style": "Brut",
+      "n_total": 4,
+      "n_train": 3,
+      "n_test": 1
+    },
+    {
+      "style": "Faro",
+      "n_total": 3,
+      "n_train": 2,
+      "n_test": 1
+    }
+  ],
+  "vs_lead_provisional": {
+    "path": "data/splits/assignment_lead_provisional.csv",
+    "n_test_lead": 50,
+    "test_sets_equal": true,
+    "n_differing_beers": 0,
+    "differing_beers": []
+  },
+  "vs_official_SPLIT-0001": {
+    "path": "data/splits/SPLIT-0001/assignment.csv",
+    "exists": true,
+    "n_test_official": 50,
+    "test_sets_equal": false,
+    "n_differing_beers": 92,
+    "differing_beers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      9,
+      10,
+      12,
+      16,
+      19,
+      22,
+      23,
+      28,
+      31,
+      34,
+      36,
+      41,
+      42,
+      46,
+      47,
+      49,
+      50,
+      51,
+      56,
+      58,
+      59,
+      60,
+      64,
+      65,
+      66,
+      67,
+      68,
+      70,
+      71,
+      74,
+      83,
+      84,
+      88,
+      89,
+      93,
+      94,
+      95,
+      100,
+      101,
+      104,
+      106,
+      108,
+      112,
+      116,
+      119,
+      120,
+      124,
+      126,
+      127,
+      128,
+      129,
+      132,
+      134,
+      136,
+      138,
+      146,
+      147,
+      148,
+      152,
+      162,
+      163,
+      164,
+      165,
+      171,
+      173,
+      175,
+      180,
+      184,
+      192,
+      196,
+      203,
+      204,
+      208,
+      209,
+      210,
+      216,
+      226,
+      230,
+      232,
+      233,
+      235,
+      236,
+      239,
+      242,
+      246,
+      249,
+      250
+    ],
+    "n_test_styles_official": 21,
+    "test_styles_missing_official": [
+      "West Flanders ale"
+    ],
+    "official_is_stratified": false
+  },
+  "vs_SPLIT-0002": {
+    "path": "data/splits/SPLIT-0002/assignment.csv",
+    "exists": true,
+    "n_test": 50,
+    "assignment_sha256": "4a032d281d3b85f860e0322868afde68503abf13260cdf52496a276ed5a0855e",
+    "identical_to_SPLIT-0001": true,
+    "n_differing_beers_vs_SPLIT-0001": 0,
+    "n_differing_beers_vs_stratified": 92,
+    "note": "SPLIT-0002 建在 DATA-0002（250×284 含 50 目标）上；因数据行序不变且同为 seed42 位置划分，其 assignment 与 SPLIT-0001 逐 beer 完全相同（sha 亦相同）。"
+  },
+  "conclusion": "主评估口径 = 台账 SPLIT-0001 / SPLIT-0002（同一划分，建在 DATA-0001 与 DATA-0002 上，assignment sha256 相同 = 4a032d28…；未分层，test 缺 West Flanders ale）；分层稳健性版（22/22 类进 test，与 Lead provisional 逐 beer 一致）落在 data/splits/stratified/，与主划分 test 集差异 92 个 beer。modelers 只准用这两条路径，不得自造第三版。"
+}

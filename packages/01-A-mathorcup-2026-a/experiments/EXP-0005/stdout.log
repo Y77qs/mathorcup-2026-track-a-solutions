@@ -1,0 +1,45 @@
+{
+  "modeling_contract": {
+    "file": "/Users/baozhashizitou/.dsh/profiles/desktop/node_modules/dsh-vibe-math/vibe-math-vmu/packs/modeling-contest/python/modeling_contract.py",
+    "public": [
+      "Path",
+      "dataset_path",
+      "emit_metrics",
+      "emit_output",
+      "emit_predictions",
+      "experiment_dir",
+      "experiment_environment",
+      "hashlib",
+      "json",
+      "math",
+      "metrics_path",
+      "os",
+      "project_dir",
+      "save_figure",
+      "seed",
+      "split_paths",
+      "tempfile"
+    ],
+    "signatures": {
+      "Path": "(*args, **kwargs)",
+      "dataset_path": "()",
+      "emit_metrics": "(metrics: dict) -> dict",
+      "emit_output": "(name: str, value) -> dict",
+      "emit_predictions": "(frame, name: str = 'predictions.csv') -> str",
+      "experiment_dir": "() -> pathlib.Path",
+      "experiment_environment": "() -> dict",
+      "metrics_path": "() -> pathlib.Path",
+      "project_dir": "() -> pathlib.Path",
+      "save_figure": "(figure, name: str) -> dict",
+      "seed": "()",
+      "split_paths": "() -> dict"
+    }
+  },
+  "writable": [
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0005/_probe_write_test.json",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0005/_probe_write_test.json",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0004/_probe_write_test.json",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0003/_probe_write_test.json"
+  ],
+  "emit_metrics_called": "FAIL TypeError: metric 'note' has type str; emit a finite number (a string is not a measurement)"
+}

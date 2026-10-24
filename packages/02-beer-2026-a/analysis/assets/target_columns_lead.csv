@@ -1,0 +1,53 @@
+idx,target,group,chem_category,CleanName_Paper,CleanName_PaperLong,CleanName_PanelFeedback,5csv_name
+1,A_malt_all,Aroma,Malt,Malt - overall,Malt aroma,Malt aroma - overall,Malt aroma - overall
+2,A_malt_grain,Aroma,Malt,Malt - grain,Malt aroma - grain,Malt aroma - grain,Malt aroma - grain
+3,A_malt_bread,Aroma,Malt,Malt - bread,Malt aroma - bread,Malt aroma - bread,Malt aroma - bread
+4,A_malt_cara,Aroma,Malt,Malt - caramel,Malt aroma - caramel,Malt aroma - caramel,Malt aroma - caramel
+5,A_malt_burn,Aroma,Malt,Malt - smoked,Malt aroma - smoked,Malt aroma - smoked,Malt aroma - smoked
+6,A_hops_all,Aroma,Hops,Hops - overall,Hops aroma,Hops aroma - overall,Hops aroma - overall
+7,A_hops_citrus,Aroma,Hops,Hops - citrus,Hops aroma - citrus,Hops aroma - citrus,Hops aroma - citrus
+8,A_hops_tropical,Aroma,Hops,Hops - tropical fruit,Hops aroma - tropical fruit,Hops aroma - tropical fruit,Hops aroma - tropical fruit
+9,A_hops_noble,Aroma,Hops,Hops - grassy,Hops aroma - grassy,Hops aroma - grassy,Hops aroma - grassy
+10,A_hops_woody,Aroma,Hops,Hops - woody,Hops aroma - woody,Hops aroma - woody,Hops aroma - woody
+11,A_esters_all,Aroma,Yeast,Esters - overall,Esters aroma,Esters aroma - overall,Esters aroma - overall
+12,A_esters_ethac,Aroma,Yeast,Esters - nail polish,Esters aroma - nail polish,Esters aroma - nail polish,Esters aroma - nail polish
+13,A_esters_isoaa,Aroma,Yeast,Esters - banana,Esters aroma - banana,Esters aroma - banana,Esters aroma - banana
+14,A_esters_flower,Aroma,Yeast,Esters - floral,Esters aroma - floral,Esters aroma - floral,Esters aroma - floral
+15,A_esters_fruity,Aroma,Yeast,Esters - fruity,Esters aroma - fruity,Esters aroma - fruity,Esters aroma - fruity
+16,F_malt_all,Flavour,Malt,Malt - overall,Malt taste,Malt taste - overall,Malt taste - overall
+17,F_malt_grain,Flavour,Malt,Malt - grain,Malt taste - grain,Malt taste - grain,Malt taste - grain
+18,F_malt_bread,Flavour,Malt,Malt - bread,Malt taste - bread,Malt taste - bread,Malt taste - bread
+19,F_malt_cara,Flavour,Malt,Malt - caramel,Malt taste - caramel,Malt taste - caramel,Malt taste - caramel
+20,F_malt_burn,Flavour,Malt,Malt - smoked,Malt taste - smoked,Malt taste - smoked,Malt taste - smoked
+21,F_hops_all,Flavour,Hops,Hops - overall,Hops taste,Hops taste - overall,Hops taste - overall
+22,F_hops_citrus,Flavour,Hops,Hops - citrus,Hops taste - citrus,Hops taste - citrus,Hops taste - citrus
+23,F_hops_tropical,Flavour,Hops,Hops - tropical fruit,Hops taste - tropical fruit,Hops taste - tropical fruit,Hops taste - tropical fruit
+24,F_hops_noble,Flavour,Hops,Hops - grassy,Hops taste - grassy,Hops taste - grassy,Hops taste - grassy
+25,F_hops_woody,Flavour,Hops,Hops - woody,Hops taste - woody,Hops taste - woody,Hops taste - woody
+26,F_esters_all,Flavour,Yeast,Esters - overall,Esters taste,Esters taste - overall,Esters taste - overall
+27,F_esters_ethac,Flavour,Yeast,Esters - nail polish,Esters taste - nail polish,Esters taste - nail polish,Esters taste - nail polish
+28,F_esters_isoaa,Flavour,Yeast,Esters - banana,Esters taste - banana,Esters taste - banana,Esters taste - banana
+29,F_esters_flower,Flavour,Yeast,Esters - floral,Esters taste - floral,Esters taste - floral,Esters taste - floral
+30,F_esters_fruity,Flavour,Yeast,Esters - fruity,Esters taste - fruity,Esters taste - fruity,Esters taste - fruity
+31,acidity,Other,Others,Acidity,Acidity,Acidity,Acidity
+32,bitternes,Other,Others,Bitterness,Bitterness,Bitterness,Bitterness
+33,sweetness,Other,Others,Sweetness,Sweetness,Sweetness,Sweetness
+34,X4vg,Other,Others,4-vinyl guaiacol,4-vinyl guaiacol,4-vinyl guaiacol,4-vinyl guaiacol
+35,diacetyl,Other,Others,Diacetyl,Diacetyl,Diacetyl,Diacetyl
+36,dms,Other,Others,Dimethyl sulfide,Dimethyl sulfide,Dimethyl sulfide,Dimethyl sulfide
+37,metallic,Other,Others,Metallic,Metallic,Metallic,Metallic
+38,stale_hops,Other,Others,Stale hops,Stale hops,Stale hops,Stale hops
+39,t2n,Other,Others,Trans-2-nonenal,Aging aroma - cardboard,Trans-2-nonenal,Trans-2-nonenal
+40,orange,Other,Others,Orange,Hops taste - citrus,Orange,Orange
+41,coriander,Other,Others,Coriander,Coriander,Coriander,Coriander
+42,clove,Other,Others,Clove,Clove,Clove,Clove
+43,lactic,Other,Wild flora,Lactic acid,Lactic acid,Lactic acid,Lactic acid
+44,acetic,Other,Wild flora,Acetic acid,Acetic acid,Acetic acid,Acetic acid
+45,barnyard,Other,Wild flora,Barnyard,Barnyard,Barnyard,Barnyard
+46,alcohol,Other,Yeast,Alcohol,Alcohol,Alcohol,Alcohol
+47,aftertaste,Other,,Aftertaste,Aftertaste,Aftertaste,Aftertaste
+48,body,Other,,Body,Body fullness,Body,Body
+49,co2,Other,Yeast,Carbonation,Carbonation,Carbonation,Carbonation
+50,overall,Other,,Overall appreciation,Overall appreciation,"Overall appreciation_x000D_
+(Trained panel)","Overall appreciation
+(Trained panel)"

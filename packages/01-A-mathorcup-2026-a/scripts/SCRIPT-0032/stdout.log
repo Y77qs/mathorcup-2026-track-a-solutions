@@ -1,0 +1,19 @@
+== Q3 transfer: Pils/Lager -> Tripel ==
+source samples: 11 (Pils/Lager); target: Tripel (n_train=23)
+constrained defect columns (7): ['DMS', 'X.E..2.nonenal', 'X2.3.butanedione', 'X3.methyl.2.butenal', 'X4VG', 'X5.methylfurfural', 'furfural']
+  beer 124: scale=0.885 guard= 13 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.399
+  beer 81: scale=1.000 guard= 12 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.464
+  beer 218: scale=1.000 guard= 12 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.370
+  beer 96: scale=0.835 guard= 19 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.449
+  beer 230: scale=0.742 guard= 12 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.400
+  beer 185: scale=0.827 guard= 14 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.419
+  beer 139: scale=0.796 guard= 10 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.378
+  beer 209: scale=0.831 guard= 12 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.486
+  beer 119: scale=1.000 guard= 11 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.380
+  beer 90: scale=0.904 guard= 15 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.371
+  beer 28: scale=1.000 guard= 10 defect_viol=0.00e+00 box_viol=0.00e+00 move=0.451
+  variant=style_subspace_capped: feasible=1.00 dist=9.48 hit=0.55 identity=0.65
+  variant=style_mean_collapse: feasible=1.00 dist=1.86 hit=1.00 identity=0.00
+  variant=ellipsoid_closest_pils_residual: feasible=1.00 dist=13.09 hit=0.09 identity=0.95
+  variant=unconstrained_style_mean: feasible=1.00 dist=1.86 hit=1.00 identity=0.00
+[done] feasible 11/11; classifier hit as Tripel 0.00 -> 0.55; identity ratio 0.65

@@ -1,0 +1,1695 @@
+{
+  "shapes": {
+    "1.csv": [
+      250,
+      234
+    ],
+    "2.csv": [
+      231,
+      232
+    ],
+    "4.csv": [
+      250,
+      53
+    ],
+    "5.csv": [
+      50,
+      51
+    ],
+    "6.csv": [
+      44,
+      51
+    ],
+    "7.csv": [
+      250,
+      189
+    ],
+    "8.xlsx": {
+      "Sensory thresholds": [
+        262,
+        11
+      ],
+      "Sensory names": [
+        102,
+        8
+      ],
+      "GBM importance MDI": [
+        232,
+        2
+      ],
+      "GBM SHAP Values": [
+        501,
+        236
+      ],
+      "Calibrated chemical dataset": [
+        251,
+        73
+      ],
+      "Beer Prices": [
+        251,
+        11
+      ],
+      "Sheet2": [
+        0,
+        0
+      ]
+    },
+    "3.xlsx": {
+      "n_sheets": 13,
+      "sheets": [
+        "beer_1",
+        "beer_2",
+        "beer_3",
+        "beer_4",
+        "beer_5",
+        "beer_6",
+        "beer_7",
+        "beer_8",
+        "beer_9",
+        "beer_10",
+        "beer_11",
+        "beer_12",
+        "summary"
+      ],
+      "shapes": {
+        "beer_1": [
+          101,
+          33
+        ],
+        "beer_2": [
+          101,
+          33
+        ],
+        "beer_3": [
+          101,
+          33
+        ],
+        "beer_4": [
+          101,
+          33
+        ],
+        "beer_5": [
+          101,
+          33
+        ],
+        "beer_6": [
+          101,
+          33
+        ],
+        "beer_7": [
+          101,
+          33
+        ],
+        "beer_8": [
+          101,
+          33
+        ],
+        "beer_9": [
+          101,
+          33
+        ],
+        "beer_10": [
+          101,
+          33
+        ],
+        "beer_11": [
+          101,
+          33
+        ],
+        "beer_12": [
+          101,
+          33
+        ],
+        "summary": [
+          13,
+          52
+        ]
+      }
+    }
+  },
+  "alignment": {
+    "1_vs_4": {
+      "beer_seq_equal": true,
+      "tasting_category_fine_equal": true,
+      "beer_id": {
+        "n": 250,
+        "exact_equal": 37,
+        "equal_after_6sig_round": 214,
+        "unique_a": 250,
+        "unique_b": 96
+      }
+    },
+    "1_vs_7": {
+      "beer_seq_equal": true,
+      "tasting_category_fine_equal": true,
+      "beer_id": {
+        "n": 250,
+        "exact_equal": 37,
+        "equal_after_6sig_round": 214,
+        "unique_a": 250,
+        "unique_b": 96
+      }
+    },
+    "4_vs_7": {
+      "beer_seq_equal": true,
+      "beer_id_equal": true,
+      "tasting_category_fine_equal": true,
+      "shared_columns": [
+        "beer",
+        "beer_id",
+        "tasting_category_fine"
+      ],
+      "n_sensory_4": 50,
+      "n_sensory_7": 186,
+      "n_shared_sensory_names": 0
+    },
+    "4_beer_id_precision": {
+      "n_rows": 250,
+      "n_unique": 96,
+      "n_rows_whose_6sig_round_equals_1csv": 1,
+      "max_rows_per_id": 20,
+      "raw_value_example": "5.41023E+12",
+      "n_ids_shared_by_gt1_rows": 36,
+      "n_rows_in_collision_groups": 190,
+      "max_rows_per_same_id": 20,
+      "example_same_id_rows": {
+        "5410230000000.0": 20,
+        "5425010000000.0": 18,
+        "5425030000000.0": 17
+      },
+      "interpretation": "4.csv/7.csv 的 beer_id 以 6 位有效数字科学计数法写出（如 5.41023E+12），250 行仅 96 个唯一值，无法作主键；行序与 beer 列（1–250 中的 Beer#）和 1.csv 完全一致，应按行位置/beer 列合并。"
+    },
+    "1_vs_cal": {
+      "beer_seq_equal": true,
+      "tasting_category_fine_equal": true,
+      "beer_id": {
+        "n": 250,
+        "exact_equal": 250,
+        "equal_after_6sig_round": 1,
+        "unique_a": 250,
+        "unique_b": 250
+      }
+    },
+    "1_vs_shap_SHAPblock": {
+      "beer_seq_equal": true,
+      "tasting_category_fine_equal": true,
+      "beer_id": {
+        "n": 250,
+        "exact_equal": 250,
+        "equal_after_6sig_round": 1,
+        "unique_a": 250,
+        "unique_b": 250
+      }
+    },
+    "1_vs_shap_concblock": {
+      "beer_seq_equal": true,
+      "tasting_category_fine_equal": true,
+      "beer_id": {
+        "n": 250,
+        "exact_equal": 250,
+        "equal_after_6sig_round": 1,
+        "unique_a": 250,
+        "unique_b": 250
+      }
+    },
+    "1_vs_BP": {
+      "n_merged": 250,
+      "beer_id_equal": 250,
+      "BP_beer_is_1_to_250": true,
+      "BP_sorted_by_beer": true,
+      "category_1csv_sample": [
+        "Low/No alcohol",
+        "Low/No alcohol",
+        "Low/No alcohol",
+        "Low/No alcohol",
+        "Low/No alcohol",
+        "Fruitbeer"
+      ],
+      "category_BP_sample": [
+        "low_no alcohol",
+        "low_no alcohol",
+        "low_no alcohol",
+        "low_no alcohol",
+        "low_no alcohol",
+        "fruitbeer"
+      ],
+      "ABV_describe": {
+        "min": 0.0,
+        "median": 6.75,
+        "max": 12.0
+      }
+    }
+  },
+  "cross_8xlsx": {
+    "SHAP_concentration_vs_cal": {
+      "n_common_cols": 70,
+      "n_cells": 17371,
+      "n_cells_equal_1e-9": 7880
+    },
+    "SHAP_concentration_vs_1csv": {
+      "n_common_cols": 231,
+      "n_cells": 57677,
+      "n_cells_equal_1e-9": 57677,
+      "max_abs_diff": 8.881784197001252e-16
+    },
+    "SHAP_additivity": {
+      "row_sum_min": -2.5866069015095556,
+      "row_sum_max": 1.6982765369616004,
+      "base_prediction_nunique": 1,
+      "base_prediction_first": -0.326338210932459,
+      "n_feature_chem_cols": 231
+    },
+    "MDI_vs_1csv": {
+      "n_features": 231,
+      "n_in_1csv": 231,
+      "not_in_1csv": [],
+      "n_missing_from_mdi": 0
+    },
+    "thresholds_vs_1csv": {
+      "n_rows": 261,
+      "n_exact_name": 47,
+      "n_norm_name": 172,
+      "n_aggressive_norm_name": 228,
+      "n_with_threshold": 43,
+      "unmatched_examples": [
+        "2,3-hexanedione",
+        "acetophenone",
+        "(E)-beta-damascenone",
+        "lactic acid",
+        "6-methyl-5-hepten-2-one",
+        "1-octen-3-ol",
+        "1-propanol",
+        "2-ethyl-1-hexanol",
+        "2-heptanol",
+        "2-methyl-1-butanol",
+        "2-undecanol",
+        "2,3-butanediol",
+        "2,3-dihydro-farnesol",
+        "3-furanmethanol",
+        "3-methyl-2-hexanol"
+      ]
+    }
+  },
+  "corr_type_2csv": {
+    "n_pairs": 780,
+    "median_abs_diff_if_Pearson": 0.04617822710938909,
+    "median_abs_diff_if_Spearman": 1.1102230246251565e-16,
+    "max_abs_diff_if_Pearson": 0.6137440343408777,
+    "max_abs_diff_if_Spearman": 7.771561172376096e-16,
+    "n_pairs_Pearson_within_1e-6": 0,
+    "n_pairs_Spearman_within_1e-6": 780,
+    "n_mapped_compounds": 140,
+    "n_compounds": 231
+  },
+  "corr_type_5csv": {
+    "n_pairs": 1176,
+    "median_abs_diff_if_Pearson": 0.041535855513873524,
+    "median_abs_diff_if_Spearman": 8.326672684688674e-17,
+    "max_abs_diff_if_Pearson": 0.8121619183748,
+    "max_abs_diff_if_Spearman": 0.8121619183748,
+    "n_pairs_Pearson_within_1e-6": 0,
+    "n_pairs_Spearman_within_1e-6": 1128,
+    "n_mapped_dims": 49,
+    "n_dims": 50
+  },
+  "corr_type_6csv": {
+    "n_pairs": 200,
+    "median_abs_diff_if_Pearson": 0.04097026419784866,
+    "median_abs_diff_if_Spearman": 8.326672684688674e-17,
+    "n_pairs_Pearson_within_1e-6": 0,
+    "n_pairs_Spearman_within_1e-6": 200
+  },
+  "corr_type_6csv_shape": {
+    "n_rows": 44,
+    "n_cols": 50,
+    "n_unique_row_names": 44,
+    "n_sensory_cols_matching_5csv": 50
+  },
+  "csv5_6_columns": {
+    "same_columns_same_order": true,
+    "n_cols_5": 50,
+    "n_cols_6": 50
+  },
+  "csv7": {
+    "shape": [
+      250,
+      189
+    ],
+    "n_meta_cols": 3,
+    "n_sensory_cols": 186,
+    "prefix_counts": {
+      "aroma_": 62,
+      "palate_": 62,
+      "taste_": 62
+    },
+    "n_na_cells": 750,
+    "na_cols": {
+      "palate_acetaldehyde": 250,
+      "palate_acetate": 250,
+      "palate_dentist": 250
+    },
+    "n_na_cols": 3,
+    "numeric_range": [
+      -4.935887292,
+      15.81151379
+    ],
+    "frac_negative": 0.739268817204301,
+    "col_mean_describe": {
+      "min": -0.06127701185599998,
+      "median": 0.0015451069240000094,
+      "max": 0.00909939427200004,
+      "n_cols_abs_mean_lt_0.1": 183,
+      "n_cols": 186
+    },
+    "col_std_describe": {
+      "min": 0.2215836904663654,
+      "median": 1.0029977654691786,
+      "max": 1.0039920320061169,
+      "n_cols_std_lt_0.6": 2
+    },
+    "n_columns_matching_1csv_beer_order": 1,
+    "n_cols_matching_sensorynames_ratebeer": 44,
+    "ratebeer_names_examples": [
+      "appearance_5",
+      "aroma_10",
+      "aroma_banana",
+      "aroma_bread",
+      "aroma_buttery",
+      "aroma_caramel",
+      "aroma_citrus",
+      "aroma_clove",
+      "aroma_coriander",
+      "aroma_estery",
+      "aroma_flower",
+      "aroma_fruity"
+    ],
+    "ratebeer_rows_not_in_7csv": [
+      "appearance_5",
+      "aroma_10",
+      "ave_score_5",
+      "overall_20",
+      "palate_5",
+      "taste_10"
+    ]
+  },
+  "xlsx3": {
+    "n_sheets": 13,
+    "sheets": [
+      "beer_1",
+      "beer_2",
+      "beer_3",
+      "beer_4",
+      "beer_5",
+      "beer_6",
+      "beer_7",
+      "beer_8",
+      "beer_9",
+      "beer_10",
+      "beer_11",
+      "beer_12",
+      "summary"
+    ],
+    "summary_shape": [
+      13,
+      52
+    ],
+    "summary_n_beers": 12,
+    "summary_columns": [
+      "Beer",
+      "A_malt_all",
+      "A_malt_grain",
+      "A_malt_bread",
+      "A_malt_cara",
+      "A_malt_burn",
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_hops_tropical",
+      "A_hops_noble",
+      "A_hops_woody",
+      "A_esters_all",
+      "A_esters_ethac",
+      "A_esters_isoaa",
+      "A_esters_flower",
+      "A_ester_fruity",
+      "F_malt_all",
+      "F_malt_grain",
+      "F_malt_bread",
+      "F_malt_cara",
+      "F_malt_burn",
+      "F_hops_all",
+      "F_hops_citrus",
+      "F_hops_tropical",
+      "F_hops_noble",
+      "F_hops_woody",
+      "F_esters_all",
+      "F_esters_ethac",
+      "F_esters_isoaa",
+      "F_esters_flower",
+      "F_ester_fruity",
+      "body",
+      "bitternes",
+      "co2",
+      "aftertaste",
+      "alcohol",
+      "sweetness",
+      "acidity",
+      "dms",
+      "metallic",
+      "4vg",
+      "t2n",
+      "diacetyl",
+      "stale_hops",
+      "orange",
+      "coriander",
+      "clove",
+      "lactic",
+      "acetic",
+      "barnyard",
+      "overall",
+      "comments"
+    ],
+    "n_A_cols": 15,
+    "n_F_cols": 15,
+    "beer_sheet_shapes": {
+      "beer_1": [
+        101,
+        33
+      ],
+      "beer_2": [
+        101,
+        33
+      ],
+      "beer_3": [
+        101,
+        33
+      ],
+      "beer_4": [
+        101,
+        33
+      ],
+      "beer_5": [
+        101,
+        33
+      ],
+      "beer_6": [
+        101,
+        33
+      ],
+      "beer_7": [
+        101,
+        33
+      ],
+      "beer_8": [
+        101,
+        33
+      ],
+      "beer_9": [
+        101,
+        33
+      ],
+      "beer_10": [
+        101,
+        33
+      ],
+      "beer_11": [
+        101,
+        33
+      ],
+      "beer_12": [
+        101,
+        33
+      ]
+    },
+    "formula_scan": {
+      "beer_1": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_2": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_3": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_4": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_5": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_6": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_7": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_8": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_9": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_10": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_11": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "beer_12": {
+        "n_formulas": 54,
+        "examples": [
+          [
+            "Q7",
+            "=IF(ISBLANK(O7),IF(ISBLANK(M7),IF(ISBLANK(K7),IF(ISBLANK(I7),IF(ISBLANK(G7),IF(ISBLANK(E7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "AG7",
+            "=IF(ISBLANK(AE7),IF(ISBLANK(AC7),IF(ISBLANK(AA7),IF(ISBLANK(Y7),IF(ISBLANK(W7),IF(ISBLANK(U7),0,1),2),3),4),5),6)"
+          ],
+          [
+            "Q10",
+            "=IF(ISBLANK(C10),0,Q7)"
+          ],
+          [
+            "AG10",
+            "=IF(ISBLANK(S10),0,AG7)"
+          ]
+        ]
+      },
+      "summary": {
+        "n_formulas": 612,
+        "examples": [
+          [
+            "B2",
+            "=beer_1!$Q$7"
+          ],
+          [
+            "C2",
+            "=beer_1!$Q$10"
+          ],
+          [
+            "D2",
+            "=beer_1!$Q$12"
+          ],
+          [
+            "E2",
+            "=beer_1!$Q$14"
+          ]
+        ]
+      }
+    },
+    "n_formulas_total": 1260,
+    "scorecard_scan": {
+      "beer_1": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [],
+        "n_nonzero_ratings": 0
+      },
+      "beer_2": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [],
+        "n_nonzero_ratings": 0
+      },
+      "beer_3": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [],
+        "n_nonzero_ratings": 0
+      },
+      "beer_4": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [],
+        "n_nonzero_ratings": 0
+      },
+      "beer_5": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [],
+        "n_nonzero_ratings": 0
+      },
+      "beer_6": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [],
+        "n_nonzero_ratings": 0
+      },
+      "beer_7": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [
+          7.0
+        ],
+        "n_nonzero_ratings": 0
+      },
+      "beer_8": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [
+          8.0
+        ],
+        "n_nonzero_ratings": 0
+      },
+      "beer_9": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [
+          9.0
+        ],
+        "n_nonzero_ratings": 0
+      },
+      "beer_10": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [
+          10.0
+        ],
+        "n_nonzero_ratings": 0
+      },
+      "beer_11": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [
+          11.0
+        ],
+        "n_nonzero_ratings": 0
+      },
+      "beer_12": {
+        "shape": [
+          101,
+          33
+        ],
+        "score_cells_left_col16": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_cells_right_col32": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "n_numeric_cells": 253,
+        "numeric_values_outside_0_to_6": [
+          12.0
+        ],
+        "n_nonzero_ratings": 0
+      }
+    },
+    "summary_all_zero": true,
+    "summary_n_cells": 600,
+    "summary_max_abs": 0.0,
+    "is_blank_template": true
+  },
+  "csv1": {
+    "shape": [
+      250,
+      234
+    ],
+    "n_features": 231,
+    "derived_cols_present": [
+      "kcalperc",
+      "esters_sum",
+      "aroma_hops_sum",
+      "acids_sum",
+      "sulfur_sum"
+    ],
+    "n_derived": 5,
+    "n_measured_like": 226
+  },
+  "sample_counts": {
+    "1.csv": 250,
+    "4.csv": 250,
+    "7.csv": 250,
+    "8.xlsx_Sensory_thresholds": 261,
+    "8.xlsx_Sensory_names": 101,
+    "8.xlsx_SHAP_per_block": 250,
+    "8.xlsx_calibrated": 250,
+    "8.xlsx_BeerPrices": 250,
+    "3.xlsx_summary_beers": 12
+  },
+  "unique_values": {
+    "4.csv beer_id": 96,
+    "7.csv beer_id": 96,
+    "1.csv beer_id": 250,
+    "4.csv beer": 250
+  },
+  "shap_target_identify": {
+    "pred_mean": -0.328994382249624,
+    "pred_range": [
+      -2.9129451124420145,
+      1.3719383260291413
+    ],
+    "max_abs_corr_with_4csv_or_7csv": {
+      "source": "4.csv",
+      "col": "aftertaste",
+      "pearson_r": 0.6512758601326922
+    },
+    "top5": [
+      {
+        "source": "4.csv",
+        "col": "aftertaste",
+        "pearson_r": 0.6512758601326922
+      },
+      {
+        "source": "4.csv",
+        "col": "alcohol",
+        "pearson_r": 0.6417200835993594
+      },
+      {
+        "source": "7.csv",
+        "col": "aroma_corn",
+        "pearson_r": -0.6199610804897859
+      },
+      {
+        "source": "7.csv",
+        "col": "aroma_grainy",
+        "pearson_r": -0.5871966062040451
+      },
+      {
+        "source": "7.csv",
+        "col": "aroma_cardboard",
+        "pearson_r": -0.5844064710569716
+      }
+    ],
+    "conclusion": "SHAP 块为单目标模型的 SHAP（行内加和+常数 base_prediction），该目标与 4/7.csv 任一感官列最大 |r| 远小于 1，无法唯一对应到 50 个感官目标之一"
+  }
+}

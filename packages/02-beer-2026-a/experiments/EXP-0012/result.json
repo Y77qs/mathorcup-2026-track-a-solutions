@@ -1,0 +1,53 @@
+{
+  "token": "5d09a3c8580417ddb2607f16",
+  "experimentId": "EXP-0012",
+  "status": "failed",
+  "exitCode": 1,
+  "startedAt": "2026-10-24T04:36:47.120Z",
+  "endedAt": "2026-10-24T04:36:48.209Z",
+  "durationMs": 1088,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0012/inputs/src/emit.py",
+      "sha256": "f5bb77c493345d55e475b2797f9a8c42d087fa0c739abc37fc48d136882408c8",
+      "bytes": 1925,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0012/inputs/src/lib.py",
+      "sha256": "fbc2c314fa8d92d9357ca730c7dfdd4db5b8b49f0739c12cc40beab0864b271e",
+      "bytes": 6402,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0012/inputs/src/q1_trainonly.py",
+      "sha256": "81478a7199d03e76a8e53badd8991d008df99b768e09a8992f1de8ed758bb61e",
+      "bytes": 2464,
+      "kind": "file"
+    }
+  ],
+  "figures": [],
+  "failure": {
+    "code": "NONZERO_EXIT",
+    "message": "the script exited with code 1; stderr tail: ^^^^^^^^^^^\n  File \"/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0012/inputs/analysis/sensory/targetcolumns.csv'"
+  },
+  "error": "the script exited with code 1; stderr tail: ^^^^^^^^^^^\n  File \"/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0012/inputs/analysis/sensory/targetcolumns.csv'",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0012/inputs/src/q1_trainonly.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0012/inputs/src/q1_trainonly.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0012",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

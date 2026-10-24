@@ -1,0 +1,22 @@
+{
+  "experiment": "EXP-0012",
+  "source": "experiments/EXP-0012/predictions_long.csv",
+  "sha256": "972e86f115d94dc5b9a1a65c6766b5ac07c715a914fd0d3aa210afe6c06b10c9",
+  "holdout_rows": 2500,
+  "n_dims": 50,
+  "recomputed": {
+    "r2_mean": -0.024635435726755018,
+    "r2_median": -0.011250778788529425,
+    "mae_mean": 0.409737038231132,
+    "r2_overall": -0.014456198175549773
+  },
+  "reported": {
+    "r2": -0.024635435726754987,
+    "r2_overall": -0.014456198175549995,
+    "mae": 0.40973703823113206
+  },
+  "tolerance": 1e-06,
+  "passed": true,
+  "method": "reviewer 独立：按 dim 分组，R2=1-SSres/SStot(y_true 自身均值)；MAE 逐维绝对值均值；overall 单维直接算",
+  "note": "pack 的 holdout-metrics 只支持单列 whitelist 指标，50 维均值由 reviewer 全量重算"
+}

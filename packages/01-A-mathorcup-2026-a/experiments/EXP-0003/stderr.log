@@ -1,0 +1,2 @@
+/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/lib/python3.12/site-packages/sklearn/manifold/_spectral_embedding.py:325: UserWarning: Graph is not fully connected, spectral embedding may not work as expected.
+  warnings.warn(

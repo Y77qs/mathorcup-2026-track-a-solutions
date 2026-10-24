@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_abl.py", line 205, in <module>
+    main()
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_abl.py", line 104, in main
+    comp_specs = frozen_specs(locked, family_map)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_abl.py", line 87, in frozen_specs
+    return M.frozen_component_specs(locked, family_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'q1_models' has no attribute 'frozen_component_specs'

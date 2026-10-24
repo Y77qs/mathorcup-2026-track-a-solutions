@@ -1,0 +1,39 @@
+{
+  "token": "c1abcc1ad23f681e071e1d1a",
+  "experimentId": "EXP-0031",
+  "status": "failed",
+  "exitCode": 1,
+  "startedAt": "2026-10-23T13:55:31.955Z",
+  "endedAt": "2026-10-23T13:55:32.607Z",
+  "durationMs": 652,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [],
+  "figures": [],
+  "failure": {
+    "code": "NONZERO_EXIT",
+    "message": "the script exited with code 1; stderr tail: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_abl.py\", line 87, in frozen_specs\n    return M.frozen_component_specs(locked, family_map)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'q1_models' has no attribute 'frozen_component_specs'"
+  },
+  "error": "the script exited with code 1; stderr tail: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_abl.py\", line 87, in frozen_specs\n    return M.frozen_component_specs(locked, family_map)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'q1_models' has no attribute 'frozen_component_specs'",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_abl.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_abl.py",
+    "--config",
+    "noagg",
+    "--split",
+    "primary",
+    "--emit"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0031",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

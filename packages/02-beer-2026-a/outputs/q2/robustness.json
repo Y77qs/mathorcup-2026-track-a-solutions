@@ -1,0 +1,30 @@
+{
+  "question": "Q2",
+  "kind": "stability analysis of the Top-3 ranking",
+  "bootstrap": 500.0,
+  "stabilityA": 0.47836,
+  "jaccard": {
+    "A_B": 0.22799999999999998,
+    "A_C": 0.614,
+    "B_C": 0.16
+  },
+  "sensitivity": {
+    "methodChange": "换成 Ridge 系数排序时 Top-3 平均只有约 0.228 的 Jaccard",
+    "networkSmoothing": "加入 2.csv 网络平滑后与 A 保持约 0.614 的 Jaccard",
+    "psd": "2.csv 非 PSD（min eig -0.0424），已做特征值截断投影"
+  },
+  "baseline": {
+    "globalTop3JaccardVsPerDim": 0.09,
+    "globalTop3": [
+      "ethanol..v.v.",
+      "kcalperc",
+      "esters_sum"
+    ],
+    "interpretation": "若所有维度共用同一 Top-3，与逐维 Top-3 的平均 Jaccard 仅 0.090；说明逐维排序有实质增量"
+  },
+  "limitations": [
+    "未做重复划分的 Top-3 重估（holdout 预算受限）",
+    "无独立外部数据验证",
+    "同期关联，非因果"
+  ]
+}

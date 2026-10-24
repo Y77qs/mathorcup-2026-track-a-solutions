@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_eval.py", line 716, in <module>
+    main()
+  File "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_eval.py", line 451, in main
+    row[f"div_{s}"] = float(gen[seed])
+                      ^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'DataFrame'

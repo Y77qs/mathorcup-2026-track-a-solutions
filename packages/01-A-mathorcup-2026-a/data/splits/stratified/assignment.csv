@@ -1,0 +1,251 @@
+beer,tasting_category_fine,split
+1,Brut,test
+2,Low/No alcohol,test
+3,Blond,train
+4,Strong ale,test
+5,Blond,train
+6,Amber,train
+7,Saison,train
+8,Hoppy,train
+9,Hoppy,train
+10,Low/No alcohol,test
+11,Amber,train
+12,Lambic,train
+13,Christmas,train
+14,Brett/cofermented,train
+15,Tripel,train
+16,Dubbel,train
+17,Tripel,train
+18,Lambic,train
+19,Amber,test
+20,Saison,train
+21,Lambic,train
+22,Wheat,test
+23,Tripel,test
+24,Kriek,train
+25,Brown,train
+26,West Flanders ale,train
+27,Hoppy,train
+28,Pils/Lager,train
+29,Saison,train
+30,Blond,train
+31,Hoppy,test
+32,Amber,train
+33,Fruitbeer,train
+34,Tripel,test
+35,Blond,train
+36,Brown,train
+37,Strong ale,train
+38,Christmas,train
+39,Hoppy,train
+40,Low/No alcohol,train
+41,Lambic,test
+42,Lambic,train
+43,Amber,train
+44,Wheat,train
+45,Tripel,train
+46,Blond,test
+47,Tripel,test
+48,Dubbel,train
+49,Blond,train
+50,Fruitbeer,test
+51,Strong ale,train
+52,Stout/Porter,train
+53,Brown,train
+54,Kriek,train
+55,Hoppy,train
+56,Saison,train
+57,Tripel,train
+58,Saison,test
+59,Blond,test
+60,Christmas,test
+61,Stout/Porter,train
+62,Blond,train
+63,Amber,train
+64,Blond,test
+65,Hoppy,test
+66,Tripel,test
+67,Stout/Porter,train
+68,Tripel,test
+69,Tripel,train
+70,Blond,train
+71,Blond,train
+72,Hoppy,train
+73,Blond,train
+74,Faro,test
+75,Lambic,train
+76,Blond,train
+77,Blond,train
+78,Brown,train
+79,Hoppy,train
+80,Hoppy,train
+81,Pils/Lager,train
+82,Kriek,train
+83,Low/No alcohol,train
+84,West Flanders ale,test
+85,Tripel,train
+86,Low/No alcohol,train
+87,Stout/Porter,train
+88,Kriek,test
+89,Brown,train
+90,Pils/Lager,train
+91,Strong ale,train
+92,Amber,train
+93,Tripel,test
+94,Blond,test
+95,Christmas,train
+96,Pils/Lager,train
+97,Hoppy,train
+98,Brown,train
+99,Strong ale,train
+100,Dubbel,test
+101,Blond,test
+102,Christmas,train
+103,Stout/Porter,train
+104,Strong ale,test
+105,Strong ale,train
+106,Christmas,test
+107,Dubbel,train
+108,Brown,test
+109,Brown,train
+110,Blond,train
+111,Dubbel,train
+112,Brown,train
+113,Blond,train
+114,Hoppy,train
+115,Lambic,train
+116,Lambic,test
+117,Strong ale,train
+118,West Flanders ale,train
+119,Pils/Lager,train
+120,Hoppy,test
+121,Blond,train
+122,Brett/cofermented,train
+123,Stout/Porter,train
+124,Pils/Lager,test
+125,Blond,train
+126,Amber,train
+127,Blond,test
+128,Amber,train
+129,Brown,test
+130,Brut,train
+131,Scotch,train
+132,Saison,train
+133,Strong ale,train
+134,Strong ale,test
+135,Tripel,train
+136,Blond,train
+137,Amber,train
+138,Kriek,test
+139,Pils/Lager,train
+140,Tripel,train
+141,Low/No alcohol,train
+142,Wheat,train
+143,Hoppy,train
+144,Lambic,train
+145,Saison,train
+146,Scotch,train
+147,Tripel,train
+148,Strong ale,test
+149,Blond,train
+150,Brett/cofermented,train
+151,Faro,train
+152,Wheat,train
+153,Kriek,train
+154,Tripel,train
+155,Low/No alcohol,train
+156,Kriek,train
+157,Tripel,train
+158,Amber,train
+159,Flanders old brown,train
+160,Wheat,train
+161,Flanders old brown,train
+162,Lambic,train
+163,Tripel,train
+164,Blond,train
+165,Fruitbeer,train
+166,Saison,train
+167,Flanders old brown,test
+168,Scotch,train
+169,Hoppy,train
+170,Strong ale,train
+171,Tripel,train
+172,Wheat,train
+173,Stout/Porter,test
+174,Dubbel,train
+175,Strong ale,train
+176,West Flanders ale,train
+177,Fruitbeer,train
+178,West Flanders ale,train
+179,Flanders old brown,train
+180,Christmas,train
+181,Christmas,train
+182,Stout/Porter,test
+183,Saison,train
+184,Fruitbeer,test
+185,Pils/Lager,train
+186,Strong ale,train
+187,Dubbel,train
+188,Stout/Porter,train
+189,Tripel,train
+190,Flanders old brown,train
+191,Tripel,train
+192,Brut,train
+193,Blond,train
+194,Dubbel,train
+195,Wheat,train
+196,Strong ale,train
+197,Wheat,train
+198,Dubbel,test
+199,Tripel,train
+200,West Flanders ale,train
+201,Stout/Porter,train
+202,Stout/Porter,train
+203,Brett/cofermented,train
+204,Tripel,train
+205,Brut,train
+206,Brown,train
+207,Fruitbeer,train
+208,Wheat,test
+209,Pils/Lager,train
+210,Amber,test
+211,Lambic,train
+212,Stout/Porter,train
+213,Hoppy,train
+214,Christmas,train
+215,Blond,train
+216,Scotch,train
+217,Tripel,train
+218,Pils/Lager,train
+219,Hoppy,train
+220,Kriek,train
+221,Dubbel,train
+222,Brett/cofermented,train
+223,Low/No alcohol,train
+224,Wheat,train
+225,Strong ale,train
+226,Strong ale,train
+227,Fruitbeer,train
+228,Tripel,train
+229,Wheat,train
+230,Pils/Lager,test
+231,Stout/Porter,test
+232,Kriek,train
+233,Scotch,test
+234,Blond,train
+235,Strong ale,train
+236,Brett/cofermented,test
+237,Brown,train
+238,Blond,train
+239,Tripel,train
+240,Tripel,train
+241,Kriek,train
+242,Saison,test
+243,Wheat,train
+244,West Flanders ale,train
+245,Tripel,train
+246,Blond,train
+247,Fruitbeer,train
+248,Blond,train
+249,Blond,train
+250,Faro,train

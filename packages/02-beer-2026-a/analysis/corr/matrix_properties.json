@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "script": "analysis/scripts/corr_forensics.py"
+  },
+  "2csv": {
+    "label": "2.csv",
+    "shape": [
+      231,
+      231
+    ],
+    "is_square": true,
+    "n_rows": 231,
+    "n_cols": 231,
+    "n_nan": 0,
+    "min": -0.663595210809322,
+    "max": 1.0,
+    "max_abs_symmetry_error": 0.0,
+    "diag_min": 1.0,
+    "diag_max": 1.0,
+    "diag_all_one": true,
+    "n_offdiag_negative": 8627,
+    "min_eigenvalue": -0.04241270911948124,
+    "max_eigenvalue": 33.45378414974229,
+    "is_psd_tol_1e-10": false,
+    "n_eig_below_neg_1e-10": 5,
+    "row_names_unique": true,
+    "row_col_names_identical": true,
+    "file": "data/raw/2.csv",
+    "n_features_1csv": 231,
+    "row_names_equal_col_names": true,
+    "row_names_unique_normalized": true,
+    "all_names_mapped_to_1csv": true,
+    "is_correlation_like_minus1_1": true,
+    "n_feature_nan_in_1csv": 73,
+    "n_cols_with_nan_in_1csv": 9,
+    "cols_with_nan_in_1csv": {
+      "Diacetyl": 9,
+      "3-methylbutanal": 7,
+      "Ethyl isobutyrate": 1,
+      "Methylpyrazine": 12,
+      "Furfural": 1,
+      "Amyl acetate": 27,
+      "Phenylacetaldehyde": 1,
+      "Ethyl nicotinate": 2,
+      "Total hop aroma compounds": 13
+    },
+    "recomputed_spearman": {
+      "max_abs_symmetry_error": 0.0,
+      "diag_all_one": true,
+      "min_eigenvalue": -0.04241270911948124,
+      "min_eigenvalue_matches_2csv_absdiff": 0.0,
+      "n_elements_with_abs_diff_lt_1e-12": 53361,
+      "n_offdiag_total": 26565
+    },
+    "pearson_vs_2csv_sign_disagreements": 4501,
+    "pearson_vs_2csv_sign_disagreements_frac": 0.169433465085639,
+    "pandas_corr_spearman_vs_2csv_max_abs": 6.661338147750939e-16,
+    "pandas_corr_pearson_vs_2csv_max_abs": 1.1234263749065516
+  },
+  "5csv": {
+    "label": "5.csv",
+    "shape": [
+      50,
+      50
+    ],
+    "is_square": true,
+    "n_rows": 50,
+    "n_cols": 50,
+    "n_nan": 0,
+    "min": -0.502080261677783,
+    "max": 1.0,
+    "max_abs_symmetry_error": 0.0,
+    "diag_min": 1.0,
+    "diag_max": 1.0,
+    "diag_all_one": true,
+    "n_offdiag_negative": 478,
+    "min_eigenvalue": 0.02343165204632647,
+    "max_eigenvalue": 8.943202512705938,
+    "is_psd_tol_1e-10": true,
+    "n_eig_below_neg_1e-10": 0,
+    "row_names_unique": true,
+    "row_col_names_identical": true,
+    "file": "data/raw/5.csv",
+    "shape_read": [
+      50,
+      50
+    ],
+    "raw_columns_in_file": 51,
+    "n_4csv_sensory_cols": 50,
+    "n_mapped_4to5": 50,
+    "names_unmapped": [],
+    "row_names_equal_col_names": true,
+    "input_4csv_shape": [
+      250,
+      53
+    ]
+  },
+  "6csv": {
+    "label": "6.csv",
+    "file": "data/raw/6.csv",
+    "shape_read": [
+      44,
+      50
+    ],
+    "raw_columns_in_file": 51,
+    "n_rows_chemical": 44,
+    "n_cols_sensory": 50,
+    "n_nan": 0,
+    "min": -0.501234629619979,
+    "max": 0.817147438923069,
+    "n_rows_mapped_to_1csv": 44,
+    "rows_unmapped": [],
+    "n_cols_mapped_to_4csv": 50,
+    "cols_unmapped": [],
+    "problem_statement_says": "46x50",
+    "actual": "44x50 (44 chemical rows x 50 sensory columns)"
+  }
+}

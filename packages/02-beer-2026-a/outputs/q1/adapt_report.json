@@ -1,0 +1,32 @@
+{
+  "Tripel": {
+    "n_adapt": 5,
+    "n_eval": 23,
+    "energy_generated_vs_eval": 2.1216428626195056,
+    "energy_source_baseline_vs_eval": 2.541888558252197,
+    "energy_transferred_raw_vs_eval": 2.299796743025497,
+    "energy_transferred_constrained_vs_eval": 2.2735676678897794,
+    "gain_raw_vs_source": 0.2420918152267002,
+    "gain_constrained_vs_source": 0.2683208903624177
+  },
+  "Kriek": {
+    "n_adapt": 3,
+    "n_eval": 7,
+    "energy_generated_vs_eval": 9.351710929410816,
+    "energy_source_baseline_vs_eval": 9.946351083670999,
+    "energy_transferred_raw_vs_eval": 9.479053991507664,
+    "energy_transferred_constrained_vs_eval": 9.477974997629579,
+    "gain_raw_vs_source": 0.46729709216333504,
+    "gain_constrained_vs_source": 0.46837608604142034
+  },
+  "Lambic": {
+    "n_adapt": 3,
+    "n_eval": 8,
+    "energy_generated_vs_eval": 1.956603300245641,
+    "energy_source_baseline_vs_eval": 3.5391798400575003,
+    "energy_transferred_raw_vs_eval": 2.108105685500512,
+    "energy_transferred_constrained_vs_eval": 2.1043859956407798,
+    "gain_raw_vs_source": 1.4310741545569883,
+    "gain_constrained_vs_source": 1.4347938444167205
+  }
+}

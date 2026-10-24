@@ -1,0 +1,40 @@
+{
+  "baseline_metrics": {
+    "freq_ge_080_share": 0.16,
+    "holdout_r2_mean": 0.6559999999999999,
+    "jaccard_mean": 0.6559999999999999,
+    "n_bootstrap": 300.0,
+    "n_dims": 50.0,
+    "n_seats": 150.0,
+    "n_slots_stable": 24.0,
+    "r2": 0.6559999999999999,
+    "r2_50dim": 0.6559999999999999,
+    "r2_overall": 0.5,
+    "top3_stability": 0.507311111111111,
+    "top3_stability_univariate": 0.507311111111111
+  },
+  "baseline_summary": {
+    "baseline": "univariate Spearman |rho| + BH-FDR Top-3 (no collinearity control)",
+    "causality": "关联，不是因果",
+    "frac_seats_ge_0.80": 0.16,
+    "limitations": [
+      "单变量相关不做共线性控制；这是 baseline 的定义特征",
+      "SPLIT-0002 未分层（test 缺 West Flanders ale），子样本重合率不代表其他风格"
+    ],
+    "n_bootstrap": 300,
+    "n_dims": 50,
+    "n_seats": 150,
+    "n_seats_ge_0.80": 24,
+    "r2_note": "r2/r2_overall 为包合同占位键：语义 = Top-3 与训练子样本重算 Top-3 的逐维 Jaccard（真实计算，0–1），不是决定系数；Q2 无逐样本预测，故不写 predictions.csv。",
+    "seed": 42,
+    "seed_rule": "default_rng(seed+b) per rep; seed from MODELING_SEED or 42",
+    "subsample_recompute": {
+      "jaccard_overall_dim": 0.5,
+      "mean_jaccard": 0.6559999999999999,
+      "method": "recompute Spearman |rho| on SPLIT-0002 train rows; Jaccard with full-data Top-3 per dim",
+      "n_train_rows": 200,
+      "split": "SPLIT-0002"
+    },
+    "top3_stability_univariate": 0.507311111111111
+  }
+}

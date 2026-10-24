@@ -1,0 +1,71 @@
+{
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v2",
+  "projectId": "beer-2026-a-v2",
+  "configSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+  "ledgerConfigSha256": "466a882bcee6a3dc4cd956131d1aa82db168e284bf2296bd2fb5f2fd42b0e399",
+  "configStable": true,
+  "configChanged": false,
+  "stage": "intake",
+  "counts": {
+    "questions": 0,
+    "datasets": 0,
+    "splits": 0,
+    "models": 0,
+    "experiments": 0,
+    "runningExperiments": 0,
+    "validations": 0,
+    "validationPlans": 0,
+    "claims": 0,
+    "figures": 0
+  },
+  "config": {
+    "taskType": "mixed",
+    "primaryMetric": "mae",
+    "metricDirection": "minimize",
+    "deadline": null,
+    "template": "generic-zh",
+    "paperFormats": [
+      "md",
+      "tex",
+      "pdf"
+    ],
+    "maxAgentConcurrency": 3,
+    "maxComputeConcurrency": 1,
+    "experimentTimeoutSeconds": 600,
+    "maxImprovedModelsPerQuestion": 2
+  },
+  "blockers": [
+    {
+      "stage": "intake",
+      "code": "NO_QUESTIONS",
+      "message": "no sub-question has been created"
+    },
+    {
+      "stage": "writing",
+      "code": "NO_PAPER",
+      "message": "the report file has not been written yet"
+    },
+    {
+      "stage": "delivery",
+      "code": "NOT_FROZEN",
+      "message": "the delivery has not been frozen"
+    }
+  ],
+  "files": {
+    "problem/2026年MathorCup大数据挑战赛-赛道A初赛.md": true,
+    "problem/2026年MathorCup大数据挑战赛-赛道A初赛.pdf": true,
+    "problem/targetcolumns.csv": true,
+    "data/raw/1.csv": true,
+    "data/raw/8.xlsx": true,
+    "START-PROMPT.md": true,
+    "PREFLIGHT.json": true
+  },
+  "paperFormats": [
+    "md",
+    "tex",
+    "pdf"
+  ],
+  "problemStatement": "problem/2026年MathorCup大数据挑战赛-赛道A初赛.md",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "note": "clean scheme-B project; no questions/data/experiments yet"
+}

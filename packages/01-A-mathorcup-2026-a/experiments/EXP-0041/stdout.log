@@ -1,0 +1,143 @@
+stage=m2m3 seed=42
+[m2m3] RF permutation importance ...
+[m2m3] M3 Ledoit-Wolf partial corr ...
+[m2m3] M3 glasso-CV sensitivity ...
+{
+  "jaccard_mean": 0.18666666666666668,
+  "n_dims_jaccard_ge_threshold": 1,
+  "confidence_grading": {
+    "4/4": {
+      "n_seats": 11,
+      "share_seats": 0.07333333333333333,
+      "n_dims_with_any": 11,
+      "dims": [
+        "A_esters_fruity",
+        "A_malt_all",
+        "A_malt_burn",
+        "A_malt_cara",
+        "F_malt_cara",
+        "X4vg",
+        "alcohol",
+        "bitternes",
+        "body",
+        "metallic",
+        "sweetness"
+      ]
+    },
+    "3/4": {
+      "n_seats": 21,
+      "share_seats": 0.14,
+      "n_dims_with_any": 17,
+      "dims": [
+        "A_esters_isoaa",
+        "A_malt_burn",
+        "A_malt_cara",
+        "F_esters_all",
+        "F_esters_fruity",
+        "F_malt_all",
+        "F_malt_burn",
+        "F_malt_cara",
+        "X4vg",
+        "acetic",
+        "acidity",
+        "alcohol",
+        "bitternes",
+        "clove",
+        "lactic",
+        "overall",
+        "t2n"
+      ]
+    },
+    "<=2/4": {
+      "n_seats": 118,
+      "share_seats": 0.7866666666666666,
+      "n_dims_with_any": 49,
+      "dims": [
+        "A_esters_all",
+        "A_esters_ethac",
+        "A_esters_flower",
+        "A_esters_fruity",
+        "A_esters_isoaa",
+        "A_hops_all",
+        "A_hops_citrus",
+        "A_hops_noble",
+        "A_hops_tropical",
+        "A_hops_woody",
+        "A_malt_all",
+        "A_malt_bread",
+        "A_malt_burn",
+        "A_malt_cara",
+        "A_malt_grain",
+        "F_esters_all",
+        "F_esters_ethac",
+        "F_esters_flower",
+        "F_esters_fruity",
+        "F_esters_isoaa",
+        "F_hops_all",
+        "F_hops_citrus",
+        "F_hops_noble",
+        "F_hops_tropical",
+        "F_hops_woody",
+        "F_malt_all",
+        "F_malt_bread",
+        "F_malt_burn",
+        "F_malt_cara",
+        "F_malt_grain",
+        "X4vg",
+        "acetic",
+        "aftertaste",
+        "alcohol",
+        "barnyard",
+        "bitternes",
+        "body",
+        "clove",
+        "co2",
+        "coriander",
+        "diacetyl",
+        "dms",
+        "lactic",
+        "metallic",
+        "orange",
+        "overall",
+        "stale_hops",
+        "sweetness",
+        "t2n"
+      ]
+    }
+  },
+  "prior_consistency": {
+    "method": "Spearman(|r_6csv|, -mean_rank_over_4_methods) per dim over 44 common compounds",
+    "n_dims": 50,
+    "mean_rho": 0.6281971149210783,
+    "median_rho": 0.6390049176570685,
+    "min_rho": 0.3840732910500352,
+    "max_rho": 0.7984072734792228,
+    "n_positive": 50,
+    "n_p_sig_pos": 50,
+    "mean_top10_overlap": 0.5980000000000001,
+    "m4_only_mean_rho": 0.999954897815363,
+    "m4_only_n_sig_pos": 50
+  },
+  "chemical_plausibility": {
+    "n_preregistered_dims": 48,
+    "n_exploratory_dims": 2,
+    "n_seats": 144,
+    "n_hits": 14,
+    "hit_rate": 0.09722222222222222,
+    "hit_rate_denominator": "preregistered dims x 3 Top-3 seats (48 x 3 = 144)",
+    "m4_only_hit_rate_reference": 0.09027777777777778,
+    "sign_agreement_among_hits": 1.0,
+    "causal_limit": "全部为横截面观测关联；不声称因果，也不声称干预效果。",
+    "lod_note": "1.csv 中 calibrated==0 是 log10(最小正浓度/2) 的 LOD/2 删失替代码；OAV 一律用 C.oav_long()（作者标定浓度）。"
+  },
+  "m3": {
+    "primary": "Ledoit-Wolf joint precision partial correlation",
+    "ledoitwolf_shrinkage": 0.21893303034919764,
+    "glassoCV_alpha": 0.5187687479079296,
+    "glassoCV_frac_exact_zero_partial": 0.9993939393939394,
+    "glassoCV_top1_mode_feature": "acetaldehyde",
+    "glassoCV_top1_mode_count": 46,
+    "diagnostics_file": "outputs/q2/m3_diagnostics.json"
+  },
+  "runti
+total 173.8 s

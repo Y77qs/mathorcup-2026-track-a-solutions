@@ -1,0 +1,7 @@
+{
+  "seed": 20261025,
+  "energy_holdout_transferred_constrained_mean": 4.618642887053379,
+  "energy_holdout_generated_mean": 4.489274219592232,
+  "defect_nonworsen_rate_constrained": 1.0,
+  "n_holdout_styles": 3
+}

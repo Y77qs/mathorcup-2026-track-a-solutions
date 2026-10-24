@@ -1,0 +1,11 @@
+{
+  "M1_enet_alpha_median": 0.21581205980061807,
+  "M1_enet_l1_ratio_median": 0.1,
+  "M1_ridge_alpha_median": 1000.0,
+  "M4_impute_sensitivity_spearman": 0.9999401703920046,
+  "M4_n_q_global_lt_0.05": 2721.0,
+  "M4_n_q_within_lt_0.05": 2665.0,
+  "n_features_tests": 11550.0,
+  "runtime_seconds": 211.1,
+  "seed": 42.0
+}

@@ -1,0 +1,41 @@
+{
+  "pandoc": "/opt/homebrew/bin/pandoc",
+  "xelatex": "/usr/local/bin/xelatex",
+  "steps": [
+    {
+      "cmd": "pandoc rendered_build.md -o paper.tex --standalone --resource-path=report:figures -V documentclass=ctexart -V classoption=UTF8 -H paper-header.tex --number-sections",
+      "returncode": 0,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "xelatex -interaction=nonstopmode -halt-on-error paper.tex",
+      "returncode": 0,
+      "stdout_tail": "7 HOLDOUT_REUSE_UNCONTROLLED\n\nOverfull \\hbox (140.7037pt too wide) in paragraph at lines 535--542\n\\TU/PingFangSC(0)/m/n/10.53937 拒 绝。|  本 文 改 用 \\TU/PingFangSC(0)/b/n/10.53937 不 触 碰 \\TU/ArialUnicodeMS(0)/m/sl/10.53937 holdout \\TU/PingFangSC(0)/m/n/10.53937 的 训 练 内 部 \\TU/ArialUnicodeMS(0)/m/sl/10.53937 OOF \\TU/PingFangSC(0)/m/n/10.53937 独 立 复 算  |（\\TU/lmtt/m/n/10.53937 outputs/q1/independent_reproduction.json\\TU/PingFangSC(0)/m/n/10.53937 ，|\n\nUnderfull \\hbox (badness 1939) in paragraph at lines 542--548\n[]\\TU/ArialUnicodeMS(0)/m/sl/10.53937 Q3 \\TU/PingFangSC(0)/m/n/10.53937 的 \\TU/ArialUnicodeMS(0)/m/sl/10.53937 leakage \\TU/PingFangSC(0)/m/n/10.53937 检 查 因 \\TU/ArialUnicodeMS(0)/m/sl/10.53937 targetColumns=0 \\TU/PingFangSC(0)/m/n/10.53937 而 退 化 为\\TU/ArialUnicodeMS(0)/m/sl/10.53937 ” \\TU/PingFangSC(0)/m/n/10.53937 未 声 明 禁 用 来\n\nUnderfull \\hbox (badness 3713) in paragraph at lines 548--551\n[]\\TU/PingFangSC(0)/m/n/10.53937 论 文 三 格 式 由 \\TU/lmtt/m/n/10.53937 src/build_paper.py \\TU/PingFangSC(0)/m/n/10.53937 生 成：| \\TU/lmtt/m/n/10.53937 pandoc rendered.md →\n\nPackage caption Warning: Unused \\captionsetup[table] on input line 41.\nSee the caption package documentation for explanation.\n\n[12] (./paper.aux)\n\nLaTeX Font Warning: Some font shapes were not available, defaults substituted.\n\n\nLaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.\n\n )\n(see the transcript file for additional information)\nOutput written on paper.pdf (12 pages).\nTranscript written on paper.log.\n",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "xelatex -interaction=nonstopmode -halt-on-error paper.tex",
+      "returncode": 0,
+      "stdout_tail": "53937 independent-rerun \\TU/PingFangSC(0)/m/n/10.53937 因 此 被 \\TU/lmtt/m/n/10.53937 HOLDOUT_REUSE_UNCONTROLLED\n\nOverfull \\hbox (140.7037pt too wide) in paragraph at lines 535--542\n\\TU/PingFangSC(0)/m/n/10.53937 拒 绝。|  本 文 改 用 \\TU/PingFangSC(0)/b/n/10.53937 不 触 碰 \\TU/ArialUnicodeMS(0)/m/sl/10.53937 holdout \\TU/PingFangSC(0)/m/n/10.53937 的 训 练 内 部 \\TU/ArialUnicodeMS(0)/m/sl/10.53937 OOF \\TU/PingFangSC(0)/m/n/10.53937 独 立 复 算  |（\\TU/lmtt/m/n/10.53937 outputs/q1/independent_reproduction.json\\TU/PingFangSC(0)/m/n/10.53937 ，|\n\nUnderfull \\hbox (badness 1939) in paragraph at lines 542--548\n[]\\TU/ArialUnicodeMS(0)/m/sl/10.53937 Q3 \\TU/PingFangSC(0)/m/n/10.53937 的 \\TU/ArialUnicodeMS(0)/m/sl/10.53937 leakage \\TU/PingFangSC(0)/m/n/10.53937 检 查 因 \\TU/ArialUnicodeMS(0)/m/sl/10.53937 targetColumns=0 \\TU/PingFangSC(0)/m/n/10.53937 而 退 化 为\\TU/ArialUnicodeMS(0)/m/sl/10.53937 ” \\TU/PingFangSC(0)/m/n/10.53937 未 声 明 禁 用 来\n\nUnderfull \\hbox (badness 3713) in paragraph at lines 548--551\n[]\\TU/PingFangSC(0)/m/n/10.53937 论 文 三 格 式 由 \\TU/lmtt/m/n/10.53937 src/build_paper.py \\TU/PingFangSC(0)/m/n/10.53937 生 成：| \\TU/lmtt/m/n/10.53937 pandoc rendered.md →\n\nPackage caption Warning: Unused \\captionsetup[table] on input line 41.\nSee the caption package documentation for explanation.\n\n[12] (./paper.aux)\n\nLaTeX Font Warning: Some font shapes were not available, defaults substituted.\n\n )\n(see the transcript file for additional information)\nOutput written on paper.pdf (12 pages).\nTranscript written on paper.log.\n",
+      "stderr_tail": ""
+    }
+  ],
+  "tex_exists": true,
+  "pdf_exists": true,
+  "pdf_bytes": 574481,
+  "pages": 12,
+  "figures": [
+    "q1_error_by_style.png",
+    "q1_feature_importance.png",
+    "q1_model_comparison.png",
+    "q1_overall_scatter.png",
+    "q1_per_target_mae.png",
+    "q2_method_jaccard.png",
+    "q2_topk_stability.png",
+    "q3_defect_oav.png",
+    "q3_energy_distance.png"
+  ],
+  "bad_figures": [],
+  "ok": true
+}

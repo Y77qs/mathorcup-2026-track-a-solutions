@@ -1,0 +1,232 @@
+﻿csv2_name,csv1_column,field_name_R,field_name_python,chemical_name,calibrated,is_summary_col
+Acetaldehyde,acetaldehyde,acetaldehyde,acetaldehyde,Acetaldehyde,yes,False
+Carbon disulfide,CS2,CS2,CS2,Carbon disulfide,yes,False
+Diethyl sulfide,DES,DES,DES,Diethyl sulfide,yes,False
+Dimethyl sulfide,DMS,DMS,DMS,Dimethyl sulfide,yes,False
+Ethyl 2-methylbutyrate,ethyl_2.methyl_butyrate,ethyl_2.methyl_butyrate,ethyl 2-methyl butyrate,Ethyl 2-methylbutyrate,yes_gcms,False
+Ethyl acetate,ethyl_acetate,ethyl_acetate,ethyl acetate,Ethyl acetate,yes,False
+Ethyl decanoate,ethyl_decanoate,ethyl_decanoate,ethyl decanoate,Ethyl decanoate,"yes_gcms, yes",False
+Ethyl hexanoate,ethyl_hexanoate,ethyl_hexanoate,ethyl hexanoate,Ethyl hexanoate,"yes_gcms,yes",False
+Ethyl 3-methylbutyrate,ethyl_isovalerate,ethyl_isovalerate,ethyl isovalerate,Ethyl 3-methylbutyrate,"yes_gcms,yes",False
+Ethyl octanoate,ethyl_octanoate,ethyl_octanoate,ethyl octanoate,Ethyl octanoate,"yes_gcms, yes",False
+Ethyl propionate,ethyl_propionate,ethyl_propionate,ethyl propionate,Ethyl propionate,"yes_gcms, yes",False
+Hydrogen sulfide,H2S,H2S,H2S,Hydrogen sulfide,yes,False
+Isoamyl alcohol,isoamyl_alcohol,isoamyl_alcohol,isoamyl alcohol,Isoamyl alcohol,"yes_gcms,yes",False
+Isobutanol,isobutanol,isobutanol,isobutanol,Isobutanol,"yes_gcms,yes",False
+Isobutyl acetate,isobutyl_acetate,isobutyl_acetate,isobutyl acetate,Isobutyl acetate,"yes_gcms,yes",False
+Isoamyl acetate,isopentyl_acetate,isopentyl_acetate,isopentyl acetate,Isoamyl acetate,"yes_gcms,yes",False
+Methanethiol,MeSH,MeSH,MeSH,Methanethiol,yes,False
+Octyl acetate,octyl_acetate,octyl_acetate,octyl acetate,Octyl acetate,"yes_gcms,yes",False
+Phenethyl acetate,phenethyl_acetate,phenethyl_acetate,phenethyl acetate,Phenethyl acetate,"yes_gcms,yes",False
+Phenethyl alcohol,phenethyl_alcohol,phenethyl_alcohol,phenethyl alcohol,Phenethyl alcohol,"yes_gcms, yes",False
+4-vinylguaiacol,X4VG,X4VG,X4VG,4-vinylguaiacol,yes_gcms,False
+Sulfur dioxide,SO2.mg.L.,SO2.mg.L.,SO2-mg.L.,Sulfur dioxide,yes,False
+Acetic acid,acetic_acid.g.L.,acetic_acid.g.L.,acetic acid.g.L.,Acetic acid,yes,False
+Ammonia,ammonia.mg.L.,ammonia.mg.L.,ammonia,Ammonia,yes,False
+Color,color.EBC.,color.EBC.,color.EBC.,Color,yes,False
+Betaglucan,betaglucan.mg.L.,betaglucan.mg.L.,betaglucan,Betaglucan,yes,False
+Lactic acid,lactic_acid.mg.L.,lactic_acid.mg.L.,lactic acid,Lactic acid,yes,False
+Glycerol,glycerol,glycerol,glycerol,Glycerol,yes,False
+Iron,iron,iron,iron,Iron,yes,False
+pH,pH,pH,pH,pH,yes,False
+Protein,protein.g.L.,protein.g.L.,protein.g.L.,Protein,yes,False
+Iso-alpha acids,bitterness,bitterness,bitterness,Iso-alpha acids,yes,False
+Sugars,GFS,GFS,GFS,Sugars,yes,False
+Ethanol,ethanol..v.v.,ethanol..v.v.,ethanol..v.v.,Ethanol,yes,False
+Carbon dioxide,CO2.PSI.,CO2.PSI.,CO2-PSI.,Carbon dioxide,yes,False
+Unfermentables,unfermentables,unfermentables,unfermentables,Unfermentables,yes,False
+Caloric value,kcalperc,kcalperc,kcalperc,Caloric value,yes,False
+1-propanol,X1.propanol,X1.propanol,1-propanol,1-propanol,,False
+Diacetyl,X2.3.butanedione,X2.3.butanedione,"2,3-butanedione",Diacetyl,yes_gcms,False
+3-methylbutanal,X3.methylbutanal,X3.methylbutanal,3-methylbutanal,3-methylbutanal,,False
+Propylene glycol,propylene.glycol,propylene.glycol,propylene glycol,Propylene glycol,,False
+N-propyl acetate,propyl.acetate,propyl.acetate,propyl acetate,N-propyl acetate,,False
+N-pentanol,n.pentanol,n.pentanol,n-pentanol,N-pentanol,,False
+2-methyl-1-butanol,X2.methyl.1.butanol,X2.methyl.1.butanol,2-methyl-1-butanol,2-methyl-1-butanol,,False
+Isopentyl formate,isopentyl.formate,isopentyl.formate,isopentyl-formate,Isopentyl formate,,False
+Ethyl isobutyrate,ethyl.isobutyrate,ethyl.isobutyrate,ethyl isobutyrate,Ethyl isobutyrate,yes_gcms,False
+3-methyl-2-butenal,X3.methyl.2.butenal,X3.methyl.2.butenal,3-methyl-2-butenal,3-methyl-2-butenal,,False
+2-methyltetrahydrofuran-3-one,X2.methyltetrahydrofuran.3.one,X2.methyltetrahydrofuran.3.one,2-methyltetrahydrofuran-3-one,2-methyltetrahydrofuran-3-one,yes_gcms,False
+Ethyl butyrate,ethyl.butyrate,ethyl.butyrate,ethyl butyrate,Ethyl butyrate,yes_gcms,False
+Butyl acetate,butyl.acetate,butyl.acetate,butyl acetate,Butyl acetate,,False
+Methylpyrazine,methylpyrazine,methylpyrazine,methylpyrazine,Methylpyrazine,yes_gcms,False
+Furfural,furfural,furfural,furfural,Furfural,yes_gcms,False
+Ethyl lactate,ethyl.lactate,ethyl.lactate,ethyl lactate,Ethyl lactate,,False
+Cis-3-hexenol,X3Z.hexenol,X3Z.hexenol,3Z-hexenol,Cis-3-hexenol,yes_gcms,False
+N-hexanol,n.hexanol,n.hexanol,n-hexanol,N-hexanol,yes_gcms,False
+Styrene,styrene,styrene,styrene,Styrene,yes_gcms,False
+Furfuryl alcohol,X2.furanmethanol,X2.furanmethanol,2-furanmethanol,Furfuryl alcohol,,False
+3-methyl-2-hexanol,X3.methyl.2.hexanol,X3.methyl.2.hexanol,3-methyl-2-hexanol,3-methyl-2-hexanol,,False
+3-furanmethanol,X3.furanmethanol,X3.furanmethanol,3-furanmethanol,3-furanmethanol,,False
+2-acetylfuran,X2.acetylfuran,X2.acetylfuran,2-acetylfuran,2-acetylfuran,,False
+"2,6-dimethylpyrazine",X2.6.dimethyl.pyrazine,X2.6.dimethyl.pyrazine,"2,6-dimethyl-pyrazine","2,6-dimethylpyrazine",,False
+Amyl acetate,amyl.acetate,amyl.acetate,amyl acetate,Amyl acetate,yes_gcms,False
+Ethyl tiglate,ethyl.tiglate,ethyl.tiglate,ethyl tiglate,Ethyl tiglate,,False
+Benzaldehyde,benzaldehyde,benzaldehyde,benzaldehyde,Benzaldehyde,yes_gcms,False
+5-methylfurfural,X5.methylfurfural,X5.methylfurfural,5-methylfurfural,5-methylfurfural,yes_gcms,False
+N-heptanol,n.heptanol,n.heptanol,n-heptanol,N-heptanol,,False
+1-octen-3-ol,X1.octen.3.ol,X1.octen.3.ol,1-octen-3-ol,1-octen-3-ol,,False
+Methionol,X3.methylthio.propanol,X3.methylthio.propanol,3-methylthio-propanol,Methionol,,False
+Isomaltol,isomaltol,isomaltol,isomaltol,Isomaltol,,False
+Methyl heptenone,X6.methyl.5.hepten.2.one,X6.methyl.5.hepten.2.one,6-methyl-5-hepten-2-one,Methyl heptenone,,False
+2-pentyl furan,X2.pentyl.furan,X2.pentyl.furan,2-pentyl furan,2-pentyl furan,,False
+Ethyl 3-hexanoate,ethyl.hex..3E..enoate,ethyl.hex..3E..enoate,ethyl-hex-(3E)-enoate,Ethyl 3-hexanoate,,False
+α-phellandrene,alpha.phellandrene,alpha.phellandrene,alpha-phellandrene,Î±-phellandrene,,False
+Dehydroxy-cis-linalool oxide,dehydroxy.cis.linalool.oxide,dehydroxy.cis.linalool.oxide,dehydroxy-cis-linalool oxide,Dehydroxy-cis-linalool oxide,,False
+Hexyl acetate,hexyl.acetate,hexyl.acetate,hexyl acetate,Hexyl acetate,yes_gcms,False
+Isopentyl butanoate,isopentyl.butanoate,isopentyl.butanoate,isopentyl butanoate,Isopentyl butanoate,,False
+2-ethyl-1-hexanol,X2.ethyl.1.hexanol,X2.ethyl.1.hexanol,2-ethyl-1-hexanol,2-ethyl-1-hexanol,,False
+Beta-phellandrene,beta.phellandrene,beta.phellandrene,beta-phellandrene,Beta-phellandrene,,False
+Limonene,limonene,limonene,limonene,Limonene,,False
+Eucalyptol,eucalyptol,eucalyptol,eucalyptol,Eucalyptol,,False
+Benzyl alcohol,benzyl.alcohol,benzyl.alcohol,benzyl alcohol,Benzyl alcohol,yes_gcms,False
+Ethyl 2-hexenoate,ethyl.hex..2E..enoate,ethyl.hex..2E..enoate,ethyl-hex-(2E)-enoate,Ethyl 2-hexenoate,,False
+Phenylacetaldehyde,phenylacetaldehyde,phenylacetaldehyde,phenylacetaldehyde,Phenylacetaldehyde,yes_gcms,False
+E-β-ocimene,X.E..beta.ocimene,X.E..beta.ocimene,(E)-beta-ocimene,E-Î²-ocimene,yes_gcms,False
+Prenyl isobutyrate,prenyl.isobutyrate,prenyl.isobutyrate,prenyl isobutyrate,Prenyl isobutyrate,,False
+Ethyl furoate,ethyl.furoate,ethyl.furoate,ethyl furoate,Ethyl furoate,,False
+O-cresol,ortho.cresol,ortho.cresol,ortho-cresol,O-cresol,,False
+Ethyl 5-methylhexanoate,ethyl.5.methylhexanoate,ethyl.5.methylhexanoate,ethyl 5-methylhexanoate,Ethyl 5-methylhexanoate,,False
+2-acetylpyrrole,X2.acetylpyrrole,X2.acetylpyrrole,2-acetylpyrrole,2-acetylpyrrole,,False
+Isoamyl lactate,isoamyl.lactate,isoamyl.lactate,isoamyl lactate,Isoamyl lactate,,False
+N-octanol,n.octanol,n.octanol,n-octanol,N-octanol,,False
+Cis-linalool oxide,cis.linalool.oxide,cis.linalool.oxide,cis-linalool oxide,Cis-linalool oxide,,False
+Meta-cymenene,meta.cymenene,meta.cymenene,meta-cymenene,Meta-cymenene,,False
+Terpinolene,terpinolene,terpinolene,terpinolene,Terpinolene,,False
+Linalool,linalool,linalool,linalool,Linalool,yes_gcms,False
+2-nonanol,nonan.2.ol,nonan.2.ol,nonan-2-ol,2-nonanol,,False
+N-nonanal,n.nonanal,n.nonanal,n-nonanal,N-nonanal,,False
+2-methyl-benzofuran,X2.methyl.benzofuran,X2.methyl.benzofuran,2-methyl-benzofuran,2-methyl-benzofuran,,False
+Heptyl acetate,heptyl.acetate,heptyl.acetate,heptyl acetate,Heptyl acetate,,False
+4-methyl-1-pentanol,X4.methyl.1.pentanol,X4.methyl.1.pentanol,4-methyl-1-pentanol,4-methyl-1-pentanol,,False
+Neo-allo-ocimene,neo.allo.ocimene,neo.allo.ocimene,neo-allo-ocimene,Neo-allo-ocimene,,False
+X-methyl-1-octanol,x.methyl.1.octanol,x.methyl.1.octanol,x-methyl-1-octanol,X-methyl-1-octanol,,False
+Trans-dihydro-β-terpineol,trans.dihydro.beta.terpineol,trans.dihydro.beta.terpineol,trans-dihydro-beta-terpineol,Trans-dihydro-Î²-terpineol,,False
+Cis-β-terpineol,cis.beta.terpineol,cis.beta.terpineol,cis-beta-terpineol,Cis-Î²-terpineol,,False
+Y-methyl-1-octanol,y.methyl.1.octanol,y.methyl.1.octanol,y-methyl-1-octanol,Y-methyl-1-octanol,,False
+Camphor,camphor,camphor,camphor,Camphor,,False
+Isobutyl hexanoate,isobutyl.hexanoate,isobutyl.hexanoate,isobutyl-hexanoate,Isobutyl hexanoate,,False
+Nerol oxide,nerol.oxide,nerol.oxide,nerol oxide,Nerol oxide,,False
+E-2-nonenal,X.E..2.nonenal,X.E..2.nonenal,(E)-2-nonenal,E-2-nonenal,yes_gcms,False
+Cis-dihydro-β-terpineol,cis.dihydro.beta.terpineol,cis.dihydro.beta.terpineol,cis-dihydro-beta-terpineol,Cis-dihydro-Î²-terpineol,,False
+4-ethyl-phenol,X4.ethyl.phenol,X4.ethyl.phenol,4-ethyl-phenol,4-ethyl-phenol,,False
+Isoborneol,isoborneol,isoborneol,isoborneol,Isoborneol,,False
+Ethyl benzoate,ethyl.benzoate,ethyl.benzoate,ethyl benzoate,Ethyl benzoate,,False
+N-nonanol,n.nonanol,n.nonanol,n-nonanol,N-nonanol,,False
+Terpinen-4-ol,terpinen.4.ol,terpinen.4.ol,terpinen-4-ol,Terpinen-4-ol,,False
+Diethyl succinate,diethyl.succinate,diethyl.succinate,diethyl succinate,Diethyl succinate,yes_gcms,False
+Vinyl caprylate,vinyl.caprylate,vinyl.caprylate,vinyl caprylate,Vinyl caprylate,,False
+Alpha-terpineol,X1.alpha.terpineol,X1.alpha.terpineol,1-alpha-terpineol,Alpha-terpineol,yes_gcms,False
+Ethyl linalool,ethyl..E..linalool,ethyl..E..linalool,ethyl-(E)-linalool,Ethyl linalool,,False
+Ethyl nicotinate,ethyl.nicotinate,ethyl.nicotinate,ethyl nicotinate,Ethyl nicotinate,yes_gcms,False
+Citronellol,citronellol,citronellol,citronellol,Citronellol,yes_gcms,False
+Nerol,nerol,nerol,nerol,Nerol,,False
+5-hydroxymethylfurfural,hydroxy.methyl.furfural,hydroxy.methyl.furfural,hydroxy methyl furfural,5-hydroxymethylfurfural,,False
+Ocimenone,E.ocimenone,E.ocimenone,E-ocimenone,Ocimenone,,False
+Cumin aldehyde,cumin.aldehyde,cumin.aldehyde,cumin aldehyde,Cumin aldehyde,,False
+Ethyl phenylacetate,ethyl.phenylacetate,ethyl.phenylacetate,ethyl-phenylacetate,Ethyl phenylacetate,,False
+Isopentyl hexanoate,isopentyl.hexanoate,isopentyl.hexanoate,isopentyl-hexanoate,Isopentyl hexanoate,,False
+Geraniol,geraniol,geraniol,geraniol,Geraniol,yes_gcms,False
+β-cyclohomocitral,beta.cyclohomocitral,beta.cyclohomocitral,beta-cyclohomocitral,Î²-cyclohomocitral,,False
+Cinnamaldehyde,E.cinnamaldehyde,E.cinnamaldehyde,E-cinnamaldehyde,Cinnamaldehyde,,False
+N-decanol,n.decanol,n.decanol,n-decanol,N-decanol,,False
+Neryl formate,neryl.formate,neryl.formate,neryl formate,Neryl formate,,False
+4-ethyl-guaiacol,X4.ethyl.guaiacol,X4.ethyl.guaiacol,4-ethyl-guaiacol,4-ethyl-guaiacol,,False
+2-undecanone,X2.undecanone,X2.undecanone,2-undecanone,2-undecanone,,False
+Trans-dihydro-α-terpinyl acetate,trans.dihydro.alpha.terpinyl.acetate,trans.dihydro.alpha.terpinyl.acetate,trans-dihydro-alpha-terpinyl acetate,Trans-dihydro-Î±-terpinyl acetate,,False
+Terpinen-4-ol acetate,terpinen.4.ol.acetate,terpinen.4.ol.acetate,terpinen-4-ol acetate,Terpinen-4-ol acetate,,False
+2-undecanol,X2.undecanol,X2.undecanol,2-undecanol,2-undecanol,,False
+Terpiryl acetate,delta.terpinyl.acetate,delta.terpinyl.acetate,delta-terpinyl acetate,Terpiryl acetate,,False
+"E,E-2,4-decadienal",X.E.E..2.4.decadienal,X.E.E..2.4.decadienal,"(E,E)-2,4-decadienal","E,E-2,4-decadienal",yes_gcms,False
+Methyl geranate,methyl.geranate,methyl.geranate,methyl geranate,Methyl geranate,,False
+Car-3-en-2-one,car.3.en.2.one,car.3.en.2.one,car-3-en-2-one,Car-3-en-2-one,,False
+Dimethoxy-E-citral,dimethoxy..E..citral,dimethoxy..E..citral,dimethoxy-(E)-citral,Dimethoxy-E-citral,,False
+2-butyl octanoate,X2.butyloctanoate,X2.butyloctanoate,2-butyloctanoate,2-butyl octanoate,,False
+4-methoxysalicylaldehyde,X4.methoxysalicylaldehyde,X4.methoxysalicylaldehyde,4-methoxysalicylaldehyde,4-methoxysalicylaldehyde,,False
+Ethyl hydrocinnamate,ethyl.hydrocinnamate,ethyl.hydrocinnamate,ethyl-hydrocinnamate,Ethyl hydrocinnamate,,False
+Eugenol,eugenol,eugenol,eugenol,Eugenol,yes_gcms,False
+Gamma-nonalactone,gamma.nonalactone,gamma.nonalactone,gamma-nonalactone,Gamma-nonalactone,yes_gcms,False
+Methyl para-anisate,methyl.para.anisate,methyl.para.anisate,methyl para-anisate,Methyl para-anisate,,False
+E-β-damascenone,X.E..beta.damascenone,X.E..beta.damascenone,(E)-beta-damascenone,E-Î²-damascenone,yes_gcms,False
+Ethyl 9-decenoate,ethyl..9..decenoate,ethyl..9..decenoate,ethyl-(9)-decenoate,Ethyl 9-decenoate,,False
+Vanillin,vanillin,vanillin,vanillin,Vanillin,,False
+Geosmin,geosmin,geosmin,geosmin,Geosmin,,False
+Dodecanal,dodecanal,dodecanal,dodecanal,Dodecanal,,False
+"4,8-α-epoxy-caryophyllane",X4.8.alpha.epoxy.caryophyllane,X4.8.alpha.epoxy.caryophyllane,"4,8-alpha-epoxy-caryophyllane","4,8-Î±-epoxy-caryophyllane",,False
+Caryophyllene,E.caryophyllene,E.caryophyllene,E-caryophyllene,Caryophyllene,yes_gcms,False
+E-α-ionone,X.E..alpha.ionone,X.E..alpha.ionone,(E)-alpha-ionone,E-Î±-ionone,,False
+Perillyl acetate,perillyl.acetate,perillyl.acetate,perillyl acetate,Perillyl acetate,,False
+β-humulene,beta.humulene,beta.humulene,beta-humulene,Î²-humulene,,False
+2-phenyl ethyl butyrate,X2.phenyl.ethyl.butyrate,X2.phenyl.ethyl.butyrate,2-phenyl ethyl butyrate,2-phenyl ethyl butyrate,,False
+Z-β-farnesene,X.Z..beta.farnesene,X.Z..beta.farnesene,(Z)-beta-farnesene,Z-Î²-farnesene,,False
+Pentyl octanoate,pentyl.octanoate,pentyl.octanoate,pentyl-octanoate,Pentyl octanoate,,False
+E-β-farnesene,X.E..beta.farnesene,X.E..beta.farnesene,(E)-beta-farnesene,E-Î²-farnesene,,False
+2-methylbutyl octanoate,X2.methylbutyl.octanoate,X2.methylbutyl.octanoate,2-methylbutyl octanoate,2-methylbutyl octanoate,,False
+Alpha-humulene,alpha.humulene,alpha.humulene,alpha-humulene,Alpha-humulene,yes_gcms,False
+Neryl propanoate,neryl.propanoate,neryl.propanoate,neryl propanoate,Neryl propanoate,,False
+9-epi-E-caryophyllene,X9.epi..E..caryophyllene,X9.epi..E..caryophyllene,9-epi-(E)-caryophyllene,9-epi-E-caryophyllene,,False
+Ethyl cinnamate,ethyl..E..cinnamate,ethyl..E..cinnamate,ethyl-(E)-cinnamate,Ethyl cinnamate,,False
+Linalool isovalerate,linalool.isovalerate,linalool.isovalerate,linalool isovalerate,Linalool isovalerate,,False
+α-terpinyl isobutanoate,alpha.terpinyl.isobutanoate,alpha.terpinyl.isobutanoate,alpha-terpinyl isobutanoate,Î±-terpinyl isobutanoate,,False
+N-dodecanol,n.dodecanol,n.dodecanol,n-dodecanol,N-dodecanol,,False
+Germacrene D,germacrene.D,germacrene.D,germacrene D,Germacrene D,,False
+E-β-ionone,X.E..beta.ionone,X.E..beta.ionone,(E)-beta-ionone,E-Î²-ionone,,False
+Valencene,valencene,valencene,valencene,Valencene,,False
+Neryl isobutanoate,neryl.isobutanoate,neryl.isobutanoate,neryl isobutanoate,Neryl isobutanoate,,False
+Methyl isoeugenol,E.methyl.isoeugenol,E.methyl.isoeugenol,E-methyl isoeugenol,Methyl isoeugenol,,False
+Z-dihydro-apofarnesal,X.Z..dihydro.apofarnesal,X.Z..dihydro.apofarnesal,(Z)-dihydro-apofarnesal,Z-dihydro-apofarnesal,,False
+Butylated hydroxytoluene,butylated.hydroxytoluene,butylated.hydroxytoluene,butylated hydroxytoluene,Butylated hydroxytoluene,,False
+E-dihydro-apofarnesal,X.E..dihydro.apofarnesal,X.E..dihydro.apofarnesal,(E)-dihydro-apofarnesal,E-dihydro-apofarnesal,,False
+Z-nerolidol,Z.nerolidol,Z.nerolidol,Z-nerolidol,Z-nerolidol,yes_gcms,False
+E-ortho-methoxy cinnamaldehyde,X.E..ortho.methoxy.cinnamaldehyde,X.E..ortho.methoxy.cinnamaldehyde,(E)-ortho-methoxy cinnamaldehyde,E-ortho-methoxy cinnamaldehyde,,False
+α-calacorene,alpha.calacorene,alpha.calacorene,alpha-calacorene,Î±-calacorene,,False
+E-nerolidol,E.nerolidol,E.nerolidol,E-nerolidol,E-nerolidol,,False
+Tobacarol,dihydroisocaryophyllene.epoxide,dihydroisocaryophyllene.epoxide,dihydroisocaryophyllene epoxide,Tobacarol,,False
+Caryophyllene alcohol,caryophyllene.alcohol,caryophyllene.alcohol,caryophyllene alcohol,Caryophyllene alcohol,,False
+Neryl isovalerate,neryl.isovalerate,neryl.isovalerate,neryl isovalerate,Neryl isovalerate,,False
+Spathulenol,spathulenol,spathulenol,spathulenol,Spathulenol,,False
+Caryophyllene oxide,caryophyllene.oxide,caryophyllene.oxide,caryophyllene oxide,Caryophyllene oxide,,False
+Humulene epoxide II,humulene.epoxide.II,humulene.epoxide.II,humulene epoxide II,Humulene epoxide II,,False
+Allo-aromadendrene epoxide,alloaromadendrene.epoxide,alloaromadendrene.epoxide,alloaromadendrene epoxide,Allo-aromadendrene epoxide,,False
+Epicubenol,X1.10.di.epi.cubenol,X1.10.di.epi.cubenol,"1,10-di-epi-cubenol",Epicubenol,,False
+Isopropyl laurate,isopropyl.laurate,isopropyl.laurate,isopropyl laurate,Isopropyl laurate,,False
+"Caryophylla-4,8-dien-5-ol",caryophylla.4.12..8.13..dien.5.alpha.ol,caryophylla.4.12..8.13..dien.5.alpha.ol,"caryophylla-4(12),8(13)-dien-5-alpha-ol","Caryophylla-4,8-dien-5-ol",,False
+Gamma-eudesmol,gamma.eudesmol,gamma.eudesmol,gamma-eudesmol,Gamma-eudesmol,,False
+α-muurolol,alpha.muurolol,alpha.muurolol,alpha-muurolol,Î±-muurolol,,False
+"1,2-dihydro-8-hydroxy-2E-linalool",X1.2.dihydro.8.hydroxy..2E..linalool,X1.2.dihydro.8.hydroxy..2E..linalool,"1,2-dihydro-8-hydroxy-(2E)-linalool","1,2-dihydro-8-hydroxy-2E-linalool",,False
+Tau-cadinol,tau.cadinol,tau.cadinol,tau-cadinol,Tau-cadinol,,False
+Kongol,selin.11.en.4.alpha.ol,selin.11.en.4.alpha.ol,selin-11-en-4-alpha-ol,Kongol,,False
+α-eudesmol,alpha.eudesmol,alpha.eudesmol,alpha-eudesmol,Î±-eudesmol,,False
+14-hydroxy-9-epi-(E)-caryophyllene,X14.hydroxy.9.epi..E..caryophyllene,X14.hydroxy.9.epi..E..caryophyllene,14-hydroxy-9-epi-(E)-caryophyllene,14-hydroxy-9-epi-(E)-caryophyllene,,False
+Tau-muurolol,tau.muurolol,tau.muurolol,tau-muurolol,Tau-muurolol,,False
+N-tetradecanol,n.tetradecanol,n.tetradecanol,n-tetradecanol,N-tetradecanol,,False
+Eoeniculin,foeniculin,foeniculin,foeniculin,Eoeniculin,,False
+Cadalene,cadalene,cadalene,cadalene,Cadalene,,False
+"2,3-dihydro-farnesol",X2.3.dihydro.farnesol,X2.3.dihydro.farnesol,"2,3-dihydro-farnesol","2,3-dihydro-farnesol",,False
+"E,Z-farnesal",X2E.6Z.farnesal,X2E.6Z.farnesal,"2E,6Z-farnesal","E,Z-farnesal",,False
+Caryophyllene acetate,caryophyllene.acetate,caryophyllene.acetate,caryophyllene acetate,Caryophyllene acetate,,False
+14-hydroxy-α-humulene,X14.hydroxy.alpha.humulene,X14.hydroxy.alpha.humulene,14-hydroxy-alpha-humulene,14-hydroxy-Î±-humulene,,False
+"Z,E-farnesal",X2Z.6E.farnesal,X2Z.6E.farnesal,"2Z,6E-farnesal","Z,E-farnesal",,False
+"Z,Z-farnesol",X2Z.6Z.farnesol,X2Z.6Z.farnesol,"2Z,6Z-farnesol","Z,Z-farnesol",,False
+"Z,E-farnesol",X2Z.6E.farnesol,X2Z.6E.farnesol,"2Z,6E-farnesol","Z,E-farnesol",,False
+Ambroxide,ambroxide,ambroxide,ambroxide,Ambroxide,,False
+Benzyl benzoate,benzyl.benzoate,benzyl.benzoate,benzyl benzoate,Benzyl benzoate,,False
+"2E,6E-methyl farnesoate",X2E.6E.methyl.farnesoate,X2E.6E.methyl.farnesoate,"2E,6E-methyl farnesoate","2E,6E-methyl farnesoate",,False
+Ethyl tetradecanoate,ethyl.tetradecanoate,ethyl.tetradecanoate,ethyl tetradecanoate,Ethyl tetradecanoate,,False
+2-ethylhexyl acrylate,X2.ethylhexylsalicylate,X2.ethylhexylsalicylate,2-ethylhexylsalicylate,2-ethylhexyl acrylate,,False
+Isopropyl tetradecanoate,isopropyl.tetradecanoate,isopropyl.tetradecanoate,isopropyl-tetradecanoate,Isopropyl tetradecanoate,,False
+Ethyl pentadecanoate,ethyl.pentadecanoate,ethyl.pentadecanoate,ethyl pentadecanoate,Ethyl pentadecanoate,,False
+Methyl hexadecanoate,methyl.hexadecanoate,methyl.hexadecanoate,methyl hexadecanoate,Methyl hexadecanoate,,False
+"Z,Z-geranyl linalool",Z.Z.geranyl.linalool,Z.Z.geranyl.linalool,"Z,Z-geranyl linalool","Z,Z-geranyl linalool",,False
+Ethyl hexadecanoate,ethyl.hexadecanoate,ethyl.hexadecanoate,ethyl hexadecanoate,Ethyl hexadecanoate,,False
+Manool oxide,manool.oxide,manool.oxide,manool oxide,Manool oxide,,False
+13-epi manool oxide,X13.epi.manool.oxide,X13.epi.manool.oxide,13-epi-manool oxide,13-epi manool oxide,,False
+Isopropyl hexadecanoate,isopropyl.hexadecanoate,isopropyl.hexadecanoate,isopropyl hexadecanoate,Isopropyl hexadecanoate,,False
+Manool,manool,manool,manool,Manool,,False
+Ethyl octadecanoate,ethyl.octadecanoate,ethyl.octadecanoate,ethyl octadecanoate,Ethyl octadecanoate,,False
+Ethyl pentanoate,ethyl.pentanoate,ethyl.pentanoate,ethyl pentanoate,Ethyl pentanoate,,False
+2-ethyl-3-methylpyrazine,X2.ethyl.3.methylpyrazine,X2.ethyl.3.methylpyrazine,2-ethyl-3-methylpyrazine,2-ethyl-3-methylpyrazine,,False
+Total ester compounds,esters_sum,esters_sum,esters_sum,Total ester compounds,,True
+Total hop aroma compounds,aroma_hops_sum,aroma_hops_sum,aroma_hops_sum,Total hop aroma compounds,,True
+Total acids,acids_sum,acids_sum,acids_sum,Total acids,,True
+Total sulfur compounds,sulfur_sum,sulfur_sum,sulfur_sum,Total sulfur compounds,,True

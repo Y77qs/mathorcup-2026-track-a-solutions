@@ -1,0 +1,17 @@
+{
+  "baseline_holdout_accuracy": 0.42,
+  "defect_violation_rate": 0.0,
+  "ed_over_dref_tripel": 0.1261751505609254,
+  "n_features": 231.0,
+  "r2": 0.423009420982131,
+  "r2_50dim": 0.39799919967987196,
+  "seed": 42.0,
+  "stochastic": 1.0,
+  "style_hit_kriek": 1.0,
+  "style_hit_lambic": 1.0,
+  "style_hit_macro": 0.9972727272727272,
+  "style_hit_tripel": 0.99,
+  "transfer_feasible_rate": 1.0,
+  "transfer_tripel_hit_before": 0.0,
+  "transfer_tripel_hit_rate": 1.0
+}

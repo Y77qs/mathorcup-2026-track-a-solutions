@@ -1,0 +1,115 @@
+{
+  "C1_n_samples": {
+    "1.csv_rows": 250,
+    "unique_beer": 250,
+    "unique_beer_id": 250,
+    "statement_says": 226,
+    "verdict": "data=250; statement 226 为笔误"
+  },
+  "C2_corr_type": {
+    "n_pairs": 116,
+    "max_abs_err_vs_spearman": 4.996003610813204e-16,
+    "max_abs_err_vs_pearson": 0.345849734727833,
+    "median_abs_err_vs_spearman": 1.249000902703301e-16,
+    "median_abs_err_vs_pearson": 0.050434310933334,
+    "examples": [
+      {
+        "a": "geraniol",
+        "b": "eugenol",
+        "pearson": -0.088369,
+        "spearman": 0.053738,
+        "file_2csv": 0.053738,
+        "err_spearman": 0.0,
+        "err_pearson": 0.142107
+      },
+      {
+        "a": "geraniol",
+        "b": "acids_sum",
+        "pearson": -0.176638,
+        "spearman": -0.161461,
+        "file_2csv": -0.161461,
+        "err_spearman": 0.0,
+        "err_pearson": 0.015176
+      },
+      {
+        "a": "geraniol",
+        "b": "methylpyrazine",
+        "pearson": -0.069839,
+        "spearman": -0.041298,
+        "file_2csv": -0.041298,
+        "err_spearman": 0.0,
+        "err_pearson": 0.028541
+      },
+      {
+        "a": "protein.g.L.",
+        "b": "phenylacetaldehyde",
+        "pearson": -0.064938,
+        "spearman": -0.001058,
+        "file_2csv": -0.001058,
+        "err_spearman": 0.0,
+        "err_pearson": 0.06388
+      },
+      {
+        "a": "protein.g.L.",
+        "b": "nerol",
+        "pearson": -0.16921,
+        "spearman": -0.248052,
+        "file_2csv": -0.248052,
+        "err_spearman": 0.0,
+        "err_pearson": 0.078842
+      },
+      {
+        "a": "protein.g.L.",
+        "b": "citronellol",
+        "pearson": -0.108786,
+        "spearman": -0.144566,
+        "file_2csv": -0.144566,
+        "err_spearman": 0.0,
+        "err_pearson": 0.03578
+      }
+    ],
+    "verdict": "2.csv = Spearman（题面'皮尔逊'为误写）"
+  },
+  "C7_log_base": {
+    "n_checks": 36,
+    "median_rel_err_log10": 7.836166947759456e-10,
+    "median_rel_err_ln": 0.6076327558340838,
+    "examples": [
+      {
+        "beer": 10,
+        "col": "acetaldehyde",
+        "log10_value": -0.64174146,
+        "calibrated": 0.22817,
+        "10^v": 0.22817,
+        "exp(v)": 0.52637497,
+        "rel_err_log10": 0.0,
+        "rel_err_ln": 1.30694204
+      },
+      {
+        "beer": 10,
+        "col": "DMS",
+        "log10_value": 0.0462112,
+        "calibrated": 0.0,
+        "10^v": 1.1122725,
+        "exp(v)": 1.04729558,
+        "rel_err_log10": 1112272500539.4053,
+        "rel_err_ln": 1047295576426.7828
+      },
+      {
+        "beer": 10,
+        "col": "ethyl_acetate",
+        "log10_value": -0.59934978,
+        "calibrated": 0.251565,
+        "10^v": 0.251565,
+        "exp(v)": 0.5491686,
+        "rel_err_log10": 0.0,
+        "rel_err_ln": 1.18300876
+      },
+      {
+        "beer": 10,
+        "col": "linalool",
+        "log10_value": 22.05570187,
+        "calibrated": 22.05570186,
+        "10^v": 1.1368466071556828e+22,
+        "exp(v)": 3790265362.1949935,
+        "rel_err_log10"

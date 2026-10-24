@@ -1,0 +1,18 @@
+== Q3 transfer: Pils/Lager -> Tripel ==
+source samples: 11 (Pils/Lager); target: Tripel
+defect columns constrained (7): ['DMS', 'X.E..2.nonenal', 'X2.3.butanedione', 'X3.methyl.2.butenal', 'X4VG', 'X5.methylfurfural', 'furfural']
+  beer 124: success=True box_viol=0.00e+00 defect_viol=9.37e-11 obj 82.0->2.4 move=0.386
+  beer 81: success=True box_viol=0.00e+00 defect_viol=7.94e-10 obj 124.8->2.2 move=0.464
+  beer 218: success=True box_viol=0.00e+00 defect_viol=4.79e-12 obj 61.6->0.4 move=0.370
+  beer 96: success=True box_viol=0.00e+00 defect_viol=1.11e-10 obj 112.7->3.6 move=0.444
+  beer 230: success=True box_viol=0.00e+00 defect_viol=9.97e-11 obj 65.0->3.5 move=0.367
+  beer 185: success=True box_viol=0.00e+00 defect_viol=2.77e-12 obj 102.8->4.9 move=0.417
+  beer 139: success=True box_viol=0.00e+00 defect_viol=2.64e-12 obj 65.0->0.6 move=0.365
+  beer 209: success=True box_viol=0.00e+00 defect_viol=3.73e-14 obj 122.3->2.1 move=0.470
+  beer 119: success=True box_viol=0.00e+00 defect_viol=4.74e-12 obj 78.1->1.2 move=0.380
+  beer 90: success=True box_viol=0.00e+00 defect_viol=2.03e-12 obj 67.6->1.2 move=0.370
+  beer 28: success=True box_viol=0.00e+00 defect_viol=5.59e-14 obj 102.6->1.2 move=0.451
+  variant=subspace_projection: feasible=1.00 dist=10.61 hit=0.36
+  variant=conditional_mean: feasible=1.00 dist=1.86 hit=1.00
+  variant=mahalanobis_change: feasible=1.00 dist=12.78 hit=0.00
+[done] feasible 11/11; classifier hit as Tripel 0.00 -> 0.36

@@ -1,0 +1,63 @@
+== scale_identification.csv: (231, 28) ==
+scale_verdict
+unverified    161
+log10          37
+linear         33
+
+== linear 列（ 33 ）==
+['X2.3.butanedione', 'X3.methylbutanal', 'ethyl.isobutyrate', 'X2.methyltetrahydrofuran.3.one', 'ethyl.butyrate', 'methylpyrazine', 'furfural', 'X3Z.hexenol', 'n.hexanol', 'styrene', 'amyl.acetate', 'benzaldehyde', 'X5.methylfurfural', 'hexyl.acetate', 'benzyl.alcohol', 'phenylacetaldehyde', 'X.E..beta.ocimene', 'linalool', 'X.E..2.nonenal', 'diethyl.succinate', 'X1.alpha.terpineol', 'ethyl.nicotinate', 'citronellol', 'geraniol', 'X.E.E..2.4.decadienal', 'eugenol', 'gamma.nonalactone', 'X.E..beta.damascenone', 'E.caryophyllene', 'alpha.humulene', 'Z.nerolidol', 'ethyl.pentanoate', 'X2.ethyl.3.methylpyrazine']
+
+== OAV summary: (43, 24)  median OAV in [1e-3,1e2]: 39/43 ==
+               compound scale_verdict unit  threshold_mean  oav_median     oav_max  frac_gt1  magnitude_ok
+               linalool        linear mg/L        0.027285   13.582966 1190.571658   0.98400          True
+            citronellol        linear mg/L        0.024500    8.789080  479.256611   0.92400          True
+           protein.g.L.         log10  g/L        1.023933    7.324698   34.377249   0.99600          True
+               geraniol        linear mg/L        0.031500    4.378342   70.647795   0.76000          True
+          ethanol..v.v.         log10  v/v        1.757256    4.093029    6.623964   0.97600          True
+          ammonia.mg.L.         log10 mg/L        2.600000    3.676923   77.319231   0.87600          True
+             bitterness         log10  IBU        5.000000    3.632400   12.450100   0.86400          True
+      isopentyl_acetate         log10 mg/L        0.603333    3.615377   21.682168   0.84400          True
+                    H2S         log10 ug/L        3.500000    2.425371   14.126089   0.92000          True
+                    DMS         log10 ug/L       17.250000    1.404940   30.171109   0.67200          True
+       acetic_acid.g.L.         log10  g/L        0.140250    1.212121   23.244207   0.61600          True
+          ethyl_acetate         log10 mg/L       24.000000    1.152407    5.454476   0.65600          True
+        ethyl_hexanoate         log10 mg/L        0.230000    1.025391    3.630891   0.51600          True
+        isoamyl_alcohol         log10 mg/L       40.015000    1.013122    2.551448   0.51600          True
+       X2.3.butanedione        linear mg/L        0.299250    0.951286  406.787028   0.46473          True
+                   iron         log10 mg/L        0.100000    0.945500   50.350000   0.44800          True
+        ethyl_octanoate         log10 mg/L        0.700000    0.708189    2.857379   0.26400          True
+               glycerol         log10  g/L        4.433333    0.574624    1.347744   0.02800          True
+                    DES         log10 ug/L        1.200000    0.511277    3.912600   0.18400          True
+      lactic_acid.mg.L.         log10 mg/L      416.666667    0.332400   17.250000   0.17200          True
+     X1.alpha.terpineol        linear mg/L        1.500000    0.268457    7.192895   0.10400          True
+      phenethyl_alcohol         log10 mg/L       35.010000    0.248715    2.212144   0.02400          True
+ethyl_2.methyl_butyrate         log10 mg/L        0.027000    0.191574   10.691852   0.06800          True
+         ethyl.butyrate        linear mg/L        0.450000    0.157189    4.185964   0.03200          True
+             isobutanol         log10 mg/L       80.000000    0.138017    0.417449   0.00000          True
+              SO2.mg.L.         log10 mg/L       15.333333    0.133696    0.772826   0.00000          True
+      phenethyl_acetate         log10 mg/L        1.763333    0.111336    0.726190   0.00000          True
+        ethyl_decanoate         log10 mg/L        1.035000    0.108297    0.628169   0.00000          True
+           acetaldehyde         log10 mg/L       50.000000    0.082096    0.371242   0.00000          True
+       isobutyl_acetate         log10 mg/L        1.000000    0.071365    0.470345   0.00000          True
+                    GFS         log10  g/L        2.900000    0.064655   28.305172   0.18000          True
+      ethyl_isovalerate         log10 mg/L        0.100000    0.057000    1.384050   0.00800          True
+                   X4VG         log10 mg/L        0.206333    0.047019    3.319047   0.06400          True
+         alpha.humulene        linear mg/L        0.625000    0.018999    9.699596   0.02000          True
+      ethyl.isobutyrate        linear mg/L        2.600000    0.016347    0.340661   0.00000          True
+       ethyl_propionate         log10 mg/L       10.000000    0.006839    0.081682   0.00000          True
+          octyl_acetate         log10 mg/L        0.500000    0.004820    0.072170   0.00000          True
+        E.caryophyllene        linear mg/L        0.280000    0.003517  146.166643   0.05600          True
+       ethyl.nicotinate        linear mg/L        6.000000    0.001854    0.050936   0.00000          True
+            Z.nerolidol        linear mg/L       25.000000    0.000397    0.109734   0.00000         False
+         methylpyrazine        linear mg/L        1.000000    0.000293    0.896099   0.00000         False
+                    CS2         log10 ug/L       50.000000    0.000143    0.019610   0.00000         False
+               furfural        linear mg/L       60.000000    0.000138    0.030314   0.00000         False
+
+== censoring ==
+{'total_calibrated_zero_cells_in_log10_cols': 755, 'n_log10_cols_with_zero': 25, 'max_abs_err_of_ratio_vs_half': 5.52e-10, 'relation': 'calibrated==0 的每一行都满足 10^(1.csv值) = 该列最小正 calibrated / 2（LOD/2 左删失替换）', 'note': '因此 1.csv 中这些单元格不是真实测量值而是 LOD/2 替换；建模时应作为删失处理或至少标记。'}
+
+== unverified ==
+{'n_cols': 161, 'n_with_negative': 145, 'n_with_shared_floor': 142, 'shared_floor_value': -1.81781854, 'shared_floor_10pow': 0.015211829884302173, 'shared_floor_cells_total': 6807, 'n_no_negative_and_max_le_10': 16, 'range_min': -1.81781854, 'range_max': 9.62304446, 'note': '无 8.xlsx 浓度表可校验 -> 一律 unverified；含负值/共享地板值者不可能是原始浓度，log 尺度可能性高，但底数与物理单位未验证，不臆造。'}
+
+== opening question answer ==
+1.csv 与 8.xlsx 'Calibrated chemical dataset' 的关系：8.xlsx 的 70 列把 1.csv 中对应 70 列的尺度拆开了——37 列在 1.csv 里是 log10(浓度)（10^v 与 calibrated 的中位相对误差 5.93e-10），33 列在 1.csv 里已经是线性浓度（v 与 calibrated 完全一致，中位相对误差 0.00e+00）。因此 1.csv 是**混合尺度**表，8.xlsx calibrated 是作者的去对数统一浓度表；两者并非同一张表的冗余副本。此外 calibrated==0 的行（log10 列共 755 个单元格）在 1.csv 中不是 0，而是 log10(该列最小正浓度/2)，即 LOD/2 左删失替换（最大比例偏差 5.5e-10）。其余 161 列无外部浓度表可校验，一律标 unverified。

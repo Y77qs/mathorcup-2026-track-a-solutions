@@ -1,0 +1,80 @@
+{
+  "source": "data/raw/2.csv (231x231 Spearman) + data/raw/1.csv (250x231)",
+  "tau_primary": 0.3,
+  "tau_grid": [
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "tau_fdr_equivalent": 0.14392829248503,
+  "fdr": {
+    "method": "BH over 26565 pairs on Fisher-z with per-pair complete n_eff",
+    "q": 0.05,
+    "n_significant": 12081
+  },
+  "n_nodes": 231,
+  "n_edges_primary": 3918,
+  "density_primary": 0.14748729531338228,
+  "n_components": 5,
+  "n_modules": 7,
+  "n_modules_size_ge3": 3,
+  "modularity": 0.3183346799520214,
+  "module_sizes": [
+    90,
+    81,
+    56,
+    1,
+    1,
+    1,
+    1
+  ],
+  "module_labels": {
+    "0": "module0:malt",
+    "1": "module1:hops",
+    "2": "module2:mixed",
+    "3": "module3:singleton",
+    "4": "module4:singleton",
+    "5": "module5:singleton",
+    "6": "module6:singleton"
+  },
+  "spectral_crosscheck": {
+    "k_all_modules": 7,
+    "k_core_modules": 3,
+    "ari_on_core_nodes_with_k_all": 0.2747994996726326,
+    "ari_on_core_nodes_with_k_core": 0.16107375716167407
+  },
+  "recompute_agreement": {
+    "max_abs_diff": 0.04782963240779675,
+    "mean_abs_diff": 0.0002447999529186931,
+    "median_abs_diff": 1.1796119636642288e-16,
+    "corr_2csv_vs_recomputed": 0.9999650982634769,
+    "n_pairs": 53130,
+    "n_nan_in_2csv": 0,
+    "recompute_note": "1.csv 列中位数填补（73 缺失/57750 格）后重算 Spearman；2.csv 为作者原值"
+  },
+  "name_mapping": {
+    "source": "outputs/protocol/corr2_map.csv",
+    "positional_equal": true
+  },
+  "limitations": [
+    "2.csv 由作者在原始（未填补）数据上计算；本图直接使用 2.csv，不重新估计相关。",
+    "重算 Spearman 用列中位数填补 73 个缺失，与 2.csv 的差异已量化（max/mean abs diff）。",
+    "1.csv 的 calibrated==0 是 LOD/2 删失替代码；本脚本不使用 1.csv 数值作为浓度。",
+    "模块划分来自单一固定相关矩阵；未做样本 bootstrap 的模块稳定性（列入限制）。",
+    "tau_primary=0.30 只影响模块叙事，不参与 Top-3 选择。"
+  ]
+}
+
+module sizes: [90, 81, 56, 1, 1, 1, 1]
+ tau  n_edges  density  n_components  n_modules  n_modules_ge3  giant_component  modularity  ari_vs_primary
+0.20     8323 0.313307             1          3              3              113    0.209411        0.692625
+0.25     5739 0.216036             3          5              3               96    0.262052        0.838441
+0.30     3918 0.147487             5          7              3               90    0.318335        1.000000
+0.35     2582 0.097196             8         11              4               77    0.379843        0.529172
+0.40     1660 0.062488            15         22              6               73    0.439362        0.506588
+0.45     1038 0.039074            28         34              7               64    0.548774        0.278625
+0.50      645 0.024280            52         58              9               45    0.615650        0.246834

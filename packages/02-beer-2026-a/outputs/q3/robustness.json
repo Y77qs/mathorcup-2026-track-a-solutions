@@ -1,0 +1,46 @@
+{
+  "question": "Q3",
+  "kind": "constraint & style-consistency check",
+  "perStyleEnergy": {
+    "Kriek": {
+      "energy_generated_vs_eval": 9.351710929410816,
+      "energy_source_baseline_vs_eval": 9.946351083670999,
+      "energy_transferred_constrained_vs_eval": 9.477974997629579,
+      "energy_transferred_raw_vs_eval": 9.479053991507664,
+      "gain_constrained_vs_source": 0.46837608604142034,
+      "gain_raw_vs_source": 0.46729709216333504,
+      "n_adapt": 3,
+      "n_eval": 7
+    },
+    "Lambic": {
+      "energy_generated_vs_eval": 1.956603300245641,
+      "energy_source_baseline_vs_eval": 3.5391798400575003,
+      "energy_transferred_constrained_vs_eval": 2.1043859956407798,
+      "energy_transferred_raw_vs_eval": 2.108105685500512,
+      "gain_constrained_vs_source": 1.4347938444167205,
+      "gain_raw_vs_source": 1.4310741545569883,
+      "n_adapt": 3,
+      "n_eval": 8
+    },
+    "Tripel": {
+      "energy_generated_vs_eval": 2.1216428626195056,
+      "energy_source_baseline_vs_eval": 2.541888558252197,
+      "energy_transferred_constrained_vs_eval": 2.2735676678897794,
+      "energy_transferred_raw_vs_eval": 2.299796743025497,
+      "gain_constrained_vs_source": 0.2683208903624177,
+      "gain_raw_vs_source": 0.2420918152267002,
+      "n_adapt": 5,
+      "n_eval": 23
+    }
+  },
+  "defectChecksWithThreshold": 24.0,
+  "defectChecksNoThreshold": 18.0,
+  "unitRisk": "8.xlsx 阈值单位逐化合物不同；绝对 OAV 可能差 10^3，主判据用不恶化比例",
+  "fewShotDisclosure": "每个留出风格用 3–5 个样本估计原型，其余样本只评估；不是 zero-shot",
+  "limitations": [
+    "绝对 OAV 受阈值单位不确定性影响（可能差 10^3）",
+    "trans-2-nonenal / 3-methyl-2-butenal / 5-methylfurfural 无阈值，无法判定",
+    "few-shot 使用了 3–5 个留出样本，不是 zero-shot",
+    "未做多种子重复生成（未预注册的稳健性实验），仅有单 seed 结果"
+  ]
+}

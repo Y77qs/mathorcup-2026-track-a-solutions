@@ -1,0 +1,16 @@
+{
+  "stage_m1m4_meta": {
+    "bh_family": "global 11550 + within-dim 231",
+    "enet_alpha_median": 0.21581205980061807,
+    "enet_l1_ratio_median": 0.1,
+    "enet_nonzero_median": 30.5,
+    "m4_impute_sensitivity_spearman": 0.9999401703920046,
+    "m4_n_q_global_lt_0.05": 2721,
+    "m4_n_q_within_lt_0.05": 2665,
+    "n_features_tests": 11550,
+    "ridge_alpha_median": 1000.0,
+    "runtime_seconds": 211.1,
+    "seed": 42,
+    "stage": "m1m4"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "S=1.0": {
+    "S": 1.0,
+    "grade_counts": {
+      "0": 0,
+      "1": 26,
+      "2": 1313,
+      "3": 9231,
+      "4": 1644,
+      "5": 235,
+      "6": 51
+    },
+    "grade_share": {
+      "0": 0.0,
+      "1": 0.0021,
+      "2": 0.105,
+      "3": 0.7385,
+      "4": 0.1315,
+      "5": 0.0188,
+      "6": 0.0041
+    },
+    "mean_grade": 3.07216,
+    "frac_at_grade0": 0.0,
+    "frac_at_grade6": 0.00408,
+    "per_column_mean_clip0_share": 0.0,
+    "per_column_mean_clip6_share": 0.00408,
+    "columns_with_any_order_violation": 0,
+    "mean_spearman_grade_vs_z": 0.7319689106317179,
+    "observed_sd_per_column": 0.5668049817531405,
+    "S_over_observed_sd": 1.7642752484407909
+  },
+  "S=0.75": {
+    "S": 0.75,
+    "grade_counts": {
+      "0": 6,
+      "1": 86,
+      "2": 2440,
+      "3": 7525,
+      "4": 1841,
+      "5": 460,
+      "6": 142
+    },
+    "grade_share": {
+      "0": 0.0005,
+      "1": 0.0069,
+      "2": 0.1952,
+      "3": 0.602,
+      "4": 0.1473,
+      "5": 0.0368,
+      "6": 0.0114
+    },
+    "mean_grade": 3.04456,
+    "frac_at_grade0": 0.00048,
+    "frac_at_grade6": 0.01136,
+    "per_column_mean_clip0_share": 0.00047999999999999996,
+    "per_column_mean_clip6_share": 0.011359999999999999,
+    "columns_with_any_order_violation": 0,
+    "mean_spearman_grade_vs_z": 0.8405352842891238,
+    "observed_sd_per_column": 0.5668049817531405,
+    "S_over_observed_sd": 1.3232064363305933,
+    "qwk_vs_S1": 0.8205576654506613,
+    "agreement_with_S1": 0.8252
+  },
+  "S=1.25": {
+    "S": 1.25,
+    "grade_counts": {
+      "0": 0,
+      "1": 6,
+      "2": 713,
+      "3": 10312,
+      "4": 1327,
+      "5": 124,
+      "6": 18
+    },
+    "grade_share": {
+      "0": 0.0,
+      "1": 0.0005,
+      "2": 0.057,
+      "3": 0.825,
+      "4": 0.1062,
+      "5": 0.0099,
+      "6": 0.0014
+    },
+    "mean_grade": 3.07232,
+    "frac_at_grade0": 0.0,
+    "frac_at_grade6": 0.00144,
+    "per_column_mean_clip0_share": 0.0,
+    "per_column_mean_clip6_share": 0.0014399999999999999,
+    "columns_with_any_order_violation": 0,
+    "mean_spearman_grade_vs_z": 0.6291748592705746,
+    "observed_sd_per_column": 0.5668049817531405,
+    "S_over_observed_sd": 2.205344060550989,
+    "qwk_vs_S1": 0.8187628579101713,
+    "agreement_with_S1": 0.89776
+  },
+  "identifiability": {
+    "premise_in_common_py": "z 为 4.csv 的标准化值（均值 0、标准差 1）",
+    "observed": {
+      "column_mean_range": [
+        -0.04931181586799999,
+        0.062832603384
+      ],
+      "column_std_range": [
+        0.3696592855908294,
+        0.8584632026985457
+      ],
+      "mean_column_sd": 0.5668049817531405
+    },
+    "verdict": "4.csv 列均值≈0 但列标准差≈0.57（不是 1）；S=1.0 相当于每个等级 1.75 个观测标准差。4.csv 不含各维原始均值，故'grade 3 锚定 z=0'是假设而非可由数据验证的事实；若某维原始均值≠3，整列分级会整体平移。",
+    "falsifiable_checks": [
+      "三档 S 下报告分级分布与跨 S 的 QWK；QWK 高说明分级对标定不敏感，低说明结论依赖假设",
+      "报告每列 clip 到 0/6 的比例（信息损失）；比例高说明标定把分布压到端点",
+      "报告 per-column sd 与 S 的比值；比值远离 1 说明 'S=1 个标准差' 的陈述不成立"
+    ]
+  },
+  "vacuous_check_note": "g=clip(floor(z/S+3.5),0,6) 是 z 的单调非降函数，所以 '分级序与 z 序完全一致' 在任何 S 下恒成立（实测违反列数：0）。该检查不能作为通过证据；有信息量的检查是 clip 比例、跨 S 的 QWK、以及分级分布是否退化。"
+}

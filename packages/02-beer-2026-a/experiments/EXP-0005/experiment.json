@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a",
+  "id": "EXP-0005",
+  "questionId": "Q3",
+  "modelId": "MODEL-0005",
+  "modelKind": "simulation",
+  "title": "Q3 风格条件生成 + 跨风格迁移 + 缺陷约束",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": "风格条件高斯生成（收缩协方差）+ few-shot 原型迁移 + 缺陷约束投影（缺陷列不平移）；能量距离与 OAV 检查",
+  "params": {
+    "evaluation": {
+      "kind": "constraint-satisfaction",
+      "metricKey": "constraint-satisfaction",
+      "targetContractId": "TGT-0003"
+    },
+    "family": "style-conditional-gaussian",
+    "features_used": 231,
+    "features": [
+      "DATA-0003 231 化合物/理化特征",
+      "tasting_category_fine 风格标签",
+      "8.xlsx threshold__* 缺陷阈值"
+    ],
+    "holdout_styles": [
+      "Tripel",
+      "Kriek",
+      "Lambic"
+    ],
+    "few_shot_n": {
+      "Tripel": 5,
+      "Kriek": 3,
+      "Lambic": 3
+    },
+    "source_style": "Pils/Lager",
+    "transfer": "x' = x_source + (mu_T_fewshot - mu_source)；缺陷列不平移（约束投影）"
+  },
+  "datasetId": "DATA-0003",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0003",
+    "path": "data/clean/q3.csv",
+    "sha256": "49ed4d054a15f514ae25cd283d88d4ad3569ae1d7e829c693d23ec4b91e12c4e",
+    "bytes": 732934,
+    "targetColumn": "tasting_category_fine",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "7759c324128249593a812ad4ab02713cbe3343c25fb114ee27fad76508ce0501",
+  "code": {
+    "path": "src/q3_generate.py",
+    "sha256": "d02e0c83b57759090154826823cd1a9977d4a6622efb05d5c410187bcad6bdfb",
+    "bytes": 13275
+  },
+  "dependencies": [
+    {
+      "path": "src/emit.py",
+      "sha256": "f5bb77c493345d55e475b2797f9a8c42d087fa0c739abc37fc48d136882408c8",
+      "bytes": 1925
+    },
+    {
+      "path": "src/lib.py",
+      "sha256": "fbc2c314fa8d92d9357ca730c7dfdd4db5b8b49f0739c12cc40beab0864b271e",
+      "bytes": 6402
+    },
+    {
+      "path": "src/q3_generate.py",
+      "sha256": "d02e0c83b57759090154826823cd1a9977d4a6622efb05d5c410187bcad6bdfb",
+      "bytes": 13275
+    }
+  ],
+  "sourceSnapshot": null,
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q3_generate.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q3_generate.py"
+    ],
+    "cwd": "experiments/EXP-0005"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261024,
+    "timeoutSeconds": 600,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q3_generate.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261024,
+  "timeoutSeconds": 600,
+  "rerunOf": null,
+  "requestSignature": "e997971cdf852c925cd7a18d34e3bc19974f0d6c47597cd7c09cd95c1965006d",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": null,
+  "createdAt": "2026-10-24T04:11:06.741Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0005",
+  "registration": {
+    "questionId": "Q3",
+    "modelKind": "simulation",
+    "title": "Q3 风格条件生成 + 跨风格迁移 + 缺陷约束",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": "风格条件高斯生成（收缩协方差）+ few-shot 原型迁移 + 缺陷约束投影（缺陷列不平移）；能量距离与 OAV 检查",
+    "params": {
+      "evaluation": {
+        "kind": "constraint-satisfaction",
+        "metricKey": "constraint-satisfaction",
+        "targetContractId": "TGT-0003"
+      },
+      "family": "style-conditional-gaussian",
+      "features_used": 231,
+      "features": [
+        "DATA-0003 231 化合物/理化特征",
+        "tasting_category_fine 风格标签",
+        "8.xlsx threshold__* 缺陷阈值"
+      ],
+      "holdout_styles": [
+        "Tripel",
+        "Kriek",
+        "Lambic"
+      ],
+      "few_shot_n": {
+        "Tripel": 5,
+        "Kriek": 3,
+        "Lambic": 3
+      },
+      "source_style": "Pils/Lager",
+      "transfer": "x' = x_source + (mu_T_fewshot - mu_source)；缺陷列不平移（约束投影）"
+    },
+    "codeFile": "src/q3_generate.py",
+    "datasetId": "DATA-0003",
+    "splitId": null,
+    "seed": 20261024,
+    "args": [],
+    "timeoutSeconds": 600,
+    "modelId": "MODEL-0005"
+  }
+}

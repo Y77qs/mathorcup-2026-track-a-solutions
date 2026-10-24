@@ -1,0 +1,237 @@
+{
+  "checkType": "leakage",
+  "passed": true,
+  "observed": {
+    "maxAbsCorrelation": 0.5761801113864866,
+    "threshold": 0.999,
+    "forbiddenColumns": [],
+    "forbiddenUsed": [],
+    "checkedColumns": 231,
+    "skippedColumns": 0
+  },
+  "expected": {
+    "forbiddenUsed": [],
+    "maxAbsCorrelation": "below 0.999"
+  },
+  "delta": null,
+  "message": "no forbidden input is used and no feature reaches |r| 0.999 (max 0.576180111386 over 231 numeric feature(s))",
+  "details": {
+    "violations": [],
+    "correlations": [
+      {
+        "column": "color.EBC.",
+        "correlation": 0.5761801113864866,
+        "absCorrelation": 0.5761801113864866,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "pH",
+        "correlation": 0.4187023276698164,
+        "absCorrelation": 0.4187023276698164,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "ethyl..E..linalool",
+        "correlation": -0.35404885499968813,
+        "absCorrelation": 0.35404885499968813,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "kcalperc",
+        "correlation": 0.3420652433119319,
+        "absCorrelation": 0.3420652433119319,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "protein.g.L.",
+        "correlation": 0.3196296652634432,
+        "absCorrelation": 0.3196296652634432,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "acetaldehyde",
+        "correlation": 0.2948407202841253,
+        "absCorrelation": 0.2948407202841253,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X.E..beta.ionone",
+        "correlation": -0.2937778115818683,
+        "absCorrelation": 0.2937778115818683,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "MeSH",
+        "correlation": 0.29258578870331725,
+        "absCorrelation": 0.29258578870331725,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "beta.phellandrene",
+        "correlation": -0.29169765437018863,
+        "absCorrelation": 0.29169765437018863,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "terpinen.4.ol",
+        "correlation": -0.28566547573697615,
+        "absCorrelation": 0.28566547573697615,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "nerol",
+        "correlation": -0.2730374124854955,
+        "absCorrelation": 0.2730374124854955,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "E.ocimenone",
+        "correlation": -0.24573060520977907,
+        "absCorrelation": 0.24573060520977907,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X4.methyl.1.pentanol",
+        "correlation": -0.2440052208228102,
+        "absCorrelation": 0.2440052208228102,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X.E..alpha.ionone",
+        "correlation": -0.23863669979829294,
+        "absCorrelation": 0.23863669979829294,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "n.octanol",
+        "correlation": -0.23779592541075903,
+        "absCorrelation": 0.23779592541075903,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "terpinolene",
+        "correlation": -0.23309348143067055,
+        "absCorrelation": 0.23309348143067055,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X2.methyl.benzofuran",
+        "correlation": -0.22752321310411103,
+        "absCorrelation": 0.22752321310411103,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X3.methyl.2.hexanol",
+        "correlation": -0.21528425763964776,
+        "absCorrelation": 0.21528425763964776,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "alpha.calacorene",
+        "correlation": -0.21373594250498446,
+        "absCorrelation": 0.21373594250498446,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "isoborneol",
+        "correlation": -0.2098285788238647,
+        "absCorrelation": 0.2098285788238647,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "alloaromadendrene.epoxide",
+        "correlation": -0.20722330641488404,
+        "absCorrelation": 0.20722330641488404,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "bitterness",
+        "correlation": 0.20637079659545685,
+        "absCorrelation": 0.20637079659545685,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "spathulenol",
+        "correlation": -0.2058612326642181,
+        "absCorrelation": 0.2058612326642181,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X2.ethyl.1.hexanol",
+        "correlation": -0.205695551450776,
+        "absCorrelation": 0.205695551450776,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "GFS",
+        "correlation": 0.20329736011595131,
+        "absCorrelation": 0.20329736011595131,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "meta.cymenene",
+        "correlation": -0.2026096063642621,
+        "absCorrelation": 0.2026096063642621,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "car.3.en.2.one",
+        "correlation": -0.20242372112873133,
+        "absCorrelation": 0.20242372112873133,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "ethyl.furoate",
+        "correlation": 0.20204076900282336,
+        "absCorrelation": 0.20204076900282336,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X4.ethyl.guaiacol",
+        "correlation": -0.20155250692264648,
+        "absCorrelation": 0.20155250692264648,
+        "forbidden": false,
+        "pairs": 250
+      },
+      {
+        "column": "X2.acetylfuran",
+        "correlation": 0.19507353197490182,
+        "absCorrelation": 0.19507353197490182,
+        "forbidden": false,
+        "pairs": 250
+      }
+    ],
+    "skipped": [],
+    "usedBasis": "declared featureColumns (experiment.params.features)",
+    "forbiddenPresentButUnused": [],
+    "featuresPath": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/data/clean/q2_raw.csv"
+  }
+}

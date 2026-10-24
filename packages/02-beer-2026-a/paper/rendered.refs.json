@@ -1,0 +1,307 @@
+{
+  "generatedAt": "2026-10-24T04:43:37.545Z",
+  "input": "report/paper.md",
+  "output": "report/rendered.md",
+  "sha256": "864395bb3325445ec635eafb8e11e35f31ad306f74b1c160d44570ff0b08a49b",
+  "allowStale": false,
+  "placeholders": 42,
+  "passes": 1,
+  "refs": [
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.8011105565397745
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.7051266124827658
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "oof_mae_mean",
+      "value": 0.6804670815061571
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "topk_jaccard",
+      "value": 0.22799999999999998
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "bootstrap_stability_A",
+      "value": 0.47836
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "exceed_rate_before",
+      "value": 0.0909090909090909
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "exceed_rate_after_raw",
+      "value": 0.3181818181818182
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "defect_nonworsen_rate_constrained",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "energy_holdout_transferred_constrained_mean",
+      "value": 4.618642887053379
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "energy_holdout_source_baseline_mean",
+      "value": 5.342473160660233
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "oof_mae_mean",
+      "value": 0.7855967333648494
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.8011105565397745
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "holdout_r2_mean",
+      "value": -0.03938361507982333
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "oof_mae_mean",
+      "value": 0.6804670815061571
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.7051266124827658
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "holdout_r2_mean",
+      "value": 0.18624577214719296
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "oof_mae_mean",
+      "value": 0.6891755903181582
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.7080210833625707
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0003",
+      "metricKey": "holdout_r2_mean",
+      "value": 0.12888811361172473
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "holdout_mae__metallic",
+      "value": 1.13221476437487
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "holdout_mae__A_hops_citrus",
+      "value": 1.0781150205889476
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "holdout_mae__F_esters_flower",
+      "value": 1.0065063560303658
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "jaccard_A_B",
+      "value": 0.22799999999999998
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "jaccard_A_C",
+      "value": 0.614
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "jaccard_B_C",
+      "value": 0.16
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "bootstrap_stability_A",
+      "value": 0.47836
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0010",
+      "metricKey": "topk_jaccard",
+      "value": 0.09
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "jaccard_A_C",
+      "value": 0.614
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "exceed_rate_before",
+      "value": 0.0909090909090909
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "exceed_rate_after_raw",
+      "value": 0.3181818181818182
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "defect_nonworsen_rate_raw",
+      "value": 0.3333333333333333
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "defect_nonworsen_rate_constrained",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "exceed_rate_after_constrained",
+      "value": 0.0909090909090909
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "energy_holdout_transferred_constrained_mean",
+      "value": 4.618642887053379
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "energy_holdout_source_baseline_mean",
+      "value": 5.342473160660233
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0011",
+      "metricKey": "energy_holdout_generated_mean",
+      "value": 3.718739352848362
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "energy_holdout_generated_mean",
+      "value": 4.476652364091987
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0008",
+      "metricKey": "energy_holdout_transferred_constrained_mean",
+      "value": 4.618642887053379
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0001",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.8011105565397745
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0002",
+      "metricKey": "holdout_mae_mean",
+      "value": 0.7051266124827658
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "jaccard_A_B",
+      "value": 0.22799999999999998
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0007",
+      "metricKey": "bootstrap_stability_A",
+      "value": 0.47836
+    }
+  ],
+  "staleRefs": [],
+  "warnings": []
+}

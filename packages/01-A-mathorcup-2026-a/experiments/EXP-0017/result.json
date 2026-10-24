@@ -1,0 +1,37 @@
+{
+  "token": "daa83d26c0efdc7a275cb0d9",
+  "experimentId": "EXP-0017",
+  "status": "cancelled",
+  "exitCode": -15,
+  "startedAt": "2026-10-23T13:39:14.021Z",
+  "endedAt": "2026-10-23T13:47:51.617Z",
+  "durationMs": 517595,
+  "timedOut": false,
+  "cancelled": true,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [],
+  "figures": [],
+  "failure": {
+    "code": "CANCELLED",
+    "message": "the caller cancelled this run; the process group was terminated and the partial logs were kept"
+  },
+  "error": "the caller cancelled this run; the process group was terminated and the partial logs were kept",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_final.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q1_final.py",
+    "--split",
+    "primary",
+    "--emit"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0017",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": 15
+}

@@ -1,0 +1,34 @@
+{
+  "token": "5273fcb246248dcd2db66ef0",
+  "experimentId": "EXP-0014",
+  "status": "failed",
+  "exitCode": 1,
+  "startedAt": "2026-10-24T04:37:31.875Z",
+  "endedAt": "2026-10-24T04:37:32.101Z",
+  "durationMs": 225,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [],
+  "figures": [],
+  "failure": {
+    "code": "NONZERO_EXIT",
+    "message": "the script exited with code 1; stderr tail: Traceback (most recent call last):\n  File \"/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0013/inputs/src/q1_trainonly.py\", line 18, in <module>\n    import emit as E  # noqa: E402\n    ^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'emit'"
+  },
+  "error": "the script exited with code 1; stderr tail: Traceback (most recent call last):\n  File \"/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0013/inputs/src/q1_trainonly.py\", line 18, in <module>\n    import emit as E  # noqa: E402\n    ^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'emit'",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0013/inputs/src/q1_trainonly.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0013/inputs/src/q1_trainonly.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0014",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

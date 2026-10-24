@@ -1,0 +1,18 @@
+== Q3 transfer: Pils/Lager -> Tripel ==
+source samples: 11 (Pils/Lager); target: Tripel
+defect columns constrained (7): ['DMS', 'X.E..2.nonenal', 'X2.3.butanedione', 'X3.methyl.2.butenal', 'X4VG', 'X5.methylfurfural', 'furfural']
+  beer 124: success=True box_viol=0.00e+00 defect_viol=0.00e+00 obj 31.9->24.6 move=0.111
+  beer 81: success=True box_viol=0.00e+00 defect_viol=3.33e-16 obj 21.7->16.7 move=0.095
+  beer 218: success=True box_viol=0.00e+00 defect_viol=1.78e-14 obj 23.9->18.5 move=0.096
+  beer 96: success=True box_viol=0.00e+00 defect_viol=2.40e-14 obj 35.9->27.4 move=0.124
+  beer 230: success=True box_viol=0.00e+00 defect_viol=0.00e+00 obj 45.4->33.9 move=0.143
+  beer 185: success=True box_viol=0.00e+00 defect_viol=1.31e-15 obj 36.6->27.9 move=0.125
+  beer 139: success=True box_viol=0.00e+00 defect_viol=4.00e-15 obj 39.5->29.7 move=0.130
+  beer 209: success=True box_viol=0.00e+00 defect_viol=6.99e-14 obj 36.2->27.9 move=0.121
+  beer 119: success=False box_viol=nan defect_viol=nan obj nan->nan move=nan
+  beer 90: success=True box_viol=0.00e+00 defect_viol=0.00e+00 obj 30.6->23.6 move=0.110
+  beer 28: success=False box_viol=nan defect_viol=nan obj nan->nan move=nan
+  gamma=0.1: feasible=0.82 obj nan->nan move=nan
+  gamma=1.0: feasible=0.82 obj nan->nan move=nan
+  gamma=10.0: feasible=0.82 obj nan->nan move=nan
+[done] feasible 9/11; classifier hit as Tripel 0.00 -> 0.00

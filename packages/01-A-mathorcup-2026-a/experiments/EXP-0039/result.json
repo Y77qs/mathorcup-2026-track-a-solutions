@@ -1,0 +1,62 @@
+{
+  "token": "fffc385eb6157c8d39318412",
+  "experimentId": "EXP-0039",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-23T14:02:33.418Z",
+  "endedAt": "2026-10-23T14:06:05.343Z",
+  "durationMs": 211925,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "M1_enet_alpha_median": 0.21581205980061807,
+    "M1_enet_l1_ratio_median": 0.1,
+    "M1_ridge_alpha_median": 1000.0,
+    "M4_impute_sensitivity_spearman": 0.9999401703920046,
+    "M4_n_q_global_lt_0.05": 2721.0,
+    "M4_n_q_within_lt_0.05": 2665.0,
+    "n_features_tests": 11550.0,
+    "runtime_seconds": 211.1,
+    "seed": 42.0
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0039/metrics.json",
+      "sha256": "91c756b018c43ddc5f6e001c85d2957088485bbd8e3ddb33f55ce4f978b50d03",
+      "bytes": 320,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0039/outputs.json",
+      "sha256": "a70e1a13a0eb87596abc56068df9cf98cacd83e0b942b8adf683e81f067f3758",
+      "bytes": 452,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0039/univariate_fdr.csv",
+      "sha256": "8fbc7a0be6bcc3789f5b612a0008fb6206e08d221e671698f79d4bd74ea3a47c",
+      "bytes": 1311464,
+      "kind": "data"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_select.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_select.py",
+    "--stage",
+    "m1m4"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0039",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

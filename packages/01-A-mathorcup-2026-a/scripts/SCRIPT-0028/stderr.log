@@ -1,0 +1,20 @@
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:166: RuntimeWarning: All-NaN slice encountered
+  "real_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:168: RuntimeWarning: All-NaN slice encountered
+  "gen_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:166: RuntimeWarning: All-NaN slice encountered
+  "real_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:168: RuntimeWarning: All-NaN slice encountered
+  "gen_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:166: RuntimeWarning: All-NaN slice encountered
+  "real_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:168: RuntimeWarning: All-NaN slice encountered
+  "gen_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:166: RuntimeWarning: All-NaN slice encountered
+  "real_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:168: RuntimeWarning: All-NaN slice encountered
+  "gen_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:166: RuntimeWarning: All-NaN slice encountered
+  "real_oav_median": float(np.nanmedian(
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_generate.py:168: RuntimeWarning: All-NaN slice encountered
+  "gen_oav_median": float(np.nanmedian(

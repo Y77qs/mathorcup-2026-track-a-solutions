@@ -1,0 +1,7 @@
+  [CV B {'latent': 8, 'beta': 0.2}] fold0: n_styles=22 hit=0.814 ed_ratio=0.268
+  [CV B {'latent': 8, 'beta': 0.2}] fold1: n_styles=22 hit=0.689 ed_ratio=0.225
+  [CV B {'latent': 8, 'beta': 0.2}] fold2: n_styles=21 hit=0.767 ed_ratio=0.234
+  [CV B {'latent': 8, 'beta': 0.2}] fold3: n_styles=19 hit=0.754 ed_ratio=0.250
+  [CV B {'latent': 8, 'beta': 0.2}] fold4: n_styles=18 hit=0.656 ed_ratio=0.249
+{"family": "B", "config": {"latent": 8, "beta": 0.2}, "score": 0.553339984266942, "mean_hit_rate": 0.7948245614035088, "mean_ed_ratio": 0.24148457713656665, "mean_diversity_ratio": 0.12137449372971756, "admissible": false}
+METRICS_JSON {"gen_style_fidelity": 0.7948245614035088, "energy_distance_ratio": 0.24148457713656665, "diversity_ratio": 0.12137449372971756, "selection_score": 0.553339984266942, "n_features": 231, "stochastic": true}

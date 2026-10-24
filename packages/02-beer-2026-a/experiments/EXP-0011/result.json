@@ -1,0 +1,59 @@
+{
+  "token": "6394a304a866a910713306df",
+  "experimentId": "EXP-0011",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T04:35:48.958Z",
+  "endedAt": "2026-10-24T04:35:49.410Z",
+  "durationMs": 451,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "constraint_satisfaction": 1.0,
+    "energy_holdout_generated_mean": 3.718739352848362,
+    "energy_holdout_source_baseline_mean": 4.51705463028622,
+    "n_features": 231.0,
+    "n_holdout_styles": 3.0,
+    "perStyle.Kriek.energy_global_generated_vs_style": 7.117114905619748,
+    "perStyle.Kriek.energy_source_identity_vs_style": 7.535505660769098,
+    "perStyle.Kriek.n_style": 10.0,
+    "perStyle.Lambic.energy_global_generated_vs_style": 2.650760830565965,
+    "perStyle.Lambic.energy_source_identity_vs_style": 3.4773231666730364,
+    "perStyle.Lambic.n_style": 11.0,
+    "perStyle.Tripel.energy_global_generated_vs_style": 1.3883423223593736,
+    "perStyle.Tripel.energy_source_identity_vs_style": 2.538335063416525,
+    "perStyle.Tripel.n_style": 28.0
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0011/metrics.json",
+      "sha256": "f8bf17b7ecd3a6fcbe568aa062d56b8505f65cf302b064b0833b9dea9cf9f683",
+      "bytes": 739,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0011/outputs.json",
+      "sha256": "6d7a74e3b9e8a012931e88fbeb69970841e7ef0babd4078964aaf6567f0a8d54",
+      "bytes": 526,
+      "kind": "json"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q3_baseline.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q3_baseline.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0011",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

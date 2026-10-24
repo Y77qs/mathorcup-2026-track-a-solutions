@@ -1,0 +1,14 @@
+[B1] split=SPLIT-0002 train=200 test=50 feats=231 dims=50
+  fold 0: alpha=10000 r2=0.0580
+  fold 1: alpha=10000 r2=0.0388
+  fold 2: alpha=1778.28 r2=-1.5518
+  fold 3: alpha=10000 r2=0.0568
+  fold 4: alpha=10000 r2=0.0441
+[B1] full-train alpha=10000
+{
+  "oof_r2_mean": -0.1527,
+  "holdout_r2_mean": 0.0574,
+  "holdout_mae_mean": 0.3899,
+  "holdout_spearman_mean": 0.3593,
+  "holdout_n_dims_r2_positive": 44
+}

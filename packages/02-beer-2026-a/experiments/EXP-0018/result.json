@@ -1,0 +1,46 @@
+{
+  "token": "190198736a2d58d470148a7c",
+  "experimentId": "EXP-0018",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T04:49:59.877Z",
+  "endedAt": "2026-10-24T04:50:00.428Z",
+  "durationMs": 550,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "defect_nonworsen_rate_constrained": 1.0,
+    "energy_holdout_generated_mean": 4.489274219592232,
+    "energy_holdout_transferred_constrained_mean": 4.618642887053379,
+    "n_holdout_styles": 3.0,
+    "seed": 20261025.0
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0018/metrics.json",
+      "sha256": "d9aaaa9893c67c64e4842e87f4e4e3e7a7e46ee957591c5746fabde2105b6c89",
+      "bytes": 218,
+      "kind": "json"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q3_robust.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q3_robust.py",
+    "--seed",
+    "20261025"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/experiments/EXP-0018",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

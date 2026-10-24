@@ -1,0 +1,5 @@
+== Q3 eval ==
+[1] generated_style_probs.csv rows=12500
+[2] generated hit (seed42): 0.602 vs holdout acc 0.440; required mean 0.834 vs baseline 0.422
+[3] ED (seed42, required): Tripel=2.078, Kriek=4.536, Lambic=2.625
+[4] defect exceedance (seed42 required styles): Tripel: DMS=0.95, butanedione=0.64, X4VG=0.00; Kriek: DMS=0.46, butanedione=0.57, X4VG=0.00; Lambic: DMS=0.60, butanedione=0.56, X4VG=0.00

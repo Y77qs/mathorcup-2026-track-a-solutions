@@ -1,0 +1,49 @@
+{
+  "checkType": "holdout-metrics",
+  "passed": true,
+  "observed": 0.04819587620111854,
+  "expected": 0.04819587620111854,
+  "delta": 0.0,
+  "message": "recomputed r2=0.0481958762011 from predictions+truth matches the reported 0.0481958762011 within the declared tolerance (|delta|=0 <= absolute=1e-06 -> True; |delta|/max(|expected|,1e-12)=0 <= relative=1e-06 -> True)",
+  "details": {
+    "metric": "r2",
+    "comparison": {
+      "passed": true,
+      "delta": 0.0,
+      "absOk": true,
+      "relOk": true,
+      "explanation": "|delta|=0 <= absolute=1e-06 -> True; |delta|/max(|expected|,1e-12)=0 <= relative=1e-06 -> True",
+      "tolerance": {
+        "absolute": 1e-06,
+        "relative": 1e-06
+      }
+    },
+    "alignment": {
+      "alignment": "row-order (equal length; no shared key column)",
+      "predictionColumn": "y_pred",
+      "truthColumn": "overall",
+      "truthColumnSource": "truth-file",
+      "keyColumn": null,
+      "rows": 50
+    },
+    "rows": {
+      "used": 50,
+      "dropped": 0,
+      "predictions": 50,
+      "truth": 50
+    },
+    "recomputedMetrics": {
+      "rmse": 0.5027982946838828,
+      "mae": 0.4122747595853167,
+      "mse": 0.2528061251370206,
+      "accuracy": 0.0,
+      "f1": 0.0,
+      "mape": 1.1604044370016842,
+      "accuracy5": 0.02
+    },
+    "predictionsPath": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0025/predictions.csv",
+    "truthPath": "/Users/baozhashizitou/Documents/MATHORCUP/A/data/splits/SPLIT-0002/test.csv",
+    "truthColumn": "overall",
+    "truthColumnSource": "truth-file"
+  }
+}

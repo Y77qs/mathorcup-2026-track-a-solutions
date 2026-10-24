@@ -1,0 +1,3 @@
+== Q3 eval ==
+[1] generated_style_probs.csv rows=12500
+[2] generated hit (seed42): 0.602 vs holdout acc 0.440; required mean 0.834 vs baseline 0.422

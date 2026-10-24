@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a",
+  "id": "EXP-0004",
+  "questionId": "Q2",
+  "modelId": "MODEL-0004",
+  "modelKind": "evaluation",
+  "title": "Q2 Top-3 关键化合物与稳定性（Spearman / Ridge / 网络平滑 + bootstrap）",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": "三种排序：Spearman |rho|、Ridge 系数 |beta|、2.csv 网络平滑（PSD 投影）；bootstrap B=500 统计 Top-3 入选频率",
+  "params": {
+    "evaluation": {
+      "kind": "set-stability",
+      "metricKey": "topk-jaccard",
+      "topK": 3,
+      "setsFile": "sets.json",
+      "dimensions": 50,
+      "methods": [
+        "spearman",
+        "ridge-coef",
+        "network-smoothed"
+      ],
+      "bootstrap": 500,
+      "targetContractId": "TGT-0002"
+    },
+    "family": "topk-factor-ranking",
+    "features_used": 231,
+    "features": [
+      "1.csv 231 化合物/理化特征",
+      "2.csv 231x231 Spearman 相关矩阵（PSD 投影后使用）"
+    ],
+    "topK": 3,
+    "bootstrap": 500,
+    "psd_projection": "eigenvalue clipping at 1e-6 then renormalize diagonal to 1"
+  },
+  "datasetId": "DATA-0001",
+  "splitId": "SPLIT-0001",
+  "dataset": {
+    "id": "DATA-0001",
+    "path": "data/clean/q2_raw.csv",
+    "sha256": "42ec0bbe99938ebf104d7f632ff2794de4f1481f59990c2fa2904af719a5aa64",
+    "bytes": 856101,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": {
+    "id": "SPLIT-0001",
+    "datasetId": "DATA-0001",
+    "method": "random-holdout",
+    "counts": {
+      "rows": 250,
+      "train": 200,
+      "test": 50
+    },
+    "trainPath": "data/splits/SPLIT-0001/train.csv",
+    "trainSha256": "a58becb2c6233f405f2bf6881e8943b9556ee855322e89e382caba4c8410afef",
+    "testPath": "data/splits/SPLIT-0001/test.csv",
+    "testSha256": "54c01a6ad731ce56b2398728a51644c4eed303002b0769dc6ed0e0d5dc4d5294",
+    "assignmentPath": "data/splits/SPLIT-0001/assignment.csv",
+    "assignmentSha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+  },
+  "configSha256": "7759c324128249593a812ad4ab02713cbe3343c25fb114ee27fad76508ce0501",
+  "code": {
+    "path": "src/q2_topk.py",
+    "sha256": "b34d31fa3491ef0a29353fe729430cb8365422bb4ca9b48a5ad06c9db4a7f6f3",
+    "bytes": 6810
+  },
+  "dependencies": [
+    {
+      "path": "src/emit.py",
+      "sha256": "f5bb77c493345d55e475b2797f9a8c42d087fa0c739abc37fc48d136882408c8",
+      "bytes": 1925
+    },
+    {
+      "path": "src/lib.py",
+      "sha256": "fbc2c314fa8d92d9357ca730c7dfdd4db5b8b49f0739c12cc40beab0864b271e",
+      "bytes": 6402
+    },
+    {
+      "path": "src/q2_topk.py",
+      "sha256": "b34d31fa3491ef0a29353fe729430cb8365422bb4ca9b48a5ad06c9db4a7f6f3",
+      "bytes": 6810
+    }
+  ],
+  "sourceSnapshot": null,
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q2_topk.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q2_topk.py"
+    ],
+    "cwd": "experiments/EXP-0004"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261024,
+    "timeoutSeconds": 600,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest/src/q2_topk.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261024,
+  "timeoutSeconds": 600,
+  "rerunOf": null,
+  "requestSignature": "041c0d5c8061130a5438894762f50e89dcb9ebfe92827d3f41f7633f662ff5eb",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": null,
+  "createdAt": "2026-10-24T04:10:56.736Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0004",
+  "registration": {
+    "questionId": "Q2",
+    "modelKind": "evaluation",
+    "title": "Q2 Top-3 关键化合物与稳定性（Spearman / Ridge / 网络平滑 + bootstrap）",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": "三种排序：Spearman |rho|、Ridge 系数 |beta|、2.csv 网络平滑（PSD 投影）；bootstrap B=500 统计 Top-3 入选频率",
+    "params": {
+      "evaluation": {
+        "kind": "set-stability",
+        "metricKey": "topk-jaccard",
+        "topK": 3,
+        "setsFile": "sets.json",
+        "dimensions": 50,
+        "methods": [
+          "spearman",
+          "ridge-coef",
+          "network-smoothed"
+        ],
+        "bootstrap": 500,
+        "targetContractId": "TGT-0002"
+      },
+      "family": "topk-factor-ranking",
+      "features_used": 231,
+      "features": [
+        "1.csv 231 化合物/理化特征",
+        "2.csv 231x231 Spearman 相关矩阵（PSD 投影后使用）"
+      ],
+      "topK": 3,
+      "bootstrap": 500,
+      "psd_projection": "eigenvalue clipping at 1e-6 then renormalize diagonal to 1"
+    },
+    "codeFile": "src/q2_topk.py",
+    "datasetId": "DATA-0001",
+    "splitId": "SPLIT-0001",
+    "seed": 20261024,
+    "args": [],
+    "timeoutSeconds": 600,
+    "modelId": "MODEL-0004"
+  }
+}

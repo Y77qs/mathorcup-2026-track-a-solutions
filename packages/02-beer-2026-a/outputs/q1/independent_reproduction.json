@@ -1,0 +1,22 @@
+{
+  "kind": "independent-reproduction-training-only",
+  "experimentId": "EXP-0002",
+  "metric": "oof_mae_mean",
+  "recomputed": 0.6804670815061571,
+  "recorded": 0.6804670815061571,
+  "absoluteDelta": 0.0,
+  "relativeDelta": 0.0,
+  "tolerance": {
+    "absolute": 1e-09,
+    "relative": 1e-06
+  },
+  "passed": true,
+  "holdoutTouched": false,
+  "packIndependentRerun": {
+    "attempted": true,
+    "blockedBy": "VMU_PACK_MODELING_CONTEST_HOLDOUT_REUSE_UNCONTROLLED",
+    "reason": "holdout 复用预算（contest.yaml quality.robustness.maxHoldoutReuse，初始 3）已被 EXP-0001/0002/0003/0004 四次暴露占满；pack 拒绝再暴露。",
+    "consequence": "holdout 点估计没有获得第二次独立审计；本文只用训练内部 OOF 验证可复现性，并在限制中披露。"
+  },
+  "note": "同 seed、同数据、同代码哈希；训练行 200 条，5 折 seed=20261024"
+}

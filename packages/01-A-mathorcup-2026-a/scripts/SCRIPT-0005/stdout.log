@@ -1,0 +1,10 @@
+[calib] train n=250  from assignment.csv
+[calib] anchored=14/50  weak=36
+  P1_oav_anchor vs P2_range: QWK_mean=0.674
+  P1_oav_anchor vs P3_quantile: QWK_mean=0.538
+  P1_oav_anchor vs P4_sigma: QWK_mean=0.320
+  P2_range vs P3_quantile: QWK_mean=0.506
+  P2_range vs P4_sigma: QWK_mean=0.336
+  P3_quantile vs P4_sigma: QWK_mean=0.374
+[calib] corr2 map: 2.csv 行列用化学全名，与 1.csv 列名按名字几乎对不上；但 2.csv 第 i 行/列 ≡ 1.csv 第 i
+{"n_dims_anchored": 14, "anchored_dims": ["A_hops_all", "A_hops_citrus", "A_esters_all", "A_esters_ethac", "F_hops_all", "F_esters_all", "F_esters_ethac", "acidity", "bitternes", "sweetness", "X4vg", "lactic", "acetic", "alcohol"]}

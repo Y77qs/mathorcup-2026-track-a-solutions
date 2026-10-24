@@ -1,0 +1,6 @@
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/02_scale.py:100: RuntimeWarning: overflow encountered in power
+  rec["median_rel_err_log10"] = float(np.median(rel_err(10.0 ** v[nz], cc[nz]))) if nz.any() else np.nan
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/02_scale.py:100: RuntimeWarning: overflow encountered in power
+  rec["median_rel_err_log10"] = float(np.median(rel_err(10.0 ** v[nz], cc[nz]))) if nz.any() else np.nan
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/02_scale.py:100: RuntimeWarning: overflow encountered in power
+  rec["median_rel_err_log10"] = float(np.median(rel_err(10.0 ** v[nz], cc[nz]))) if nz.any() else np.nan

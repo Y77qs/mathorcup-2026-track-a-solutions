@@ -1,0 +1,18 @@
+{
+  "checkType": "baseline-compare",
+  "passed": true,
+  "observed": 0.7051266124827658,
+  "expected": 0.8011105565397745,
+  "delta": 0.09598394405700872,
+  "message": "the candidate mae=0.705126612483 beats the baseline mae=0.80111055654 by 0.095983944057 (minimize) within tolerance 8.0211055654e-07",
+  "details": {
+    "metric": "mae",
+    "metricDirection": "minimize",
+    "mode": "improve",
+    "allowedShortfall": 8.021105565397744e-07,
+    "tolerance": {
+      "absolute": 1e-09,
+      "relative": 1e-06
+    }
+  }
+}

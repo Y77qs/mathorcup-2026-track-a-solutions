@@ -1,0 +1,17 @@
+{
+  "holdout_styles": [
+    "Tripel",
+    "Kriek",
+    "Lambic"
+  ],
+  "adapt_n": {
+    "Tripel": 5,
+    "Kriek": 3,
+    "Lambic": 3
+  },
+  "source_style": "Pils/Lager",
+  "generator": "per-style Gaussian with shrinkage lambda=n/(n+5)",
+  "transfer": "x' = x_source + (mu_T_fewshot - mu_source)",
+  "few_shot_disclosure": "每个留出风格用 3–5 个样本估计原型，其余样本只评估；不是 zero-shot",
+  "unit_risk": "8.xlsx 阈值单位逐化合物不同；绝对 OAV 可能差 10^3，主判据用不恶化比例"
+}

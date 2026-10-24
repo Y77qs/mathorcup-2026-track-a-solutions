@@ -1,0 +1,73 @@
+{
+  "token": "0f04842088eae97a6be14369",
+  "experimentId": "EXP-0027",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-23T13:50:55.013Z",
+  "endedAt": "2026-10-23T13:51:10.445Z",
+  "durationMs": 15432,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "defect_transfer_all_satisfied": 1,
+    "defect_transfer_feasible_fraction": 1.0,
+    "defect_violation_rate": 0.0,
+    "diversity_ratio_mean": 0.7518559039668244,
+    "ed_over_dref_tripel": 0.12642883908887026,
+    "energy_distance_kriek": 4.573160906500763,
+    "energy_distance_lambic": 2.5949970976825045,
+    "energy_distance_ratio_mean": 0.20612890148826987,
+    "energy_distance_tripel": 2.077518906559147,
+    "gen_style_fidelity": 0.994,
+    "gen_style_fidelity_required_mean": 0.9973333333333333,
+    "holdout_style_accuracy": 0.42,
+    "n_features": 231.0,
+    "profile_spearman_placeholder": 0.8935254101640656,
+    "r2": 0.3778958797264049,
+    "r2_50dim": 0.8935254101640656,
+    "seed": 42.0,
+    "stochastic": 1,
+    "style_hit_macro": 0.994,
+    "style_hit_tripel": 0.992,
+    "transfer_feasible_rate": 1.0,
+    "transfer_tripel_hit_rate": 0.5454545454545454
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0027/metrics.json",
+      "sha256": "6b26279d769c11aa8f85c06eb24086096e3c1c826e600853cb0036685c17d2d8",
+      "bytes": 840,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0027/outputs.json",
+      "sha256": "df30325feff3082971191e5422df346be0cd03dcc873e853edaf5a78e48ea566",
+      "bytes": 584553,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0027/predictions.csv",
+      "sha256": "d424ccd86214165a500baba8f29560b5f0c5f1cc07b3806cbe8f3513d6a538e7",
+      "bytes": 6043,
+      "kind": "predictions"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_eval.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q3_eval.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0027",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

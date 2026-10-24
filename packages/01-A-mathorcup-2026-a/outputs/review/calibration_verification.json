@@ -1,0 +1,316 @@
+{
+  "fit_scope_check": {
+    "n_dims": 25,
+    "closer_to_train200": 20,
+    "closer_to_all250": 5,
+    "median_abs_s_diff_train": 1.1102230246251565e-16,
+    "median_abs_s_diff_all": 0.07491282796775489,
+    "verdict": "stored (a,s) 与 train-200 重估的差更小 -> 参数确实只用训练 200 估计（fit_scope 声明成立）"
+  },
+  "anchored_comparison": {
+    "n_stored_anchored": 13,
+    "stored_anchored_dims": [
+      "A_hops_all",
+      "A_hops_citrus",
+      "A_esters_ethac",
+      "F_hops_all",
+      "F_esters_all",
+      "F_esters_ethac",
+      "acidity",
+      "bitternes",
+      "sweetness",
+      "X4vg",
+      "lactic",
+      "acetic",
+      "alcohol"
+    ],
+    "rho_reproduced_within_0.05": 13,
+    "slope_sign_agree_theilsen": 13,
+    "slope_sign_agree_huber": 13,
+    "rows": [
+      {
+        "dim": "A_hops_all",
+        "stored_rho": 0.4193845491522586,
+        "my_rho_train200": 0.41938454915225865,
+        "rho_diff": 5.551115123125783e-17,
+        "stored_a": -0.7145632762286288,
+        "stored_s": 0.4467623689651349,
+        "my_theilsen_a": -0.7145632762286288,
+        "my_theilsen_s": 0.44676236896513494,
+        "my_huber_s": 0.3992290514162607
+      },
+      {
+        "dim": "A_hops_citrus",
+        "stored_rho": 0.3749724827506417,
+        "my_rho_train200": 0.3749724827506417,
+        "rho_diff": 0.0,
+        "stored_a": -0.5193621820257931,
+        "stored_s": 0.2460099758348573,
+        "my_theilsen_a": -0.5193621820257931,
+        "my_theilsen_s": 0.24600997583485731,
+        "my_huber_s": 0.2697615145386185
+      },
+      {
+        "dim": "A_esters_ethac",
+        "stored_rho": 0.3990072707185262,
+        "my_rho_train200": 0.39900727071852626,
+        "rho_diff": 5.551115123125783e-17,
+        "stored_a": -0.1002175902720394,
+        "stored_s": 0.737981173062253,
+        "my_theilsen_a": -0.10021759027203941,
+        "my_theilsen_s": 0.737981173062253,
+        "my_huber_s": 0.5443266215677487
+      },
+      {
+        "dim": "F_hops_all",
+        "stored_rho": 0.3445281215992281,
+        "my_rho_train200": 0.34452812159922813,
+        "rho_diff": 5.551115123125783e-17,
+        "stored_a": -0.7186588354906436,
+        "stored_s": 0.4196858874255438,
+        "my_theilsen_a": -0.7186588354906436,
+        "my_theilsen_s": 0.41968588742554386,
+        "my_huber_s": 0.35601315490663504
+      },
+      {
+        "dim": "F_esters_all",
+        "stored_rho": 0.3063571589289733,
+        "my_rho_train200": 0.3063571589289733,
+        "rho_diff": 0.0,
+        "stored_a": -0.5891976488871324,
+        "stored_s": 0.6815447812359966,
+        "my_theilsen_a": -0.5891976488871324,
+        "my_theilsen_s": 0.6815447812359966,
+        "my_huber_s": 0.5967820256479697
+      },
+      {
+        "dim": "F_esters_ethac",
+        "stored_rho": 0.5373522549131167,
+        "my_rho_train200": 0.5373522549131167,
+        "rho_diff": 0.0,
+        "stored_a": -0.1140547564189283,
+        "stored_s": 0.9690766125807572,
+        "my_theilsen_a": -0.11405475641892834,
+        "my_theilsen_s": 0.9690766125807573,
+        "my_huber_s": 0.7438432059027739
+      },
+      {
+        "dim": "acidity",
+        "stored_rho": 0.4546221290197639,
+        "my_rho_train200": 0.45462212901976395,
+        "rho_diff": 5.551115123125783e-17,
+        "stored_a": -0.4501350832015666,
+        "stored_s": 0.7008223209326427,
+        "my_theilsen_a": -0.4501350832015666,
+        "my_theilsen_s": 0.7008223209326427,
+        "my_huber_s": 1.2342752494273734
+      },
+      {
+        "dim": "bitternes",
+        "stored_rho": 0.7102007876704823,
+        "my_rho_train200": 0.7102007876704823,
+        "rho_diff": 0.0,
+        "stored_a": -0.8513048706080775,
+        "stored_s": 1.5141239513311766,
+        "my_theilsen_a": -0.8513048706080775,
+        "my_theilsen_s": 1.5141239513311766,
+        "my_huber_s": 1.0820373957298268
+      },
+      {
+        "dim": "sweetness",
+        "stored_rho": 0.3349755292013383,
+        "my_rho_train200": 0.33497552920133833,
+        "rho_diff": 5.551115123125783e-17,
+        "stored_a": 0.1747549129763531,
+        "stored_s": 0.2450738365596675,
+        "my_theilsen_a": 0.1747549129763531,
+        "my_theilsen_s": 0.24507383655966755,
+        "my_huber_s": 0.2424583651388363
+      },
+      {
+        "dim": "X4vg",
+        "stored_rho": 0.4690192215369629,
+        "my_rho_train200": 0.4690192215369629,
+        "rho_diff": 0.0,
+        "stored_a": 0.2234252461550356,
+        "stored_s": 0.0817722340258392,
+        "my_theilsen_a": 0.22342524615503567,
+        "my_theilsen_s": 0.08177223402583927,
+        "my_huber_s": 0.08005262830190132
+      },
+      {
+        "dim": "lactic",
+        "stored_rho": 0.4998820413095519,
+        "my_rho_train200": 0.4998820413095519,
+        "rho_diff": 0.0,
+        "stored_a": -0.2488182072898713,
+        "stored_s": 0.1143401321532662,
+        "my_theilsen_a": -0.2488182072898713,
+        "my_theilsen_s": 0.11434013215326622,
+        "my_huber_s": 0.9921018679973583
+      },
+      {
+        "dim": "acetic",
+        "stored_rho": 0.3926117172789889,
+        "my_rho_train200": 0.39261171727898897,
+        "rho_diff": 5.551115123125783e-17,
+        "stored_a": -0.2750786015488239,
+        "stored_s": 0.0329018906472985,
+        "my_theilsen_a": -0.27507860154882396,
+        "my_theilsen_s": 0.03290189064729854,
+        "my_huber_s": 0.014866472002968166
+      },
+      {
+        "dim": "alcohol",
+        "stored_rho": 0.8148234817817211,
+        "my_rho_train200": 0.8148234817817211,
+        "rho_diff": 0.0,
+        "stored_a": -2.762697509190605,
+        "stored_s": 4.468211540810541,
+        "my_theilsen_a": -2.762697509190605,
+        "my_theilsen_s": 4.468211540810541,
+        "my_huber_s": 1.6435259515736873
+      }
+    ]
+  },
+  "monotonicity": {
+    "order_violations_by_policy": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0,
+      "P4": 0
+    },
+    "note": "四套口径都是 v 的单调非降函数，单调性恒成立（必要非充分）"
+  },
+  "pairwise_qwk": {
+    "P1 vs P2": {
+      "qwk_mean": 0.6912619433427442,
+      "qwk_min": 0.15672072048191177,
+      "qwk_max": 0.9827580718749669
+    },
+    "P1 vs P3": {
+      "qwk_mean": 0.5993736056874147,
+      "qwk_min": 0.20645498212993718,
+      "qwk_max": 0.9304732654591182
+    },
+    "P1 vs P4": {
+      "qwk_mean": 0.3552276914347936,
+      "qwk_min": 0.12583368672655082,
+      "qwk_max": 0.6896869680348023
+    },
+    "P2 vs P3": {
+      "qwk_mean": 0.518148239596697,
+      "qwk_min": 0.06831634103332296,
+      "qwk_max": 0.8608569582380825
+    },
+    "P2 vs P4": {
+      "qwk_mean": 0.3445738479085474,
+      "qwk_min": 0.044416195170068895,
+      "qwk_max": 0.8376599950937242
+    },
+    "P3 vs P4": {
+      "qwk_mean": 0.37435331763267304,
+      "qwk_min": 0.1487387394563079,
+      "qwk_max": 0.6231809610068334
+    }
+  },
+  "stored_pairwise_qwk_canonical_SPLIT0001": {
+    "P1_oav_anchor vs P2_range": {
+      "qwk_mean": 0.6912619433427442,
+      "qwk_min": 0.15672072048191177,
+      "qwk_max": 0.9827580718749669
+    },
+    "P1_oav_anchor vs P3_quantile": {
+      "qwk_mean": 0.6025145958511957,
+      "qwk_min": 0.2078651685393258,
+      "qwk_max": 0.928955223880597
+    },
+    "P1_oav_anchor vs P4_sigma": {
+      "qwk_mean": 0.3552276914347936,
+      "qwk_min": 0.12583368672655082,
+      "qwk_max": 0.6896869680348023
+    },
+    "P2_range vs P3_quantile": {
+      "qwk_mean": 0.5210913506983834,
+      "qwk_min": 0.06874951218713898,
+      "qwk_max": 0.8663911845730028
+    },
+    "P2_range vs P4_sigma": {
+      "qwk_mean": 0.3445738479085474,
+      "qwk_min": 0.044416195170068895,
+      "qwk_max": 0.8376599950937242
+    },
+    "P3_quantile vs P4_sigma": {
+      "qwk_mean": 0.3736388843779879,
+      "qwk_min": 0.14578809318109298,
+      "qwk_max": 0.6225614927905004
+    }
+  },
+  "stored_pairwise_qwk_stale_main_n250": {
+    "P1_oav_anchor vs P2_range": {
+      "qwk_mean": 0.6739288936746847,
+      "qwk_min": 0.19026616832734744,
+      "qwk_max": 0.9684909772986758
+    },
+    "P1_oav_anchor vs P3_quantile": {
+      "qwk_mean": 0.5376057463375838,
+      "qwk_min": 0.2102312543798177,
+      "qwk_max": 0.9338019917984769
+    },
+    "P1_oav_anchor vs P4_sigma": {
+      "qwk_mean": 0.32017008330314023,
+      "qwk_min": 0.1352413235237474,
+      "qwk_max": 0.6736139157876941
+    },
+    "P2_range vs P3_quantile": {
+      "qwk_mean": 0.5063426041425173,
+      "qwk_min": 0.06874951218713898,
+      "qwk_max": 0.807831762146483
+    },
+    "P2_range vs P4_sigma": {
+      "qwk_mean": 0.33645585820983936,
+      "qwk_min": 0.044416195170068895,
+      "qwk_max": 0.828897886258519
+    },
+    "P3_quantile vs P4_sigma": {
+      "qwk_mean": 0.3736388843779879,
+      "qwk_min": 0.14578809318109298,
+      "qwk_max": 0.6225614927905004
+    }
+  },
+  "qwk_method_diff_note": "我复算用 stored 参数对全部 250 分级，与 canonical 文件口径一致；与 stale main(n=250 拟合) 的 QWK 不同，说明 Lead 引用的 0.674/0.538/0.320 来自旧文件而非 SPLIT-0001。",
+  "weak_anchor_check": {
+    "dms": {
+      "stored_rho": 0.0889201233238897,
+      "my_rho_train200": 0.08892012332388978,
+      "status": "weak+transfer"
+    },
+    "diacetyl": {
+      "stored_rho": -0.1112911228634958,
+      "my_rho_train200": -0.1112911228634958,
+      "status": "weak+transfer"
+    },
+    "metallic": {
+      "stored_rho": 0.2435098860590822,
+      "my_rho_train200": 0.24350988605908228,
+      "status": "weak+transfer"
+    },
+    "F_hops_citrus": {
+      "stored_rho": 0.2442915106529993,
+      "my_rho_train200": 0.24429151065299934,
+      "status": "weak+transfer"
+    },
+    "orange": {
+      "stored_rho": 0.2045184776606219,
+      "my_rho_train200": 0.20451847766062192,
+      "status": "weak+transfer"
+    }
+  },
+  "stale_main_file": {
+    "path": "outputs/protocol/grade_calibration.json",
+    "fit_scope": "参数只在训练集(n=250)估计，应用到全部 250",
+    "n_anchored": 14,
+    "issue": "该文件是早期 n=250（全量）拟合的版本，与两份 canonical 文件（SPLIT-0001=13、stratified=15）不一致；若论文/台账引用它，会把全量拟合参数当主证据"
+  },
+  "caveat": "口径间 QWK 只衡量标定敏感性，不是效度：4.csv 的真实 0–6 等级未知，任何 QWK 都不是准确率。"
+}

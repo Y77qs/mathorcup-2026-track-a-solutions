@@ -1,0 +1,4 @@
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/08d_figures.py:109: RuntimeWarning: Mean of empty slice
+  return q, {"mean_offdiag": float(np.nanmean(M[~np.eye(4, dtype=bool)])),
+/Users/baozhashizitou/Documents/MATHORCUP/A/src/08d_figures.py:110: RuntimeWarning: All-NaN slice encountered
+  "max_offdiag": float(np.nanmax(M[~np.eye(4, dtype=bool)]))}

@@ -1,0 +1,1145 @@
+{
+  "status": "ok",
+  "n_generated_rows": 2500,
+  "missing_feature_columns": [],
+  "seeds": [
+    42
+  ],
+  "support_and_nonnegativity": {
+    "cells": 577500,
+    "below_train_min": 0,
+    "above_train_max": 0,
+    "linear_negative_cells": 0,
+    "reported": {
+      "support_violation_after_clip_max": 0.0,
+      "n_cells_clipped": 0,
+      "clipped_fraction": 0.0,
+      "neg_linear_concentration_cells": 0,
+      "aggregates_within_train_support": true,
+      "note": "k=15 低秩高斯的采样落在训练支撑内，裁剪未触发（非负与支撑约束不 binding，但机制在位）"
+    },
+    "pass": true
+  },
+  "small_n": {
+    "real_counts_in_1csv": {
+      "Kriek": 10,
+      "Lambic": 11,
+      "Faro": 3
+    },
+    "code_reported_styles": [
+      "Kriek",
+      "Lambic",
+      "Faro"
+    ],
+    "has_ci": true,
+    "reported_description": "Kriek(n=10)/Lambic(n=11)/Faro(n=3)：均值与协方差的 bootstrap 95% CI；n 太小，不能声称精确刻画分布"
+  },
+  "defect_generation": {
+    "mine": {
+      "all_styles": {
+        "DMS": {
+          "oav_median": 1.289735915040856,
+          "exceed_rate": 0.6272
+        },
+        "X2.3.butanedione": {
+          "oav_median": 1.8968803894470514,
+          "exceed_rate": 0.606
+        },
+        "X4VG": {
+          "oav_median": 0.07255790048832163,
+          "exceed_rate": 0.0168
+        }
+      },
+      "per_style": {
+        "Amber": {
+          "DMS": {
+            "oav_median": 1.334130493292529,
+            "exceed_rate": 0.77
+          },
+          "X2.3.butanedione": {
+            "oav_median": 8.117730587633966,
+            "exceed_rate": 0.93
+          },
+          "X4VG": {
+            "oav_median": 0.1803390609369689,
+            "exceed_rate": 0.0
+          }
+        },
+        "Blond": {
+          "DMS": {
+            "oav_median": 2.2644886428588658,
+            "exceed_rate": 0.95
+          },
+          "X2.3.butanedione": {
+            "oav_median": 3.6700352215802567,
+            "exceed_rate": 0.76
+          },
+          "X4VG": {
+            "oav_median": 0.2710560142569045,
+            "exceed_rate": 0.01
+          }
+        },
+        "Brett/cofermented": {
+          "DMS": {
+            "oav_median": 1.4710146861378042,
+            "exceed_rate": 0.81
+          },
+          "X2.3.butanedione": {
+            "oav_median": 2.9498875290519835,
+            "exceed_rate": 0.71
+          },
+          "X4VG": {
+            "oav_median": 0.17361653954398673,
+            "exceed_rate": 0.01
+          }
+        },
+        "Brown": {
+          "DMS": {
+            "oav_median": 1.5383108310996239,
+            "exceed_rate": 0.84
+          },
+          "X2.3.butanedione": {
+            "oav_median": 1.5996319907967962,
+            "exceed_rate": 0.59
+          },
+          "X4VG": {
+            "oav_median": 0.06726935110419824,
+            "exceed_rate": 0.0
+          }
+        },
+        "Brut": {
+          "DMS": {
+            "oav_median": 2.781496512588822,
+            "exceed_rate": 0.99
+          },
+          "X2.3.butanedione": {
+            "oav_median": 0.3060428103408316,
+            "exceed_rate": 0.4
+          },
+          "X4VG": {
+            "oav_median": 0.0,
+            "exceed_rate": 0.0
+          }
+        },
+        "Christmas": {
+          "DMS": {
+            "oav_median": 1.3963338699205525,
+            "exceed_rate": 0.84
+          },
+          "X2.3.butanedione": {
+            "oav_median": 1.628875306407189,
+            "exceed_rate": 0.6
+          },
+          "X4VG": {
+            "oav_median": 0.061774054385574886,
+            "exceed_rate": 0.0
+          }
+        },
+        "Dubbel": {
+          "DMS": {
+            "oav_median": 1.0509348496489324,
+            "exceed_rate": 0.57
+          },
+          "X2.3.butanedione": {
+            "oav_median": 1.7366845610299595,
+            "exceed_rate": 0.6
+          },
+          "X4VG": {
+            "oav_median": 0.054165294645219075,
+            "exceed_rate": 0.0
+          }
+        },
+        "Faro": {
+          "DMS": {
+            "oav_median": 0.8417960317486946,
+            "exceed_rate": 0.39
+          },
+          "X2.3.butanedione": {
+            "oav_median": 0.6034503010962974,
+            "exceed_rate": 0.46
+          },
+          "X4VG": {
+            "oav_median": 0.024782673227239926,
+            "exceed_rate": 0.0
+          }
+        },
+        "Flanders old brown": {
+          "DMS": {
+            "oav_median": 0.40217758616410804,
+            "exceed_rate": 0.03
+          },
+          "X2.3.butanedione": {
+            "oav_median": 0.7859887959186662,
+            "exceed_rate": 0.46
+          },
+          "X4VG": {
+            "oav_median": 0.0,
+            "exceed_rate": 0.0
+          }
+        },
+        "Fruitbeer": {
+          "DMS": {
+            "oav_median": 5.0665171893124175,
+            "exceed_rate": 1.0
+          },
+          "X2.3.butanedione": {
+            "oav_median": 3.323756270312228,
+            "exceed_rate": 0.76
+          },
+          "X4VG": {
+            "oav_median": 0.07492880897904693,
+            "exceed_rate": 0.0
+          }
+        },
+        "Hoppy": {
+          "DMS": {
+            "oav_median": 2.198160565518026,
+            "exceed_rate": 0.95
+          },
+          "X2.3.butanedione": {
+            "oav_median": 2.217466445992726,
+            "exceed_rate": 0.67
+          },
+          "X4VG": {
+            "oav_median": 0.15538009902569708,
+            "exceed_rate": 0.0
+          }
+        },
+        "Kriek": {
+          "DMS": {
+            "oav_median": 0.6639783881868073,
+            "exceed_rate": 0.135
+          },
+          "X2.3.butanedione": {
+            "oav_median": 1.8776573683401112,
+            "exceed_rate": 0.595
+          },
+          "X4VG": {
+            "oav_median": 0.05005500324166047,
+            "exceed_rate": 0.0
+          }
+        },
+        "Lambic": {
+          "DMS": {
+            "oav_median": 1.1170660746452978,
+            "exceed_rate": 0.62
+          },
+          "X2.3.butanedione": {
+            "oav_median": 0.9657540597572968,
+            "exceed_rate": 0.5
+          },
+          "X4VG": {
+            "oav_median": 0.05395502287941513,
+            "exceed_rate": 0.0
+          }
+        },
+        "Low/No alcohol": {
+          "DMS": {
+            "oav_median": 0.2712298234969002,
+            "exceed_rate": 0.0
+          },
+          "X2.3.butanedione": {
+            "oav_median": 0.7221448696331512,
+            "exceed_rate": 0.42
+          },
+          "X4VG": {
+            "oav_median": 0.08450388688060452,
+            "exceed_rate": 0.0
+          }
+        },
+        "Pils/Lager": {
+          "DMS": {
+            "oav_median": 0.7239618442669048,
+            "exceed_rate": 0.19
+          },
+          "X2.3.butanedione": {
+            "oav_median": 0.5682205336826438,
+            "exceed_rate": 0.43
+          },
+          "X4VG": {
+            "oav_median": 0.05155686872859585,
+            "exceed_rate": 0.0
+          }
+        },
+        "Saison": {
+          "DMS": {
+            "oav_median": 2.004270525934217,
+            "exceed_rate": 0.93
+          },
+          "X2.3.butanedione": {
+            "oav_median": 2.4528863859965426,
+            "exceed_rate": 0.65
+          },
+          "X4VG": {
+            "oav_median": 0.2848809718591189,
+            "exceed_rate": 0.02
+          }
+        },
+        "Scotch": {
+          "DMS": {
+            "oav_median": 0.8882058416726322,
+            "exceed_rate": 0.42
+          },
+          "X2.3.butanedione": {
+            "oav_median": 2.707801904178565,
+            "exceed_rate": 0.69
+          },
+          "X4VG": {
+            "oav_median": 0.05375818380415878,
+            "exceed_rate": 0.0
+          }
+        },
+        "Stout/Porter": {
+          "DMS": {
+            "oav_median": 1.6997480449312867,
+            "exceed_rate": 0.86
+          },
+          "X2.3.butanedione": {
+            "oav_median": 3.0864914273432698,
+            "exceed_rate": 0.76
+          },
+          "X4VG": {
+            "oav_median": 0.06538016277197496,
+            "exceed_rate": 0.0
+          }
+        },
+        "Strong ale": {
+          "DMS": {
+            "oav_median": 1.8259275915909936,
+            "exceed_rate": 0.9
+          },
+          "X2.3.butanedione": {
+            "oav_median": 1.5852384034615818,
+            "exceed_rate": 0.59
+          },
+          "X4VG": {
+            "oav_median": 0.07033300585335434,
+            "exceed_rate": 0.0
+          }
+        },
+        "Tripel": {
+          "DMS": {
+            "oav_median": 2.1522718144170163,
+            "exceed_rate": 0.975
+          },
+          "X2.3.butanedione": {
+            "oav_median": 1.971875691481534,
+            "exceed_rate": 0.62
+          },
+          "X4VG": {
+            "oav_median": 0.07491874462818421,
+            "exceed_rate": 0.0
+          }
+        },
+        "West Flanders ale": {
+          "DMS": {
+            "oav_median": 0.5773126743427499,
+            "exceed_rate": 0.05
+          },
+          "X2.3.butanedione": {
+            "oav_median": 6.074435979335215,
+            "exceed_rate": 0.89
+          },
+          "X4VG": {
+            "oav_median": 0.0,
+            "exceed_rate": 0.0
+          }
+        },
+        "Wheat": {
+          "DMS": {
+            "oav_median": 1.2362854505198286,
+            "exceed_rate": 0.73
+          },
+          "X2.3.butanedione": {
+            "oav_median": 0.12495770092315606,
+            "exceed_rate": 0.35
+          },
+          "X4VG": {
+            "oav_median": 0.8561870506411857,
+            "exceed_rate": 0.38
+          }
+        }
+      }
+    },
+    "reported_per_style": {
+      "Tripel": {
+        "DMS": {
+          "oav_median": 2.1522718144170163,
+          "exceed_rate": 0.975
+        },
+        "X2.3.butanedione": {
+          "oav_median": 1.971875691481534,
+          "exceed_rate": 0.62
+        },
+        "X4VG": {
+          "oav_median": 0.07491874462818421,
+          "exceed_rate": 0.0
+        }
+      },
+      "Kriek": {
+        "DMS": {
+          "oav_median": 0.6639783881868073,
+          "exceed_rate": 0.135
+        },
+        "X2.3.butanedione": {
+          "oav_median": 1.8776573683401112,
+          "exceed_rate": 0.595
+        },
+        "X4VG": {
+          "oav_median": 0.05005500324166047,
+          "exceed_rate": 0.0
+        }
+      },
+      "Lambic": {
+        "DMS": {
+          "oav_median": 1.1170660746452978,
+          "exceed_rate": 0.62
+        },
+        "X2.3.butanedione": {
+          "oav_median": 0.9657540597572968,
+          "exceed_rate": 0.5
+        },
+        "X4VG": {
+          "oav_median": 0.05395502287941513,
+          "exceed_rate": 0.0
+        }
+      }
+    },
+    "note": "t2n / stale hops 无阈值，不能算绝对 OAV（见 method_findings §2）"
+  },
+  "style_fidelity": {
+    "mine": {
+      "classifier": "reviewer LogisticRegression(C=1) train=SPLIT-0002 train",
+      "n": 2500,
+      "aggregate_hit_rate": 0.9936,
+      "per_style": {
+        "Amber": 0.99,
+        "Blond": 0.99,
+        "Brett/cofermented": 1.0,
+        "Brown": 0.99,
+        "Brut": 1.0,
+        "Christmas": 1.0,
+        "Dubbel": 0.99,
+        "Faro": 1.0,
+        "Flanders old brown": 1.0,
+        "Fruitbeer": 1.0,
+        "Hoppy": 0.96,
+        "Kriek": 1.0,
+        "Lambic": 1.0,
+        "Low/No alcohol": 1.0,
+        "Pils/Lager": 0.98,
+        "Saison": 0.99,
+        "Scotch": 1.0,
+        "Stout/Porter": 1.0,
+        "Strong ale": 0.97,
+        "Tripel": 0.995,
+        "West Flanders ale": 0.99,
+        "Wheat": 1.0
+      }
+    },
+    "reported_aggregate": 0.994
+  },
+  "energy_distance": {
+    "mine": {
+      "Tripel": {
+        "n_gen": 200,
+        "n_ref": 5,
+        "ed": 2.0575239327193553
+      },
+      "Kriek": {
+        "n_gen": 200,
+        "n_ref": 1,
+        "ed": 4.571158472426817
+      },
+      "Lambic": {
+        "n_gen": 200,
+        "n_ref": 3,
+        "ed": 2.6011068817830063
+      }
+    },
+    "reported": {
+      "Tripel": 2.077518906559147,
+      "Kriek": 4.573160906500763,
+      "Lambic": 2.5949970976825045
+    },
+    "space": "训练集 z 空间（231 维，train 均值/标准差）"
+  },
+  "transfer": {
+    "status": "present",
+    "n_samples": 11,
+    "solver_success": 6,
+    "defect_conc_check": {
+      "DMS": {
+        "max_conc_increase_abs": 0.0,
+        "max_conc_increase_ratio": 1.0,
+        "n_abs_increase_gt_1e-6": 0,
+        "n_relative_increase_gt_1e-9": 0,
+        "is_absolute_threshold": true
+      },
+      "X2.3.butanedione": {
+        "max_conc_increase_abs": 0.0,
+        "max_conc_increase_ratio": 1.0,
+        "n_abs_increase_gt_1e-6": 0,
+        "n_relative_increase_gt_1e-9": 0,
+        "is_absolute_threshold": true
+      },
+      "X4VG": {
+        "max_conc_increase_abs": 0.0,
+        "max_conc_increase_ratio": 1.0,
+        "n_abs_increase_gt_1e-6": 0,
+        "n_relative_increase_gt_1e-9": 0,
+        "is_absolute_threshold": true
+      },
+      "X.E..2.nonenal": {
+        "max_conc_increase_abs": 0.0,
+        "max_conc_increase_ratio": 1.0,
+        "n_abs_increase_gt_1e-6": 0,
+        "n_relative_increase_gt_1e-9": 0,
+        "is_absolute_threshold": false
+      },
+      "X3.methyl.2.butenal": {
+        "max_conc_increase_abs": 0.0,
+        "max_conc_increase_ratio": 1.0,
+        "n_abs_increase_gt_1e-6": 0,
+        "n_relative_increase_gt_1e-9": 0,
+        "is_absolute_threshold": false
+      },
+      "X5.methylfurfural": {
+        "max_conc_increase_abs": 0.0,
+        "max_conc_increase_ratio": 1.0,
+        "n_abs_increase_gt_1e-6": 0,
+        "n_relative_increase_gt_1e-9": 0,
+        "is_absolute_threshold": false
+      },
+      "furfural": {
+        "max_conc_increase_abs": 0.0,
+        "max_conc_increase_ratio": 1.0,
+        "n_abs_increase_gt_1e-6": 0,
+        "n_relative_increase_gt_1e-9": 0,
+        "is_absolute_threshold": false
+      }
+    },
+    "any_abs_increase_gt_1e-6": false,
+    "any_relative_increase_gt_1e-9": false,
+    "tolerance_note": "绝对差 1e-6 为 SLSQP 数值容差；相对 1e-9 是过严噪声门槛，两者都报",
+    "support_violations": {
+      "below": 0,
+      "above": 0
+    },
+    "classifier_hit_as_tripel": {
+      "before": 0.0,
+      "after": 0.5454545454545454
+    },
+    "dist_to_tripel_centroid_z": {
+      "before": 14.205713283479685,
+      "after": 9.364097653551905
+    },
+    "reported": {
+      "task": "Pils/Lager -> Tripel 反事实迁移（五类缺陷不恶化硬约束）",
+      "protocol": {
+        "primary_objective": "style_subspace_capped",
+        "objective_modes": {
+          "style_subspace_capped": "潜变量投影到 Tripel 95% 椭球 + 风格级残差 + 外推保护 + 缺陷夹紧（主）",
+          "style_mean_collapse": "非缺陷列取 Tripel 条件均值（风格上限，牺牲个体差异）",
+          "ellipsoid_closest_pils_residual": "潜变量投影到 95% 椭球、保留 Pils 残差（个体差异最大）",
+          "unconstrained_style_mean": "Tripel 条件均值，不加缺陷约束（仅用于量化冲突，非交付方案）"
+        },
+        "hard_constraints": [
+          "五类缺陷化合物逐样本浓度不增（变换空间 u'_j <= u_j，单调变换保序）",
+          "逐列训练观测支撑 [min, max]（原始尺度）",
+          "物理浓度列非负（支撑下界 max(0,train_min)；log1p 列天然 >=0）"
+        ],
+        "ellipsoid": "Tripel 潜空间 95% 椭球：chi2(k=15, 0.95) = 24.996",
+        "extrapolation_guard": "重建值落在训练支撑外的列保持原值（模型在这些列是外推）",
+        "solver": "scipy.optimize.minimize SLSQP 复核闭式投影（box ∩ 缺陷半空间），并用解析投影兜底保证硬约束",
+        "alpha_primary": 1.0,
+        "alpha_rule": "迁移步长 alpha 的先验主值为 1.0；0.5/1.5 只作 ROB-0003 敏感性扰动，不用于选优",
+        "objective_revision_note": "早期用 Mahalanobis+gamma 形式；实测它对 Tripel 质心的距离只缩短 9%，且分类器仍判 Pils，说明低秩模型的潜空间目标不足以推动风格迁移。改为'潜变量投影到风格椭球 + 风格级残差'后，主目标与三种对照目标全部完整报告（见 objective_variants），不隐藏。"
+      },
+      "defect_convention": {
+        "absolute_threshold": {
+          "DMS": {
+            "threshold_ug_per_L": 17.25,
+            "scale": "log10"
+          },
+          "Diacetyl(X2.3.butanedione)": {
+            "threshold_mg_per_L": 0.29925,
+            "scale": "linear",
+            "note": "1.csv 中该列是线性浓度，不能做 10^v"
+          },
+          "4VG(X4VG)": {
+            "threshold_mg_per_L": 0.206333333,
+            "scale": "log10"
+          }
+        },
+        "monotone_proxy_no_threshold": {
+          "trans-2-nonenal(X.E..2.nonenal)": "8.xlsx 无阈值 -> 浓度不增",
+          "Stale hops(4 化合物)": "8.xlsx 无阈值 -> 浓度不增"
+        },
+        "censoring": "calibrated==0 非检出 -> 1.csv 的 LOD/2 代码；OAV 计算时恢复为 0",
+        "furfural_note": "furfural 在 8.xlsx 有 60 mg/L 阈值，但不是 Stale hops 的代理阈值（实测 OAV 中位约 1e-4、最大 0.03，本数据内从不超阈）；defect_check.csv 中未标为 is_absolute_threshold=true。"
+      },
+      "data": {
+        "source_style": "Pils/Lager",
+        "n_source": 11,
+        "source_beers": [
+          124,
+          81,
+          218,
+          96,
+          230,
+          185,
+          139,
+          209,
+          119,
+          90,
+          28
+        ],
+        "target_style": "Tripel",
+        "n_target_train": 23,
+        "split": {
+          "name": "primary",
+          "path": "data/splits/SPLIT-0002/assignment.csv",
+          "sha256": "4a032d281d3b85f860e0322868afde68503abf13260cdf52496a276ed5a0855e",
+          "n_train": 200,
+          "n_test": 50,
+          "n_styles_train": 22,
+          "n_styles_test": 21,
+          "test_missing_styles": [
+            "West Flanders ale"
+          ]
+        },
+        "n_constrained_columns": 7,
+        "constrained_columns": [
+          "DMS",
+          "X.E..2.nonenal",
+          "X2.3.butanedione",
+          "X3.methyl.2.butenal",
+          "X4VG",
+          "X5.methylfurfural",
+          "furfural"
+        ],
+        "missing_imputed_cells": {
+          "119": 1,
+          "28": 3
+        },
+        "missing_imputation": "1.csv 真实缺失用训练折逐列中位数插补（与生成侧一致）"
+      },
+      "feasibility": {
+        "n_samples": 11,
+        "n_solver_success": 6,
+        "n_hard_feasible": 11,
+        "fraction_hard_feasible": 1.0,
+        "all_samples_satisfy_hard_constraints": true,
+        "max_defect_violation_raw": 0.0,
+        "max_box_violation_raw": 0.0,
+        "total_defect_violation_cells": 0,
+        "note": "可行性按原始尺度约束违反量 <=1e-9 判定，并用解析投影兜底，不依赖 SLSQP 的 success 标志"
+      },
+      "defect_summary": {
+        "DMS": {
+          "compounds": [
+            "DMS"
+          ],
+          "criterion": "concentration/OAV not increased; absolute OAV per 8.xlsx",
+          "is_absolute_threshold": true,
+          "n_rows": 11,
+          "all_samples_conc_not_increased": true,
+          "max_conc_increase_ratio": 0.0,
+          "oav_before_median": 0.8761033472158978,
+          "oav_after_median": 0.8761033472158978,
+          "n_oav_exceed_before": 3,
+          "n_oav_exceed_after": 3
+        },
+        "Diacetyl": {
+          "compounds": [
+            "X2.3.butanedione"
+          ],
+          "criterion": "concentration/OAV not increased; absolute OAV per 8.xlsx",
+          "is_absolute_threshold": true,
+          "n_rows": 11,
+          "all_samples_conc_not_increased": true,
+          "max_conc_increase_ratio": 0.0,
+          "oav_before_median": 0.19034094235588972,
+          "oav_after_median": 3.6424486980353316e-07,
+          "n_oav_exceed_before": 1,
+          "n_oav_exceed_after": 1
+        },
+        "4VG": {
+          "compounds": [
+            "X4VG"
+          ],
+          "criterion": "concentration/OAV not increased; absolute OAV per 8.xlsx",
+          "is_absolute_threshold": true,
+          "n_rows": 11,
+          "all_samples_conc_not_increased": true,
+          "max_conc_increase_ratio": 0.0,
+          "oav_before_median": 0.0,
+          "oav_after_median": 0.0,
+          "n_oav_exceed_before": 0,
+          "n_oav_exceed_after": 0
+        },
+        "trans-2-nonenal": {
+          "compounds": [
+            "X.E..2.nonenal"
+          ],
+          "criterion": "concentration not increased (monotone proxy; 8.xlsx has no threshold)",
+          "is_absolute_threshold": false,
+          "n_rows": 11,
+          "all_samples_conc_not_increased": true,
+          "max_conc_increase_ratio": 0.0,
+          "oav_before_median": null,
+          "oav_after_median": null,
+          "n_oav_exceed_before": null,
+          "n_oav_exceed_after": null
+        },
+        "Stale hops": {
+          "compounds": [
+            "X.E..2.nonenal",
+            "X3.methyl.2.butenal",
+            "X5.methylfurfural",
+            "furfural"
+          ],
+          "criterion": "concentration not increased (monotone proxy; 8.xlsx has no threshold)",
+          "is_absolute_threshold": false,
+          "n_rows": 44,
+          "all_samples_conc_not_increased": true,
+          "max_conc_increase_ratio": 0.0,
+          "oav_before_median": null,
+          "oav_after_median": null,
+          "n_oav_exceed_before": null,
+          "n_oav_exceed_after": null
+        }
+      },
+      "style_progress": {
+        "mean_dist_to_tripel_centroid_before_z": 14.307511198119665,
+        "mean_dist_to_tripel_centroid_after_z": 9.476685352670838,
+        "fraction_closer_to_tripel_centroid": 1.0,
+        "classifier_hit_as_tripel_before": 0.0,
+        "classifier_hit_as_tripel_after": 0.5454545454545454,
+        "identity_preservation_ratio_nondef_columns": 0.6465368258381226,
+        "mean_columns_kept_original_by_extrapolation_guard": 12.727272727272727,
+        "interpretation": "迁移显著缩短到 Tripel 质心的距离，但分类器命中受缺陷约束限制：DMS 与双乙酰是区分 Tripel 与 Pils/Lager 的强判别维度，而硬约束禁止它们上升，因此'完整变成 Tripel'与'缺陷不恶化'在本数据上部分冲突。",
+        "counterfactual_warning": "反事实方案，不代表保证的干预收益。"
+      },
+      "objective_variants": [
+        {
+          "objective_mode": "style_subspace_capped",
+          "description": "潜变量投影到 Tripel 95% 椭球 + 风格级残差 + 外推保护 + 缺陷夹紧（主）",
+          "feasible_fraction_hard_constraints": 1.0,
+          "hard_constraints_applied": true,
+          "mean_dist_to_tripel_centroid_after_z": 9.476685352670838,
+          "classifier_hit_as_tripel_after": 0.5454545454545454,
+          "mean_abs_change_tau": 0.41514812071779583,
+          "identity_preservation_ratio_nondef_columns": 0.6465368258381226,
+          "defect_after": {
+            "DMS": {
+              "oav_median_before": 0.8761033472158978,
+              "oav_median_after": 0.8761033472158978,
+              "exceed_rate_before": 0.2727272727272727,
+              "exceed_rate_after": 0.2727272727272727,
+              "max_worsening_ratio": 0.0
+            },
+            "X2.3.butanedione": {
+              "oav_median_before": 0.19034094235588972,
+              "oav_median_after": 3.6424486980353316e-07,
+              "exceed_rate_before": 0.09090909090909091,
+              "exceed_rate_after": 0.09090909090909091,
+              "max_worsening_ratio": 0.0
+            },
+            "X4VG": {
+              "oav_median_before": 0.0,
+              "oav_median_after": 0.0,
+              "exceed_rate_before": 0.0,
+              "exceed_rate_after": 0.0,
+              "max_worsening_ratio": 0.0
+            }
+          }
+        },
+        {
+          "objective_mode": "style_mean_collapse",
+          "description": "非缺陷列取 Tripel 条件均值（风格上限，牺牲个体差异）",
+          "feasible_fraction_hard_constraints": 1.0,
+          "hard_constraints_applied": true,
+          "mean_dist_to_tripel_centroid_after_z": 1.8576427337547414,
+          "classifier_hit_as_tripel_after": 1.0,
+          "mean_abs_change_tau": 0.683840656936737,
+          "identity_preservation_ratio_nondef_columns": 3.392596658864803e-17,
+          "defect_after": {
+            "DMS": {
+              "oav_median_before": 0.8761033472158978,
+              "oav_median_after": 0.8761033472158978,
+              "exceed_rate_before": 0.2727272727272727,
+              "exceed_rate_after": 0.2727272727272727,
+              "max_worsening_ratio": 0.0
+            },
+            "X2.3.butanedione": {
+              "oav_median_before": 0.19034094235588972,
+              "oav_median_after": 0.19034094235588972,
+              "exceed_rate_before": 0.09090909090909091,
+              "exceed_rate_after": 0.09090909090909091,
+              "max_worsening_ratio": 2.3329882157691286e-16
+            },
+            "X4VG": {
+              "oav_median_before": 0.0,
+              "oav_median_after": 0.0,
+              "exceed_rate_before": 0.0,
+              "exceed_rate_after": 0.0,
+              "max_worsening_ratio": 0.0
+            }
+          }
+        },
+        {
+          "objective_mode": "ellipsoid_closest_pils_residual",
+          "description": "潜变量投影到 95% 椭球、保留 Pils 残差（个体差异最大）",
+          "feasible_fraction_hard_constraints": 1.0,
+          "hard_constraints_applied": true,
+          "mean_dist_to_tripel_centroid_after_z": 13.093979879125191,
+          "classifier_hit_as_tripel_after": 0.09090909090909091,
+          "mean_abs_change_tau": 0.11825745043267602,
+          "identity_preservation_ratio_nondef_columns": 0.9520944244329038,
+          "defect_after": {
+            "DMS": {
+              "oav_median_before": 0.8761033472158978,
+              "oav_median_after": 0.8761033472158978,
+              "exceed_rate_before": 0.2727272727272727,
+              "exceed_rate_after": 0.2727272727272727,
+              "max_worsening_ratio": 0.0
+            },
+            "X2.3.butanedione": {
+              "oav_median_before": 0.19034094235588972,
+              "oav_median_after": 0.08716027337543394,
+              "exceed_rate_before": 0.09090909090909091,
+              "exceed_rate_after": 0.0,
+              "max_worsening_ratio": -0.2708841037421083
+            },
+            "X4VG": {
+              "oav_median_before": 0.0,
+              "oav_median_after": 0.0,
+              "exceed_rate_before": 0.0,
+              "exceed_rate_after": 0.0,
+              "max_worsening_ratio": 0.0
+            }
+          }
+        },
+        {
+          "objective_mode": "unconstrained_style_mean",
+          "description": "Tripel 条件均值，不加缺陷约束（仅用于量化冲突，非交付方案）",
+          "feasible_fraction_hard_constraints": 0.0,
+          "hard_constraints_applied": false,
+          "mean_dist_to_tripel_centroid_after_z": 4.661290915354066e-15,
+          "classifier_hit_as_tripel_after": 1.0,
+          "mean_abs_change_tau": 0.6996796032568399,
+          "identity_preservation_ratio_nondef_columns": 1.9707076255599775e-17,
+          "defect_after": {
+            "DMS": {
+              "oav_median_before": 0.8761033472158978,
+              "oav_median_after": 2.201147860011833,
+              "exceed_rate_before": 0.2727272727272727,
+              "exceed_rate_after": 1.0,
+              "max_worsening_ratio": 4.698514520690428
+            },
+            "X2.3.butanedione": {
+              "oav_median_before": 0.19034094235588972,
+              "oav_median_after": 1.579566886863149,
+              "exceed_rate_before": 0.09090909090909091,
+              "exceed_rate_after": 1.0,
+              "max_worsening_ratio": 17.051549781037416
+            },
+            "X4VG": {
+              "oav_median_before": 0.0,
+              "oav_median_after": 0.06948112379936591,
+              "exceed_rate_before": 0.0,
+              "exceed_rate_after": 0.0,
+              "max_worsening_ratio": 69481123799.36592
+            }
+          }
+        }
+      ],
+      "alpha_sensitivity": [
+        {
+          "alpha": 0.5,
+          "feasible_fraction": 1.0,
+          "mean_dist_to_tripel_centroid_after_z": 11.187666829133995,
+          "classifier_hit_as_tripel_after": 0.09090909090909091,
+          "mean_abs_change_tau": 0.2086392850866349
+        },
+        {
+          "alpha": 1.0,
+          "feasible_fraction": 1.0,
+          "mean_dist_to_tripel_centroid_after_z": 9.476685352670838,
+          "classifier_hit_as_tripel_after": 0.5454545454545454,
+          "mean_abs_change_tau": 0.41514812071779583
+        },
+        {
+          "alpha": 1.5,
+          "feasible_fraction": 1.0,
+          "mean_dist_to_tripel_centroid_after_z": 9.826169704001266,
+          "classifier_hit_as_tripel_after": 1.0,
+          "mean_abs_change_tau": 0.6160816574304836
+        }
+      ],
+      "counterfactual_boundary": {
+        "statement": "迁移结果是反事实方案（把给定 Pils/Lager 谱挪到 Tripel 风格区域），不是保证的干预收益；不能据此声称'迁移成 Tripel 就更好卖/更好喝'。",
+        "evidence_limit": "DMS/Diacetyl 的感官分与浓度在本数据内几乎无关（outputs/protocol/grade_calibration_SPLIT-0001.csv 的 oav_rho：dms 0.072、diacetyl -0.043），所以'缺陷浓度不增'是工程可控口径，不等于'感官缺陷分数一定下降'。"
+      }
+    }
+  },
+  "reported_seed_stability": {
+    "per_seed": [
+      {
+        "seed": 42,
+        "aggregate_hit_rate": 0.994,
+        "hit_Tripel": 0.995,
+        "ed_Tripel": 2.077519,
+        "hit_Kriek": 1.0,
+        "ed_Kriek": 4.573161,
+        "hit_Lambic": 1.0,
+        "ed_Lambic": 2.594997,
+        "mean_ed_all_styles": 3.886424,
+        "DMS_exceed_rate_all_styles": 0.634091,
+        "X2.3.butanedione_exceed_rate_all_styles": 0.610682,
+        "X4VG_exceed_rate_all_styles": 0.019091,
+        "div_Tripel": 0.648109,
+        "div_Kriek": 0.585956,
+        "div_Lambic": 0.743212
+      },
+      {
+        "seed": 7,
+        "aggregate_hit_rate": 0.9928,
+        "hit_Tripel": 0.995,
+        "ed_Tripel": 2.096271,
+        "hit_Kriek": 1.0,
+        "ed_Kriek": 4.565403,
+        "hit_Lambic": 1.0,
+        "ed_Lambic": 2.59593,
+        "mean_ed_all_styles": 3.879625,
+        "DMS_exceed_rate_all_styles": 0.639091,
+        "X2.3.butanedione_exceed_rate_all_styles": 0.599318,
+        "X4VG_exceed_rate_all_styles": 0.016364,
+        "div_Tripel": 0.662761,
+        "div_Kriek": 0.627047,
+        "div_Lambic": 0.712744
+      },
+      {
+        "seed": 2024,
+        "aggregate_hit_rate": 0.9968,
+        "hit_Tripel": 0.99,
+        "ed_Tripel": 2.073228,
+        "hit_Kriek": 1.0,
+        "ed_Kriek": 4.563573,
+        "hit_Lambic": 1.0,
+        "ed_Lambic": 2.545665,
+        "mean_ed_all_styles": 3.87038,
+        "DMS_exceed_rate_all_styles": 0.639545,
+        "X2.3.butanedione_exceed_rate_all_styles": 0.598636,
+        "X4VG_exceed_rate_all_styles": 0.015455,
+        "div_Tripel": 0.635073,
+        "div_Kriek": 0.617286,
+        "div_Lambic": 0.761498
+      },
+      {
+        "seed": 123,
+        "aggregate_hit_rate": 0.9948,
+        "hit_Tripel": 0.985,
+        "ed_Tripel": 2.136455,
+        "hit_Kriek": 1.0,
+        "ed_Kriek": 4.58462,
+        "hit_Lambic": 1.0,
+        "ed_Lambic": 2.565879,
+        "mean_ed_all_styles": 3.881783,
+        "DMS_exceed_rate_all_styles": 0.639773,
+        "X2.3.butanedione_exceed_rate_all_styles": 0.612955,
+        "X4VG_exceed_rate_all_styles": 0.015455,
+        "div_Tripel": 0.632375,
+        "div_Kriek": 0.62113,
+        "div_Lambic": 0.745707
+      },
+      {
+        "seed": 9,
+        "aggregate_hit_rate": 0.9932,
+        "hit_Tripel": 0.995,
+        "ed_Tripel": 2.070625,
+        "hit_Kriek": 1.0,
+        "ed_Kriek": 4.551451,
+        "hit_Lambic": 1.0,
+        "ed_Lambic": 2.521976,
+        "mean_ed_all_styles": 3.869494,
+        "DMS_exceed_rate_all_styles": 0.644773,
+        "X2.3.butanedione_exceed_rate_all_styles": 0.621818,
+        "X4VG_exceed_rate_all_styles": 0.018182,
+        "div_Tripel": 0.648652,
+        "div_Kriek": 0.616943,
+        "div_Lambic": 0.747262
+      }
+    ],
+    "summary": {
+      "aggregate_hit_rate": {
+        "mean": 0.9943200000000001,
+        "min": 0.9928,
+        "max": 0.9968,
+        "range": 0.0040000000000000036,
+        "relative_range": 0.004022849786788965,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "hit_Tripel": {
+        "mean": 0.992,
+        "min": 0.985,
+        "max": 0.995,
+        "range": 0.010000000000000009,
+        "relative_range": 0.010080645161290331,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "ed_Tripel": {
+        "mean": 2.090819891950474,
+        "min": 2.0706252553896856,
+        "max": 2.136455342019943,
+        "range": 0.06583008663025725,
+        "relative_range": 0.03148529764983534,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "hit_Kriek": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "range": 0.0,
+        "relative_range": 0.0,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "ed_Kriek": {
+        "mean": 4.56764149427673,
+        "min": 4.551450864878999,
+        "max": 4.584619776194068,
+        "range": 0.033168911315069494,
+        "relative_range": 0.007261715122920713,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "hit_Lambic": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "range": 0.0,
+        "relative_range": 0.0,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "ed_Lambic": {
+        "mean": 2.564889672570731,
+        "min": 2.5219764719497055,
+        "max": 2.595930202283665,
+        "range": 0.07395373033395947,
+        "relative_range": 0.028833103865959782,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "mean_ed_all_styles": {
+        "mean": 3.877541213832052,
+        "min": 3.8694937679551202,
+        "max": 3.886424493062948,
+        "range": 0.016930725107827893,
+        "relative_range": 0.0043663559390245115,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "DMS_exceed_rate_all_styles": {
+        "mean": 0.6394545454545455,
+        "min": 0.634090909090909,
+        "max": 0.6447727272727273,
+        "range": 0.010681818181818237,
+        "relative_range": 0.01670457776514083,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "X2.3.butanedione_exceed_rate_all_styles": {
+        "mean": 0.6086818181818181,
+        "min": 0.5986363636363635,
+        "max": 0.6218181818181817,
+        "range": 0.023181818181818192,
+        "relative_range": 0.038085281158987405,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "X4VG_exceed_rate_all_styles": {
+        "mean": 0.01690909090909091,
+        "min": 0.015454545454545455,
+        "max": 0.01909090909090909,
+        "range": 0.0036363636363636338,
+        "relative_range": 0.21505376344086008,
+        "pass_0.05": false,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "div_Tripel": {
+        "mean": 0.6453939196231253,
+        "min": 0.6323753886039589,
+        "max": 0.662760664770306,
+        "range": 0.03038527616634712,
+        "relative_range": 0.04708020209438982,
+        "pass_0.05": true,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "div_Kriek": {
+        "mean": 0.6136725058562249,
+        "min": 0.5859556461759076,
+        "max": 0.6270472526622038,
+        "range": 0.041091606486296284,
+        "relative_range": 0.06696015561095299,
+        "pass_0.05": false,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "div_Lambic": {
+        "mean": 0.7420844033598165,
+        "min": 0.7127435904309928,
+        "max": 0.7614977694719579,
+        "range": 0.04875417904096513,
+        "relative_range": 0.0656989674223426,
+        "pass_0.05": false,
+        "n_seeds": 5,
+        "tolerance": 0.05,
+        "criterion": "relative range across seeds <= 0.05"
+      },
+      "_summary": {
+        "n_metrics": 14,
+        "n_pass_relative_range_0.05": 11,
+        "failed_metrics": [
+          "X4VG_exceed_rate_all_styles",
+          "div_Kriek",
+          "div_Lambic"
+        ],
+        "note": "相对极差在均值接近 0 的指标上不稳定（如全风格 4VG 超阈率≈0）；同时给出绝对极差 range 供判断。命中率类指标的波动来自 200 个生成样本的二项抽样。",
+        "absolute_range_key": "range",
+        "relative_range_key": "relative_range"
+      }
+    }
+  }
+}

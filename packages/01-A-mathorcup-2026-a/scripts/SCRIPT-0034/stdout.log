@@ -1,0 +1,13 @@
+== Q3 eval ==
+[1] generated_style_probs.csv rows=12500
+[2] generated hit (seed42): 0.994 vs holdout acc 0.420; required mean 0.997 vs baseline 0.422
+[3] ED (seed42, required): Tripel=2.078, Kriek=4.573, Lambic=2.595
+[4] defect exceedance (seed42 required styles): Tripel: DMS=0.97, butanedione=0.62, X4VG=0.00; Kriek: DMS=0.14, butanedione=0.59, X4VG=0.00; Lambic: DMS=0.62, butanedione=0.50, X4VG=0.00
+[5] seed stability: 11/14 metrics pass rel-range<=0.05; failed=['X2.3.butanedione_exceed_rate_all_styles', 'X4VG_exceed_rate_all_styles', 'div_Kriek']
+[6] small-n: Kriek n=10 gap=0.070, Lambic n=11 gap=0.107, Faro n=3 gap=0.214
+[8] sensory_profiles.csv rows=2500 (profile_source=placeholder)
+[9] stratified recheck: hit 0.992 vs base 0.778
+[9b] anchoring ablation ...
+     with_anchoring: score=0.788 hit=0.994 ed_ratio=0.206 div=0.752
+     without_anchoring: score=0.413 hit=0.617 ed_ratio=0.204 div=0.752
+[done] metrics.json / energy_distance.csv / smalln_uncertainty.json / seed_stability.csv

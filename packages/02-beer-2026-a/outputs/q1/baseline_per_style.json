@@ -1,0 +1,17 @@
+{
+  "Tripel": {
+    "energy_global_generated_vs_style": 1.3883423223593736,
+    "energy_source_identity_vs_style": 2.538335063416525,
+    "n_style": 28
+  },
+  "Kriek": {
+    "energy_global_generated_vs_style": 7.117114905619748,
+    "energy_source_identity_vs_style": 7.535505660769098,
+    "n_style": 10
+  },
+  "Lambic": {
+    "energy_global_generated_vs_style": 2.650760830565965,
+    "energy_source_identity_vs_style": 3.4773231666730364,
+    "n_style": 11
+  }
+}

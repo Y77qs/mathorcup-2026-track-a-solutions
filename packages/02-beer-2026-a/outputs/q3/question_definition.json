@@ -1,0 +1,26 @@
+{
+  "question": "Q3",
+  "task": "风格条件化合物谱生成 + 跨风格迁移（生成合理性/约束满足，非酿造验证）",
+  "given": [
+    "tasting_category_fine（22 类）",
+    "1.csv 231 个化合物/理化特征",
+    "8.xlsx 缺陷阈值"
+  ],
+  "unknown": [
+    "目标风格化合物谱",
+    "跨风格迁移后的谱",
+    "感官画像（由 Q1 Ridge 派生预测）"
+  ],
+  "decisionTime": "生成时已知风格标签与缺陷阈值",
+  "styleHoldout": [
+    "Tripel",
+    "Kriek",
+    "Lambic"
+  ],
+  "fewShot": {
+    "Kriek": 3,
+    "Lambic": 3,
+    "Tripel": 5
+  },
+  "sourceStyle": "Pils/Lager"
+}

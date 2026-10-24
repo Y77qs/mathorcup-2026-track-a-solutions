@@ -1,0 +1,84 @@
+{
+  "generated_by": "src/03_clean.py",
+  "sample_flow": {
+    "1.csv_rows": 250,
+    "features_log_rows": 250,
+    "rows_dropped": 0,
+    "targets_rows": 250
+  },
+  "files": {},
+  "keys": {
+    "join_key": "beer",
+    "beer_id_masked_in": [
+      "4.csv",
+      "7.csv"
+    ],
+    "4csv_unique_beer_id": 96,
+    "style_consistent_1_vs_4": true
+  },
+  "missing": {
+    "n_missing_cells_1csv": 73,
+    "n_cols_with_missing": 9,
+    "n_rows_with_missing": 63,
+    "by_column": {
+      "amyl.acetate": 27,
+      "aroma_hops_sum": 13,
+      "methylpyrazine": 12,
+      "X2.3.butanedione": 9,
+      "X3.methylbutanal": 7,
+      "ethyl.nicotinate": 2,
+      "ethyl.isobutyrate": 1,
+      "furfural": 1,
+      "phenylacetaldehyde": 1
+    },
+    "policy": "清洗阶段不插补；插补/标准化只在训练折内拟合"
+  },
+  "scale": {
+    "counts": {
+      "unverified": 161,
+      "log10": 37,
+      "linear": 33
+    },
+    "n_threshold_compounds": 43,
+    "oav_definition": "calibrated_conc / threshold_mean；1.csv 缺失处留空",
+    "n_blank_by_missing": 25,
+    "blank_by_missing_by_compound": {
+      "furfural": 1,
+      "ethyl.isobutyrate": 1,
+      "ethyl.nicotinate": 2,
+      "X2.3.butanedione": 9,
+      "methylpyrazine": 12
+    },
+    "censoring_note": "calibrated==0 = 非检出；log10 列在 1.csv 中为 log10(min_positive/2)"
+  },
+  "shapes": {
+    "features_log": [
+      250,
+      235
+    ],
+    "targets_z": [
+      250,
+      53
+    ],
+    "concentrations": [
+      250,
+      73
+    ],
+    "oav": [
+      250,
+      44
+    ],
+    "missing_flags": [
+      250,
+      10
+    ]
+  },
+  "sha256": {
+    "features_log.csv": "344740ebf6297ec8bfe30887737370ad9b228372f4773259be8ef1a2ae6b8aee",
+    "targets_z.csv": "13ba7c4140af583f28d4fd9be2bdc9c0070e050e0e5a7378dcd4b26bf932519d",
+    "concentrations.csv": "c101b8d55ea1b5d421cfb95cb54854455aba9600cc15b5d1b0b29e730a159c6d",
+    "oav.csv": "b31ba08ed800e1af649d584557469e5cd8d7c1038e8d53797c78310e32fd2a90",
+    "missing_flags.csv": "dd7be762072e85e7c3b3f83ab5b97cc1748964bf334b0479bcdcf2a3f43b1d19",
+    "DATA_DICTIONARY.md": "a64cb5287b7a717e79ba2d47b97b19184e49fa737a8981cefdf4a9d3f2a5440d"
+  }
+}

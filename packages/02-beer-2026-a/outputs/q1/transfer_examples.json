@@ -1,0 +1,77 @@
+[
+  {
+    "target_style": "Tripel",
+    "source_style": "Pils/Lager",
+    "row": 0
+  },
+  {
+    "target_style": "Tripel",
+    "source_style": "Pils/Lager",
+    "row": 1
+  },
+  {
+    "target_style": "Tripel",
+    "source_style": "Pils/Lager",
+    "row": 2
+  },
+  {
+    "target_style": "Tripel",
+    "source_style": "Pils/Lager",
+    "row": 3
+  },
+  {
+    "target_style": "Tripel",
+    "source_style": "Pils/Lager",
+    "row": 4
+  },
+  {
+    "target_style": "Kriek",
+    "source_style": "Pils/Lager",
+    "row": 0
+  },
+  {
+    "target_style": "Kriek",
+    "source_style": "Pils/Lager",
+    "row": 1
+  },
+  {
+    "target_style": "Kriek",
+    "source_style": "Pils/Lager",
+    "row": 2
+  },
+  {
+    "target_style": "Kriek",
+    "source_style": "Pils/Lager",
+    "row": 3
+  },
+  {
+    "target_style": "Kriek",
+    "source_style": "Pils/Lager",
+    "row": 4
+  },
+  {
+    "target_style": "Lambic",
+    "source_style": "Pils/Lager",
+    "row": 0
+  },
+  {
+    "target_style": "Lambic",
+    "source_style": "Pils/Lager",
+    "row": 1
+  },
+  {
+    "target_style": "Lambic",
+    "source_style": "Pils/Lager",
+    "row": 2
+  },
+  {
+    "target_style": "Lambic",
+    "source_style": "Pils/Lager",
+    "row": 3
+  },
+  {
+    "target_style": "Lambic",
+    "source_style": "Pils/Lager",
+    "row": 4
+  }
+]

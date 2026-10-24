@@ -1,0 +1,12 @@
+﻿block,item,n_rows,beer_seq_equal,beer_id_exact_equal,beer_id_equal_after_6sig,cat_equal
+alignment,1_vs_4,,True,37,214,True
+alignment,1_vs_7,,True,37,214,True
+alignment,4_vs_7,,True,True,,True
+alignment,4_beer_id_precision,,,,,
+alignment,1_vs_cal,,True,250,1,True
+alignment,1_vs_shap_SHAPblock,,True,250,1,True
+alignment,1_vs_shap_concblock,,True,250,1,True
+alignment,1_vs_BP,250,,250,,
+corr_type,corr_type_2csv,780,,,,median|P-m|=0.046178; median|S-m|=0.000000
+corr_type,corr_type_5csv,1176,,,,median|P-m|=0.041536; median|S-m|=0.000000
+corr_type,corr_type_6csv,200,,,,median|P-m|=0.040970; median|S-m|=0.000000

@@ -1,0 +1,37 @@
+{
+  "token": "434dea79386ce1650873dd65",
+  "experimentId": "EXP-0046",
+  "status": "failed",
+  "exitCode": 0,
+  "startedAt": "2026-10-23T14:21:36.700Z",
+  "endedAt": "2026-10-23T14:21:42.311Z",
+  "durationMs": 5610,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": "the script exited without writing metrics.json: an experiment with no measured outcome is not a success (call modeling_contract.emit_metrics({...}) from the script)",
+  "outputs": [],
+  "figures": [],
+  "failure": {
+    "code": "NO_OUTPUT",
+    "message": "the script exited without writing metrics.json: an experiment with no measured outcome is not a success (call modeling_contract.emit_metrics({...}) from the script)",
+    "hint": "import modeling_contract and call emit_metrics({...}) before the script exits"
+  },
+  "error": "the script exited without writing metrics.json: an experiment with no measured outcome is not a success (call modeling_contract.emit_metrics({...}) from the script)",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_stability.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_stability.py",
+    "--stages",
+    "m1_m4"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0046",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

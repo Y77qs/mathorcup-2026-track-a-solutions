@@ -1,0 +1,40 @@
+{
+  "table": [
+    {
+      "experimentId": "EXP-0001",
+      "model": "B0 常数基线",
+      "modelFamily": null,
+      "nFeatures": 0.0,
+      "oofMaeMean": 0.7855967333648494,
+      "holdoutMaeMean": 0.8011105565397745,
+      "holdoutR2Mean": -0.03938361507982333
+    },
+    {
+      "experimentId": "EXP-0002",
+      "model": "C1 多输出 Ridge",
+      "modelFamily": null,
+      "nFeatures": 231.0,
+      "oofMaeMean": 0.6804670815061571,
+      "holdoutMaeMean": 0.7051266124827658,
+      "holdoutR2Mean": 0.18624577214719296
+    },
+    {
+      "experimentId": "EXP-0003",
+      "model": "C2 多输出 HistGBM",
+      "modelFamily": null,
+      "nFeatures": 231.0,
+      "oofMaeMean": 0.6891755903181582,
+      "holdoutMaeMean": 0.7080210833625707,
+      "holdoutR2Mean": 0.12888811361172473
+    }
+  ],
+  "selectionRule": "训练集 5 折 OOF MAE 最小（holdout 不参与选型）",
+  "selected": "EXP-0002",
+  "baseline": "EXP-0001",
+  "holdoutImprovementVsBaseline": {
+    "EXP-0001": 0.0,
+    "EXP-0002": 0.09598394405700872,
+    "EXP-0003": 0.09308947317720373
+  },
+  "labelNature": "mapped grade (transformed, non-original 0-6)"
+}

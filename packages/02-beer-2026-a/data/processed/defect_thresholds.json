@@ -1,0 +1,227 @@
+{
+  "defect_thresholds": [
+    {
+      "label": "DMS",
+      "compound": "DMS",
+      "chemical_name": "Dimethyl sulfide",
+      "has_threshold": true,
+      "threshold_mean": 17.25,
+      "threshold_median": 19.0,
+      "unit": "ug/L",
+      "calibrated": "yes",
+      "off_flavor": "cooked vegetables, onion, garlic, corn, black currant, sulfidic, cabbage, tinned tomato, baked beans"
+    },
+    {
+      "label": "Diacetyl",
+      "compound": "X2.3.butanedione",
+      "chemical_name": "Diacetyl",
+      "has_threshold": true,
+      "threshold_mean": 0.29925,
+      "threshold_median": 0.09,
+      "unit": "mg/L",
+      "calibrated": "yes_gcms",
+      "off_flavor": "butterscotch, popcorn, oily, milky"
+    },
+    {
+      "label": "4VG",
+      "compound": "X4VG",
+      "chemical_name": "4-vinylguaiacol",
+      "has_threshold": true,
+      "threshold_mean": 0.206333333,
+      "threshold_median": 0.2,
+      "unit": "mg/L",
+      "calibrated": "yes_gcms",
+      "off_flavor": null
+    },
+    {
+      "label": "trans-2-nonenal",
+      "compound": "X.E..2.nonenal",
+      "chemical_name": "E-2-nonenal",
+      "has_threshold": false,
+      "threshold_mean": null,
+      "threshold_median": null,
+      "unit": "mg/L",
+      "calibrated": "yes_gcms",
+      "off_flavor": null
+    },
+    {
+      "label": "Stale hops",
+      "compound": "X3.methyl.2.butenal",
+      "chemical_name": "3-methyl-2-butenal",
+      "has_threshold": false,
+      "threshold_mean": null,
+      "threshold_median": null,
+      "unit": null,
+      "calibrated": null,
+      "off_flavor": null
+    },
+    {
+      "label": "Stale hops",
+      "compound": "furfural",
+      "chemical_name": "Furfural",
+      "has_threshold": true,
+      "threshold_mean": 60.0,
+      "threshold_median": 37.5,
+      "unit": "mg/L",
+      "calibrated": "yes_gcms",
+      "off_flavor": null
+    },
+    {
+      "label": "Stale hops",
+      "compound": "X5.methylfurfural",
+      "chemical_name": "5-methylfurfural",
+      "has_threshold": false,
+      "threshold_mean": null,
+      "threshold_median": null,
+      "unit": "mg/L",
+      "calibrated": "yes_gcms",
+      "off_flavor": null
+    },
+    {
+      "label": "Stale hops",
+      "compound": "X.E..2.nonenal",
+      "chemical_name": "E-2-nonenal",
+      "has_threshold": false,
+      "threshold_mean": null,
+      "threshold_median": null,
+      "unit": "mg/L",
+      "calibrated": "yes_gcms",
+      "off_flavor": null
+    }
+  ],
+  "summary": {
+    "thresholds": [
+      {
+        "label": "DMS",
+        "compound": "DMS",
+        "chemical_name": "Dimethyl sulfide",
+        "has_threshold": true,
+        "threshold_mean": 17.25,
+        "threshold_median": 19.0,
+        "unit": "ug/L",
+        "calibrated": "yes",
+        "off_flavor": "cooked vegetables, onion, garlic, corn, black currant, sulfidic, cabbage, tinned tomato, baked beans"
+      },
+      {
+        "label": "Diacetyl",
+        "compound": "X2.3.butanedione",
+        "chemical_name": "Diacetyl",
+        "has_threshold": true,
+        "threshold_mean": 0.29925,
+        "threshold_median": 0.09,
+        "unit": "mg/L",
+        "calibrated": "yes_gcms",
+        "off_flavor": "butterscotch, popcorn, oily, milky"
+      },
+      {
+        "label": "4VG",
+        "compound": "X4VG",
+        "chemical_name": "4-vinylguaiacol",
+        "has_threshold": true,
+        "threshold_mean": 0.206333333,
+        "threshold_median": 0.2,
+        "unit": "mg/L",
+        "calibrated": "yes_gcms",
+        "off_flavor": null
+      },
+      {
+        "label": "trans-2-nonenal",
+        "compound": "X.E..2.nonenal",
+        "chemical_name": "E-2-nonenal",
+        "has_threshold": false,
+        "threshold_mean": null,
+        "threshold_median": null,
+        "unit": "mg/L",
+        "calibrated": "yes_gcms",
+        "off_flavor": null
+      },
+      {
+        "label": "Stale hops",
+        "compound": "X3.methyl.2.butenal",
+        "chemical_name": "3-methyl-2-butenal",
+        "has_threshold": false,
+        "threshold_mean": null,
+        "threshold_median": null,
+        "unit": null,
+        "calibrated": null,
+        "off_flavor": null
+      },
+      {
+        "label": "Stale hops",
+        "compound": "furfural",
+        "chemical_name": "Furfural",
+        "has_threshold": true,
+        "threshold_mean": 60.0,
+        "threshold_median": 37.5,
+        "unit": "mg/L",
+        "calibrated": "yes_gcms",
+        "off_flavor": null
+      },
+      {
+        "label": "Stale hops",
+        "compound": "X5.methylfurfural",
+        "chemical_name": "5-methylfurfural",
+        "has_threshold": false,
+        "threshold_mean": null,
+        "threshold_median": null,
+        "unit": "mg/L",
+        "calibrated": "yes_gcms",
+        "off_flavor": null
+      },
+      {
+        "label": "Stale hops",
+        "compound": "X.E..2.nonenal",
+        "chemical_name": "E-2-nonenal",
+        "has_threshold": false,
+        "threshold_mean": null,
+        "threshold_median": null,
+        "unit": "mg/L",
+        "calibrated": "yes_gcms",
+        "off_flavor": null
+      }
+    ],
+    "n_rows": 261,
+    "n_with_threshold": 43,
+    "n_off_flavor_rows": 7,
+    "off_flavor_examples": [
+      "pungent, rotten-apples, green apple",
+      "butterscotch, popcorn, oily, milky",
+      "rotting vegetables",
+      "cooked vegetables, onion, garlic, corn, black currant, sulfidic, cabbage, tinned tomato, baked beans",
+      "sulfidic, rotten eggs",
+      "putrefaction, drains, rotting vegetables, estery",
+      "Burnt matches"
+    ],
+    "sheet_shapes": {
+      "Sensory thresholds": [
+        261,
+        11
+      ],
+      "Sensory names": [
+        101,
+        8
+      ],
+      "GBM importance MDI": [
+        231,
+        2
+      ],
+      "GBM SHAP Values": [
+        500,
+        236
+      ],
+      "Calibrated chemical dataset": [
+        250,
+        73
+      ],
+      "Beer Prices": [
+        250,
+        11
+      ]
+    },
+    "n_empty_sheets": 1,
+    "prices_na_cells": 1005,
+    "mdi_n": 231,
+    "shap_n": 500,
+    "note": "MDI/SHAP 是同批 250 样本的拟合产物，只能外部对照，禁止作为输入特征；Prices 约 1005 个 NA，不作核心输入"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "token": "d88a5fe5e900c99eeb71e6b9",
+  "experimentId": "EXP-0042",
+  "status": "timed-out",
+  "exitCode": -9,
+  "startedAt": "2026-10-23T14:10:14.588Z",
+  "endedAt": "2026-10-23T14:20:14.670Z",
+  "durationMs": 600081,
+  "timedOut": true,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [],
+  "figures": [],
+  "failure": {
+    "code": "TIMEOUT",
+    "message": "the run exceeded timeoutSeconds=600.0 and its process group was killed; the partial stdout/stderr were kept (they are the evidence of how far it got)"
+  },
+  "error": "the run exceeded timeoutSeconds=600.0 and its process group was killed; the partial stdout/stderr were kept (they are the evidence of how far it got)",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_stability.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_stability.py",
+    "--stages",
+    "m1_m4"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0042",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}
