@@ -55,7 +55,7 @@
 ### v5 · 第四套完整解（18 页，final）
 
 - **概括**：2.8.10 重做。Q1 图正则低秩多输出 + OOF 融合：50 维平均 MAE **0.4006 → 0.3466**（R²₅₀ 0.2317）；Q2 四方法 Top-3（总体/风格残差化 Spearman + 图低秩 + 共识）平均 Jaccard **0.2187**（维度无关基线 0.2000），bootstrap 入选频率 π 普遍偏低；Q3 分层收缩 Copula + 五条硬缺陷约束：满足率 **1.0**、缺陷超阈率 **0.852 → 0**（真实数据 0.844）；三项预注册稳健性与九项消融全部完成，失败与限制原样披露。
-- **材料**：`v5/report/`（18 页论文 6 个文件）、`v5/src/`（24 个 Python）、`v5/data/`（raw/clean/processed/splits）、`v5/experiments/`（36 个）、`v5/validation/`（43 条）、`v5/figures/`（13 张 + 2 张归档）、`v5/state/ledger.json`、`v5/delivery/`（final `20261024-223751` + DRAFT `20261024-DRAFT`，含 tar.gz）、`ORIGINAL_TASK.md` / `DELIVERY-NOTES.md` / `REPRODUCE.md` / `CONTINUE.md`
+- **材料**：`v5/report/`（18 页论文 6 个文件）、`v5/src/`（24 个 Python）、`v5/data/`（raw/clean/processed/splits）、`v5/experiments/`（36 个）、`v5/validation/`（43 条）、`v5/figures/`（13 张 + 2 张归档）、`v5/state/ledger.json`、`v5/delivery/`（final `20261024-223751` + DRAFT `20261024-DRAFT`，含 tar.gz）、`MODELING-BLUEPRINT.md`（建模方案）、`ORIGINAL_TASK.md` / `DELIVERY-NOTES.md` / `REPRODUCE.md` / `CONTINUE.md`
 - **说明**：按需求**不含** 2.8.10 插件相关材料（原 `.rework/` 的插件源码、构建包、复验证据等约 151 MB），详见 `v5/README.md` §5
 - **复现**：见 `v5/delivery/20261024-223751/README_REPRODUCE.md`；代码顺序 `prepare_base.py → prepare_q1mapped.py → prepare_q3.py → q1_* → q2_* → q3_* → make_paper_figures.py → build_paper.py`
 
