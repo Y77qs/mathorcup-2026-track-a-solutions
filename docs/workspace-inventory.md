@@ -4,9 +4,9 @@
 > 在本仓库中的对应位置：
 >
 > - `A/` → [`v1/`](../v1/)（第一套完整解）
-> - `work/my-new-contest/` → [`v2/`](../v2/)（第二套完整解）
+> - `work/my-new-contest/` → [`v3/`](../v3/)（第二套完整解）
 > - 重跑项目（`work/beer-rerun-2.8.6/`、`work/my-new-contest-v2/`、`work/RERUN-GUIDE-2.8.6.md`）未纳入本仓库
-> - 本仓库另有 `v1-audit/`（第一套解的整改审计稿），来自工作区外路径 `…/Codex/2026-10-23/qing/outputs/建模实战整改最终交付/竞赛副本产物/`，不在本清单扫描范围内。
+> - 本仓库另有 [`v2/`](../v2/)（第一套解的整改审计稿，独立论文），来自工作区外路径 `…/Codex/2026-10-23/qing/outputs/建模实战整改最终交付/竞赛副本产物/`，不在本清单扫描范围内。
 >
 > 清单中提到的部分大文件（`A/outputs/q1|q2|q3`、非最终交付压缩包）未纳入本仓库，原因见根 README 第 5 节。
 
@@ -129,7 +129,7 @@
 |---|---|---|---|---|
 | `A/` | `A/report/paper.md`（106,764 B，含 `{{…}}` 占位符） | `A/report/paper.tex`（152,989 B） | `rendered.md`、`rendered.refs.json`、`tex/build/typeset.md`、`tex/pandoc-template.tex`、`tex/typeset.py` | `A/report/build.sh` + `report/build.log` |
 | `work/my-new-contest/` | `report/paper.md`（20,646 B） | `report/paper.tex`（26,497 B） | `rendered.md`、`rendered_build.md`、`rendered.refs.json`、`paper-header.tex`、`report/build_report.json` | `src/build_paper.py` |
-| `beer-rerun` / `v2` | — | — | — | — |
+| `beer-rerun` / `my-new-contest-v2`（重跑项目，未纳入） | — | — | — | — |
 
 论文随包复现说明：`A/delivery/FINAL-DRAFT-2-DRAFT/README_REPRODUCE.md`（31,544 B）、
 `work/my-new-contest/delivery/round2-final-DRAFT/README_REPRODUCE.md`（16,903 B）。

@@ -1,94 +1,72 @@
-# v2 · beer 项目（projectId: `beer-2026-a`）—— 第二套完整解（2026-10-24）
+# v2 · 实战整改审计稿（独立论文；`mathorcup-2026-a` 独立副本）
 
-**第二套完整解**：2026-10-24 11:24 → 12:50（CST），竞赛投稿式论文 **12 页**，共 **5 个论文版本**。本目录即归档中的 `v2/`。
-本包保留 5 个版本的 PDF、完整代码、建模前的数据取证报告、实验元数据、台账与最终交付包。
+**三篇论文中的第二篇**（按时间：v1 10-23 → 本目录 10-24 10:48 → v3 10-24 11:24）。
+它是一份**独立成篇的审计论文**，性质是对 v1 项目的独立副本做一次“整改审计”，不是第三套同题解：
+
+- 由工程整理程序根据竞赛独立副本的真实台账与复算文件重新生成，2026-10-24 10:48 产出；
+- 论文只有 **5 页**（审计草稿），作者自述“不能作为通过质量验收的竞赛终稿”。
+
+- 论文题目：《啤酒化学成分、感官映射与条件生成：实战整改审计草稿》
+- 来源：`/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/outputs/建模实战整改最终交付/竞赛副本产物/`
+- 状态：**DRAFT**（见论文开头引文）
 
 ---
 
-## 1. 论文
+## 1. 与 v1 / v3 的关系
 
-**题目**：《基于化合物谱的啤酒风味预测、归因与风格条件生成》
-
-| 版本 | 时间 | 文件 | 说明 |
+| | v1 | v2（本目录） | v3 |
 |---|---|---|---|
-| v1 | 10-24 12:22 | `paper/versions/2026-10-24-1222-v1.pdf` | 第一版（第一个 DRAFT 包） |
-| v1 重打包 | 10-24 12:23 | `paper/versions/2026-10-24-1223-v1-repack.pdf` | 内容几乎相同，仅换包名 |
-| Round 1 | 10-24 12:36 | `paper/versions/2026-10-24-1236-round1.pdf` | 补 Q2/Q3 简单基线、独立审查记录 |
-| Round 2 | 10-24 12:42 | `paper/versions/2026-10-24-1242-round2.pdf` | 独立复跑（train-only 隔离）通过后 |
-| **终稿** | 10-24 12:43 | `paper/paper.pdf` | 含两轮复审修正，12 页；`build_report.json` 记录 pandoc + 两遍 xelatex、9 图全部可加载 |
+| 项目 id | `mathorcup-2026-a` | `mathorcup-2026-a` 的**独立副本**（台账 rev 780/781） | `beer-2026-a` |
+| 时间 | 10-23 21:04–22:27 | 10-24 10:48 | 10-24 11:24–12:50 |
+| 论文 | 47 页完整解 | 5 页审计草稿（独立论文） | 12 页完整解 |
+| 性质 | 第一套完整解 | **对 v1 的复核与重打包，不是新解** | 第二套完整解 |
 
-源文件：`paper/paper.md`（20,646 B）、`paper/paper.tex`（26,497 B）、`paper/rendered.md`、
-`paper/rendered_build.md`、`paper/rendered.refs.json`、`paper/paper-header.tex`、`paper/build_report.json`。
+关键关系：本目录 `practical-final-20261024-DRAFT/report/history/pre-practical-repair/paper.pdf` 是 **v1 的 47 页原稿备份**
+（sha256 `d46d838cec…`，与 `../v1/paper/paper.pdf` 完全一致）。本目录在 v1 的基础上增加了两件事：
+① 对存量预测做逐维复算（`src/q1_recompute_exp0029.py`、`src/engineer_q1_audit.py`）；
+② 按审计结论重写了 5 页草稿并重新打包。
 
-## 2. 目录
+## 2. 论文要点（节选）
+
+- **Q1**：已选模型 `MODEL-0022 / EXP-0025` 的 50 维平均留出 R² 为 0.220579；更强存量预测 `EXP-0029` 经 2500 个 beer×dim 单元格复算后，
+  逐维 R² 算术平均 **0.253574**、中位数 0.244622，但 `overall` 单维仅 **0.009210**。审计只证明存量文件指标一致，**不构成独立复跑证明**，因此未改选模型。
+- **Q2**：实际候选为 `MODEL-0032 / EXP-0041`，平均 Jaccard 0.186667、预登记命中率 0.097222，仅 1/50 个维度 Jaccard ≥ 0.5；旧产物中以 `r2` 命名的同值字段实为集合重合度，不解释为预测 R²。
+- **Q3**：`MODEL-0029 / EXP-0036` 仍存在映射器依赖不完整、历史复跑失败、分布拟合证据弱等问题。
+- **边界**：留出集历史被反复用于模型判断，不能通过重新划分或更换 split ID 恢复为“未见数据”，因此保持草稿。
+
+## 3. 目录
 
 ```text
-paper/          终稿三格式 + 渲染物 + 5 个历史版本 PDF
-src/            20 个 Python（2,895 行）：三个数据版本 + Q1/Q2/Q3 + 出图 + 论文生成
-analysis/       建模前的 5 份数据取证报告（sensory / ref / corr）+ 脚本 + 原始证据 CSV
-figures/        9 张 PNG（7 张登记为 FIG）
-data/           raw（附件 + imported 副本）/ clean / processed / splits
-problem/        题面 md + PDF + questions.yaml
-experiments/    EXP-0001..0020 元数据（含 failed 记录）
-validation/     18 个验证目录（台账 19 条记录）
-outputs/        audit/ q1/ q2/ q3/ 汇总产物
-ledger.json     台账（rev 494，1.5 MB）
-docs/DELIVERY-NOTES.md  交付说明：为什么 final=false、两轮复审与修正、复现入口
-delivery/round2-final-DRAFT.tar.gz  最终 DRAFT 包（sha256 dd74a243b552…）
-contest.yaml / metrics.json
+REPAIR-SNAPSHOT.json                       台账快照（rev 780、final=false、三个 sha256）
+practical-final-20261024-DRAFT/            原交付包解包内容（包名保持原样，可用 SHA256SUMS 校验）
+├── README_REPRODUCE.md                    台账生成的复现说明（含环境、数据集/划分 hash、命令）
+├── SHA256SUMS                             包内逐文件 sha256
+├── contest.yaml                           生效配置（sha a89e9e2f…）
+├── ledger-summary.json                    台账摘要（结论、验证、图形、复跑关系）
+├── quality-blockers.json                  质量门阻塞项
+├── report/
+│   ├── paper.md / paper.tex / paper.pdf    5 页审计草稿
+│   ├── rendered.md / rendered.refs.json
+│   ├── analysis/practical-q1-audit/       Q1 逐维复算证据（metrics/outputs/per_dim_recompute.csv）
+│   ├── history/pre-practical-repair/      v1 原稿备份（47 页）
+│   └── tex/ build.sh 等构建工程
+├── src/                                   42 个 Python（v1 的 39 个 + 复算/审计/训练隔离 3 个）
+├── figures/                               31 张登记图（FIG-0002…）
+├── experiments/                           25 个实验的打包产物
+└── data/                                  clean / raw / splits
 ```
 
-## 3. 代码地图
+## 4. 完整性
 
-| 阶段 | 文件 |
-|---|---|
-| 数据取证（先于建模） | `analysis/scripts/`：`sensory_01_xlsx_forensics.py`、`sensory_02_scale_stats.py`、`sensory_03_align_targets.py`、`ref_8xlsx_audit.py`、`ref_crosscheck.py`、`ref_discrepancies.py`、`corr_forensics.py`、`verify_all.py` |
-| 公共库 + 数据版本 | `src/lib.py`、`src/emit.py`、`src/build_q1mapped.py`、`src/build_q2raw.py`、`src/build_q3.py`、`src/q1_common.py`、`src/q1_baseline.py`、`src/q1_candidate.py` |
-| 问题一/二/三 | `src/q1_analysis.py`、`src/q1_rerun_oof.py`、`src/q1_trainonly.py`、`src/q2_topk.py`、`src/q2_baseline.py`、`src/q3_generate.py`、`src/q3_baseline.py`、`src/q3_robust.py` |
-| 出图与论文 | `src/make_figures.py`、`src/build_paper.py`、`src/prepare.py`、`src/evidence_docs.py` |
-
-## 4. 复现
+原交付压缩包 `practical-final-20261024-DRAFT.tar.gz`（7,154,835 B，sha256 `e7edb09a24efd87239c847c390e390998ec6dd7b6449ae9eceaebab889349ca5`）的内容
+已**原样解包**在本目录下，因此未重复存放压缩包。校验方式：
 
 ```bash
-# 依赖与 v1 相同；论文为 pandoc + xelatex（ctexart）
-# 按 docs/DELIVERY-NOTES.md 第 5 节：
-python src/prepare.py                      # 审计 / 尺度逐列判定
-python src/build_q2raw.py                  # DATA-0001（Q2 原始标准化）
-python src/build_q1mapped.py --split SPLIT-0001   # DATA-0002（Q1 mapped grade）
-python src/build_q3.py                     # DATA-0003（Q3 风格 + 阈值）
-python src/q1_candidate.py --family ridge  # Q1 候选
-python src/q2_topk.py                      # Q2 Top-3 + bootstrap
-python src/q3_generate.py                  # Q3 生成 / 迁移 / 缺陷约束
-python src/make_figures.py && python src/build_paper.py
+cd practical-final-20261024-DRAFT
+shasum -a 256 -c SHA256SUMS
 ```
 
-## 5. 主要结果（论文与 `docs/DELIVERY-NOTES.md` 第 4 节）
+## 5. 复现
 
-- **Q1**：50 维等权留出 MAE，常数基线 0.8011 → Ridge 0.7051（OOF 0.6805）、HistGBM 0.7080；R² 均值 0.186。
-  交付的是 **mapped grade**（训练集端点映射 + 截断），**不是原始 0–6 评分**。
-- **Q2**：Top-3 方法间 Jaccard 0.228，与网络平滑 Spearman 0.614，bootstrap 入选频率 0.478 → 结论具方法依赖性，只作探索性归因。
-- **Q3**：不受约束迁移把缺陷超阈值比例 0.091 → 0.318（不恶化率 0.333）；加缺陷约束投影后不恶化率 1.000、超阈值率回到 0.091；
-  能量距离 4.619 vs 源风格基线 5.342。另有一个阴性结果：无条件全局高斯基线能量距离 3.719 更低，故不宣称生成优于基线。
-
-## 6. 为什么仍是 DRAFT（如实记录）
-
-1. **critical claims 永久 stale**：用户步骤要求在 `init` 之后修改 `contest.yaml`，而实验记录的 `configSha256` 固定为 init 时的哈希，
-   两者永不相等（详见 `docs/DELIVERY-NOTES.md` 第 7 节的源码级证据）。
-2. **independent-rerun 被 holdout 复用预算拒绝**，只能改用不触 holdout 的训练内部 OOF 独立复算（Δ=0）作为可复现证据。
-3. **quality 门未过**：robustness 计划/执行、Q2/Q3 简单基线（部分后补）、模型契约 formula/boundaryCases、独立 review 等缺口。
-4. **未 freeze、未提交**；DRAFT 是唯一诚实产物。
-
-## 7. 本包省略的内容
-
-交付目录中只有最终包 `round2-final-DRAFT.tar.gz`；另外 4 个 DRAFT 压缩包（12:22/12:23/12:36/12:42）因体积与内容重复未纳入，
-其论文 PDF 已作为历史版本保留在 `paper/versions/`。`data/raw/staged`（导入暂存，与 `imported/` 重复）未纳入。
-
-## 8. 附：所有交付包清单（历史记录，压缩包未全部纳入）
-
-| 时间（CST） | 包 | 大小 | sha256（前 16 位） |
-|---|---|---|---|
-| 12:22 | `20261024-122255-DRAFT.tar.gz` | 3,667,114 B | — |
-| 12:23 | `DRAFT-final-DRAFT.tar.gz` | 3,666,397 B | — |
-| 12:36 | `round1-DRAFT.tar.gz` | 3,682,734 B | — |
-| 12:42 | `round2-DRAFT.tar.gz` | 3,691,899 B | — |
-| 12:48 | `round2-final-DRAFT.tar.gz` | 3,694,512 B | `dd74a243b552484d…` |
+见 `practical-final-20261024-DRAFT/README_REPRODUCE.md`（台账生成，含解释器版本、依赖版本、数据集与划分 hash、逐条命令）。
+注意原机器解释器路径为 `/Users/baozhashizitou/Documents/Codex/…`，在其他机器上需替换。
