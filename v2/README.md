@@ -1,6 +1,6 @@
-# 包 02 · beer 项目（projectId: `beer-2026-a`）
+# v2 · beer 项目（projectId: `beer-2026-a`）—— 第二套完整解（2026-10-24）
 
-**第二套完整解**：2026-10-24 11:24 → 12:50（CST），竞赛投稿式论文 **12 页**，共 **5 个论文版本**。
+**第二套完整解**：2026-10-24 11:24 → 12:50（CST），竞赛投稿式论文 **12 页**，共 **5 个论文版本**。本目录即归档中的 `v2/`。
 本包保留 5 个版本的 PDF、完整代码、建模前的数据取证报告、实验元数据、台账与最终交付包。
 
 ---
@@ -50,7 +50,7 @@ contest.yaml / metrics.json
 ## 4. 复现
 
 ```bash
-# 依赖同包 01；论文为 pandoc + xelatex（ctexart）
+# 依赖与 v1 相同；论文为 pandoc + xelatex（ctexart）
 # 按 docs/DELIVERY-NOTES.md 第 5 节：
 python src/prepare.py                      # 审计 / 尺度逐列判定
 python src/build_q2raw.py                  # DATA-0001（Q2 原始标准化）

@@ -3,11 +3,11 @@
 > 本文件是原工作区 `/Users/baozhashizitou/Documents/MATHORCUP` 的扫描清单，保留原始路径以便对照。
 > 在本仓库中的对应位置：
 >
-> - `A/` → [`packages/01-A-mathorcup-2026-a/`](../packages/01-A-mathorcup-2026-a/)
-> - `work/my-new-contest/` → [`packages/02-beer-2026-a/`](../packages/02-beer-2026-a/)
-> - `work/beer-rerun-2.8.6/`、`work/my-new-contest-v2/`、`work/RERUN-GUIDE-2.8.6.md` → [`packages/03-rerun-2.8.6/`](../packages/03-rerun-2.8.6/)
+> - `A/` → [`v1/`](../v1/)（第一套完整解）
+> - `work/my-new-contest/` → [`v2/`](../v2/)（第二套完整解）
+> - 重跑项目（`work/beer-rerun-2.8.6/`、`work/my-new-contest-v2/`、`work/RERUN-GUIDE-2.8.6.md`）未纳入本仓库
 >
-> 清单中提到的部分大文件（`A/outputs/q1|q2|q3`、非最终交付压缩包、重跑项目 data 副本）未纳入本仓库，原因见根 README 第 5 节。
+> 清单中提到的部分大文件（`A/outputs/q1|q2|q3`、非最终交付压缩包）未纳入本仓库，原因见根 README 第 5 节。
 
 # 2026 年 MathorCup 大数据挑战赛 · 赛道 A 初赛 —— 论文与相关代码（按时间顺序）
 
