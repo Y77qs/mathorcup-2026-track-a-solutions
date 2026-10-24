@@ -1,0 +1,104 @@
+{
+  "ablation_table": {
+    "checks": {
+      "1-representation": true,
+      "2-rank": true,
+      "3-gamma": true,
+      "4-confound": true,
+      "5-marginals-copula": true,
+      "6-shrinkage": true,
+      "7-floor-mixture": true,
+      "8-normal-vs-lowdefect": true,
+      "9-quantile-vs-constrained": true
+    },
+    "complete": 9,
+    "note": "every cell below is copied programmatically from the named registered experiment; nothing is typed by hand",
+    "required": 9,
+    "seed": 20261024,
+    "sources": {
+      "1-3": "experiments/EXP-0003/outputs.json",
+      "4": "experiments/EXP-0029/outputs.json",
+      "5-9": "experiments/EXP-0033/metrics.json"
+    },
+    "table": [
+      {
+        "better": "Rank-Gauss",
+        "delta": -0.003994205530342687,
+        "id": 1,
+        "metric": "CV MAE",
+        "name": "original-scale z-score vs Rank-Gauss",
+        "value": 0.35039761171092537
+      },
+      {
+        "better": "low-rank",
+        "delta": 0.002322040123989677,
+        "id": 2,
+        "metric": "CV MAE",
+        "name": "unrestricted ridge vs rank<=10 low-rank",
+        "value": 0.35039761171092537
+      },
+      {
+        "better": "graph",
+        "delta": 0.0009835263372803826,
+        "id": 3,
+        "metric": "CV MAE",
+        "name": "gamma=0 vs graph-regularised",
+        "value": 0.35039761171092537
+      },
+      {
+        "better": "they disagree",
+        "delta": null,
+        "id": 4,
+        "metric": "Top-3 Jaccard",
+        "name": "total association vs within-style association",
+        "value": 0.302
+      },
+      {
+        "better": "copula (by dependence spectrum)",
+        "delta": -0.007951703102091506,
+        "id": 5,
+        "metric": "normalised energy distance delta",
+        "name": "independent marginals vs copula",
+        "value": -0.007951703102091506
+      },
+      {
+        "better": "shrinkage",
+        "delta": 0.03365453839186214,
+        "id": 6,
+        "metric": "normalised energy distance delta",
+        "name": "independent style estimate vs shrinkage",
+        "value": 0.03365453839186214
+      },
+      {
+        "better": "floor mixture",
+        "delta": 0.33984476030610344,
+        "id": 7,
+        "metric": "normalised energy distance delta",
+        "name": "no floor mixture vs floor mixture",
+        "value": 0.33984476030610344
+      },
+      {
+        "better": "low-defect (cheap)",
+        "delta": -0.004102330484566208,
+        "id": 8,
+        "metric": "normalised energy distance delta",
+        "name": "normal vs low-defect generation",
+        "value": -0.004102330484566208
+      },
+      {
+        "better": "constrained",
+        "delta": -1.048500720611653,
+        "id": 9,
+        "metric": "target Mahalanobis",
+        "name": "quantile transfer vs constrained optimisation",
+        "value": 0.4328202679486975
+      }
+    ]
+  },
+  "figure": {
+    "bytes": 117496,
+    "name": "ablation-summary.png",
+    "path": "figures/ablation-summary.png",
+    "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd"
+  }
+}

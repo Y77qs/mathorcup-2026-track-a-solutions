@@ -1,0 +1,68 @@
+questions:
+  - id: Q1
+    title: "数据缺失条件下的感官评分：图正则低秩多输出预测与有界相对分级"
+    objective: "以 1.csv 的 231 个化学及理化变量为输入，预测 4.csv 的 50 个标准化感官标签 Y，并把预测强度按训练集经验中点分布映射为 0–6 相对分级；在训练折内处理 73 个真实缺失值（中位数填补+缺失指示），用图正则低秩多输出回归捕捉共享结构与变量网络，用 HGB 与训练内 OOF 融合检验非线性收益，最终在唯一的 20% 留出集上给出 50 维 MAE、R²、Skill 与分级结果。"
+    inputs:
+      - "data/clean/q1_mapped.csv（250 行：beer 键 + 231 化学/理化特征 + 50 维 4.csv 感官标签 + 训练折派生的 0–6 分级参考列）"
+      - "data/clean/q2_raw.csv（DATA-0001 父版本，提供 2.csv 网络与 4.csv 原始目标）"
+      - "analysis/sensory/targetcolumns.csv（231 特征 / 50 目标 / 37-33-161 尺度分组常量）"
+    outputs:
+      - "predictions.csv（row + 50 个 y_pred__<目标列>）"
+      - "metrics.json（mae 等有限数值指标）"
+      - "outputs.json（逐维 MAE/R²/Skill、0–6 分级结果、9 项消融表中的 1–3 项）"
+      - "figures/q1_*.png"
+    constraints:
+      - "插补中位数、标准化、Rank-Gauss 参照分布、低秩与图正则超参数、分级参考分布都只在训练折内拟合"
+      - "禁止把 4.csv 目标、7.csv 感官侧数据、5/6.csv 相关矩阵或 8.xlsx 的 GBM importance/SHAP 作为特征"
+      - "0–6 分级必须显式声明为相对感官强度等级，等级 0 不代表风味不存在，等级 6 不代表人工评分满分"
+      - "缺失指示变量不连接到化学图（图惩罚块置零）"
+    evaluation: "50 维等权平均留出 MAE（uniform-average）为主指标；同时报告逐维 MAE、R²、相对逐目标训练中位数的 Skill、改善/恶化维数、宏平均与 Aroma/Flavour/其他分组结果，以及 0–6 分级的二次加权 kappa 与分级 MAE。候选必须在同一 SPLIT-0002 上与基线可比。"
+    metric: mae
+    needsData: true
+    needsBaseline: true
+
+  - id: Q2
+    title: "化合物–风味分析：共表达网络、风格混杂分析与稳定 Top-3"
+    objective: "利用 2.csv 的 231×231 Spearman 相关矩阵与 1.csv 训练行构建化合物共表达图，在 4.csv 的 50 个感官维度上分别给出 Top-3 关键单体化合物；用总体 Spearman、风格内残差化 Spearman、图正则低秩回归系数与 bootstrap 综合排名四种方法计算方法间 Top-3 Jaccard，并用 500 次风格分层 bootstrap 报告入选频率、方向、模块与风格混杂证据。"
+    inputs:
+      - "data/clean/q2_raw.csv（DATA-0001：250 行 231 特征 + 50 原始感官目标）"
+      - "data/splits/SPLIT-0001/train.csv（仅训练 200 行用于拟合与关联分析）"
+      - "data/raw/2.csv（附件提供的化合物共表达矩阵，PSD 投影后使用）"
+      - "data/clean/q2_chem_meta.json（变量类型/尺度/证据等级）"
+    outputs:
+      - "sets.json（50 维 × 4 方法的 Top-3 集合，作为 topk-jaccard 证据）"
+      - "metrics.json（topk-jaccard 必须含）"
+      - "outputs.json（bootstrap 入选频率、Top-3 名单、方向/模块/风格混杂、9 项消融表第 4 项）"
+      - "figures/q2_*.png"
+    constraints:
+      - "2.csv 必须先做 PSD 投影再定义阈值边权；bootstrap 每次重拟合预处理与网络"
+      - "Top-3 主名单只允许单体化合物；pH、颜色与 5 个派生汇总量另列为辅助解释"
+      - "5/6/7/8.xlsx 只作非独立外部佐证，不得参与 Top-3 选择"
+      - "只声明同期关联，不宣称因果或未来预测"
+    evaluation: "50 维 × 4 方法（total_spearman / within_style_spearman / graph_lowrank / consensus）的 Top-3 平均两两 Jaccard 为主指标 topk-jaccard；同时报告 500 次 bootstrap 入选频率、与 6.csv 独立 |r| 的秩相关、以及最终候选的化学合理性分层证据。"
+    metric: topk-jaccard
+    needsData: true
+    needsBaseline: true
+
+  - id: Q3
+    title: "风格条件生成与跨风格迁移：分层收缩边际、混合 Copula 与约束优化"
+    objective: "以 tasting_category_fine 为条件，用风格内经验边际 + 池化边际的层次收缩与风格间相关收缩 Copula 学习 p(X|s)，在给定风格下生成化合物谱并给出感官画像；Tripel/Kriek/Lambic 整类留出用于未见风格扩展；实现 Pils/Lager→Tripel 的分位数映射初始化与最小改动约束优化，硬性要求 DMS、双乙酰、4VG、trans-2-nonenal、stale hops 等缺陷不恶化，并给出双阈值情景与 Pareto 前沿。"
+    inputs:
+      - "data/clean/q3.csv（250 行：231 特征 + tasting_category_fine 风格 + 缺陷/阈值相关列）"
+      - "data/clean/q3_thresholds.json（8.xlsx Sensory thresholds：均值/中位数阈值与缺陷列）"
+      - "data/clean/q1_mapped.csv（作为 Q1 感官预测代理的只读推理输入）"
+    outputs:
+      - "samples.csv（生成化合物谱，含约束列，作为 constraint-satisfaction 证据）"
+      - "run-seed-<seed>.json（每个随机种子一份运行证据）"
+      - "metrics.json（constraint-satisfaction、归一化能量距离等）"
+      - "outputs.json（迁移前后谱/OAV、双阈值情景、Pareto、9 项消融表第 5–9 项）"
+      - "figures/q3_*.png"
+    constraints:
+      - "风格整类留出（Tripel/Kriek/Lambic 或其组合）不得用随机划分冒充"
+      - "缺陷约束是硬可行域约束，不是事后筛选；物理边界与派生量关系必须满足"
+      - "4.csv 不参与生成模型训练，仅用于感官画像一致性评估；Q1 代理只做推理"
+      - "小类（Kriek/Lambic）必须报告样本量与 bootstrap 不确定度，不声称精确刻画"
+    evaluation: "constraint-satisfaction（同时满足全部声明数值约束的生成样本比例）为主指标；同时报告归一化能量距离（含真实—真实参照）、缺陷越阈率、感官画像秩相关/MAE、迁移后缺陷不恶化率与双阈值/Pareto 敏感性。"
+    metric: constraint-satisfaction
+    needsData: true
+    needsBaseline: true

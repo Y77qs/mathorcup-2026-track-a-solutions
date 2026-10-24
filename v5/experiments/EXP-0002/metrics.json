@@ -1,0 +1,7 @@
+{
+  "n_candidates": 219,
+  "n_dimensions": 50,
+  "n_methods": 4,
+  "tau": 0.5,
+  "topk-jaccard": 0.19999999999999996
+}

@@ -1,0 +1,9 @@
+{
+  "mae": 0.4005615400064,
+  "n_holdout_rows": 50,
+  "n_targets": 50,
+  "n_train_rows": 200,
+  "r2_50dim": -0.0848384350854984,
+  "skill_50dim": 1.0,
+  "train_mae_reference": 0.38724066877320007
+}

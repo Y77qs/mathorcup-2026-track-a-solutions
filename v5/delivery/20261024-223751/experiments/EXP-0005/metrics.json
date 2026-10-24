@@ -1,0 +1,16 @@
+{
+  "constraint-satisfaction": 0.12,
+  "constraint-satisfaction-from-csv": 0.12,
+  "covariance-condition-number": 115.97243015160927,
+  "covariance-shrinkage": 0.22234388004406802,
+  "defect-exceedance-rate": 0.88,
+  "defect-exceedance-rate-real": 0.844,
+  "energy-distance-normalized": 0.7513853833897858,
+  "energy-distance-real-reference": 0.19211742120161324,
+  "n-features": 231.0,
+  "n-labels": 50.0,
+  "n-samples": 250.0,
+  "profile-mae": 0.01068129945307366,
+  "profile-spearman": 0.7963025210084033,
+  "style-holdout-energy-distance-normalized": 0.6638982217900483
+}

@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0001",
+  "questionId": "Q1",
+  "modelId": "MODEL-0001",
+  "modelKind": "baseline",
+  "title": "Q1 B0: per-target TRAIN median baseline (50-dim MAE)",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": "per-target TRAIN median (constant model, no chemistry features)",
+  "params": {
+    "algorithmDetail": "for each of the 50 sensory targets the prediction is the median of the 200 TRAIN rows; no chemistry feature is used",
+    "dependencies": [
+      "src/q_common.py",
+      "src/target_columns.py"
+    ],
+    "dependenciesComplete": true,
+    "evaluation": {
+      "aggregation": "uniform-average",
+      "idColumn": "row",
+      "kind": "multi-output",
+      "metric": "mae",
+      "metricKey": "mae",
+      "predictionsFile": "predictions.csv",
+      "targetContractId": "TGT-0001",
+      "tolerance": 1e-8
+    },
+    "family": "constant-train-median",
+    "features": [],
+    "freezeSources": true,
+    "requireSeedReceipt": true,
+    "stochastic": false,
+    "targetContractId": "TGT-0001"
+  },
+  "datasetId": "DATA-0002",
+  "splitId": "SPLIT-0002",
+  "dataset": {
+    "id": "DATA-0002",
+    "path": "data/clean/q1_mapped.csv",
+    "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+    "bytes": 979527,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": {
+    "id": "SPLIT-0002",
+    "datasetId": "DATA-0002",
+    "method": "random-holdout",
+    "counts": {
+      "rows": 250,
+      "train": 200,
+      "test": 50
+    },
+    "trainPath": "data/splits/SPLIT-0002/train.csv",
+    "trainSha256": "353f1814d947eb8fe0dab1d116f3b34e3e2504205e78925f0dce1eb4572dc09b",
+    "testPath": "data/splits/SPLIT-0002/test.csv",
+    "testSha256": "b729d617d4fd1a0eba279109a8c0d04af92184e31fc813cc21bd9b834fbd8e2e",
+    "assignmentPath": "data/splits/SPLIT-0002/assignment.csv",
+    "assignmentSha256": "e3addc6c6dde223279b835a44b9d5b1177636ca3aa06286a35a3c5b0054d473e"
+  },
+  "configSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+  "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+  "configVersion": 1,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/q1_baseline.py",
+    "sha256": "7297a81b599ec772ac50c1472b2b98112553cfe3a6214247f77535baf666aa41",
+    "bytes": 2397
+  },
+  "dependencies": [
+    {
+      "path": "src/q1_baseline.py",
+      "sha256": "7297a81b599ec772ac50c1472b2b98112553cfe3a6214247f77535baf666aa41",
+      "bytes": 2397
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365
+    },
+    {
+      "path": "src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0001/inputs/src/q1_baseline.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0001/inputs/src/q1_baseline.py",
+        "sha256": "7297a81b599ec772ac50c1472b2b98112553cfe3a6214247f77535baf666aa41",
+        "bytes": 2397,
+        "originalPath": "src/q1_baseline.py"
+      },
+      {
+        "path": "experiments/EXP-0001/inputs/src/q_common.py",
+        "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+        "bytes": 11365,
+        "originalPath": "src/q_common.py"
+      },
+      {
+        "path": "experiments/EXP-0001/inputs/src/target_columns.py",
+        "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "bytes": 29435,
+        "originalPath": "src/target_columns.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q1_baseline.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/src/q1_baseline.py"
+    ],
+    "cwd": "experiments/EXP-0001"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261024,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/src/q1_baseline.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261024,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "ab3a92ba730ebf4007ec87546cc3cc1580530009829a4c39c0ee332ee9ad2753",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "q1-baseline-v1",
+  "createdAt": "2026-10-24T11:28:27.547Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0001",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "baseline",
+    "title": "Q1 B0: per-target TRAIN median baseline (50-dim MAE)",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": "per-target TRAIN median (constant model, no chemistry features)",
+    "params": {
+      "algorithmDetail": "for each of the 50 sensory targets the prediction is the median of the 200 TRAIN rows; no chemistry feature is used",
+      "dependencies": [
+        "src/q_common.py",
+        "src/target_columns.py"
+      ],
+      "dependenciesComplete": true,
+      "evaluation": {
+        "aggregation": "uniform-average",
+        "idColumn": "row",
+        "kind": "multi-output",
+        "metric": "mae",
+        "metricKey": "mae",
+        "predictionsFile": "predictions.csv",
+        "targetContractId": "TGT-0001",
+        "tolerance": 1e-8
+      },
+      "family": "constant-train-median",
+      "features": [],
+      "freezeSources": true,
+      "requireSeedReceipt": true,
+      "stochastic": false,
+      "targetContractId": "TGT-0001"
+    },
+    "codeFile": "src/q1_baseline.py",
+    "datasetId": "DATA-0002",
+    "splitId": "SPLIT-0002",
+    "seed": 20261024,
+    "args": [],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0001"
+  }
+}

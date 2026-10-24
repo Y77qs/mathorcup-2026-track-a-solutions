@@ -1,0 +1,977 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-24T14:37:51.321Z",
+  "projectId": "beer-2026-a-v3",
+  "ledgerRevision": 2743,
+  "config": {
+    "version": 1,
+    "rawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+    "protocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+    "file": "contest.yaml"
+  },
+  "freeze": {
+    "at": "2026-10-24T14:36:58.240Z",
+    "revision": 2731,
+    "configVersion": 1,
+    "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+    "claimIds": [
+      "CLAIM-0012",
+      "CLAIM-0014",
+      "CLAIM-0018",
+      "CLAIM-0019",
+      "CLAIM-0021",
+      "CLAIM-0022"
+    ],
+    "figureIds": [
+      "FIG-0001",
+      "FIG-0002",
+      "FIG-0003",
+      "FIG-0004",
+      "FIG-0005",
+      "FIG-0006",
+      "FIG-0007",
+      "FIG-0008",
+      "FIG-0009",
+      "FIG-0010",
+      "FIG-0011",
+      "FIG-0012",
+      "FIG-0013",
+      "FIG-0014",
+      "FIG-0015",
+      "FIG-0016",
+      "FIG-0017",
+      "FIG-0018",
+      "FIG-0019",
+      "FIG-0020",
+      "FIG-0021",
+      "FIG-0022",
+      "FIG-0023",
+      "FIG-0024",
+      "FIG-0026",
+      "FIG-0028",
+      "FIG-0029",
+      "FIG-0030",
+      "FIG-0031"
+    ],
+    "selectedModels": [
+      {
+        "questionId": "Q1",
+        "modelId": "MODEL-0004",
+        "selectionStatus": "validated"
+      },
+      {
+        "questionId": "Q2",
+        "modelId": "MODEL-0012",
+        "selectionStatus": "validated"
+      },
+      {
+        "questionId": "Q3",
+        "modelId": "MODEL-0013",
+        "selectionStatus": "validated"
+      }
+    ]
+  },
+  "selections": [
+    {
+      "questionId": "Q1",
+      "modelId": "MODEL-0004",
+      "selectionStatus": "validated",
+      "selectionRecordedAt": "2026-10-24T12:03:55.261Z",
+      "selectionEvidence": {
+        "experimentId": "EXP-0004",
+        "validationIds": [
+          "VAL-0001",
+          "VAL-0002",
+          "VAL-0003",
+          "VAL-0004",
+          "VAL-0005"
+        ],
+        "configVersion": 1,
+        "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+        "recordedAt": "2026-10-24T12:03:55.259Z"
+      },
+      "modelVersion": "9bb2d601412bcdafabea3e8e389b9a45d9e8729d83cf52d7d34cb9f6dd1cdec7",
+      "experimentId": "EXP-0018",
+      "metricsSha256": "d9bda8d4f2c03d42481f0e90c6e75f6e0314e44aa0b0c4a41ec2d033fdf20ffd"
+    },
+    {
+      "questionId": "Q2",
+      "modelId": "MODEL-0012",
+      "selectionStatus": "validated",
+      "selectionRecordedAt": "2026-10-24T12:49:47.190Z",
+      "selectionEvidence": {
+        "experimentId": "EXP-0029",
+        "validationIds": [
+          "VAL-0017",
+          "VAL-0018",
+          "VAL-0019",
+          "VAL-0037",
+          "VAL-0038",
+          "VAL-0039"
+        ],
+        "configVersion": 1,
+        "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+        "recordedAt": "2026-10-24T12:49:47.185Z"
+      },
+      "modelVersion": "abb7ff1a929c3235812e8fb0ae88317c5634575c366546d91730f2c1cc885caa",
+      "experimentId": "EXP-0029",
+      "metricsSha256": "3df02838e3d8d128007359d22333a6ebcdb10750da6fd22cb8de0a2a9d79ca96"
+    },
+    {
+      "questionId": "Q3",
+      "modelId": "MODEL-0013",
+      "selectionStatus": "validated",
+      "selectionRecordedAt": "2026-10-24T12:49:50.601Z",
+      "selectionEvidence": {
+        "experimentId": "EXP-0033",
+        "validationIds": [
+          "VAL-0027",
+          "VAL-0028",
+          "VAL-0029",
+          "VAL-0030",
+          "VAL-0040",
+          "VAL-0041",
+          "VAL-0042",
+          "VAL-0043"
+        ],
+        "configVersion": 1,
+        "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+        "recordedAt": "2026-10-24T12:49:50.597Z"
+      },
+      "modelVersion": "de1d6628bda615239eaef8f74783b955bf46b4f8743535248b0ab5f2af5ad0b4",
+      "experimentId": "EXP-0033",
+      "metricsSha256": "a53537b64593a756e2259aeb5dcf02bd4afc8f3e19925126d13af270f7f4291e"
+    }
+  ],
+  "evidence": {
+    "experiments": [
+      {
+        "id": "EXP-0001",
+        "metricsSha256": "db0f66fdbe4147f20dc240b68b979a6be77ec7a5e70e2e9a96cbd90677d3532d",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0002",
+        "metricsSha256": "fffcf3508d44587585a58504cad8ce6bbb5a358f393d5954c4bb412bd620781b",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0003",
+        "metricsSha256": "3e8009c9352f349eec623c0517a03b99664d586ce5ea3fe01af5238071e80624",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0004",
+        "metricsSha256": "f948fd76ea1e3900d94d9b537c4eb5f5db959d57ea8b02dfa271e6bd493b2c89",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0005",
+        "metricsSha256": "5992695f1b6fbd4e8018386b7ba5da8998bd9a3a8046f215f357689ae51a13ca",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0006",
+        "metricsSha256": "b42dbb45440b1de34df6e64f4268730d9ab0d1a64b9e0323956d4d83b9fcf971",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0007",
+        "metricsSha256": "b5032d28a21408983b3b40b15b6c41a7ff2971417ac9fa11a45b35de87686f2d",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0008",
+        "metricsSha256": "5992695f1b6fbd4e8018386b7ba5da8998bd9a3a8046f215f357689ae51a13ca",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0009",
+        "metricsSha256": "b5032d28a21408983b3b40b15b6c41a7ff2971417ac9fa11a45b35de87686f2d",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0010",
+        "metricsSha256": "f948fd76ea1e3900d94d9b537c4eb5f5db959d57ea8b02dfa271e6bd493b2c89",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0011",
+        "metricsSha256": "b42dbb45440b1de34df6e64f4268730d9ab0d1a64b9e0323956d4d83b9fcf971",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0013",
+        "metricsSha256": "b5032d28a21408983b3b40b15b6c41a7ff2971417ac9fa11a45b35de87686f2d",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0014",
+        "metricsSha256": "b5032d28a21408983b3b40b15b6c41a7ff2971417ac9fa11a45b35de87686f2d",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0015",
+        "metricsSha256": "b5032d28a21408983b3b40b15b6c41a7ff2971417ac9fa11a45b35de87686f2d",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0016",
+        "metricsSha256": "3a214beeb9674c8f467daf1cef84a8fdc2540bdce8da04f31d129ba1c2714342",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0017",
+        "metricsSha256": "876c02715ca8debdf7323be4dd415b47ba2cd13d4d838ab76ceda0a32c6dedc1",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0018",
+        "metricsSha256": "d9bda8d4f2c03d42481f0e90c6e75f6e0314e44aa0b0c4a41ec2d033fdf20ffd",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0019",
+        "metricsSha256": "075b1ce761b1be2bf3922cdf98920461aee193a9ebf96f8b014bb04342dde20b",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0020",
+        "metricsSha256": "499a6c6379332aaa7c34d553ee55d5d8355599a47b288b79a157d58c51acce70",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0021",
+        "metricsSha256": "2a4e7321f381b7953ed30addd7d53a4c18f3f98ea161195c296ac20151c3cdf8",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0022",
+        "metricsSha256": "3285f6a0a9d75c4f7ba1e391467621ff853bc99b6f8c3830b1ceea02b62d9ca7",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0023",
+        "metricsSha256": "9bed82040adaec2b9549b3be213aff48e7c87a8c5f6211a26e574123181e4d7a",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0024",
+        "metricsSha256": "8e67009f7bbeb2126813df87926f9a4c89ad214a8b0ffef62addd404ff606049",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0025",
+        "metricsSha256": "f948fd76ea1e3900d94d9b537c4eb5f5db959d57ea8b02dfa271e6bd493b2c89",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0026",
+        "metricsSha256": "67ad9eb7e00430a9a32b89c91e49559fd9bfc8a037527efa3894948fb6fafa2d",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0028",
+        "metricsSha256": "a53537b64593a756e2259aeb5dcf02bd4afc8f3e19925126d13af270f7f4291e",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0029",
+        "metricsSha256": "3df02838e3d8d128007359d22333a6ebcdb10750da6fd22cb8de0a2a9d79ca96",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0030",
+        "metricsSha256": "3df02838e3d8d128007359d22333a6ebcdb10750da6fd22cb8de0a2a9d79ca96",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0031",
+        "metricsSha256": "a53537b64593a756e2259aeb5dcf02bd4afc8f3e19925126d13af270f7f4291e",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0032",
+        "metricsSha256": "a53537b64593a756e2259aeb5dcf02bd4afc8f3e19925126d13af270f7f4291e",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0033",
+        "metricsSha256": "a53537b64593a756e2259aeb5dcf02bd4afc8f3e19925126d13af270f7f4291e",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0034",
+        "metricsSha256": "a53537b64593a756e2259aeb5dcf02bd4afc8f3e19925126d13af270f7f4291e",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0035",
+        "metricsSha256": "47e4a0b8d9b57d313c8bb97c62b19f8dfaeec23ed8146159535bb45dafdbc68d",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      },
+      {
+        "id": "EXP-0036",
+        "metricsSha256": "3029ef8d1e1c55c0f2d09ea567e137b0cb86c0dde9917ae5fd076b99a0d4570c",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460"
+      }
+    ],
+    "validations": [
+      {
+        "id": "VAL-0001",
+        "experimentId": "EXP-0004",
+        "checkType": "split-integrity",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0002",
+        "experimentId": "EXP-0004",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0003",
+        "experimentId": "EXP-0004",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0004",
+        "experimentId": "EXP-0004",
+        "checkType": "baseline-compare",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0005",
+        "experimentId": "EXP-0004",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0006",
+        "experimentId": "EXP-0006",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0007",
+        "experimentId": "EXP-0006",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0008",
+        "experimentId": "EXP-0006",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0009",
+        "experimentId": "EXP-0009",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0010",
+        "experimentId": "EXP-0009",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0011",
+        "experimentId": "EXP-0009",
+        "checkType": "simulation-seeds",
+        "passed": false,
+        "stale": false
+      },
+      {
+        "id": "VAL-0012",
+        "experimentId": "EXP-0013",
+        "checkType": "simulation-seeds",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0013",
+        "experimentId": "EXP-0014",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0014",
+        "experimentId": "EXP-0014",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0015",
+        "experimentId": "EXP-0014",
+        "checkType": "simulation-seeds",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0016",
+        "experimentId": "EXP-0014",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0017",
+        "experimentId": "EXP-0029",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0018",
+        "experimentId": "EXP-0029",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0019",
+        "experimentId": "EXP-0029",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0020",
+        "experimentId": "EXP-0028",
+        "checkType": "leakage",
+        "passed": false,
+        "stale": false
+      },
+      {
+        "id": "VAL-0021",
+        "experimentId": "EXP-0028",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0022",
+        "experimentId": "EXP-0028",
+        "checkType": "simulation-seeds",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0023",
+        "experimentId": "EXP-0028",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0024",
+        "experimentId": "EXP-0032",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0025",
+        "experimentId": "EXP-0032",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0026",
+        "experimentId": "EXP-0032",
+        "checkType": "simulation-seeds",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0027",
+        "experimentId": "EXP-0033",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0028",
+        "experimentId": "EXP-0033",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0029",
+        "experimentId": "EXP-0033",
+        "checkType": "simulation-seeds",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0030",
+        "experimentId": "EXP-0033",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0031",
+        "experimentId": "EXP-0004",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0032",
+        "experimentId": "EXP-0004",
+        "checkType": "split-integrity",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0033",
+        "experimentId": "EXP-0004",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0034",
+        "experimentId": "EXP-0004",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0035",
+        "experimentId": "EXP-0004",
+        "checkType": "baseline-compare",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0036",
+        "experimentId": "EXP-0004",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0037",
+        "experimentId": "EXP-0029",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0038",
+        "experimentId": "EXP-0029",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0039",
+        "experimentId": "EXP-0029",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0040",
+        "experimentId": "EXP-0033",
+        "checkType": "leakage",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0041",
+        "experimentId": "EXP-0033",
+        "checkType": "holdout-metrics",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0042",
+        "experimentId": "EXP-0033",
+        "checkType": "simulation-seeds",
+        "passed": true,
+        "stale": false
+      },
+      {
+        "id": "VAL-0043",
+        "experimentId": "EXP-0033",
+        "checkType": "independent-rerun",
+        "passed": true,
+        "stale": false
+      }
+    ],
+    "claims": [
+      {
+        "id": "CLAIM-0012",
+        "version": "79daf9c89785bf89915f3dd6d80feb5bd0b9235f8a350008bdace56e1729911a",
+        "status": "active",
+        "stale": false
+      },
+      {
+        "id": "CLAIM-0014",
+        "version": "b6882b69528792b95ced5ec31f521c0c1e27027cecc973cdd276d91b33e80ebd",
+        "status": "active",
+        "stale": false
+      },
+      {
+        "id": "CLAIM-0018",
+        "version": "27a704734f048a2ab351afedeb821787cb6e183bcfa33cd165837c90bd37fcd5",
+        "status": "active",
+        "stale": false
+      },
+      {
+        "id": "CLAIM-0019",
+        "version": "e46b1302dd265f364c7718d40697c777b7569b9c428039ae8d91054dc613d04e",
+        "status": "active",
+        "stale": false
+      },
+      {
+        "id": "CLAIM-0021",
+        "version": "a7e8558d261912fb86a6d41c0388874f303c9acb04eb642337fd92dd66a490c3",
+        "status": "active",
+        "stale": false
+      },
+      {
+        "id": "CLAIM-0022",
+        "version": "00e329b039cd06f855be6887c29945aeb0fb99c6e5c82200fd2426fb41e954d4",
+        "status": "active",
+        "stale": false
+      }
+    ],
+    "figures": [
+      {
+        "id": "FIG-0001",
+        "sha256": "dc7d0e88336672d8d0910efc7c0dd31054e511a46d1722a9915b3685fb7318db",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0004/figures/q1_fusion_component_mae.png"
+      },
+      {
+        "id": "FIG-0002",
+        "sha256": "24e9efbd7113526af2e165020062a5389ed4661717797a6ed749953e87631a84",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0004/figures/q1_fusion_weights.png"
+      },
+      {
+        "id": "FIG-0003",
+        "sha256": "ed6506d846da6f980911c216dead9d29cc2a33f39ded1220e81a8ea9f7600e5e",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0003/figures/q1_cv_mae_grid.png"
+      },
+      {
+        "id": "FIG-0004",
+        "sha256": "234c3d58343f6d0cf801a0653501f7b05adc2bae298754d1d881bc1321a0b662",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0003/figures/q1_per_target_improvement.png"
+      },
+      {
+        "id": "FIG-0005",
+        "sha256": "864362a8836bd94310d3af59fbfed930db49ef5f296f848df4012773fca5665c",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0003/figures/q1_grade_confusion.png"
+      },
+      {
+        "id": "FIG-0006",
+        "sha256": "d192737752ae3e604111c67570619391563a164c5ea6798d7b1cbdaab81abea5",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0006/figures/q2_bootstrap_stability.png"
+      },
+      {
+        "id": "FIG-0007",
+        "sha256": "3f6d8bfc57d10715e4950385189d4d29202e3bde6bbdc1453f836dab7cd6390b",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0006/figures/q2_method_jaccard.png"
+      },
+      {
+        "id": "FIG-0008",
+        "sha256": "227cea51df32c1f5315c628a63bf94d6ae6d16ac91e410e3feec5ca17cbdb33a",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0006/figures/q2_module_graph.png"
+      },
+      {
+        "id": "FIG-0009",
+        "sha256": "1bec850a71a6efd7370d5974966c5292adf1102a2820c7f550fb44bb9db298bd",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0014/figures/energy-distance-by-style.png"
+      },
+      {
+        "id": "FIG-0010",
+        "sha256": "de50a1d57a9e77388288e88672b75c0090f55e3add92e7939dc423c35e92a0be",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0014/figures/defect-exceedance.png"
+      },
+      {
+        "id": "FIG-0011",
+        "sha256": "b020b99397afeb7424e9b1b0783c7917fba84c9e447e14aef23878ab402895f1",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0014/figures/transfer-scenarios.png"
+      },
+      {
+        "id": "FIG-0012",
+        "sha256": "ea25faf2342e3b4a74858078d2837904b44c6508f584f1ff80ca4a06042ce59f",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0014/figures/transfer-pareto.png"
+      },
+      {
+        "id": "FIG-0013",
+        "sha256": "63153604c807eac5665b33fb686dae96c86b5ed69d631644374f1610f8410311",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0014/figures/ablation-comparison.png"
+      },
+      {
+        "id": "FIG-0014",
+        "sha256": "f68b0e77d832326b4f03f095979b8aa6fc7249c305348c364e7f9c163654160d",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0014/figures/profile-recovery.png"
+      },
+      {
+        "id": "FIG-0015",
+        "sha256": "523af105ce88651a31810632e2cf3e0aa866da9ce385547d260f66ae5014958f",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0008/figures/baseline-energy-distance.png"
+      },
+      {
+        "id": "FIG-0016",
+        "sha256": "7dd974449e1dfd4affafdbd861d85c3f25a15b403fcb51086c9e60db05656684",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q1_component_mae.png"
+      },
+      {
+        "id": "FIG-0017",
+        "sha256": "019d4e0bcb30882a9ee3513716b041f6418bc7049eb91d8532df50b50ed0b9f0",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q1_fusion_weights.png"
+      },
+      {
+        "id": "FIG-0018",
+        "sha256": "a3f6b0f9697465406d6c2680b052e207a9b541b9ed0878c4e51ee55110b27c9a",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q1_per_target.png"
+      },
+      {
+        "id": "FIG-0019",
+        "sha256": "a44a3b2b94655a713508336f817eceabafdc1db0cde7a3dbf1a4acbcd0e5f66a",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q1_cv_grid.png"
+      },
+      {
+        "id": "FIG-0020",
+        "sha256": "ef678ce51f91c9a1c164a3f28978d569b3f9bef3a41ed36ab2513ce1df77c3e4",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q1_grades_all.png"
+      },
+      {
+        "id": "FIG-0021",
+        "sha256": "64dded4f4d27a381912e48eff47c6bb4449edb998f48048415a4db42c8041d75",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q2_bootstrap_pi.png"
+      },
+      {
+        "id": "FIG-0022",
+        "sha256": "ed7b64d556d07135109c291eea4be3cb3fb9365a25b577f787eb4cc3531c8224",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q2_method_jaccard.png"
+      },
+      {
+        "id": "FIG-0023",
+        "sha256": "5734a42d9c5ff4bd9229b19ea8196b8c1122ec3172be5db87da24bb57da0ccbf",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q2_modules.png"
+      },
+      {
+        "id": "FIG-0024",
+        "sha256": "d58b540a9b70c537174fae2fa02a7b82969531a5577d0819cdd991d6344f75ce",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q3_energy_by_style.png"
+      },
+      {
+        "id": "FIG-0025",
+        "sha256": "57e3e864e41517f8600b70b069c87d0d37eda7b5c52c055b32591e2d8dbd1306",
+        "status": "superseded",
+        "supersededBy": "FIG-0030",
+        "path": "figures/archive/FIG-0025-q3_defect_exceedance.png"
+      },
+      {
+        "id": "FIG-0026",
+        "sha256": "7e4be79a9c929fb188986bcccf43ff8e864d1b49d7f604c2fa2f8c691ad5b199",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q3_transfer_scenarios.png"
+      },
+      {
+        "id": "FIG-0027",
+        "sha256": "299df07e5a54e3727f3d86d752ff3672ecb4e1227944a70eaab8808698a6b14e",
+        "status": "superseded",
+        "supersededBy": "FIG-0031",
+        "path": "figures/archive/FIG-0027-q3_pareto.png"
+      },
+      {
+        "id": "FIG-0028",
+        "sha256": "7bf61b6f235470c45cf0e045cd29205c799d8afe0db45491452daafd4cfc68f0",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q3_profile.png"
+      },
+      {
+        "id": "FIG-0029",
+        "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd",
+        "status": "active",
+        "supersededBy": null,
+        "path": "experiments/EXP-0035/figures/ablation-summary.png"
+      },
+      {
+        "id": "FIG-0030",
+        "sha256": "4d6c13f894c65ca08b91cfdfb8ce3e6b81e74d2f02d0818a5c9537cdea7ef7d6",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q3_defect_exceedance.png"
+      },
+      {
+        "id": "FIG-0031",
+        "sha256": "a404a27fa6adba2b6a5aafdd75c449ae79a62478ee8e894c7d21451dd69dc6d6",
+        "status": "active",
+        "supersededBy": null,
+        "path": "figures/q3_pareto.png"
+      }
+    ],
+    "renders": [
+      {
+        "id": "RENDER-0009",
+        "sha256": "7a6c9a89b14050641909fbbded3694f7926ed9e2428c1d615fe2641cb678993f",
+        "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+        "schemaVersion": 2
+      }
+    ],
+    "paperArtifacts": [
+      {
+        "id": "ART-0001",
+        "format": "tex",
+        "path": "report/paper.tex",
+        "sha256": "f102ef84568b9a6ce58c3bb6a67b4505e9f7729e3a02a9e93ec74f98ab801587",
+        "renderId": "RENDER-0006",
+        "renderSha256": "42fa002bc145402333055cb8867a64706c590eb0021eec49c3ae21f8d9754688",
+        "producer": "author-file"
+      },
+      {
+        "id": "ART-0002",
+        "format": "pdf",
+        "path": "report/paper.pdf",
+        "sha256": "31b72aed41acee54b60389f48ced52742785b6cea3600f264d60c199881c140c",
+        "renderId": "RENDER-0006",
+        "renderSha256": "42fa002bc145402333055cb8867a64706c590eb0021eec49c3ae21f8d9754688",
+        "producer": "author-file"
+      },
+      {
+        "id": "ART-0003",
+        "format": "tex",
+        "path": "report/paper.tex",
+        "sha256": "8fa4849d6152fe86e060bd13c7ad98bcabaf547870c4403f8f809ac8d4580298",
+        "renderId": "RENDER-0009",
+        "renderSha256": "7a6c9a89b14050641909fbbded3694f7926ed9e2428c1d615fe2641cb678993f",
+        "producer": "author-file"
+      },
+      {
+        "id": "ART-0004",
+        "format": "pdf",
+        "path": "report/paper.pdf",
+        "sha256": "3a8e6fe3f458ce5c0c868920b6b7670e424a7da23c0d4d8e7f0bca44275672d5",
+        "renderId": "RENDER-0009",
+        "renderSha256": "7a6c9a89b14050641909fbbded3694f7926ed9e2428c1d615fe2641cb678993f",
+        "producer": "author-file"
+      }
+    ]
+  },
+  "engineeringComplete": true,
+  "qualityPassed": true,
+  "checkpointsPassed": true,
+  "final": true,
+  "draft": false,
+  "reviewScope": {
+    "reviewed": [
+      "source-anchor",
+      "requirement-coverage",
+      "target-lineage",
+      "baseline-required",
+      "baseline-required",
+      "baseline-required",
+      "metric-definition",
+      "claim-scope",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "model-condition",
+      "review-provenance",
+      "review-independence",
+      "critical-findings",
+      "robustness-plan",
+      "robustness-execution",
+      "robustness-plan",
+      "robustness-execution",
+      "robustness-plan",
+      "robustness-execution",
+      "holdout-reuse"
+    ],
+    "notReviewed": [
+      "runcontrol-preflight",
+      "runcontrol-resume",
+      "runcontrol-progress",
+      "runcontrol-budget",
+      "runcontrol-approval"
+    ],
+    "assumptions": [
+      "optional checks not applicable: runcontrol-preflight, runcontrol-resume, runcontrol-progress, runcontrol-budget, runcontrol-approval"
+    ]
+  },
+  "qualityBlockers": [],
+  "warnings": []
+}

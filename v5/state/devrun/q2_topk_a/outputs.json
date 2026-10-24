@@ -1,0 +1,4636 @@
+{
+  "ablation_confounding": {
+    "dimensionsTotalDiffersFromWithin": 46,
+    "jaccardConsensusVsTotal": 0.35600000000000004,
+    "jaccardConsensusVsWithin": 0.27199999999999996,
+    "jaccardTotalVsWithin": 0.302,
+    "perDimension": [
+      {
+        "consensus": [
+          "protein.g.L.",
+          "furfural",
+          "X2.acetylfuran"
+        ],
+        "dimension": "A_malt_all",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "protein.g.L.",
+          "acetaldehyde",
+          "methylpyrazine"
+        ],
+        "within": [
+          "furfural",
+          "protein.g.L.",
+          "ethyl_octanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "terpinen.4.ol",
+          "furfural",
+          "DMS"
+        ],
+        "dimension": "A_malt_grain",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "terpinen.4.ol",
+          "furfural",
+          "isoborneol"
+        ],
+        "within": [
+          "methyl.geranate",
+          "ethyl_2.methyl_butyrate",
+          "delta.terpinyl.acetate"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.phellandrene",
+          "X4.ethyl.guaiacol",
+          "terpinen.4.ol"
+        ],
+        "dimension": "A_malt_bread",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "acetaldehyde",
+          "protein.g.L.",
+          "glycerol"
+        ],
+        "within": [
+          "X4.ethyl.guaiacol",
+          "DMS",
+          "neryl.formate"
+        ]
+      },
+      {
+        "consensus": [
+          "protein.g.L.",
+          "X2.methyl.benzofuran",
+          "furfural"
+        ],
+        "dimension": "A_malt_cara",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "protein.g.L.",
+          "acetaldehyde",
+          "phenethyl_acetate"
+        ],
+        "within": [
+          "X2.methyl.benzofuran",
+          "X2.ethyl.1.hexanol",
+          "protein.g.L."
+        ]
+      },
+      {
+        "consensus": [
+          "protein.g.L.",
+          "ethyl.hydrocinnamate",
+          "selin.11.en.4.alpha.ol"
+        ],
+        "dimension": "A_malt_burn",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "isobutanol",
+          "isoamyl_alcohol",
+          "DES"
+        ],
+        "within": [
+          "selin.11.en.4.alpha.ol",
+          "ethyl.octadecanoate",
+          "ethyl_2.methyl_butyrate"
+        ]
+      },
+      {
+        "consensus": [
+          "ethyl_octanoate",
+          "iron",
+          "terpinolene"
+        ],
+        "dimension": "A_hops_all",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "ethyl_octanoate",
+          "linalool",
+          "humulene.epoxide.II"
+        ],
+        "within": [
+          "ethyl_octanoate",
+          "linalool",
+          "phenethyl_acetate"
+        ]
+      },
+      {
+        "consensus": [
+          "citronellol",
+          "geraniol",
+          "X1.alpha.terpineol"
+        ],
+        "dimension": "A_hops_citrus",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "humulene.epoxide.II",
+          "citronellol",
+          "linalool"
+        ],
+        "within": [
+          "X2.butyloctanoate",
+          "ethyl.tetradecanoate",
+          "X1.alpha.terpineol"
+        ]
+      },
+      {
+        "consensus": [
+          "DMS",
+          "beta.phellandrene",
+          "terpinolene"
+        ],
+        "dimension": "A_hops_tropical",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "DMS",
+          "citronellol",
+          "X3.furanmethanol"
+        ],
+        "within": [
+          "X.E..beta.ocimene",
+          "beta.phellandrene",
+          "x.methyl.1.octanol"
+        ]
+      },
+      {
+        "consensus": [
+          "ethyl_octanoate",
+          "ethyl_decanoate",
+          "iron"
+        ],
+        "dimension": "A_hops_noble",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "ethyl_octanoate",
+          "ethyl_decanoate",
+          "linalool"
+        ],
+        "within": [
+          "ethyl_decanoate",
+          "ethyl_octanoate",
+          "isopentyl.hexanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "nonan.2.ol",
+          "ethyl.hydrocinnamate",
+          "hydroxy.methyl.furfural"
+        ],
+        "dimension": "A_hops_woody",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "trans.dihydro.alpha.terpinyl.acetate",
+          "neryl.propanoate",
+          "alpha.calacorene"
+        ],
+        "within": [
+          "neryl.propanoate",
+          "ethyl.phenylacetate",
+          "phenethyl_alcohol"
+        ]
+      },
+      {
+        "consensus": [
+          "acetaldehyde",
+          "isoamyl_alcohol",
+          "isopentyl_acetate"
+        ],
+        "dimension": "A_esters_all",
+        "jaccardTotalWithin": 1.0,
+        "total": [
+          "acetaldehyde",
+          "n.hexanol",
+          "isopentyl_acetate"
+        ],
+        "within": [
+          "isopentyl_acetate",
+          "acetaldehyde",
+          "n.hexanol"
+        ]
+      },
+      {
+        "consensus": [
+          "X2E.6Z.farnesal",
+          "phenethyl_alcohol",
+          "acetaldehyde"
+        ],
+        "dimension": "A_esters_ethac",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "X2E.6Z.farnesal",
+          "E.nerolidol",
+          "n.hexanol"
+        ],
+        "within": [
+          "X2.3.dihydro.farnesol",
+          "X2E.6Z.farnesal",
+          "E.nerolidol"
+        ]
+      },
+      {
+        "consensus": [
+          "acetaldehyde",
+          "isopentyl_acetate",
+          "X2E.6Z.farnesal"
+        ],
+        "dimension": "A_esters_isoaa",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "n.hexanol",
+          "isopentyl_acetate",
+          "isoamyl_alcohol"
+        ],
+        "within": [
+          "n.hexanol",
+          "isopentyl_acetate",
+          "isoborneol"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.phellandrene",
+          "acetaldehyde",
+          "geraniol"
+        ],
+        "dimension": "A_esters_flower",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "acetaldehyde",
+          "X.E..dihydro.apofarnesal",
+          "isobutyl_acetate"
+        ],
+        "within": [
+          "X.E..dihydro.apofarnesal",
+          "beta.phellandrene",
+          "terpinolene"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.phellandrene",
+          "X1.10.di.epi.cubenol",
+          "X2.pentyl.furan"
+        ],
+        "dimension": "A_esters_fruity",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "beta.phellandrene",
+          "lactic_acid.mg.L.",
+          "X1.10.di.epi.cubenol"
+        ],
+        "within": [
+          "isopentyl_acetate",
+          "neryl.propanoate",
+          "nerol"
+        ]
+      },
+      {
+        "consensus": [
+          "protein.g.L.",
+          "acetaldehyde",
+          "X.E..alpha.ionone"
+        ],
+        "dimension": "F_malt_all",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "acetaldehyde",
+          "MeSH",
+          "protein.g.L."
+        ],
+        "within": [
+          "acetaldehyde",
+          "protein.g.L.",
+          "furfural"
+        ]
+      },
+      {
+        "consensus": [
+          "X2.3.butanedione",
+          "terpinen.4.ol",
+          "acetaldehyde"
+        ],
+        "dimension": "F_malt_grain",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "isoborneol",
+          "acetaldehyde",
+          "X.E..beta.ionone"
+        ],
+        "within": [
+          "isoborneol",
+          "X.E..2.nonenal",
+          "X2.3.butanedione"
+        ]
+      },
+      {
+        "consensus": [
+          "acetaldehyde",
+          "beta.phellandrene",
+          "glycerol"
+        ],
+        "dimension": "F_malt_bread",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "acetaldehyde",
+          "n.hexanol",
+          "glycerol"
+        ],
+        "within": [
+          "X2.ethylhexylsalicylate",
+          "n.hexanol",
+          "ethyl.butyrate"
+        ]
+      },
+      {
+        "consensus": [
+          "protein.g.L.",
+          "acetaldehyde",
+          "DES"
+        ],
+        "dimension": "F_malt_cara",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "acetaldehyde",
+          "protein.g.L.",
+          "MeSH"
+        ],
+        "within": [
+          "protein.g.L.",
+          "X2.3.butanedione",
+          "X3.methyl.2.butenal"
+        ]
+      },
+      {
+        "consensus": [
+          "protein.g.L.",
+          "glycerol",
+          "MeSH"
+        ],
+        "dimension": "F_malt_burn",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "glycerol",
+          "MeSH",
+          "isobutanol"
+        ],
+        "within": [
+          "protein.g.L.",
+          "ethyl_isovalerate",
+          "ethyl_2.methyl_butyrate"
+        ]
+      },
+      {
+        "consensus": [
+          "ethyl_octanoate",
+          "cis.dihydro.beta.terpineol",
+          "DMS"
+        ],
+        "dimension": "F_hops_all",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "ethyl_octanoate",
+          "cis.dihydro.beta.terpineol",
+          "X.E..2.nonenal"
+        ],
+        "within": [
+          "ethyl_octanoate",
+          "ethyl_decanoate",
+          "ethyl_isovalerate"
+        ]
+      },
+      {
+        "consensus": [
+          "geraniol",
+          "furfural",
+          "protein.g.L."
+        ],
+        "dimension": "F_hops_citrus",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "delta.terpinyl.acetate",
+          "protein.g.L.",
+          "humulene.epoxide.II"
+        ],
+        "within": [
+          "lactic_acid.mg.L.",
+          "phenethyl_alcohol",
+          "isoamyl_alcohol"
+        ]
+      },
+      {
+        "consensus": [
+          "DMS",
+          "beta.phellandrene",
+          "terpinolene"
+        ],
+        "dimension": "F_hops_tropical",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "DMS",
+          "hexyl.acetate",
+          "geraniol"
+        ],
+        "within": [
+          "hexyl.acetate",
+          "beta.phellandrene",
+          "X.E..beta.ocimene"
+        ]
+      },
+      {
+        "consensus": [
+          "ethyl_octanoate",
+          "glycerol",
+          "ethyl_decanoate"
+        ],
+        "dimension": "F_hops_noble",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "ethyl_octanoate",
+          "ethyl_decanoate",
+          "glycerol"
+        ],
+        "within": [
+          "ethyl_octanoate",
+          "ethyl_decanoate",
+          "X.E..2.nonenal"
+        ]
+      },
+      {
+        "consensus": [
+          "cis.dihydro.beta.terpineol",
+          "ethyl_octanoate",
+          "iron"
+        ],
+        "dimension": "F_hops_woody",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "isobutanol",
+          "ethyl_decanoate",
+          "ethyl.tetradecanoate"
+        ],
+        "within": [
+          "ethyl.hexadecanoate",
+          "ethyl.tetradecanoate",
+          "ethyl_decanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "acetaldehyde",
+          "ethyl_acetate",
+          "isoamyl_alcohol"
+        ],
+        "dimension": "F_esters_all",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "acetaldehyde",
+          "ethyl_acetate",
+          "n.hexanol"
+        ],
+        "within": [
+          "acetaldehyde",
+          "isopentyl_acetate",
+          "cis.dihydro.beta.terpineol"
+        ]
+      },
+      {
+        "consensus": [
+          "acetaldehyde",
+          "ethyl_acetate",
+          "glycerol"
+        ],
+        "dimension": "F_esters_ethac",
+        "jaccardTotalWithin": 1.0,
+        "total": [
+          "ethyl_acetate",
+          "glycerol",
+          "acetaldehyde"
+        ],
+        "within": [
+          "ethyl_acetate",
+          "acetaldehyde",
+          "glycerol"
+        ]
+      },
+      {
+        "consensus": [
+          "isopentyl_acetate",
+          "acetaldehyde",
+          "isoamyl_alcohol"
+        ],
+        "dimension": "F_esters_isoaa",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "n.hexanol",
+          "isopentyl_acetate",
+          "acetaldehyde"
+        ],
+        "within": [
+          "isopentyl_acetate",
+          "neryl.propanoate",
+          "ethyl.phenylacetate"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.phellandrene",
+          "eucalyptol",
+          "terpinolene"
+        ],
+        "dimension": "F_esters_flower",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "beta.phellandrene",
+          "eucalyptol",
+          "isopentyl.butanoate"
+        ],
+        "within": [
+          "eucalyptol",
+          "beta.phellandrene",
+          "X.E..dihydro.apofarnesal"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.phellandrene",
+          "ethyl_decanoate",
+          "MeSH"
+        ],
+        "dimension": "F_esters_fruity",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "beta.phellandrene",
+          "humulene.epoxide.II",
+          "protein.g.L."
+        ],
+        "within": [
+          "X2.ethyl.3.methylpyrazine",
+          "n.octanol",
+          "nerol"
+        ]
+      },
+      {
+        "consensus": [
+          "acetic_acid.g.L.",
+          "X4.ethyl.phenol",
+          "ethyl.benzoate"
+        ],
+        "dimension": "acidity",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "X4.ethyl.phenol",
+          "prenyl.isobutyrate",
+          "neryl.formate"
+        ],
+        "within": [
+          "X.E..beta.damascenone",
+          "isobutyl.hexanoate",
+          "acetic_acid.g.L."
+        ]
+      },
+      {
+        "consensus": [
+          "ethyl_octanoate",
+          "iron",
+          "ethyl_decanoate"
+        ],
+        "dimension": "bitternes",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "ethyl_octanoate",
+          "ethyl_decanoate",
+          "humulene.epoxide.II"
+        ],
+        "within": [
+          "ethyl_octanoate",
+          "ethyl_decanoate",
+          "X2.methylbutyl.octanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "iron",
+          "ethyl_decanoate",
+          "beta.cyclohomocitral"
+        ],
+        "dimension": "sweetness",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "ethyl_decanoate",
+          "iron",
+          "pentyl.octanoate"
+        ],
+        "within": [
+          "neryl.propanoate",
+          "ethyl_decanoate",
+          "pentyl.octanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "ethyl_isovalerate",
+          "neryl.formate",
+          "betaglucan.mg.L."
+        ],
+        "dimension": "X4vg",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "X4VG",
+          "ethyl.furoate",
+          "neryl.formate"
+        ],
+        "within": [
+          "X4VG",
+          "delta.terpinyl.acetate",
+          "isopentyl.butanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.cyclohomocitral",
+          "cis.dihydro.beta.terpineol",
+          "ethyl_octanoate"
+        ],
+        "dimension": "diacetyl",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "eugenol",
+          "ethyl_decanoate",
+          "alpha.calacorene"
+        ],
+        "within": [
+          "ethyl_decanoate",
+          "ethyl_octanoate",
+          "pentyl.octanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "phenethyl_alcohol",
+          "protein.g.L.",
+          "X.Z..dihydro.apofarnesal"
+        ],
+        "dimension": "dms",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "protein.g.L.",
+          "benzaldehyde",
+          "phenethyl_alcohol"
+        ],
+        "within": [
+          "x.methyl.1.octanol",
+          "phenethyl_alcohol",
+          "spathulenol"
+        ]
+      },
+      {
+        "consensus": [
+          "iron",
+          "cis.dihydro.beta.terpineol",
+          "H2S"
+        ],
+        "dimension": "metallic",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "iron",
+          "H2S",
+          "linalool.isovalerate"
+        ],
+        "within": [
+          "iron",
+          "linalool.isovalerate",
+          "lactic_acid.mg.L."
+        ]
+      },
+      {
+        "consensus": [
+          "isopentyl_acetate",
+          "n.hexanol",
+          "iron"
+        ],
+        "dimension": "stale_hops",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "X2.undecanol",
+          "alloaromadendrene.epoxide",
+          "neryl.formate"
+        ],
+        "within": [
+          "n.hexanol",
+          "iron",
+          "gamma.eudesmol"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.phellandrene",
+          "alpha.phellandrene",
+          "terpinolene"
+        ],
+        "dimension": "t2n",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "beta.phellandrene",
+          "terpinen.4.ol",
+          "dimethoxy..E..citral"
+        ],
+        "within": [
+          "E.cinnamaldehyde",
+          "vinyl.caprylate",
+          "beta.phellandrene"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.phellandrene",
+          "limonene",
+          "terpinolene"
+        ],
+        "dimension": "orange",
+        "jaccardTotalWithin": 1.0,
+        "total": [
+          "camphor",
+          "terpinolene",
+          "beta.phellandrene"
+        ],
+        "within": [
+          "beta.phellandrene",
+          "camphor",
+          "terpinolene"
+        ]
+      },
+      {
+        "consensus": [
+          "beta.phellandrene",
+          "limonene",
+          "X2.methyl.benzofuran"
+        ],
+        "dimension": "coriander",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "X2.methyl.benzofuran",
+          "alpha.phellandrene",
+          "terpinen.4.ol"
+        ],
+        "within": [
+          "beta.phellandrene",
+          "E.ocimenone",
+          "cumin.aldehyde"
+        ]
+      },
+      {
+        "consensus": [
+          "limonene",
+          "eucalyptol",
+          "X3.methyl.2.butenal"
+        ],
+        "dimension": "clove",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "limonene",
+          "eucalyptol",
+          "X3.methyl.2.butenal"
+        ],
+        "within": [
+          "X2.methylbutyl.octanoate",
+          "limonene",
+          "X1.2.dihydro.8.hydroxy..2E..linalool"
+        ]
+      },
+      {
+        "consensus": [
+          "isopentyl_acetate",
+          "butyl.acetate",
+          "perillyl.acetate"
+        ],
+        "dimension": "lactic",
+        "jaccardTotalWithin": 0.0,
+        "total": [
+          "ethyl.furoate",
+          "perillyl.acetate",
+          "prenyl.isobutyrate"
+        ],
+        "within": [
+          "iron",
+          "isopentyl_acetate",
+          "ethyl_acetate"
+        ]
+      },
+      {
+        "consensus": [
+          "isopentyl_acetate",
+          "DES",
+          "perillyl.acetate"
+        ],
+        "dimension": "acetic",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "isopentyl_acetate",
+          "prenyl.isobutyrate",
+          "ethyl.furoate"
+        ],
+        "within": [
+          "isopentyl_acetate",
+          "E.methyl.isoeugenol",
+          "valencene"
+        ]
+      },
+      {
+        "consensus": [
+          "n.hexanol",
+          "iron",
+          "gamma.eudesmol"
+        ],
+        "dimension": "barnyard",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "n.hexanol",
+          "gamma.eudesmol",
+          "neryl.formate"
+        ],
+        "within": [
+          "gamma.eudesmol",
+          "n.hexanol",
+          "iron"
+        ]
+      },
+      {
+        "consensus": [
+          "acetaldehyde",
+          "ethyl_hexanoate",
+          "glycerol"
+        ],
+        "dimension": "alcohol",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "glycerol",
+          "ethyl_octanoate",
+          "ethyl_hexanoate"
+        ],
+        "within": [
+          "ethyl_octanoate",
+          "ethyl_hexanoate",
+          "ethyl_decanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "ethyl_isovalerate",
+          "ethyl_octanoate",
+          "glycerol"
+        ],
+        "dimension": "aftertaste",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "ethyl_decanoate",
+          "ethyl_octanoate",
+          "X.E..2.nonenal"
+        ],
+        "within": [
+          "ethyl_decanoate",
+          "ethyl_isovalerate",
+          "ethyl_octanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "glycerol",
+          "ethyl_hexanoate",
+          "MeSH"
+        ],
+        "dimension": "body",
+        "jaccardTotalWithin": 0.5,
+        "total": [
+          "glycerol",
+          "ethyl_octanoate",
+          "ethyl_hexanoate"
+        ],
+        "within": [
+          "ethyl_octanoate",
+          "ethyl_hexanoate",
+          "X3.methyl.2.hexanol"
+        ]
+      },
+      {
+        "consensus": [
+          "ethyl_octanoate",
+          "ethyl_hexanoate",
+          "acetaldehyde"
+        ],
+        "dimension": "co2",
+        "jaccardTotalWithin": 1.0,
+        "total": [
+          "ethyl_octanoate",
+          "ethyl_hexanoate",
+          "ethyl_decanoate"
+        ],
+        "within": [
+          "ethyl_octanoate",
+          "ethyl_decanoate",
+          "ethyl_hexanoate"
+        ]
+      },
+      {
+        "consensus": [
+          "acetaldehyde",
+          "ethyl_acetate",
+          "ethyl_octanoate"
+        ],
+        "dimension": "overall",
+        "jaccardTotalWithin": 0.2,
+        "total": [
+          "ethyl_acetate",
+          "isopentyl_acetate",
+          "ethyl_octanoate"
+        ],
+        "within": [
+          "acetaldehyde",
+          "X2.3.dihydro.farnesol",
+          "isopentyl_acetate"
+        ]
+      }
+    ],
+    "question": "does style residualisation change the delivered Top-3? (point-estimate sets)"
+  },
+  "bootstrap_pi_path": "bootstrap_pi.csv",
+  "bootstrap_stability": {
+    "meanSelectedPi": 0.46468,
+    "minSelectedPi": 0.138,
+    "nBootstrap": 500,
+    "perDimensionMeanPi": {
+      "A_esters_all": 0.5786666666666668,
+      "A_esters_ethac": 0.48,
+      "A_esters_flower": 0.39999999999999997,
+      "A_esters_fruity": 0.2846666666666667,
+      "A_esters_isoaa": 0.502,
+      "A_hops_all": 0.48333333333333334,
+      "A_hops_citrus": 0.4393333333333333,
+      "A_hops_noble": 0.6186666666666667,
+      "A_hops_tropical": 0.5073333333333333,
+      "A_hops_woody": 0.20733333333333334,
+      "A_malt_all": 0.5233333333333333,
+      "A_malt_bread": 0.28933333333333333,
+      "A_malt_burn": 0.38666666666666666,
+      "A_malt_cara": 0.5166666666666667,
+      "A_malt_grain": 0.27399999999999997,
+      "F_esters_all": 0.5766666666666667,
+      "F_esters_ethac": 0.7120000000000001,
+      "F_esters_flower": 0.4466666666666666,
+      "F_esters_fruity": 0.3466666666666667,
+      "F_esters_isoaa": 0.5113333333333333,
+      "F_hops_all": 0.5473333333333333,
+      "F_hops_citrus": 0.39466666666666667,
+      "F_hops_noble": 0.5813333333333334,
+      "F_hops_tropical": 0.5566666666666666,
+      "F_hops_woody": 0.304,
+      "F_malt_all": 0.5033333333333333,
+      "F_malt_bread": 0.432,
+      "F_malt_burn": 0.4326666666666667,
+      "F_malt_cara": 0.5513333333333333,
+      "F_malt_grain": 0.338,
+      "X4vg": 0.3846666666666667,
+      "acetic": 0.40599999999999997,
+      "acidity": 0.47866666666666663,
+      "aftertaste": 0.654,
+      "alcohol": 0.6793333333333332,
+      "barnyard": 0.27466666666666667,
+      "bitternes": 0.7186666666666666,
+      "body": 0.5526666666666666,
+      "clove": 0.4513333333333333,
+      "co2": 0.6606666666666666,
+      "coriander": 0.3546666666666667,
+      "diacetyl": 0.2873333333333334,
+      "dms": 0.472,
+      "lactic": 0.4746666666666666,
+      "metallic": 0.4073333333333333,
+      "orange": 0.6106666666666667,
+      "overall": 0.42133333333333334,
+      "stale_hops": 0.30266666666666664,
+      "sweetness": 0.5826666666666666,
+      "t2n": 0.334
+    },
+    "perMethodMeanSelectedPi": {
+      "consensus": 0.46468,
+      "graph_lowrank": 0.42917333333333335,
+      "total_spearman": 0.4706800000000001,
+      "within_style_spearman": 0.3747466666666667
+    },
+    "shareSelectedAtPiOne": 0.0
+  },
+  "external_6csv": {
+    "alignment": "6.csv row labels matched to q2_chem_meta corrLabel (normalised); 44/44 matched; columns taken in TARGET_COLS order; corrIndex indexes 2.csv (231x231, not registered)",
+    "meanSpearman": 0.44505144467935176,
+    "medianSpearman": 0.4651162790697675,
+    "nMatched": 44,
+    "nUnmatched": 0,
+    "perDimension": [
+      {
+        "dimension": "A_malt_all",
+        "nCompounds": 44,
+        "spearman": 0.12938689217758986
+      },
+      {
+        "dimension": "A_malt_grain",
+        "nCompounds": 44,
+        "spearman": 0.41381254404510226
+      },
+      {
+        "dimension": "A_malt_bread",
+        "nCompounds": 44,
+        "spearman": 0.16715997181113462
+      },
+      {
+        "dimension": "A_malt_cara",
+        "nCompounds": 44,
+        "spearman": 0.28653981677237494
+      },
+      {
+        "dimension": "A_malt_burn",
+        "nCompounds": 44,
+        "spearman": 0.44186046511627913
+      },
+      {
+        "dimension": "A_hops_all",
+        "nCompounds": 44,
+        "spearman": 0.41649048625792817
+      },
+      {
+        "dimension": "A_hops_citrus",
+        "nCompounds": 44,
+        "spearman": 0.36025369978858357
+      },
+      {
+        "dimension": "A_hops_tropical",
+        "nCompounds": 44,
+        "spearman": 0.3402396053558845
+      },
+      {
+        "dimension": "A_hops_noble",
+        "nCompounds": 44,
+        "spearman": 0.4500352360817478
+      },
+      {
+        "dimension": "A_hops_woody",
+        "nCompounds": 44,
+        "spearman": 0.4597603946441156
+      },
+      {
+        "dimension": "A_esters_all",
+        "nCompounds": 44,
+        "spearman": 0.6283298097251586
+      },
+      {
+        "dimension": "A_esters_ethac",
+        "nCompounds": 44,
+        "spearman": 0.6069062720225512
+      },
+      {
+        "dimension": "A_esters_isoaa",
+        "nCompounds": 44,
+        "spearman": 0.6727272727272728
+      },
+      {
+        "dimension": "A_esters_flower",
+        "nCompounds": 44,
+        "spearman": 0.269908386187456
+      },
+      {
+        "dimension": "A_esters_fruity",
+        "nCompounds": 44,
+        "spearman": 0.4009866102889359
+      },
+      {
+        "dimension": "F_malt_all",
+        "nCompounds": 44,
+        "spearman": 0.39844961240310084
+      },
+      {
+        "dimension": "F_malt_grain",
+        "nCompounds": 44,
+        "spearman": 0.6312896405919662
+      },
+      {
+        "dimension": "F_malt_bread",
+        "nCompounds": 44,
+        "spearman": 0.3819591261451727
+      },
+      {
+        "dimension": "F_malt_cara",
+        "nCompounds": 44,
+        "spearman": 0.3819591261451727
+      },
+      {
+        "dimension": "F_malt_burn",
+        "nCompounds": 44,
+        "spearman": 0.6831571529245949
+      },
+      {
+        "dimension": "F_hops_all",
+        "nCompounds": 44,
+        "spearman": 0.4892177589852009
+      },
+      {
+        "dimension": "F_hops_citrus",
+        "nCompounds": 44,
+        "spearman": 0.47047216349541937
+      },
+      {
+        "dimension": "F_hops_tropical",
+        "nCompounds": 44,
+        "spearman": 0.6610288935870332
+      },
+      {
+        "dimension": "F_hops_noble",
+        "nCompounds": 44,
+        "spearman": 0.6000000000000001
+      },
+      {
+        "dimension": "F_hops_woody",
+        "nCompounds": 44,
+        "spearman": 0.5262861169837915
+      },
+      {
+        "dimension": "F_esters_all",
+        "nCompounds": 44,
+        "spearman": 0.5554615926708951
+      },
+      {
+        "dimension": "F_esters_ethac",
+        "nCompounds": 44,
+        "spearman": 0.6576462297392531
+      },
+      {
+        "dimension": "F_esters_isoaa",
+        "nCompounds": 44,
+        "spearman": 0.49048625792811845
+      },
+      {
+        "dimension": "F_esters_flower",
+        "nCompounds": 44,
+        "spearman": 0.18083157152924598
+      },
+      {
+        "dimension": "F_esters_fruity",
+        "nCompounds": 44,
+        "spearman": 0.5410852713178296
+      },
+      {
+        "dimension": "acidity",
+        "nCompounds": 44,
+        "spearman": 0.3833685694150811
+      },
+      {
+        "dimension": "bitternes",
+        "nCompounds": 44,
+        "spearman": 0.5271317829457365
+      },
+      {
+        "dimension": "sweetness",
+        "nCompounds": 44,
+        "spearman": 0.47582804792107125
+      },
+      {
+        "dimension": "X4vg",
+        "nCompounds": 44,
+        "spearman": 0.5236081747709656
+      },
+      {
+        "dimension": "diacetyl",
+        "nCompounds": 44,
+        "spearman": 0.6467935165609585
+      },
+      {
+        "dimension": "dms",
+        "nCompounds": 44,
+        "spearman": 0.48160676532769564
+      },
+      {
+        "dimension": "metallic",
+        "nCompounds": 44,
+        "spearman": 0.32628611698379145
+      },
+      {
+        "dimension": "stale_hops",
+        "nCompounds": 44,
+        "spearman": 0.3906976744186047
+      },
+      {
+        "dimension": "t2n",
+        "nCompounds": 44,
+        "spearman": 0.10246652572233969
+      },
+      {
+        "dimension": "orange",
+        "nCompounds": 44,
+        "spearman": 0.17857646229739255
+      },
+      {
+        "dimension": "coriander",
+        "nCompounds": 44,
+        "spearman": 0.5854827343199437
+      },
+      {
+        "dimension": "clove",
+        "nCompounds": 44,
+        "spearman": 0.3950669485553207
+      },
+      {
+        "dimension": "lactic",
+        "nCompounds": 44,
+        "spearman": 0.5364341085271318
+      },
+      {
+        "dimension": "acetic",
+        "nCompounds": 44,
+        "spearman": 0.4871035940803383
+      },
+      {
+        "dimension": "barnyard",
+        "nCompounds": 44,
+        "spearman": 0.4264975334742777
+      },
+      {
+        "dimension": "alcohol",
+        "nCompounds": 44,
+        "spearman": 0.5427766032417196
+      },
+      {
+        "dimension": "aftertaste",
+        "nCompounds": 44,
+        "spearman": 0.09992952783650459
+      },
+      {
+        "dimension": "body",
+        "nCompounds": 44,
+        "spearman": 0.4355179704016914
+      },
+      {
+        "dimension": "co2",
+        "nCompounds": 44,
+        "spearman": 0.5082452431289641
+      },
+      {
+        "dimension": "overall",
+        "nCompounds": 44,
+        "spearman": 0.5054263565891474
+      }
+    ],
+    "unmatchedLabels": []
+  },
+  "final_top3": [
+    {
+      "absBetaGraph": 0.05800617504239649,
+      "absRhoTotal": 0.4555438967772515,
+      "absRhoWithin": 0.23599935005187303,
+      "compound": "protein.g.L.",
+      "dimension": "A_malt_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.794,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.0433243452348752,
+      "absRhoTotal": 0.26340698028505155,
+      "absRhoWithin": 0.2663825238461453,
+      "compound": "furfural",
+      "dimension": "A_malt_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.428,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.054286834520110704,
+      "absRhoTotal": 0.2604992509175331,
+      "absRhoWithin": 0.16356911661620452,
+      "compound": "X2.acetylfuran",
+      "dimension": "A_malt_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.348,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.020402054771442586,
+      "absRhoTotal": 0.2443759759636379,
+      "absRhoWithin": 0.185170385599632,
+      "compound": "terpinen.4.ol",
+      "dimension": "A_malt_grain",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.35,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.02237504540775488,
+      "absRhoTotal": 0.22273481894728595,
+      "absRhoWithin": 0.1686339319362654,
+      "compound": "furfural",
+      "dimension": "A_malt_grain",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.25,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.0342165267919098,
+      "absRhoTotal": 0.18963774094352365,
+      "absRhoWithin": 0.11724910215146947,
+      "compound": "phenethyl_alcohol",
+      "dimension": "A_malt_grain",
+      "direction": "positive",
+      "moduleId": 3,
+      "moduleSize": 1,
+      "pi": 0.222,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.031477958921957,
+      "absRhoTotal": 0.21307768984995354,
+      "absRhoWithin": 0.15887281364983594,
+      "compound": "beta.phellandrene",
+      "dimension": "A_malt_bread",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.356,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.018470181579486298,
+      "absRhoTotal": 0.22351101411022173,
+      "absRhoWithin": 0.16106648207188784,
+      "compound": "terpinen.4.ol",
+      "dimension": "A_malt_bread",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.258,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.016002115746448397,
+      "absRhoTotal": 0.24663876576238458,
+      "absRhoWithin": 0.24905047912513106,
+      "compound": "X4.ethyl.guaiacol",
+      "dimension": "A_malt_bread",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.254,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.05026401650441037,
+      "absRhoTotal": 0.42285902664849895,
+      "absRhoWithin": 0.19737763843437045,
+      "compound": "protein.g.L.",
+      "dimension": "A_malt_cara",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.802,
+      "rank": 1,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.02802871909467473,
+      "absRhoTotal": 0.2842157693317383,
+      "absRhoWithin": 0.2448508997027352,
+      "compound": "X2.methyl.benzofuran",
+      "dimension": "A_malt_cara",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.516,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.028397977417093552,
+      "absRhoTotal": 0.28652621719327426,
+      "absRhoWithin": 0.1773823418253365,
+      "compound": "furfural",
+      "dimension": "A_malt_cara",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.232,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.05174743727736851,
+      "absRhoTotal": 0.220487271500907,
+      "absRhoWithin": 0.1925352154999841,
+      "compound": "protein.g.L.",
+      "dimension": "A_malt_burn",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.494,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.04837935178425704,
+      "absRhoTotal": 0.22043665081611882,
+      "absRhoWithin": 0.19496655927603895,
+      "compound": "ethyl.hydrocinnamate",
+      "dimension": "A_malt_burn",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.446,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.04034511392792362,
+      "absRhoTotal": 0.18966970435973132,
+      "absRhoWithin": 0.1298934407695369,
+      "compound": "SO2.mg.L.",
+      "dimension": "A_malt_burn",
+      "direction": "negative",
+      "moduleId": 5,
+      "moduleSize": 1,
+      "pi": 0.22,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.032489671605862004,
+      "absRhoTotal": 0.46537123330938873,
+      "absRhoWithin": 0.3219698184947252,
+      "compound": "ethyl_octanoate",
+      "dimension": "A_hops_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.822,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.048869173223370053,
+      "absRhoTotal": 0.3821409147630509,
+      "absRhoWithin": 0.18886281140764036,
+      "compound": "iron",
+      "dimension": "A_hops_all",
+      "direction": "negative",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.394,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.0416724438717561,
+      "absRhoTotal": 0.362728840267739,
+      "absRhoWithin": 0.15362971313569668,
+      "compound": "DMS",
+      "dimension": "A_hops_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.234,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.025488495249346106,
+      "absRhoTotal": 0.3689079574002569,
+      "absRhoWithin": 0.24901726693714857,
+      "compound": "citronellol",
+      "dimension": "A_hops_citrus",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.566,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04974112707654513,
+      "absRhoTotal": 0.34844577144752703,
+      "absRhoWithin": 0.1914660312793287,
+      "compound": "geraniol",
+      "dimension": "A_hops_citrus",
+      "direction": "positive",
+      "moduleId": 30,
+      "moduleSize": 1,
+      "pi": 0.496,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.025373806992716456,
+      "absRhoTotal": 0.3302176947247319,
+      "absRhoWithin": 0.15088670410102062,
+      "compound": "cis.dihydro.beta.terpineol",
+      "dimension": "A_hops_citrus",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.256,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.04229976796929103,
+      "absRhoTotal": 0.2201944517949955,
+      "absRhoWithin": 0.2557617362212568,
+      "compound": "beta.phellandrene",
+      "dimension": "A_hops_tropical",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.696,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.05517487224937417,
+      "absRhoTotal": 0.3368132565626787,
+      "absRhoWithin": 0.1771865692512129,
+      "compound": "DMS",
+      "dimension": "A_hops_tropical",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.63,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.02713319924956235,
+      "absRhoTotal": 0.18981742705559337,
+      "absRhoWithin": 0.14658203036066272,
+      "compound": "X.E..dihydro.apofarnesal",
+      "dimension": "A_hops_tropical",
+      "direction": "negative",
+      "moduleId": 41,
+      "moduleSize": 1,
+      "pi": 0.196,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03763417495363327,
+      "absRhoTotal": 0.4720717288201517,
+      "absRhoWithin": 0.3391926471829942,
+      "compound": "ethyl_octanoate",
+      "dimension": "A_hops_noble",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.932,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.025705627695590778,
+      "absRhoTotal": 0.46458371303061025,
+      "absRhoWithin": 0.34216802060206253,
+      "compound": "ethyl_decanoate",
+      "dimension": "A_hops_noble",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.664,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04688140923398113,
+      "absRhoTotal": 0.3338322059610029,
+      "absRhoWithin": 0.1858701945517924,
+      "compound": "iron",
+      "dimension": "A_hops_noble",
+      "direction": "negative",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.26,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.01136732855154355,
+      "absRhoTotal": 0.2462520481518132,
+      "absRhoWithin": 0.25475880648457355,
+      "compound": "X.E..ortho.methoxy.cinnamaldehyde",
+      "dimension": "A_hops_woody",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.268,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.014342843185060615,
+      "absRhoTotal": 0.19941826374347338,
+      "absRhoWithin": 0.15458976713622874,
+      "compound": "ethyl_2.methyl_butyrate",
+      "dimension": "A_hops_woody",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.178,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.016665929684202118,
+      "absRhoTotal": 0.22703850892640537,
+      "absRhoWithin": 0.2320116246192466,
+      "compound": "nonan.2.ol",
+      "dimension": "A_hops_woody",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.176,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.07128497496495831,
+      "absRhoTotal": 0.3645781144528616,
+      "absRhoWithin": 0.31862631074101866,
+      "compound": "acetaldehyde",
+      "dimension": "A_esters_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.926,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.0404196828795451,
+      "absRhoTotal": 0.29608190204755125,
+      "absRhoWithin": 0.3468705357623305,
+      "compound": "isopentyl_acetate",
+      "dimension": "A_esters_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.42,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.042473372891282286,
+      "absRhoTotal": 0.2956215013956187,
+      "absRhoWithin": 0.25885728662881274,
+      "compound": "isoamyl_alcohol",
+      "dimension": "A_esters_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.39,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.030294712104487385,
+      "absRhoTotal": 0.2967816700913219,
+      "absRhoWithin": 0.27304071336596947,
+      "compound": "X2E.6Z.farnesal",
+      "dimension": "A_esters_ethac",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.676,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.03772172190311385,
+      "absRhoTotal": 0.21420832816253152,
+      "absRhoWithin": 0.22984807064075904,
+      "compound": "phenethyl_alcohol",
+      "dimension": "A_esters_ethac",
+      "direction": "positive",
+      "moduleId": 3,
+      "moduleSize": 1,
+      "pi": 0.384,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.03844258762044402,
+      "absRhoTotal": 0.28217975685220775,
+      "absRhoWithin": 0.17019419798755248,
+      "compound": "acetaldehyde",
+      "dimension": "A_esters_ethac",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.38,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03907197559812728,
+      "absRhoTotal": 0.2775737934350277,
+      "absRhoWithin": 0.27635150524302704,
+      "compound": "isopentyl_acetate",
+      "dimension": "A_esters_isoaa",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.608,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.05643450886893189,
+      "absRhoTotal": 0.22980433128492234,
+      "absRhoWithin": 0.19490163313645478,
+      "compound": "acetaldehyde",
+      "dimension": "A_esters_isoaa",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.466,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.0455267348483304,
+      "absRhoTotal": 0.21673092385378376,
+      "absRhoWithin": 0.20704086060472082,
+      "compound": "X2E.6Z.farnesal",
+      "dimension": "A_esters_isoaa",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.432,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.05285010903903262,
+      "absRhoTotal": 0.1943407420875335,
+      "absRhoWithin": 0.23766142704917811,
+      "compound": "beta.phellandrene",
+      "dimension": "A_esters_flower",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.528,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.03640184841039001,
+      "absRhoTotal": 0.2255910350492312,
+      "absRhoWithin": 0.18359721554966907,
+      "compound": "acetaldehyde",
+      "dimension": "A_esters_flower",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.382,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.019635237274574054,
+      "absRhoTotal": 0.22346126361542049,
+      "absRhoWithin": 0.24739230425474054,
+      "compound": "X.E..dihydro.apofarnesal",
+      "dimension": "A_esters_flower",
+      "direction": "negative",
+      "moduleId": 41,
+      "moduleSize": 1,
+      "pi": 0.29,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.057122182827444655,
+      "absRhoTotal": 0.25764913527331185,
+      "absRhoWithin": 0.15097863781605994,
+      "compound": "beta.phellandrene",
+      "dimension": "A_esters_fruity",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.574,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.028048732701081793,
+      "absRhoTotal": 0.22423176925597157,
+      "absRhoWithin": 0.09031033969597431,
+      "compound": "lactic_acid.mg.L.",
+      "dimension": "A_esters_fruity",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.142,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.00846881411209965,
+      "absRhoTotal": 0.13869545124563204,
+      "absRhoWithin": 0.16255752624014175,
+      "compound": "propylene.glycol",
+      "dimension": "A_esters_fruity",
+      "direction": "negative",
+      "moduleId": 11,
+      "moduleSize": 1,
+      "pi": 0.138,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.041892348005517326,
+      "absRhoTotal": 0.49364696140939546,
+      "absRhoWithin": 0.19020763305060068,
+      "compound": "acetaldehyde",
+      "dimension": "F_malt_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.694,
+      "rank": 1,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.05102190044008816,
+      "absRhoTotal": 0.38108588861273607,
+      "absRhoWithin": 0.18994778773291582,
+      "compound": "protein.g.L.",
+      "dimension": "F_malt_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.654,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.051862820848560795,
+      "absRhoTotal": 0.38292611034744933,
+      "absRhoWithin": 0.07616221997263697,
+      "compound": "MeSH",
+      "dimension": "F_malt_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.162,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.03918290671974733,
+      "absRhoTotal": 0.22642529787282245,
+      "absRhoWithin": 0.22954222097418037,
+      "compound": "X2.3.butanedione",
+      "dimension": "F_malt_grain",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.468,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.023282787175771397,
+      "absRhoTotal": 0.2701336046402368,
+      "absRhoWithin": 0.15784551117814705,
+      "compound": "acetaldehyde",
+      "dimension": "F_malt_grain",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.286,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.02139269853993544,
+      "absRhoTotal": 0.24476607808850348,
+      "absRhoWithin": 0.16340650483042368,
+      "compound": "terpinen.4.ol",
+      "dimension": "F_malt_grain",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.26,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04227084496302183,
+      "absRhoTotal": 0.4385033436115451,
+      "absRhoWithin": 0.17525068873741348,
+      "compound": "acetaldehyde",
+      "dimension": "F_malt_bread",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.612,
+      "rank": 1,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.03676685180154441,
+      "absRhoTotal": 0.2899162958470436,
+      "absRhoWithin": 0.19361022866506175,
+      "compound": "beta.phellandrene",
+      "dimension": "F_malt_bread",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.466,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.02589108051191711,
+      "absRhoTotal": 0.2824981811937492,
+      "absRhoWithin": 0.14486636819872692,
+      "compound": "terpinen.4.ol",
+      "dimension": "F_malt_bread",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.218,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04842688635583848,
+      "absRhoTotal": 0.3910655527044001,
+      "absRhoWithin": 0.24204470531173455,
+      "compound": "protein.g.L.",
+      "dimension": "F_malt_cara",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.868,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.043186667932488106,
+      "absRhoTotal": 0.41511137820508837,
+      "absRhoWithin": 0.15673277471862576,
+      "compound": "acetaldehyde",
+      "dimension": "F_malt_cara",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.578,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.023265880990176447,
+      "absRhoTotal": 0.30515939342963355,
+      "absRhoWithin": 0.11733812225001235,
+      "compound": "DES",
+      "dimension": "F_malt_cara",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.208,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.05112374478314599,
+      "absRhoTotal": 0.29298906329610214,
+      "absRhoWithin": 0.2127806132664178,
+      "compound": "protein.g.L.",
+      "dimension": "F_malt_burn",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.716,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.0412486837354312,
+      "absRhoTotal": 0.3914637647004957,
+      "absRhoWithin": 0.09907284614637156,
+      "compound": "MeSH",
+      "dimension": "F_malt_burn",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.31,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.026087437550892354,
+      "absRhoTotal": 0.3976828445750394,
+      "absRhoWithin": 0.16579480955883905,
+      "compound": "glycerol",
+      "dimension": "F_malt_burn",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.272,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.03358294437158538,
+      "absRhoTotal": 0.5089396643440186,
+      "absRhoWithin": 0.3778176575275103,
+      "compound": "ethyl_octanoate",
+      "dimension": "F_hops_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.882,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03868299730041867,
+      "absRhoTotal": 0.47982036160498076,
+      "absRhoWithin": 0.25569283744057103,
+      "compound": "cis.dihydro.beta.terpineol",
+      "dimension": "F_hops_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.498,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.041482012526872517,
+      "absRhoTotal": 0.3966805657693844,
+      "absRhoWithin": 0.22129899839436054,
+      "compound": "DMS",
+      "dimension": "F_hops_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.262,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04139940908553412,
+      "absRhoTotal": 0.30047419193181274,
+      "absRhoWithin": 0.16020848766866191,
+      "compound": "geraniol",
+      "dimension": "F_hops_citrus",
+      "direction": "positive",
+      "moduleId": 30,
+      "moduleSize": 1,
+      "pi": 0.602,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.028991062684071336,
+      "absRhoTotal": 0.3028057453622762,
+      "absRhoWithin": 0.11376940045605023,
+      "compound": "protein.g.L.",
+      "dimension": "F_hops_citrus",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.304,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.02472750634129342,
+      "absRhoTotal": 0.24715464233412138,
+      "absRhoWithin": 0.13723865455088488,
+      "compound": "geosmin",
+      "dimension": "F_hops_citrus",
+      "direction": "positive",
+      "moduleId": 34,
+      "moduleSize": 1,
+      "pi": 0.278,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.06005945581615657,
+      "absRhoTotal": 0.3485197204283234,
+      "absRhoWithin": 0.1967082910234817,
+      "compound": "DMS",
+      "dimension": "F_hops_tropical",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.592,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.047085212303653985,
+      "absRhoTotal": 0.25977680785488816,
+      "absRhoWithin": 0.1883683828940675,
+      "compound": "terpinolene",
+      "dimension": "F_hops_tropical",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.564,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.047892137688350885,
+      "absRhoTotal": 0.22437909641422965,
+      "absRhoWithin": 0.20405902269983803,
+      "compound": "beta.phellandrene",
+      "dimension": "F_hops_tropical",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.514,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.034870785424988934,
+      "absRhoTotal": 0.4930951321106384,
+      "absRhoWithin": 0.36820066754804776,
+      "compound": "ethyl_octanoate",
+      "dimension": "F_hops_noble",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.936,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.023782607305324274,
+      "absRhoTotal": 0.45889591074176345,
+      "absRhoWithin": 0.35071203523941874,
+      "compound": "ethyl_decanoate",
+      "dimension": "F_hops_noble",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.482,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.047254684889315876,
+      "absRhoTotal": 0.39876642173850235,
+      "absRhoWithin": 0.18726289377951044,
+      "compound": "iron",
+      "dimension": "F_hops_noble",
+      "direction": "negative",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.326,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.013228963730826672,
+      "absRhoTotal": 0.3360210167334719,
+      "absRhoWithin": 0.22292875074390633,
+      "compound": "ethyl_decanoate",
+      "dimension": "F_hops_woody",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.318,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04993845736953699,
+      "absRhoTotal": 0.26840742222223946,
+      "absRhoWithin": 0.12202692027674555,
+      "compound": "iron",
+      "dimension": "F_hops_woody",
+      "direction": "negative",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.298,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.03382286911328113,
+      "absRhoTotal": 0.3211903000029422,
+      "absRhoWithin": 0.11067075008825865,
+      "compound": "cis.dihydro.beta.terpineol",
+      "dimension": "F_hops_woody",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.296,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.07877165531831798,
+      "absRhoTotal": 0.44444011100277503,
+      "absRhoWithin": 0.33679495892138855,
+      "compound": "acetaldehyde",
+      "dimension": "F_esters_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.982,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03869483299875149,
+      "absRhoTotal": 0.3376074401860047,
+      "absRhoWithin": 0.3339170871971972,
+      "compound": "isopentyl_acetate",
+      "dimension": "F_esters_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.42,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.04055594394252903,
+      "absRhoTotal": 0.3395786168074253,
+      "absRhoWithin": 0.24234877228900756,
+      "compound": "isoamyl_alcohol",
+      "dimension": "F_esters_all",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.328,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04503222975939978,
+      "absRhoTotal": 0.3901279235836159,
+      "absRhoWithin": 0.2754930518311693,
+      "compound": "acetaldehyde",
+      "dimension": "F_esters_ethac",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.826,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03323766335352108,
+      "absRhoTotal": 0.4633532238923539,
+      "absRhoWithin": 0.2810579649216953,
+      "compound": "ethyl_acetate",
+      "dimension": "F_esters_ethac",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.772,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.02951872618507271,
+      "absRhoTotal": 0.4274245688731207,
+      "absRhoWithin": 0.2660575559991253,
+      "compound": "glycerol",
+      "dimension": "F_esters_ethac",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.538,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.039074744671480824,
+      "absRhoTotal": 0.2916889485245857,
+      "absRhoWithin": 0.2991831310798047,
+      "compound": "isopentyl_acetate",
+      "dimension": "F_esters_isoaa",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.662,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.058765983567448346,
+      "absRhoTotal": 0.28660005985235654,
+      "absRhoWithin": 0.21444357156271787,
+      "compound": "acetaldehyde",
+      "dimension": "F_esters_isoaa",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.528,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03436892973040031,
+      "absRhoTotal": 0.2583086357765173,
+      "absRhoWithin": 0.23980133328758962,
+      "compound": "isoamyl_alcohol",
+      "dimension": "F_esters_isoaa",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.344,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.04805045757260126,
+      "absRhoTotal": 0.2464107281054631,
+      "absRhoWithin": 0.24484015642011084,
+      "compound": "beta.phellandrene",
+      "dimension": "F_esters_flower",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.728,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.029995399145581907,
+      "absRhoTotal": 0.21963641838679865,
+      "absRhoWithin": 0.25153676561884675,
+      "compound": "eucalyptol",
+      "dimension": "F_esters_flower",
+      "direction": "positive",
+      "moduleId": 21,
+      "moduleSize": 1,
+      "pi": 0.436,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.014595648476117312,
+      "absRhoTotal": 0.20478926232584133,
+      "absRhoWithin": 0.21669342407883427,
+      "compound": "X.E..dihydro.apofarnesal",
+      "dimension": "F_esters_flower",
+      "direction": "negative",
+      "moduleId": 41,
+      "moduleSize": 1,
+      "pi": 0.176,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.05100908201104452,
+      "absRhoTotal": 0.2730355647317561,
+      "absRhoWithin": 0.16325424565928098,
+      "compound": "beta.phellandrene",
+      "dimension": "F_esters_fruity",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.518,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.025273204927491775,
+      "absRhoTotal": 0.2212133067332497,
+      "absRhoWithin": 0.1518376752424136,
+      "compound": "octyl_acetate",
+      "dimension": "F_esters_fruity",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.284,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03605692712986615,
+      "absRhoTotal": 0.23016563234921053,
+      "absRhoWithin": 0.12276184936763974,
+      "compound": "iron",
+      "dimension": "F_esters_fruity",
+      "direction": "positive",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.238,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.05595672301778748,
+      "absRhoTotal": 0.38561671686914883,
+      "absRhoWithin": 0.2065452173458307,
+      "compound": "acetic_acid.g.L.",
+      "dimension": "acidity",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.76,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.02812589779394331,
+      "absRhoTotal": 0.4369943419594735,
+      "absRhoWithin": 0.1656537082815305,
+      "compound": "X4.ethyl.phenol",
+      "dimension": "acidity",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.394,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.0366448879469942,
+      "absRhoTotal": 0.4004960806700195,
+      "absRhoWithin": 0.12590258039556793,
+      "compound": "X4.ethyl.guaiacol",
+      "dimension": "acidity",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.282,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.037399450802678834,
+      "absRhoTotal": 0.5794596710866937,
+      "absRhoWithin": 0.4897485761060568,
+      "compound": "ethyl_octanoate",
+      "dimension": "bitternes",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.97,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.028350110476553364,
+      "absRhoTotal": 0.5518651674775397,
+      "absRhoWithin": 0.48661828359221454,
+      "compound": "ethyl_decanoate",
+      "dimension": "bitternes",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.694,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.06257264635447457,
+      "absRhoTotal": 0.4779501445278492,
+      "absRhoWithin": 0.2606989504546369,
+      "compound": "iron",
+      "dimension": "bitternes",
+      "direction": "negative",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.492,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.048474811054602905,
+      "absRhoTotal": 0.3673188380119735,
+      "absRhoWithin": 0.2792311976187926,
+      "compound": "iron",
+      "dimension": "sweetness",
+      "direction": "positive",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.694,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03427538458514105,
+      "absRhoTotal": 0.36887449851833715,
+      "absRhoWithin": 0.32753929232505236,
+      "compound": "ethyl_decanoate",
+      "dimension": "sweetness",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.686,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.04658994280462694,
+      "absRhoTotal": 0.28177420667537423,
+      "absRhoWithin": 0.2633018388501729,
+      "compound": "beta.cyclohomocitral",
+      "dimension": "sweetness",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.368,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.03056895383528282,
+      "absRhoTotal": 0.3444232360216534,
+      "absRhoWithin": 0.18800318119066334,
+      "compound": "ethyl_isovalerate",
+      "dimension": "X4vg",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.516,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.00975279940613937,
+      "absRhoTotal": 0.4483165481902309,
+      "absRhoWithin": 0.37553668419565184,
+      "compound": "X4VG",
+      "dimension": "X4vg",
+      "direction": "positive",
+      "moduleId": 4,
+      "moduleSize": 1,
+      "pi": 0.324,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.01273255286154988,
+      "absRhoTotal": 0.37958692167669994,
+      "absRhoWithin": 0.29834974394945224,
+      "compound": "delta.terpinyl.acetate",
+      "dimension": "X4vg",
+      "direction": "positive",
+      "moduleId": 32,
+      "moduleSize": 1,
+      "pi": 0.314,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03691708373080137,
+      "absRhoTotal": 0.2428120659322206,
+      "absRhoWithin": 0.17931040142345023,
+      "compound": "beta.cyclohomocitral",
+      "dimension": "diacetyl",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.324,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.02045940518056403,
+      "absRhoTotal": 0.23634509707978024,
+      "absRhoWithin": 0.223312721511101,
+      "compound": "cis.dihydro.beta.terpineol",
+      "dimension": "diacetyl",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.272,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.015646218451808303,
+      "absRhoTotal": 0.22297775189940205,
+      "absRhoWithin": 0.3708838850626174,
+      "compound": "ethyl_octanoate",
+      "dimension": "diacetyl",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.266,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.03702890839598656,
+      "absRhoTotal": 0.2339768458724064,
+      "absRhoWithin": 0.24712667871621374,
+      "compound": "phenethyl_alcohol",
+      "dimension": "dms",
+      "direction": "negative",
+      "moduleId": 3,
+      "moduleSize": 1,
+      "pi": 0.598,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.03134832363542927,
+      "absRhoTotal": 0.3413985168937711,
+      "absRhoWithin": 0.2123401382108167,
+      "compound": "protein.g.L.",
+      "dimension": "dms",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.536,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03148905890599247,
+      "absRhoTotal": 0.16120756614087825,
+      "absRhoWithin": 0.22199665090479037,
+      "compound": "X.Z..dihydro.apofarnesal",
+      "dimension": "dms",
+      "direction": "positive",
+      "moduleId": 40,
+      "moduleSize": 3,
+      "pi": 0.282,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.027712598675817237,
+      "absRhoTotal": 0.30933776392967816,
+      "absRhoWithin": 0.3558033083633844,
+      "compound": "iron",
+      "dimension": "metallic",
+      "direction": "positive",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.768,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.03042649427805436,
+      "absRhoTotal": 0.20067816307627648,
+      "absRhoWithin": 0.1610051104603853,
+      "compound": "cis.dihydro.beta.terpineol",
+      "dimension": "metallic",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.246,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.03353967617225497,
+      "absRhoTotal": 0.2459934420720834,
+      "absRhoWithin": 0.11012002585375244,
+      "compound": "ethyl_isovalerate",
+      "dimension": "metallic",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.208,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.030217006704351554,
+      "absRhoTotal": 0.22713752738097848,
+      "absRhoWithin": 0.18923394684945768,
+      "compound": "isopentyl_acetate",
+      "dimension": "stale_hops",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.404,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.04250068647601311,
+      "absRhoTotal": 0.1508739591778219,
+      "absRhoWithin": 0.22320567138912442,
+      "compound": "iron",
+      "dimension": "stale_hops",
+      "direction": "negative",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.282,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.018910823496721383,
+      "absRhoTotal": 0.24009444971659497,
+      "absRhoWithin": 0.23873764514620432,
+      "compound": "n.hexanol",
+      "dimension": "stale_hops",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.222,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.0330903729849129,
+      "absRhoTotal": 0.2376674960899344,
+      "absRhoWithin": 0.18481589199711507,
+      "compound": "beta.phellandrene",
+      "dimension": "t2n",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.568,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.0183324234559783,
+      "absRhoTotal": 0.20693197120800505,
+      "absRhoWithin": 0.17328974956823487,
+      "compound": "alpha.phellandrene",
+      "dimension": "t2n",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.226,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.020693387167855726,
+      "absRhoTotal": 0.2099046334881587,
+      "absRhoWithin": 0.13874223093698296,
+      "compound": "glycerol",
+      "dimension": "t2n",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.208,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.047295594273086,
+      "absRhoTotal": 0.32782501198563396,
+      "absRhoWithin": 0.4281356446479892,
+      "compound": "beta.phellandrene",
+      "dimension": "orange",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.914,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.030955365671693023,
+      "absRhoTotal": 0.3309127467177485,
+      "absRhoWithin": 0.35167274785108465,
+      "compound": "terpinolene",
+      "dimension": "orange",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.588,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.031012512069261262,
+      "absRhoTotal": 0.2845347392332421,
+      "absRhoWithin": 0.3136505963071499,
+      "compound": "terpinen.4.ol",
+      "dimension": "orange",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.33,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.041878598652582796,
+      "absRhoTotal": 0.22440410739887157,
+      "absRhoWithin": 0.2437695564054417,
+      "compound": "beta.phellandrene",
+      "dimension": "coriander",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.496,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.06468117719863568,
+      "absRhoTotal": 0.250557360350022,
+      "absRhoWithin": 0.17664788462815642,
+      "compound": "limonene",
+      "dimension": "coriander",
+      "direction": "positive",
+      "moduleId": 20,
+      "moduleSize": 1,
+      "pi": 0.334,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.0240444337013,
+      "absRhoTotal": 0.25517449869675224,
+      "absRhoWithin": 0.20304983619684788,
+      "compound": "terpinen.4.ol",
+      "dimension": "coriander",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.234,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.06004876354969986,
+      "absRhoTotal": 0.3198011897734026,
+      "absRhoWithin": 0.23456329411706187,
+      "compound": "limonene",
+      "dimension": "clove",
+      "direction": "positive",
+      "moduleId": 20,
+      "moduleSize": 1,
+      "pi": 0.762,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.028852392804763163,
+      "absRhoTotal": 0.2344941810489151,
+      "absRhoWithin": 0.20201848989788013,
+      "compound": "eucalyptol",
+      "dimension": "clove",
+      "direction": "positive",
+      "moduleId": 21,
+      "moduleSize": 1,
+      "pi": 0.424,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.02292836883336337,
+      "absRhoTotal": 0.22060956304813134,
+      "absRhoWithin": 0.18859146184410225,
+      "compound": "X3.methyl.2.butenal",
+      "dimension": "clove",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.168,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.026260328326888054,
+      "absRhoTotal": 0.4089316396254687,
+      "absRhoWithin": 0.2565803382839914,
+      "compound": "isopentyl_acetate",
+      "dimension": "lactic",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.656,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.031333370895266374,
+      "absRhoTotal": 0.4074237354665294,
+      "absRhoWithin": 0.15174140083969662,
+      "compound": "butyl.acetate",
+      "dimension": "lactic",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.386,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.023241048318234234,
+      "absRhoTotal": 0.4385616924946025,
+      "absRhoWithin": 0.16498922316645,
+      "compound": "perillyl.acetate",
+      "dimension": "lactic",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.382,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.032680526650997355,
+      "absRhoTotal": 0.3572843139531237,
+      "absRhoWithin": 0.20285257297136325,
+      "compound": "isopentyl_acetate",
+      "dimension": "acetic",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.622,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.0538349572160832,
+      "absRhoTotal": 0.32523570306871485,
+      "absRhoWithin": 0.12842646283800097,
+      "compound": "DES",
+      "dimension": "acetic",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.416,
+      "rank": 2,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.036669335316315305,
+      "absRhoTotal": 0.2577201113750372,
+      "absRhoWithin": 0.09022126756216715,
+      "compound": "E.cinnamaldehyde",
+      "dimension": "acetic",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.18,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.01312163191825687,
+      "absRhoTotal": 0.2583501984199809,
+      "absRhoWithin": 0.23248759412780554,
+      "compound": "gamma.eudesmol",
+      "dimension": "barnyard",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.304,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.04164493181532446,
+      "absRhoTotal": 0.15096170737407083,
+      "absRhoWithin": 0.20686579106958183,
+      "compound": "iron",
+      "dimension": "barnyard",
+      "direction": "negative",
+      "moduleId": 8,
+      "moduleSize": 3,
+      "pi": 0.292,
+      "rank": 2,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.01765186219132555,
+      "absRhoTotal": 0.26391857518042683,
+      "absRhoWithin": 0.2299207817399454,
+      "compound": "n.hexanol",
+      "dimension": "barnyard",
+      "direction": "negative",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.228,
+      "rank": 3,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.06219373776916313,
+      "absRhoTotal": 0.5847035868535573,
+      "absRhoWithin": 0.3545292818590549,
+      "compound": "acetaldehyde",
+      "dimension": "alcohol",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.748,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.043326543934460525,
+      "absRhoTotal": 0.6031585551483795,
+      "absRhoWithin": 0.397101991752892,
+      "compound": "ethyl_hexanoate",
+      "dimension": "alcohol",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.698,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04924958492010222,
+      "absRhoTotal": 0.6342811649239383,
+      "absRhoWithin": 0.3151941454720899,
+      "compound": "glycerol",
+      "dimension": "alcohol",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.592,
+      "rank": 3,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.06858422540906868,
+      "absRhoTotal": 0.4653615029743621,
+      "absRhoWithin": 0.40514123547297437,
+      "compound": "ethyl_isovalerate",
+      "dimension": "aftertaste",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.976,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.031913422559709526,
+      "absRhoTotal": 0.49709142728568234,
+      "absRhoWithin": 0.39674393715066314,
+      "compound": "ethyl_octanoate",
+      "dimension": "aftertaste",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.654,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.046129656014422024,
+      "absRhoTotal": 0.4605556856630976,
+      "absRhoWithin": 0.24361860412240913,
+      "compound": "glycerol",
+      "dimension": "aftertaste",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.332,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04558629623750838,
+      "absRhoTotal": 0.5844070711504037,
+      "absRhoWithin": 0.284200175885594,
+      "compound": "glycerol",
+      "dimension": "body",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.718,
+      "rank": 1,
+      "styleConfound": "style-driven"
+    },
+    {
+      "absBetaGraph": 0.03580149589166966,
+      "absRhoTotal": 0.5295338854977008,
+      "absRhoWithin": 0.30311225306284717,
+      "compound": "ethyl_hexanoate",
+      "dimension": "body",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.554,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.049798657088800026,
+      "absRhoTotal": 0.4777428018772828,
+      "absRhoWithin": 0.23898382535306256,
+      "compound": "MeSH",
+      "dimension": "body",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.386,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.0371411387139008,
+      "absRhoTotal": 0.5301680494539072,
+      "absRhoWithin": 0.3722804275558599,
+      "compound": "ethyl_octanoate",
+      "dimension": "co2",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.92,
+      "rank": 1,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.03461286590917699,
+      "absRhoTotal": 0.4571851154060727,
+      "absRhoWithin": 0.2666258889631286,
+      "compound": "ethyl_hexanoate",
+      "dimension": "co2",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.698,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.04035335046404758,
+      "absRhoTotal": 0.3720323588579284,
+      "absRhoWithin": 0.2035377954385997,
+      "compound": "acetaldehyde",
+      "dimension": "co2",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.364,
+      "rank": 3,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.0395331544798262,
+      "absRhoTotal": 0.24138603465086633,
+      "absRhoWithin": 0.2063147694370967,
+      "compound": "acetaldehyde",
+      "dimension": "overall",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.52,
+      "rank": 1,
+      "styleConfound": "within-consistent"
+    },
+    {
+      "absBetaGraph": 0.026983314776431913,
+      "absRhoTotal": 0.3182314557863948,
+      "absRhoWithin": 0.18413651073392398,
+      "compound": "ethyl_acetate",
+      "dimension": "overall",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.484,
+      "rank": 2,
+      "styleConfound": "mixed"
+    },
+    {
+      "absBetaGraph": 0.022933578869812874,
+      "absRhoTotal": 0.24786586014129308,
+      "absRhoWithin": 0.18090326644566118,
+      "compound": "X2.butyloctanoate",
+      "dimension": "overall",
+      "direction": "positive",
+      "moduleId": 0,
+      "moduleSize": 172,
+      "pi": 0.26,
+      "rank": 3,
+      "styleConfound": "mixed"
+    }
+  ],
+  "method_jaccard": {
+    "definition": "J = |A n B| / (2k - |A n B|), k = 3; mean over 50 dimensions and the 6 method pairs",
+    "pairs": {
+      "graph_lowrank|consensus": {
+        "mean": 0.22999999999999993,
+        "perDimension": [
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.5,
+          0.2,
+          0.2,
+          0.5,
+          0.2,
+          0.0,
+          0.2,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.5,
+          0.2,
+          0.0,
+          0.2,
+          0.5,
+          0.2,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.5,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.2,
+          0.2,
+          0.5,
+          0.2,
+          0.0,
+          0.2,
+          0.2
+        ]
+      },
+      "total_spearman|consensus": {
+        "mean": 0.37,
+        "perDimension": [
+          0.2,
+          0.5,
+          0.0,
+          0.2,
+          0.0,
+          0.2,
+          0.2,
+          0.2,
+          0.5,
+          0.2,
+          0.2,
+          0.5,
+          0.2,
+          0.5,
+          0.5,
+          1.0,
+          0.2,
+          0.2,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.2,
+          0.2,
+          1.0,
+          0.5,
+          0.5,
+          0.2,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.0,
+          0.5,
+          0.2,
+          0.0,
+          0.5,
+          0.5,
+          0.2,
+          1.0,
+          0.2,
+          0.2,
+          0.5,
+          0.5,
+          0.2,
+          0.2,
+          0.5,
+          0.2
+        ]
+      },
+      "total_spearman|graph_lowrank": {
+        "mean": 0.11200000000000002,
+        "perDimension": [
+          0.2,
+          0.0,
+          0.2,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.2,
+          0.2,
+          0.0,
+          0.0,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.5,
+          0.0,
+          0.0,
+          0.2,
+          0.2,
+          0.0,
+          0.0,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.5,
+          0.2,
+          0.0,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "total_spearman|within_style_spearman": {
+        "mean": 0.294,
+        "perDimension": [
+          0.2,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.5,
+          0.0,
+          0.2,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.5,
+          0.2,
+          0.0,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.2,
+          0.5,
+          0.2,
+          0.5,
+          1.0,
+          0.2,
+          0.5,
+          0.0,
+          0.2,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.2,
+          0.5,
+          0.0,
+          0.2,
+          1.0,
+          0.0,
+          0.2,
+          0.0,
+          0.2,
+          0.5,
+          0.5,
+          0.5,
+          0.2,
+          1.0,
+          0.2
+        ]
+      },
+      "within_style_spearman|consensus": {
+        "mean": 0.32199999999999995,
+        "perDimension": [
+          0.5,
+          0.0,
+          0.2,
+          0.5,
+          0.0,
+          0.2,
+          0.0,
+          0.5,
+          0.5,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.0,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.5,
+          0.2,
+          0.5,
+          1.0,
+          0.2,
+          1.0,
+          0.0,
+          0.2,
+          0.5,
+          0.2,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.5,
+          0.2,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          1.0,
+          0.2,
+          0.5,
+          0.2,
+          0.5,
+          0.2
+        ]
+      },
+      "within_style_spearman|graph_lowrank": {
+        "mean": 0.11200000000000002,
+        "perDimension": [
+          0.2,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.5,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.2
+        ]
+      }
+    },
+    "summary": {
+      "overall": 0.24,
+      "pairMeans": {
+        "graph_lowrank|consensus": 0.22999999999999993,
+        "total_spearman|consensus": 0.37,
+        "total_spearman|graph_lowrank": 0.11200000000000002,
+        "total_spearman|within_style_spearman": 0.294,
+        "within_style_spearman|consensus": 0.32199999999999995,
+        "within_style_spearman|graph_lowrank": 0.11200000000000002
+      }
+    }
+  },
+  "modules": {
+    "compoundModules": {
+      "CS2": {
+        "moduleId": 1,
+        "moduleSize": 1
+      },
+      "DES": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "DMS": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "E.caryophyllene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "E.cinnamaldehyde": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "E.methyl.isoeugenol": {
+        "moduleId": 40,
+        "moduleSize": 3
+      },
+      "E.nerolidol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "E.ocimenone": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "H2S": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "MeSH": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "SO2.mg.L.": {
+        "moduleId": 5,
+        "moduleSize": 1
+      },
+      "X.E..2.nonenal": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X.E..alpha.ionone": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X.E..beta.damascenone": {
+        "moduleId": 22,
+        "moduleSize": 5
+      },
+      "X.E..beta.farnesene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X.E..beta.ionone": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X.E..beta.ocimene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X.E..dihydro.apofarnesal": {
+        "moduleId": 41,
+        "moduleSize": 1
+      },
+      "X.E..ortho.methoxy.cinnamaldehyde": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X.E.E..2.4.decadienal": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X.Z..beta.farnesene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X.Z..dihydro.apofarnesal": {
+        "moduleId": 40,
+        "moduleSize": 3
+      },
+      "X1.10.di.epi.cubenol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X1.2.dihydro.8.hydroxy..2E..linalool": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X1.alpha.terpineol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X1.octen.3.ol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X1.propanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X13.epi.manool.oxide": {
+        "moduleId": 27,
+        "moduleSize": 2
+      },
+      "X14.hydroxy.9.epi..E..caryophyllene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X14.hydroxy.alpha.humulene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.3.butanedione": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.3.dihydro.farnesol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.6.dimethyl.pyrazine": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.acetylfuran": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.acetylpyrrole": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.butyloctanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.ethyl.1.hexanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.ethyl.3.methylpyrazine": {
+        "moduleId": 50,
+        "moduleSize": 1
+      },
+      "X2.ethylhexylsalicylate": {
+        "moduleId": 49,
+        "moduleSize": 1
+      },
+      "X2.furanmethanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.methyl.1.butanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.methyl.benzofuran": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.methylbutyl.octanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.methyltetrahydrofuran.3.one": {
+        "moduleId": 12,
+        "moduleSize": 1
+      },
+      "X2.pentyl.furan": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.phenyl.ethyl.butyrate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.undecanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2.undecanone": {
+        "moduleId": 31,
+        "moduleSize": 1
+      },
+      "X2E.6E.methyl.farnesoate": {
+        "moduleId": 48,
+        "moduleSize": 1
+      },
+      "X2E.6Z.farnesal": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2Z.6E.farnesal": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2Z.6E.farnesol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X2Z.6Z.farnesol": {
+        "moduleId": 47,
+        "moduleSize": 1
+      },
+      "X3.furanmethanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X3.methyl.2.butenal": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X3.methyl.2.hexanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X3.methylbutanal": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X3.methylthio.propanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X3Z.hexenol": {
+        "moduleId": 14,
+        "moduleSize": 1
+      },
+      "X4.8.alpha.epoxy.caryophyllane": {
+        "moduleId": 36,
+        "moduleSize": 1
+      },
+      "X4.ethyl.guaiacol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X4.ethyl.phenol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X4.methoxysalicylaldehyde": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X4.methyl.1.pentanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X4VG": {
+        "moduleId": 4,
+        "moduleSize": 1
+      },
+      "X5.methylfurfural": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "X6.methyl.5.hepten.2.one": {
+        "moduleId": 17,
+        "moduleSize": 1
+      },
+      "X9.epi..E..caryophyllene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "Z.Z.geranyl.linalool": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "Z.nerolidol": {
+        "moduleId": 42,
+        "moduleSize": 1
+      },
+      "acetaldehyde": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "acetic_acid.g.L.": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "alloaromadendrene.epoxide": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "alpha.calacorene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "alpha.eudesmol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "alpha.humulene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "alpha.muurolol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "alpha.phellandrene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "alpha.terpinyl.isobutanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ambroxide": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ammonia.mg.L.": {
+        "moduleId": 6,
+        "moduleSize": 1
+      },
+      "amyl.acetate": {
+        "moduleId": 16,
+        "moduleSize": 1
+      },
+      "benzaldehyde": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "benzyl.alcohol": {
+        "moduleId": 22,
+        "moduleSize": 5
+      },
+      "benzyl.benzoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "beta.cyclohomocitral": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "beta.humulene": {
+        "moduleId": 37,
+        "moduleSize": 1
+      },
+      "beta.phellandrene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "betaglucan.mg.L.": {
+        "moduleId": 7,
+        "moduleSize": 1
+      },
+      "butyl.acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "butylated.hydroxytoluene": {
+        "moduleId": 40,
+        "moduleSize": 3
+      },
+      "cadalene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "camphor": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "car.3.en.2.one": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "caryophylla.4.12..8.13..dien.5.alpha.ol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "caryophyllene.acetate": {
+        "moduleId": 46,
+        "moduleSize": 1
+      },
+      "caryophyllene.alcohol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "caryophyllene.oxide": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "cis.beta.terpineol": {
+        "moduleId": 28,
+        "moduleSize": 1
+      },
+      "cis.dihydro.beta.terpineol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "cis.linalool.oxide": {
+        "moduleId": 23,
+        "moduleSize": 1
+      },
+      "citronellol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "cumin.aldehyde": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "dehydroxy.cis.linalool.oxide": {
+        "moduleId": 18,
+        "moduleSize": 1
+      },
+      "delta.terpinyl.acetate": {
+        "moduleId": 32,
+        "moduleSize": 1
+      },
+      "diethyl.succinate": {
+        "moduleId": 22,
+        "moduleSize": 5
+      },
+      "dihydroisocaryophyllene.epoxide": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "dimethoxy..E..citral": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "dodecanal": {
+        "moduleId": 35,
+        "moduleSize": 1
+      },
+      "ethyl..9..decenoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl..E..cinnamate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl..E..linalool": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.5.methylhexanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.benzoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.butyrate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.furoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.hex..2E..enoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.hex..3E..enoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.hexadecanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.hydrocinnamate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.isobutyrate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.lactate": {
+        "moduleId": 13,
+        "moduleSize": 1
+      },
+      "ethyl.nicotinate": {
+        "moduleId": 22,
+        "moduleSize": 5
+      },
+      "ethyl.octadecanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.pentadecanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.pentanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.phenylacetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.tetradecanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl.tiglate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl_2.methyl_butyrate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl_acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl_decanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl_hexanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl_isovalerate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl_octanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ethyl_propionate": {
+        "moduleId": 2,
+        "moduleSize": 1
+      },
+      "eucalyptol": {
+        "moduleId": 21,
+        "moduleSize": 1
+      },
+      "eugenol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "foeniculin": {
+        "moduleId": 45,
+        "moduleSize": 1
+      },
+      "furfural": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "gamma.eudesmol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "gamma.nonalactone": {
+        "moduleId": 22,
+        "moduleSize": 5
+      },
+      "geosmin": {
+        "moduleId": 34,
+        "moduleSize": 1
+      },
+      "geraniol": {
+        "moduleId": 30,
+        "moduleSize": 1
+      },
+      "germacrene.D": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "glycerol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "heptyl.acetate": {
+        "moduleId": 26,
+        "moduleSize": 1
+      },
+      "hexyl.acetate": {
+        "moduleId": 19,
+        "moduleSize": 1
+      },
+      "humulene.epoxide.II": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "hydroxy.methyl.furfural": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "iron": {
+        "moduleId": 8,
+        "moduleSize": 3
+      },
+      "isoamyl.lactate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isoamyl_alcohol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isoborneol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isobutanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isobutyl.hexanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isobutyl_acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isomaltol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isopentyl.butanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isopentyl.formate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isopentyl.hexanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isopentyl_acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isopropyl.hexadecanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "isopropyl.laurate": {
+        "moduleId": 43,
+        "moduleSize": 1
+      },
+      "isopropyl.tetradecanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "lactic_acid.mg.L.": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "limonene": {
+        "moduleId": 20,
+        "moduleSize": 1
+      },
+      "linalool": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "linalool.isovalerate": {
+        "moduleId": 38,
+        "moduleSize": 1
+      },
+      "manool": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "manool.oxide": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "meta.cymenene": {
+        "moduleId": 24,
+        "moduleSize": 1
+      },
+      "methyl.geranate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "methyl.hexadecanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "methyl.para.anisate": {
+        "moduleId": 33,
+        "moduleSize": 1
+      },
+      "methylpyrazine": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "n.decanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "n.dodecanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "n.heptanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "n.hexanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "n.nonanal": {
+        "moduleId": 25,
+        "moduleSize": 1
+      },
+      "n.nonanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "n.octanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "n.pentanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "n.tetradecanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "neo.allo.ocimene": {
+        "moduleId": 27,
+        "moduleSize": 2
+      },
+      "nerol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "nerol.oxide": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "neryl.formate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "neryl.isobutanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "neryl.isovalerate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "neryl.propanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "nonan.2.ol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "octyl_acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "ortho.cresol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "pentyl.octanoate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "perillyl.acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "phenethyl_acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "phenethyl_alcohol": {
+        "moduleId": 3,
+        "moduleSize": 1
+      },
+      "phenylacetaldehyde": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "prenyl.isobutyrate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "propyl.acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "propylene.glycol": {
+        "moduleId": 11,
+        "moduleSize": 1
+      },
+      "protein.g.L.": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "selin.11.en.4.alpha.ol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "spathulenol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "styrene": {
+        "moduleId": 15,
+        "moduleSize": 1
+      },
+      "tau.cadinol": {
+        "moduleId": 44,
+        "moduleSize": 1
+      },
+      "tau.muurolol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "terpinen.4.ol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "terpinen.4.ol.acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "terpinolene": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "trans.dihydro.alpha.terpinyl.acetate": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "trans.dihydro.beta.terpineol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "valencene": {
+        "moduleId": 39,
+        "moduleSize": 1
+      },
+      "vanillin": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "vinyl.caprylate": {
+        "moduleId": 29,
+        "moduleSize": 1
+      },
+      "x.methyl.1.octanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      },
+      "y.methyl.1.octanol": {
+        "moduleId": 0,
+        "moduleSize": 172
+      }
+    },
+    "count": 51,
+    "edgeCount": 732,
+    "moduleSizes": [
+      172,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "note": "modules are connected components of the |W| graph built on the 231 train-fold features (tau = 0.5); derive on the delivered graph, not on the test rows"
+  },
+  "point_vs_bootstrap": {
+    "consensus": {
+      "changedDimensions": 24,
+      "meanJaccard": 0.736
+    },
+    "graph_lowrank": {
+      "changedDimensions": 26,
+      "meanJaccard": 0.7340000000000001
+    },
+    "total_spearman": {
+      "changedDimensions": 15,
+      "meanJaccard": 0.85
+    },
+    "within_style_spearman": {
+      "changedDimensions": 15,
+      "meanJaccard": 0.85
+    }
+  },
+  "sets_path": "sets.json",
+  "sets_point_estimate_path": "sets_point_estimate.json",
+  "settings": {
+    "bootstrapReps": 500,
+    "candidates": "219 single-compound columns (COMPOUND_CANDIDATES); the 5 derived sums and 7 physical parameters are excluded",
+    "coverage": {
+      "nDatasetRows": 250,
+      "nTrainRows": 200,
+      "trainRowsFoundInDataset": 200
+    },
+    "delivery": "Top-3 per (dimension, method) ordered by bootstrap selection frequency pi, ties broken by the point-estimate score, then by the frozen candidate order",
+    "direction": "sign of the total Spearman correlation for the delivered (consensus) rows",
+    "external": "6.csv is used only as external corroboration (rank correlation), never for fitting",
+    "graph": {
+      "gamma": 0.1,
+      "lambda": 1.0,
+      "nIter": 25,
+      "rank": 6,
+      "representation": "zscore",
+      "tau": 0.5
+    },
+    "k": 3,
+    "method": "consensus of total Spearman / within-style Spearman / graph low-rank |B|",
+    "modelKind": "candidate",
+    "scoring": "ingredient scores are |Spearman|, |within-style partial Spearman on ranks| and |B_jt|; consensus = mean of the three within-dimension percentile ranks over the 219 candidates",
+    "seed": 20261024,
+    "styleConfoundRule": "style-driven if |rho_total| >= 0.25 and |rho_within| < 0.5|rho_total|; within-consistent if |rho_within| >= 0.8|rho_total|; otherwise mixed",
+    "tau": 0.5,
+    "trainingRows": "200 rows of data/splits/SPLIT-0001/train.csv (registered dependency; the Q2 experiment hangs no split)"
+  },
+  "tau_sensitivity": {
+    "0.4": {
+      "components": 13,
+      "edges": 1851,
+      "methods": {
+        "consensus": {
+          "changedDimensionsVs05": 20,
+          "meanJaccardVs05": 0.8
+        },
+        "graph_lowrank": {
+          "changedDimensionsVs05": 24,
+          "meanJaccardVs05": 0.748
+        },
+        "total_spearman": {
+          "changedDimensionsVs05": 0,
+          "meanJaccardVs05": 1.0
+        },
+        "within_style_spearman": {
+          "changedDimensionsVs05": 0,
+          "meanJaccardVs05": 1.0
+        }
+      }
+    },
+    "0.5": {
+      "components": 51,
+      "edges": 732,
+      "methods": {
+        "consensus": {
+          "changedDimensionsVs05": 0,
+          "meanJaccardVs05": 1.0
+        },
+        "graph_lowrank": {
+          "changedDimensionsVs05": 0,
+          "meanJaccardVs05": 1.0
+        },
+        "total_spearman": {
+          "changedDimensionsVs05": 0,
+          "meanJaccardVs05": 1.0
+        },
+        "within_style_spearman": {
+          "changedDimensionsVs05": 0,
+          "meanJaccardVs05": 1.0
+        }
+      }
+    },
+    "0.6": {
+      "components": 108,
+      "edges": 291,
+      "methods": {
+        "consensus": {
+          "changedDimensionsVs05": 10,
+          "meanJaccardVs05": 0.9
+        },
+        "graph_lowrank": {
+          "changedDimensionsVs05": 21,
+          "meanJaccardVs05": 0.772
+        },
+        "total_spearman": {
+          "changedDimensionsVs05": 0,
+          "meanJaccardVs05": 1.0
+        },
+        "within_style_spearman": {
+          "changedDimensionsVs05": 0,
+          "meanJaccardVs05": 1.0
+        }
+      }
+    }
+  }
+}

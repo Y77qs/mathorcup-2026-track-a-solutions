@@ -1,0 +1,312 @@
+{
+  "constraint-definitions": {
+    "constraintSatisfaction": "fraction of generated rows with all three excesses <= 0 and t2n_margin >= 0",
+    "energyDistance": "E^2 = 2E||X-Y|| - E||X-X'|| - E||Y-Y'|| in the standardised chemical space; E_norm = sqrt(max(E^2,0)/D_ref) at the real sample size",
+    "slotEvaluation": "the unconditional samples are exchangeable; sample k is compared with real row k's style, so the per-style energy distances are a fair unconditional reference",
+    "storageScale": "log10 tier -> 10**x, linear tier -> x; a non-detect cell counts as 0",
+    "t2nBound": "global q90 of the t2n label (the baseline has no style information)",
+    "thresholdMean": {
+      "DMS": 17.25,
+      "X2.3.butanedione": 0.29925,
+      "X4VG": 0.206333333
+    }
+  },
+  "defect-rates": {
+    "generated": {
+      "DMS": 0.7,
+      "X2.3.butanedione": 0.548,
+      "X4VG": 0.028
+    },
+    "real": {
+      "DMS": 0.672,
+      "X2.3.butanedione": 0.448,
+      "X4VG": 0.064
+    }
+  },
+  "figure-manifest": [
+    "figures/baseline-energy-distance.png",
+    "figures/baseline-defect-exceedance.png"
+  ],
+  "model": {
+    "constraintHandling": "none (the four constraint columns are reported, not enforced)",
+    "covarianceEstimator": "Ledoit-Wolf shrinkage on standardised columns",
+    "dimension": 281,
+    "family": "unconditional multivariate Gaussian",
+    "sampling": "250 draws from N(0, Sigma) in the 281-dim standardised space, then un-standardised",
+    "shrinkage": 0.22234388004406802,
+    "topEigenvalues": [
+      25.785760098048303,
+      18.789126198625738,
+      11.978713446172973,
+      10.337701352416332,
+      7.905407955631154,
+      7.138814261396206,
+      6.015309632961239,
+      5.936095289863336,
+      5.123930528420743,
+      4.41502141359792
+    ]
+  },
+  "profile-table": {
+    "Amber": {
+      "mae": 0.10655404766696909,
+      "n": 12,
+      "spearman": 0.041152460984393756
+    },
+    "Blond": {
+      "mae": 0.12310322782551218,
+      "n": 31,
+      "spearman": -0.1543817527010804
+    },
+    "Brett/cofermented": {
+      "mae": 0.3151039055915087,
+      "n": 6,
+      "spearman": -0.474765906362545
+    },
+    "Brown": {
+      "mae": 0.19219055680226296,
+      "n": 12,
+      "spearman": -0.47265306122448975
+    },
+    "Brut": {
+      "mae": 0.39075704223144236,
+      "n": 4,
+      "spearman": 0.12701080432172868
+    },
+    "Christmas": {
+      "mae": 0.317042183624023,
+      "n": 9,
+      "spearman": 0.13776710684273707
+    },
+    "Dubbel": {
+      "mae": 0.1606793127420417,
+      "n": 10,
+      "spearman": 0.3863145258103241
+    },
+    "Faro": {
+      "mae": 0.455449971545566,
+      "n": 3,
+      "spearman": 0.1413205282112845
+    },
+    "Flanders old brown": {
+      "mae": 0.2547053184134275,
+      "n": 5,
+      "spearman": -0.33695078031212483
+    },
+    "Fruitbeer": {
+      "mae": 0.5155203014878716,
+      "n": 8,
+      "spearman": -0.5695558223289315
+    },
+    "Hoppy": {
+      "mae": 0.2887701041285216,
+      "n": 17,
+      "spearman": -0.027130852340936373
+    },
+    "Kriek": {
+      "mae": 0.4428383884720648,
+      "n": 10,
+      "spearman": 0.2737575030012005
+    },
+    "Lambic": {
+      "mae": 0.2477250192327945,
+      "n": 11,
+      "spearman": 0.0875390156062425
+    },
+    "Low/No alcohol": {
+      "mae": 0.3848991374574069,
+      "n": 8,
+      "spearman": 0.44499399759903957
+    },
+    "Pils/Lager": {
+      "mae": 0.34999270434928187,
+      "n": 11,
+      "spearman": -0.6209363745498199
+    },
+    "Saison": {
+      "mae": 0.22898807134793778,
+      "n": 10,
+      "spearman": 0.389483793517407
+    },
+    "Scotch": {
+      "mae": 0.35931250791173197,
+      "n": 5,
+      "spearman": -0.18050420168067227
+    },
+    "Stout/Porter": {
+      "mae": 0.2477474666543389,
+      "n": 13,
+      "spearman": 0.18521008403361344
+    },
+    "Strong ale": {
+      "mae": 0.304277452636875,
+      "n": 18,
+      "spearman": 0.06237695078031212
+    },
+    "Tripel": {
+      "mae": 0.10441550128073863,
+      "n": 28,
+      "spearman": 0.49051620648259303
+    },
+    "West Flanders ale": {
+      "mae": 0.33445171725153244,
+      "n": 7,
+      "spearman": -0.47102040816326524
+    },
+    "Wheat": {
+      "mae": 0.234903667588316,
+      "n": 12,
+      "spearman": -0.31006002400960386
+    }
+  },
+  "proxy-notes": {
+    "alphaSelection": "5-fold CV inside the 250 rows, per target",
+    "cvR2": {
+      "stale_hops": 0.05025260385796093,
+      "t2n": 0.0548889784422808
+    },
+    "leakage": "the baseline is fitted on all 250 rows by definition, so the proxy is also fitted on all 250 rows; the candidate's main score fits its proxy inside the training folds",
+    "usage": "the 50-label ridge map is a proxy for the t2n constraint and profile reporting only"
+  },
+  "samples-provenance": {
+    "groups": {
+      "generation": 250
+    },
+    "note": "row is a 0-based baseline sample id; slot is the real row whose style is used for the per-style energy distance",
+    "rows": 250
+  },
+  "style-table": {
+    "Amber": {
+      "dref": 19.040851677728465,
+      "energy": 0.9095665641665479,
+      "n": 12,
+      "realRef": 0.1667849920275866
+    },
+    "Blond": {
+      "dref": 20.39456128347953,
+      "energy": 0.7675283875955344,
+      "n": 31,
+      "realRef": 0.1288570582468063
+    },
+    "Brett/cofermented": {
+      "dref": 21.734200644157028,
+      "energy": 1.0196826809702355,
+      "n": 6,
+      "realRef": 0.18238762586763313
+    },
+    "Brown": {
+      "dref": 17.013630554221322,
+      "energy": 0.6373035881822807,
+      "n": 12,
+      "realRef": 0.1772633688881519
+    },
+    "Brut": {
+      "dref": 31.733743197103873,
+      "energy": 1.9712112861178668,
+      "n": 4,
+      "realRef": 0.03565046503316067
+    },
+    "Christmas": {
+      "dref": 19.272940449817387,
+      "energy": 0.763176897578631,
+      "n": 9,
+      "realRef": 0.18995152400379767
+    },
+    "Dubbel": {
+      "dref": 14.789090682253871,
+      "energy": 0.6407403951182472,
+      "n": 10,
+      "realRef": 0.20806675465282265
+    },
+    "Faro": {
+      "dref": 19.45204747376011,
+      "energy": 3.481521557342582,
+      "n": 3,
+      "realRef": 0.0
+    },
+    "Flanders old brown": {
+      "dref": 16.899679410398473,
+      "energy": 0.37416603368984247,
+      "n": 5,
+      "realRef": 0.11326383654060201
+    },
+    "Fruitbeer": {
+      "dref": 24.812776843685025,
+      "energy": 0.6823956073912686,
+      "n": 8,
+      "realRef": 0.3159002067231021
+    },
+    "Hoppy": {
+      "dref": 19.028185272750825,
+      "energy": 0.8523239775919803,
+      "n": 17,
+      "realRef": 0.14569123044306861
+    },
+    "Kriek": {
+      "dref": 19.663953766711728,
+      "energy": 0.19574451292230746,
+      "n": 10,
+      "realRef": 0.6295710503765205
+    },
+    "Lambic": {
+      "dref": 16.631455779836173,
+      "energy": 0.8510883684431104,
+      "n": 11,
+      "realRef": 0.236643690361524
+    },
+    "Low/No alcohol": {
+      "dref": 23.091867397548146,
+      "energy": 0.5488513959089735,
+      "n": 8,
+      "realRef": 0.3287426528947235
+    },
+    "Pils/Lager": {
+      "dref": 15.196805080035249,
+      "energy": 1.1714563619763292,
+      "n": 11,
+      "realRef": 0.1759023180090967
+    },
+    "Saison": {
+      "dref": 17.013012434167166,
+      "energy": 0.19215200526271847,
+      "n": 10,
+      "realRef": 0.29044226823347535
+    },
+    "Scotch": {
+      "dref": 17.8694912290346,
+      "energy": 0.6029731659859465,
+      "n": 5,
+      "realRef": 0.12239165324170859
+    },
+    "Stout/Porter": {
+      "dref": 20.062026269995854,
+      "energy": 0.45908963251614215,
+      "n": 13,
+      "realRef": 0.16211579399495232
+    },
+    "Strong ale": {
+      "dref": 17.878956850558833,
+      "energy": 0.8395086887656275,
+      "n": 18,
+      "realRef": 0.16196351468198597
+    },
+    "Tripel": {
+      "dref": 18.270324410477606,
+      "energy": 0.7587195608211385,
+      "n": 28,
+      "realRef": 0.13968037846784678
+    },
+    "West Flanders ale": {
+      "dref": 17.600317897245226,
+      "energy": 0.4707325745465896,
+      "n": 7,
+      "realRef": 0.175519755594814
+    },
+    "Wheat": {
+      "dref": 16.239759453589507,
+      "energy": 0.8129648145310643,
+      "n": 12,
+      "realRef": 0.21397061065794162
+    }
+  }
+}

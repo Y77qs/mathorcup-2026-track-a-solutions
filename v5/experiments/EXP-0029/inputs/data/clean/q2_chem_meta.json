@@ -1,0 +1,2332 @@
+{
+ "features": [
+  {
+   "name": "acetaldehyde",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 0,
+   "corrLabel": "Acetaldehyde",
+   "floorCoded": false
+  },
+  {
+   "name": "CS2",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 1,
+   "corrLabel": "Carbon disulfide",
+   "floorCoded": false
+  },
+  {
+   "name": "DES",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 2,
+   "corrLabel": "Diethyl sulfide",
+   "floorCoded": false
+  },
+  {
+   "name": "DMS",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 3,
+   "corrLabel": "Dimethyl sulfide",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl_2.methyl_butyrate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 4,
+   "corrLabel": "Ethyl 2-methylbutyrate",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl_acetate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 5,
+   "corrLabel": "Ethyl acetate",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl_decanoate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 6,
+   "corrLabel": "Ethyl decanoate",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl_hexanoate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 7,
+   "corrLabel": "Ethyl hexanoate",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl_isovalerate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 8,
+   "corrLabel": "Ethyl 3-methylbutyrate",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl_octanoate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 9,
+   "corrLabel": "Ethyl octanoate",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl_propionate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 10,
+   "corrLabel": "Ethyl propionate",
+   "floorCoded": false
+  },
+  {
+   "name": "H2S",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 11,
+   "corrLabel": "Hydrogen sulfide",
+   "floorCoded": false
+  },
+  {
+   "name": "isoamyl_alcohol",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 12,
+   "corrLabel": "Isoamyl alcohol",
+   "floorCoded": false
+  },
+  {
+   "name": "isobutanol",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 13,
+   "corrLabel": "Isobutanol",
+   "floorCoded": false
+  },
+  {
+   "name": "isobutyl_acetate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 14,
+   "corrLabel": "Isobutyl acetate",
+   "floorCoded": false
+  },
+  {
+   "name": "isopentyl_acetate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 15,
+   "corrLabel": "Isoamyl acetate",
+   "floorCoded": false
+  },
+  {
+   "name": "MeSH",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 16,
+   "corrLabel": "Methanethiol",
+   "floorCoded": false
+  },
+  {
+   "name": "octyl_acetate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 17,
+   "corrLabel": "Octyl acetate",
+   "floorCoded": false
+  },
+  {
+   "name": "phenethyl_acetate",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 18,
+   "corrLabel": "Phenethyl acetate",
+   "floorCoded": false
+  },
+  {
+   "name": "phenethyl_alcohol",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 19,
+   "corrLabel": "Phenethyl alcohol",
+   "floorCoded": false
+  },
+  {
+   "name": "X4VG",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 20,
+   "corrLabel": "4-vinylguaiacol",
+   "floorCoded": false
+  },
+  {
+   "name": "SO2.mg.L.",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 21,
+   "corrLabel": "Sulfur dioxide",
+   "floorCoded": false
+  },
+  {
+   "name": "acetic_acid.g.L.",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 22,
+   "corrLabel": "Acetic acid",
+   "floorCoded": false
+  },
+  {
+   "name": "ammonia.mg.L.",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 23,
+   "corrLabel": "Ammonia",
+   "floorCoded": false
+  },
+  {
+   "name": "color.EBC.",
+   "kind": "physical_parameter",
+   "tier": "calibrated_log10",
+   "corrIndex": 24,
+   "corrLabel": "Color",
+   "floorCoded": false
+  },
+  {
+   "name": "betaglucan.mg.L.",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 25,
+   "corrLabel": "Betaglucan",
+   "floorCoded": false
+  },
+  {
+   "name": "lactic_acid.mg.L.",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 26,
+   "corrLabel": "Lactic acid",
+   "floorCoded": false
+  },
+  {
+   "name": "glycerol",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 27,
+   "corrLabel": "Glycerol",
+   "floorCoded": false
+  },
+  {
+   "name": "iron",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 28,
+   "corrLabel": "Iron",
+   "floorCoded": false
+  },
+  {
+   "name": "pH",
+   "kind": "physical_parameter",
+   "tier": "calibrated_log10",
+   "corrIndex": 29,
+   "corrLabel": "pH",
+   "floorCoded": false
+  },
+  {
+   "name": "protein.g.L.",
+   "kind": "single_compound",
+   "tier": "calibrated_log10",
+   "corrIndex": 30,
+   "corrLabel": "Protein",
+   "floorCoded": false
+  },
+  {
+   "name": "bitterness",
+   "kind": "physical_parameter",
+   "tier": "calibrated_log10",
+   "corrIndex": 31,
+   "corrLabel": "Iso-alpha acids",
+   "floorCoded": false
+  },
+  {
+   "name": "GFS",
+   "kind": "physical_parameter",
+   "tier": "calibrated_log10",
+   "corrIndex": 32,
+   "corrLabel": "Sugars",
+   "floorCoded": false
+  },
+  {
+   "name": "ethanol..v.v.",
+   "kind": "physical_parameter",
+   "tier": "calibrated_log10",
+   "corrIndex": 33,
+   "corrLabel": "Ethanol",
+   "floorCoded": false
+  },
+  {
+   "name": "CO2.PSI.",
+   "kind": "physical_parameter",
+   "tier": "calibrated_log10",
+   "corrIndex": 34,
+   "corrLabel": "Carbon dioxide",
+   "floorCoded": false
+  },
+  {
+   "name": "unfermentables",
+   "kind": "physical_parameter",
+   "tier": "calibrated_log10",
+   "corrIndex": 35,
+   "corrLabel": "Unfermentables",
+   "floorCoded": false
+  },
+  {
+   "name": "kcalperc",
+   "kind": "derived_sum",
+   "tier": "calibrated_log10",
+   "corrIndex": 36,
+   "corrLabel": "Caloric value",
+   "floorCoded": false
+  },
+  {
+   "name": "X1.propanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 37,
+   "corrLabel": "1-propanol",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.3.butanedione",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 38,
+   "corrLabel": "Diacetyl",
+   "floorCoded": false
+  },
+  {
+   "name": "X3.methylbutanal",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 39,
+   "corrLabel": "3-methylbutanal",
+   "floorCoded": false
+  },
+  {
+   "name": "propylene.glycol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 40,
+   "corrLabel": "Propylene glycol",
+   "floorCoded": true
+  },
+  {
+   "name": "propyl.acetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 41,
+   "corrLabel": "N-propyl acetate",
+   "floorCoded": true
+  },
+  {
+   "name": "n.pentanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 42,
+   "corrLabel": "N-pentanol",
+   "floorCoded": false
+  },
+  {
+   "name": "X2.methyl.1.butanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 43,
+   "corrLabel": "2-methyl-1-butanol",
+   "floorCoded": false
+  },
+  {
+   "name": "isopentyl.formate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 44,
+   "corrLabel": "Isopentyl formate",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl.isobutyrate",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 45,
+   "corrLabel": "Ethyl isobutyrate",
+   "floorCoded": false
+  },
+  {
+   "name": "X3.methyl.2.butenal",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 46,
+   "corrLabel": "3-methyl-2-butenal",
+   "floorCoded": false
+  },
+  {
+   "name": "X2.methyltetrahydrofuran.3.one",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 47,
+   "corrLabel": "2-methyltetrahydrofuran-3-one",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl.butyrate",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 48,
+   "corrLabel": "Ethyl butyrate",
+   "floorCoded": false
+  },
+  {
+   "name": "butyl.acetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 49,
+   "corrLabel": "Butyl acetate",
+   "floorCoded": true
+  },
+  {
+   "name": "methylpyrazine",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 50,
+   "corrLabel": "Methylpyrazine",
+   "floorCoded": false
+  },
+  {
+   "name": "furfural",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 51,
+   "corrLabel": "Furfural",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl.lactate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 52,
+   "corrLabel": "Ethyl lactate",
+   "floorCoded": true
+  },
+  {
+   "name": "X3Z.hexenol",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 53,
+   "corrLabel": "Cis-3-hexenol",
+   "floorCoded": false
+  },
+  {
+   "name": "n.hexanol",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 54,
+   "corrLabel": "N-hexanol",
+   "floorCoded": false
+  },
+  {
+   "name": "styrene",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 55,
+   "corrLabel": "Styrene",
+   "floorCoded": false
+  },
+  {
+   "name": "X2.furanmethanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 56,
+   "corrLabel": "Furfuryl alcohol",
+   "floorCoded": true
+  },
+  {
+   "name": "X3.methyl.2.hexanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 57,
+   "corrLabel": "3-methyl-2-hexanol",
+   "floorCoded": false
+  },
+  {
+   "name": "X3.furanmethanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 58,
+   "corrLabel": "3-furanmethanol",
+   "floorCoded": false
+  },
+  {
+   "name": "X2.acetylfuran",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 59,
+   "corrLabel": "2-acetylfuran",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.6.dimethyl.pyrazine",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 60,
+   "corrLabel": "2,6-dimethylpyrazine",
+   "floorCoded": true
+  },
+  {
+   "name": "amyl.acetate",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 61,
+   "corrLabel": "Amyl acetate",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl.tiglate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 62,
+   "corrLabel": "Ethyl tiglate",
+   "floorCoded": true
+  },
+  {
+   "name": "benzaldehyde",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 63,
+   "corrLabel": "Benzaldehyde",
+   "floorCoded": false
+  },
+  {
+   "name": "X5.methylfurfural",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 64,
+   "corrLabel": "5-methylfurfural",
+   "floorCoded": false
+  },
+  {
+   "name": "n.heptanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 65,
+   "corrLabel": "N-heptanol",
+   "floorCoded": false
+  },
+  {
+   "name": "X1.octen.3.ol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 66,
+   "corrLabel": "1-octen-3-ol",
+   "floorCoded": true
+  },
+  {
+   "name": "X3.methylthio.propanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 67,
+   "corrLabel": "Methionol",
+   "floorCoded": true
+  },
+  {
+   "name": "isomaltol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 68,
+   "corrLabel": "Isomaltol",
+   "floorCoded": true
+  },
+  {
+   "name": "X6.methyl.5.hepten.2.one",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 69,
+   "corrLabel": "Methyl heptenone",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.pentyl.furan",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 70,
+   "corrLabel": "2-pentyl furan",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.hex..3E..enoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 71,
+   "corrLabel": "Ethyl 3-hexanoate",
+   "floorCoded": false
+  },
+  {
+   "name": "alpha.phellandrene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 72,
+   "corrLabel": "α-phellandrene",
+   "floorCoded": true
+  },
+  {
+   "name": "dehydroxy.cis.linalool.oxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 73,
+   "corrLabel": "Dehydroxy-cis-linalool oxide",
+   "floorCoded": true
+  },
+  {
+   "name": "hexyl.acetate",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 74,
+   "corrLabel": "Hexyl acetate",
+   "floorCoded": false
+  },
+  {
+   "name": "isopentyl.butanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 75,
+   "corrLabel": "Isopentyl butanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.ethyl.1.hexanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 76,
+   "corrLabel": "2-ethyl-1-hexanol",
+   "floorCoded": true
+  },
+  {
+   "name": "beta.phellandrene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 77,
+   "corrLabel": "Beta-phellandrene",
+   "floorCoded": true
+  },
+  {
+   "name": "limonene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 78,
+   "corrLabel": "Limonene",
+   "floorCoded": true
+  },
+  {
+   "name": "eucalyptol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 79,
+   "corrLabel": "Eucalyptol",
+   "floorCoded": true
+  },
+  {
+   "name": "benzyl.alcohol",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 80,
+   "corrLabel": "Benzyl alcohol",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl.hex..2E..enoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 81,
+   "corrLabel": "Ethyl 2-hexenoate",
+   "floorCoded": true
+  },
+  {
+   "name": "phenylacetaldehyde",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 82,
+   "corrLabel": "Phenylacetaldehyde",
+   "floorCoded": false
+  },
+  {
+   "name": "X.E..beta.ocimene",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 83,
+   "corrLabel": "E-β-ocimene",
+   "floorCoded": false
+  },
+  {
+   "name": "prenyl.isobutyrate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 84,
+   "corrLabel": "Prenyl isobutyrate",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.furoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 85,
+   "corrLabel": "Ethyl furoate",
+   "floorCoded": true
+  },
+  {
+   "name": "ortho.cresol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 86,
+   "corrLabel": "O-cresol",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.5.methylhexanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 87,
+   "corrLabel": "Ethyl 5-methylhexanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.acetylpyrrole",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 88,
+   "corrLabel": "2-acetylpyrrole",
+   "floorCoded": true
+  },
+  {
+   "name": "isoamyl.lactate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 89,
+   "corrLabel": "Isoamyl lactate",
+   "floorCoded": true
+  },
+  {
+   "name": "n.octanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 90,
+   "corrLabel": "N-octanol",
+   "floorCoded": false
+  },
+  {
+   "name": "cis.linalool.oxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 91,
+   "corrLabel": "Cis-linalool oxide",
+   "floorCoded": true
+  },
+  {
+   "name": "meta.cymenene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 92,
+   "corrLabel": "Meta-cymenene",
+   "floorCoded": true
+  },
+  {
+   "name": "terpinolene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 93,
+   "corrLabel": "Terpinolene",
+   "floorCoded": false
+  },
+  {
+   "name": "linalool",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 94,
+   "corrLabel": "Linalool",
+   "floorCoded": false
+  },
+  {
+   "name": "nonan.2.ol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 95,
+   "corrLabel": "2-nonanol",
+   "floorCoded": false
+  },
+  {
+   "name": "n.nonanal",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 96,
+   "corrLabel": "N-nonanal",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.methyl.benzofuran",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 97,
+   "corrLabel": "2-methyl-benzofuran",
+   "floorCoded": true
+  },
+  {
+   "name": "heptyl.acetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 98,
+   "corrLabel": "Heptyl acetate",
+   "floorCoded": true
+  },
+  {
+   "name": "X4.methyl.1.pentanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 99,
+   "corrLabel": "4-methyl-1-pentanol",
+   "floorCoded": true
+  },
+  {
+   "name": "neo.allo.ocimene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 100,
+   "corrLabel": "Neo-allo-ocimene",
+   "floorCoded": true
+  },
+  {
+   "name": "x.methyl.1.octanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 101,
+   "corrLabel": "X-methyl-1-octanol",
+   "floorCoded": true
+  },
+  {
+   "name": "trans.dihydro.beta.terpineol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 102,
+   "corrLabel": "Trans-dihydro-β-terpineol",
+   "floorCoded": true
+  },
+  {
+   "name": "cis.beta.terpineol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 103,
+   "corrLabel": "Cis-β-terpineol",
+   "floorCoded": true
+  },
+  {
+   "name": "y.methyl.1.octanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 104,
+   "corrLabel": "Y-methyl-1-octanol",
+   "floorCoded": true
+  },
+  {
+   "name": "camphor",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 105,
+   "corrLabel": "Camphor",
+   "floorCoded": true
+  },
+  {
+   "name": "isobutyl.hexanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 106,
+   "corrLabel": "Isobutyl hexanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "nerol.oxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 107,
+   "corrLabel": "Nerol oxide",
+   "floorCoded": true
+  },
+  {
+   "name": "X.E..2.nonenal",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 108,
+   "corrLabel": "E-2-nonenal",
+   "floorCoded": false
+  },
+  {
+   "name": "cis.dihydro.beta.terpineol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 109,
+   "corrLabel": "Cis-dihydro-β-terpineol",
+   "floorCoded": true
+  },
+  {
+   "name": "X4.ethyl.phenol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 110,
+   "corrLabel": "4-ethyl-phenol",
+   "floorCoded": true
+  },
+  {
+   "name": "isoborneol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 111,
+   "corrLabel": "Isoborneol",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl.benzoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 112,
+   "corrLabel": "Ethyl benzoate",
+   "floorCoded": false
+  },
+  {
+   "name": "n.nonanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 113,
+   "corrLabel": "N-nonanol",
+   "floorCoded": true
+  },
+  {
+   "name": "terpinen.4.ol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 114,
+   "corrLabel": "Terpinen-4-ol",
+   "floorCoded": true
+  },
+  {
+   "name": "diethyl.succinate",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 115,
+   "corrLabel": "Diethyl succinate",
+   "floorCoded": false
+  },
+  {
+   "name": "vinyl.caprylate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 116,
+   "corrLabel": "Vinyl caprylate",
+   "floorCoded": true
+  },
+  {
+   "name": "X1.alpha.terpineol",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 117,
+   "corrLabel": "Alpha-terpineol",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl..E..linalool",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 118,
+   "corrLabel": "Ethyl linalool",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.nicotinate",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 119,
+   "corrLabel": "Ethyl nicotinate",
+   "floorCoded": false
+  },
+  {
+   "name": "citronellol",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 120,
+   "corrLabel": "Citronellol",
+   "floorCoded": false
+  },
+  {
+   "name": "nerol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 121,
+   "corrLabel": "Nerol",
+   "floorCoded": true
+  },
+  {
+   "name": "hydroxy.methyl.furfural",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 122,
+   "corrLabel": "5-hydroxymethylfurfural",
+   "floorCoded": true
+  },
+  {
+   "name": "E.ocimenone",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 123,
+   "corrLabel": "Ocimenone",
+   "floorCoded": true
+  },
+  {
+   "name": "cumin.aldehyde",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 124,
+   "corrLabel": "Cumin aldehyde",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.phenylacetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 125,
+   "corrLabel": "Ethyl phenylacetate",
+   "floorCoded": true
+  },
+  {
+   "name": "isopentyl.hexanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 126,
+   "corrLabel": "Isopentyl hexanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "geraniol",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 127,
+   "corrLabel": "Geraniol",
+   "floorCoded": false
+  },
+  {
+   "name": "beta.cyclohomocitral",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 128,
+   "corrLabel": "β-cyclohomocitral",
+   "floorCoded": true
+  },
+  {
+   "name": "E.cinnamaldehyde",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 129,
+   "corrLabel": "Cinnamaldehyde",
+   "floorCoded": true
+  },
+  {
+   "name": "n.decanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 130,
+   "corrLabel": "N-decanol",
+   "floorCoded": true
+  },
+  {
+   "name": "neryl.formate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 131,
+   "corrLabel": "Neryl formate",
+   "floorCoded": true
+  },
+  {
+   "name": "X4.ethyl.guaiacol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 132,
+   "corrLabel": "4-ethyl-guaiacol",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.undecanone",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 133,
+   "corrLabel": "2-undecanone",
+   "floorCoded": true
+  },
+  {
+   "name": "trans.dihydro.alpha.terpinyl.acetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 134,
+   "corrLabel": "Trans-dihydro-α-terpinyl acetate",
+   "floorCoded": false
+  },
+  {
+   "name": "terpinen.4.ol.acetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 135,
+   "corrLabel": "Terpinen-4-ol acetate",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.undecanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 136,
+   "corrLabel": "2-undecanol",
+   "floorCoded": true
+  },
+  {
+   "name": "delta.terpinyl.acetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 137,
+   "corrLabel": "Terpiryl acetate",
+   "floorCoded": true
+  },
+  {
+   "name": "X.E.E..2.4.decadienal",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 138,
+   "corrLabel": "E,E-2,4-decadienal",
+   "floorCoded": false
+  },
+  {
+   "name": "methyl.geranate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 139,
+   "corrLabel": "Methyl geranate",
+   "floorCoded": true
+  },
+  {
+   "name": "car.3.en.2.one",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 140,
+   "corrLabel": "Car-3-en-2-one",
+   "floorCoded": true
+  },
+  {
+   "name": "dimethoxy..E..citral",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 141,
+   "corrLabel": "Dimethoxy-E-citral",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.butyloctanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 142,
+   "corrLabel": "2-butyl octanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "X4.methoxysalicylaldehyde",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 143,
+   "corrLabel": "4-methoxysalicylaldehyde",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.hydrocinnamate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 144,
+   "corrLabel": "Ethyl hydrocinnamate",
+   "floorCoded": true
+  },
+  {
+   "name": "eugenol",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 145,
+   "corrLabel": "Eugenol",
+   "floorCoded": false
+  },
+  {
+   "name": "gamma.nonalactone",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 146,
+   "corrLabel": "Gamma-nonalactone",
+   "floorCoded": false
+  },
+  {
+   "name": "methyl.para.anisate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 147,
+   "corrLabel": "Methyl para-anisate",
+   "floorCoded": true
+  },
+  {
+   "name": "X.E..beta.damascenone",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 148,
+   "corrLabel": "E-β-damascenone",
+   "floorCoded": false
+  },
+  {
+   "name": "ethyl..9..decenoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 149,
+   "corrLabel": "Ethyl 9-decenoate",
+   "floorCoded": true
+  },
+  {
+   "name": "vanillin",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 150,
+   "corrLabel": "Vanillin",
+   "floorCoded": true
+  },
+  {
+   "name": "geosmin",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 151,
+   "corrLabel": "Geosmin",
+   "floorCoded": true
+  },
+  {
+   "name": "dodecanal",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 152,
+   "corrLabel": "Dodecanal",
+   "floorCoded": true
+  },
+  {
+   "name": "X4.8.alpha.epoxy.caryophyllane",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 153,
+   "corrLabel": "4,8-α-epoxy-caryophyllane",
+   "floorCoded": true
+  },
+  {
+   "name": "E.caryophyllene",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 154,
+   "corrLabel": "Caryophyllene",
+   "floorCoded": false
+  },
+  {
+   "name": "X.E..alpha.ionone",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 155,
+   "corrLabel": "E-α-ionone",
+   "floorCoded": true
+  },
+  {
+   "name": "perillyl.acetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 156,
+   "corrLabel": "Perillyl acetate",
+   "floorCoded": true
+  },
+  {
+   "name": "beta.humulene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 157,
+   "corrLabel": "β-humulene",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.phenyl.ethyl.butyrate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 158,
+   "corrLabel": "2-phenyl ethyl butyrate",
+   "floorCoded": true
+  },
+  {
+   "name": "X.Z..beta.farnesene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 159,
+   "corrLabel": "Z-β-farnesene",
+   "floorCoded": true
+  },
+  {
+   "name": "pentyl.octanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 160,
+   "corrLabel": "Pentyl octanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "X.E..beta.farnesene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 161,
+   "corrLabel": "E-β-farnesene",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.methylbutyl.octanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 162,
+   "corrLabel": "2-methylbutyl octanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "alpha.humulene",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 163,
+   "corrLabel": "Alpha-humulene",
+   "floorCoded": false
+  },
+  {
+   "name": "neryl.propanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 164,
+   "corrLabel": "Neryl propanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "X9.epi..E..caryophyllene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 165,
+   "corrLabel": "9-epi-E-caryophyllene",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl..E..cinnamate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 166,
+   "corrLabel": "Ethyl cinnamate",
+   "floorCoded": true
+  },
+  {
+   "name": "linalool.isovalerate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 167,
+   "corrLabel": "Linalool isovalerate",
+   "floorCoded": true
+  },
+  {
+   "name": "alpha.terpinyl.isobutanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 168,
+   "corrLabel": "α-terpinyl isobutanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "n.dodecanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 169,
+   "corrLabel": "N-dodecanol",
+   "floorCoded": true
+  },
+  {
+   "name": "germacrene.D",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 170,
+   "corrLabel": "Germacrene D",
+   "floorCoded": true
+  },
+  {
+   "name": "X.E..beta.ionone",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 171,
+   "corrLabel": "E-β-ionone",
+   "floorCoded": false
+  },
+  {
+   "name": "valencene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 172,
+   "corrLabel": "Valencene",
+   "floorCoded": true
+  },
+  {
+   "name": "neryl.isobutanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 173,
+   "corrLabel": "Neryl isobutanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "E.methyl.isoeugenol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 174,
+   "corrLabel": "Methyl isoeugenol",
+   "floorCoded": true
+  },
+  {
+   "name": "X.Z..dihydro.apofarnesal",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 175,
+   "corrLabel": "Z-dihydro-apofarnesal",
+   "floorCoded": true
+  },
+  {
+   "name": "butylated.hydroxytoluene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 176,
+   "corrLabel": "Butylated hydroxytoluene",
+   "floorCoded": true
+  },
+  {
+   "name": "X.E..dihydro.apofarnesal",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 177,
+   "corrLabel": "E-dihydro-apofarnesal",
+   "floorCoded": true
+  },
+  {
+   "name": "Z.nerolidol",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 178,
+   "corrLabel": "Z-nerolidol",
+   "floorCoded": false
+  },
+  {
+   "name": "X.E..ortho.methoxy.cinnamaldehyde",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 179,
+   "corrLabel": "E-ortho-methoxy cinnamaldehyde",
+   "floorCoded": true
+  },
+  {
+   "name": "alpha.calacorene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 180,
+   "corrLabel": "α-calacorene",
+   "floorCoded": true
+  },
+  {
+   "name": "E.nerolidol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 181,
+   "corrLabel": "E-nerolidol",
+   "floorCoded": true
+  },
+  {
+   "name": "dihydroisocaryophyllene.epoxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 182,
+   "corrLabel": "Tobacarol",
+   "floorCoded": true
+  },
+  {
+   "name": "caryophyllene.alcohol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 183,
+   "corrLabel": "Caryophyllene alcohol",
+   "floorCoded": true
+  },
+  {
+   "name": "neryl.isovalerate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 184,
+   "corrLabel": "Neryl isovalerate",
+   "floorCoded": true
+  },
+  {
+   "name": "spathulenol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 185,
+   "corrLabel": "Spathulenol",
+   "floorCoded": true
+  },
+  {
+   "name": "caryophyllene.oxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 186,
+   "corrLabel": "Caryophyllene oxide",
+   "floorCoded": true
+  },
+  {
+   "name": "humulene.epoxide.II",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 187,
+   "corrLabel": "Humulene epoxide II",
+   "floorCoded": true
+  },
+  {
+   "name": "alloaromadendrene.epoxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 188,
+   "corrLabel": "Allo-aromadendrene epoxide",
+   "floorCoded": true
+  },
+  {
+   "name": "X1.10.di.epi.cubenol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 189,
+   "corrLabel": "Epicubenol",
+   "floorCoded": true
+  },
+  {
+   "name": "isopropyl.laurate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 190,
+   "corrLabel": "Isopropyl laurate",
+   "floorCoded": true
+  },
+  {
+   "name": "caryophylla.4.12..8.13..dien.5.alpha.ol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 191,
+   "corrLabel": "Caryophylla-4,8-dien-5-ol",
+   "floorCoded": true
+  },
+  {
+   "name": "gamma.eudesmol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 192,
+   "corrLabel": "Gamma-eudesmol",
+   "floorCoded": true
+  },
+  {
+   "name": "alpha.muurolol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 193,
+   "corrLabel": "α-muurolol",
+   "floorCoded": true
+  },
+  {
+   "name": "X1.2.dihydro.8.hydroxy..2E..linalool",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 194,
+   "corrLabel": "1,2-dihydro-8-hydroxy-2E-linalool",
+   "floorCoded": true
+  },
+  {
+   "name": "tau.cadinol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 195,
+   "corrLabel": "Tau-cadinol",
+   "floorCoded": true
+  },
+  {
+   "name": "selin.11.en.4.alpha.ol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 196,
+   "corrLabel": "Kongol",
+   "floorCoded": true
+  },
+  {
+   "name": "alpha.eudesmol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 197,
+   "corrLabel": "α-eudesmol",
+   "floorCoded": true
+  },
+  {
+   "name": "X14.hydroxy.9.epi..E..caryophyllene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 198,
+   "corrLabel": "14-hydroxy-9-epi-(E)-caryophyllene",
+   "floorCoded": true
+  },
+  {
+   "name": "tau.muurolol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 199,
+   "corrLabel": "Tau-muurolol",
+   "floorCoded": true
+  },
+  {
+   "name": "n.tetradecanol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 200,
+   "corrLabel": "N-tetradecanol",
+   "floorCoded": true
+  },
+  {
+   "name": "foeniculin",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 201,
+   "corrLabel": "Eoeniculin",
+   "floorCoded": true
+  },
+  {
+   "name": "cadalene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 202,
+   "corrLabel": "Cadalene",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.3.dihydro.farnesol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 203,
+   "corrLabel": "2,3-dihydro-farnesol",
+   "floorCoded": true
+  },
+  {
+   "name": "X2E.6Z.farnesal",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 204,
+   "corrLabel": "E,Z-farnesal",
+   "floorCoded": true
+  },
+  {
+   "name": "caryophyllene.acetate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 205,
+   "corrLabel": "Caryophyllene acetate",
+   "floorCoded": true
+  },
+  {
+   "name": "X14.hydroxy.alpha.humulene",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 206,
+   "corrLabel": "14-hydroxy-α-humulene",
+   "floorCoded": true
+  },
+  {
+   "name": "X2Z.6E.farnesal",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 207,
+   "corrLabel": "Z,E-farnesal",
+   "floorCoded": true
+  },
+  {
+   "name": "X2Z.6Z.farnesol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 208,
+   "corrLabel": "Z,Z-farnesol",
+   "floorCoded": true
+  },
+  {
+   "name": "X2Z.6E.farnesol",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 209,
+   "corrLabel": "Z,E-farnesol",
+   "floorCoded": true
+  },
+  {
+   "name": "ambroxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 210,
+   "corrLabel": "Ambroxide",
+   "floorCoded": true
+  },
+  {
+   "name": "benzyl.benzoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 211,
+   "corrLabel": "Benzyl benzoate",
+   "floorCoded": true
+  },
+  {
+   "name": "X2E.6E.methyl.farnesoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 212,
+   "corrLabel": "2E,6E-methyl farnesoate",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.tetradecanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 213,
+   "corrLabel": "Ethyl tetradecanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "X2.ethylhexylsalicylate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 214,
+   "corrLabel": "2-ethylhexyl acrylate",
+   "floorCoded": true
+  },
+  {
+   "name": "isopropyl.tetradecanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 215,
+   "corrLabel": "Isopropyl tetradecanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.pentadecanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 216,
+   "corrLabel": "Ethyl pentadecanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "methyl.hexadecanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 217,
+   "corrLabel": "Methyl hexadecanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "Z.Z.geranyl.linalool",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 218,
+   "corrLabel": "Z,Z-geranyl linalool",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.hexadecanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 219,
+   "corrLabel": "Ethyl hexadecanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "manool.oxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 220,
+   "corrLabel": "Manool oxide",
+   "floorCoded": true
+  },
+  {
+   "name": "X13.epi.manool.oxide",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 221,
+   "corrLabel": "13-epi manool oxide",
+   "floorCoded": true
+  },
+  {
+   "name": "isopropyl.hexadecanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 222,
+   "corrLabel": "Isopropyl hexadecanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "manool",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 223,
+   "corrLabel": "Manool",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.octadecanoate",
+   "kind": "single_compound",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 224,
+   "corrLabel": "Ethyl octadecanoate",
+   "floorCoded": true
+  },
+  {
+   "name": "ethyl.pentanoate",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 225,
+   "corrLabel": "Ethyl pentanoate",
+   "floorCoded": false
+  },
+  {
+   "name": "X2.ethyl.3.methylpyrazine",
+   "kind": "single_compound",
+   "tier": "calibrated_linear",
+   "corrIndex": 226,
+   "corrLabel": "2-ethyl-3-methylpyrazine",
+   "floorCoded": false
+  },
+  {
+   "name": "esters_sum",
+   "kind": "derived_sum",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 227,
+   "corrLabel": "Total ester compounds",
+   "floorCoded": false
+  },
+  {
+   "name": "aroma_hops_sum",
+   "kind": "derived_sum",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 228,
+   "corrLabel": "Total hop aroma compounds",
+   "floorCoded": false
+  },
+  {
+   "name": "acids_sum",
+   "kind": "derived_sum",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 229,
+   "corrLabel": "Total acids",
+   "floorCoded": false
+  },
+  {
+   "name": "sulfur_sum",
+   "kind": "derived_sum",
+   "tier": "unverified_storage_scale",
+   "corrIndex": 230,
+   "corrLabel": "Total sulfur compounds",
+   "floorCoded": false
+  }
+ ],
+ "compounds": [
+  "acetaldehyde",
+  "CS2",
+  "DES",
+  "DMS",
+  "ethyl_2.methyl_butyrate",
+  "ethyl_acetate",
+  "ethyl_decanoate",
+  "ethyl_hexanoate",
+  "ethyl_isovalerate",
+  "ethyl_octanoate",
+  "ethyl_propionate",
+  "H2S",
+  "isoamyl_alcohol",
+  "isobutanol",
+  "isobutyl_acetate",
+  "isopentyl_acetate",
+  "MeSH",
+  "octyl_acetate",
+  "phenethyl_acetate",
+  "phenethyl_alcohol",
+  "X4VG",
+  "SO2.mg.L.",
+  "acetic_acid.g.L.",
+  "ammonia.mg.L.",
+  "betaglucan.mg.L.",
+  "lactic_acid.mg.L.",
+  "glycerol",
+  "iron",
+  "protein.g.L.",
+  "X1.propanol",
+  "X2.3.butanedione",
+  "X3.methylbutanal",
+  "propylene.glycol",
+  "propyl.acetate",
+  "n.pentanol",
+  "X2.methyl.1.butanol",
+  "isopentyl.formate",
+  "ethyl.isobutyrate",
+  "X3.methyl.2.butenal",
+  "X2.methyltetrahydrofuran.3.one",
+  "ethyl.butyrate",
+  "butyl.acetate",
+  "methylpyrazine",
+  "furfural",
+  "ethyl.lactate",
+  "X3Z.hexenol",
+  "n.hexanol",
+  "styrene",
+  "X2.furanmethanol",
+  "X3.methyl.2.hexanol",
+  "X3.furanmethanol",
+  "X2.acetylfuran",
+  "X2.6.dimethyl.pyrazine",
+  "amyl.acetate",
+  "ethyl.tiglate",
+  "benzaldehyde",
+  "X5.methylfurfural",
+  "n.heptanol",
+  "X1.octen.3.ol",
+  "X3.methylthio.propanol",
+  "isomaltol",
+  "X6.methyl.5.hepten.2.one",
+  "X2.pentyl.furan",
+  "ethyl.hex..3E..enoate",
+  "alpha.phellandrene",
+  "dehydroxy.cis.linalool.oxide",
+  "hexyl.acetate",
+  "isopentyl.butanoate",
+  "X2.ethyl.1.hexanol",
+  "beta.phellandrene",
+  "limonene",
+  "eucalyptol",
+  "benzyl.alcohol",
+  "ethyl.hex..2E..enoate",
+  "phenylacetaldehyde",
+  "X.E..beta.ocimene",
+  "prenyl.isobutyrate",
+  "ethyl.furoate",
+  "ortho.cresol",
+  "ethyl.5.methylhexanoate",
+  "X2.acetylpyrrole",
+  "isoamyl.lactate",
+  "n.octanol",
+  "cis.linalool.oxide",
+  "meta.cymenene",
+  "terpinolene",
+  "linalool",
+  "nonan.2.ol",
+  "n.nonanal",
+  "X2.methyl.benzofuran",
+  "heptyl.acetate",
+  "X4.methyl.1.pentanol",
+  "neo.allo.ocimene",
+  "x.methyl.1.octanol",
+  "trans.dihydro.beta.terpineol",
+  "cis.beta.terpineol",
+  "y.methyl.1.octanol",
+  "camphor",
+  "isobutyl.hexanoate",
+  "nerol.oxide",
+  "X.E..2.nonenal",
+  "cis.dihydro.beta.terpineol",
+  "X4.ethyl.phenol",
+  "isoborneol",
+  "ethyl.benzoate",
+  "n.nonanol",
+  "terpinen.4.ol",
+  "diethyl.succinate",
+  "vinyl.caprylate",
+  "X1.alpha.terpineol",
+  "ethyl..E..linalool",
+  "ethyl.nicotinate",
+  "citronellol",
+  "nerol",
+  "hydroxy.methyl.furfural",
+  "E.ocimenone",
+  "cumin.aldehyde",
+  "ethyl.phenylacetate",
+  "isopentyl.hexanoate",
+  "geraniol",
+  "beta.cyclohomocitral",
+  "E.cinnamaldehyde",
+  "n.decanol",
+  "neryl.formate",
+  "X4.ethyl.guaiacol",
+  "X2.undecanone",
+  "trans.dihydro.alpha.terpinyl.acetate",
+  "terpinen.4.ol.acetate",
+  "X2.undecanol",
+  "delta.terpinyl.acetate",
+  "X.E.E..2.4.decadienal",
+  "methyl.geranate",
+  "car.3.en.2.one",
+  "dimethoxy..E..citral",
+  "X2.butyloctanoate",
+  "X4.methoxysalicylaldehyde",
+  "ethyl.hydrocinnamate",
+  "eugenol",
+  "gamma.nonalactone",
+  "methyl.para.anisate",
+  "X.E..beta.damascenone",
+  "ethyl..9..decenoate",
+  "vanillin",
+  "geosmin",
+  "dodecanal",
+  "X4.8.alpha.epoxy.caryophyllane",
+  "E.caryophyllene",
+  "X.E..alpha.ionone",
+  "perillyl.acetate",
+  "beta.humulene",
+  "X2.phenyl.ethyl.butyrate",
+  "X.Z..beta.farnesene",
+  "pentyl.octanoate",
+  "X.E..beta.farnesene",
+  "X2.methylbutyl.octanoate",
+  "alpha.humulene",
+  "neryl.propanoate",
+  "X9.epi..E..caryophyllene",
+  "ethyl..E..cinnamate",
+  "linalool.isovalerate",
+  "alpha.terpinyl.isobutanoate",
+  "n.dodecanol",
+  "germacrene.D",
+  "X.E..beta.ionone",
+  "valencene",
+  "neryl.isobutanoate",
+  "E.methyl.isoeugenol",
+  "X.Z..dihydro.apofarnesal",
+  "butylated.hydroxytoluene",
+  "X.E..dihydro.apofarnesal",
+  "Z.nerolidol",
+  "X.E..ortho.methoxy.cinnamaldehyde",
+  "alpha.calacorene",
+  "E.nerolidol",
+  "dihydroisocaryophyllene.epoxide",
+  "caryophyllene.alcohol",
+  "neryl.isovalerate",
+  "spathulenol",
+  "caryophyllene.oxide",
+  "humulene.epoxide.II",
+  "alloaromadendrene.epoxide",
+  "X1.10.di.epi.cubenol",
+  "isopropyl.laurate",
+  "caryophylla.4.12..8.13..dien.5.alpha.ol",
+  "gamma.eudesmol",
+  "alpha.muurolol",
+  "X1.2.dihydro.8.hydroxy..2E..linalool",
+  "tau.cadinol",
+  "selin.11.en.4.alpha.ol",
+  "alpha.eudesmol",
+  "X14.hydroxy.9.epi..E..caryophyllene",
+  "tau.muurolol",
+  "n.tetradecanol",
+  "foeniculin",
+  "cadalene",
+  "X2.3.dihydro.farnesol",
+  "X2E.6Z.farnesal",
+  "caryophyllene.acetate",
+  "X14.hydroxy.alpha.humulene",
+  "X2Z.6E.farnesal",
+  "X2Z.6Z.farnesol",
+  "X2Z.6E.farnesol",
+  "ambroxide",
+  "benzyl.benzoate",
+  "X2E.6E.methyl.farnesoate",
+  "ethyl.tetradecanoate",
+  "X2.ethylhexylsalicylate",
+  "isopropyl.tetradecanoate",
+  "ethyl.pentadecanoate",
+  "methyl.hexadecanoate",
+  "Z.Z.geranyl.linalool",
+  "ethyl.hexadecanoate",
+  "manool.oxide",
+  "X13.epi.manool.oxide",
+  "isopropyl.hexadecanoate",
+  "manool",
+  "ethyl.octadecanoate",
+  "ethyl.pentanoate",
+  "X2.ethyl.3.methylpyrazine"
+ ],
+ "derivedSums": [
+  "kcalperc",
+  "acids_sum",
+  "esters_sum",
+  "aroma_hops_sum",
+  "sulfur_sum"
+ ],
+ "physicalParameters": [
+  "pH",
+  "color.EBC.",
+  "bitterness",
+  "ethanol..v.v.",
+  "CO2.PSI.",
+  "GFS",
+  "unfermentables"
+ ],
+ "log10Calibrated": [
+  "CO2.PSI.",
+  "CS2",
+  "DES",
+  "DMS",
+  "GFS",
+  "H2S",
+  "MeSH",
+  "SO2.mg.L.",
+  "X4VG",
+  "acetaldehyde",
+  "acetic_acid.g.L.",
+  "ammonia.mg.L.",
+  "betaglucan.mg.L.",
+  "bitterness",
+  "color.EBC.",
+  "ethanol..v.v.",
+  "ethyl_2.methyl_butyrate",
+  "ethyl_acetate",
+  "ethyl_decanoate",
+  "ethyl_hexanoate",
+  "ethyl_isovalerate",
+  "ethyl_octanoate",
+  "ethyl_propionate",
+  "glycerol",
+  "iron",
+  "isoamyl_alcohol",
+  "isobutanol",
+  "isobutyl_acetate",
+  "isopentyl_acetate",
+  "kcalperc",
+  "lactic_acid.mg.L.",
+  "octyl_acetate",
+  "pH",
+  "phenethyl_acetate",
+  "phenethyl_alcohol",
+  "protein.g.L.",
+  "unfermentables"
+ ],
+ "linearCalibrated": [
+  "E.caryophyllene",
+  "X.E..2.nonenal",
+  "X.E..beta.damascenone",
+  "X.E..beta.ocimene",
+  "X.E.E..2.4.decadienal",
+  "X1.alpha.terpineol",
+  "X2.3.butanedione",
+  "X2.ethyl.3.methylpyrazine",
+  "X2.methyltetrahydrofuran.3.one",
+  "X3.methylbutanal",
+  "X3Z.hexenol",
+  "X5.methylfurfural",
+  "Z.nerolidol",
+  "alpha.humulene",
+  "amyl.acetate",
+  "benzaldehyde",
+  "benzyl.alcohol",
+  "citronellol",
+  "diethyl.succinate",
+  "ethyl.butyrate",
+  "ethyl.isobutyrate",
+  "ethyl.nicotinate",
+  "ethyl.pentanoate",
+  "eugenol",
+  "furfural",
+  "gamma.nonalactone",
+  "geraniol",
+  "hexyl.acetate",
+  "linalool",
+  "methylpyrazine",
+  "n.hexanol",
+  "phenylacetaldehyde",
+  "styrene"
+ ],
+ "unverified": [
+  "E.cinnamaldehyde",
+  "E.methyl.isoeugenol",
+  "E.nerolidol",
+  "E.ocimenone",
+  "X.E..alpha.ionone",
+  "X.E..beta.farnesene",
+  "X.E..beta.ionone",
+  "X.E..dihydro.apofarnesal",
+  "X.E..ortho.methoxy.cinnamaldehyde",
+  "X.Z..beta.farnesene",
+  "X.Z..dihydro.apofarnesal",
+  "X1.10.di.epi.cubenol",
+  "X1.2.dihydro.8.hydroxy..2E..linalool",
+  "X1.octen.3.ol",
+  "X1.propanol",
+  "X13.epi.manool.oxide",
+  "X14.hydroxy.9.epi..E..caryophyllene",
+  "X14.hydroxy.alpha.humulene",
+  "X2.3.dihydro.farnesol",
+  "X2.6.dimethyl.pyrazine",
+  "X2.acetylfuran",
+  "X2.acetylpyrrole",
+  "X2.butyloctanoate",
+  "X2.ethyl.1.hexanol",
+  "X2.ethylhexylsalicylate",
+  "X2.furanmethanol",
+  "X2.methyl.1.butanol",
+  "X2.methyl.benzofuran",
+  "X2.methylbutyl.octanoate",
+  "X2.pentyl.furan",
+  "X2.phenyl.ethyl.butyrate",
+  "X2.undecanol",
+  "X2.undecanone",
+  "X2E.6E.methyl.farnesoate",
+  "X2E.6Z.farnesal",
+  "X2Z.6E.farnesal",
+  "X2Z.6E.farnesol",
+  "X2Z.6Z.farnesol",
+  "X3.furanmethanol",
+  "X3.methyl.2.butenal",
+  "X3.methyl.2.hexanol",
+  "X3.methylthio.propanol",
+  "X4.8.alpha.epoxy.caryophyllane",
+  "X4.ethyl.guaiacol",
+  "X4.ethyl.phenol",
+  "X4.methoxysalicylaldehyde",
+  "X4.methyl.1.pentanol",
+  "X6.methyl.5.hepten.2.one",
+  "X9.epi..E..caryophyllene",
+  "Z.Z.geranyl.linalool",
+  "acids_sum",
+  "alloaromadendrene.epoxide",
+  "alpha.calacorene",
+  "alpha.eudesmol",
+  "alpha.muurolol",
+  "alpha.phellandrene",
+  "alpha.terpinyl.isobutanoate",
+  "ambroxide",
+  "aroma_hops_sum",
+  "benzyl.benzoate",
+  "beta.cyclohomocitral",
+  "beta.humulene",
+  "beta.phellandrene",
+  "butyl.acetate",
+  "butylated.hydroxytoluene",
+  "cadalene",
+  "camphor",
+  "car.3.en.2.one",
+  "caryophylla.4.12..8.13..dien.5.alpha.ol",
+  "caryophyllene.acetate",
+  "caryophyllene.alcohol",
+  "caryophyllene.oxide",
+  "cis.beta.terpineol",
+  "cis.dihydro.beta.terpineol",
+  "cis.linalool.oxide",
+  "cumin.aldehyde",
+  "dehydroxy.cis.linalool.oxide",
+  "delta.terpinyl.acetate",
+  "dihydroisocaryophyllene.epoxide",
+  "dimethoxy..E..citral",
+  "dodecanal",
+  "esters_sum",
+  "ethyl..9..decenoate",
+  "ethyl..E..cinnamate",
+  "ethyl..E..linalool",
+  "ethyl.5.methylhexanoate",
+  "ethyl.benzoate",
+  "ethyl.furoate",
+  "ethyl.hex..2E..enoate",
+  "ethyl.hex..3E..enoate",
+  "ethyl.hexadecanoate",
+  "ethyl.hydrocinnamate",
+  "ethyl.lactate",
+  "ethyl.octadecanoate",
+  "ethyl.pentadecanoate",
+  "ethyl.phenylacetate",
+  "ethyl.tetradecanoate",
+  "ethyl.tiglate",
+  "eucalyptol",
+  "foeniculin",
+  "gamma.eudesmol",
+  "geosmin",
+  "germacrene.D",
+  "heptyl.acetate",
+  "humulene.epoxide.II",
+  "hydroxy.methyl.furfural",
+  "isoamyl.lactate",
+  "isoborneol",
+  "isobutyl.hexanoate",
+  "isomaltol",
+  "isopentyl.butanoate",
+  "isopentyl.formate",
+  "isopentyl.hexanoate",
+  "isopropyl.hexadecanoate",
+  "isopropyl.laurate",
+  "isopropyl.tetradecanoate",
+  "limonene",
+  "linalool.isovalerate",
+  "manool",
+  "manool.oxide",
+  "meta.cymenene",
+  "methyl.geranate",
+  "methyl.hexadecanoate",
+  "methyl.para.anisate",
+  "n.decanol",
+  "n.dodecanol",
+  "n.heptanol",
+  "n.nonanal",
+  "n.nonanol",
+  "n.octanol",
+  "n.pentanol",
+  "n.tetradecanol",
+  "neo.allo.ocimene",
+  "nerol",
+  "nerol.oxide",
+  "neryl.formate",
+  "neryl.isobutanoate",
+  "neryl.isovalerate",
+  "neryl.propanoate",
+  "nonan.2.ol",
+  "ortho.cresol",
+  "pentyl.octanoate",
+  "perillyl.acetate",
+  "prenyl.isobutyrate",
+  "propyl.acetate",
+  "propylene.glycol",
+  "selin.11.en.4.alpha.ol",
+  "spathulenol",
+  "sulfur_sum",
+  "tau.cadinol",
+  "tau.muurolol",
+  "terpinen.4.ol",
+  "terpinen.4.ol.acetate",
+  "terpinolene",
+  "trans.dihydro.alpha.terpinyl.acetate",
+  "trans.dihydro.beta.terpineol",
+  "valencene",
+  "vanillin",
+  "vinyl.caprylate",
+  "x.methyl.1.octanol",
+  "y.methyl.1.octanol"
+ ],
+ "corrMatches": {
+  "total": 231,
+  "matched": 231,
+  "direct": 158,
+  "viaXlsxShortName": 73
+ }
+}

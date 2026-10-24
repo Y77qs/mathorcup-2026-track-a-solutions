@@ -1,0 +1,54 @@
+schemaVersion: 2
+projectId: beer-2026-a-v3
+language: zh-CN
+deadline: null
+problem:
+  statement: problem/statement.md
+  questions: problem/questions.yaml
+runtime:
+  python: /Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python
+  maxComputeConcurrency: 1
+  experimentTimeoutSeconds: 1800
+  maxImprovedModelsPerQuestion: 2
+evaluation:
+  taskType: mixed
+  split:
+    method: random-holdout
+    testFraction: 0.2
+    seed: 20261024
+  tuning: train-only-cross-validation
+  primaryMetric: mae
+  metricDirection: minimize
+  baseline: null
+  leakage:
+    correlationThreshold: 0.999
+    forbiddenColumns: []
+  reproductionTolerance:
+    absolute: 1.0e-9
+    relative: 1.0e-6
+    stochasticReruns: 3
+delivery:
+  template: generic-zh
+  paperFormats: [md, tex, pdf]
+  requireIndependentRerun: true
+  requireResolvedCriticalClaims: true
+  submission: manual
+  contest: null
+quality:
+  required: true
+  coverageReviewRequired: true
+  ruleDependencyAgreement: 0.999
+  review:
+    required: true
+    independence: independent_context
+    allowSameModelDifferentContext: true
+  robustness:
+    required: true
+    maxHoldoutReuse: 3
+    methods: [multiple-seeds, param-perturbation]
+  runControl:
+    maxRetries: 2
+    noProgressLimit: 3
+    approvalTimeoutSeconds: 120
+    softTokenLimit: null
+    hardTokenLimit: null

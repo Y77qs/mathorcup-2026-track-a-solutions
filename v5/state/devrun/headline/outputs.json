@@ -1,0 +1,428 @@
+{
+  "headline_table": {
+    "note": "every value below was copied programmatically from the registered metrics.json of the named experiment; the runner's sha256 for each source file is in the experiment's dependencies",
+    "relations": {
+      "audit-q1-fusion-minus-graph-oof": 0.005631354829709723,
+      "audit-q1-improved": 0.05399413008206877,
+      "audit-q2-jaccard-gain": 0.018666666666666692,
+      "audit-q3-cs-gain": 0.88,
+      "audit-q3-mahalanobis-reduction": 1.048500720611653,
+      "audit-q3-projection-cost": 0.004102330484566208
+    },
+    "rows": [
+      {
+        "auditKey": "q1-baseline-mae",
+        "experimentId": "EXP-0001",
+        "metricKey": "mae",
+        "value": 0.4005615400064
+      },
+      {
+        "auditKey": "q1-baseline-r2",
+        "experimentId": "EXP-0001",
+        "metricKey": "r2_50dim",
+        "value": -0.0848384350854984
+      },
+      {
+        "auditKey": "q1-candidate-mae",
+        "experimentId": "EXP-0004",
+        "metricKey": "mae",
+        "value": 0.3465674099243312
+      },
+      {
+        "auditKey": "q1-candidate-r2",
+        "experimentId": "EXP-0004",
+        "metricKey": "r2_50dim",
+        "value": 0.23166117909673786
+      },
+      {
+        "auditKey": "q1-candidate-skill",
+        "experimentId": "EXP-0004",
+        "metricKey": "skill_50dim",
+        "value": 0.13479609170966855
+      },
+      {
+        "auditKey": "q1-graph-mae",
+        "experimentId": "EXP-0003",
+        "metricKey": "mae",
+        "value": 0.35455830244427766
+      },
+      {
+        "auditKey": "q1-graph-skill",
+        "experimentId": "EXP-0003",
+        "metricKey": "skill_50dim",
+        "value": 0.11484686613045103
+      },
+      {
+        "auditKey": "q1-graph-cv-mae",
+        "experimentId": "EXP-0003",
+        "metricKey": "cv_mae",
+        "value": 0.35039761171092537
+      },
+      {
+        "auditKey": "q1-graph-cv-sd",
+        "experimentId": "EXP-0003",
+        "metricKey": "cv_mae_sd",
+        "value": 0.013725765669543984
+      },
+      {
+        "auditKey": "q1-w-median",
+        "experimentId": "EXP-0004",
+        "metricKey": "w_median",
+        "value": 0.0
+      },
+      {
+        "auditKey": "q1-w-graph",
+        "experimentId": "EXP-0004",
+        "metricKey": "w_graph",
+        "value": 0.6491684070883224
+      },
+      {
+        "auditKey": "q1-w-hgb",
+        "experimentId": "EXP-0004",
+        "metricKey": "w_hgb",
+        "value": 0.3508315929116776
+      },
+      {
+        "auditKey": "q1-median-oof",
+        "experimentId": "EXP-0004",
+        "metricKey": "median_oof_mae",
+        "value": 0.3899025991196
+      },
+      {
+        "auditKey": "q1-graph-oof",
+        "experimentId": "EXP-0004",
+        "metricKey": "graph_oof_mae",
+        "value": 0.35039761171092537
+      },
+      {
+        "auditKey": "q1-hgb-oof",
+        "experimentId": "EXP-0004",
+        "metricKey": "hgb_oof_mae",
+        "value": 0.3646279113371839
+      },
+      {
+        "auditKey": "q1-fused-oof",
+        "experimentId": "EXP-0004",
+        "metricKey": "fused_oof_mae",
+        "value": 0.34476625688121565
+      },
+      {
+        "auditKey": "q1-best-rank",
+        "experimentId": "EXP-0003",
+        "metricKey": "best_r",
+        "value": 10.0
+      },
+      {
+        "auditKey": "q1-best-lambda",
+        "experimentId": "EXP-0003",
+        "metricKey": "best_lambda",
+        "value": 1.0
+      },
+      {
+        "auditKey": "q1-best-gamma",
+        "experimentId": "EXP-0003",
+        "metricKey": "best_gamma",
+        "value": 1.0
+      },
+      {
+        "auditKey": "q1-n-targets",
+        "experimentId": "EXP-0004",
+        "metricKey": "n_targets",
+        "value": 50.0
+      },
+      {
+        "auditKey": "q1-grade-qwk",
+        "experimentId": "EXP-0026",
+        "metricKey": "grade_qwk",
+        "value": 0.3585644474970199
+      },
+      {
+        "auditKey": "q1-grade-mae",
+        "experimentId": "EXP-0026",
+        "metricKey": "grade_mae",
+        "value": 1.3616
+      },
+      {
+        "auditKey": "q1-grade-agreement",
+        "experimentId": "EXP-0026",
+        "metricKey": "grade_agreement",
+        "value": 0.236
+      },
+      {
+        "auditKey": "q1-improved-targets",
+        "experimentId": "EXP-0026",
+        "metricKey": "n_improved_targets",
+        "value": 38.0
+      },
+      {
+        "auditKey": "q1-degraded-targets",
+        "experimentId": "EXP-0026",
+        "metricKey": "n_degraded_targets",
+        "value": 12.0
+      },
+      {
+        "auditKey": "q1-graded-rows",
+        "experimentId": "EXP-0026",
+        "metricKey": "n_rows",
+        "value": 250.0
+      },
+      {
+        "auditKey": "q2-baseline-jaccard",
+        "experimentId": "EXP-0002",
+        "metricKey": "topk-jaccard",
+        "value": 0.19999999999999996
+      },
+      {
+        "auditKey": "q2-jaccard",
+        "experimentId": "EXP-0029",
+        "metricKey": "topk-jaccard",
+        "value": 0.21866666666666665
+      },
+      {
+        "auditKey": "q2-jaccard-pi-first",
+        "experimentId": "EXP-0029",
+        "metricKey": "topk-jaccard-bootstrap-mean",
+        "value": 0.24
+      },
+      {
+        "auditKey": "q2-pi-mean",
+        "experimentId": "EXP-0029",
+        "metricKey": "mean_selected_pi",
+        "value": 0.46468
+      },
+      {
+        "auditKey": "q2-external-spearman",
+        "experimentId": "EXP-0029",
+        "metricKey": "external_6csv_mean_spearman",
+        "value": 0.44505144467935176
+      },
+      {
+        "auditKey": "q2-n-candidates",
+        "experimentId": "EXP-0029",
+        "metricKey": "n_candidates",
+        "value": 219.0
+      },
+      {
+        "auditKey": "q2-n-dimensions",
+        "experimentId": "EXP-0029",
+        "metricKey": "n_dimensions",
+        "value": 50.0
+      },
+      {
+        "auditKey": "q2-bootstrap-reps",
+        "experimentId": "EXP-0029",
+        "metricKey": "bootstrap_reps",
+        "value": 500.0
+      },
+      {
+        "auditKey": "q2-attachment-min-eig",
+        "experimentId": "EXP-0029",
+        "metricKey": "attachment_network_min_eigenvalue_raw",
+        "value": -0.042412709119481015
+      },
+      {
+        "auditKey": "q2-attachment-edges",
+        "experimentId": "EXP-0029",
+        "metricKey": "attachment_network_edges_tau05",
+        "value": 644.0
+      },
+      {
+        "auditKey": "q2-attachment-components",
+        "experimentId": "EXP-0029",
+        "metricKey": "attachment_network_components_tau05",
+        "value": 52.0
+      },
+      {
+        "auditKey": "q2-attachment-largest",
+        "experimentId": "EXP-0029",
+        "metricKey": "attachment_network_largest_component_tau05",
+        "value": 175.0
+      },
+      {
+        "auditKey": "q2-modules-tau05",
+        "experimentId": "EXP-0029",
+        "metricKey": "module_count_tau05",
+        "value": 51.0
+      },
+      {
+        "auditKey": "q2-modules-tau06",
+        "experimentId": "EXP-0029",
+        "metricKey": "module_count_tau06",
+        "value": 108.0
+      },
+      {
+        "auditKey": "q3-cs",
+        "experimentId": "EXP-0033",
+        "metricKey": "constraint-satisfaction",
+        "value": 1.0
+      },
+      {
+        "auditKey": "q3-cs-unconstrained",
+        "experimentId": "EXP-0033",
+        "metricKey": "constraint-satisfaction-unconstrained",
+        "value": 0.136
+      },
+      {
+        "auditKey": "q3-cs-baseline",
+        "experimentId": "EXP-0008",
+        "metricKey": "constraint-satisfaction",
+        "value": 0.12
+      },
+      {
+        "auditKey": "q3-e-norm",
+        "experimentId": "EXP-0033",
+        "metricKey": "energy-distance-normalized",
+        "value": 0.23521270840867994
+      },
+      {
+        "auditKey": "q3-e-norm-unconstrained",
+        "experimentId": "EXP-0033",
+        "metricKey": "energy-distance-normalized-unconstrained",
+        "value": 0.23111037792411374
+      },
+      {
+        "auditKey": "q3-e-norm-reference",
+        "experimentId": "EXP-0033",
+        "metricKey": "energy-distance-real-reference",
+        "value": 0.18418128739199716
+      },
+      {
+        "auditKey": "q3-e-norm-baseline",
+        "experimentId": "EXP-0008",
+        "metricKey": "energy-distance-normalized",
+        "value": 0.7513853833897858
+      },
+      {
+        "auditKey": "q3-e-norm-equal-weight",
+        "experimentId": "EXP-0033",
+        "metricKey": "energy-distance-normalized-equal-weight",
+        "value": 0.3897594007373258
+      },
+      {
+        "auditKey": "q3-e-norm-style-holdout",
+        "experimentId": "EXP-0033",
+        "metricKey": "style-holdout-energy-distance-normalized",
+        "value": 0.3590035848831178
+      },
+      {
+        "auditKey": "q3-defect-rate",
+        "experimentId": "EXP-0033",
+        "metricKey": "defect-exceedance-rate",
+        "value": 0.0
+      },
+      {
+        "auditKey": "q3-defect-rate-real",
+        "experimentId": "EXP-0033",
+        "metricKey": "defect-exceedance-rate-real",
+        "value": 0.844
+      },
+      {
+        "auditKey": "q3-defect-rate-unconstrained",
+        "experimentId": "EXP-0033",
+        "metricKey": "defect-exceedance-rate-unconstrained",
+        "value": 0.852
+      },
+      {
+        "auditKey": "q3-profile-rho",
+        "experimentId": "EXP-0033",
+        "metricKey": "profile-spearman",
+        "value": 0.7963025210084033
+      },
+      {
+        "auditKey": "q3-profile-mae",
+        "experimentId": "EXP-0033",
+        "metricKey": "profile-mae",
+        "value": 0.01450187654791753
+      },
+      {
+        "auditKey": "q3-kappa",
+        "experimentId": "EXP-0033",
+        "metricKey": "kappa",
+        "value": 5.0
+      },
+      {
+        "auditKey": "q3-kappa-r",
+        "experimentId": "EXP-0033",
+        "metricKey": "kappa_R",
+        "value": 20.0
+      },
+      {
+        "auditKey": "q3-transfer-nonworsen",
+        "experimentId": "EXP-0033",
+        "metricKey": "transfer-nonworsen-rate",
+        "value": 1.0
+      },
+      {
+        "auditKey": "q3-transfer-strict-min",
+        "experimentId": "EXP-0033",
+        "metricKey": "transfer-scenario-strict-nonworsen-min",
+        "value": 0.18181818181818182
+      },
+      {
+        "auditKey": "q3-transfer-bootstrap-low",
+        "experimentId": "EXP-0033",
+        "metricKey": "transfer-nonworsen-rate-bootstrap-low",
+        "value": 0.2727272727272727
+      },
+      {
+        "auditKey": "q3-mahalanobis",
+        "experimentId": "EXP-0033",
+        "metricKey": "target-mahalanobis",
+        "value": 0.4328202679486975
+      },
+      {
+        "auditKey": "q3-mahalanobis-init",
+        "experimentId": "EXP-0033",
+        "metricKey": "ablation-quantile-transfer-mahalanobis",
+        "value": 1.4813209885603504
+      },
+      {
+        "auditKey": "q3-transfer-mean-l1",
+        "experimentId": "EXP-0033",
+        "metricKey": "transfer-mean-l1",
+        "value": 7.189867103957863
+      },
+      {
+        "auditKey": "q3-proxy-r2-t2n",
+        "experimentId": "EXP-0033",
+        "metricKey": "proxy-cv-r2-t2n",
+        "value": 0.0548889784422808
+      },
+      {
+        "auditKey": "q3-proxy-r2-stale",
+        "experimentId": "EXP-0033",
+        "metricKey": "proxy-cv-r2-stale",
+        "value": 0.05025260385796093
+      },
+      {
+        "auditKey": "q3-n-generation",
+        "experimentId": "EXP-0033",
+        "metricKey": "n-generation",
+        "value": 250.0
+      },
+      {
+        "auditKey": "q3-n-style-holdout",
+        "experimentId": "EXP-0033",
+        "metricKey": "n-style-holdout",
+        "value": 49.0
+      },
+      {
+        "auditKey": "q3-n-transfer",
+        "experimentId": "EXP-0033",
+        "metricKey": "n-transfer",
+        "value": 11.0
+      }
+    ],
+    "seed": 20261024,
+    "sources": {
+      "EXP-0001": "experiments/EXP-0001/metrics.json",
+      "EXP-0002": "experiments/EXP-0002/metrics.json",
+      "EXP-0003": "experiments/EXP-0003/metrics.json",
+      "EXP-0004": "experiments/EXP-0004/metrics.json",
+      "EXP-0008": "experiments/EXP-0008/metrics.json",
+      "EXP-0026": "experiments/EXP-0026/metrics.json",
+      "EXP-0029": "experiments/EXP-0029/metrics.json",
+      "EXP-0033": "experiments/EXP-0033/metrics.json"
+    }
+  }
+}

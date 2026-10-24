@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-10-24T13:35:09.565Z",
+  "final": false,
+  "qualityBlockers": [
+    {
+      "checkType": "critical-findings",
+      "checkId": "QC-0020",
+      "objectId": null,
+      "state": "stale",
+      "code": "VMU_PACK_MODELING_CONTEST_REVIEW_STALE",
+      "message": "dependencies unchanged",
+      "hint": "re-review the current version of each object; historical stale reviews are not counted here"
+    }
+  ],
+  "engineeringBlockers": [
+    {
+      "name": "figure:FIG-0025",
+      "code": "STALE",
+      "message": "figure FIG-0025 changed since it was registered: /Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/figures/q3_defect_exceedance.png sha256 4d6c13f894c65ca08b91cfdfb8ce3e6b81e74d2f02d0818a5c9537cdea7ef7d6 != recorded 57e3e864e41517f8600b70b069c87d0d37eda7b5c52c055b32591e2d8dbd1306"
+    },
+    {
+      "name": "figure:FIG-0027",
+      "code": "STALE",
+      "message": "figure FIG-0027 changed since it was registered: /Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/figures/q3_pareto.png sha256 a404a27fa6adba2b6a5aafdd75c449ae79a62478ee8e894c7d21451dd69dc6d6 != recorded 299df07e5a54e3727f3d86d752ff3672ecb4e1227944a70eaab8808698a6b14e"
+    }
+  ],
+  "reviewScope": {
+    "reviewed": [
+      "source-anchor",
+      "requirement-coverage",
+      "target-lineage",
+      "baseline-required",
+      "baseline-required",
+      "baseline-required",
+      "metric-definition",
+      "claim-scope",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "metric-recompute",
+      "model-condition",
+      "review-provenance",
+      "review-independence",
+      "robustness-plan",
+      "robustness-execution",
+      "robustness-plan",
+      "robustness-execution",
+      "robustness-plan",
+      "robustness-execution",
+      "holdout-reuse"
+    ],
+    "notReviewed": [
+      "critical-findings",
+      "runcontrol-preflight",
+      "runcontrol-resume",
+      "runcontrol-progress",
+      "runcontrol-budget",
+      "runcontrol-approval"
+    ],
+    "assumptions": [
+      "optional checks not applicable: runcontrol-preflight, runcontrol-resume, runcontrol-progress, runcontrol-budget, runcontrol-approval"
+    ]
+  }
+}

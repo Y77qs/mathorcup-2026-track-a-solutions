@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "observed": 1,
+  "expected": 1,
+  "delta": 0,
+  "message": "constraint-satisfaction recomputed from registered evidence",
+  "details": {
+    "value": 1,
+    "n": 310,
+    "violations": {
+      "excess__DMS": 0,
+      "excess__X2.3.butanedione": 0,
+      "excess__X4VG": 0,
+      "t2n_margin": 0
+    },
+    "modelContractId": "MCON-0003",
+    "definition": "fraction of generated rows satisfying every declared numeric contract bound; semantic adequacy still requires review",
+    "metricKey": "constraint-satisfaction",
+    "kind": "constraint-satisfaction",
+    "hashes": {
+      "samples": "ecbe6960a3b171a98ea6c8d39b13e252592ab5a771981d88d3ca87bd8863c665"
+    },
+    "tolerance": 1e-8
+  }
+}

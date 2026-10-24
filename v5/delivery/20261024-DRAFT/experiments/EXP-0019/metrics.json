@@ -1,0 +1,9 @@
+{
+  "bootstrap_reps": 50,
+  "mean_selected_pi": 0.4701333333333334,
+  "n_dimensions": 50,
+  "seed_used": 20261024,
+  "tau": 0.5,
+  "topk-jaccard": 0.21866666666666665,
+  "topk-jaccard-bootstrap-mean": 0.22266666666666665
+}

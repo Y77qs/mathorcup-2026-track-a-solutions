@@ -1,0 +1,22 @@
+{
+  "figures": [
+    {
+      "name": "q2_bootstrap_stability.png",
+      "path": "figures/q2_bootstrap_stability.png",
+      "sha256": "d192737752ae3e604111c67570619391563a164c5ea6798d7b1cbdaab81abea5",
+      "bytes": 35482
+    },
+    {
+      "name": "q2_method_jaccard.png",
+      "path": "figures/q2_method_jaccard.png",
+      "sha256": "09e3096812118b8634cc4e16eded073e7bd05f6c2af030679760a4eb503d7f68",
+      "bytes": 47672
+    },
+    {
+      "name": "q2_module_graph.png",
+      "path": "figures/q2_module_graph.png",
+      "sha256": "227cea51df32c1f5315c628a63bf94d6ae6d16ac91e410e3feec5ca17cbdb33a",
+      "bytes": 53368
+    }
+  ]
+}

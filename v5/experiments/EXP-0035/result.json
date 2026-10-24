@@ -1,0 +1,141 @@
+{
+  "token": "a559a1b4f80fac6eb5fe6a43",
+  "experimentId": "EXP-0035",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T12:44:02.547Z",
+  "endedAt": "2026-10-24T12:44:02.940Z",
+  "durationMs": 392,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "ablation-items-complete": 9.0,
+    "ablation-n-required": 9.0,
+    "ablation-q1-fold-sd": 0.013725765669543984,
+    "ablation-q2-bootstrap-reps": 500.0,
+    "ablation-q2-mean-selected-pi": 0.46468,
+    "ablation-q2-min-selected-pi": 0.138,
+    "ablation-q2-point-vs-pi-first-changed-dimensions": 24.0,
+    "ablation-q2-point-vs-pi-first-jaccard": 0.736,
+    "ablation-q2-share-selected-at-pi-one": 0.0,
+    "ablation-q3-kappa": 5.0,
+    "ablation-q3-kappa-r": 20.0,
+    "ablation-q3-seeds": 3.0,
+    "ablation1-rankgauss-cv": 0.35039761171092537,
+    "ablation1-rankgauss-minus-zscore-cv": -0.003994205530342687,
+    "ablation1-zscore-cv": 0.35439181724126806,
+    "ablation2-lowrank-cv": 0.35039761171092537,
+    "ablation2-ridge-cv": 0.35271965183491505,
+    "ablation2-ridge-minus-lowrank-cv": 0.002322040123989677,
+    "ablation3-best-gamma-is-zero": 0.0,
+    "ablation3-gamma-best": 1.0,
+    "ablation3-gamma-best-cv": 0.35039761171092537,
+    "ablation3-gamma0-cv": 0.35138113804820575,
+    "ablation3-gamma0-minus-best-cv": 0.0009835263372803826,
+    "ablation4-consensus-vs-total-jaccard": 0.35600000000000004,
+    "ablation4-consensus-vs-within-jaccard": 0.27199999999999996,
+    "ablation4-differing-dimensions": 46.0,
+    "ablation4-n-dimensions": 50.0,
+    "ablation4-total-vs-within-jaccard": 0.302,
+    "ablation5-copula-dependence-spectrum-mae": 0.006302743822556374,
+    "ablation5-dependence-spectrum-mae": 0.015088948876474674,
+    "ablation5-independent-marginals-delta": -0.007951703102091506,
+    "ablation6-no-shrinkage-delta": 0.03365453839186214,
+    "ablation7-no-floor-delta": 0.33984476030610344,
+    "ablation8-exceedance-lowdefect": 0.0,
+    "ablation8-exceedance-normal": 0.852,
+    "ablation8-normal-generation-delta": -0.004102330484566208,
+    "ablation9-constrained-mahalanobis": 0.4328202679486975,
+    "ablation9-mahalanobis-reduction": 1.048500720611653,
+    "ablation9-quantile-mahalanobis": 1.4813209885603504
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0035/figures.json",
+      "sha256": "d9a7d1f168194a976a1b1f33d5f2a792ad7d8b57ae73856f77210eff25fb081b",
+      "bytes": 225,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0035/metrics.json",
+      "sha256": "a6c8a525a8fd69eab2930399532870207154787e6e5982005190e466abe3970e",
+      "bytes": 1880,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0035/outputs.json",
+      "sha256": "098a1e8882a62ab5c040e1a418b49b3051db06bedc439e76d673c72c4f9cd7df",
+      "bytes": 3060,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0035/seed-receipt.json",
+      "sha256": "884893ea21ded490d35ebd7c54fe32eca685c6753afed43489a1a4f7b4fbc00e",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0035/figures/ablation-summary.png",
+      "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd",
+      "bytes": 117496,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0035/inputs/experiments/EXP-0003/outputs.json",
+      "sha256": "99cf6edf684154925a80543773617791dc5b47d3967d8f325e3620a64cbec69e",
+      "bytes": 47691,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0035/inputs/experiments/EXP-0029/outputs.json",
+      "sha256": "11bfa6875dbb64cd16df7ae542cc8fff3c78ae09b23d86da2eaa7b141a196410",
+      "bytes": 142183,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0035/inputs/experiments/EXP-0033/metrics.json",
+      "sha256": "b43632258e8bebe8323407d7885a9417ac369925ab1e21f72e915c9d32199995",
+      "bytes": 2606,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0035/inputs/src/ablation_summary.py",
+      "sha256": "95ca010ad9b476fe9ed01aec68c28d763556a5a37a81bccc5c3251939836608c",
+      "bytes": 15245,
+      "kind": "file"
+    }
+  ],
+  "figures": [
+    {
+      "path": "experiments/EXP-0035/figures/ablation-summary.png",
+      "name": "ablation-summary.png",
+      "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd",
+      "bytes": 117496,
+      "missing": false
+    },
+    {
+      "path": "figures/ablation-summary.png",
+      "name": "ablation-summary.png",
+      "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd",
+      "bytes": 117496,
+      "missing": true
+    }
+  ],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0035/inputs/src/ablation_summary.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0035/inputs/src/ablation_summary.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0035",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

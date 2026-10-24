@@ -1,0 +1,32 @@
+{
+  "fold_mae": [
+    0.33206350876504453,
+    0.3566976429824006,
+    0.34517032382980545,
+    0.37106467707856144,
+    0.3396408235821848
+  ],
+  "settings": {
+    "alphaMultiplier": 2.0,
+    "baseLambda": 1.0,
+    "dataSource": "data/splits/SPLIT-0001/train.csv",
+    "foldSizes": [
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "gamma": 1.0,
+    "lambda": 2.0,
+    "model": "graph-regularised low-rank multi-output regression (train-only 5-fold CV)",
+    "nFolds": 5,
+    "nIter": 25,
+    "nRows": 200,
+    "rank": 10,
+    "receiptSeed": 20261024,
+    "representation": "rankgauss",
+    "seedUsed": 20261024,
+    "tau": 0.5
+  }
+}

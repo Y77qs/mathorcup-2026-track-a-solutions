@@ -1,0 +1,634 @@
+{
+  "aggregate-metrics": {
+    "e_norm": 0.22763409106161775,
+    "e_norm_equal_weight": 0.380560284339233,
+    "e_norm_normal": 0.22421330251022392,
+    "exceed_low": 0.0,
+    "exceed_normal": 0.848,
+    "real_ref": 0.218993138451075,
+    "satisfied_low": 1.0,
+    "satisfied_normal": 0.136
+  },
+  "fold-cell-metrics": [
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Amber"
+    },
+    {
+      "e_norm": 0.12326483959195483,
+      "e_norm_normal": 0.11152854698996892,
+      "fold": 0,
+      "n": 11,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Blond"
+    },
+    {
+      "e_norm": 0.2888269042710418,
+      "e_norm_normal": 0.28481809239112416,
+      "fold": 0,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Brett/cofermented"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Brown"
+    },
+    {
+      "e_norm": 0.29932921701733534,
+      "e_norm_normal": 0.2955482436371082,
+      "fold": 0,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Brut"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.3333333333333333,
+      "style": "Christmas"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.5,
+      "style": "Dubbel"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 1,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Faro"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Flanders old brown"
+    },
+    {
+      "e_norm": 0.1804608763686793,
+      "e_norm_normal": 0.1579486127618469,
+      "fold": 0,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.3333333333333333,
+      "style": "Fruitbeer"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 6,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Hoppy"
+    },
+    {
+      "e_norm": 0.5821923021391182,
+      "e_norm_normal": 0.5851699101680088,
+      "fold": 0,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.25,
+      "style": "Kriek"
+    },
+    {
+      "e_norm": 0.17671640544065728,
+      "e_norm_normal": 0.17355096029915565,
+      "fold": 0,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.25,
+      "style": "Lambic"
+    },
+    {
+      "e_norm": 0.4519631684315635,
+      "e_norm_normal": 0.45043230267864537,
+      "fold": 0,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.6666666666666666,
+      "style": "Low/No alcohol"
+    },
+    {
+      "e_norm": 0.24151762610989172,
+      "e_norm_normal": 0.24423725760699252,
+      "fold": 0,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Pils/Lager"
+    },
+    {
+      "e_norm": 0.06154235685541589,
+      "e_norm_normal": 0.012109127288343437,
+      "fold": 0,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Saison"
+    },
+    {
+      "e_norm": 0.4428000823355757,
+      "e_norm_normal": 0.44214187906717795,
+      "fold": 0,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Scotch"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 5,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Stout/Porter"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 0,
+      "n": 6,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Strong ale"
+    },
+    {
+      "e_norm": 0.1797160180279455,
+      "e_norm_normal": 0.16456831133961514,
+      "fold": 0,
+      "n": 10,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Tripel"
+    },
+    {
+      "e_norm": 0.4839132160806702,
+      "e_norm_normal": 0.4790039764640151,
+      "fold": 0,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.3333333333333333,
+      "style": "West Flanders ale"
+    },
+    {
+      "e_norm": 0.4749790890362743,
+      "e_norm_normal": 0.4712679228358845,
+      "fold": 0,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Wheat"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 1,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Amber"
+    },
+    {
+      "e_norm": 0.09322467924979924,
+      "e_norm_normal": 0.09769426458162916,
+      "fold": 1,
+      "n": 10,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Blond"
+    },
+    {
+      "e_norm": 0.6393531438562235,
+      "e_norm_normal": 0.6392961698107072,
+      "fold": 1,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Brett/cofermented"
+    },
+    {
+      "e_norm": 0.16198015720090622,
+      "e_norm_normal": 0.15411604068730836,
+      "fold": 1,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.5,
+      "style": "Brown"
+    },
+    {
+      "e_norm": 1.1648469955396843,
+      "e_norm_normal": 1.16225314085908,
+      "fold": 1,
+      "n": 1,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Brut"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 1,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Christmas"
+    },
+    {
+      "e_norm": 0.23676687750174533,
+      "e_norm_normal": 0.23038564497741396,
+      "fold": 1,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Dubbel"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 1,
+      "n": 1,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Faro"
+    },
+    {
+      "e_norm": 0.22527100986572438,
+      "e_norm_normal": 0.2270546874315903,
+      "fold": 1,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Flanders old brown"
+    },
+    {
+      "e_norm": 0.30691166188480656,
+      "e_norm_normal": 0.30530414525807925,
+      "fold": 1,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.3333333333333333,
+      "style": "Fruitbeer"
+    },
+    {
+      "e_norm": 0.2295503991488095,
+      "e_norm_normal": 0.22460552864612865,
+      "fold": 1,
+      "n": 6,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Hoppy"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 1,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.3333333333333333,
+      "style": "Kriek"
+    },
+    {
+      "e_norm": 0.4713403921719132,
+      "e_norm_normal": 0.4725677569475528,
+      "fold": 1,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Lambic"
+    },
+    {
+      "e_norm": 0.5585957118850505,
+      "e_norm_normal": 0.5619298978747941,
+      "fold": 1,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Low/No alcohol"
+    },
+    {
+      "e_norm": 0.13444775218361904,
+      "e_norm_normal": 0.13861659950571995,
+      "fold": 1,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Pils/Lager"
+    },
+    {
+      "e_norm": 0.49194404817021864,
+      "e_norm_normal": 0.4877354852981797,
+      "fold": 1,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.3333333333333333,
+      "style": "Saison"
+    },
+    {
+      "e_norm": 0.3793447208341741,
+      "e_norm_normal": 0.35976880810038264,
+      "fold": 1,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Scotch"
+    },
+    {
+      "e_norm": 0.2723859589944018,
+      "e_norm_normal": 0.2710673413502252,
+      "fold": 1,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Stout/Porter"
+    },
+    {
+      "e_norm": 0.24570153168830317,
+      "e_norm_normal": 0.2445422929645007,
+      "fold": 1,
+      "n": 6,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.5,
+      "style": "Strong ale"
+    },
+    {
+      "e_norm": 0.12690768711009776,
+      "e_norm_normal": 0.11660232643159578,
+      "fold": 1,
+      "n": 9,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.3333333333333333,
+      "style": "Tripel"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 1,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "West Flanders ale"
+    },
+    {
+      "e_norm": 0.46648444420360136,
+      "e_norm_normal": 0.46882776538140897,
+      "fold": 1,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.25,
+      "style": "Wheat"
+    },
+    {
+      "e_norm": 0.21583469765832822,
+      "e_norm_normal": 0.21409508379834183,
+      "fold": 2,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Amber"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 2,
+      "n": 10,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.1,
+      "style": "Blond"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 2,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Brett/cofermented"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 2,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.5,
+      "style": "Brown"
+    },
+    {
+      "e_norm": 1.3738001263916746,
+      "e_norm_normal": 1.3801194394797454,
+      "fold": 2,
+      "n": 1,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Brut"
+    },
+    {
+      "e_norm": 0.20833995006311617,
+      "e_norm_normal": 0.20120438909678795,
+      "fold": 2,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.6666666666666666,
+      "style": "Christmas"
+    },
+    {
+      "e_norm": 0.3202537237569453,
+      "e_norm_normal": 0.3214757676801782,
+      "fold": 2,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Dubbel"
+    },
+    {
+      "e_norm": 8.13162024449621,
+      "e_norm_normal": 8.13162024449621,
+      "fold": 2,
+      "n": 1,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 1.0,
+      "style": "Faro"
+    },
+    {
+      "e_norm": 0.6615157065551392,
+      "e_norm_normal": 0.6615157065551392,
+      "fold": 2,
+      "n": 1,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 1.0,
+      "style": "Flanders old brown"
+    },
+    {
+      "e_norm": 0.49297507448373135,
+      "e_norm_normal": 0.48761907678965066,
+      "fold": 2,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Fruitbeer"
+    },
+    {
+      "e_norm": 0.26342663999666605,
+      "e_norm_normal": 0.2586227863962994,
+      "fold": 2,
+      "n": 5,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Hoppy"
+    },
+    {
+      "e_norm": 0.4303780557737499,
+      "e_norm_normal": 0.4291888189501412,
+      "fold": 2,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.6666666666666666,
+      "style": "Kriek"
+    },
+    {
+      "e_norm": 0.4037207522904171,
+      "e_norm_normal": 0.40225542413508264,
+      "fold": 2,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Lambic"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 2,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.5,
+      "style": "Low/No alcohol"
+    },
+    {
+      "e_norm": 0.520036827043909,
+      "e_norm_normal": 0.5198055882972997,
+      "fold": 2,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.6666666666666666,
+      "style": "Pils/Lager"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 2,
+      "n": 3,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Saison"
+    },
+    {
+      "e_norm": 1.1637157780349894,
+      "e_norm_normal": 1.1637157780349894,
+      "fold": 2,
+      "n": 1,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 1.0,
+      "style": "Scotch"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 2,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Stout/Porter"
+    },
+    {
+      "e_norm": 0.0,
+      "e_norm_normal": 0.0,
+      "fold": 2,
+      "n": 6,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Strong ale"
+    },
+    {
+      "e_norm": 0.07815319529089176,
+      "e_norm_normal": 0.0726974166036024,
+      "fold": 2,
+      "n": 9,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Tripel"
+    },
+    {
+      "e_norm": 0.3417717735037447,
+      "e_norm_normal": 0.3436938972169244,
+      "fold": 2,
+      "n": 2,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "West Flanders ale"
+    },
+    {
+      "e_norm": 0.3191569478546634,
+      "e_norm_normal": 0.317642015071041,
+      "fold": 2,
+      "n": 4,
+      "satisfied_low": 1.0,
+      "satisfied_normal": 0.0,
+      "style": "Wheat"
+    }
+  ],
+  "proxy-notes": {
+    "cvR2": {
+      "stale_hops": 0.05025260385796093,
+      "t2n": 0.0548889784422808
+    },
+    "usage": "the 50-label ridge map supplies the t2n bound and the profile diagnostics only"
+  },
+  "run-configuration": {
+    "kappa": 15.0,
+    "kappa_R": 20.0,
+    "note": "samples.csv is fitted on all 250 rows; the energy distance is the frozen 3-fold out-of-fold main flow with the perturbed hyper-parameters held fixed",
+    "registeredSeed": 20261024,
+    "seedUsed": 20261024,
+    "thresholdMean": {
+      "DMS": 17.25,
+      "X2.3.butanedione": 0.29925,
+      "X4VG": 0.206333333
+    }
+  },
+  "samples-provenance": {
+    "groups": {
+      "generation": 250
+    },
+    "note": "same columns as the candidate's samples.csv; fold=-1 because the delivered samples come from an all-250-row fit, slot is the matched real row",
+    "rows": 250
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "constraint-satisfaction": 1.0,
+  "energy-distance-normalized": 0.2118187281450983,
+  "kappa": 5.0,
+  "kappa_r": 50.0,
+  "n-generation": 250.0,
+  "seed_used": 20261024.0
+}

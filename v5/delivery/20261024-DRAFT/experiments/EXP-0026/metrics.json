@@ -1,0 +1,21 @@
+{
+  "audit_calibrated_zero_cells": 755,
+  "audit_floor_cells": 6807,
+  "audit_floor_columns": 142,
+  "audit_missing_cells": 73,
+  "grade_agreement": 0.236,
+  "grade_mae": 1.3616,
+  "grade_qwk": 0.3585644474970199,
+  "mae_holdout": 0.3465674099243312,
+  "mae_holdout_median_reference": 0.4005615400064,
+  "n_degraded_targets": 12,
+  "n_features": 231,
+  "n_holdout_rows": 50,
+  "n_improved_targets": 38,
+  "n_rows": 250,
+  "n_targets": 50,
+  "n_train_rows": 200,
+  "w_graph": 0.6491684070883224,
+  "w_hgb": 0.3508315929116776,
+  "w_median": 0.0
+}

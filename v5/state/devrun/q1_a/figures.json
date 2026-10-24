@@ -1,0 +1,34 @@
+{
+  "figures": [
+    {
+      "name": "q1_cv_mae_grid.png",
+      "path": "figures/q1_cv_mae_grid.png",
+      "sha256": "ed6506d846da6f980911c216dead9d29cc2a33f39ded1220e81a8ea9f7600e5e",
+      "bytes": 67395
+    },
+    {
+      "name": "q1_per_target_improvement.png",
+      "path": "figures/q1_per_target_improvement.png",
+      "sha256": "234c3d58343f6d0cf801a0653501f7b05adc2bae298754d1d881bc1321a0b662",
+      "bytes": 75538
+    },
+    {
+      "name": "q1_grade_confusion.png",
+      "path": "figures/q1_grade_confusion.png",
+      "sha256": "864362a8836bd94310d3af59fbfed930db49ef5f296f848df4012773fca5665c",
+      "bytes": 49050
+    },
+    {
+      "name": "q1_fusion_component_mae.png",
+      "path": "figures/q1_fusion_component_mae.png",
+      "sha256": "dc7d0e88336672d8d0910efc7c0dd31054e511a46d1722a9915b3685fb7318db",
+      "bytes": 34571
+    },
+    {
+      "name": "q1_fusion_weights.png",
+      "path": "figures/q1_fusion_weights.png",
+      "sha256": "24e9efbd7113526af2e165020062a5389ed4661717797a6ed749953e87631a84",
+      "bytes": 30305
+    }
+  ]
+}

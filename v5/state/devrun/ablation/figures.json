@@ -1,0 +1,10 @@
+{
+  "figures": [
+    {
+      "name": "ablation-summary.png",
+      "path": "figures/ablation-summary.png",
+      "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd",
+      "bytes": 117496
+    }
+  ]
+}

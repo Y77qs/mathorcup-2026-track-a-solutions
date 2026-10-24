@@ -1,0 +1,451 @@
+{
+  "generatedAt": "2026-10-24T14:37:51.270Z",
+  "figures": [
+    {
+      "id": "FIG-0001",
+      "path": "experiments/EXP-0004/figures/q1_fusion_component_mae.png",
+      "packagedAs": "figures/FIG-0001-q1_fusion_component_mae.png",
+      "sha256": "dc7d0e88336672d8d0910efc7c0dd31054e511a46d1722a9915b3685fb7318db",
+      "caption": "Q1 融合模型的三个分量（训练内 OOF）与融合结果的逐目标 MAE 对比：纵轴为 50 个感官维度，横轴为 MAE。",
+      "experimentIds": [
+        "EXP-0004"
+      ],
+      "script": {
+        "path": "src/q1_fusion.py",
+        "sha256": "28d270394f32a459ca23e35ffde65952414867313f9268ef5947d70463cdb0f2"
+      }
+    },
+    {
+      "id": "FIG-0002",
+      "path": "experiments/EXP-0004/figures/q1_fusion_weights.png",
+      "packagedAs": "figures/FIG-0002-q1_fusion_weights.png",
+      "sha256": "24e9efbd7113526af2e165020062a5389ed4661717797a6ed749953e87631a84",
+      "caption": "Q1 融合权重（训练内 OOF 最小二乘 + 单纯形投影）：全局与 Aroma/Flavour/其他三组的 median、graph、HGB 权重。",
+      "experimentIds": [
+        "EXP-0004"
+      ],
+      "script": {
+        "path": "src/q1_fusion.py",
+        "sha256": "28d270394f32a459ca23e35ffde65952414867313f9268ef5947d70463cdb0f2"
+      }
+    },
+    {
+      "id": "FIG-0003",
+      "path": "experiments/EXP-0003/figures/q1_cv_mae_grid.png",
+      "packagedAs": "figures/FIG-0003-q1_cv_mae_grid.png",
+      "sha256": "ed6506d846da6f980911c216dead9d29cc2a33f39ded1220e81a8ea9f7600e5e",
+      "caption": "Q1 图正则低秩回归的训练内 5 折 CV MAE 网格（27 个 (r, λ, γ) 格点），用于说明超参数选择只发生在训练折内部。",
+      "experimentIds": [
+        "EXP-0003"
+      ],
+      "script": {
+        "path": "src/q1_candidate.py",
+        "sha256": "8fa4baade2db281c37b193afe332c2111d5dd8f695e257674bb1d25a54857464"
+      }
+    },
+    {
+      "id": "FIG-0004",
+      "path": "experiments/EXP-0003/figures/q1_per_target_improvement.png",
+      "packagedAs": "figures/FIG-0004-q1_per_target_improvement.png",
+      "sha256": "234c3d58343f6d0cf801a0653501f7b05adc2bae298754d1d881bc1321a0b662",
+      "caption": "Q1 逐目标 MAE 改善（候选相对逐目标训练中位数基线）：正值表示改善，负值表示恶化，标注了 40 个改善维与 10 个恶化维。",
+      "experimentIds": [
+        "EXP-0003"
+      ],
+      "script": {
+        "path": "src/q1_candidate.py",
+        "sha256": "8fa4baade2db281c37b193afe332c2111d5dd8f695e257674bb1d25a54857464"
+      }
+    },
+    {
+      "id": "FIG-0005",
+      "path": "experiments/EXP-0003/figures/q1_grade_confusion.png",
+      "packagedAs": "figures/FIG-0005-q1_grade_confusion.png",
+      "sha256": "864362a8836bd94310d3af59fbfed930db49ef5f296f848df4012773fca5665c",
+      "caption": "Q1 留出集上 0–6 相对分级的混淆矩阵（行=参考级，列=预测级）：分级由训练折中点经验 CDF 派生，仅作相对强度参考。",
+      "experimentIds": [
+        "EXP-0003"
+      ],
+      "script": {
+        "path": "src/q1_candidate.py",
+        "sha256": "8fa4baade2db281c37b193afe332c2111d5dd8f695e257674bb1d25a54857464"
+      }
+    },
+    {
+      "id": "FIG-0006",
+      "path": "experiments/EXP-0006/figures/q2_bootstrap_stability.png",
+      "packagedAs": "figures/FIG-0006-q2_bootstrap_stability.png",
+      "sha256": "d192737752ae3e604111c67570619391563a164c5ea6798d7b1cbdaab81abea5",
+      "caption": "Q2 500 次风格分层 bootstrap 下每个感官维度 Top-3 的入选频率（π）：颜色越深表示该化合物越稳定入选。",
+      "experimentIds": [
+        "EXP-0006"
+      ],
+      "script": {
+        "path": "src/q2_topk.py",
+        "sha256": "d158f1f7a502e0882a6abbb2533b648b4220d178adf07d706eccc43a542f8eea"
+      }
+    },
+    {
+      "id": "FIG-0007",
+      "path": "experiments/EXP-0006/figures/q2_method_jaccard.png",
+      "packagedAs": "figures/FIG-0007-q2_method_jaccard.png",
+      "sha256": "3f6d8bfc57d10715e4950385189d4d29202e3bde6bbdc1453f836dab7cd6390b",
+      "caption": "Q2 四种方法（总体 Spearman、风格内 Spearman、图正则低秩系数、综合分）两两 Top-3 Jaccard 系数的 50 维平均。",
+      "experimentIds": [
+        "EXP-0006"
+      ],
+      "script": {
+        "path": "src/q2_topk.py",
+        "sha256": "d158f1f7a502e0882a6abbb2533b648b4220d178adf07d706eccc43a542f8eea"
+      }
+    },
+    {
+      "id": "FIG-0008",
+      "path": "experiments/EXP-0006/figures/q2_module_graph.png",
+      "packagedAs": "figures/FIG-0008-q2_module_graph.png",
+      "sha256": "227cea51df32c1f5315c628a63bf94d6ae6d16ac91e410e3feec5ca17cbdb33a",
+      "caption": "Q2 训练样本 Spearman 网络（τ=0.5）的连通模块结构：节点为 219 个单体化合物候选，边为阈值化相关。",
+      "experimentIds": [
+        "EXP-0006"
+      ],
+      "script": {
+        "path": "src/q2_topk.py",
+        "sha256": "d158f1f7a502e0882a6abbb2533b648b4220d178adf07d706eccc43a542f8eea"
+      }
+    },
+    {
+      "id": "FIG-0009",
+      "path": "experiments/EXP-0014/figures/energy-distance-by-style.png",
+      "packagedAs": "figures/FIG-0009-energy-distance-by-style.png",
+      "sha256": "1bec850a71a6efd7370d5974966c5292adf1102a2820c7f550fb44bb9db298bd",
+      "caption": "Q3 逐风格归一化能量距离（越小越好）：低缺陷生成 vs 未约束生成 vs 真实—真实参照，按 22 个风格分组。",
+      "experimentIds": [
+        "EXP-0014"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "f124916a20ee6ac662e923a677d1c1726a7d1dc76970ee2b1dc8a0f15b725913"
+      }
+    },
+    {
+      "id": "FIG-0010",
+      "path": "experiments/EXP-0014/figures/defect-exceedance.png",
+      "packagedAs": "figures/FIG-0010-defect-exceedance.png",
+      "sha256": "de50a1d57a9e77388288e88672b75c0090f55e3add92e7939dc423c35e92a0be",
+      "caption": "Q3 缺陷超阈率对比：低缺陷生成（0）、未约束生成（约 0.85）与真实数据（0.844），阈值取 8.xlsx Sensory thresholds 的均值。",
+      "experimentIds": [
+        "EXP-0014"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "f124916a20ee6ac662e923a677d1c1726a7d1dc76970ee2b1dc8a0f15b725913"
+      }
+    },
+    {
+      "id": "FIG-0011",
+      "path": "experiments/EXP-0014/figures/transfer-scenarios.png",
+      "packagedAs": "figures/FIG-0011-transfer-scenarios.png",
+      "sha256": "b020b99397afeb7424e9b1b0783c7917fba84c9e447e14aef23878ab402895f1",
+      "caption": "Q3 Pils/Lager→Tripel 迁移的 2 策略 × 2 阈值情景：非恶化率、平均 L1 改动量与目标风格马氏距离。",
+      "experimentIds": [
+        "EXP-0014"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "f124916a20ee6ac662e923a677d1c1726a7d1dc76970ee2b1dc8a0f15b725913"
+      }
+    },
+    {
+      "id": "FIG-0012",
+      "path": "experiments/EXP-0014/figures/transfer-pareto.png",
+      "packagedAs": "figures/FIG-0012-transfer-pareto.png",
+      "sha256": "ea25faf2342e3b4a74858078d2837904b44c6508f584f1ff80ca4a06042ce59f",
+      "caption": "Q3 迁移的“目标风格接近程度 ↔ 谱改动规模”Pareto 前沿（λ∈{0.1,1,10} × η∈{0,0.01,0.1}，9 个格点）。",
+      "experimentIds": [
+        "EXP-0014"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "f124916a20ee6ac662e923a677d1c1726a7d1dc76970ee2b1dc8a0f15b725913"
+      }
+    },
+    {
+      "id": "FIG-0013",
+      "path": "experiments/EXP-0014/figures/ablation-comparison.png",
+      "packagedAs": "figures/FIG-0013-ablation-comparison.png",
+      "sha256": "63153604c807eac5665b33fb686dae96c86b5ed69d631644374f1610f8410311",
+      "caption": "Q3 九项消融中的 5–9 项：独立边际 vs Copula、无收缩、无 floor 混合、普通 vs 低缺陷生成、分位数迁移 vs 约束优化。",
+      "experimentIds": [
+        "EXP-0014"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "f124916a20ee6ac662e923a677d1c1726a7d1dc76970ee2b1dc8a0f15b725913"
+      }
+    },
+    {
+      "id": "FIG-0014",
+      "path": "experiments/EXP-0014/figures/profile-recovery.png",
+      "packagedAs": "figures/FIG-0014-profile-recovery.png",
+      "sha256": "f68b0e77d832326b4f03f095979b8aa6fc7249c305348c364e7f9c163654160d",
+      "caption": "Q3 生成谱经 Q1 感官预测代理映射后的 50 维感官画像与同风格真实留出样本画像的对比。",
+      "experimentIds": [
+        "EXP-0014"
+      ],
+      "script": {
+        "path": "src/q3_generate.py",
+        "sha256": "f124916a20ee6ac662e923a677d1c1726a7d1dc76970ee2b1dc8a0f15b725913"
+      }
+    },
+    {
+      "id": "FIG-0015",
+      "path": "experiments/EXP-0008/figures/baseline-energy-distance.png",
+      "packagedAs": "figures/FIG-0015-baseline-energy-distance.png",
+      "sha256": "523af105ce88651a31810632e2cf3e0aa866da9ce385547d260f66ae5014958f",
+      "caption": "Q3 无条件全局高斯基线 vs 真实数据的逐风格能量距离：基线忽略风格，误差显著大于风格条件模型。",
+      "experimentIds": [
+        "EXP-0008"
+      ],
+      "script": {
+        "path": "src/q3_baseline.py",
+        "sha256": "6c1c463ced1088ace10d19665d4d90f6da14ea09f258fdf410bdf9aa8fb4ce09"
+      }
+    },
+    {
+      "id": "FIG-0016",
+      "path": "figures/q1_component_mae.png",
+      "packagedAs": "figures/FIG-0016-q1_component_mae.png",
+      "sha256": "7dd974449e1dfd4affafdbd861d85c3f25a15b403fcb51086c9e60db05656684",
+      "caption": "问题一：三个分量与融合模型的 MAE 对比。横轴依次为逐目标训练中位数（OOF）、图正则低秩回归（OOF）、HGB（OOF）、融合（OOF）、融合（50 行留出测试）；红色虚线为同一批 50 行留出上的中位数基线 MAE。融合相对自身分量的增益很小，相对中位数基线的增益才是稳健的那个。",
+      "experimentIds": [
+        "EXP-0004"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0017",
+      "path": "figures/q1_fusion_weights.png",
+      "packagedAs": "figures/FIG-0017-q1_fusion_weights.png",
+      "sha256": "019d4e0bcb30882a9ee3513716b041f6418bc7049eb91d8532df50b50ed0b9f0",
+      "caption": "问题一：训练内 OOF 拟合的单纯形权重（每行三个权重之和为 1），分为全局与 Aroma/Flavour/其他三组；全局与三组都把 median 分量的权重压到接近 0，graph 约 0.64、HGB 约 0.33–0.35。",
+      "experimentIds": [
+        "EXP-0004"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0018",
+      "path": "figures/q1_per_target.png",
+      "packagedAs": "figures/FIG-0018-q1_per_target.png",
+      "sha256": "a3f6b0f9697465406d6c2680b052e207a9b541b9ed0878c4e51ee55110b27c9a",
+      "caption": "问题一：50 个感官维度的留出 Skill = 1 − MAE_model/MAE_median，按 Skill 升序排列；绿色为相对中位数基线改善的 38 维，红色为恶化的 12 维（EXP-0004 的 improvedTargets/degradedTargets）。恶化集中在训练样本极少的缺陷/风格维度。",
+      "experimentIds": [
+        "EXP-0004"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0019",
+      "path": "figures/q1_cv_grid.png",
+      "packagedAs": "figures/FIG-0019-q1_cv_grid.png",
+      "sha256": "a44a3b2b94655a713508336f817eceabafdc1db0cde7a3dbf1a4acbcd0e5f66a",
+      "caption": "问题一：训练折内 5 折 CV 的 54 个格点（27 个 (r,λ,γ) 组合 × 2 种表示），纵轴为 CV MAE，灰色为原尺度 z-score、蓝色为 Rank-Gauss；橙色菱形为选中格点 r=10,λ=1,γ=1 及其折间标准差。全部超参数选择只发生在训练折内部，未接触留出集。",
+      "experimentIds": [
+        "EXP-0003"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0020",
+      "path": "figures/q1_grades_all.png",
+      "packagedAs": "figures/FIG-0020-q1_grades_all.png",
+      "sha256": "ef678ce51f91c9a1c164a3f28978d569b3f9bef3a41ed36ab2513ce1df77c3e4",
+      "caption": "问题一：交付的 250×50 相对强度分级表（EXP-0026 的 grades_all.csv）。左图为等级 0–6 的分布，200 行训练行（in-sample）与 50 行留出分别归一化；右图为按留出均值等级排序的 50 个维度在两个子集上的均值等级。等级是相对强度，0 不代表风味不存在、6 不代表人工评分满分。",
+      "experimentIds": [
+        "EXP-0026"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0021",
+      "path": "figures/q2_bootstrap_pi.png",
+      "packagedAs": "figures/FIG-0021-q2_bootstrap_pi.png",
+      "sha256": "64dded4f4d27a381912e48eff47c6bb4449edb998f48048415a4db42c8041d75",
+      "caption": "问题二：500 次风格分层 bootstrap 下交付 Top-3 的入选频率 π。左图为 150 个交付条目的 π 分布（均值 0.465，没有任何化合物达到 π=1），右图为 50 个维度各自的平均 π（按 π 排序）；这是把 π 作为稳定性主证据、并用平均综合分 S 裁决并列的依据。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0022",
+      "path": "figures/q2_method_jaccard.png",
+      "packagedAs": "figures/FIG-0022-q2_method_jaccard.png",
+      "sha256": "ed7b64d556d07135109c291eea4be3cb3fb9365a25b577f787eb4cc3531c8224",
+      "caption": "问题二：四种方法（总体 Spearman、风格内 Spearman、图正则低秩 |B|、综合分 S）Top-3 集合两两 Jaccard 系数的 50 维平均；红色虚线为四种方法两两平均的主指标 topk-jaccard=0.219。总体与风格内两种关联的 Jaccard 仅 0.302（6 条边中最接近的两条），图正则系数与另两种排序的 Jaccard 只有 0.080。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0023",
+      "path": "figures/q2_modules.png",
+      "packagedAs": "figures/FIG-0023-q2_modules.png",
+      "sha256": "5734a42d9c5ff4bd9229b19ea8196b8c1122ec3172be5db87da24bb57da0ccbf",
+      "caption": "问题二：左图为训练网络（τ=0.5）的模块规模分布（纵轴对数），51 个连通块、最大块含 172 列；右图为训练网络（200 行重算）与附件 2.csv 网络（PSD 投影后阈值化）在 τ=0.4/0.5/0.6 下的连通分量数对比——两者都是“一个巨大连通块 + 大量单点”，模块区分度弱，因此模块只作解释线索而不进入 Top-3 打分。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0024",
+      "path": "figures/q3_energy_by_style.png",
+      "packagedAs": "figures/FIG-0024-q3_energy_by_style.png",
+      "sha256": "d58b540a9b70c537174fae2fa02a7b82969531a5577d0819cdd991d6344f75ce",
+      "caption": "问题三：约束生成在 22 个风格上的归一化能量距离（蓝柱，按风格留出样本量加权）与同样本量的真实—真实参照（橙点）；Kriek (n=10)、Lambic (n=11)、Faro (n=3) 等小风格波动很大，不声称精确刻画。",
+      "experimentIds": [
+        "EXP-0033"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0026",
+      "path": "figures/q3_transfer_scenarios.png",
+      "packagedAs": "figures/FIG-0026-q3_transfer_scenarios.png",
+      "sha256": "7e4be79a9c929fb188986bcccf43ff8e864d1b49d7f604c2fa2f8c691ad5b199",
+      "caption": "问题三：Pils/Lager→Tripel 的 4 个迁移情景（2 种非恶化策略 × mean/median 两套阈值）。左图为策略相对非恶化率（四种情景恒为 1.000，由投影构造保证）与严格逐缺陷不增率（绝对不增策略为 1.000，cap-at-max 策略仅 0.182）；右图为目标风格马氏距离，四种情景几乎相同（0.434–0.435），说明阈值情景的选择对目标接近度影响很小。",
+      "experimentIds": [
+        "EXP-0033"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0028",
+      "path": "figures/q3_profile.png",
+      "packagedAs": "figures/FIG-0028-q3_profile.png",
+      "sha256": "7bf61b6f235470c45cf0e045cd29205c799d8afe0db45491452daafd4cfc68f0",
+      "caption": "问题三：生成谱经 Q1 感官代理映射后的 50 维感官画像与同风格真实留出样本画像的 Spearman 相关，按风格排列（横轴标注样本量）；蓝色虚线为合并口径的 0.796。逐风格异质性明显：Amber (n=12) 为负、Brut (n=4) 与 Brett/cofermented (n=6) 接近 0，Kriek (n=10) 与 Strong ale (n=18) 较高，因此合并分数不能读成逐风格可靠。",
+      "experimentIds": [
+        "EXP-0033"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "8be5fd366f5370eec96b7b2a3d7ad384a3fe303bbb678fd665355ca07eb174c0"
+      }
+    },
+    {
+      "id": "FIG-0029",
+      "path": "experiments/EXP-0035/figures/ablation-summary.png",
+      "packagedAs": "figures/FIG-0029-ablation-summary.png",
+      "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd",
+      "caption": "九项必做消融汇总（EXP-0035 从三个实验的产物重新汇总，本图即该审计实验的产物）。上：Q1 第 1–3 项消融两侧的训练内 CV MAE 与折间标准差，三个差值都小于折间波动；中：Q2 第 4 项消融的总关联/风格内关联/综合分的 Top-3 Jaccard；下左：Q3 第 5–8 项的能量距离差（第 5 项“无 Copula”能量距离反而低 0.0080，但依赖结构谱 MAE 0.0151 明显差于 0.0063）；下右：Q3 第 9 项分位数初始化与约束优化的目标马氏距离（1.481 → 0.433）。",
+      "experimentIds": [
+        "EXP-0035"
+      ],
+      "script": {
+        "path": "src/ablation_summary.py",
+        "sha256": "95ca010ad9b476fe9ed01aec68c28d763556a5a37a81bccc5c3251939836608c"
+      }
+    },
+    {
+      "id": "FIG-0030",
+      "path": "figures/q3_defect_exceedance.png",
+      "packagedAs": "figures/FIG-0030-q3_defect_exceedance.png",
+      "sha256": "4d6c13f894c65ca08b91cfdfb8ce3e6b81e74d2f02d0818a5c9537cdea7ef7d6",
+      "caption": "问题三：至少一种均值阈值缺陷超阈的样本比例——真实数据 0.844、未约束条件生成 0.852、低缺陷生成 0.000。约束把缺陷超阈率降到 0，而生成模型在加约束前的缺陷水平与真实数据相当。",
+      "experimentIds": [
+        "EXP-0033"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "6ff30e8dac1303d2ff8cf2a1a4e84928f3166e3679018aae08842b34a8642457"
+      }
+    },
+    {
+      "id": "FIG-0031",
+      "path": "figures/q3_pareto.png",
+      "packagedAs": "figures/FIG-0031-q3_pareto.png",
+      "sha256": "a404a27fa6adba2b6a5aafdd75c449ae79a62478ee8e894c7d21451dd69dc6d6",
+      "caption": "问题三：λ∈{0.1,1,10} × η∈{0,0.01,0.1} 共 9 个格点的 Pareto 前沿（横轴为平均 L1 改动量，纵轴为到 Tripel 的马氏距离，越小越接近目标风格）；灰线连接同一 λ 的三个 η 变体，颜色区分 η，每个 λ 只标注一次。λ 越大目标风格越近、谱改动越大，η 只带来很小的额外代价，9 个格点的非恶化率全部与可行域允许的最大值一致。",
+      "experimentIds": [
+        "EXP-0033"
+      ],
+      "script": {
+        "path": "src/make_paper_figures.py",
+        "sha256": "6ff30e8dac1303d2ff8cf2a1a4e84928f3166e3679018aae08842b34a8642457"
+      }
+    }
+  ],
+  "retiredFigures": [
+    {
+      "id": "FIG-0025",
+      "status": "superseded",
+      "path": "figures/archive/FIG-0025-q3_defect_exceedance.png",
+      "sha256": "57e3e864e41517f8600b70b069c87d0d37eda7b5c52c055b32591e2d8dbd1306",
+      "caption": "问题三：至少一种均值阈值缺陷超阈的样本比例——真实数据 0.844、未约束条件生成 0.852、低缺陷生成 0.000。约束把缺陷超阈率降到 0，而生成模型在加约束前的缺陷水平与真实数据相当。",
+      "supersededBy": "FIG-0030",
+      "supersededReason": "图面重叠修订后重绘：FIG-0030 是同一作品的新版本（独立登记），旧记录保留为历史",
+      "retiredReason": null,
+      "pathHistory": [
+        {
+          "at": "2026-10-24T14:21:13.118Z",
+          "path": "figures/q3_defect_exceedance.png",
+          "reason": "保留修订前旧字节，归档副本 sha256 必须等于登记值"
+        }
+      ],
+      "packagedAs": "figures/history/FIG-0025-FIG-0025-q3_defect_exceedance.png",
+      "packagedFrom": "figures/archive/FIG-0025-q3_defect_exceedance.png"
+    },
+    {
+      "id": "FIG-0027",
+      "status": "superseded",
+      "path": "figures/archive/FIG-0027-q3_pareto.png",
+      "sha256": "299df07e5a54e3727f3d86d752ff3672ecb4e1227944a70eaab8808698a6b14e",
+      "caption": "问题三：λ∈{0.1,1,10} × η∈{0,0.01,0.1} 共 9 个格点的 Pareto 前沿（横轴为平均 L1 改动量，纵轴为到 Tripel 的马氏距离，越小越接近目标风格）；λ 越大目标风格越近、谱改动越大，η 只带来很小的额外代价，且 9 个格点的非恶化率均为 1.0。",
+      "supersededBy": "FIG-0031",
+      "supersededReason": "图面重叠修订后重绘：FIG-0031 是同一作品的新版本（独立登记），旧记录保留为历史",
+      "retiredReason": null,
+      "pathHistory": [
+        {
+          "at": "2026-10-24T14:21:16.750Z",
+          "path": "figures/q3_pareto.png",
+          "reason": "保留修订前旧字节，归档副本 sha256 必须等于登记值"
+        }
+      ],
+      "packagedAs": "figures/history/FIG-0027-FIG-0027-q3_pareto.png",
+      "packagedFrom": "figures/archive/FIG-0027-q3_pareto.png"
+    }
+  ]
+}

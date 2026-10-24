@@ -1,0 +1,10 @@
+{
+  "bootstrap_reps": 500,
+  "external_6csv_mean_spearman": 0.44505144467935176,
+  "mean_selected_pi": 0.46468,
+  "n_candidates": 219,
+  "n_dimensions": 50,
+  "n_methods": 4,
+  "tau": 0.5,
+  "topk-jaccard": 0.24
+}

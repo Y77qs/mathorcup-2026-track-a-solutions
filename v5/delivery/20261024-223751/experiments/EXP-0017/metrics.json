@@ -1,0 +1,9 @@
+{
+  "alpha_multiplier": 1.0,
+  "cv_mae_sd": 0.02064945433626414,
+  "gamma": 1.0,
+  "lambda": 1.0,
+  "mae": 0.3504945149881529,
+  "rank": 10,
+  "seed_used": 20261025
+}
