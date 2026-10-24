@@ -1,0 +1,19 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./_t/sym.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg))
+
+LaTeX Warning: Unused global option(s):
+    [UTF8].
+
+No file sym.aux.
+[1] (_t/sym.aux) )
+Output written on _t/sym.pdf (1 page).
+Transcript written on _t/sym.log.

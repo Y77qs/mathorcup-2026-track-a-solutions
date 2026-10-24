@@ -1,0 +1,8 @@
+{
+  "ledgerRevisionBeforeRender": 780,
+  "ledgerSha256": "d251f4bba73d66384562b7b62001d6491f5c67a49f2d3e16011fd5e1305c071c",
+  "auditMetricsSha256": "faeb040131d4afdc7862a7cd0f0b79c403c0ef6aedb7e29f9484e30d0ee1536e",
+  "qualityReportSha256": "94cf07cc71f0c3c940a3f021c163c2854f2dce4fa9adceac0436f3d058400856",
+  "generatedBy": "engineering deterministic report; no model call",
+  "final": false
+}

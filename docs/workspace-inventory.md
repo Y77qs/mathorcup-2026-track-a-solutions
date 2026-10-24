@@ -6,6 +6,7 @@
 > - `A/` → [`v1/`](../v1/)（第一套完整解）
 > - `work/my-new-contest/` → [`v2/`](../v2/)（第二套完整解）
 > - 重跑项目（`work/beer-rerun-2.8.6/`、`work/my-new-contest-v2/`、`work/RERUN-GUIDE-2.8.6.md`）未纳入本仓库
+> - 本仓库另有 `v1-audit/`（第一套解的整改审计稿），来自工作区外路径 `…/Codex/2026-10-23/qing/outputs/建模实战整改最终交付/竞赛副本产物/`，不在本清单扫描范围内。
 >
 > 清单中提到的部分大文件（`A/outputs/q1|q2|q3`、非最终交付压缩包）未纳入本仓库，原因见根 README 第 5 节。
 

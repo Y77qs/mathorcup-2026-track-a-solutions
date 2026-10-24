@@ -1,0 +1,82 @@
+{
+  "token": "fb600a3366ae45cdcec65c72",
+  "experimentId": "EXP-0050",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-23T21:57:21.715Z",
+  "endedAt": "2026-10-23T21:57:22.537Z",
+  "durationMs": 821,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "mae": 0.42752830135031256,
+    "n_features": 231,
+    "n_folds": 5,
+    "n_train": 200,
+    "oof_mae_mean": 0.41915896932605257,
+    "oof_n_dims_r2_positive": 0,
+    "oof_r2_50dim": -0.008650200732219662,
+    "oof_r2_max": -0.00036313908097640457,
+    "oof_r2_mean": -0.008650200732219662,
+    "oof_r2_median": -0.008025901461766183,
+    "oof_r2_min": -0.023667133536927176,
+    "oof_rmse_mean": 0.5696369251823252,
+    "oof_spearman_mean": -0.09894239291516813,
+    "r2": -0.000379042295657106,
+    "seed": 42
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0050/metrics.json",
+      "sha256": "84b6cf597b62a922ce40e240333eb35a8992843b061b8f066ece2f9b9c557169",
+      "bytes": 490,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0050/outputs.json",
+      "sha256": "610417e18e0651e7c0a3eebfaba465fd30ae01f91c4fb015084ccc2e7dc455c0",
+      "bytes": 13606,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0050/predictions_oof.csv",
+      "sha256": "283963cff7f1c01863e309342af55c7b2f3a98b038693234fe13e111981e1034",
+      "bytes": 534053,
+      "kind": "predictions"
+    },
+    {
+      "path": "experiments/EXP-0050/seed-receipt.json",
+      "sha256": "5251d955b6806a53ca59f27b3a51a2b0e92cc90386db1f45038a7923248a01bc",
+      "bytes": 39,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0050/inputs/src/q1_trainonly.py",
+      "sha256": "4f0243d635ebf2e2e76147b46ba6495c05eef25036e9ad201912d1503b94903d",
+      "bytes": 9538,
+      "kind": "file"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/competitions/mathorcup2026-a-practical-repair/experiments/EXP-0050/inputs/src/q1_trainonly.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/competitions/mathorcup2026-a-practical-repair/experiments/EXP-0050/inputs/src/q1_trainonly.py",
+    "--family",
+    "constant-train-mean",
+    "--folds",
+    "5"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/competitions/mathorcup2026-a-practical-repair/experiments/EXP-0050",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

@@ -1,0 +1,19 @@
+{
+  "ari_spectral_core_kcore": 0.16107375716167407,
+  "condition_number_abs_2csv": 788.7679151902172,
+  "condition_number_recomputed": 93539.17798579863,
+  "corr_vs_recomputed": 0.9999650982634769,
+  "edge_density": 0.14748729531338228,
+  "lambda_min_2csv": -0.04241270911948119,
+  "max_abs_diff_vs_recomputed": 0.04782963240779675,
+  "modularity": 0.3183346799520214,
+  "n_edges_primary": 3918.0,
+  "n_modules": 7.0,
+  "n_modules_ge3": 3.0,
+  "n_negative_eigenvalues_2csv": 5.0,
+  "n_nodes": 231.0,
+  "n_pairs_abs_rho_gt_0.9": 9.0,
+  "rank_numerical_2csv": 226.0,
+  "tau_fdr_equivalent": 0.14392829248503,
+  "tau_primary": 0.3
+}

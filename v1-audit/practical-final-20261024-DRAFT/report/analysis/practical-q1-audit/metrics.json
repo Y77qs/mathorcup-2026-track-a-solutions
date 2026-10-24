@@ -1,0 +1,21 @@
+{
+  "delta_r2_50dim_vs_old": 0.0,
+  "max_abs_ytrue_diff_vs_testcsv": 0.0,
+  "n_dims": 50,
+  "n_joined_rows": 2500,
+  "n_test": 50,
+  "old_EXP0029_mae_mean": 0.33408459385997985,
+  "old_EXP0029_r2_50dim": 0.2535737468473862,
+  "old_EXP0029_r2_overall": 0.009210149437171467,
+  "recomputed_mae_mean": 0.33408459385997985,
+  "recomputed_n_dims_r2_positive": 45,
+  "recomputed_pooled_mae": 0.33408459385997985,
+  "recomputed_pooled_r2": 0.3276295790983791,
+  "recomputed_pooled_rmse": 0.46706485096111805,
+  "recomputed_r2_50dim": 0.2535737468473862,
+  "recomputed_r2_max": 0.7644396163937947,
+  "recomputed_r2_median": 0.24462188453586114,
+  "recomputed_r2_min": -0.34141966662997203,
+  "recomputed_r2_overall": 0.009210149437171467,
+  "recomputed_rmse_mean": 0.45924045939249253
+}

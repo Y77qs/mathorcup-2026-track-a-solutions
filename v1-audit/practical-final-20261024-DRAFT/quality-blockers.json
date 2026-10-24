@@ -1,0 +1,266 @@
+{
+  "generatedAt": "2026-10-24T02:48:24.735Z",
+  "final": false,
+  "qualityBlockers": [
+    {
+      "checkType": "source-anchor",
+      "checkId": "QC-0001",
+      "objectId": null,
+      "state": "stale",
+      "code": null,
+      "message": "check passed",
+      "hint": null
+    },
+    {
+      "checkType": "requirement-coverage",
+      "checkId": "QC-0002",
+      "objectId": null,
+      "state": "stale",
+      "code": "VMU_PACK_MODELING_CONTEST_COVERAGE_REVIEW_REQUIRED",
+      "message": "coverage is mechanically linked but has NOT been reviewed for semantic adequacy",
+      "hint": "an independent reviewer must confirm each quote is fully answered (per-constitution contributions, severity indicators, ...)"
+    },
+    {
+      "checkType": "target-lineage",
+      "checkId": "QC-0003",
+      "objectId": null,
+      "state": "needs_review",
+      "code": "VMU_PACK_MODELING_CONTEST_TARGET_LINEAGE_MISSING",
+      "message": "target transformation TGT-0001 needs independent derivation review",
+      "hint": "the scale is not established merely by mapping values into 0–6"
+    },
+    {
+      "checkType": "baseline-required",
+      "checkId": "QC-0030",
+      "objectId": "Q1",
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_BASELINE_REQUIRED",
+      "message": "question Q1 has no succeeded simple baseline experiment",
+      "hint": "a model without its own baseline is an unanchored number"
+    },
+    {
+      "checkType": "baseline-required",
+      "checkId": "QC-0031",
+      "objectId": "Q2",
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_BASELINE_REQUIRED",
+      "message": "question Q2 has no succeeded simple baseline experiment",
+      "hint": "a model without its own baseline is an unanchored number"
+    },
+    {
+      "checkType": "baseline-required",
+      "checkId": "QC-0032",
+      "objectId": "Q3",
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_BASELINE_REQUIRED",
+      "message": "question Q3 has no succeeded simple baseline experiment",
+      "hint": "a model without its own baseline is an unanchored number"
+    },
+    {
+      "checkType": "analysis-evidence",
+      "checkId": "QC-0012",
+      "objectId": "Q1",
+      "state": "stale",
+      "code": null,
+      "message": "declared analysis evidence is structurally complete; semantic validity still requires independent coverage review",
+      "hint": null
+    },
+    {
+      "checkType": "analysis-evidence",
+      "checkId": "QC-0013",
+      "objectId": "Q2",
+      "state": "stale",
+      "code": null,
+      "message": "declared analysis evidence is structurally complete; semantic validity still requires independent coverage review",
+      "hint": null
+    },
+    {
+      "checkType": "analysis-evidence",
+      "checkId": "QC-0014",
+      "objectId": "Q3",
+      "state": "stale",
+      "code": null,
+      "message": "declared analysis evidence is structurally complete; semantic validity still requires independent coverage review",
+      "hint": null
+    },
+    {
+      "checkType": "metric-recompute",
+      "checkId": "QC-0033",
+      "objectId": "EXP-0034",
+      "state": "needs_review",
+      "code": "VMU_PACK_MODELING_CONTEST_METRIC_DEFINITION_MISMATCH",
+      "message": "the authoritative test truth is unavailable: the dataset DATA-0002 declares no targetColumn, so the truth label is undefined",
+      "hint": "register the dataset/split/target (or export assignment.csv + test.csv) so the metric can be checked against the registered truth; a prediction file cannot be its own truth"
+    },
+    {
+      "checkType": "critical-findings",
+      "checkId": "QC-0017",
+      "objectId": null,
+      "state": "stale",
+      "code": "VMU_PACK_MODELING_CONTEST_REVIEW_STALE",
+      "message": "13 review(s) are stale: REV-0001, REV-0002, REV-0003, REV-0004, REV-0005, REV-0006, REV-0007, REV-0008, REV-0009, REV-0010, REV-0011, REV-0012, REV-0013",
+      "hint": "re-run the review against the current version"
+    },
+    {
+      "checkType": "robustness-execution",
+      "checkId": "QC-0019",
+      "objectId": "Q1",
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_ROBUSTNESS_EVIDENCE_MISSING",
+      "message": "robustness plan ROB-0001 was never executed",
+      "hint": "fix the pre-registration, the real perturbation inputs, or the decision rule"
+    },
+    {
+      "checkType": "robustness-execution",
+      "checkId": "QC-0021",
+      "objectId": "Q2",
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_ROBUSTNESS_EVIDENCE_MISSING",
+      "message": "robustness plan ROB-0002 was never executed",
+      "hint": "fix the pre-registration, the real perturbation inputs, or the decision rule"
+    },
+    {
+      "checkType": "robustness-execution",
+      "checkId": "QC-0023",
+      "objectId": "Q3",
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_ROBUSTNESS_EVIDENCE_MISSING",
+      "message": "robustness plan ROB-0003 was never executed",
+      "hint": "fix the pre-registration, the real perturbation inputs, or the decision rule"
+    },
+    {
+      "checkType": "holdout-reuse",
+      "checkId": "QC-0024",
+      "objectId": null,
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_HOLDOUT_REUSE_UNCONTROLLED",
+      "message": "the same holdout split was used by more than 3 succeeded experiments: SPLIT-0002=23; repeated use turns the test set into a tuning set",
+      "hint": "use repeated CV/nested validation or report the reuse and its effect"
+    },
+    {
+      "checkType": "runcontrol-budget",
+      "checkId": "QC-0028",
+      "objectId": null,
+      "state": "needs_review",
+      "code": "VMU_PACK_MODELING_CONTEST_CAPABILITY_UNAVAILABLE",
+      "message": "native token usage is unknown; budget compliance is not established",
+      "hint": "retain known subtotal and unsettled reservations; do not report zero or within-budget"
+    },
+    {
+      "checkType": "baseline-required",
+      "checkId": "QC-0004",
+      "objectId": null,
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_BASELINE_REQUIRED",
+      "message": "question Q1 has no succeeded simple baseline experiment",
+      "hint": "a model without its own baseline is an unanchored number"
+    },
+    {
+      "checkType": "evaluation-circularity",
+      "checkId": "QC-0005",
+      "objectId": null,
+      "state": "not_applicable",
+      "code": null,
+      "message": "extra check is not passed",
+      "hint": null
+    },
+    {
+      "checkType": "baseline-required",
+      "checkId": "QC-0006",
+      "objectId": null,
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_BASELINE_REQUIRED",
+      "message": "question Q2 has no succeeded simple baseline experiment",
+      "hint": "a model without its own baseline is an unanchored number"
+    },
+    {
+      "checkType": "evaluation-circularity",
+      "checkId": "QC-0007",
+      "objectId": null,
+      "state": "not_applicable",
+      "code": null,
+      "message": "extra check is not passed",
+      "hint": null
+    },
+    {
+      "checkType": "baseline-required",
+      "checkId": "QC-0008",
+      "objectId": null,
+      "state": "failed",
+      "code": "VMU_PACK_MODELING_CONTEST_BASELINE_REQUIRED",
+      "message": "question Q3 has no succeeded simple baseline experiment",
+      "hint": "a model without its own baseline is an unanchored number"
+    },
+    {
+      "checkType": "evaluation-circularity",
+      "checkId": "QC-0009",
+      "objectId": null,
+      "state": "not_applicable",
+      "code": null,
+      "message": "extra check is not passed",
+      "hint": null
+    }
+  ],
+  "engineeringBlockers": [
+    {
+      "name": "figure:FIG-0001",
+      "code": "STALE",
+      "message": "figure FIG-0001 changed since it was registered: /Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/competitions/mathorcup2026-a-practical-repair/figures/q1_per_dim_r2.png sha256 17123fbcdb43e159dc62c24c9061edae3c3bd044cc6987481e5f53918f74400e != recorded 6dee43f52ad0f6b2698e89c5d1decf0e4d59cc3be016231b46b3d61e90d38cba"
+    },
+    {
+      "name": "independent-rerun",
+      "code": "NO_INDEPENDENT_RERUN",
+      "message": "no passing independent rerun for: Q2, Q3 — re-run the experiment in a NEW experiment id and compare against the tolerance declared in contest.yaml (modeling_validate {action:\"run\", checkType:\"independent-rerun\"})"
+    },
+    {
+      "name": "frozen",
+      "code": "NOT_FROZEN",
+      "message": "the delivery has not been frozen: modeling_project {action:\"freeze\"} fixes the ids the paper may reference"
+    },
+    {
+      "name": "checkpoints",
+      "code": "CHECKPOINTS_UNMET",
+      "message": "21 checkpoint blocker(s) before/at delivery: [baseline-ready] question Q3 baseline has no succeeded experiment with the question metric \"gen_style_fidelity\"; [validation] question Q1: required check \"leakage\" has not passed; [validation] question Q1: required check \"split-integrity\" has not passed; [validation] question Q1: required check \"holdout-metrics\" has not passed; [validation] question Q1: required check \"baseline-compare\" has not passed; [validation] question Q1: required check \"independent-rerun\" has not passed; [validation] question Q1: required check \"leakage\" has not passed; [validation] question Q1: required check \"split-integrity\" has not passed … — this is a draft, not a final delivery"
+    }
+  ],
+  "reviewScope": {
+    "reviewed": [
+      "metric-definition",
+      "claim-scope",
+      "review-provenance",
+      "review-independence",
+      "robustness-plan",
+      "robustness-plan",
+      "robustness-plan",
+      "runcontrol-preflight",
+      "runcontrol-resume",
+      "runcontrol-progress",
+      "runcontrol-approval"
+    ],
+    "notReviewed": [
+      "source-anchor",
+      "requirement-coverage",
+      "target-lineage",
+      "baseline-required",
+      "baseline-required",
+      "baseline-required",
+      "analysis-evidence",
+      "analysis-evidence",
+      "analysis-evidence",
+      "metric-recompute",
+      "critical-findings",
+      "robustness-execution",
+      "robustness-execution",
+      "robustness-execution",
+      "holdout-reuse",
+      "runcontrol-budget",
+      "baseline-required",
+      "evaluation-circularity",
+      "baseline-required",
+      "evaluation-circularity",
+      "baseline-required",
+      "evaluation-circularity"
+    ],
+    "assumptions": []
+  }
+}

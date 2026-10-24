@@ -1,0 +1,8 @@
+{
+  "M4_top1_mode_share_mean": 0.45393333333333336,
+  "bootstrap_B": 300.0,
+  "n_dims": 50.0,
+  "n_top3_records": 90000.0,
+  "runtime_seconds": 5.272646903991699,
+  "seed": 42.0
+}

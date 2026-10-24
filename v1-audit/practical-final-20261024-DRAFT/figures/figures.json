@@ -1,0 +1,210 @@
+{
+  "generatedAt": "2026-10-24T02:48:24.690Z",
+  "figures": [
+    {
+      "id": "FIG-0002",
+      "path": "figures/q2_method_agreement.png",
+      "packagedAs": "figures/FIG-0002-q2_method_agreement.png",
+      "sha256": "6f7c0c607f2077c77585e0a7ae26a8129bcacced566a2fc6e45ca48c11d42389",
+      "caption": "Q2 四种方法之间每维 Top-3 的 Jaccard 系数均值（M1 多变量岭/弹性网系数、M2 随机森林置换重要性、M3 图 lasso 偏相关、M4 单变量 Spearman+BH-FDR）。非对角均值约 0.20、最大 0.50，说明 Top-3 的跨方法一致性很低。注意：该图数据来自 Q2 选择阶段的开发运行（outputs/q2/method_jaccard.csv），对应 EXP 尚在登记中。",
+      "experimentIds": [
+        "EXP-0003"
+      ],
+      "script": {
+        "path": "src/08d_figures.py",
+        "sha256": "4261234cf0f70c211e813cacd6ca64747fb4dcb2c7453b8634fdff8250f73b9c"
+      }
+    },
+    {
+      "id": "FIG-0003",
+      "path": "figures/q2_top3_heatmap.png",
+      "packagedAs": "figures/FIG-0003-q2_top3_heatmap.png",
+      "sha256": "ee9e9b73e140eac1a7f516c8cb9843190b72dc9c2e0ab8ea30aea3f4a05bffe7",
+      "caption": "Q2 十个代表性感官维度的共识 Top-3 化合物（四方法归一化分数的均值排序，每维取前 3）。颜色条为共识强度（跨方法平均归一化重要度）。用于展示\"共识候选\"而非确定性关键因素；须与跨方法 Jaccard≈0.16 的不一致性一并阅读。",
+      "experimentIds": [
+        "EXP-0003"
+      ],
+      "script": {
+        "path": "src/08d_figures.py",
+        "sha256": "4261234cf0f70c211e813cacd6ca64747fb4dcb2c7453b8634fdff8250f73b9c"
+      }
+    },
+    {
+      "id": "FIG-0004",
+      "path": "figures/q3_spectra_pca.png",
+      "packagedAs": "figures/FIG-0004-q3_spectra_pca.png",
+      "sha256": "66c089090a8358e0356b2ed18baa2886f3c637a0f56d2053025f87110ae243fd",
+      "caption": "Q3 生成谱与真实同风格谱在 PCA 前两主成分上的分布（Tripel/Kriek/Lambic 三风格，各 200 个生成样本）。用于直观检查生成分布是否落在同风格真值云内；定量判据为归一化能量距离 ED/D_ref（主模型 0.1264，基线 0.1262，两者几乎相同）。",
+      "experimentIds": [
+        "EXP-0022"
+      ],
+      "script": {
+        "path": "src/q3_figs.py",
+        "sha256": "5b30e856f47cded754bbb064b84fdf2ff13d734cfb4ba595b1c14b6c1b0482fd"
+      }
+    },
+    {
+      "id": "FIG-0005",
+      "path": "figures/q3_style_fidelity.png",
+      "packagedAs": "figures/FIG-0005-q3_style_fidelity.png",
+      "sha256": "9db96713845e432b6bda1dd33fc8ecf022fe16ab6c556d60b6e7852a456a189f",
+      "caption": "Q3 逐风格保真度双栏图：左栏为\"生成样本被判为目标风格\"的命中率（标注 SATURATED——该指标在条件均值锚定后饱和，对生成质量无区分度）；右栏为逐风格能量距离（越低越接近真实分布）。小样本风格（Faro n=2、Scotch n=5）标为不可下结论。",
+      "experimentIds": [
+        "EXP-0022"
+      ],
+      "script": {
+        "path": "src/q3_figs.py",
+        "sha256": "5b30e856f47cded754bbb064b84fdf2ff13d734cfb4ba595b1c14b6c1b0482fd"
+      }
+    },
+    {
+      "id": "FIG-0006",
+      "path": "figures/q3_defect_oav.png",
+      "packagedAs": "figures/FIG-0006-q3_defect_oav.png",
+      "sha256": "e03e43b3a2fb0f1b79224c229315be6759a9d31d5c7cfeb82164aa7182227160",
+      "caption": "Q3 五类缺陷化合物在生成侧与真实同风格侧的越阈率对比（OAV>1 的比例）。DMS/Diacetyl/4VG 用 8.xlsx 绝对阈值；trans-2-nonenal 与 Stale hops 无阈值，仅以浓度不增作单调约束（图中标注）。可见生成侧 DMS 与 Diacetyl 的越阈率系统性高于真实同风格，属必须披露的分布偏移。",
+      "experimentIds": [
+        "EXP-0022"
+      ],
+      "script": {
+        "path": "src/q3_figs.py",
+        "sha256": "5b30e856f47cded754bbb064b84fdf2ff13d734cfb4ba595b1c14b6c1b0482fd"
+      }
+    },
+    {
+      "id": "FIG-0007",
+      "path": "figures/q1_model_comparison.png",
+      "packagedAs": "figures/FIG-0007-q1_model_comparison.png",
+      "sha256": "5fb1628d4099deceb764a62da90d0bb80f8ef9de51254b839b2050d8809656aa",
+      "caption": "图 Q1-1 模型族比较：六个候选族 + 四路等权融合的训练内 OOF R²（50 维均值，5 折×3 重复=15 折，误差棒为 3 次重复间标准差）。常数基线 R²≈0 作下界；融合 15/15 折一致优于最好的单模 ExtraTrees（配对 t=7.1）。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0008",
+      "path": "figures/q1_per_dim_r2.png",
+      "packagedAs": "figures/FIG-0008-q1_per_dim_r2.png",
+      "sha256": "17123fbcdb43e159dc62c24c9061edae3c3bd044cc6987481e5f53918f74400e",
+      "caption": "图 Q1-2 逐维 holdout R²（50 维，SPLIT-0002 test n=50）：颜色区分 Aroma 15 维（蓝）/ Flavour 15 维（青）/ 口感-缺陷-总体 20 维（品红）。约 1/4 维为负，说明这些维度在 50 个留出样本上不可预测，不得宣称\"全部感官维度可推断\"。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0009",
+      "path": "figures/q1_confusion.png",
+      "packagedAs": "figures/FIG-0009-q1_confusion.png",
+      "sha256": "4f579d79e45f171013a56d389a161cd0459bdbd1b78e515e6f72f7010745d5e2",
+      "caption": "图 Q1-3 分级混淆（holdout 50 样本×50 维）：左 P1 物理锚定（QWK 0.313）、右 P2 极差（QWK 0.493）。参照等级 = 同一条标定规则作用于 4.csv 连续值；真实 0–6 等级未知，故此图只表示「标定口径下的一致性」，不是分级准确率。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0010",
+      "path": "figures/q1_error_by_style.png",
+      "packagedAs": "figures/FIG-0010-q1_error_by_style.png",
+      "sha256": "1ed3506d9ce09dce4cf899e34f4a9448901c34b6f5c1ee225b296b913b9ca2c9",
+      "caption": "图 Q1-4 按风格分层的训练内 OOF R²（每风格内 50 维 R² 均值，n=200）。Faro/Brut/Scotch 等小类 n≤3，数值只作描述，不构成风格级结论。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0011",
+      "path": "figures/q1_calibration.png",
+      "packagedAs": "figures/FIG-0011-q1_calibration.png",
+      "sha256": "a7ea8765cfec4674e6780859bf8d57fe824d77a9930d671324c6d26d718abcfa",
+      "caption": "图 Q1-5 标定敏感性：左为 holdout 上 P1（物理锚定）与 P2（极差）的预测等级分布，右为四套口径的 QWK。真实 0–6 等级未知，QWK 只作标定口径敏感性，不作准确性背书。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0012",
+      "path": "figures/q1_grade_map.png",
+      "packagedAs": "figures/FIG-0012-q1_grade_map.png",
+      "sha256": "759b1335f758072fc2620e1578f66192060204d1fba12a8633e83b43b7789678",
+      "caption": "图 Q1-6 全 250 样本×50 维 0–6 分级图（P1 物理锚定口径），样本按 tasting_category_fine 排序。训练 200 行为 OOF 预测、test 50 行为锁定模型预测，两段严格分开。",
+      "experimentIds": [
+        "EXP-0029"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0013",
+      "path": "figures/q1_per_dim_r2_final.png",
+      "packagedAs": "figures/FIG-0013-q1_per_dim_r2_final.png",
+      "sha256": "17123fbcdb43e159dc62c24c9061edae3c3bd044cc6987481e5f53918f74400e",
+      "caption": "Q1 逐维留出集 R²（EXP-0025 三路等权融合），50 维均值 0.2206，43/50 维为正；约 1/4 维为负，说明这些维度在 50 个留出样本上不可预测，不得宣称\"全部感官维度可推断\"。对照常数基线（EXP-0015）50 维均值 −0.0246。n_test=50，一次性评估。",
+      "experimentIds": [
+        "EXP-0025"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0014",
+      "path": "figures/q1_confusion_final.png",
+      "packagedAs": "figures/FIG-0014-q1_confusion_final.png",
+      "sha256": "4f579d79e45f171013a56d389a161cd0459bdbd1b78e515e6f72f7010745d5e2",
+      "caption": "Q1 分级混淆（留出 50 样本 × 50 维）：左 P1 物理锚定（QWK 0.313）、右 P2 极差（QWK 0.493）。参照等级 = 同一条标定规则作用于 4.csv 连续值；真实 0–6 等级未知，故此图只表示\"标定口径下的一致性\"，不是分级准确率。",
+      "experimentIds": [
+        "EXP-0025"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0015",
+      "path": "figures/q1_calibration_final.png",
+      "packagedAs": "figures/FIG-0015-q1_calibration_final.png",
+      "sha256": "a7ea8765cfec4674e6780859bf8d57fe824d77a9930d671324c6d26d718abcfa",
+      "caption": "Q1 标定敏感性：左为留出集上 P1（物理锚定）与 P2（极差）的预测等级分布，右为四套口径的 QWK。真实 0–6 等级未知，QWK 仅作标定口径敏感性，不作准确性背书。",
+      "experimentIds": [
+        "EXP-0025"
+      ],
+      "script": {
+        "path": "src/q1_figs.py",
+        "sha256": "809c45e5f3453c3f7ae06615f6f03785824bb582e249e1c92c9ae27d93fb93b0"
+      }
+    },
+    {
+      "id": "FIG-0016",
+      "path": "figures/practical-q1-audit.png",
+      "packagedAs": "figures/FIG-0016-practical-q1-audit.png",
+      "sha256": "51cab98d09c922b5ac9c8ee32657dd7afa806a82833d90371acfa60bce07cd06",
+      "caption": "EXP-0029 all fifty dimensions: engineering post-hoc audit, not historical rerun",
+      "experimentIds": [],
+      "script": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-10-24T02:48:20.496Z",
+  "input": "report/paper.md",
+  "output": "report/rendered.md",
+  "sha256": "587b895f8b34fde8796e75d5aadafc0c79c3a16e1144f35ec730d80790ab30eb",
+  "allowStale": false,
+  "placeholders": 0,
+  "passes": 0,
+  "refs": [],
+  "staleRefs": [],
+  "warnings": [
+    "the paper contains no ledger placeholders: every number in it is unverifiable against the ledger"
+  ]
+}

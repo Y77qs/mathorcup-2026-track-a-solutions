@@ -1,0 +1,49 @@
+
+schemaVersion: 2
+projectId: mathorcup-2026-a
+language: zh-CN
+deadline: null
+problem:
+  statement: problem/statement.md
+  questions: problem/questions.yaml
+runtime:
+  python: /Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python
+evaluation:
+  taskType: regression
+  split:
+    method: random-holdout
+    testFraction: 0.2
+    seed: 42
+  tuning: train-only-cross-validation
+  primaryMetric: r2
+  metricDirection: maximize
+  baseline: mean-predictor   # 每维训练均值的常数基线（空特征）
+  reproductionTolerance:
+    absolute: 1e-9
+    relative: 0.000001
+    stochasticReruns: 3
+delivery:
+  template: generic-zh
+  paperFormats: [md, tex, pdf]
+  requireIndependentRerun: true
+  requireResolvedCriticalClaims: true
+  submission: manual
+  contest: null
+quality:
+  required: true
+  coverageReviewRequired: true
+  ruleDependencyAgreement: 0.999
+  review:
+    required: true
+    independence: independent_context
+    allowSameModelDifferentContext: true
+  robustness:
+    required: true
+    maxHoldoutReuse: 3
+    methods: []
+  runControl:
+    maxRetries: 2
+    noProgressLimit: 3
+    approvalTimeoutSeconds: 120
+    softTokenLimit: null
+    hardTokenLimit: null

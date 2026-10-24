@@ -1,0 +1,62 @@
+{
+  "token": "07f2bd0cf853891d6d8bff03",
+  "experimentId": "EXP-0003",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-23T13:27:16.110Z",
+  "endedAt": "2026-10-23T13:27:17.744Z",
+  "durationMs": 1634,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "ari_spectral_core_kcore": 0.16107375716167407,
+    "condition_number_abs_2csv": 788.7679151902172,
+    "condition_number_recomputed": 93539.17798579863,
+    "corr_vs_recomputed": 0.9999650982634769,
+    "edge_density": 0.14748729531338228,
+    "lambda_min_2csv": -0.04241270911948119,
+    "max_abs_diff_vs_recomputed": 0.04782963240779675,
+    "modularity": 0.3183346799520214,
+    "n_edges_primary": 3918.0,
+    "n_modules": 7.0,
+    "n_modules_ge3": 3.0,
+    "n_negative_eigenvalues_2csv": 5.0,
+    "n_nodes": 231.0,
+    "n_pairs_abs_rho_gt_0.9": 9.0,
+    "rank_numerical_2csv": 226.0,
+    "tau_fdr_equivalent": 0.14392829248503,
+    "tau_primary": 0.3
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0003/metrics.json",
+      "sha256": "0e316abd85b19d09a118236cc68ca16babe1298ab30e22f382498e0b5824689d",
+      "bytes": 630,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0003/outputs.json",
+      "sha256": "146242c77317f97afea32659144f0886de2d3870690c566acf8d079d6f587ad1",
+      "bytes": 2234,
+      "kind": "json"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_graph.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/A/src/q2_graph.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/A/experiments/EXP-0003",
+  "timeoutSeconds": 600.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

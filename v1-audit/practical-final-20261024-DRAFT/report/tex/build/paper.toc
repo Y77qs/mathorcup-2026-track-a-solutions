@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}啤酒化学成分、感官映射与条件生成：实战整改审计草稿}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}摘要}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}问题定义与数据边界}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Q1：全部 50 维的存量预测复算}{2}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}新的隔离训练证据}{3}{subsubsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.4}Q2：关联分析与集合稳定性}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Q3：约束满足、分布拟合与画像必须分开}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}验证、未通过原因与最终状态}{4}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}模型自主、工程辅助与费用边界}{4}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}复现与证据}{5}{subsection.1.8}%
