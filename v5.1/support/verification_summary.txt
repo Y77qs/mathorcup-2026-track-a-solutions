@@ -1,0 +1,39 @@
+{
+  "originals_preserved": {
+    "paper.md": true,
+    "paper.tex": true,
+    "paper.pdf": true,
+    "rendered.md": true,
+    "rendered.pandoc.md": true,
+    "rendered.refs.json": true
+  },
+  "pdf_pages": 21,
+  "main_figures": 8,
+  "grade_shape": [
+    250,
+    50
+  ],
+  "top3_dimensions": 50,
+  "top3_entries": 150,
+  "profile_reconstruction": {
+    "Tripel": {
+      "fold_mean_spearman": 0.30660264105642254,
+      "fold_mean_mae": 0.1744012044329841,
+      "agrees_with_original": true
+    },
+    "Kriek": {
+      "fold_mean_spearman": 0.7371428571428572,
+      "fold_mean_mae": 0.3482690900176957,
+      "agrees_with_original": true
+    },
+    "Lambic": {
+      "fold_mean_spearman": 0.4387515006002401,
+      "fold_mean_mae": 0.25013264020543013,
+      "agrees_with_original": true
+    }
+  },
+  "generated_spectra_rows": 310,
+  "five_declared_constraints_recounted": true,
+  "no_internal_ids_or_placeholders": true,
+  "no_overfull_boxes_or_missing_glyphs": true
+}

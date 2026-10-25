@@ -1,0 +1,9 @@
+{
+  "top3_rows": 150,
+  "dimensions": 50,
+  "top3_coefficients_reproduced": true,
+  "transfer_distance_reproduced": 0.4328202679486976,
+  "expected_transfer_distance": 0.4328202679486975,
+  "profile_rows": 2450,
+  "originals_preserved": true
+}

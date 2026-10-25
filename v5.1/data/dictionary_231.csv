@@ -1,0 +1,232 @@
+feature,chemical_name,kind,scale
+acetaldehyde,Acetaldehyde,single_compound,calibrated_log10
+CS2,Carbon disulfide,single_compound,calibrated_log10
+DES,Diethyl sulfide,single_compound,calibrated_log10
+DMS,Dimethyl sulfide,single_compound,calibrated_log10
+ethyl_2.methyl_butyrate,Ethyl 2-methylbutyrate,single_compound,calibrated_log10
+ethyl_acetate,Ethyl acetate,single_compound,calibrated_log10
+ethyl_decanoate,Ethyl decanoate,single_compound,calibrated_log10
+ethyl_hexanoate,Ethyl hexanoate,single_compound,calibrated_log10
+ethyl_isovalerate,Ethyl 3-methylbutyrate,single_compound,calibrated_log10
+ethyl_octanoate,Ethyl octanoate,single_compound,calibrated_log10
+ethyl_propionate,Ethyl propionate,single_compound,calibrated_log10
+H2S,Hydrogen sulfide,single_compound,calibrated_log10
+isoamyl_alcohol,Isoamyl alcohol,single_compound,calibrated_log10
+isobutanol,Isobutanol,single_compound,calibrated_log10
+isobutyl_acetate,Isobutyl acetate,single_compound,calibrated_log10
+isopentyl_acetate,Isoamyl acetate,single_compound,calibrated_log10
+MeSH,Methanethiol,single_compound,calibrated_log10
+octyl_acetate,Octyl acetate,single_compound,calibrated_log10
+phenethyl_acetate,Phenethyl acetate,single_compound,calibrated_log10
+phenethyl_alcohol,Phenethyl alcohol,single_compound,calibrated_log10
+X4VG,4-vinylguaiacol,single_compound,calibrated_log10
+SO2.mg.L.,Sulfur dioxide,single_compound,calibrated_log10
+acetic_acid.g.L.,Acetic acid,single_compound,calibrated_log10
+ammonia.mg.L.,Ammonia,single_compound,calibrated_log10
+color.EBC.,Color,physical_parameter,calibrated_log10
+betaglucan.mg.L.,Betaglucan,single_compound,calibrated_log10
+lactic_acid.mg.L.,Lactic acid,single_compound,calibrated_log10
+glycerol,Glycerol,single_compound,calibrated_log10
+iron,Iron,single_compound,calibrated_log10
+pH,pH,physical_parameter,calibrated_log10
+protein.g.L.,Protein,single_compound,calibrated_log10
+bitterness,Iso-alpha acids,physical_parameter,calibrated_log10
+GFS,Sugars,physical_parameter,calibrated_log10
+ethanol..v.v.,Ethanol,physical_parameter,calibrated_log10
+CO2.PSI.,Carbon dioxide,physical_parameter,calibrated_log10
+unfermentables,Unfermentables,physical_parameter,calibrated_log10
+kcalperc,Caloric value,derived_sum,calibrated_log10
+X1.propanol,1-propanol,single_compound,unverified_storage_scale
+X2.3.butanedione,Diacetyl,single_compound,calibrated_linear
+X3.methylbutanal,3-methylbutanal,single_compound,calibrated_linear
+propylene.glycol,Propylene glycol,single_compound,unverified_storage_scale
+propyl.acetate,N-propyl acetate,single_compound,unverified_storage_scale
+n.pentanol,N-pentanol,single_compound,unverified_storage_scale
+X2.methyl.1.butanol,2-methyl-1-butanol,single_compound,unverified_storage_scale
+isopentyl.formate,Isopentyl formate,single_compound,unverified_storage_scale
+ethyl.isobutyrate,Ethyl isobutyrate,single_compound,calibrated_linear
+X3.methyl.2.butenal,3-methyl-2-butenal,single_compound,unverified_storage_scale
+X2.methyltetrahydrofuran.3.one,2-methyltetrahydrofuran-3-one,single_compound,calibrated_linear
+ethyl.butyrate,Ethyl butyrate,single_compound,calibrated_linear
+butyl.acetate,Butyl acetate,single_compound,unverified_storage_scale
+methylpyrazine,Methylpyrazine,single_compound,calibrated_linear
+furfural,Furfural,single_compound,calibrated_linear
+ethyl.lactate,Ethyl lactate,single_compound,unverified_storage_scale
+X3Z.hexenol,Cis-3-hexenol,single_compound,calibrated_linear
+n.hexanol,N-hexanol,single_compound,calibrated_linear
+styrene,Styrene,single_compound,calibrated_linear
+X2.furanmethanol,Furfuryl alcohol,single_compound,unverified_storage_scale
+X3.methyl.2.hexanol,3-methyl-2-hexanol,single_compound,unverified_storage_scale
+X3.furanmethanol,3-furanmethanol,single_compound,unverified_storage_scale
+X2.acetylfuran,2-acetylfuran,single_compound,unverified_storage_scale
+X2.6.dimethyl.pyrazine,"2,6-dimethylpyrazine",single_compound,unverified_storage_scale
+amyl.acetate,Amyl acetate,single_compound,calibrated_linear
+ethyl.tiglate,Ethyl tiglate,single_compound,unverified_storage_scale
+benzaldehyde,Benzaldehyde,single_compound,calibrated_linear
+X5.methylfurfural,5-methylfurfural,single_compound,calibrated_linear
+n.heptanol,N-heptanol,single_compound,unverified_storage_scale
+X1.octen.3.ol,1-octen-3-ol,single_compound,unverified_storage_scale
+X3.methylthio.propanol,Methionol,single_compound,unverified_storage_scale
+isomaltol,Isomaltol,single_compound,unverified_storage_scale
+X6.methyl.5.hepten.2.one,Methyl heptenone,single_compound,unverified_storage_scale
+X2.pentyl.furan,2-pentyl furan,single_compound,unverified_storage_scale
+ethyl.hex..3E..enoate,Ethyl 3-hexanoate,single_compound,unverified_storage_scale
+alpha.phellandrene,α-phellandrene,single_compound,unverified_storage_scale
+dehydroxy.cis.linalool.oxide,Dehydroxy-cis-linalool oxide,single_compound,unverified_storage_scale
+hexyl.acetate,Hexyl acetate,single_compound,calibrated_linear
+isopentyl.butanoate,Isopentyl butanoate,single_compound,unverified_storage_scale
+X2.ethyl.1.hexanol,2-ethyl-1-hexanol,single_compound,unverified_storage_scale
+beta.phellandrene,Beta-phellandrene,single_compound,unverified_storage_scale
+limonene,Limonene,single_compound,unverified_storage_scale
+eucalyptol,Eucalyptol,single_compound,unverified_storage_scale
+benzyl.alcohol,Benzyl alcohol,single_compound,calibrated_linear
+ethyl.hex..2E..enoate,Ethyl 2-hexenoate,single_compound,unverified_storage_scale
+phenylacetaldehyde,Phenylacetaldehyde,single_compound,calibrated_linear
+X.E..beta.ocimene,E-β-ocimene,single_compound,calibrated_linear
+prenyl.isobutyrate,Prenyl isobutyrate,single_compound,unverified_storage_scale
+ethyl.furoate,Ethyl furoate,single_compound,unverified_storage_scale
+ortho.cresol,O-cresol,single_compound,unverified_storage_scale
+ethyl.5.methylhexanoate,Ethyl 5-methylhexanoate,single_compound,unverified_storage_scale
+X2.acetylpyrrole,2-acetylpyrrole,single_compound,unverified_storage_scale
+isoamyl.lactate,Isoamyl lactate,single_compound,unverified_storage_scale
+n.octanol,N-octanol,single_compound,unverified_storage_scale
+cis.linalool.oxide,Cis-linalool oxide,single_compound,unverified_storage_scale
+meta.cymenene,Meta-cymenene,single_compound,unverified_storage_scale
+terpinolene,Terpinolene,single_compound,unverified_storage_scale
+linalool,Linalool,single_compound,calibrated_linear
+nonan.2.ol,2-nonanol,single_compound,unverified_storage_scale
+n.nonanal,N-nonanal,single_compound,unverified_storage_scale
+X2.methyl.benzofuran,2-methyl-benzofuran,single_compound,unverified_storage_scale
+heptyl.acetate,Heptyl acetate,single_compound,unverified_storage_scale
+X4.methyl.1.pentanol,4-methyl-1-pentanol,single_compound,unverified_storage_scale
+neo.allo.ocimene,Neo-allo-ocimene,single_compound,unverified_storage_scale
+x.methyl.1.octanol,X-methyl-1-octanol,single_compound,unverified_storage_scale
+trans.dihydro.beta.terpineol,Trans-dihydro-β-terpineol,single_compound,unverified_storage_scale
+cis.beta.terpineol,Cis-β-terpineol,single_compound,unverified_storage_scale
+y.methyl.1.octanol,Y-methyl-1-octanol,single_compound,unverified_storage_scale
+camphor,Camphor,single_compound,unverified_storage_scale
+isobutyl.hexanoate,Isobutyl hexanoate,single_compound,unverified_storage_scale
+nerol.oxide,Nerol oxide,single_compound,unverified_storage_scale
+X.E..2.nonenal,E-2-nonenal,single_compound,calibrated_linear
+cis.dihydro.beta.terpineol,Cis-dihydro-β-terpineol,single_compound,unverified_storage_scale
+X4.ethyl.phenol,4-ethyl-phenol,single_compound,unverified_storage_scale
+isoborneol,Isoborneol,single_compound,unverified_storage_scale
+ethyl.benzoate,Ethyl benzoate,single_compound,unverified_storage_scale
+n.nonanol,N-nonanol,single_compound,unverified_storage_scale
+terpinen.4.ol,Terpinen-4-ol,single_compound,unverified_storage_scale
+diethyl.succinate,Diethyl succinate,single_compound,calibrated_linear
+vinyl.caprylate,Vinyl caprylate,single_compound,unverified_storage_scale
+X1.alpha.terpineol,Alpha-terpineol,single_compound,calibrated_linear
+ethyl..E..linalool,Ethyl linalool,single_compound,unverified_storage_scale
+ethyl.nicotinate,Ethyl nicotinate,single_compound,calibrated_linear
+citronellol,Citronellol,single_compound,calibrated_linear
+nerol,Nerol,single_compound,unverified_storage_scale
+hydroxy.methyl.furfural,5-hydroxymethylfurfural,single_compound,unverified_storage_scale
+E.ocimenone,Ocimenone,single_compound,unverified_storage_scale
+cumin.aldehyde,Cumin aldehyde,single_compound,unverified_storage_scale
+ethyl.phenylacetate,Ethyl phenylacetate,single_compound,unverified_storage_scale
+isopentyl.hexanoate,Isopentyl hexanoate,single_compound,unverified_storage_scale
+geraniol,Geraniol,single_compound,calibrated_linear
+beta.cyclohomocitral,β-cyclohomocitral,single_compound,unverified_storage_scale
+E.cinnamaldehyde,Cinnamaldehyde,single_compound,unverified_storage_scale
+n.decanol,N-decanol,single_compound,unverified_storage_scale
+neryl.formate,Neryl formate,single_compound,unverified_storage_scale
+X4.ethyl.guaiacol,4-ethyl-guaiacol,single_compound,unverified_storage_scale
+X2.undecanone,2-undecanone,single_compound,unverified_storage_scale
+trans.dihydro.alpha.terpinyl.acetate,Trans-dihydro-α-terpinyl acetate,single_compound,unverified_storage_scale
+terpinen.4.ol.acetate,Terpinen-4-ol acetate,single_compound,unverified_storage_scale
+X2.undecanol,2-undecanol,single_compound,unverified_storage_scale
+delta.terpinyl.acetate,Terpiryl acetate,single_compound,unverified_storage_scale
+X.E.E..2.4.decadienal,"E,E-2,4-decadienal",single_compound,calibrated_linear
+methyl.geranate,Methyl geranate,single_compound,unverified_storage_scale
+car.3.en.2.one,Car-3-en-2-one,single_compound,unverified_storage_scale
+dimethoxy..E..citral,Dimethoxy-E-citral,single_compound,unverified_storage_scale
+X2.butyloctanoate,2-butyl octanoate,single_compound,unverified_storage_scale
+X4.methoxysalicylaldehyde,4-methoxysalicylaldehyde,single_compound,unverified_storage_scale
+ethyl.hydrocinnamate,Ethyl hydrocinnamate,single_compound,unverified_storage_scale
+eugenol,Eugenol,single_compound,calibrated_linear
+gamma.nonalactone,Gamma-nonalactone,single_compound,calibrated_linear
+methyl.para.anisate,Methyl para-anisate,single_compound,unverified_storage_scale
+X.E..beta.damascenone,E-β-damascenone,single_compound,calibrated_linear
+ethyl..9..decenoate,Ethyl 9-decenoate,single_compound,unverified_storage_scale
+vanillin,Vanillin,single_compound,unverified_storage_scale
+geosmin,Geosmin,single_compound,unverified_storage_scale
+dodecanal,Dodecanal,single_compound,unverified_storage_scale
+X4.8.alpha.epoxy.caryophyllane,"4,8-α-epoxy-caryophyllane",single_compound,unverified_storage_scale
+E.caryophyllene,Caryophyllene,single_compound,calibrated_linear
+X.E..alpha.ionone,E-α-ionone,single_compound,unverified_storage_scale
+perillyl.acetate,Perillyl acetate,single_compound,unverified_storage_scale
+beta.humulene,β-humulene,single_compound,unverified_storage_scale
+X2.phenyl.ethyl.butyrate,2-phenyl ethyl butyrate,single_compound,unverified_storage_scale
+X.Z..beta.farnesene,Z-β-farnesene,single_compound,unverified_storage_scale
+pentyl.octanoate,Pentyl octanoate,single_compound,unverified_storage_scale
+X.E..beta.farnesene,E-β-farnesene,single_compound,unverified_storage_scale
+X2.methylbutyl.octanoate,2-methylbutyl octanoate,single_compound,unverified_storage_scale
+alpha.humulene,Alpha-humulene,single_compound,calibrated_linear
+neryl.propanoate,Neryl propanoate,single_compound,unverified_storage_scale
+X9.epi..E..caryophyllene,9-epi-E-caryophyllene,single_compound,unverified_storage_scale
+ethyl..E..cinnamate,Ethyl cinnamate,single_compound,unverified_storage_scale
+linalool.isovalerate,Linalool isovalerate,single_compound,unverified_storage_scale
+alpha.terpinyl.isobutanoate,α-terpinyl isobutanoate,single_compound,unverified_storage_scale
+n.dodecanol,N-dodecanol,single_compound,unverified_storage_scale
+germacrene.D,Germacrene D,single_compound,unverified_storage_scale
+X.E..beta.ionone,E-β-ionone,single_compound,unverified_storage_scale
+valencene,Valencene,single_compound,unverified_storage_scale
+neryl.isobutanoate,Neryl isobutanoate,single_compound,unverified_storage_scale
+E.methyl.isoeugenol,Methyl isoeugenol,single_compound,unverified_storage_scale
+X.Z..dihydro.apofarnesal,Z-dihydro-apofarnesal,single_compound,unverified_storage_scale
+butylated.hydroxytoluene,Butylated hydroxytoluene,single_compound,unverified_storage_scale
+X.E..dihydro.apofarnesal,E-dihydro-apofarnesal,single_compound,unverified_storage_scale
+Z.nerolidol,Z-nerolidol,single_compound,calibrated_linear
+X.E..ortho.methoxy.cinnamaldehyde,E-ortho-methoxy cinnamaldehyde,single_compound,unverified_storage_scale
+alpha.calacorene,α-calacorene,single_compound,unverified_storage_scale
+E.nerolidol,E-nerolidol,single_compound,unverified_storage_scale
+dihydroisocaryophyllene.epoxide,Tobacarol,single_compound,unverified_storage_scale
+caryophyllene.alcohol,Caryophyllene alcohol,single_compound,unverified_storage_scale
+neryl.isovalerate,Neryl isovalerate,single_compound,unverified_storage_scale
+spathulenol,Spathulenol,single_compound,unverified_storage_scale
+caryophyllene.oxide,Caryophyllene oxide,single_compound,unverified_storage_scale
+humulene.epoxide.II,Humulene epoxide II,single_compound,unverified_storage_scale
+alloaromadendrene.epoxide,Allo-aromadendrene epoxide,single_compound,unverified_storage_scale
+X1.10.di.epi.cubenol,Epicubenol,single_compound,unverified_storage_scale
+isopropyl.laurate,Isopropyl laurate,single_compound,unverified_storage_scale
+caryophylla.4.12..8.13..dien.5.alpha.ol,"Caryophylla-4,8-dien-5-ol",single_compound,unverified_storage_scale
+gamma.eudesmol,Gamma-eudesmol,single_compound,unverified_storage_scale
+alpha.muurolol,α-muurolol,single_compound,unverified_storage_scale
+X1.2.dihydro.8.hydroxy..2E..linalool,"1,2-dihydro-8-hydroxy-2E-linalool",single_compound,unverified_storage_scale
+tau.cadinol,Tau-cadinol,single_compound,unverified_storage_scale
+selin.11.en.4.alpha.ol,Kongol,single_compound,unverified_storage_scale
+alpha.eudesmol,α-eudesmol,single_compound,unverified_storage_scale
+X14.hydroxy.9.epi..E..caryophyllene,14-hydroxy-9-epi-(E)-caryophyllene,single_compound,unverified_storage_scale
+tau.muurolol,Tau-muurolol,single_compound,unverified_storage_scale
+n.tetradecanol,N-tetradecanol,single_compound,unverified_storage_scale
+foeniculin,Eoeniculin,single_compound,unverified_storage_scale
+cadalene,Cadalene,single_compound,unverified_storage_scale
+X2.3.dihydro.farnesol,"2,3-dihydro-farnesol",single_compound,unverified_storage_scale
+X2E.6Z.farnesal,"E,Z-farnesal",single_compound,unverified_storage_scale
+caryophyllene.acetate,Caryophyllene acetate,single_compound,unverified_storage_scale
+X14.hydroxy.alpha.humulene,14-hydroxy-α-humulene,single_compound,unverified_storage_scale
+X2Z.6E.farnesal,"Z,E-farnesal",single_compound,unverified_storage_scale
+X2Z.6Z.farnesol,"Z,Z-farnesol",single_compound,unverified_storage_scale
+X2Z.6E.farnesol,"Z,E-farnesol",single_compound,unverified_storage_scale
+ambroxide,Ambroxide,single_compound,unverified_storage_scale
+benzyl.benzoate,Benzyl benzoate,single_compound,unverified_storage_scale
+X2E.6E.methyl.farnesoate,"2E,6E-methyl farnesoate",single_compound,unverified_storage_scale
+ethyl.tetradecanoate,Ethyl tetradecanoate,single_compound,unverified_storage_scale
+X2.ethylhexylsalicylate,2-ethylhexyl acrylate,single_compound,unverified_storage_scale
+isopropyl.tetradecanoate,Isopropyl tetradecanoate,single_compound,unverified_storage_scale
+ethyl.pentadecanoate,Ethyl pentadecanoate,single_compound,unverified_storage_scale
+methyl.hexadecanoate,Methyl hexadecanoate,single_compound,unverified_storage_scale
+Z.Z.geranyl.linalool,"Z,Z-geranyl linalool",single_compound,unverified_storage_scale
+ethyl.hexadecanoate,Ethyl hexadecanoate,single_compound,unverified_storage_scale
+manool.oxide,Manool oxide,single_compound,unverified_storage_scale
+X13.epi.manool.oxide,13-epi manool oxide,single_compound,unverified_storage_scale
+isopropyl.hexadecanoate,Isopropyl hexadecanoate,single_compound,unverified_storage_scale
+manool,Manool,single_compound,unverified_storage_scale
+ethyl.octadecanoate,Ethyl octadecanoate,single_compound,unverified_storage_scale
+ethyl.pentanoate,Ethyl pentanoate,single_compound,calibrated_linear
+X2.ethyl.3.methylpyrazine,2-ethyl-3-methylpyrazine,single_compound,calibrated_linear
+esters_sum,Total ester compounds,derived_sum,unverified_storage_scale
+aroma_hops_sum,Total hop aroma compounds,derived_sum,unverified_storage_scale
+acids_sum,Total acids,derived_sum,unverified_storage_scale
+sulfur_sum,Total sulfur compounds,derived_sum,unverified_storage_scale

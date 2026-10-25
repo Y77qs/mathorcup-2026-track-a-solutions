@@ -1,0 +1,23 @@
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,labelsep=quad,hypcap=false}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\contentsname}{目录}
+\usepackage{etoolbox}
+\newcommand{\tablefontsize}{\small}
+\newcommand{\tablestretch}{1.15}
+\BeforeBeginEnvironment{longtable}{\begingroup\tablefontsize\setlength{\tabcolsep}{3pt}\setlength{\parskip}{0pt}\renewcommand{\arraystretch}{\tablestretch}}
+\AfterEndEnvironment{longtable}{\endgroup}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{3em}
+\setCJKsansfont{Songti SC}
+\setCJKmonofont{Songti SC}
+\AtBeginDocument{\hypersetup{linkcolor=black,urlcolor=blue,citecolor=black}}
+\makeatletter
+\newcommand{\EnsureSpace}[1]{\par\begingroup\@tempdima=\pagegoal\advance\@tempdima by-\pagetotal\ifdim\@tempdima<#1\newpage\fi\endgroup}
+\renewenvironment{figure}[1][]{\par\medskip\noindent\begin{minipage}{\linewidth}\def\@captype{figure}\centering}{\end{minipage}\par\medskip}
+\def\ps@paper{\def\@oddhead{\hfil\small 啤酒化合物与感官强度建模\hfil}\let\@evenhead\@oddhead\def\@oddfoot{\hfil\thepage\hfil}\let\@evenfoot\@oddfoot}
+\makeatother
+\pagestyle{paper}
+\setlength{\headheight}{14pt}

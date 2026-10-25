@@ -1,0 +1,73 @@
+Rc files read:
+  NONE
+Latexmk: This is Latexmk, John Collins, 15 June 2025. Version 4.87.
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  paper_revised.tex
+Category 'changed_user':
+  paper_revised.tex
+
+------------
+Run number 1 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -recorder  "paper_revised.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper_revised.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/size11.clo)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.def) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/babel/babel.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/babel/locale/zh/babel-chinese.tex) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/babel/locale/zh/babel-chinese.tex) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/babel/babel-ca-chinese.tex)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty)) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def)) (./paper_revised.aux
+
+Package babel Info: The following font families will use the default
+(babel)             settings for all or some languages:
+(babel)             * \sffamily = lmss
+(babel)               "[lmsans10-regular]:mapping=tex-text;" at 10.95pt
+(babel)             * \ttfamily = Menlo(0)
+(babel)               "Menlo Regular/AAT" at 8.98909pt
+(babel)             There is nothing intrinsically wrong with it, but
+(babel)             'babel' will no set Script and Language, which could
+(babel)             be relevant in some languages. If your document uses
+(babel)             these families, consider redefining them with \babelfont.
+(babel)             Reported on input line 3.
+
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/baozhashizitou/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) [1] (./paper_revised.toc) [2]
+ignored error: Infinite glue shrinkage found in box being split [3] [4] [5] [6] [7] [8]
+ignored error: Infinite glue shrinkage found in box being split [9] [10] [11] [12] [13] [14] [15] [16] [17]
+ignored error: Infinite glue shrinkage found in box being split [18]
+ignored error: Infinite glue shrinkage found in box being split [19] [20] [21] (./paper_revised.aux) )
+Output written on paper_revised.xdv (21 pages, 474296 bytes).
+Transcript written on paper_revised.log.
+Latexmk: Getting log file 'paper_revised.log'
+Latexmk: Examining 'paper_revised.fls'
+Latexmk: Examining 'paper_revised.log'
+Latexmk: Log file says output to 'paper_revised.xdv'
+Latexmk: Using bibtex to make bibliography file(s).
+Latexmk: applying rule 'xdvipdfmx'...
+Rule 'xdvipdfmx':  Reasons for rerun
+Changed files or newly in use/created:
+  paper_revised.xdv
+Category 'changed_source_rules':
+  xelatex
+
+------------
+Run number 1 of rule 'xdvipdfmx'
+------------
+------------
+Running 'xdvipdfmx -E -o "paper_revised.pdf"  "paper_revised.xdv"'
+------------
+paper_revised.xdv -> paper_revised.pdf
+[1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21]
+1062111 bytes written
+Latexmk: All targets (paper_revised.xdv paper_revised.pdf) are up-to-date
+

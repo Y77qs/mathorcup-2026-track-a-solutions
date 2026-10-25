@@ -1,0 +1,232 @@
+feature,name,degree,component
+acetaldehyde,Acetaldehyde,2,0
+CS2,Carbon disulfide,0,1
+DES,Diethyl sulfide,0,2
+DMS,Dimethyl sulfide,1,3
+ethyl_2.methyl_butyrate,Ethyl 2-methylbutyrate,2,0
+ethyl_acetate,Ethyl acetate,4,0
+ethyl_decanoate,Ethyl decanoate,6,0
+ethyl_hexanoate,Ethyl hexanoate,6,0
+ethyl_isovalerate,Ethyl 3-methylbutyrate,1,0
+ethyl_octanoate,Ethyl octanoate,3,0
+ethyl_propionate,Ethyl propionate,0,4
+H2S,Hydrogen sulfide,1,3
+isoamyl_alcohol,Isoamyl alcohol,5,0
+isobutanol,Isobutanol,3,0
+isobutyl_acetate,Isobutyl acetate,5,0
+isopentyl_acetate,Isoamyl acetate,4,0
+MeSH,Methanethiol,0,5
+octyl_acetate,Octyl acetate,0,6
+phenethyl_acetate,Phenethyl acetate,2,0
+phenethyl_alcohol,Phenethyl alcohol,0,7
+X4VG,4-vinylguaiacol,0,8
+SO2.mg.L.,Sulfur dioxide,0,9
+acetic_acid.g.L.,Acetic acid,1,10
+ammonia.mg.L.,Ammonia,0,11
+color.EBC.,Color,1,12
+betaglucan.mg.L.,Betaglucan,0,13
+lactic_acid.mg.L.,Lactic acid,0,14
+glycerol,Glycerol,5,0
+iron,Iron,0,15
+pH,pH,0,16
+protein.g.L.,Protein,1,12
+bitterness,Iso-alpha acids,0,17
+GFS,Sugars,0,18
+ethanol..v.v.,Ethanol,10,0
+CO2.PSI.,Carbon dioxide,0,19
+unfermentables,Unfermentables,0,20
+kcalperc,Caloric value,6,0
+X1.propanol,1-propanol,2,21
+X2.3.butanedione,Diacetyl,1,22
+X3.methylbutanal,3-methylbutanal,0,23
+propylene.glycol,Propylene glycol,0,24
+propyl.acetate,N-propyl acetate,1,25
+n.pentanol,N-pentanol,3,21
+X2.methyl.1.butanol,2-methyl-1-butanol,4,21
+isopentyl.formate,Isopentyl formate,2,21
+ethyl.isobutyrate,Ethyl isobutyrate,1,0
+X3.methyl.2.butenal,3-methyl-2-butenal,1,25
+X2.methyltetrahydrofuran.3.one,2-methyltetrahydrofuran-3-one,0,26
+ethyl.butyrate,Ethyl butyrate,1,0
+butyl.acetate,Butyl acetate,0,27
+methylpyrazine,Methylpyrazine,0,28
+furfural,Furfural,0,29
+ethyl.lactate,Ethyl lactate,0,30
+X3Z.hexenol,Cis-3-hexenol,0,31
+n.hexanol,N-hexanol,3,0
+styrene,Styrene,0,32
+X2.furanmethanol,Furfuryl alcohol,1,0
+X3.methyl.2.hexanol,3-methyl-2-hexanol,8,0
+X3.furanmethanol,3-furanmethanol,4,0
+X2.acetylfuran,2-acetylfuran,5,0
+X2.6.dimethyl.pyrazine,"2,6-dimethylpyrazine",1,0
+amyl.acetate,Amyl acetate,0,33
+ethyl.tiglate,Ethyl tiglate,0,34
+benzaldehyde,Benzaldehyde,0,35
+X5.methylfurfural,5-methylfurfural,1,0
+n.heptanol,N-heptanol,4,0
+X1.octen.3.ol,1-octen-3-ol,6,0
+X3.methylthio.propanol,Methionol,0,36
+isomaltol,Isomaltol,1,0
+X6.methyl.5.hepten.2.one,Methyl heptenone,0,37
+X2.pentyl.furan,2-pentyl furan,0,38
+ethyl.hex..3E..enoate,Ethyl 3-hexanoate,1,0
+alpha.phellandrene,α-phellandrene,0,39
+dehydroxy.cis.linalool.oxide,Dehydroxy-cis-linalool oxide,0,40
+hexyl.acetate,Hexyl acetate,0,41
+isopentyl.butanoate,Isopentyl butanoate,0,42
+X2.ethyl.1.hexanol,2-ethyl-1-hexanol,1,0
+beta.phellandrene,Beta-phellandrene,3,0
+limonene,Limonene,0,43
+eucalyptol,Eucalyptol,0,44
+benzyl.alcohol,Benzyl alcohol,0,45
+ethyl.hex..2E..enoate,Ethyl 2-hexenoate,2,0
+phenylacetaldehyde,Phenylacetaldehyde,0,46
+X.E..beta.ocimene,E-β-ocimene,1,0
+prenyl.isobutyrate,Prenyl isobutyrate,5,0
+ethyl.furoate,Ethyl furoate,3,0
+ortho.cresol,O-cresol,7,0
+ethyl.5.methylhexanoate,Ethyl 5-methylhexanoate,2,0
+X2.acetylpyrrole,2-acetylpyrrole,2,0
+isoamyl.lactate,Isoamyl lactate,2,0
+n.octanol,N-octanol,4,0
+cis.linalool.oxide,Cis-linalool oxide,0,47
+meta.cymenene,Meta-cymenene,0,48
+terpinolene,Terpinolene,2,0
+linalool,Linalool,3,0
+nonan.2.ol,2-nonanol,0,49
+n.nonanal,N-nonanal,0,50
+X2.methyl.benzofuran,2-methyl-benzofuran,0,51
+heptyl.acetate,Heptyl acetate,0,52
+X4.methyl.1.pentanol,4-methyl-1-pentanol,4,0
+neo.allo.ocimene,Neo-allo-ocimene,0,53
+x.methyl.1.octanol,X-methyl-1-octanol,1,0
+trans.dihydro.beta.terpineol,Trans-dihydro-β-terpineol,0,54
+cis.beta.terpineol,Cis-β-terpineol,0,55
+y.methyl.1.octanol,Y-methyl-1-octanol,1,0
+camphor,Camphor,1,0
+isobutyl.hexanoate,Isobutyl hexanoate,7,0
+nerol.oxide,Nerol oxide,12,0
+X.E..2.nonenal,E-2-nonenal,2,0
+cis.dihydro.beta.terpineol,Cis-dihydro-β-terpineol,2,0
+X4.ethyl.phenol,4-ethyl-phenol,2,0
+isoborneol,Isoborneol,3,0
+ethyl.benzoate,Ethyl benzoate,2,0
+n.nonanol,N-nonanol,2,0
+terpinen.4.ol,Terpinen-4-ol,5,0
+diethyl.succinate,Diethyl succinate,1,56
+vinyl.caprylate,Vinyl caprylate,0,57
+X1.alpha.terpineol,Alpha-terpineol,3,0
+ethyl..E..linalool,Ethyl linalool,4,0
+ethyl.nicotinate,Ethyl nicotinate,1,56
+citronellol,Citronellol,2,0
+nerol,Nerol,0,58
+hydroxy.methyl.furfural,5-hydroxymethylfurfural,0,59
+E.ocimenone,Ocimenone,1,0
+cumin.aldehyde,Cumin aldehyde,1,0
+ethyl.phenylacetate,Ethyl phenylacetate,8,0
+isopentyl.hexanoate,Isopentyl hexanoate,14,0
+geraniol,Geraniol,0,60
+beta.cyclohomocitral,β-cyclohomocitral,0,61
+E.cinnamaldehyde,Cinnamaldehyde,0,62
+n.decanol,N-decanol,0,63
+neryl.formate,Neryl formate,5,0
+X4.ethyl.guaiacol,4-ethyl-guaiacol,2,0
+X2.undecanone,2-undecanone,0,64
+trans.dihydro.alpha.terpinyl.acetate,Trans-dihydro-α-terpinyl acetate,13,0
+terpinen.4.ol.acetate,Terpinen-4-ol acetate,0,65
+X2.undecanol,2-undecanol,6,0
+delta.terpinyl.acetate,Terpiryl acetate,0,66
+X.E.E..2.4.decadienal,"E,E-2,4-decadienal",0,67
+methyl.geranate,Methyl geranate,7,0
+car.3.en.2.one,Car-3-en-2-one,1,68
+dimethoxy..E..citral,Dimethoxy-E-citral,1,68
+X2.butyloctanoate,2-butyl octanoate,13,0
+X4.methoxysalicylaldehyde,4-methoxysalicylaldehyde,0,69
+ethyl.hydrocinnamate,Ethyl hydrocinnamate,1,0
+eugenol,Eugenol,0,70
+gamma.nonalactone,Gamma-nonalactone,1,71
+methyl.para.anisate,Methyl para-anisate,0,72
+X.E..beta.damascenone,E-β-damascenone,1,71
+ethyl..9..decenoate,Ethyl 9-decenoate,7,0
+vanillin,Vanillin,0,73
+geosmin,Geosmin,0,74
+dodecanal,Dodecanal,0,75
+X4.8.alpha.epoxy.caryophyllane,"4,8-α-epoxy-caryophyllane",0,76
+E.caryophyllene,Caryophyllene,0,77
+X.E..alpha.ionone,E-α-ionone,0,78
+perillyl.acetate,Perillyl acetate,2,0
+beta.humulene,β-humulene,0,79
+X2.phenyl.ethyl.butyrate,2-phenyl ethyl butyrate,11,0
+X.Z..beta.farnesene,Z-β-farnesene,12,0
+pentyl.octanoate,Pentyl octanoate,14,0
+X.E..beta.farnesene,E-β-farnesene,0,80
+X2.methylbutyl.octanoate,2-methylbutyl octanoate,16,0
+alpha.humulene,Alpha-humulene,0,81
+neryl.propanoate,Neryl propanoate,6,0
+X9.epi..E..caryophyllene,9-epi-E-caryophyllene,0,82
+ethyl..E..cinnamate,Ethyl cinnamate,0,83
+linalool.isovalerate,Linalool isovalerate,0,84
+alpha.terpinyl.isobutanoate,α-terpinyl isobutanoate,0,85
+n.dodecanol,N-dodecanol,3,0
+germacrene.D,Germacrene D,2,0
+X.E..beta.ionone,E-β-ionone,3,0
+valencene,Valencene,0,86
+neryl.isobutanoate,Neryl isobutanoate,0,87
+E.methyl.isoeugenol,Methyl isoeugenol,1,88
+X.Z..dihydro.apofarnesal,Z-dihydro-apofarnesal,0,89
+butylated.hydroxytoluene,Butylated hydroxytoluene,1,88
+X.E..dihydro.apofarnesal,E-dihydro-apofarnesal,0,90
+Z.nerolidol,Z-nerolidol,0,91
+X.E..ortho.methoxy.cinnamaldehyde,E-ortho-methoxy cinnamaldehyde,0,92
+alpha.calacorene,α-calacorene,8,0
+E.nerolidol,E-nerolidol,3,93
+dihydroisocaryophyllene.epoxide,Tobacarol,3,93
+caryophyllene.alcohol,Caryophyllene alcohol,2,0
+neryl.isovalerate,Neryl isovalerate,0,94
+spathulenol,Spathulenol,0,95
+caryophyllene.oxide,Caryophyllene oxide,4,0
+humulene.epoxide.II,Humulene epoxide II,8,0
+alloaromadendrene.epoxide,Allo-aromadendrene epoxide,9,0
+X1.10.di.epi.cubenol,Epicubenol,11,0
+isopropyl.laurate,Isopropyl laurate,0,96
+caryophylla.4.12..8.13..dien.5.alpha.ol,"Caryophylla-4,8-dien-5-ol",13,0
+gamma.eudesmol,Gamma-eudesmol,0,97
+alpha.muurolol,α-muurolol,8,0
+X1.2.dihydro.8.hydroxy..2E..linalool,"1,2-dihydro-8-hydroxy-2E-linalool",14,0
+tau.cadinol,Tau-cadinol,0,98
+selin.11.en.4.alpha.ol,Kongol,2,0
+alpha.eudesmol,α-eudesmol,0,99
+X14.hydroxy.9.epi..E..caryophyllene,14-hydroxy-9-epi-(E)-caryophyllene,1,21
+tau.muurolol,Tau-muurolol,7,0
+n.tetradecanol,N-tetradecanol,2,0
+foeniculin,Eoeniculin,0,100
+cadalene,Cadalene,0,101
+X2.3.dihydro.farnesol,"2,3-dihydro-farnesol",4,93
+X2E.6Z.farnesal,"E,Z-farnesal",1,93
+caryophyllene.acetate,Caryophyllene acetate,0,102
+X14.hydroxy.alpha.humulene,14-hydroxy-α-humulene,0,103
+X2Z.6E.farnesal,"Z,E-farnesal",0,104
+X2Z.6Z.farnesol,"Z,Z-farnesol",0,105
+X2Z.6E.farnesol,"Z,E-farnesol",3,93
+ambroxide,Ambroxide,0,106
+benzyl.benzoate,Benzyl benzoate,0,107
+X2E.6E.methyl.farnesoate,"2E,6E-methyl farnesoate",0,108
+ethyl.tetradecanoate,Ethyl tetradecanoate,12,0
+X2.ethylhexylsalicylate,2-ethylhexyl acrylate,0,109
+isopropyl.tetradecanoate,Isopropyl tetradecanoate,1,0
+ethyl.pentadecanoate,Ethyl pentadecanoate,12,0
+methyl.hexadecanoate,Methyl hexadecanoate,0,110
+Z.Z.geranyl.linalool,"Z,Z-geranyl linalool",4,0
+ethyl.hexadecanoate,Ethyl hexadecanoate,12,0
+manool.oxide,Manool oxide,1,111
+X13.epi.manool.oxide,13-epi manool oxide,0,112
+isopropyl.hexadecanoate,Isopropyl hexadecanoate,1,111
+manool,Manool,1,0
+ethyl.octadecanoate,Ethyl octadecanoate,4,0
+ethyl.pentanoate,Ethyl pentanoate,1,22
+X2.ethyl.3.methylpyrazine,2-ethyl-3-methylpyrazine,0,113
+esters_sum,Total ester compounds,9,0
+aroma_hops_sum,Total hop aroma compounds,3,0
+acids_sum,Total acids,1,10
+sulfur_sum,Total sulfur compounds,2,3
