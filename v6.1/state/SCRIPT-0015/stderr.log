@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/r05_scope_numbers.py", line 43, in <module>
+    all_styles, n_all, w_all = weighted_pool(design)
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/r05_scope_numbers.py", line 39, in weighted_pool
+    v = [float(r["E_V_norm"]) for r in sub]
+         ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''

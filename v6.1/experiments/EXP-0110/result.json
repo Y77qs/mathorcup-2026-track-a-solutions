@@ -1,0 +1,235 @@
+{
+  "token": "50102be24b2e4fff7e676168",
+  "experimentId": "EXP-0110",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-27T11:29:30.797Z",
+  "endedAt": "2026-10-27T11:29:38.162Z",
+  "durationMs": 7365,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "fallback-share-qp-quantile-anchor": 0.0,
+    "fallback-share-qp-source-anchor": 0.0,
+    "fallback-share-source-fixed": 0.0,
+    "fallback-share-target-mean-projection": 0.0,
+    "fallback-share-target-mean-projection-full": 0.0,
+    "n-folds": 9,
+    "n-sources": 11,
+    "n-transfer-rows": 495,
+    "nonenal-nonincrease-rate-primary": 1.0,
+    "nonincrease-rate": 1.0,
+    "nonincrease-rate-DMS": 1.0,
+    "nonincrease-rate-X.E..2.nonenal": 1.0,
+    "nonincrease-rate-X2.3.butanedione": 1.0,
+    "nonincrease-rate-X4VG": 1.0,
+    "nonincrease-rate-qp-quantile-anchor": 1.0,
+    "nonincrease-rate-qp-source-anchor": 1.0,
+    "nonincrease-rate-repeat0": 1.0,
+    "nonincrease-rate-repeat1": 1.0,
+    "nonincrease-rate-repeat2": 1.0,
+    "nonincrease-rate-source-anchor": 1.0,
+    "nonincrease-rate-source-fixed": 1.0,
+    "nonincrease-rate-target-mean-projection": 0.41414141414141414,
+    "nonincrease-rate-target-mean-projection-full": 1.0,
+    "objective-gradient-fd-max-abs": 2.3575514873641623e-09,
+    "objective-gradient-fd-max-rel": 4.447371161693248e-05,
+    "qp-max-constraint-violation": 0.0,
+    "qp-max-dual-residual": 2.1051915766179263e-10,
+    "qp-max-primal-residual": 9.994750582720258e-09,
+    "qp-max-stale-halfspace-residual": 0.0,
+    "qp-max-stale-identity-error": 8.274037093680878e-17,
+    "qp-solves": 198,
+    "qp-stale-intercept-c-max": -0.013708071262500055,
+    "qp-stale-intercept-c-min": -0.10860385674698787,
+    "qp-status-infeasible": 0,
+    "qp-status-not-converged": 0,
+    "qp-status-optimal": 198,
+    "t2n-proxy-increase-share-primary": 0.06060606060606061,
+    "target-mean-self-distance": 4.74908413763155e-16,
+    "target-mean-self-distance-legacy": 0.6654909915445382,
+    "transfer-energy": 2.0798861351916886,
+    "transfer-energy-U": -0.3456899316462696,
+    "transfer-energy-normalized": 0.11341058752359791,
+    "transfer-energy-qp-quantile-anchor": 2.0798861351916886,
+    "transfer-energy-qp-source-anchor": 7.090616932081723,
+    "transfer-energy-repeat0": 2.0318686923914226,
+    "transfer-energy-repeat1": 2.160688028634076,
+    "transfer-energy-repeat2": 2.0471016845495678,
+    "transfer-energy-source-fixed": 7.196326285149654,
+    "transfer-energy-target-mean-projection": 6.94148284204317,
+    "transfer-energy-target-mean-projection-full": 6.379240954520166,
+    "verdict-conditional-primary": 198,
+    "verdict-failed-primary": 0,
+    "verdict-not-identifiable-primary": 99,
+    "verdict-records-primary": 3762,
+    "verdict-verified-denominator-primary": 3663,
+    "verdict-verified-primary": 3465
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0110/marginal_state.csv",
+      "sha256": "79235d8623b513ada6071d4b362b27828a201676d48a69d4249252b71abad9a4",
+      "bytes": 5444141,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0110/metrics.json",
+      "sha256": "28890bdad41407cfaf4e7bfe0b26add3da880612b39afbea9919f0bc46bf72e1",
+      "bytes": 2457,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/outputs.json",
+      "sha256": "7dfa1df64632cf602c2aa80dd03e897c5e7dcadcd8d3a0583b8bfbd7133187ec",
+      "bytes": 320140,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/run-seed-20261025.json",
+      "sha256": "59711a67e7d38a5992ad99a4dc0951630236ffba73e535abfd0cdbd7bad69cc1",
+      "bytes": 293,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/run-seed-20261026.json",
+      "sha256": "7dd08b596cf8d23c49ee94ea0662e1bf6cb3cb9703918a72177abba4b71d1362",
+      "bytes": 291,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/run-seed-20261027.json",
+      "sha256": "277127d8b924ed402ddaadebccb06d6d4709601ed4608fcadeed176498cb1cbe",
+      "bytes": 293,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/solver_certificates.jsonl",
+      "sha256": "8535fd6f5443ef42f13f761970846ecd61bcea99de6b63f2a9a992e175a274e8",
+      "bytes": 192599,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0110/transfer_constraints.csv",
+      "sha256": "e75e350c1d0f57ddb16ec5acb3192c17f285793a67dac6237d6e3997c4e90cd7",
+      "bytes": 5130536,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0110/transfer_metrics.json",
+      "sha256": "1ccd4bc13c8709e51e25e0870278df59ed0e67987153bf3f90012231b5a0e654",
+      "bytes": 2457,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/transfer_outputs.json",
+      "sha256": "0022db43ba8267b3905f58963d1b4bac3e6c3dd80b57d3e32c3508457c337e00",
+      "bytes": 338179,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/transfer_sources.csv",
+      "sha256": "f68c380809a67e18411d67ebfaa2fbbb931ff9f640c9dbcb1da4212928001c07",
+      "bytes": 51944,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0110/transfer_verdicts.csv",
+      "sha256": "c4a4286cf18ee43eaab96880e6f68bf4f3285429227fbb061daeee884939eed3",
+      "bytes": 262936,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0110/transfers.csv",
+      "sha256": "315d1ef1a39f43b4038757ab2d15a7121611e2ebac16c78028723c69d7e37629",
+      "bytes": 5823027,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/data/clean/q1_mapped.csv",
+      "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "bytes": 979527,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/data/clean/q3.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/data/clean/q3_style_protocol.json",
+      "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+      "bytes": 3703,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/data/clean/q3_thresholds.json",
+      "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+      "bytes": 5531,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/data/splits/NESTED-CV-1/manifest.json",
+      "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+      "bytes": 4548,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/data/splits/NESTED-CV-1/splits.csv",
+      "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "bytes": 58959,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/src/q3_lib.py",
+      "sha256": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+      "bytes": 62195,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/src/q3_transfer_fix.py",
+      "sha256": "1135580a24ec4f313abfefe3b7270f2b1c41531058d690cb2ac4326fdc9a0db4",
+      "bytes": 91440,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0110/inputs/src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536,
+      "kind": "file"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0110/inputs/src/q3_transfer_fix.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0110/inputs/src/q3_transfer_fix.py",
+    "--repeat",
+    "all"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0110",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

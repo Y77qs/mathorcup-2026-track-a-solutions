@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-27T12:23:39.437Z",
+  "runId": "RUN-0004",
+  "fromRunId": "RUN-0003",
+  "oldRunHistoryUnchanged": true,
+  "oldSessionFilesUnchanged": true,
+  "sourceLedgerUnchanged": true,
+  "unknownUsageRetained": true,
+  "inheritedUnsettledUpperBound": 1304576,
+  "experimentsCollected": [
+    {
+      "id": "EXP-0125",
+      "status": "succeeded"
+    },
+    {
+      "id": "EXP-0126",
+      "status": "succeeded"
+    },
+    {
+      "id": "EXP-0127",
+      "status": "succeeded"
+    },
+    {
+      "id": "EXP-0128",
+      "status": "succeeded"
+    },
+    {
+      "id": "EXP-0129",
+      "status": "succeeded"
+    },
+    {
+      "id": "EXP-0130",
+      "status": "succeeded"
+    }
+  ],
+  "experimentCountBefore": 130,
+  "experimentCountAfter": 130,
+  "trainingStarted": false,
+  "revision": 4928,
+  "runtimeRevision": 5962
+}

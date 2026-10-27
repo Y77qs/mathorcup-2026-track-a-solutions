@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/r05_robustness_products.py", line 164, in <module>
+    rid: {"decisionPassed": ROB[rid].get("decisionPassed"), "values": (ROB[rid]["result"] or {}).get("values", {}).get("values"),
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'

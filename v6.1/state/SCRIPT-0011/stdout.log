@@ -1,0 +1,26 @@
+{
+ "contexts_rebuilt": 9,
+ "rows_checked": 396,
+ "rows_mismatched": 0,
+ "max_abs_delta_l1_change_z": 0.0,
+ "max_abs_delta_mean_abs_change_z": 0.0,
+ "per_strategy": {
+  "source-fixed": {
+   "rows": 99,
+   "max_abs_delta_l1": 0.0
+  },
+  "target-mean-projection": {
+   "rows": 99,
+   "max_abs_delta_l1": 0.0
+  },
+  "qp-source-anchor": {
+   "rows": 99,
+   "max_abs_delta_l1": 0.0
+  },
+  "qp-quantile-anchor": {
+   "rows": 99,
+   "max_abs_delta_l1": 0.0
+  }
+ },
+ "passed": true
+}

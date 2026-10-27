@@ -1,0 +1,65 @@
+\contentsline {section}{摘要}{}{section*.1}%
+\contentsline {section}{问题重述与分析}{1}{section*.3}%
+\contentsline {subsection}{题目要求与建模对象}{1}{section*.4}%
+\contentsline {subsection}{三问的评价对象与证据边界}{1}{section*.5}%
+\contentsline {subsection}{与附件实际结构不符的三处修正}{1}{section*.6}%
+\contentsline {section}{数据核实与统一字典}{2}{section*.7}%
+\contentsline {subsection}{样本对齐与主键}{2}{section*.8}%
+\contentsline {subsection}{尺度、编码点与物理浓度}{2}{section*.9}%
+\contentsline {subsection}{缺失处理与三套评价协议}{2}{section*.10}%
+\contentsline {subsection}{防止信息泄露}{3}{section*.11}%
+\contentsline {section}{模型假设、符号与总体框架}{3}{section*.12}%
+\contentsline {subsection}{主要假设}{3}{section*.13}%
+\contentsline {subsection}{符号说明}{3}{section*.14}%
+\contentsline {subsection}{总体框架}{4}{section*.15}%
+\contentsline {section}{问题一：图正则低秩预测与相对分级}{4}{section*.16}%
+\contentsline {subsection}{训练折内稳健表示}{4}{section*.17}%
+\contentsline {subsection}{图正则低秩多输出回归}{4}{section*.18}%
+\contentsline {subsection}{四个同协议模型与内层选参}{5}{section*.19}%
+\contentsline {subsection}{预测结果：同协议四模型对照}{5}{section*.20}%
+\contentsline {subsection}{0--6 相对等级与典型评分表}{7}{section*.21}%
+\contentsline {subsection}{问题一的实际答案}{9}{section*.22}%
+\contentsline {subsection}{问题一的作用边界}{9}{section*.23}%
+\contentsline {section}{问题二：共表达网络、风格混杂与稳定 Top-3}{12}{section*.24}%
+\contentsline {subsection}{候选宇宙：严格单体化合物与扩展指标分表}{12}{section*.25}%
+\contentsline {subsection}{两个用途不同的网络}{12}{section*.26}%
+\contentsline {subsection}{风格混杂与残差化关联}{13}{section*.27}%
+\contentsline {subsection}{四种方法与综合打分}{14}{section*.28}%
+\contentsline {subsection}{核心与完整 Top-3}{14}{section*.29}%
+\contentsline {subsection}{稳定性、方法一致性与同源对照}{16}{section*.30}%
+\contentsline {subsection}{化学合理性：机理支持与关联标志分层}{17}{section*.31}%
+\contentsline {subsection}{问题二的实际答案}{18}{section*.32}%
+\contentsline {subsection}{问题二的作用边界}{18}{section*.33}%
+\contentsline {section}{问题三：风格条件生成与声明模型下的迁移}{18}{section*.34}%
+\contentsline {subsection}{生成目标与评价对象}{18}{section*.35}%
+\contentsline {subsection}{原始抽样与约束设计谱的分离}{18}{section*.36}%
+\contentsline {subsection}{含编码质量点的层次收缩边际}{19}{section*.37}%
+\contentsline {subsection}{收缩高斯 Copula}{19}{section*.38}%
+\contentsline {subsection}{评价量：分布距离与结构统计}{20}{section*.39}%
+\contentsline {subsection}{生成质量与参照对照}{21}{section*.40}%
+\contentsline {subsection}{三种目标风格必须与池化结果分开}{22}{section*.41}%
+\contentsline {subsection}{迁移：变量空间、目标与约束}{23}{section*.42}%
+\contentsline {subsection}{求解证书与独立复算}{23}{section*.43}%
+\contentsline {subsection}{不增率的饱和性、完整可行域基线与代理越界}{25}{section*.44}%
+\contentsline {subsection}{位移、约束残差与 z 空间位移是三组不同的量}{26}{section*.45}%
+\contentsline {subsection}{问题三的实际答案}{27}{section*.46}%
+\contentsline {subsection}{问题三的作用边界}{27}{section*.47}%
+\contentsline {section}{稳健性与限制}{27}{section*.48}%
+\contentsline {subsection}{检验设计}{27}{section*.49}%
+\contentsline {subsection}{分列的四组检验}{27}{section*.50}%
+\contentsline {subsection}{这些检验没有覆盖什么}{29}{section*.51}%
+\contentsline {section}{组件作用与负结果汇总}{30}{section*.52}%
+\contentsline {section}{结论、建议与局限}{30}{section*.53}%
+\contentsline {subsection}{主要结论}{30}{section*.54}%
+\contentsline {subsection}{实践建议}{30}{section*.55}%
+\contentsline {subsection}{适用边界}{30}{section*.56}%
+\contentsline {section}{参考文献}{31}{section*.57}%
+\contentsline {section}{附录 A　支撑材料长表索引与两张概率表}{32}{section*.58}%
+\contentsline {subsection}{A.1 支撑材料长表索引}{32}{section*.59}%
+\contentsline {subsection}{A.2 概率与约束明细表}{32}{section*.60}%
+\contentsline {section}{附录 B　复现要点}{33}{section*.61}%
+\contentsline {subsection}{B.1 计算与复核顺序}{33}{section*.62}%
+\contentsline {subsection}{B.2 脚本与产物索引}{33}{section*.63}%
+\contentsline {subsection}{B.3 本稿的待补项（DRAFT 状态声明）}{34}{section*.64}%
+\contentsline {subsection}{B.4 证据登记（全部 8 条结论）}{34}{section*.65}%
+\contentsline {section}{附录 C　证据类型、验证状态与限制}{35}{section*.66}%

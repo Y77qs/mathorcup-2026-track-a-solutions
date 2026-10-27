@@ -1,0 +1,86 @@
+{
+  "scope": "independent source/CSV arithmetic and synthetic oracle; no trained contest model",
+  "q1": {
+    "EXP-0001": {
+      "MAE_50": 0.4005615400064,
+      "MAE_AF30": 0.3969545009453333,
+      "macro_R2_50": -0.08483843508549839
+    },
+    "EXP-0003": {
+      "MAE_50": 0.35455830244427766,
+      "MAE_AF30": 0.35585425281943617,
+      "macro_R2_50": 0.21463819304379603
+    },
+    "EXP-0004": {
+      "MAE_50": 0.34656740992433116,
+      "MAE_AF30": 0.3511538384857925,
+      "macro_R2_50": 0.2316611790967379
+    },
+    "clipped_chemical_cells": {
+      "train": 44,
+      "test": 16
+    }
+  },
+  "q2": {
+    "mean_bug_reproduced": 0.44505144467935176,
+    "mean_all_names_aligned": 0.9210176180408739,
+    "row_mismatches": 20,
+    "column_mismatches": [
+      {
+        "column": "Carbonation",
+        "actual_target": "co2",
+        "old_assumed": "aftertaste"
+      },
+      {
+        "column": "Aftertaste",
+        "actual_target": "aftertaste",
+        "old_assumed": "body"
+      },
+      {
+        "column": "Body",
+        "actual_target": "body",
+        "old_assumed": "co2"
+      }
+    ],
+    "all_50_columns_mapped_by_workbook_names": true
+  },
+  "q3": {
+    "negative_linear_cells": 142,
+    "negative_linear_rows": 40,
+    "negative_linear_fields": 22,
+    "original_negative_linear_cells": 0,
+    "t2n_increases": 6,
+    "t2n_max_increase": 0.7633000015187316,
+    "target_mean_distance_old": 0.6044870518234862,
+    "target_mean_distance_correct": 2.5942017221525913e-16,
+    "transfer_mean_distance_old": 0.43282026794869743,
+    "transfer_mean_distance_corrected_fixed_spectra": 0.6205347648114844,
+    "transfer_energy": {
+      "U_raw": -0.3195653428479943,
+      "V_raw": 1.7453876944348181
+    },
+    "scope": "fixed saved spectra; centering changes evaluation only; no transfer optimization rerun"
+  },
+  "energy_identical_two_point_toy": {
+    "U_raw": -1.0,
+    "V_raw": 0.0
+  },
+  "exact_graph_reduced_rank_oracle": {
+    "scope": "synthetic 23x8 -> 5 outputs; rank 2, NOT contest performance",
+    "objective": 4.147832383623492,
+    "analytic_lower_bound": 4.147832383623492,
+    "absolute_gap": 0.0,
+    "two_factorizations_max_difference": 2.7755575615628914e-16,
+    "matrix_rank": 2,
+    "mean_residual_max": 1.7377403863698103e-16,
+    "full_rank_equals_graph_ridge_max_difference": 1.3877787807814457e-16
+  },
+  "input_hashes": {
+    "v5/src/q1_lib.py": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+    "v5/src/q2_lib.py": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+    "v5/src/q3_lib.py": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb",
+    "v5/src/q3_generate.py": "dfe367ae565fc94305239952a868431d8cdef74aaf7ba7a427cb958d3df424bd",
+    "v5/experiments/EXP-0033/samples.csv": "783583453829b3642cc8695550b37ab1e23a4c013d0168501a0618b77eeed398",
+    "v5/data/clean/q3.csv": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86"
+  }
+}

@@ -1,0 +1,4591 @@
+{
+ "config": {
+  "ledgerConfigSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+  "initRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+  "acceptedVersion": 2,
+  "needsReview": false,
+  "versions": [
+   {
+    "version": 1,
+    "rawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+    "protocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+    "at": null,
+    "reason": "initialized (configuration first, then init)"
+   },
+   {
+    "version": 2,
+    "rawSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+    "protocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+    "at": null,
+    "reason": "将笼统的 train-only CV 明确为本轮 3x3x3 嵌套内部重验证；旧 random-holdout 仅保留历史，不新增曝光。"
+   }
+  ],
+  "acceptanceEvents": [
+   {
+    "version": null,
+    "rawSha256": null,
+    "protocolSha256": null,
+    "at": "2026-10-26T07:44:30.384Z"
+   }
+  ]
+ },
+ "stage": {
+  "current": "intake",
+  "history": [
+   {
+    "at": "2026-10-24T11:20:58.820Z",
+    "from": null,
+    "to": "intake",
+    "reason": "project created"
+   }
+  ]
+ },
+ "frozen": {
+  "at": "2026-10-24T14:36:58.240Z",
+  "reason": "2.8.10 交付复验：图版本迁移完成（FIG-0025/0027 已 superseded 并归档旧字节）、活跃 claim 链接验证、delivery 独立复审 REV-0039（isRoot=false）通过、quality-run 27 passed/5 n/a/0 stale；本次冻结只含活跃图与新内容。",
+  "revision": 2731,
+  "configVersion": 1,
+  "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+  "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+  "experimentIds": [
+   "EXP-0001",
+   "EXP-0002",
+   "EXP-0003",
+   "EXP-0004",
+   "EXP-0005",
+   "EXP-0006",
+   "EXP-0007",
+   "EXP-0008",
+   "EXP-0009",
+   "EXP-0010",
+   "EXP-0011",
+   "EXP-0013",
+   "EXP-0014",
+   "EXP-0015",
+   "EXP-0016",
+   "EXP-0017",
+   "EXP-0018",
+   "EXP-0019",
+   "EXP-0020",
+   "EXP-0021",
+   "EXP-0022",
+   "EXP-0023",
+   "EXP-0024",
+   "EXP-0025",
+   "EXP-0026",
+   "EXP-0028",
+   "EXP-0029",
+   "EXP-0030",
+   "EXP-0031",
+   "EXP-0032",
+   "EXP-0033",
+   "EXP-0034",
+   "EXP-0035",
+   "EXP-0036"
+  ],
+  "claimIds": [
+   "CLAIM-0012",
+   "CLAIM-0014",
+   "CLAIM-0018",
+   "CLAIM-0019",
+   "CLAIM-0021",
+   "CLAIM-0022"
+  ],
+  "figureIds": [
+   "FIG-0001",
+   "FIG-0002",
+   "FIG-0003",
+   "FIG-0004",
+   "FIG-0005",
+   "FIG-0006",
+   "FIG-0007",
+   "FIG-0008",
+   "FIG-0009",
+   "FIG-0010",
+   "FIG-0011",
+   "FIG-0012",
+   "FIG-0013",
+   "FIG-0014",
+   "FIG-0015",
+   "FIG-0016",
+   "FIG-0017",
+   "FIG-0018",
+   "FIG-0019",
+   "FIG-0020",
+   "FIG-0021",
+   "FIG-0022",
+   "FIG-0023",
+   "FIG-0024",
+   "FIG-0026",
+   "FIG-0028",
+   "FIG-0029",
+   "FIG-0030",
+   "FIG-0031"
+  ],
+  "selectedModels": [
+   {
+    "questionId": "Q1",
+    "modelId": "MODEL-0004",
+    "selectionStatus": "validated"
+   },
+   {
+    "questionId": "Q2",
+    "modelId": "MODEL-0012",
+    "selectionStatus": "validated"
+   },
+   {
+    "questionId": "Q3",
+    "modelId": "MODEL-0013",
+    "selectionStatus": "validated"
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "Q1",
+   "title": "数据缺失条件下的感官评分：图正则低秩多输出预测与有界相对分级",
+   "selectedModelId": "MODEL-0048",
+   "selectionPhase": null,
+   "selectionReason": "Q1 验证契约修复后的 readiness 重读（VP-0015 为契约修复计划，登记于 EXP-0073/0074/0078 之后，不是预注册）。本轮新证据：VAL-0063 leakage passed（231 列，max|r|=0.576180）、VAL-0064 baseline-compare passed（候选 mae=0.359291565882 对基线 EXP-0074 真实 mae=0.398177328373，delta=0.0388857624907，minimize，容差内）、VAL-0065 independent-rerun passed（rerun=EXP-0083，mae delta=0，fixed-seed-reproduction）。仍只能 provisional，两个结构性阻断如实存在且未消除：(1) split-integrity 无法执行——EXP",
+   "metric": "mae"
+  },
+  {
+   "id": "Q2",
+   "title": "化合物–风味分析：共表达网络、风格混杂分析与稳定 Top-3",
+   "selectedModelId": "MODEL-0050",
+   "selectionPhase": null,
+   "selectionReason": "确认轮实际模型为 EXP-0075/MODEL-0050；VP-0013 的两项 required 检查均已在本轮新跑并通过：VAL-0056 leakage（231 特征全部检查，max|r|=0.576180 < 0.999，无禁用输入）、VAL-0057 independent-rerun（rerun=EXP-0081，topk-jaccard 0.209111 delta=0，mode=fixed-seed-reproduction）。分析输入已重配为 231 列（analysisPlan sha256=80cc1044…），与 EXP-0075 登记的 231 features 完全一致。原 Q2 validated 只绑 M4 先导轮 VAL-0053/0054，现改绑确认轮证据。声明限制：rerun 为确定性重现（同代码同数据同种子），不是独立实现复跑；6.csv 是同源秩相",
+   "metric": "topk-jaccard"
+  },
+  {
+   "id": "Q3",
+   "title": "风格条件生成与跨风格迁移：分层收缩边际、混合 Copula 与约束优化",
+   "selectedModelId": "MODEL-0053",
+   "selectionPhase": null,
+   "selectionReason": "Q3 双对象：生成侧 EXP-0079/MODEL-0053，迁移侧 EXP-0080/MODEL-0054。验证契约修复后两侧各自在自己组件计划下跑完（生成 VP-0017、迁移 VP-0016），结果分别读取：生成侧 VAL-0066 leakage passed（231 列 featureColumns，max|r|=0.401311）、VAL-0068 independent-rerun（metric=constraint-satisfaction）passed（rerun=EXP-0084，delta=0）；迁移侧 VAL-0067 leakage passed、VAL-0069 independent-rerun（metric=nonincrease-rate，VP-0016 修复后旧拒绝已被真实指标替代）passed（rerun=EXP-0085，delta=0）。readi",
+   "metric": "constraint-satisfaction"
+  }
+ ],
+ "claims": [
+  {
+   "id": "CLAIM-0001",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0007",
+   "refs": [
+    "metric:EXP-0004",
+    "metric:EXP-0001",
+    "metric:EXP-0004",
+    "figure:FIG-0001"
+   ],
+   "validationIds": [],
+   "statement": "在 SPLIT-0002 的 50 行留出上，训练内 OOF 融合（median 权重 0、graph 0.649、HGB 0.351）把 50 维等权平均 MAE 从逐目标训练中位数基线的 0.40056 降到 0.34657，R²=0.2317、相对基线的 Skill=0.1348；同 seed 独立复跑（EXP-0010）在 1e-9 容差内复现全部指标。"
+  },
+  {
+   "id": "CLAIM-0002",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0008",
+   "refs": [
+    "figure:FIG-0003",
+    "figure:FIG-0004",
+    "metric:EXP-0003"
+   ],
+   "validationIds": [],
+   "statement": "Q1 的三项训练内消融只显示很小的增益：Rank-Gauss 相对标准化 CV MAE 改善 0.00399，普通 Ridge 相对低秩约束差 0.00232，γ=0 相对最优 γ 差 0.00098，均小于折间标准差 0.0137，因此不能声称图正则或低秩约束带来稳定增益；稳定增益来自 graph+HGB 的 OOF 融合（OOF MAE 0.3448 对 graph 0.3504）。"
+  },
+  {
+   "id": "CLAIM-0003",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0009",
+   "refs": [
+    "metric:EXP-0006",
+    "metric:EXP-0006",
+    "metric:EXP-0006",
+    "figure:FIG-0006",
+    "figure:FIG-0007"
+   ],
+   "validationIds": [],
+   "statement": "在 200 行训练集上，50 维 × 4 方法的 Top-3 平均两两 Jaccard 为 0.21867（点估计集合、sets.json 可复算）；500 次风格分层 bootstrap 的入选频率均值 0.465、没有化合物达到 π=1，说明单维 Top-3 存在实质竞争；与 6.csv 独立 |r| 的秩相关均值 0.445（44/44 化合物对齐），方向一致性支持但不等同独立验证。"
+  },
+  {
+   "id": "CLAIM-0004",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0010",
+   "refs": [
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "figure:FIG-0009",
+    "figure:FIG-0010"
+   ],
+   "validationIds": [],
+   "statement": "风格条件 copula 生成器（κ=5、κ_R=20）在 310 个输出（250 个 OOF 生成 + 49 个未见风格 + 11 个迁移）上 constraint-satisfaction=1.0；未约束生成缺陷超阈率 0.852（真实数据 0.844），约束投影只把归一化能量距离从 0.2311 提到 0.2347（真实—真实参照 0.1842）；感官画像 Spearman=0.811。"
+  },
+  {
+   "id": "CLAIM-0005",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0011",
+   "refs": [
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "metric:EXP-0014",
+    "figure:FIG-0011",
+    "figure:FIG-0012"
+   ],
+   "validationIds": [],
+   "statement": "Pils/Lager→Tripel 迁移在 c_new≤max(c_source,T)（超阈不恶化）与 c_new≤c_source（绝对不增）两种策略下 5 类缺陷非恶化率均为 1.0；目标风格马氏距离从分位数初始化 1.481 降到 0.433，平均 L1 改动 7.19；但 t2n/stale_hops 代理很弱（CV R² 0.055/0.050），bootstrap 非恶化率下界 0.2"
+  },
+  {
+   "id": "CLAIM-0006",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0012",
+   "refs": [
+    "metric:EXP-0016",
+    "metric:EXP-0019",
+    "metric:EXP-0022"
+   ],
+   "validationIds": [],
+   "statement": "三项预注册稳健性判定全部通过：Q1 训练内 CV MAE 在 seed 与 λ 扰动下的相对极差 0.00447（≤0.03，ROB-0001）；Q2 topk-jaccard 在 seed 与 τ 扰动下相对极差 0（≤0.05，ROB-0002）；Q3 归一化能量距离在 seed 与 κ 扰动下相对极差 0.0827（≤0.25，ROB-0003），且 constraint-satisfact"
+  },
+  {
+   "id": "CLAIM-0007",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0013",
+   "refs": [
+    "metric:EXP-0004",
+    "metric:EXP-0001",
+    "metric:EXP-0025",
+    "figure:FIG-0001"
+   ],
+   "validationIds": [],
+   "statement": "在 SPLIT-0002 的 50 行留出上，训练内 OOF 融合（median 权重 0、graph 0.649、HGB 0.351）把 50 维等权平均 MAE 从逐目标训练中位数基线的 0.40056 降到 0.34657，R²=0.2317、相对基线的 Skill=0.1348；同 seed 独立复跑（EXP-0010、EXP-0025）在 1e-9 容差内复现全部指标。"
+  },
+  {
+   "id": "CLAIM-0008",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0014",
+   "refs": [
+    "figure:FIG-0003",
+    "figure:FIG-0004"
+   ],
+   "validationIds": [],
+   "statement": "Q1 的三项训练内消融只显示很小的增益：Rank-Gauss 相对标准化 CV MAE 改善 0.00399，普通 Ridge 相对低秩约束差 0.00232，γ=0 相对最优 γ 差 0.00098，均小于折间标准差 0.0137，因此不能声称图正则或低秩约束带来稳定增益；稳定增益来自 graph+HGB 的 OOF 融合（OOF MAE 0.3448 对 graph 0.3504）。"
+  },
+  {
+   "id": "CLAIM-0009",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0015",
+   "refs": [
+    "metric:EXP-0006",
+    "figure:FIG-0006",
+    "figure:FIG-0007"
+   ],
+   "validationIds": [],
+   "statement": "在 200 行训练集上，50 维 × 4 方法的 Top-3 平均两两 Jaccard 为 0.21867（点估计集合、sets.json 可复算）；500 次风格分层 bootstrap 的入选频率均值 0.465、没有化合物达到 π=1，说明单维 Top-3 存在实质竞争；与 6.csv 独立 |r| 的秩相关均值 0.445（44/44 化合物对齐），方向一致性支持但不等同独立验证。"
+  },
+  {
+   "id": "CLAIM-0010",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0016",
+   "refs": [
+    "metric:EXP-0014",
+    "figure:FIG-0009",
+    "figure:FIG-0010"
+   ],
+   "validationIds": [],
+   "statement": "风格条件 copula 生成器（κ=5、κ_R=20）在 310 个输出（250 个 OOF 生成 + 49 个未见风格 + 11 个迁移）上 constraint-satisfaction=1.0；未约束生成缺陷超阈率 0.852（真实数据 0.844），约束投影只把归一化能量距离从 0.2311 提到 0.2347（真实—真实参照 0.1842）；感官画像 Spearman=0.811。"
+  },
+  {
+   "id": "CLAIM-0011",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0017",
+   "refs": [
+    "metric:EXP-0014",
+    "figure:FIG-0011",
+    "figure:FIG-0012"
+   ],
+   "validationIds": [],
+   "statement": "Pils/Lager→Tripel 迁移在 c_new≤max(c_source,T)（超阈不恶化）与 c_new≤c_source（绝对不增）两种策略下 5 类缺陷非恶化率均为 1.0；目标风格马氏距离从分位数初始化 1.481 降到 0.433，平均 L1 改动 7.19；但 t2n/stale_hops 代理很弱（CV R² 0.055/0.050），bootstrap 非恶化率下界 0.2"
+  },
+  {
+   "id": "CLAIM-0012",
+   "status": "retracted",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": true,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0019",
+    "metric:EXP-0022"
+   ],
+   "validationIds": [],
+   "statement": "三项预注册稳健性判定全部通过：Q1 训练内 CV MAE 在 seed 与 λ 扰动下的相对极差 0.00447（≤0.03，ROB-0001 重算记录）；Q2 topk-jaccard 在 seed 与 τ 扰动下相对极差 0（≤0.05，ROB-0002）；Q3 归一化能量距离在 seed 与 κ 扰动下相对极差 0.0827（≤0.25，ROB-0003），且 constraint-sati"
+  },
+  {
+   "id": "CLAIM-0013",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0018",
+   "refs": [
+    "metric:EXP-0004",
+    "metric:EXP-0001",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0016",
+    "figure:FIG-0017",
+    "figure:FIG-0018"
+   ],
+   "validationIds": [
+    "VAL-0032",
+    "VAL-0033",
+    "VAL-0034",
+    "VAL-0035",
+    "VAL-0036"
+   ],
+   "statement": "在 SPLIT-0002 的 50 行留出上，训练内 OOF 融合（median 权重 0、graph 0.649、HGB 0.351）把 50 维等权平均 MAE 从逐目标训练中位数基线的 0.40056 降到 0.34657，R²=0.2317、相对基线的 Skill=0.1348，50 维中 38 维改善、12 维恶化；同 seed 独立复跑（EXP-0010）在 1e-9 容差内逐项复现全"
+  },
+  {
+   "id": "CLAIM-0014",
+   "status": "retracted",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": true,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0035",
+    "metric:EXP-0035",
+    "metric:EXP-0035",
+    "metric:EXP-0035",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0029"
+   ],
+   "validationIds": [],
+   "statement": "Q1 的三项训练内消融都只有很小的增益：Rank-Gauss 相对原尺度标准化的训练内 CV MAE 低 0.00399，普通 Ridge 相对低秩约束差 0.00232，γ=0 相对最优 γ=1 差 0.00098，三者都小于折间标准差 0.0137，因此不能声称图正则或低秩约束带来稳定增益。稳定的增益来自 graph+HGB 的 OOF 融合（OOF MAE 0.3448，graph 单模型 "
+  },
+  {
+   "id": "CLAIM-0015",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0019",
+   "refs": [
+    "metric:EXP-0029",
+    "metric:EXP-0002",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0021",
+    "figure:FIG-0022",
+    "figure:FIG-0023"
+   ],
+   "validationIds": [
+    "VAL-0037",
+    "VAL-0038",
+    "VAL-0039"
+   ],
+   "statement": "在 200 行训练集上，以附件 2.csv 的 231×231 Spearman 矩阵（PSD 投影：原始最小特征值 −0.0424，τ=0.5 时 644 条边、52 个连通块）为附件描述网络、以训练集重算的 Spearman 图为正则化网络，50 维 × 4 方法 Top-3 的平均两两 Jaccard 为 0.219（可由 sets.json 原样复算），维度无关的全局 Top-3 基线为 "
+  },
+  {
+   "id": "CLAIM-0016",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0021",
+   "refs": [
+    "metric:EXP-0033",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0024",
+    "figure:FIG-0025",
+    "figure:FIG-0028"
+   ],
+   "validationIds": [
+    "VAL-0040",
+    "VAL-0041",
+    "VAL-0042",
+    "VAL-0043"
+   ],
+   "statement": "风格条件 copula 生成器（κ=5、κ_R=20，训练内跨折选择）在 310 个输出（250 个 3 折 out-of-fold 生成 + 49 个 Tripel/Kriek/Lambic 未见风格 + 11 个迁移）上按 MCON-0003 的五条声明式约束原生复算 constraint-satisfaction=1.0（310/310）；未约束条件生成只有 0.136，无条件全局高斯基线为"
+  },
+  {
+   "id": "CLAIM-0017",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0020",
+   "refs": [
+    "metric:EXP-0033",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0026",
+    "figure:FIG-0027"
+   ],
+   "validationIds": [
+    "VAL-0040",
+    "VAL-0041",
+    "VAL-0042",
+    "VAL-0043"
+   ],
+   "statement": "Pils/Lager→Tripel 迁移在两种非恶化策略下的策略相对非恶化率都是 1.0，但这是可行域投影构造保证的、不是经验发现。严格逐缺陷不增率在绝对不增策略下为 1.0，在 cap-at-max(source,T) 策略下只有 0.182（DMS 0.273、双乙酰 0.455、4VG 0.455；t2n 与 stale_hops 严格率 1.0，但两者是 Q1 代理）；100 次 boot"
+  },
+  {
+   "id": "CLAIM-0018",
+   "status": "retracted",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": true,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0004",
+    "metric:EXP-0001",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0016",
+    "figure:FIG-0017",
+    "figure:FIG-0018"
+   ],
+   "validationIds": [
+    "VAL-0032",
+    "VAL-0033",
+    "VAL-0034",
+    "VAL-0035",
+    "VAL-0036"
+   ],
+   "statement": "在 SPLIT-0002 的 50 行留出上，训练内 OOF 融合（median 权重 0、graph 0.649、HGB 0.351）把 50 维等权平均 MAE 从逐目标训练中位数基线的 0.40056 降到 0.34657，R²=0.2317、相对基线的 Skill=0.1348，50 维中 38 维改善、12 维恶化；同 seed 独立复跑（EXP-0010）在 1e-9 容差内逐项复现全"
+  },
+  {
+   "id": "CLAIM-0019",
+   "status": "retracted",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": true,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0029",
+    "metric:EXP-0002",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0021",
+    "figure:FIG-0022",
+    "figure:FIG-0023"
+   ],
+   "validationIds": [
+    "VAL-0037",
+    "VAL-0038",
+    "VAL-0039"
+   ],
+   "statement": "在 200 行训练集上，以附件 2.csv 的 231×231 Spearman 矩阵（PSD 投影：原始最小特征值 −0.0424，τ=0.5 时 644 条边、52 个连通块）为附件描述网络、以训练集重算的 Spearman 图为正则化网络，50 维 × 4 方法 Top-3 的平均两两 Jaccard 为 0.219（可由 sets.json 原样复算），维度无关的全局 Top-3 基线为 "
+  },
+  {
+   "id": "CLAIM-0020",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0022",
+   "refs": [
+    "metric:EXP-0033",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0026",
+    "figure:FIG-0031"
+   ],
+   "validationIds": [],
+   "statement": "Pils/Lager→Tripel 迁移中，「绝对不增」策略（c_new≤c_source）的严格逐缺陷不增率为 1.000，「超阈不恶化」策略（c_new≤max(c_source,T)）的严格率只有 0.1818；两种策略的**策略相对**非恶化率都是 1.0，而这两个 1.0 都可由约束/投影构造本身解释，不是经验发现。cap-at-max 策略的逐缺陷严格率为 DMS 0.2727、2,3"
+  },
+  {
+   "id": "CLAIM-0021",
+   "status": "retracted",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": true,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0033",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0024",
+    "figure:FIG-0030",
+    "figure:FIG-0028"
+   ],
+   "validationIds": [
+    "VAL-0040",
+    "VAL-0041",
+    "VAL-0042",
+    "VAL-0043"
+   ],
+   "statement": "风格条件 copula 生成器（κ=5、κ_R=20，训练内跨折选择）在 310 个输出（250 个 3 折 out-of-fold 生成 + 49 个 Tripel/Kriek/Lambic 未见风格 + 11 个迁移）上按 MCON-0003 的五条声明式约束原生复算 constraint-satisfaction=1.0（310/310）；未约束条件生成只有 0.136，无条件全局高斯基线为"
+  },
+  {
+   "id": "CLAIM-0022",
+   "status": "retracted",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": true,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0033",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "metric:EXP-0036",
+    "figure:FIG-0026",
+    "figure:FIG-0031"
+   ],
+   "validationIds": [
+    "VAL-0040",
+    "VAL-0041",
+    "VAL-0043"
+   ],
+   "statement": "Pils/Lager→Tripel 迁移中，两种策略的**策略相对**非恶化率都是 1.0，两种策略在「绝对不增」与 cap-at-max 下的严格性差异如下：绝对不增策略（c_new≤c_source）的严格逐缺陷不增率为 1.000，cap-at-max 策略（c_new≤max(c_source,T)）的**严格达标率**为 0.1818（逐缺陷：DMS 0.2727、2,3-butaned"
+  },
+  {
+   "id": "CLAIM-0023",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0035",
+   "refs": [
+    "metric:EXP-0039",
+    "metric:EXP-0039",
+    "metric:EXP-0039",
+    "metric:EXP-0039",
+    "metric:EXP-0038"
+   ],
+   "validationIds": [
+    "VAL-0044",
+    "VAL-0045",
+    "VAL-0048"
+   ],
+   "statement": "在 3×3×3 嵌套内部交叉验证（种子 20261025-27，按风格分层，750 行池化 OOF）下，图正则低秩多输出回归（r 在每外折内层选参，选中 r=6）的 Aroma/Flavour 30 项等权 MAE 为 0.359292，优于同协议的真普通 Ridge（γ=0, r=50）0.366662、图 Ridge（γ>0）0.366411 与训练中位数基线 0.398177；相对中位数基线"
+  },
+  {
+   "id": "CLAIM-0024",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0028",
+   "refs": [
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042"
+   ],
+   "validationIds": [
+    "VAL-0047",
+    "VAL-0049"
+   ],
+   "statement": "在 3×3×3 嵌套内部交叉验证下（三次重复、每重复 250 条生成谱），约束后设计谱的 constraint-satisfaction 为 1.000（三次重复均 1.000），而未约束的原始条件生成谱只有 0.1133；设计谱中已校准线性实际浓度的负值格数为 0（旧版为 142 格 / 40 行 / 22 列）。归一化经验 V 为 0.8840，同风格训练行重采样参照为 0.8137——即约束"
+  },
+  {
+   "id": "CLAIM-0025",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0029",
+   "refs": [
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043"
+   ],
+   "validationIds": [
+    "VAL-0050"
+   ],
+   "statement": "在 Pils/Lager→Tripel 的 11 源 × 3 重复 × 外折设计（396 行）上，凸 QP 主策略（qp-quantile-anchor）的逐约束不增率为 1.000，且四个化学列分别检查：DMS 1.000、X.E..2.nonenal 1.000、X2.3.butanedione 1.000、X4VG 1.000（trans-2-nonenal 用化学列而非感官代理）；对照中源"
+  },
+  {
+   "id": "CLAIM-0026",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0027",
+   "refs": [
+    "metric:EXP-0041",
+    "metric:EXP-0041",
+    "metric:EXP-0041",
+    "metric:EXP-0041",
+    "metric:EXP-0041"
+   ],
+   "validationIds": [],
+   "statement": "在 3×3×3 嵌套内部交叉验证（三次重复池化）下，修复名称双向对齐与二次行索引后，50 维 × 4 方法的平均两两 Top-3 Jaccard 为 0.20911（三次重复 0.21033 / 0.20733 / 0.20967，跨重复一致性 0.87483）；旧错位口径的 0.445051 只在“化学行按位置取 + 219 行矩阵用 231 空间下标”时复现，按名称对齐后与 6.csv 同源排"
+  },
+  {
+   "id": "CLAIM-0027",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0031",
+   "refs": [
+    "metric:EXP-0041",
+    "metric:EXP-0041",
+    "metric:EXP-0041",
+    "metric:EXP-0041",
+    "metric:EXP-0041",
+    "metric:EXP-0041"
+   ],
+   "validationIds": [
+    "VAL-0053",
+    "VAL-0054"
+   ],
+   "statement": "在固定 200 行训练集（SPLIT-0001/train）上、用 3 个重复种子（20261025-27）与每次 500 次风格内分层 bootstrap，修复名称双向对齐与二次行索引后：50 维 × 4 方法的平均两两 Top-3 Jaccard 为 0.20911（三次重复 0.21033 / 0.20733 / 0.20967，跨重复一致性 0.87483）；旧错位口径的 0.445051"
+  },
+  {
+   "id": "CLAIM-0028",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0033",
+   "refs": [
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042"
+   ],
+   "validationIds": [
+    "VAL-0047",
+    "VAL-0049"
+   ],
+   "statement": "在冻结的 3 重复 × 3 外折协议下（每重复 250 条生成谱），约束后设计谱的 constraint-satisfaction 为 1.000，未约束的原始条件生成谱为 0.1133；设计谱已校准线性实际浓度负值格数为 0（旧版 142 格 / 40 行 / 22 列）。**该 1.000 是投影循环的构造不变量**，不是经验发现；同时必须披露随之而来的边界夹断：750 行设计谱中 508 行"
+  },
+  {
+   "id": "CLAIM-0029",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0034",
+   "refs": [
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043"
+   ],
+   "validationIds": [
+    "VAL-0050"
+   ],
+   "statement": "在 Pils/Lager→Tripel 的 11 源 × 3 重复 × 外折设计（396 行）上，凸 QP 主策略（qp-quantile-anchor）的逐约束不增率为 1.000，四个化学列分别为 DMS 1.000、X.E..2.nonenal 1.000、X2.3.butanedione 1.000、X4VG 1.000（化学 nonenal 列逐行 max(new−source)≤1.1"
+  },
+  {
+   "id": "CLAIM-0030",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0032",
+   "refs": [
+    "metric:EXP-0066",
+    "metric:EXP-0067",
+    "metric:EXP-0064",
+    "metric:EXP-0065",
+    "metric:EXP-0062",
+    "metric:EXP-0063"
+   ],
+   "validationIds": [],
+   "statement": "三项预注册稳健性计划已真实执行并通过（扰动为 seed block，每次 2 个独立实验，均带 runner 验证的 seed-receipt.json）：Q1 A/F30 池化 MAE 在 seed 20261025/20261026 下为 0.354224 / 0.362434，相对极差 0.023178 ≤ 0.05（ROB-0004，EXP-0066/0067）；Q2 topk-jacca"
+  },
+  {
+   "id": "CLAIM-0031",
+   "status": "retracted",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0071",
+    "metric:EXP-0071",
+    "metric:EXP-0071",
+    "metric:EXP-0071",
+    "metric:EXP-0071",
+    "metric:EXP-0071"
+   ],
+   "validationIds": [
+    "VAL-0053",
+    "VAL-0054"
+   ],
+   "statement": "在固定 200 行训练集（SPLIT-0001/train）上、用 3 个重复种子（20261025-27）与每次 500 次风格内分层 bootstrap，修复名称双向对齐与二次行索引后：50 维 × 4 方法的平均两两 Top-3 Jaccard 为 0.20911（三次重复 0.21033 / 0.20733 / 0.20967；跨重复一致性 0.87483 是 4 方法 × 50 维池化口"
+  },
+  {
+   "id": "CLAIM-0032",
+   "status": "retracted",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": true,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0066",
+    "metric:EXP-0067",
+    "metric:EXP-0064",
+    "metric:EXP-0065",
+    "metric:EXP-0062",
+    "metric:EXP-0063"
+   ],
+   "validationIds": [],
+   "statement": "三项预注册稳健性计划均已产生可核验的执行结果（判据以 result.decisionPassed 与 executionStatus 为准；台账 plan.status 字段仍为 pending，不代表未执行）：Q1 A/F30 池化 MAE 在两个 seed block 下为 0.354224 / 0.362434，极差 0.008210，spread/min=0.023178、spread/m"
+  },
+  {
+   "id": "CLAIM-0033",
+   "status": "retracted",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042",
+    "metric:EXP-0042"
+   ],
+   "validationIds": [
+    "VAL-0047",
+    "VAL-0049"
+   ],
+   "statement": "在冻结的 3 重复 × 3 外折协议下（每重复 250 条生成谱），约束后设计谱的 constraint-satisfaction 为 1.000，未约束的原始条件生成谱为 0.1133；设计谱已校准线性实际浓度负值格数为 0（旧版 142 格 / 40 行 / 22 列）。该 1.000 是投影循环的构造不变量，且其约束集**包含 stale_hops 的 Ridge 代理上界**（t2n 已改"
+  },
+  {
+   "id": "CLAIM-0034",
+   "status": "retracted",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043",
+    "metric:EXP-0043"
+   ],
+   "validationIds": [
+    "VAL-0050"
+   ],
+   "statement": "在 Pils/Lager→Tripel 的 11 源 × 3 重复 × 外折设计上（共 396 行 = 4 个策略 × 99 行；主策略 qp-quantile-anchor 占 99 行，198 次 QP 求解 = 两个 QP 策略各 99 次），凸 QP 主策略的逐约束不增率为 1.000，四个化学列分别为 DMS 1.000、X.E..2.nonenal 1.000、X2.3.butaned"
+  },
+  {
+   "id": "CLAIM-0035",
+   "status": "retracted",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0048",
+    "metric:EXP-0048",
+    "metric:EXP-0048",
+    "metric:EXP-0048",
+    "metric:EXP-0038"
+   ],
+   "validationIds": [
+    "VAL-0044",
+    "VAL-0045",
+    "VAL-0048",
+    "VAL-0051",
+    "VAL-0052"
+   ],
+   "statement": "在 3×3×3 嵌套内部交叉验证（种子 20261025-27，按风格分层，750 行池化 OOF）下，图正则低秩多输出回归（r 在每外折内层选参，9/9 折选中 r=6）的 Aroma/Flavour 30 项等权 MAE 为 0.359292，优于同协议的真普通 Ridge（γ=0, r=50）0.366662、图 Ridge（γ>0）0.366411 与训练中位数基线 0.398177；相对"
+  },
+  {
+   "id": "CLAIM-0036",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0040",
+   "refs": [
+    "metric:EXP-0073",
+    "metric:EXP-0073",
+    "metric:EXP-0073",
+    "metric:EXP-0073",
+    "metric:EXP-0074"
+   ],
+   "validationIds": [
+    "VAL-0055"
+   ],
+   "statement": "确认性轮次（VP-0012，冻结协议，新 EXP）重跑：图正则低秩在 3×3×3 嵌套内部 CV（种子 20261025-27，750 行 OOF）下 A/F30 等权 MAE = 0.359292（EXP-0073），对照为训练折中位数 0.398177（EXP-0074 独立实验，同一数字也在 EXP-0073 的 mae_median 中）、真普通 Ridge 0.366662、图 Ridg"
+  },
+  {
+   "id": "CLAIM-0037",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0041",
+   "refs": [
+    "metric:EXP-0075",
+    "metric:EXP-0075",
+    "metric:EXP-0075",
+    "metric:EXP-0075",
+    "metric:EXP-0075"
+   ],
+   "validationIds": [],
+   "statement": "确认性轮次（VP-0013）重跑：在固定 200 行训练集 + 3 个种子 × 每次 500 次风格内分层 bootstrap 下，50 维 × 4 方法的 Top-3 平均两两 Jaccard = 0.209111（重复 0.210333/0.207333/0.209667；跨重复 0.874833）。严格宇宙 216 个单体化合物，扩展榜另 15 项；与 6.csv 的同源排序对照对齐后 Sp"
+  },
+  {
+   "id": "CLAIM-0038",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0042",
+   "refs": [
+    "metric:EXP-0076",
+    "metric:EXP-0076",
+    "metric:EXP-0076",
+    "metric:EXP-0076"
+   ],
+   "validationIds": [],
+   "statement": "确认性轮次（VP-0014）重跑：3 重复 × 3 外折、每重复 250 条设计谱下，constraint-satisfaction = 1.000（未约束原始条件生成 0.113333），该值由投影循环保证、约束集含 stale_hops 的 Ridge 代理上界，不能读成“全由化学/物理约束构成”；伴随行级夹断 508/750（DMS 上界 17.25）、361/750（双乙酰 0.29925"
+  },
+  {
+   "id": "CLAIM-0039",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0043",
+   "refs": [
+    "metric:EXP-0077",
+    "metric:EXP-0077",
+    "metric:EXP-0077",
+    "metric:EXP-0077",
+    "metric:EXP-0077"
+   ],
+   "validationIds": [],
+   "statement": "确认性轮次（VP-0014）重跑：396 行 = 4 策略 × 99 行，主策略 qp-quantile-anchor 占 99 行、198 次 QP = 两个 QP 策略各 99 次。四化学列（DMS / X.E..2.nonenal / X2.3.butanedione / X4VG）不增率均 1.000，实测 nonenal max Δ=3.556e-17、四列最大 Δ 为双乙酰 1.804"
+  },
+  {
+   "id": "CLAIM-0040",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0048",
+   "refs": [
+    "metric:EXP-0073",
+    "metric:EXP-0074",
+    "metric:EXP-0073"
+   ],
+   "validationIds": [
+    "VAL-0063",
+    "VAL-0064",
+    "VAL-0065"
+   ],
+   "statement": "确认轮 Q1：在 train-only 3×3×3 嵌套 CV（冻结种子 20261025-27，750 行池化 OOF）下，图正则低秩多输出回归（MODEL-0048 / EXP-0073）的 A/F30 等权 MAE = 0.359292，同协议训练折中位数基线（EXP-0074，独立实验）MAE = 0.398177，差 0.038886；全 50 维 MAE = 0.350504。证据：V"
+  },
+  {
+   "id": "CLAIM-0041",
+   "status": "active",
+   "critical": true,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0075",
+    "metric:EXP-0075",
+    "metric:EXP-0075"
+   ],
+   "validationIds": [
+    "VAL-0056",
+    "VAL-0057"
+   ],
+   "statement": "确认轮 Q2：在固定 200 行注册训练集（50 行保留集不使用）、3 个冻结重复种子与每次 500 次风格内分层 bootstrap 下，50 维 × 4 方法的 Top-3 平均两两 Jaccard = 0.209111（重复 0.210333 / 0.207333 / 0.209667），点估计 0.197667，符号一致性均值 sign_stability_mean = 0.722554。"
+  },
+  {
+   "id": "CLAIM-0042",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0049",
+   "refs": [
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079"
+   ],
+   "validationIds": [
+    "VAL-0066",
+    "VAL-0068"
+   ],
+   "statement": "确认轮 Q3 生成：在冻结 3×3×3 生成协议（3 重复 × 3 外折，风格整类留出 Tripel/Kriek/Lambic）下，设计谱的归一化经验 V 能量距离 = 0.884026（原始空间 0.884296），无符号经验 V = 16.182791，带符号诊断 U = 1.113867（负值不截零），diversity = 19.735647，duplicate-share = 0.000"
+  },
+  {
+   "id": "CLAIM-0043",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0050",
+   "refs": [
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080"
+   ],
+   "validationIds": [
+    "VAL-0067",
+    "VAL-0069"
+   ],
+   "statement": "确认轮 Q3 迁移：在 Pils/Lager→Tripel 的 11 源 × 3 重复 × 3 外折 × 4 策略设计（396 行）上，两个 QP 策略与 source-fixed 的逐列不增率均为 1.000（target-mean-projection 参照控制为 0.414141），四列缺陷化合物（DMS / X.E..2.nonenal / X2.3.butanedione / X4VG）"
+  },
+  {
+   "id": "CLAIM-0044",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0051",
+   "refs": [
+    "metric:EXP-0086",
+    "metric:EXP-0087",
+    "metric:EXP-0098"
+   ],
+   "validationIds": [],
+   "statement": "Q1 稳健性（ROB-0007，2026-10-26T14:06:35Z 预注册）：参考 EXP-0086（repeat 0 / seed 20261025）、种子扰动 EXP-0087（repeat 1 / seed 20261026）、参数扰动 EXP-0098（内层 lambda 网格 ×0.5，标量 lambdaMultiplier=0.5）的 A/F30 池化 OOF MAE 分别为 0"
+  },
+  {
+   "id": "CLAIM-0045",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0052",
+   "refs": [
+    "metric:EXP-0089",
+    "metric:EXP-0090",
+    "metric:EXP-0091"
+   ],
+   "validationIds": [],
+   "statement": "Q2 稳健性（ROB-0008，2026-10-26T14:06:44Z 预注册）：参考 EXP-0089（repeat 0 / seed 20261025 / bootstrap 500）、种子扰动 EXP-0090（repeat 1 / seed 20261026）、预算扰动 EXP-0091（bootstrap 500→200，标量 budget.bootstrapIterations=20"
+  },
+  {
+   "id": "CLAIM-0046",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0053",
+   "refs": [
+    "metric:EXP-0092",
+    "metric:EXP-0093",
+    "metric:EXP-0099"
+   ],
+   "validationIds": [],
+   "statement": "Q3 生成侧稳健性（ROB-0009，2026-10-26T14:06:52Z 预注册）：参考 EXP-0092（repeat 0 / seed 20261025）、种子扰动 EXP-0093（repeat 1 / seed 20261026）、参数扰动 EXP-0099（边际收缩网格 KAPPAS 0/5/15 → 0/10/20，标量 kappaShift=5）的归一化经验 V 能量距离分别为"
+  },
+  {
+   "id": "CLAIM-0047",
+   "status": "active",
+   "critical": false,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0095",
+    "metric:EXP-0096",
+    "metric:EXP-0097"
+   ],
+   "validationIds": [],
+   "statement": "Q3 迁移侧稳健性（ROB-0010，2026-10-26T14:07:01Z 预注册）：参考 EXP-0095（repeat 0 / seed 20261025 / LAMBDA 1.0）、种子扰动 EXP-0096（repeat 1 / seed 20261026）、参数扰动 EXP-0097（目标函数 L1 权重 LAMBDA=2.0，标量 lambdaWeight=2）的逐列不增率三次均为"
+  },
+  {
+   "id": "CLAIM-0048",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0056",
+   "refs": [
+    "metric:EXP-0073",
+    "metric:EXP-0074",
+    "metric:EXP-0073"
+   ],
+   "validationIds": [
+    "VAL-0063",
+    "VAL-0064",
+    "VAL-0065"
+   ],
+   "statement": "确认轮 Q1：train-only 3×3×3 嵌套 CV（冻结种子 20261025-27，750 行池化 OOF）下，图正则低秩（MODEL-0048 / EXP-0073）A/F30 等权 MAE = 0.359292；同协议训练折中位数基线（EXP-0074）MAE = 0.398177，差 0.038886；全 50 维 MAE = 0.350504。证据：VAL-0063（leakag"
+  },
+  {
+   "id": "CLAIM-0049",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0054",
+   "refs": [
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079"
+   ],
+   "validationIds": [
+    "VAL-0066",
+    "VAL-0068"
+   ],
+   "statement": "确认轮 Q3 生成（scope 已更正）：设计谱（copula-selected）在 **21 个可估风格上 n_gen 加权池化** 的归一化经验 V 能量距离 = 0.884026（原始空间 0.884296），无符号 V = 16.182791，带符号 U = 1.113867（可负、不截零），diversity = 19.735647，duplicate-share = 0.000，nea"
+  },
+  {
+   "id": "CLAIM-0050",
+   "status": "superseded",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0055",
+   "refs": [
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080"
+   ],
+   "validationIds": [
+    "VAL-0067",
+    "VAL-0069"
+   ],
+   "statement": "确认轮 Q3 迁移（限定为声明模型）：在 EXP-0080 声明的 z 空间 231 维变量、box 界 + 1 条 stale_cap 半空间与 L1 目标的凸 QP 下，qp-quantile-anchor / qp-source-anchor / source-fixed 的逐列不增率均 1.000（target-mean-projection 参照控制 0.414141）；198 个 QP"
+  },
+  {
+   "id": "CLAIM-0051",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0057",
+   "refs": [
+    "metric:EXP-0086",
+    "metric:EXP-0087",
+    "metric:EXP-0098"
+   ],
+   "validationIds": [],
+   "statement": "Q1 稳健性（ROB-0007）：EXP-0086 / EXP-0087 / EXP-0098 的 A/F30 池化 OOF MAE = 0.354224 / 0.362434 / 0.357635，**绝对极差 0.008210、真实相对极差 0.023178 ≤ 0.05**（台账 record 的 “relative spread 0.008210” 实为绝对极差，插件分母=1），decis"
+  },
+  {
+   "id": "CLAIM-0052",
+   "status": "active",
+   "critical": false,
+   "questionId": "Q2",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0089",
+    "metric:EXP-0090",
+    "metric:EXP-0091"
+   ],
+   "validationIds": [],
+   "statement": "Q2 稳健性（ROB-0008）：EXP-0089 / EXP-0090 / EXP-0091 的 Top-3 池化 Jaccard = 0.210333 / 0.207333 / 0.205333，**绝对极差 0.005000、真实相对极差 0.023772 ≤ 0.10**（台账 record 的 “relative spread 0.005000” 实为绝对极差，插件分母=1），decis"
+  },
+  {
+   "id": "CLAIM-0053",
+   "status": "active",
+   "critical": false,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0092",
+    "metric:EXP-0093",
+    "metric:EXP-0099"
+   ],
+   "validationIds": [],
+   "statement": "Q3 生成侧稳健性（ROB-0009）：EXP-0092 / EXP-0093 / EXP-0099 的归一化经验 V 能量距离 = 0.877784 / 0.876453 / 0.898155，**绝对极差 0.021702、真实相对极差 0.024724 ≤ 0.05**（台账 record 的 “relative spread 0.021702” 实为绝对极差，插件分母=1），decisio"
+  },
+  {
+   "id": "CLAIM-0054",
+   "status": "active",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079",
+    "metric:EXP-0079"
+   ],
+   "validationIds": [
+    "VAL-0066",
+    "VAL-0068"
+   ],
+   "statement": "确认轮 Q3 生成（scope 修正）：设计谱（copula-selected）在 21 个可估风格的 177 个可估格上 n_gen 加权池化的归一化经验 V 能量距离 = 0.884026（n_gen=729；原始空间 0.884296），无符号 V = 16.182791，带符号 U = 1.113867（可负、不截零），diversity = 19.735647，duplicate-sha"
+  },
+  {
+   "id": "CLAIM-0055",
+   "status": "active",
+   "critical": true,
+   "questionId": "Q3",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080",
+    "metric:EXP-0080"
+   ],
+   "validationIds": [
+    "VAL-0067",
+    "VAL-0069"
+   ],
+   "statement": "确认轮 Q3 迁移（限定为声明模型）：在 EXP-0080 声明的凸 QP（变量 = z 空间 231 维；目标 = rank-10 二次目标 + λ·anchor 项 + L1 项；约束 = box 界 + 1 条 stale_cap 半空间；feasible ≤ 1e-8）下，qp-quantile-anchor / qp-source-anchor / source-fixed 的逐列不增率"
+  },
+  {
+   "id": "CLAIM-0056",
+   "status": "active",
+   "critical": true,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0073",
+    "metric:EXP-0100",
+    "metric:EXP-0101",
+    "metric:EXP-0102",
+    "metric:EXP-0074",
+    "metric:EXP-0073"
+   ],
+   "validationIds": [
+    "VAL-0063",
+    "VAL-0064",
+    "VAL-0065"
+   ],
+   "statement": "确认轮 Q1：train-only 3×3×3 嵌套 CV 下图正则低秩（MODEL-0048 / EXP-0073）A/F30 等权 MAE = 0.359292，同协议中位数基线（EXP-0074）0.398177，差 0.038886；全 50 维 0.350504。证据：VAL-0063/0064/0065；稳健性**ROB-0011**（统一 wrapper 7d7ab6aca6c2）："
+  },
+  {
+   "id": "CLAIM-0057",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0058",
+   "refs": [
+    "metric:EXP-0100",
+    "metric:EXP-0101",
+    "metric:EXP-0102"
+   ],
+   "validationIds": [],
+   "statement": "Q1 稳健性（ROB-0011，2026-10-26T15:16:37Z 登记，属来源一致性修复、非首次预注册）：EXP-0100 / EXP-0101 / EXP-0102 的 A/F30 池化 OOF MAE = 0.354224 / 0.362434 / 0.357635，**绝对极差 0.008210、相对极差 0.023178 ≤ 0.05（插件原生 relative-range，无自由"
+  },
+  {
+   "id": "CLAIM-0058",
+   "status": "superseded",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": "CLAIM-0059",
+   "refs": [
+    "metric:EXP-0100",
+    "metric:EXP-0101",
+    "metric:EXP-0102"
+   ],
+   "validationIds": [],
+   "statement": "问题一的稳健性检验同时覆盖种子扰动与内层正则强度扰动：Aroma/Flavour 30 维等权 MAE 分别为 0.3542、0.3624、0.3576，绝对极差 0.0082、相对极差 0.0232，均在预设上限 0.05 之内。该检验只覆盖三个冻结种子中的两个，扰动也只沿单一参数方向（内层正则网格整体乘 0.5）；固定种子的独立复跑只证明确定性重现，不构成独立实现或独立稳健性证据。"
+  },
+  {
+   "id": "CLAIM-0059",
+   "status": "active",
+   "critical": false,
+   "questionId": "Q1",
+   "claimType": null,
+   "stale": false,
+   "supersededBy": null,
+   "refs": [
+    "metric:EXP-0100",
+    "metric:EXP-0101",
+    "metric:EXP-0102"
+   ],
+   "validationIds": [],
+   "statement": "问题一的稳健性检验同时覆盖种子扰动与内层正则强度扰动：Aroma/Flavour 30 维等权 MAE 分别为 0.3542、0.3624、0.3576，绝对极差 0.0082、相对极差 0.0232，均在预设上限 0.05 之内。该检验只覆盖三个冻结种子中的两个，扰动也只沿单一参数方向（内层正则网格整体乘 0.5）；固定种子的独立复跑只证明确定性重现，不构成独立实现或独立稳健性证据。"
+  }
+ ],
+ "figures": [
+  {
+   "id": "FIG-0001",
+   "status": "superseded",
+   "supersededBy": "FIG-0033",
+   "path": "experiments/EXP-0004/figures/q1_fusion_component_mae.png",
+   "sha256": "dc7d0e88336672d8d0910efc7c0dd31054e511a46d1722a9915b3685fb7318db",
+   "experimentId": null,
+   "caption": "Q1 融合模型的三个分量（训练内 OOF）与融合结果的逐目标 MAE 对比：纵轴为 50 个感官维度，横轴为 MAE。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0002",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "experiments/EXP-0004/figures/q1_fusion_weights.png",
+   "sha256": "24e9efbd7113526af2e165020062a5389ed4661717797a6ed749953e87631a84",
+   "experimentId": null,
+   "caption": "Q1 融合权重（训练内 OOF 最小二乘 + 单纯形投影）：全局与 Aroma/Flavour/其他三组的 median、graph、HGB 权重。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0003",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "experiments/EXP-0003/figures/q1_cv_mae_grid.png",
+   "sha256": "ed6506d846da6f980911c216dead9d29cc2a33f39ded1220e81a8ea9f7600e5e",
+   "experimentId": null,
+   "caption": "Q1 图正则低秩回归的训练内 5 折 CV MAE 网格（27 个 (r, λ, γ) 格点），用于说明超参数选择只发生在训练折内部。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0004",
+   "status": "superseded",
+   "supersededBy": "FIG-0032",
+   "path": "experiments/EXP-0003/figures/q1_per_target_improvement.png",
+   "sha256": "234c3d58343f6d0cf801a0653501f7b05adc2bae298754d1d881bc1321a0b662",
+   "experimentId": null,
+   "caption": "Q1 逐目标 MAE 改善（候选相对逐目标训练中位数基线）：正值表示改善，负值表示恶化，标注了 40 个改善维与 10 个恶化维。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0005",
+   "status": "superseded",
+   "supersededBy": "FIG-0034",
+   "path": "experiments/EXP-0003/figures/q1_grade_confusion.png",
+   "sha256": "864362a8836bd94310d3af59fbfed930db49ef5f296f848df4012773fca5665c",
+   "experimentId": null,
+   "caption": "Q1 留出集上 0–6 相对分级的混淆矩阵（行=参考级，列=预测级）：分级由训练折中点经验 CDF 派生，仅作相对强度参考。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0006",
+   "status": "superseded",
+   "supersededBy": "FIG-0036",
+   "path": "experiments/EXP-0006/figures/q2_bootstrap_stability.png",
+   "sha256": "d192737752ae3e604111c67570619391563a164c5ea6798d7b1cbdaab81abea5",
+   "experimentId": null,
+   "caption": "Q2 500 次风格分层 bootstrap 下每个感官维度 Top-3 的入选频率（π）：颜色越深表示该化合物越稳定入选。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0007",
+   "status": "superseded",
+   "supersededBy": "FIG-0036",
+   "path": "experiments/EXP-0006/figures/q2_method_jaccard.png",
+   "sha256": "3f6d8bfc57d10715e4950385189d4d29202e3bde6bbdc1453f836dab7cd6390b",
+   "experimentId": null,
+   "caption": "Q2 四种方法（总体 Spearman、风格内 Spearman、图正则低秩系数、综合分）两两 Top-3 Jaccard 系数的 50 维平均。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0008",
+   "status": "superseded",
+   "supersededBy": "FIG-0035",
+   "path": "experiments/EXP-0006/figures/q2_module_graph.png",
+   "sha256": "227cea51df32c1f5315c628a63bf94d6ae6d16ac91e410e3feec5ca17cbdb33a",
+   "experimentId": null,
+   "caption": "Q2 训练样本 Spearman 网络（τ=0.5）的连通模块结构：节点为 219 个单体化合物候选，边为阈值化相关。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0009",
+   "status": "superseded",
+   "supersededBy": "FIG-0038",
+   "path": "experiments/EXP-0014/figures/energy-distance-by-style.png",
+   "sha256": "1bec850a71a6efd7370d5974966c5292adf1102a2820c7f550fb44bb9db298bd",
+   "experimentId": null,
+   "caption": "Q3 逐风格归一化能量距离（越小越好）：低缺陷生成 vs 未约束生成 vs 真实—真实参照，按 22 个风格分组。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0010",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "experiments/EXP-0014/figures/defect-exceedance.png",
+   "sha256": "de50a1d57a9e77388288e88672b75c0090f55e3add92e7939dc423c35e92a0be",
+   "experimentId": null,
+   "caption": "Q3 缺陷超阈率对比：低缺陷生成（0）、未约束生成（约 0.85）与真实数据（0.844），阈值取 8.xlsx Sensory thresholds 的均值。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0011",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "experiments/EXP-0014/figures/transfer-scenarios.png",
+   "sha256": "b020b99397afeb7424e9b1b0783c7917fba84c9e447e14aef23878ab402895f1",
+   "experimentId": null,
+   "caption": "Q3 Pils/Lager→Tripel 迁移的 2 策略 × 2 阈值情景：非恶化率、平均 L1 改动量与目标风格马氏距离。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0012",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "experiments/EXP-0014/figures/transfer-pareto.png",
+   "sha256": "ea25faf2342e3b4a74858078d2837904b44c6508f584f1ff80ca4a06042ce59f",
+   "experimentId": null,
+   "caption": "Q3 迁移的“目标风格接近程度 ↔ 谱改动规模”Pareto 前沿（λ∈{0.1,1,10} × η∈{0,0.01,0.1}，9 个格点）。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0013",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "experiments/EXP-0014/figures/ablation-comparison.png",
+   "sha256": "63153604c807eac5665b33fb686dae96c86b5ed69d631644374f1610f8410311",
+   "experimentId": null,
+   "caption": "Q3 九项消融中的 5–9 项：独立边际 vs Copula、无收缩、无 floor 混合、普通 vs 低缺陷生成、分位数迁移 vs 约束优化。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0014",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "experiments/EXP-0014/figures/profile-recovery.png",
+   "sha256": "f68b0e77d832326b4f03f095979b8aa6fc7249c305348c364e7f9c163654160d",
+   "experimentId": null,
+   "caption": "Q3 生成谱经 Q1 感官预测代理映射后的 50 维感官画像与同风格真实留出样本画像的对比。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0015",
+   "status": "superseded",
+   "supersededBy": "FIG-0037",
+   "path": "experiments/EXP-0008/figures/baseline-energy-distance.png",
+   "sha256": "523af105ce88651a31810632e2cf3e0aa866da9ce385547d260f66ae5014958f",
+   "experimentId": null,
+   "caption": "Q3 无条件全局高斯基线 vs 真实数据的逐风格能量距离：基线忽略风格，误差显著大于风格条件模型。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0016",
+   "status": "superseded",
+   "supersededBy": "FIG-0033",
+   "path": "figures/q1_component_mae.png",
+   "sha256": "7dd974449e1dfd4affafdbd861d85c3f25a15b403fcb51086c9e60db05656684",
+   "experimentId": null,
+   "caption": "问题一：三个分量与融合模型的 MAE 对比。横轴依次为逐目标训练中位数（OOF）、图正则低秩回归（OOF）、HGB（OOF）、融合（OOF）、融合（50 行留出测试）；红色虚线为同一批 50 行留出上的中位数基线 MAE。融合相对自身分量的增益很小，相对中位数基线的增益才是稳健的那个。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0017",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "figures/q1_fusion_weights.png",
+   "sha256": "019d4e0bcb30882a9ee3513716b041f6418bc7049eb91d8532df50b50ed0b9f0",
+   "experimentId": null,
+   "caption": "问题一：训练内 OOF 拟合的单纯形权重（每行三个权重之和为 1），分为全局与 Aroma/Flavour/其他三组；全局与三组都把 median 分量的权重压到接近 0，graph 约 0.64、HGB 约 0.33–0.35。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0018",
+   "status": "superseded",
+   "supersededBy": "FIG-0032",
+   "path": "figures/q1_per_target.png",
+   "sha256": "a3f6b0f9697465406d6c2680b052e207a9b541b9ed0878c4e51ee55110b27c9a",
+   "experimentId": null,
+   "caption": "问题一：50 个感官维度的留出 Skill = 1 − MAE_model/MAE_median，按 Skill 升序排列；绿色为相对中位数基线改善的 38 维，红色为恶化的 12 维（EXP-0004 的 improvedTargets/degradedTargets）。恶化集中在训练样本极少的缺陷/风格维度。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0019",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "figures/q1_cv_grid.png",
+   "sha256": "a44a3b2b94655a713508336f817eceabafdc1db0cde7a3dbf1a4acbcd0e5f66a",
+   "experimentId": null,
+   "caption": "问题一：训练折内 5 折 CV 的 54 个格点（27 个 (r,λ,γ) 组合 × 2 种表示），纵轴为 CV MAE，灰色为原尺度 z-score、蓝色为 Rank-Gauss；橙色菱形为选中格点 r=10,λ=1,γ=1 及其折间标准差。全部超参数选择只发生在训练折内部，未接触留出集。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0020",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "figures/q1_grades_all.png",
+   "sha256": "ef678ce51f91c9a1c164a3f28978d569b3f9bef3a41ed36ab2513ce1df77c3e4",
+   "experimentId": null,
+   "caption": "问题一：交付的 250×50 相对强度分级表（EXP-0026 的 grades_all.csv）。左图为等级 0–6 的分布，200 行训练行（in-sample）与 50 行留出分别归一化；右图为按留出均值等级排序的 50 个维度在两个子集上的均值等级。等级是相对强度，0 不代表风味不存在、6 不代表人工评分满分。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0021",
+   "status": "superseded",
+   "supersededBy": "FIG-0036",
+   "path": "figures/q2_bootstrap_pi.png",
+   "sha256": "64dded4f4d27a381912e48eff47c6bb4449edb998f48048415a4db42c8041d75",
+   "experimentId": null,
+   "caption": "问题二：500 次风格分层 bootstrap 下交付 Top-3 的入选频率 π。左图为 150 个交付条目的 π 分布（均值 0.465，没有任何化合物达到 π=1），右图为 50 个维度各自的平均 π（按 π 排序）；这是把 π 作为稳定性主证据、并用平均综合分 S 裁决并列的依据。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0022",
+   "status": "superseded",
+   "supersededBy": "FIG-0036",
+   "path": "figures/q2_method_jaccard.png",
+   "sha256": "ed7b64d556d07135109c291eea4be3cb3fb9365a25b577f787eb4cc3531c8224",
+   "experimentId": null,
+   "caption": "问题二：四种方法（总体 Spearman、风格内 Spearman、图正则低秩 |B|、综合分 S）Top-3 集合两两 Jaccard 系数的 50 维平均；红色虚线为四种方法两两平均的主指标 topk-jaccard=0.219。总体与风格内两种关联的 Jaccard 仅 0.302（6 条边中最接近的两条），图正",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0023",
+   "status": "superseded",
+   "supersededBy": "FIG-0035",
+   "path": "figures/q2_modules.png",
+   "sha256": "5734a42d9c5ff4bd9229b19ea8196b8c1122ec3172be5db87da24bb57da0ccbf",
+   "experimentId": null,
+   "caption": "问题二：左图为训练网络（τ=0.5）的模块规模分布（纵轴对数），51 个连通块、最大块含 172 列；右图为训练网络（200 行重算）与附件 2.csv 网络（PSD 投影后阈值化）在 τ=0.4/0.5/0.6 下的连通分量数对比——两者都是“一个巨大连通块 + 大量单点”，模块区分度弱，因此模块只作解释线索而不进入",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0024",
+   "status": "superseded",
+   "supersededBy": "FIG-0038",
+   "path": "figures/q3_energy_by_style.png",
+   "sha256": "d58b540a9b70c537174fae2fa02a7b82969531a5577d0819cdd991d6344f75ce",
+   "experimentId": null,
+   "caption": "问题三：约束生成在 22 个风格上的归一化能量距离（蓝柱，按风格留出样本量加权）与同样本量的真实—真实参照（橙点）；Kriek (n=10)、Lambic (n=11)、Faro (n=3) 等小风格波动很大，不声称精确刻画。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0025",
+   "status": "superseded",
+   "supersededBy": "FIG-0030",
+   "path": "figures/archive/FIG-0025-q3_defect_exceedance.png",
+   "sha256": "57e3e864e41517f8600b70b069c87d0d37eda7b5c52c055b32591e2d8dbd1306",
+   "experimentId": null,
+   "caption": "问题三：至少一种均值阈值缺陷超阈的样本比例——真实数据 0.844、未约束条件生成 0.852、低缺陷生成 0.000。约束把缺陷超阈率降到 0，而生成模型在加约束前的缺陷水平与真实数据相当。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0026",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "figures/q3_transfer_scenarios.png",
+   "sha256": "7e4be79a9c929fb188986bcccf43ff8e864d1b49d7f604c2fa2f8c691ad5b199",
+   "experimentId": null,
+   "caption": "问题三：Pils/Lager→Tripel 的 4 个迁移情景（2 种非恶化策略 × mean/median 两套阈值）。左图为策略相对非恶化率（四种情景恒为 1.000，由投影构造保证）与严格逐缺陷不增率（绝对不增策略为 1.000，cap-at-max 策略仅 0.182）；右图为目标风格马氏距离，四种情景几乎相同",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0027",
+   "status": "superseded",
+   "supersededBy": "FIG-0031",
+   "path": "figures/archive/FIG-0027-q3_pareto.png",
+   "sha256": "299df07e5a54e3727f3d86d752ff3672ecb4e1227944a70eaab8808698a6b14e",
+   "experimentId": null,
+   "caption": "问题三：λ∈{0.1,1,10} × η∈{0,0.01,0.1} 共 9 个格点的 Pareto 前沿（横轴为平均 L1 改动量，纵轴为到 Tripel 的马氏距离，越小越接近目标风格）；λ 越大目标风格越近、谱改动越大，η 只带来很小的额外代价，且 9 个格点的非恶化率均为 1.0。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0028",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "figures/q3_profile.png",
+   "sha256": "7bf61b6f235470c45cf0e045cd29205c799d8afe0db45491452daafd4cfc68f0",
+   "experimentId": null,
+   "caption": "问题三：生成谱经 Q1 感官代理映射后的 50 维感官画像与同风格真实留出样本画像的 Spearman 相关，按风格排列（横轴标注样本量）；蓝色虚线为合并口径的 0.796。逐风格异质性明显：Amber (n=12) 为负、Brut (n=4) 与 Brett/cofermented (n=6) 接近 0，Kriek ",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0029",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "experiments/EXP-0035/figures/ablation-summary.png",
+   "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd",
+   "experimentId": null,
+   "caption": "九项必做消融汇总（EXP-0035 从三个实验的产物重新汇总，本图即该审计实验的产物）。上：Q1 第 1–3 项消融两侧的训练内 CV MAE 与折间标准差，三个差值都小于折间波动；中：Q2 第 4 项消融的总关联/风格内关联/综合分的 Top-3 Jaccard；下左：Q3 第 5–8 项的能量距离差（第 5 项“无",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0030",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "figures/q3_defect_exceedance.png",
+   "sha256": "4d6c13f894c65ca08b91cfdfb8ce3e6b81e74d2f02d0818a5c9537cdea7ef7d6",
+   "experimentId": null,
+   "caption": "问题三：至少一种均值阈值缺陷超阈的样本比例——真实数据 0.844、未约束条件生成 0.852、低缺陷生成 0.000。约束把缺陷超阈率降到 0，而生成模型在加约束前的缺陷水平与真实数据相当。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0031",
+   "status": "retired",
+   "supersededBy": null,
+   "path": "figures/q3_pareto.png",
+   "sha256": "a404a27fa6adba2b6a5aafdd75c449ae79a62478ee8e894c7d21451dd69dc6d6",
+   "experimentId": null,
+   "caption": "问题三：λ∈{0.1,1,10} × η∈{0,0.01,0.1} 共 9 个格点的 Pareto 前沿（横轴为平均 L1 改动量，纵轴为到 Tripel 的马氏距离，越小越接近目标风格）；灰线连接同一 λ 的三个 η 变体，颜色区分 η，每个 λ 只标注一次。λ 越大目标风格越近、谱改动越大，η 只带来很小的额外代价",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0032",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/Q1-per-target-skill.png",
+   "sha256": "2557001da5d9510a8f8afbfd682d4149c2b276b294901892dbc45ee0c8cf5838",
+   "experimentId": null,
+   "caption": "问题一：逐目标相对误差改善 1−MAE模型/MAE中位数（图低秩，内部嵌套CV折外池化）；A/F30 0.0977、全50维 0.1056，12 个目标为负。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0033",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/Q1-model-comparison.png",
+   "sha256": "a461da972ec8e999b9d643e945cf792f262d61c88aa85680fc67e7ba8119122e",
+   "experimentId": null,
+   "caption": "问题一：四模型同协议折外MAE（内部3×3×3嵌套重验证，非holdout）：中位数0.398、岭0.367、图岭0.366、图低秩0.359；全50维另列。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0034",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/Q1-grade-distribution.png",
+   "sha256": "e2cf95cdb0e4fa5d16a79db21f08f1abc8f8136346a2b02612285ea60daa27d4",
+   "experimentId": null,
+   "caption": "问题一：相对等级 0–6 的折外预测分布与参照分布对照（内部嵌套CV、中秩经验CDF；属相对等级，未恢复人工评分）。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0035",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/Q2-network.png",
+   "sha256": "ad567a5eb75ba1b36012efc7d66b8d4e8e1667c348d2bf5cfa2f4f294410afc6",
+   "experimentId": null,
+   "caption": "问题二：τ=0.5 Spearman 阈值网络（由 EXP-0075 注册输入重算，复现 732 边/51 分量）；严格单体216与扩展15分色，边非因果。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0036",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/Q2-stability.png",
+   "sha256": "cec5621b88f02790868160137311c8375b26fef886c7738208d467faae976e99",
+   "experimentId": null,
+   "caption": "问题二：Top-3 入选频率 π 与符号一致性（500 次风格内 bootstrap、3 重复）；0.5 仅参考非判定，500→200 为蒙特卡洛精度变化。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0037",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/Q3-energy-comparison.png",
+   "sha256": "0e5d64be11e8a391a61de27e52838e8134661332d114d83cb314b2445a523349",
+   "experimentId": null,
+   "caption": "问题三：归一化经验 V 能量距离（V/D_train）对照；生成设计谱 0.8840 未优于源样本重采样 0.8137，带符号 U 单列不截零。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0038",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/Q3-per-style-energy.png",
+   "sha256": "6ef2bac1b7b9b8867864f3fc8df85a3f24fdfc9f066e0488c4e2b57678959a6b",
+   "experimentId": null,
+   "caption": "问题三：逐风格 n_gen 加权能量距离（21 可估风格）；三风格池化 1.8306 与 21 风格池化 0.8840 分列标注、不得互替。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0039",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/Q3-transfer-shift.png",
+   "sha256": "3c982d2394e3900ef7c91fd4f051d75ba8fd4e48123f9f548ae16efef9ba1e52",
+   "experimentId": null,
+   "caption": "问题三：迁移三组量分面板——存储位移 |opt−src|、z 空间位移、约束残差 clamp(new−src,0)；残差非位移，按策略区分。",
+   "scriptFile": null
+  },
+  {
+   "id": "FIG-0040",
+   "status": "active",
+   "supersededBy": null,
+   "path": "figures/confirmatory/ROB-summary.png",
+   "sha256": "ab3461581ee902afde41bf6897316b67f8f9aedac12035919cdf6ec85f05be70",
+   "experimentId": null,
+   "caption": "四组稳健性：绝对极差与真实相对极差并排、各自预注册上限；仅2/3冻结种子，含预算扰动与迁移侧饱和（极差0非改善）。",
+   "scriptFile": null
+  }
+ ],
+ "renders": [
+  {
+   "id": "RENDER-0001",
+   "at": "2026-10-24T12:56:46.046Z",
+   "input": "report/paper.md",
+   "inputSha256": "0e04f13f85c63ee501eaa9debcf398e31a47702969222729744ce0a7d439ee74",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0002",
+   "at": "2026-10-24T12:57:04.290Z",
+   "input": "report/paper.md",
+   "inputSha256": "d2e728c9cfc4822ac08d63f24bdf3e03c47804d4e188a82f3a620144b68d0c3e",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0003",
+   "at": "2026-10-24T13:13:03.079Z",
+   "input": "report/paper.md",
+   "inputSha256": "8776105c5e64205b7ca52d0fba3635d63fa78201fb2ac69375cb88a818d0ce03",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0004",
+   "at": "2026-10-24T13:23:46.117Z",
+   "input": "report/paper.md",
+   "inputSha256": "9c92e0a17e183dc0aed7b14c8f2a4535d500e8f08b2d1961c35a4d57866e0ff8",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0005",
+   "at": "2026-10-24T13:33:59.344Z",
+   "input": "report/paper.md",
+   "inputSha256": "c7d9cd2c5e5a5ba100086a8a3a39efbbb39fd15b4fd0ac6e2cf8ec4534b1f1e8",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0006",
+   "at": "2026-10-24T13:34:34.431Z",
+   "input": "report/paper.md",
+   "inputSha256": "c7d9cd2c5e5a5ba100086a8a3a39efbbb39fd15b4fd0ac6e2cf8ec4534b1f1e8",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0007",
+   "at": "2026-10-24T14:21:58.496Z",
+   "input": "report/paper.md",
+   "inputSha256": "687d097afd26c91564e64b19db358a34c243918a647fc14de4399b9dbcf6ed89",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0008",
+   "at": "2026-10-24T14:26:18.212Z",
+   "input": "report/paper.md",
+   "inputSha256": "58d9a7786704d4153f832291776af2567f54331845cf33dedd23c681310c68f8",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0009",
+   "at": "2026-10-24T14:37:02.054Z",
+   "input": "report/paper.md",
+   "inputSha256": "58d9a7786704d4153f832291776af2567f54331845cf33dedd23c681310c68f8",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0010",
+   "at": "2026-10-27T01:58:46.079Z",
+   "input": "report/paper.md",
+   "inputSha256": "56324a0fdc58c09e08ba04babb3d845e73411ef4323632f0e1db2a3ba7325291",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 2,
+   "configRawSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0011",
+   "at": "2026-10-27T01:59:39.216Z",
+   "input": "report/paper.md",
+   "inputSha256": "899c34bd5b4478e86a2f8dc3676ec7cc5522df3a8db937eabf840cc8cc13351c",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 2,
+   "configRawSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  },
+  {
+   "id": "RENDER-0012",
+   "at": "2026-10-27T02:31:09.493Z",
+   "input": "report/paper.md",
+   "inputSha256": "e61b2410b9aee9fe9a5753096535a76e55c3b9a95743db2604e687c26a6f4b81",
+   "output": null,
+   "outputSha256": null,
+   "configVersion": 2,
+   "configRawSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+   "frozenAt": null,
+   "selectedModels": null,
+   "stale": null,
+   "warnings": []
+  }
+ ],
+ "paperArtifacts": [
+  {
+   "id": "ART-0001",
+   "schemaVersion": 1,
+   "format": "tex",
+   "path": "report/paper.tex",
+   "sha256": "f102ef84568b9a6ce58c3bb6a67b4505e9f7729e3a02a9e93ec74f98ab801587",
+   "bytes": 67011,
+   "renderId": "RENDER-0006",
+   "renderSha256": "42fa002bc145402333055cb8867a64706c590eb0021eec49c3ae21f8d9754688",
+   "inputSha256": "c7d9cd2c5e5a5ba100086a8a3a39efbbb39fd15b4fd0ac6e2cf8ec4534b1f1e8",
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+   "producer": "author-file",
+   "compileCommand": null,
+   "at": "2026-10-24T13:34:49.099Z"
+  },
+  {
+   "id": "ART-0002",
+   "schemaVersion": 1,
+   "format": "pdf",
+   "path": "report/paper.pdf",
+   "sha256": "31b72aed41acee54b60389f48ced52742785b6cea3600f264d60c199881c140c",
+   "bytes": 1277857,
+   "renderId": "RENDER-0006",
+   "renderSha256": "42fa002bc145402333055cb8867a64706c590eb0021eec49c3ae21f8d9754688",
+   "inputSha256": "c7d9cd2c5e5a5ba100086a8a3a39efbbb39fd15b4fd0ac6e2cf8ec4534b1f1e8",
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+   "producer": "author-file",
+   "compileCommand": null,
+   "at": "2026-10-24T13:34:54.241Z"
+  },
+  {
+   "id": "ART-0003",
+   "schemaVersion": 1,
+   "format": "tex",
+   "path": "report/paper.tex",
+   "sha256": "8fa4849d6152fe86e060bd13c7ad98bcabaf547870c4403f8f809ac8d4580298",
+   "bytes": 67131,
+   "renderId": "RENDER-0009",
+   "renderSha256": "7a6c9a89b14050641909fbbded3694f7926ed9e2428c1d615fe2641cb678993f",
+   "inputSha256": "58d9a7786704d4153f832291776af2567f54331845cf33dedd23c681310c68f8",
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+   "producer": "author-file",
+   "compileCommand": null,
+   "at": "2026-10-24T14:37:32.829Z"
+  },
+  {
+   "id": "ART-0004",
+   "schemaVersion": 1,
+   "format": "pdf",
+   "path": "report/paper.pdf",
+   "sha256": "3a8e6fe3f458ce5c0c868920b6b7670e424a7da23c0d4d8e7f0bca44275672d5",
+   "bytes": 1278067,
+   "renderId": "RENDER-0009",
+   "renderSha256": "7a6c9a89b14050641909fbbded3694f7926ed9e2428c1d615fe2641cb678993f",
+   "inputSha256": "58d9a7786704d4153f832291776af2567f54331845cf33dedd23c681310c68f8",
+   "configVersion": 1,
+   "configRawSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+   "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+   "producer": "author-file",
+   "compileCommand": null,
+   "at": "2026-10-24T14:37:36.779Z"
+  }
+ ],
+ "quality_meta": {
+  "schemaVersion": 2,
+  "createdAt": "2026-10-24T11:20:58.820Z",
+  "updatedAt": "2026-10-26T15:31:11.934Z"
+ },
+ "requirements": [
+  {
+   "id": "REQ-0001",
+   "text": "Q1：以 1.csv 的 231 个化学及理化变量为输入，为全部样本输出 3.xlsx 定义的 50 个感官维度（Aroma 15 + Flavour 15 + 口感/缺陷/总体 20，是题面\"约 40\"的超集）的 0–6 分级评分；分级必须由显式、可复核的规则从标准化标签 Y 派生，并披露 3.xlsx 为空白评分卡、原始 0–6 不可识别。",
+   "coverage": {
+    "kind": "covered",
+    "refs": [
+     {
+      "id": "CLAIM-0056",
+      "kind": "claim"
+     },
+     {
+      "id": "EXP-0073",
+      "kind": "experiment"
+     },
+     {
+      "kind": "analysis",
+      "path": "data/processed/q1_grade_summary.json"
+     },
+     {
+      "kind": "script",
+      "path": "src/q1_fix.py"
+     }
+    ],
+    "blockedReason": null,
+    "note": "REQ-0001 ref 改指当前 active CLAIM-0056（ROB-0011 版本，旧 0048 已 superseded）。证据：EXP-0073 A/F30 0.359292 vs 基线 0.398177；VAL-0063/0064/0065；ROB-0011 绝对/相对极差 0.008210/0.023178；50 维评分卡映射 data/processed/q1_grade_summary.json。结构性缺口（split/holdout、provisional、确定性重现、2/3 种子）见 CLAIM-0056 limitations。"
+   },
+   "coverageType": null,
+   "blockedReason": "",
+   "refs": null
+  },
+  {
+   "id": "REQ-0002",
+   "text": "Q2：用 2.csv 构建化合物共表达图，结合 1.csv 特征，对每个感官维度给出 Top-3 关键单体化合物，并用 bootstrap 入选频率、方法间 Jaccard 系数与化学合理性证据量化稳定性；只声明同期关联，不宣称因果。",
+   "coverage": {
+    "kind": "covered",
+    "refs": [
+     {
+      "id": "CLAIM-0041",
+      "kind": "claim"
+     },
+     {
+      "id": "EXP-0075",
+      "kind": "experiment"
+     },
+     {
+      "kind": "analysis",
+      "path": "experiments/EXP-0075/outputs.json"
+     },
+     {
+      "kind": "analysis",
+      "path": "outputs/q2/factor_analysis.csv"
+     },
+     {
+      "kind": "analysis",
+      "path": "outputs/q2/top3_report.json"
+     },
+     {
+      "kind": "script",
+      "path": "src/q2_fix.py"
+     }
+    ],
+    "blockedReason": null,
+    "note": "REV-0069 F2 修复：modules 实为共表达图连通分量（非化学类别分组；存在不平衡，172/231 落在主分量），已更正表述；化学合理性证据为 modules 连通分量 + factor_analysis 因子结构 + categoryCounts（216/3/7/5），未做外部化学知识库验证（CLAIM-0041 limitations 明示）。"
+   },
+   "coverageType": null,
+   "blockedReason": "",
+   "refs": null
+  },
+  {
+   "id": "REQ-0003",
+   "text": "Q3a：以 tasting_category_fine 为条件学习风格条件生成模型，在给定风格（Tripel、Kriek、Lambic 必做）下生成物理有效的化合物谱，并给出经 Q1 预测器映射的感官画像；Tripel/Kriek/Lambic 整类留出作为未见风格扩展，单独报告。",
+   "coverage": {
+    "kind": "covered",
+    "refs": [
+     {
+      "id": "CLAIM-0054",
+      "kind": "claim"
+     },
+     {
+      "id": "EXP-0079",
+      "kind": "experiment"
+     },
+     {
+      "kind": "analysis",
+      "path": "experiments/EXP-0079/q3_metrics.csv"
+     },
+     {
+      "kind": "analysis",
+      "path": "outputs/q3/style_and_displacement_scope.json"
+     },
+     {
+      "kind": "script",
+      "path": "src/q3_fix.py"
+     }
+    ],
+    "blockedReason": null,
+    "note": "REV-0069 F1 修复：claim ref 改指当前 active CLAIM-0054（原引 CLAIM-0042 已 superseded）。生成质量：21 风格 177 可估格池化 0.884026 + Tripel/Kriek/Lambic 27 格 1.830576 分列（SCRIPT-0018 产物）；constraint-satisfaction=1.000 为构造性质；source-resample 0.813731 更优、不宣称优于基线；无原生 optimization VAL；双对象限制；ROB-0009 仅 2/3 种子。"
+   },
+   "coverageType": null,
+   "blockedReason": "",
+   "refs": null
+  },
+  {
+   "id": "REQ-0004",
+   "text": "Q3b：实现 Pils/Lager→Tripel 的跨风格迁移，并把 DMS、双乙酰（X2.3.butanedione）、4VG、trans-2-nonenal、stale hops 的\"不恶化\"作为硬约束（而不是事后筛选）；同时给出 mean/median 双阈值情景与目标接近度—改动量 Pareto 前沿。",
+   "coverage": {
+    "kind": "insufficient_data",
+    "refs": [
+     {
+      "id": "CLAIM-0055",
+      "kind": "claim"
+     },
+     {
+      "id": "EXP-0080",
+      "kind": "experiment"
+     },
+     {
+      "kind": "analysis",
+      "path": "experiments/EXP-0080/transfer_constraints.csv"
+     },
+     {
+      "kind": "analysis",
+      "path": "outputs/q3/qp_cert_audit.json"
+     },
+     {
+      "kind": "analysis",
+      "path": "outputs/q3/style_and_displacement_scope.json"
+     }
+    ],
+    "blockedReason": "硬约束核心已覆盖（CLAIM-0055），但 mean/median 双阈值情景对比与“目标接近度—改动量 Pareto 前沿”在本确认轮无当前证据（EXP-0080 仅 source-cap、EXP-0079 仅 mean；FIG-0026/0031 为先导轮且 experimentId=null，不引用）。",
+    "note": "REV-0073 F1 修复：claim ref 与 note 改指当前 active CLAIM-0055（原 CLAIM-0050 已 superseded）。其余证据与 blockedReason 不变：Pareto 输入物化于 outputs/q3/style_and_displacement_scope.json（SCRIPT-0018，sha256 b7881974…），双阈值情景仍需下一轮登记实验。"
+   },
+   "coverageType": null,
+   "blockedReason": "",
+   "refs": null
+  },
+  {
+   "id": "REQ-0005",
+   "text": "交付：提交完整论文，含摘要、问题分析、数据处理、模型构建、实验结果、结论与建议；论文数字全部来自台账占位符渲染，md/tex/pdf 三格式同版。",
+   "coverage": {
+    "kind": "insufficient_data",
+    "refs": [
+     {
+      "kind": "analysis",
+      "path": "report/paper.md"
+     }
+    ],
+    "blockedReason": "本批只做 claim/coverage；论文渲染与三格式同版（render/artifact/check）未执行，不能声称交付覆盖。",
+    "note": "REQ-0005 属论文/交付要求：本批明确不进入论文与交付，未运行 modeling_deliver render/artifact/check，也未验证 md/tex/pdf 同版与占位符渲染完整性。因此不以“文件存在”冒充覆盖。后续批次需先 render 再 check 才能重映射。"
+   },
+   "coverageType": null,
+   "blockedReason": "",
+   "refs": null
+  },
+  {
+   "id": "REQ-0006",
+   "text": "交付：支撑材料提交完整、可复现的源代码——全部脚本、依赖快照、固定种子与复现说明可追溯到台账实验。",
+   "coverage": {
+    "kind": "covered",
+    "refs": [
+     {
+      "id": "EXP-0080",
+      "kind": "experiment"
+     },
+     {
+      "kind": "script",
+      "path": "src/q3_transfer_fix.py"
+     },
+     {
+      "kind": "analysis",
+      "path": "REPRODUCE.md"
+     },
+     {
+      "kind": "analysis",
+      "path": "experiments/EXP-0080/solver_certificates.jsonl"
+     }
+    ],
+    "blockedReason": null,
+    "note": "当前证据：EXP-0073/0075/0079/0080 每个都带 freezeSources 的 sourceSnapshot（inputs 下数据/代码快照 + sha256）与 dependencies；14 次脚本执行（SCRIPT-0001..0014）带脚本 hash 与输出 hash；种子回执（seed-receipt.json）随多种子实验保存。限制：REPRODUCE.md 成文于先导轮，逐步说明以台账 SCRIPT/EXP 记录为准；本条只覆盖“可追溯”，不覆盖独立复现审查。"
+   },
+   "coverageType": null,
+   "blockedReason": "",
+   "refs": null
+  },
+  {
+   "id": "REQ-0007",
+   "text": "交付：所有图表清晰、结论量化、逻辑完整——每张图有英文标注与中文图注，每个核心结论绑定可复算指标或证据。",
+   "coverage": {
+    "kind": "insufficient_data",
+    "refs": [
+     {
+      "id": "CLAIM-0056",
+      "kind": "claim"
+     },
+     {
+      "id": "CLAIM-0055",
+      "kind": "claim"
+     },
+     {
+      "id": "FIG-0001",
+      "kind": "figure"
+     }
+    ],
+    "blockedReason": "图注/英文标注与“每张图—每个结论”逐项一致性未核验（本批不做 delivery review）；仅结论-指标绑定由 active claims 建立。",
+    "note": "REQ-0007 ref 改指当前 active CLAIM-0056/CLAIM-0055（旧 0048 已 superseded）；图表标注一致性仍未核验，保持 insufficient_data。"
+   },
+   "coverageType": null,
+   "blockedReason": "",
+   "refs": null
+  }
+ ],
+ "checks": [
+  {
+   "id": "QC-0001",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0002",
+   "checkType": null,
+   "scope": "project",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "some requirements are explicitly unanswered for lack of data; that is not a pass",
+   "stale": false
+  },
+  {
+   "id": "QC-0003",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0004",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0005",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0006",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0007",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0008",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0009",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0010",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0011",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0012",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0013",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0014",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0015",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0016",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0017",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0018",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0019",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0020",
+   "checkType": null,
+   "scope": "project",
+   "status": "failed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "6 current delivery reference(s) still point at RETIRED object(s): claim CLAIM-0014 via report/paper.md; claim CLAIM-0019 via report/paper.md; claim CLAIM-0022 via report/paper.md; claim CLAIM-0012 via report/paper.md; claim CLAIM-0018 via report/paper.md; claim CLAIM-0021 via report/paper.md",
+   "stale": false
+  },
+  {
+   "id": "QC-0021",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0022",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0023",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0024",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0025",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0026",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0027",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0028",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0029",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0030",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0031",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0032",
+   "checkType": null,
+   "scope": "project",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "check passed",
+   "stale": false
+  },
+  {
+   "id": "QC-0033",
+   "checkType": null,
+   "scope": "question",
+   "status": "failed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "EXP-0017 lacks an input feature manifest; EXP-0018 lacks an input feature manifest; EXP-0026 lacks an input feature manifest; EXP-0035 lacks an input feature manifest; EXP-0036 lacks an input feature manifest",
+   "stale": false
+  },
+  {
+   "id": "QC-0034",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "declared analysis evidence is structurally complete; semantic validity still requires independent coverage review",
+   "stale": false
+  },
+  {
+   "id": "QC-0035",
+   "checkType": null,
+   "scope": "question",
+   "status": "passed",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "declared analysis evidence is structurally complete; semantic validity still requires independent coverage review",
+   "stale": false
+  },
+  {
+   "id": "QC-0036",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0039 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0037",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0038 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0038",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0053 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0039",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0066 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0040",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0067 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0041",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0073 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0042",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0074 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0043",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0100 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0044",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0101 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  },
+  {
+   "id": "QC-0045",
+   "checkType": null,
+   "scope": "experiment",
+   "status": "needs_review",
+   "passed": null,
+   "at": null,
+   "detail": null,
+   "message": "the authoritative test truth is unavailable: experiment EXP-0102 has no registered split, so no authoritative test truth exists",
+   "stale": false
+  }
+ ],
+ "reviews": [
+  {
+   "id": "REV-0001",
+   "objectType": "targetContract",
+   "objectId": "TGT-0001",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "逐条核对 TGT-0001 的 researchObject/taskNature/labelSource/labelOrigin/inputsAvailableAt 与 statement.md 问题 1 原文、DATA-0002 的 50 个目标列、MCON-0001 的 formula/boundaryCases、EXP-0004/outputs.json 的 grades.rule 与 paper.md §4.4。用训练折 q05=-0.818407731、q95=1.4886547852、mid=0.3351235271 复算 MCON-0001 的斜率 2.6007097588 与",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "TGT-0001 的 labelSource 写“0–6 等级由显式相对分级规则从该连续标签派生，见 MCON-0001”，但 MCON-0001 的 formula 只编码了敏感性分析用的有界线性映射（训练折 5%/95% 分位→0/6），没有编码论文 §4.4 与 EXP-0004/outputs.json grades.rule 实际交付的主分级规则 g=clip(floor(6a+0.5),0,6)（a 为训练折中点经验 CDF",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "TGT-0001 的 dataset.targetColumns 绑定的是 DATA-0002 的 50 个标准化标签列（A_*/F_*/…），而 Q1 题面要求的最终输出是 g6__* 的 0–6 分级；契约没有绑定实际交付的分级列，只绑定了中间标签列（DATA-0002 字段说明明确 g6__ 为 reporting/sensitivity only）。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0002",
+   "objectType": "targetContract",
+   "objectId": "TGT-0002",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "核对 TGT-0002 的 researchObject/taskNature/labelOrigin/inputsAvailableAt/dataset 绑定与 DATA-0001 的 285 个字段（231 chem__ + 50 个感官列）；对照 EXP-0006/settings（candidates=219 single-compound，排除 5 个派生汇总量与 7 个理化指标）与 q2_lib.py 的候选定义；检查 targetColumns 是否覆盖题面要求的 50 个感官维度，并核对 labelSource 的“只作关联靶、不预测/不因果”表述。另核对 requiremen",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "TGT-0002 的 dataset.targetColumns 只列了 A_malt_all 一列，而契约的 researchObject 与 REQ-0002 要求的是 50 个感官维度各自的 Top-3；绑定没有枚举全部 50 个真实输出列（DATA-0001 实际含 A_*/F_*/…/overall 共 50 列）。这使目标契约只覆盖 1/50 个输出维度。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "TGT-0002 的 researchObject 写“50 个感官维度与 231 个化学/理化变量之间的稳定同期关联”，但 EXP-0006/settings 明确候选为 219 个单体化合物（排除 5 个派生汇总量与 7 个理化指标）；契约没有声明分析宇宙从 231 收缩到 219，也没有把 2.csv 图（REQ-0002 明确要求）列为输入。契约与交付的实际研究对象不一致。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0003",
+   "objectType": "targetContract",
+   "objectId": "TGT-0003",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "核对 TGT-0003 的 taskNature=conditional_generation、labelOrigin=algorithm-output、labelSource（生成谱是模型输出，真实留出只用于分布/画像评估）、inputsAvailableAt（风格标签 + 该风格训练谱，不需要目标啤酒实测谱）与 statement.md 问题 3 原文；核对 DATA-0003/DATA-0004 的 sha256 均为 4948a908…（字节相同）、字段均含 231 chem__ + 50 感官列；核对 targetColumn=overall 确为 4.csv 真实感官列且不是生成器",
+   "findings": []
+  },
+  {
+   "id": "REV-0004",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "逐条把 REQ-0001..REQ-0007 的 source.quote 与 problem/statement.md 做精确子串匹配（7/7 命中）；逐个解析 coverage.refs 的 claim/experiment/figure/script 是否存在且内容支持该要求。专项核对：(a) REQ-0001：EXP-0004/predictions.csv 的行数列数（50×102，仅 y_pred/y_true 连续值）、outputs.json grades 的 50×50 汇总、DATA-0002 g6__ 字段说明，确认是否存在 250 行×50 维的预测分级产物；(b) R",
+   "findings": [
+    {
+     "severity": "critical",
+     "text": "REQ-0002 声称“用 2.csv 构建化合物共表达图”，coverage 指向 EXP-0006/q2_topk.py，但 q2_lib.py 第 249–251 行明确写 2.csv “not registered as a dependency”，EXP-0006/settings 写明图由 SPLIT-0001 的 200 行训练集重算 Spearman；台账中没有任何实验读取 RAW-415709ac（2.csv）或计算其",
+     "resolved": true
+    },
+    {
+     "severity": "critical",
+     "text": "REQ-0001 要求“为全部样本输出 50 个感官维度的 0–6 分级评分”，但 EXP-0004/predictions.csv 只有 50 行留出集、102 列（y_pred/y_true 连续值），没有 250×50 的预测分级表；EXP-0004/outputs.json 的 grades 只有 50×50 汇总（confusion/QWK/agreement），DATA-0002 的 g6__* 是“observed lab",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "REQ-0004 要求把 DMS/双乙酰/4VG/trans-2-nonenal/stale hops 的“不恶化”作为硬约束，但 MCON-0003 只声明 4 条约束（excess__DMS/excess__X2.3.butanedione/excess__X4VG 与 t2n_margin），samples.csv 也只有这 4 列；stale_hops 不在约束/样本列中，t2n 与 stale 走 Q1 代理。transfer",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "REQ-0005 要求“md/tex/pdf 三格式同版”，coverage 却只引 report/paper.md + build_paper.py + FIG-0001；当前 renders=[]、paperArtifacts=[]、report/ 下只有 paper.md，没有 tex/pdf，也没有 render/artifact 记录。该要求在 review 时点并未被证据覆盖。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "7 条 requirement 的 source.sha256 全为 null、pageVerified 全为 false；quote 本次逐字匹配成立，但题面被改动时台账无法自动判 stale。建议把 statement.md 的 sha256 与 locator 写入 requirement.source。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "REQ-0001 的 coverage 脚本是 src/q1_candidate.py（C1 图正则低秩），而 selectedModelId=MODEL-0004、最终实验 EXP-0004 由 src/q1_fusion.py 产生；交付模型的脚本没有出现在该要求的 refs 中（REQ-0006 才有 q1_fusion.py）。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "REQ-0006 的“完整、可复现的源代码”由 REPRODUCE.md 覆盖，但 REPRODUCE 只给出 Q1 的本地最小命令（§4），Q2/Q3 没有对应的可直接执行命令；环境、顺序与台账哈希已给出，但端到端复现仍需读者自行拼装。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0005",
+   "objectType": "claim",
+   "objectId": "CLAIM-0001",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "把 CLAIM-0001 的数字逐项对 metrics.json 重算：EXP-0001 mae=0.4005615400064、EXP-0004 mae=0.3465674099243312、r2_50dim=0.2316611790967379、skill_50dim=0.13479609170966855、w_median=0/w_graph=0.6491684071/w_hgb=0.3508315929；读 VAL-0005.result.details.comparisons 确认独立复跑比较了 EXP-0004 的全部指标键（不只 mae），并读 EXP-0010/metrics.",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "该记录 status=superseded、supersededBy=CLAIM-0007；REQ-0001 的 coverage 已改指 CLAIM-0007。其数值本身经核对与 EXP-0001/EXP-0004 metrics.json 完全一致（0.40056→0.34657、R²=0.2317、Skill=0.1348、权重 0/0.649/0.351），但已不是当前活跃结论，不能作为交付证据；审查结论必须落在 CLAIM-0",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "CLAIM-0001 声称“同 seed 独立复跑（EXP-0010）在 1e-9 容差内复现全部指标”，但 validationIds=[]，没有把 VAL-0005 链接到 claim；VAL-0005 的 comparisons 实际覆盖了全部指标键且 passed，建议 link 该验证 id，使关键 claim 的复跑断言可由台账直接追溯。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0006",
+   "objectType": "claim",
+   "objectId": "CLAIM-0002",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "从 EXP-0003/outputs.json 重算三项训练内消融：ablation_representation.deltaMaeRankGaussMinusZscore=-0.0039942055、ablation_rank.deltaMaeRidgeMinusLowrank=0.0023220401、ablation_gamma.deltaMaeGammaZeroMinusBest=0.0009835263、cv_mae_sd=0.0137257657；对照 CLAIM-0002 的 0.00399/0.00232/0.00098/0.0137 与 OOF 0.3448/0.3504（E",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "该记录 status=superseded、supersededBy=CLAIM-0008；数值经核对与 EXP-0003/outputs.json 的 ablation_* 完全一致（0.0039942/0.0023220/0.0009835/0.0137258），负结果表述也成立，但已不是当前活跃结论；REQ-0001 的 coverage 引用的 CLAIM-0007 才是交付证据。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "CLAIM-0002 陈述里的 0.00399/0.00232/0.00098/0.0137 只出现在 EXP-0003/outputs.json 的 ablation 子结构，claim refs 只有 EXP-0003:cv_mae（不直接对应这些 Δ）；活跃版本 CLAIM-0008 更把 cv_mae 也移除、只留两张图。建议至少把 ΔMAE 以 metric 形式登记或把 outputs.json 的 ablation 路径作",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0007",
+   "objectType": "claim",
+   "objectId": "CLAIM-0003",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "从 EXP-0006/metrics.json 与 outputs.json 重算：topk-jaccard 由 sets.json 的 50 维×4 方法点估计集合复算（0.2186666667）、mean_selected_pi=0.46468、bootstrap_stability.shareSelectedAtPiOne=0.0、external_6csv.nMatched=44/44、meanSpearman=0.4450514；检查 500 次 bootstrap、219 候选、50 维与 4 方法是否一致；读 q2_lib.py/EXP-0006 settings 确认图的来源是",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "该记录 status=superseded、supersededBy=CLAIM-0009；数值经复核全部成立（0.2186667、0.46468、0.44505、44/44、π=1 占比 0），但已不是当前活跃结论。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "该 Q2 关键 claim 的 appliesTo 只写“50 个感官维度 × 219 个单体化合物；同期关联”，没有披露 Top-3 所用的共表达图是 SPLIT-0001 200 行训练集上重算的 Spearman 图，而不是题面点名的 2.csv 图（q2_lib.py 明确 2.csv not registered as a dependency）。这不影响“在此图下 Top-3 稳定”的陈述，但影响“已回答 REQ-0002”",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "claim 的 validationIds=[]：VAL-0007（topk-jaccard 原生复算）与 VAL-0008（EXP-0011 独立复跑）都存在且 passed，但没有 link 到该 claim；关键 claim 的复算/复跑证据无法从 claim 直接追溯。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0008",
+   "objectType": "claim",
+   "objectId": "CLAIM-0004",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "把 CLAIM-0004 的数字逐项对 EXP-0014/metrics.json 与 outputs.json 对照：constraint-satisfaction=1.0、defect-exceedance-rate-unconstrained=0.852、defect-exceedance-rate-real=0.844、energy-distance-normalized-unconstrained=0.2311104、energy-distance-normalized=0.2347244、energy-distance-real-reference=0.1841813、profil",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "该记录 status=superseded、supersededBy=CLAIM-0010；上述数值经复算全部成立（约束满足率 310/310=1.0），但已不是当前活跃结论。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "“感官画像 Spearman=0.811”是 50 维加权均值画像（genProfile vs realProfile）的相关系数，不是逐风格/逐单元可靠性；profile-metrics.perStyle 的均值 rho 为 Tripel 0.295、Blond 0.250、Amber -0.232（Kriek 0.738、Lambic 0.444），而 FIG-0014 对 Tripel 画的是另一种池化口径 rho=0.70。cl",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0009",
+   "objectType": "claim",
+   "objectId": "CLAIM-0005",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "从 EXP-0014/outputs.json 读 transfer-delivery（nonworsenRate=1.0、targetMahalanobis=0.43282、meanL1=7.18987、initTargetMahalanobis=1.48132）、transfer-bootstrap（nonworsenRateLow=0.272727、cvR2T2n=0.054889、cvR2Stale=0.050253）与 4 个 transfer-scenarios 的 nonworsenRate/strictNonworsenRate/strictNonworsenDetail；对照",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "该记录 status=superseded、supersededBy=CLAIM-0011；0.433/7.19/1.481/0.055/0.050 等数值经核对一致，但已不是当前活跃结论。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "bootstrap 下界 0.27 被归因到 t2n/stale_hops 的弱代理，但 q3_generate.py 的 transfer-bootstrap 用的是 r[\"nonworsenAll\"]（5 类缺陷严格不增），而 transfer-scenarios 的 strictNonworsenDetail 显示 t2n=1.0、stale_hops=1.0，低值来自 DMS=0.2727、X2.3.butanedione=0.",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "“c_new≤max(c_source,T) 与 c_new≤c_source 两种策略下 5 类缺陷非恶化率均为 1.0”中的 nonworsenRate 是策略相对量（q3_generate.py 注释：nonworsenRate is policy-relative），1.0 由投影构造保证；转往 Tripel 的 cap-at-max 策略下 strictNonworsenRate 只有 0.1818（DMS 0.273/双乙酰",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0010",
+   "objectType": "delivery",
+   "objectId": "paper",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "通读 report/paper.md（290 行）并逐行区分 {{metric:…}}/{{claim:…}}/{{figure:…}}/{{value:count:…}} 占位符与手写数字；把正文指标对 EXP-0001/0002/0003/0004/0006/0008/0014 的 metrics.json/outputs.json 与 ROB-0001..0003 记录逐项对照；统计 SPLIT-0002 的实验记录（EXP-0001/0003/0004/0010/0025）与 holdoutExposures（3 条），核对“恰好 3 个实验”的表述；grep 2.csv 与 q2_l",
+   "findings": [
+    {
+     "severity": "critical",
+     "text": "图注与图系统性不一致（交付工具会把 ledger caption 渲染进论文）：FIG-0001 caption 写“逐目标 MAE 对比，纵轴 50 个感官维度”，实际是 median/graph/HGB/fused 四组的 OOF vs test MAE 柱状图；FIG-0006 写“每个感官维度 Top-3 入选频率热图”，实际是 consensus percentile score vs π 的二维直方图；FIG-0008 写“",
+     "resolved": true
+    },
+    {
+     "severity": "critical",
+     "text": "正文仍有大量手抄数字，违反 statement.md §4“所有正文数字经台账占位符渲染，禁止手抄”与 REPRODUCE.md “不手抄任何指标”：如 0.649/0.351（摘要）、0.00399/0.00232/0.00098/0.0137/0.3448/0.3504（§4.6/§8）、40/10（§4.5）、51/172/108/291（§5.2）、J≈0.30/0.08（§5.5）、0.852→0/1.481→0.433（§6",
+     "resolved": true
+    },
+    {
+     "severity": "critical",
+     "text": "paper.md §5.1 写“附件网络：2.csv 的 231×231 Spearman 矩阵（PSD 投影后）回应题目”，但 Q2 的图实际由 SPLIT-0001 200 行训练集重算（q2_lib.py 明确 2.csv not registered as a dependency），没有任何实验读取 2.csv 或计算其 PSD 投影图；这是对题目要求输入的未支撑声明，与 REQ-0002 的 critical 覆盖缺口同源。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "paper.md §7 与 REPRODUCE.md §5 写“SPLIT-0002 上恰好 3 个实验（基线+C1+C2）”，但台账有 5 条实验记录挂在该划分：EXP-0001/EXP-0003/EXP-0004 与两次独立复跑 EXP-0010/EXP-0025（holdoutExposures 只记 3 条，因为复跑被当作 verifiedRerun 不计曝光）；EXP-0025 还是 CLAIM-0007 新引用的复跑但没有对",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "paper.md §4.4 写“交付连续分数与整数等级”，但 EXP-0004/predictions.csv 只有 50 行留出集连续预测，outputs.json 的 grades 只有 50×50 汇总，没有 250×50 的预测分级表；DATA-0002 的 g6__* 是观测标签派生的参考级。Q1 的“给出全部分级结果”在交付物层面没有落地。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "§7 写“所有检查……均通过”，但台账保留 VAL-0011（EXP-0009 simulation-seeds，passed=false：“run #4 has no metric 'constraint-satisfaction'”）与 EXP-0012（failed，SEED_NOT_ACKNOWLEDGED）。REPRODUCE §5 只解释了 seed receipt 改名机制，没有如实写出这两次失败及修复；按“失败如实报告”",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "§4.5 “40 个维度改善、10 个维度恶化（FIG-0004）”来自 C1/EXP-0003；选中的 C2/EXP-0004 summary 是 38 改善/12 恶化。该句在“评价与结果”段容易被读成交付模型的结果，应明确标注是 C1 的逐目标诊断，或改用 C2 的数。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "§7 “SPLIT-0001 只用于提取训练行与 Q2 分析，不挂载任何实验”不准确：Q1 稳健性 EXP-0016/0017/0018 与 Q2 稳健性 EXP-0019/0020/0021 都以 SPLIT-0001/train.csv 为注册依赖（只是不设 splitId）；应改为“不挂 split，但训练行被 Q1/Q2 稳健性实验使用”。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "REPRODUCE.md 只给出 Q1 的本地最小命令（§4 的 q1_fusion.py），没有 Q2/Q3 的可执行复现命令；环境、顺序和哈希虽已给出，但“完整可复现源代码”的端到端证据不足。另当前 renders=[]、paperArtifacts=[]、report/ 无 tex/pdf，REQ-0005 的 md/tex/pdf 同版尚未发生（属交付阶段待办，不是论文内容错误）。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0011",
+   "objectType": "claim",
+   "objectId": "CLAIM-0007",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "对 EXP-0001/EXP-0004/EXP-0010/EXP-0025 的 metrics.json 逐项比对 statement 的 0.40056/0.34657/0.2317/0.1348/0.649/0.351；读 VAL-0005.result.details.comparisons 与 rerunExperimentIds（仅 EXP-0010），检查 validations 中是否存在 EXP-0025 的 independent-rerun；读 EXP-0025/result.json 与 run.json 确认它确实在 12:10 运行并 succeeded，再检查它是否",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "CLAIM-0007 是当前活跃的 Q1 关键结论，陈述“同 seed 独立复跑（EXP-0010、EXP-0025）在 1e-9 容差内复现全部指标”，但 VAL-0005 的 rerunExperimentIds 只有 EXP-0010，台账中没有任何 independent-rerun 验证引用 EXP-0025；EXP-0025/result.json 的 metrics 虽与 EXP-0004 完全一致，但没有插件检查记录。c",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "claim.validationIds=[]：VAL-0005 已 passed 且比较了全部指标键，但没有 link 到本 claim；关键结论的复跑证据不可从 claim 直接追溯。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0012",
+   "objectType": "claim",
+   "objectId": "CLAIM-0008",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "从 EXP-0003/outputs.json 重算 ablation_representation.deltaMaeRankGaussMinusZscore=-0.0039942055、ablation_rank.deltaMaeRidgeMinusLowrank=0.0023220401、ablation_gamma.deltaMaeGammaZeroMinusBest=0.0009835263、cv_mae_sd=0.0137257657，并核对 EXP-0004 的 fused_oof_mae=0.3447662569 与 graph_oof_mae=0.3503976117；检查 c",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "claim 陈述中的 0.00399/0.00232/0.00098/0.0137/0.3448/0.3504 与 EXP-0003/outputs.json 和 EXP-0004/metrics.json 一致，结论（弱增益/负结果）也成立；但 refs 只有两张图，没有任何 metric ref，limitations 以“不在 claim refs 中重复登记”解释。建议把 cv_mae/ablation 子指标以 metric ",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0013",
+   "objectType": "claim",
+   "objectId": "CLAIM-0009",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "从 EXP-0006/metrics.json 与 outputs.json 核对 0.2186666667（sets.json 点估计集合）、mean_selected_pi=0.46468、shareSelectedAtPiOne=0.0、external_6csv meanSpearman=0.4450514、nMatched=44/44；读 EXP-0006/settings 与 q2_lib.py 确认图由 SPLIT-0001 200 行重算 Spearman（2.csv not registered）；检查 claim 的 refs（metric 仅 topk-jaccard，π",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "CLAIM-0009 是活跃的 Q2 关键结论，appliesTo 只写“200 行训练集；50 维 × 219 单体化合物；同期关联”，没有披露 Top-3 的共表达图是 SPLIT-0001 训练集上重算的 Spearman 图，而题面 REQ-0002 点名要用 2.csv（q2_lib.py 明确 2.csv not registered as a dependency）。结论在此图下成立，但“已回答 Q2/REQ-0002”的",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "claim 的 0.465（π 均值）与 0.445（6.csv 秩相关）只在 outputs.json 的子结构中，refs 的 metric 仅 topk-jaccard；且 validationIds=[]（VAL-0007/0008 已 passed 但未 link）。critical claim 的关键数值不可从 refs 直接复算/追溯。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0014",
+   "objectType": "claim",
+   "objectId": "CLAIM-0010",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "核对 EXP-0014/metrics.json 的 constraint-satisfaction=1.0、defect-exceedance-rate-unconstrained=0.852、defect-exceedance-rate-real=0.844、energy-distance-normalized-unconstrained=0.2311104、energy-distance-normalized=0.2347244、energy-distance-real-reference=0.1841813、profile-spearman=0.8109004；用 samples.cs",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "CLAIM-0010 的“感官画像 Spearman=0.811”是 50 维加权均值画像的相关系数；profile-metrics.perStyle 的均值 rho 为 Tripel 0.295、Blond 0.250、Amber -0.232（Kriek 0.738、Lambic 0.444），FIG-0014 对 Tripel 又用另一种池化给出 0.70。appliesTo 写“22 个风格”，但 limitations 只提“",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "claim 的 0.852/0.844/0.2311/0.2347/0.1842/0.811 等关键数值没有对应 metric ref（refs 仅 constraint-satisfaction + 两张图），validationIds=[]（VAL-0013..0016 已 passed 但未 link）；critical claim 的数值只能经由 outputs.json 间接追溯。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0015",
+   "objectType": "claim",
+   "objectId": "CLAIM-0011",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 EXP-0014/outputs.json 的 transfer-delivery（nonworsenRate=1.0、targetMahalanobis=0.43282、meanL1=7.18987、initTargetMahalanobis=1.48132）、transfer-bootstrap（nonworsenRateLow=0.272727、cvR2T2n=0.054889、cvR2Stale=0.050253）与 4 个 transfer-scenarios 的 nonworsenRate/strictNonworsenRate/strictNonworsenDetail；对照",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "claim 把 bootstrap 下界 0.27 归因到 t2n/stale_hops 的弱代理，但 bootstrap 用的是 r[\"nonworsenAll\"]（5 类缺陷严格不增）；transfer-scenarios 显示 t2n=1.0、stale_hops=1.0，0.27 来自 DMS=0.2727、X2.3.butanedione=0.4545/0.7273、X4VG=0.4545。错误归因会让读者以为弱证据只涉及 t",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "“两种策略下 5 类缺陷非恶化率均为 1.0”的 nonworsenRate 是 policy-relative（q3_generate.py 注释明确），1.0 由投影构造保证；cap-at-max 情景的 strictNonworsenRate=0.1818。论文 §6.5 已披露 18%，但该 critical claim 的 limitations 没有写 strict 口径与 policy-relative 的区别，容易被读成",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "claim 的 1.481/0.433/7.19/0.055/0.050 等关键数值没有对应 metric ref（refs 仅 constraint-satisfaction + 两张图），validationIds=[]（VAL-0016 已 passed 但未 link）；critical claim 的数值不可从 refs 直接复算。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0016",
+   "objectType": "claim",
+   "objectId": "CLAIM-0012",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "核对 ROB-0001/0002/0003 的 preregisteredAt 早于 EXP-0016..0024 的 startedAt；读三份 result.decisionRule：ROB-0001 relative spread 0.004472<=0.03、ROB-0002 0<=0.05、ROB-0003 0.082716<=0.25，decisionPassed 均 true；对照 EXP-0019/EXP-0022 metrics.json 的 topk-jaccard=0.2186667、energy-distance-normalized=0.2102437/0.21444",
+   "findings": []
+  },
+  {
+   "id": "REV-0017",
+   "objectType": "modelContract",
+   "objectId": "MCON-0001",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "重算 MCON-0001 的 AST：斜率=6/(1.4886547852-(-0.818407731))=2.6007097588，截距=3-2.6007097588×0.3351235271=2.1284409727；三个 boundaryCases（z=-0.818407731→0、z=1.4886547852→6、z=0.3351235271→3）都由分位端点定义直接得到，容差 1e-9；对照 paper.md §4.4 与 EXP-0004/outputs.json grades.rule 的实际主分级 g=clip(floor(6a+0.5),0,6)（a 为训练折中点经验 CDF",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "MCON-0001 的 formula 只编码了敏感性分析的有界线性映射（训练折 q05/q95→0/6），三个 boundaryCases 都只测这条映射；但 Q1 实际交付的主分级是训练折中点经验 CDF 的 g=clip(floor(6a+0.5),0,6)（paper §4.4、EXP-0004/outputs.json grades.rule、DATA-0002 g6__*）。主规则没有声明式 AST、没有边界样例，TGT-0",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "MCON-0001 的 boundaryCases 里 z-at-q05/q95 的 expected 0/6 来自定义，但 inputs 的端点值来自训练折分位（-0.818407731/1.4886547852），没有备注它们是哪个数据版本/训练折的统计量；若换 split 或重新生成 DATA-0002，这三个样例会一起过期而当前台账无 stale 链接。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0018",
+   "objectType": "modelContract",
+   "objectId": "MCON-0002",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "核对 MCON-0002 的 formula（三个 coef=1/3 的 rank_total/rank_within/rank_graph 线性平均）与三个 boundaryCases：全 0→0、全 1→1、全 0.5→0.5，均按定义直接成立；读 src/q2_lib.py 的 percentile_block/consensus（列内“越大越高”百分位、219 候选、S=三项均值）与 EXP-0006/settings.scoring，确认代码与 AST 一致；检查 objectiveUnit=percentile、变量 domain [0,1] 与图/论文 §5.4 的 S_jt 公",
+   "findings": []
+  },
+  {
+   "id": "REV-0019",
+   "objectType": "modelContract",
+   "objectId": "MCON-0003",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "重算 MCON-0003 的 AST：max(ratio-1,0) 在 ratio=0.5/1/2 时为 0/0/1，与三个 boundaryCases 一致；读 samples.csv 的 310 行与列（excess__DMS/excess__X2.3.butanedione/excess__X4VG/t2n_margin），按 constraints（三个 max=0 + t2n_margin min=0）复算同时满足率=310/310=1.0；对照 REQ-0004 要求的 5 类缺陷（DMS/双乙酰/4VG/trans-2-nonenal/stale hops）与 MCON-0003",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "MCON-0003 只声明 4 条约束（excess__DMS/excess__X2.3.butanedione/excess__X4VG 与 t2n_margin），samples.csv 也只有这 4 列；REQ-0004 要求的 transfer 5 类硬约束里 stale_hops 不在契约/样本列中，t2n 用 Q1 代理。于是 transfer 的“5 类不恶化”无法从 MCON-0003 声明式复算，constraint-",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "boundaryCases 只测了 excess=max(ratio-1,0) 的三个点，没有 t2n_margin≥0 或 transfer cap 规则的边界样例；且 objective 写“全部声明约束同时满足”，容易让读者以为 1.0 覆盖了 REQ-0004 的 5 类缺陷。建议补 t2n/stale 与 cap 规则的样例，或明确 constraint-satisfaction 的适用范围。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0020",
+   "objectType": "claim",
+   "objectId": "CLAIM-0013",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 ledger 的 CLAIM-0013、EXP-0004/EXP-0001/EXP-0010/EXP-0036 的 metrics 与 VAL-0032..0036 全文，并手算 Skill。核对：EXP-0004:mae=0.3465674099243312、EXP-0001:mae=0.4005615400064、EXP-0036:q1-candidate-r2=0.23166117909673786、q1-candidate-skill=0.13479609170966855、q1-w-median=0、q1-w-graph=0.6491684070883224、q1-w-hgb=0",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "陈述写「同 seed 独立复跑（EXP-0010）在 1e-9 容差内逐项复现全部 17 个指标（VAL-0036）」，但 VAL-0036 的 details.comparisons 实际比较 18 个指标键（audit_*4 + fused/graph/hgb/median OOF + mae + mae_median_reference + n_targets + r2_50dim + skill_50dim + skill_ra",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0021",
+   "objectType": "claim",
+   "objectId": "CLAIM-0014",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 CLAIM-0014、EXP-0035/metrics.json、EXP-0036/metrics.json 与图 FIG-0029（read_image 看 ablation-summary.png）。逐项核对三个 Δ 与折间 sd：ablation1-rankgauss-minus-zscore-cv=−0.0039942（|Δ|=0.00399）、ablation2-ridge-minus-lowrank-cv=0.0023220、ablation3-gamma0-minus-best-cv=0.0009835，三者绝对值都小于 ablation-q1-fold-sd=0.01372",
+   "findings": []
+  },
+  {
+   "id": "REV-0022",
+   "objectType": "claim",
+   "objectId": "CLAIM-0015",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 CLAIM-0015、EXP-0029/outputs.json（settings/attachment_network/method_jaccard/bootstrap_stability/point_vs_bootstrap/final_top3/external_6csv）、sets.json、sets_pi_first.json、EXP-0036，并用 python 独立重算：从 sets.json 复算 50 维 × 4 方法平均两两 Jaccard=0.2186667（300 对，与 EXP-0029:topk-jaccard 一致）；从 sets_pi_first.json ",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "陈述「把综合集替换为 π 优先集后同一 Jaccard 为 0.24（两值同时报告）」低估了实际操作：sets_pi_first.json 把四个方法的 Top-3 全部按 π 重选（相对点估计集：graph_lowrank 26 维、total_spearman 15 维、within_style_spearman 15 维的集合改变），只把 consensus 换成 π 优先时同一 Jaccard 仍为 0.21900，0.24 只",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0023",
+   "objectType": "claim",
+   "objectId": "CLAIM-0016",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 CLAIM-0016、EXP-0033/outputs.json（aggregate-metrics/profile-metrics/hyperparameters/seed-metrics/transfer-*）、EXP-0033/metrics.json、EXP-0036、VAL-0041，并 read_image 核对 FIG-0024/0025/0028。核对：constraint-satisfaction=1.0，VAL-0041 details.n=310、五条约束 violations 全 0（310=250 OOF+49 未见风格+11 迁移，与 n-generation/",
+   "findings": []
+  },
+  {
+   "id": "REV-0024",
+   "objectType": "claim",
+   "objectId": "CLAIM-0017",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 CLAIM-0017、EXP-0033/outputs.json 的 transfer-scenarios（4 情景）、transfer-delivery、transfer-bootstrap 与 seed-metrics，并读 src/q3_generate.py 的迁移/bootstrap 段（第 470–520 行）确认计算口径；read_image 看 FIG-0026/0027。核对：nonworsenRate=1.0 在 4 情景恒真（policy-relative，由可行域投影构造）；strictNonworsenRate：non-increasing 两情景=1.0、cap",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "陈述写「（DMS 0.273、双乙酰 0.455、4VG 0.455）」，但 EXP-0033（以及 EXP-0028/0032/0034，四次一致）transfer-scenarios 的 strictNonworsenDetail 是 DMS=0.2727、X2.3.butanedione=0.5455（mean）/0.7273（median）、X4VG=0.4545，t2n=1.0、stale_hops=1.0。双乙酰的 0.45",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "「100 次 bootstrap 的非恶化率下界为 0.273」的归因不对：src/q3_generate.py 第 495–515 行的 boot_rates 只计算 stale_hops 与 t2n 两个 Q1 代理约束在 100 次代理克隆下的非恶化，0.2727 是这 100 次抽样率的 2.5% 分位，不是五类缺陷的严格不增率（非增策略下五类严格率恒 1.0，bootstrap 不可能有波动）。supersedesReason",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0025",
+   "objectType": "claim",
+   "objectId": "CLAIM-0012",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 CLAIM-0012 与 quality.robustnessPlans 的 ROB-0001/ROB-0002/ROB-0003（metricKey/decisionRule/perturbations/experimentIds/result），并用台账 metrics 独立重算相对极差：Q1 用 EXP-0016/0017/0018 的 mae（0.3503976/0.3504945/0.3489274），(max−min)/max=0.004472 ≤0.03，result.decisionRule.passed=true；Q2 用 EXP-0019/0020/0021 的 top",
+   "findings": []
+  },
+  {
+   "id": "REV-0026",
+   "objectType": "delivery",
+   "objectId": "paper",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "通读 report/paper.md（319 行，193 个占位符：metric 162/figure 14/claim 13/value 4）、report/rendered.md（0 个 {{）、paper.tex、paper.pdf、REPRODUCE.md；同版核对：用 src/build_paper.py 的同一组 pandoc 参数把 rendered.md 重转为 tex，与 paper.tex 逐字节相同，用同一命令重新生成 PDF 得 18 页/28 个 image XObject/1 295 441 字节（交付 1 295 446），mtime 顺序 paper.md 20",
+   "findings": [
+    {
+     "severity": "critical",
+     "text": "交付的 PDF 里 14 张图没有任何图注/编号：rendered.md 把每个图写成 ![…](../figures/x.png) 后紧跟一行 <!-- FIG-xxxx sha256:… -->（同一段落），pandoc 因此不生成 figure 环境；paper.tex 中 \\begin{figure}=0、\\caption=0（唯一命中是 \\captionsetup[table]），图注只落在 \\includegraphics ",
+     "resolved": true
+    },
+    {
+     "severity": "critical",
+     "text": "§9 结论 (3) 把两种迁移策略说反了：正文写「跨风格迁移在“超阈不恶化”口径下 100% 可行，但在“绝对不增”口径下只有 0.181818 的源样本可行」。EXP-0033 transfer-scenarios 与 FIG-0026 显示相反：nonworsenRate 四情景恒 1.0（policy-relative，投影构造），严格逐缺陷不增率在 non-increasing（绝对不增）策略下是 1.0、在 cap-at-ma",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "§6.5 经 {{claim:CLAIM-0017}} 原样渲染进「（DMS 0.273、双乙酰 0.455、4VG 0.455）」，但 EXP-0033 的 strictNonworsenDetail 是 DMS 0.2727、X2.3.butanedione 0.5455(mean)/0.7273(median)、X4VG 0.4545；双乙酰 0.455 是把 4VG 的值错抄了。错误数值已进入交付正文。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "§6.5「100 次 bootstrap 的非恶化率下界为 0.2727」紧接在五类严格率之后，读者会读成五类严格不增率的下界；但 src/q3_generate.py:495-515 的 boot_rates 只对 t2n/stale 两个 Q1 代理约束重采样（非增策略下五类严格率恒 1.0，不可能波动），0.2727 是代理口径的 2.5% 分位。需在正文明确标注口径，否则与 CLAIM-0017 的归因一并误导。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "§7 手抄指标：ROB-0001/0002/0003 的相对极差 0.00447、0、0.0827 与上限 0.03/0.05/0.25 以纯文本写死，VAL-0034/VAL-0038 的差值 −5.6e−17、3e−17 同样手抄，REPRODUCE.md 第 9 行却声明「不手抄任何指标」。这些值与台账一致，但没有占位符＝重算/过期不联动，不满足「台账里没有的数就是不可交付的数」的可追溯要求（250/231/50/22、73 缺失",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "台账没有交付绑定：paperArtifacts=[]、frozen=null、stage.current=intake、32 个 quality checks 全 pending，因此「md/tex/pdf 同版」只能靠文件层核对（我的核对结论是同版：tex 与 pandoc(rendered.md) 逐字节相同，PDF 重新生成同为 18 页/28 图、差 5 字节）；artifact/check 尚未执行，交付链缺台账证据。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "§7 把 EXP-0025 与 EXP-0010 并列为「2 次 verified rerun」，但台账没有任何 independent-rerun 验证引用 EXP-0025：VAL-0005/VAL-0031/VAL-0036 的 rerunExperimentIds 都只有 EXP-0010，EXP-0025 只有 verifiedRerun=true 标志（metrics 与 EXP-0004 相同）。措辞宜写「EXP-0010",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "图面瑕疵：FIG-0025 标题与 y 轴「0.9」刻度重叠；FIG-0027 的 λ 标签（lambda=0.1/1/10）互相叠在一起。不影响内容，但正式交付前应修。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0027",
+   "objectType": "targetContract",
+   "objectId": "TGT-0001",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 state/ledger.json 的 TGT-0001、MCON-0001、DATA-0002 字段、src/q1_grade_all.py、experiments/EXP-0026/{grades_all.csv,result.json}。①按插件 evalFormula 语义（constant/linear/max/sum；lt 分支；缺失输入按 false）重算 MCON-0001：a=0,1/12,1/6,1/2,3/4,11/12,1 七点与 g=clip(floor(6a+0.5),0,6) 全等；再对 a∈[0,1] 的 1039 个点（含全部 12/24 分点）做 AST",
+   "findings": []
+  },
+  {
+   "id": "REV-0028",
+   "objectType": "targetContract",
+   "objectId": "TGT-0002",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 state/ledger.json 的 DATA-0001 字段表、q2_chem_meta.json、EXP-0029/{experiment.json,metrics.json,outputs.json,sets.json}、src/q2_lib.py 与 src/q2_topk.py。①TGT-0002.dataset.targetColumns 共 50 列，与 DATA-0001 的 50 个感官字段逐一相等（无缺失、无多余；A_* 15 + F_* 15 + 口感/缺陷/总体 20）。②researchObject 的 219 = 231 chem 列 − 5 个派生汇总量（k",
+   "findings": []
+  },
+  {
+   "id": "REV-0029",
+   "objectType": "targetContract",
+   "objectId": "TGT-0003",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "读 TGT-0003、EXP-0033/{experiment.json,metrics.json,outputs.json,samples.csv}、DATA-0003/0004 的 ledger 记录、problem/questions.yaml Q3 与 src/q3_generate.py。①TGT-0003.dataset=DATA-0004、targetColumn=overall；EXP-0033.experiment.json 的 datasetId=DATA-0004、params.targetContractId=TGT-0003，二者一致。②DATA-0003 与 DAT",
+   "findings": []
+  },
+  {
+   "id": "REV-0030",
+   "objectType": "modelContract",
+   "objectId": "MCON-0001",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "按插件 evalFormula 语义（constant/linear/max/sum；lt/lte/gt/gte/eq/neq；缺失输入的条件按 false）重算 MCON-0001：①在 a=0,1/12,1/6,1/2,3/4,11/12,1 七点，AST 输出 0/1/1/3/5/6/6，与交付的 g=clip(floor(6a+0.5),0,6) 及 7 个 boundaryCases 的 expected 全部一致（tolerance 1e-12）。②对 a∈[0,1] 共 1039 个点（含全部 k/12、k/24 分点与 0/1 端点）做 AST 与精确有理数 main rule",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "MCON-0001 的 note 写敏感性线性映射「作为并列的敏感性分析登记在 conditions 与 EXP-0004 的 outputs.grades.sensitivity 中」，但契约的 conditions 实际为空数组 []，EXP-0004/outputs.json 的 grades 下也没有名为 sensitivity 的子对象（只有 agreementLinearSensitivity / qwkLinearSens",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0031",
+   "objectType": "modelContract",
+   "objectId": "MCON-0002",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复核 MCON-0002 与论文 §5.4 的 S 定义及实现：①论文 §5.4 写 S_jt = (1/3)[R(|ρ_total|) + R(|ρ_within|) + R(|B̂|)]，R 为列内「越大越高」的百分位；MCON-0002.formula 是三个 coef=1/3 的 linear（rank_total/rank_within/rank_graph）之和，变量单位 percentile、objectiveUnit=percentile，语义一致。②实现核对：src/q_common.py:percentile_rank 用 rank/(n−1)（max=1，越大越高）；sr",
+   "findings": []
+  },
+  {
+   "id": "REV-0032",
+   "objectType": "modelContract",
+   "objectId": "MCON-0003",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "按插件 evalFormula 语义（selector 缺失时 eq 条件返回 false，走 default 分支；max/sum/linear）重算 MCON-0003：①constraints 的 5 个列名与 experiments/EXP-0033/samples.csv 逐字一致（excess__DMS、excess__X2.3.butanedione、excess__X4VG、t2n_margin、stale_hops_margin）；从 samples.csv 逐行复算 310/310 满足（excess 三列 max=0，t2n_margin min=1e-6，stale_h",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "MCON-0003 的 note 写 constraint-satisfaction「从 samples.csv 原生复算（VAL-0028/0037 口径）」，但 VAL-0037 是 EXP-0029 的 leakage 检查（checkType=leakage），不是 Q3 的约束复算；v3 修订后的五约束复算验证是 VAL-0041（VAL-0028 是更早时点的同口径记录，两者都给出 310/310、violations 全 ",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0033",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "逐条核对 REQ-0001..REQ-0007：①7 个 source.quote 在 problem/statement.md 的精确子串 7/7 命中；②54 条 coverage refs 逐条解析（claim 存在且 active/非 stale、experiment 存在且已 succeeded、figure 存在且文件 sha 与台账一致、script/report_section/REPRODUCE 文件存在），54/54 可验证，无未知 kind；③语义复核：REQ-0001 的 EXP-0026/grades_all.csv 实测 250×50、g6=clip(floor(g",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "REQ-0006 的可复现命令有硬缺陷：REPRODUCE.md §4 的 Q1 命令设 MODELING_DEPENDENCIES='{}'，但 src/q1_fusion.py:158 调 read_dependency_json('data/processed/q1_grade_params.json')，经 modeling_contract.dependency_path 读取；空依赖映射实测抛 ValueError: dep",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "REQ-0007 在交付 PDF 上不成立：我复算 report/paper.tex 的 \\begin{figure}=0、\\caption=0（14 张图只剩 includegraphics 的 alt 文本，PDF 无图注/编号；REV-0026 F1 已记为 critical）；同时 §9 结论(3) 把两种迁移策略说反（写「超阈不恶化 100%、绝对不增 0.1818」，而 EXP-0033 transfer-scenarios",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "REQ-0004/REQ-0007 引用的 CLAIM-0017 含错误数字：我独立重算 EXP-0033/outputs.json 的 transfer-scenarios，cap-at-max 的 strictNonworsenDetail 为 DMS 0.2727、X2.3.butanedione 0.5455（mean）/0.7273（median）、X4VG 0.4545；claim 与论文 §6.5/附录 B 写「双乙酰 0",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "REQ-0005/REQ-0007 的渲染文本可读性受损：rendered.md 把长 claim 文本嵌入句中，产生重复/截断——摘要「（见 Q1 的三项…这是负结果，按原样披露。），我们如实…」、§4.6 末尾「。。」、§5.5「只声明同期关联…。，只声明同期关联…」、§7「…。 所报告的数值」、附录 B 把 claims 用「；」串成整段。三格式同版与数字来源成立，但「逻辑完整」的正文质量不达标；建议把 claim 占位符移到独立",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0034",
+   "objectType": "modelContract",
+   "objectId": "MCON-0001",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立重算（不采信描述）：①读 state/ledger.json 的 MCON-0001 v3、experiments/EXP-0004/outputs.json、experiments/EXP-0026/grades_all.csv、data/processed/q1_grade_params.json、src/q1_lib.py:430-505 与 src/prepare_q1mapped.py:85-100。②按插件 evalFormula 语义（constant/linear/max/sum；lt/lte/gt/gte/eq/neq；缺失输入的条件为 false）重算 7 个 boun",
+   "findings": []
+  },
+  {
+   "id": "REV-0035",
+   "objectType": "modelContract",
+   "objectId": "MCON-0003",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立重算：①读 MCON-0003 v4、experiments/EXP-0033/samples.csv 与 outputs.json、validation/VAL-0028|0041|0037 的 spec.json 与 result.json。②constraints 的 5 个列名与 samples.csv 表头逐字相等（excess__DMS、excess__X2.3.butanedione、excess__X4VG、t2n_margin、stale_hops_margin）；逐行复算 310 行全部满足：三个 excess 列 max=0，t2n_margin min=9.9999",
+   "findings": []
+  },
+  {
+   "id": "REV-0036",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "逐条核对 7 条 REQ 的 refs 与语义，并独立复跑关键证据：①refs 解析：claim（CLAIM-0018/0019/0021/0020 active、stale=false；REQ-0007 另含 CLAIM-0016，status=superseded、supersededBy=CLAIM-0021）、experiment（EXP-0004/0026/0029/0008/0033 均 succeeded）、13 个 figure（文件存在且 sha 与台账/渲染注释一致）、9 个 script 与 paper.md/REPRODUCE.md 均存在。②REQ-0001：EXP-",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "摘要与第 7 节的 {{claim:CLAIM-0012}} 被嵌在句子中间，渲染成病句与重复：摘要「…都小于折间波动（见 Q1 的三项训练内消融都只有很小的增益：…这是负结果，按原样披露。），我们如实作为弱增益／负结果披露…」；§7「实际相对极差为 三项预注册稳健性判定全部通过：… 所报告的数值；…」。这两处直接出现在交付 PDF 的摘要与验证节，REQ-0007 要求的「逻辑完整」因此不成立；REV-0033 F4 已提出但本轮未修",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "REQ-0007 的 coverage.refs 仍含 CLAIM-0016（status=superseded，supersededBy=CLAIM-0021），与本轮「REQ-0007 已重映射到活跃 claim CLAIM-0018/0019/0021/0020」的说明不符；两条记录 statement 逐字相同，故非语义缺口，但应改指 CLAIM-0021（改完会 bump REQ-0007 版本，需重做一次 coverage ",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "论文附录 B 的台账索引与当前台账不一致：写 MCON-0001（v2）/MCON-0003（v3），实际为 v3/v4；写「图：FIG-0016–FIG-0029」，而交付的 14 张图是 FIG-0016–0024、0026、0028–0031（FIG-0025/0027 已被 FIG-0030/0031 取代）。不影响数值，但削弱与台账的可追溯性。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0037",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对，不采信描述。①脚本解析 7 条 REQ 的全部 coverage.refs（claim/experiment/figure/script/report_section）：7/7 可解析；claim 引用 CLAIM-0018/0019/0021/0022 均 status=active、stale=false；experiment 引用 EXP-0004/0008/0026/0029/0033 均 succeeded；14 张被引图文件存在且 sha256 与台账逐字节一致；脚本与 report/paper.md、REPRODUCE.md 均存在。②语义逐条复核：REQ-0001 读",
+   "findings": []
+  },
+  {
+   "id": "REV-0038",
+   "objectType": "delivery",
+   "objectId": "paper",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "通读 report/paper.md（349 行、190 占位符）与 rendered.md；PDF 无文本层（无 ToUnicode），用 CoreGraphics 2× 渲染 20 页为 1224×1584 PNG 逐页看图并裁切测量。(i) paper.md 190 占位符在 rendered.md 残留 0；paper.md sha=9c92e0a1…=RENDER-0004.inputSha256，rendered.md sha=c47290d8…=RENDER-0004.sha256；tex 无 {{。(ii) grep -c 得 \\begin{figure}=14、\\captio",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "PDF 第 16–17 页 §8 消融汇总表宽于版心；第 17 页第 9 行「1.4813209885603504→0.4328202679486975」越过右边距贴页边被裁切：2× 渲染实测版心右界 x≈1087，该行墨迹到 x=1223/1224，PDF 只能读到「0.432820267948」，尾数 6975 不可见。同一数值在 §6.5/§6.6/§9 由占位符正确渲出，属版面缺陷而非数据错误，但交付 PDF 该单元格内容不完整",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "明显 overfull 行（未丢字）：§4.4 末行（p4，xmax=1197，结尾「）」贴近页边）与 §4.6 第 2 条（p6，xmax=1127）行尾超出版心进入右边距；建议在长数字/行内数学处允许断行。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "Figure 13（FIG-0031）图注缺字：rendered.md/tex 为「λ∈{0.1,1,10} × η∈{0,0.01,0.1}」，PDF 渲染为「λ□{0.1,1,10} × η□{0,0.01,0.1}」（U+2208 文本模式无字形，p15 可见方框）；图注文字与台账逐字一致，问题在字体回退。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "§6.5 冗余：正文段（rendered.md:255）与紧随的 claim 独立段（:257）几乎逐字重复同一组数字（0.1818/0.2727/1.481→0.433/7.19/1.000），§9 再重复一次；REV-0036 的嵌句病句已修，但重复未消。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "正文仍有未走占位符的指标复述：§6.5「该 0.1818 是…」、§9「不能把 0.1818 读成…」「只有 18.18%」、§6.5「可行率都是 1.0」为手写数字（paper.md 无对应 {{metric:}}）；当前与渲染值一致，但台账变动时不会同步。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "REPRODUCE.md 与台账漂移：§2 步骤 6 写 MCON-0001 v2、MCON-0003 v3，实际为 v3/v4；步骤 11 仍把已替代的 CLAIM-0016/CLAIM-0020 列为当前结论（现为 0021/0022）。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "活跃关键结论 CLAIM-0018/0019/0021/0022 的 validationIds 为空（被替代的前任带 VAL-0032–0036/0037–0039/0040–0043 链接）；验证本身均 passed，但论文 §7 引用的 VAL 编号无法从活跃 claim 直接追溯，建议 link 补回。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0039",
+   "objectType": "delivery",
+   "objectId": "paper",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立复审（reviewer-phase2，只读项目，pypdfium2 5.x 自渲染 + 独立重建；未重跑建模实验、未用 allowStale）。审阅对象与实测：(A) 绑定：paper.md sha=58d9a778…=RENDER-0008.inputSha256、rendered.md sha=7a6c9a89…=RENDER-0008.sha256（双向、字节数 41859/50929 相同）；rendered.pandoc.md 隔离重建逐字节相同（8aa09abc…）；把 rendered.md 交给 src/build_paper.py 在 SOURCE_DATE_EPOCH=",
+   "findings": []
+  },
+  {
+   "id": "REV-0040",
+   "objectType": "claim",
+   "objectId": "CLAIM-0026",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立上下文的 reviewer 在不知情执行者叙述的前提下，直接读 P 内 evidence 并**独立复算**：从 oof_long.csv 重算 A/F30 MAE 与 750 行 fold 归属、从 bootstrap_pi.csv 重算 π、从 samples/samples_raw.csv 重算三缺陷超阈与边界夹断、从 solver_certificates.jsonl 重算 QP 残差、逐条解析 4 条 claim 的 20 个 metric 引用；并按上游 v5.1/03 文档逐项核对必改项与协议标签。完整报告见 .rework/reviews/REVIEW-R03-indepe",
+   "findings": [
+    {
+     "severity": "critical",
+     "text": "CLAIM-0026 把 Q2 协议写成『3×3×3 嵌套内部交叉验证（三次重复池化）』，实际是固定 200 行 SPLIT-0001/train 上 3 个 seed × 500 次分层 bootstrap：没有 outer/inner 折、没有 OOF，50 瓶留出样本从未进入 Q2 计算。数字正确（0.20911/0.921018/216/1263-1800 独立复算成立），错的是协议标签，且会原样进论文方法节。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "Q2 零验证却是 critical/active claim：validationIds=[]，无 leakage、无独立复跑；EXP-0049（FileNotFound）与 EXP-0052（非 ASCII 快照路径 EPERM）两次冻结快照尝试失败。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "Q3 生成 constraint-satisfaction=1.000 是投影构造不变量 + 大比例边界夹断：设计谱 750 行中 508 行(67.7%) DMS 恰=17.25、361 行(48.1%) 双乙酰恰=0.29925、46 行 4VG 恰=阈值；claim 未披露夹断质量，也未声明该 1.000 由投影循环保证。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "CLAIM-0024 称『感官画像弱 Ridge 代理 CV R²≈0.18』，但承载缺陷结论的两列实际 proxyCvR2：t2n=0.0099、stale_hops=0.0350；0.18 是 A/F30 全局宏 R²。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "VP-0004 于 EXP-0039 跑完后才登记（08:04:51 vs 07:56:27），protocolNote 自称『在比较候选之前登记』与自身时间戳矛盾；唯一成立的预注册是 config v2（07:44:30）。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "VAL-0048/49/50 的 independent-rerun 是同快照同种子逐字节重放（mode=fixed-seed-reproduction, seeds=[20261025], delta=0），只证确定性；且 validation/VAL-0048|0049|0050 目录在磁盘上不存在，仅在台账有内联记录。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "Q3 迁移 nonincrease-rate=1.000 由 QP 约束 c_new≤c_source 直接保证；claim 只说『设计诊断』未说『由约束构造保证』，且主策略下 t2n 感官代理仍上升 7/99 未披露。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "质量/契约/评审/稳健性平面整体未随 R03 更新：32/32 QC stale（10-24）、REQ covered 所引 claim 全为已撤回、无 review 覆盖新 claim、ROB-0001..3 绑旧实验、runControl 空。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "题面 questions 口径未同步：Q1 evaluation 仍要求同一 SPLIT-0002 可比与 50 维留出为主；Q2 evaluation 仍写与 6.csv『独立 |r|』（v5.1 明令禁止）。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "Q1 limitations『逐折 0.345–0.379』实测 0.34499–0.37313；Q1 交付缺逐维 MAE/R²/Skill 表与评分卡映射；outputs 称 predictions.csv 每重复 250 行而实际 750 行。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "Q2 交付缺『可核对的化学解释』列；Q3 只披露 t2n 代理上升 360/750，未披露 t2n-above-style-bound=146/750。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "台账 configSha256 顶层字段仍为 v1（2ce0b2…）与 contest.yaml（728811…）不一致；EXP-0045/0046/0047 长期 queued；v5.1 论文格式必改项既无完成记录也无明确『未做』声明；forkOrigin 哈希不可复验。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0041",
+   "objectType": "claim",
+   "objectId": "CLAIM-0027",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "新上下文 reviewer 直接读磁盘产物并独立复算：从 repeat*/strict_top3_by_method.csv 重算 π<0.5=1263/1800、从 sets.json 重算四方法两两 Jaccard 与跨重复一致性、从 bootstrap_pi.csv(300k 行) 抽 12 条重建 π、逐行核 src/q2_fix.py 协议（只读 200 行 train、无折无 OOF）、核 6.csv 对齐口径与 216/3/7/5 宇宙划分。完整报告 .rework/reviews/REVIEW-R03-claims.md。",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "limitations 写「本轮 Q2 没有任何 verification…故该结论未被验证」，与自身 validationIds=[VAL-0053,VAL-0054]（均 passed）及 questions[Q2].selectionStatus=validated 直接矛盾；limitation 写于 08:34，验证/选择发生于 08:48-08:49，未回写。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "唯一 metric ref 实验 EXP-0041 的登记 params.protocol 写「3x3x3 nested CV」，且依赖清单含代码从不读取的 NESTED-CV-1/splits.csv、却漏掉唯一读取的 SPLIT-0001/train.csv（MODEL-0020 同错）；claim 的「不是嵌套 CV」在执行层成立，但 ref 链与配置工程层自相矛盾。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "VAL-0054 在 validation/ 下无目录（仅台账内联），且 mode=fixed-seed-reproduction、单 seed、EXP-0072 rerunOf EXP-0071（同代码同数据同种子，delta=0），是确定性重放而非独立实现，claim 未披露。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "「跨重复一致性 0.87483」未说明是 4 方法 × 50 维池化（仅 consensus 榜为 0.856）；statement 中多个数字未绑定为 metric ref（论文只能手工抄写）。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0042",
+   "objectType": "claim",
+   "objectId": "CLAIM-0030",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "新上下文 reviewer 从 oof_long.csv 重算 Q1 两值、从 metrics 核 Q2/Q3 值、重算三种极差分式、逐目录核 seed-receipt 与 requireSeedReceipt、比对 EXP-0066 与 EXP-0039 repeat0 的逐折 MAE 是否逐位相同。完整报告 .rework/reviews/REVIEW-R03-claims.md。",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "ROB-0004/0005/0006 台账 status 仍为 pending、note 明写「不记为通过」，而 CLAIM-0030 写「已真实执行并通过」——二者相反；同时 QC-0022/0024/0026 却 passed，台账内部自相矛盾（实际完成度应由 result.decisionPassed 与 executionStatus 表达）。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "ROB-0004.result.evidence.perturbation.satisfiedMethods 含 param-perturbation，依据只是 changedParams=[metricDefinition,protocol]（登记字段差异），而计划里的 λ×0.5/×2 扰动从未执行；claim 的 limitation 诚实，但计划字段不诚实。",
+     "resolved": true
+    },
+    {
+     "severity": "major",
+     "text": "三个「相对极差」分母不一致：Q1 用 spread/min（0.023178）、Q2/Q3 用 spread/max（0.014263/0.001517）；统一 /max 时 Q1 应为 0.022653。阈值 5/10/5 下结论不变，但至少一个数字与其判据公式不符。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "「2 个独立实验」实为主实验已报告 repeat 0/1 腿的逐位重放（Q1=EXP-0039 repeat0/1、Q2=EXP-0041 rep0/1、Q3=EXP-0042 rep0/1），不提供新扰动信息；seed-receipt.json 只有 {seed, source}，无签名/哈希；ROB-0004 只执行 2 个 seed block 而计划声明 3 seeds，executionStatus 未标 partial。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0043",
+   "objectType": "claim",
+   "objectId": "CLAIM-0028",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "新上下文 reviewer 从 samples.csv（750×237）重算三处夹断命中（508/361/46）、33 个 linear 列负值（设计 0、旧 142）、从 q3_metrics.csv 按 n_gen 加权重算 E_V_norm 0.8840256 与 diversity 19.735647、从 constraints.csv 重数 19619/8201/680/0、核 21 个 n_real==1 单元格。完整报告 .rework/reviews/REVIEW-R03-claims.md。",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "constraint-satisfaction=1.000 的满足集合除四阈值/nonenal/非负外，还含 stale_hops 的 ridge 代理上界（PROXY）；claim 只说 t2n 改由化学列承担，未说明代理仍在约束集内，读者会以为 1.000 全由化学/物理约束构成。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "「贴边比例 0.1199」是单元格级（20775/173250），却与 508 行/361 行/46 行的行级数字并排；按行计至少一格被夹断为 508/750。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "28500 条约束记录中 8881 条(31.2%)为 conditional+not_identifiable，verified 仅 68.84%；claim 只列原始计数、未给占比，也未说明行级 1.000 把 censored 行计为满足；另 494/750 行 X4VG 等于 censor 地板码。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "VAL-0047 只证明三个 seed 都给 1.0（而 1.0 由投影循环保证，对质量零信息量）；VAL-0049 无磁盘目录且为确定性重放；claimType=contemporaneous_association 与生成分布保真度不符，descriptive 更贴切。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0044",
+   "objectType": "claim",
+   "objectId": "CLAIM-0029",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "新上下文 reviewer 从 transfers.csv（396×738）重算四列不增 99/99（nonenal max Δ=3.556e-17、DMS/X4VG=0）、核 198 份 solver_certificates（primal 9.9897e-9、dual 3.3938e-10、violation 0、KKT 5.6167e-9）、核 target-mean 自距 4.7490841e-16 与 legacy 0.6654910、核 target-mean-projection 0.414 全部来自 stale 代理。完整报告 .rework/reviews/REVIEW-R0",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "唯一验证 VAL-0050 在 validation/ 下无目录（仅台账内联），且 mode=fixed-seed-reproduction、单 seed、EXP-0055 rerunOf EXP-0051（同代码同数据同种子，delta=0），是确定性重放而非独立实现；critical claim 仅此一条验证且磁盘不可复核。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "「396 行」是 4 策略×99 合计，主策略只有 99 行；「198/198 QP 求解」是 2 个 QP 策略×99，措辞易读成主策略有 396 行/198 次。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "「不增率 1.000」缺平凡对照：什么都不做的 source-fixed 四列同为 99/99；claim 未指出该对照也满分，指标对「是否真的发生迁移」零区分度。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "「nonenal 列 max(new−source)≤1.1e-16」在 EXP-0043 任何产物中都检索不到；实测 nonenal max Δ=3.556e-17、四列最大为双乙酰 1.804e-16；另「归一化 V 0.1236」与原始 V 2.261/7.196/6.941 混用未标注。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0045",
+   "objectType": "claim",
+   "objectId": "CLAIM-0036",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立上下文 reviewer 只读审查并自建脚本重算：从 EXP-0073/oof_long.csv 重算 A/F30=0.3592915658821918、全50=0.35050415692002407、三组与 22 风格 MAE（22/22 与 error_analysis.csv 一致）、逐折 0.34498906961519554–0.37313415100959674；核 EXP-0073/0074 依赖 SHA 零漂移与 freezeSources 快照；核 questions.yaml 与 ledger 文本逐字一致。报告见 .rework/reviews/REVIEW-R04-",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "确认轮验证层空转：VP-0012 的 5 项必查只执行 1 项（VAL-0055），split-integrity/leakage/baseline-compare/holdout-metrics 均无记录；VP-0012 承诺的“holdout-metrics 失败保留为具名 blocker”在台账中不存在。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "Q1 provisional 在 question 记录中 selectionReason/selectedAt/selectionEvidence 全为 null，理由仅存于 claim limitation，未入台账。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0046",
+   "objectType": "claim",
+   "objectId": "CLAIM-0037",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立上下文 reviewer 从 EXP-0075/repeat*/sets.json 重算 300 对/重复 Jaccard=0.2103333/0.2073333/0.2096667、池化 0.2091111、跨重复 0.8748333；从 bootstrap_pi.csv 500 次轨迹逐条重算 π 均值 0.42045667、π<0.5=1263/1800、符号一致 0.7225544，与 claim 逐位一致。报告见 .rework/reviews/REVIEW-R04-confirmatory.md。",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "Q2 selectionStatus=validated 无确认轮验证背书：EXP-0075 无 leakage、无 independent-rerun；VAL-0053/0054 绑定的是先导轮 EXP-0071/0072。Q2 与 Q1/Q3 证据强度相同，validated 只源于 VP-0013 未列 holdout-metrics。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "Q2 analysisPlan.features=37 与实际分析不符（模型输入 231 列、候选 231×50）；方向为少报而非夹带，但证据计划与实际分析不一致。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "项目自带 .rework/R04-independent-recompute.json 的 π 与 claim 不可比，且理由写成“per-slot normalisation”不准确（实为统计总体不同）；claim 的 π 由 reviewer 从 500 次轨迹重算 1800/1800 精确复现。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0047",
+   "objectType": "claim",
+   "objectId": "CLAIM-0038",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立上下文 reviewer 从 EXP-0076/samples.csv 重算行级夹断 DMS 508/750、双乙酰 361/750、4VG 46/750，校准线性负值 0/0，4VG 地板码 494/750，约束记录 19619/8201/680/0，生成 V=0.884025621542、参照 0.8137313223527718、U=+1.1138668、diversity 19.7356472、edge-fraction 0.1199134199、21 格排除；并核 freezeSources 字段缺失。报告见 .rework/reviews/REVIEW-R04-confirma",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "EXP-0076 未冻结来源：experiment.json 无 freezeSources、sourceSnapshot=null，run.json 直接执行 live src/q3_fix.py；而 CLAIM-0033 的 retractedReason 写了“EXP-0076（VP-0014，freezeSources）”——与登记不符，已在报告中更正。",
+     "resolved": false
+    },
+    {
+     "severity": "major",
+     "text": "VP-0014 的 4 项必查（leakage / optimization-feasibility / optimization-objective / independent-rerun）本轮全部未执行；Q3 provisional 在台账无理由记录，且不能归因 holdout（VP-0014 无该检查）。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "CLAIM-0038 的“单元格级贴边 0.1199（20775/173250）”实为 edge-fraction（地板码/支撑 min-max/线性 0），不是约束上界命中率；与 508/361/46 行级夹断并置易被误读。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "Q3 constraint 要求风格整类留出（Tripel/Kriek/Lambic），但项目内无任何 unseen-style 结果，claims 与方法文档未披露该扩展未做。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0048",
+   "objectType": "claim",
+   "objectId": "CLAIM-0039",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立上下文 reviewer 从 EXP-0077/transfers.csv 重算四策略不增率 1.0/1.0/1.0/0.4141414、source-fixed 99/99、t2n 7/99、投影 58/99 不可行；从 198 份证书重算 primal ≤9.9897174977e-9、dual ≤3.3937841426e-10、violation 0、KKT ≤5.6167186308e-9 与 nonenal 残差 3.5561831257524545e-17。报告见 .rework/reviews/REVIEW-R04-confirmatory.md。",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "EXP-0077 未冻结来源（无 freezeSources、sourceSnapshot=null，直接执行 live src/q3_transfer_fix.py），与 CLAIM-0034 的 retractedReason 表述不符；且 VP-0014 的 optimization-feasibility/objective 与 independent-rerun 均未执行。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "CLAIM-0039 的“max(new−source)=3.556e-17 / 1.804e-16”取自 transfer_constraints.csv 的 residual，不是 transfers.csv 的 new−source 差（后者实测 0 / 1.11022e-16）；量级相近但口径不同。",
+     "resolved": false
+    },
+    {
+     "severity": "minor",
+     "text": "不增率 1.0 的可读性依赖 source-fixed 平凡对照（同为 99/99），claim 已披露；但 Q3 选择状态与验证缺失仍使该结论不能进入最终稿证据链。",
+     "resolved": false
+    }
+   ]
+  },
+  {
+   "id": "REV-0049",
+   "objectType": "claim",
+   "objectId": "CLAIM-0040",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立复算，不采信 statement 与 R04 重算文件：(1) 用绑定解释器读 experiments/EXP-0073/oof_long.csv（150000 行）；对 model=graph-lowrank、target 以 A_/F_ 开头的 22500 行重算 MAE=0.359291565882，全 50 维 MAE=0.350504156920，与 experiments/EXP-0073/metrics.json 的 mae / mae_all50 逐位一致；同一文件 model=median 的 A/F30 MAE=0.398177328373，与 experiments/",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "CLAIM-0040 statement 写 ROB-0007「相对极差 0.008210」；0.008210 是从 result.spread 直接拿到的绝对极差。ROB-0007 的 decisionRule.reference 为文本（非数值），插件按分母 1 执行；按其声明的 reference=首个实验 0.35422354618559243 重算，真实相对极差=0.023178（仍 ≤0.05，decisionPassed ",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0050",
+   "objectType": "claim",
+   "objectId": "CLAIM-0041",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立重算，不采信 statement：(1) Jaccard：读 experiments/EXP-0075/repeat{0,1,2}/sets.json（各 50 维×4 方法），对每维 6 个方法对算 |A∩B|/|A∪B| 再对 50 维平均，得 0.210333333333 / 0.207333333333 / 0.209666666667，池化 0.209111111111，与 experiments/EXP-0075/metrics.json 的 topk-jaccard 及 rep0/1/2 逐位一致；topk-jaccard-point 0.197666666667 由 rep",
+   "findings": []
+  },
+  {
+   "id": "REV-0051",
+   "objectType": "claim",
+   "objectId": "CLAIM-0042",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立复算，不采信 statement：(1) 从 experiments/EXP-0079/metrics.json 与 outputs.json 逐项核对：energy-distance=0.8840256215、energy-distance-raw=0.8842957424、energy-V-raw=16.1827914328、energy-U-signed=1.1138668333、diversity=19.7356471944、duplicate-share=0.0、nearest-neighbor=17.6323085333、edge-fraction=0.1199134199、c",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "CLAIM-0042 的 quality.scope 与 appliesTo.note 把 energy-distance 0.884026 限定为 Tripel/Kriek/Lambic 三个留出风格，但该值是全部 198 格中 177 个可估格（21 个风格）的 n_gen 加权池化值；同口径只取 Tripel/Kriek/Lambic 的 27 格重算为 1.830576，约 2.07 倍。REQ-0003 还要求三个未见风格「单",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0052",
+   "objectType": "claim",
+   "objectId": "CLAIM-0043",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立复算，不采信 statement/audit 自述：(1) 证书：读 experiments/EXP-0080/solver_certificates.jsonl，198 行、198 个唯一 64hex problem_hash、status 全 optimal（qp-source-anchor 99 / qp-quantile-anchor 99）、feasible 全 true；max_primal_residual=9.989717497660422e-09、max_dual_residual=3.393784142602385e-10、max_constraint_violatio",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "CLAIM-0043 的「对应同一策略的实测位移 stored |new−source| 分别为 0.001009、0.523886、4VG 0.323279」是 qp-quantile-anchor（EXP-0080/outputs.json protocol.anchors 的 delivered variant）的逐列最大位移，不是均值（同策略 mean 分别为 1.019e-5、0.093904、0.012708）。claim ",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "claimType=optimal_under_model 的模型边界未进入 claim 文本：z 空间 231 变量、box+1 条半空间、feasible≤1e-8 只写在 experiments/EXP-0080/outputs.json protocol.qp 与 .rework 文档；EXP-0080 记录本身无 params.optimization/algorithm/equations，原生 optimization V",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0053",
+   "objectType": "claim",
+   "objectId": "CLAIM-0044",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对 ROB-0007 结果，不采信 statement：(1) 读 state/ledger.json 的 experiments：EXP-0086(mae=0.35422354618559243, seed=20261025, repeat0)、EXP-0087(mae=0.36243390816790516, seed=20261026, repeat1)、EXP-0098(mae=0.35763459908881995, lambdaMultiplier=0.5, argv 实际 --set LAMBDAS=[0.05,0.5,5.0])，三个值与 claim 一致；极差=max−",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "CLAIM-0044 写「极差 0.008210，相对极差 0.008210 ≤ 0.05」；0.008210 是绝对极差。ROB-0007 的 decisionRule.reference 是描述性文本，插件按分母 1 执行，故记录值不是相对极差；按首个实验值 0.35422354618559243 重算，真实相对极差=0.023178（仍 ≤0.05，decisionPassed 不变）。建议在 claim 中分列「极差 0.008",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0054",
+   "objectType": "claim",
+   "objectId": "CLAIM-0045",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对 ROB-0008，不采信 statement：(1) 读 state/ledger.json experiments：EXP-0089(topk-jaccard=0.2103333333333333, seed 20261025, --reps 500)、EXP-0090(0.20733333333333334, seed 20261026, --reps 500)、EXP-0091(0.20533333333333334, seed 20261025, --reps 200)，与 claim 一致；极差=0.005。(2) 时序：ROB-0008 preregisteredAt=1",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "CLAIM-0045 的「相对极差 0.005000」实为绝对极差（0.210333−0.205333）；ROB-0008 的 decisionRule.reference 是文本描述，插件按分母 1 执行。按首个实验 0.2103333333333333 重算，真实相对极差=0.023772，仍 ≤0.10，decisionPassed 不变。建议分列「极差 0.005000 / 相对极差 0.023772」。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0055",
+   "objectType": "claim",
+   "objectId": "CLAIM-0046",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对 ROB-0009，不采信 statement：(1) 读 state/ledger.json experiments：EXP-0092(energy-distance=0.8777844056665478, seed 20261025, kappas [0,5,15])、EXP-0093(0.876453018856588, seed 20261026)、EXP-0099(0.8981550487535501, seed 20261025, kappaShift=5, argv 实际 --set KAPPAS=[0.0,10.0,20.0])，与 claim 一致；极差=0.0217",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "CLAIM-0046 的「相对极差 0.021702」实为绝对极差（0.898155−0.876453）；ROB-0009 的 decisionRule.reference 是文本描述，插件按分母 1 执行。按首个实验 0.8777844056665478 重算，真实相对极差=0.024724，仍 ≤0.05，decisionPassed 不变。建议分列「极差 0.021702 / 相对极差 0.024724」。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0056",
+   "objectType": "claim",
+   "objectId": "CLAIM-0047",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对 ROB-0010，不采信 statement：(1) 读 state/ledger.json experiments：EXP-0095(nonincrease-rate=1, lambdaWeight=1.0, param repeat0)、EXP-0096(=1, lambdaWeight=1.0, repeat1/seed20261026)、EXP-0097(=1, lambdaWeight=2.0, argv 实际 --set LAMBDA=2.0)，三值均 1.000，与 claim 一致；极差 0、min 1。(2) 规律来源与时序：ROB-0010 preregister",
+   "findings": []
+  },
+  {
+   "id": "REV-0057",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立逐条核对 REQ-0001..REQ-0007 的 coverage 与当前证据（不采信旧 QC-0002 的 13:11Z 快照）：(1) 引用解析：REQ-0001 引 CLAIM-0040(active,stale=false)+EXP-0073(succeeded)+data/processed/q1_grade_summary.json(250 行×50 维 gradeCounts 和=250… 实测每维 gradeCounts 7 级和=250)+src/q1_fix.py；REQ-0002 引 CLAIM-0041(active)+EXP-0075(succeeded)+ou",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "REQ-0004 标 covered，但 requirement 文本要求的两项在当前 round 没有证据：(a) mean/median 双阈值情景——EXP-0080 只用 source-value caps（transfer_outputs.protocol.constraints: box + c_new<=c_source + stale_hops proxy），EXP-0079 生成侧只用 mean 阈值（constrai",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "REQ-0002 标 covered，但『化学合理性论证』没有单列的可追溯证据：coverage refs/CLAIM-0041 只报告 Jaccard/π/sign_stability 与模块可用性；EXP-0075 outputs.modules（51 模块/732 边）可作为化学模块证据但未被引用，top3_report.json/factor_analysis.csv 也只给 π/方向。建议把 modules 或已知香气物质对照",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0058",
+   "objectType": "robustnessPlan",
+   "objectId": "ROB-0007",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对 ROB-0007 全字段并为四条实验重算：(1) 时序：preregisteredAt=2026-10-26T14:06:35.757Z；EXP-0086 startedAt=14:07:54.201Z、EXP-0087=14:08:46.656Z、EXP-0098=14:19:46.588Z，全部晚于预注册；experimentIds[0]=EXP-0086 是参考（reference），满足 declared ordering。(2) 阈值来源：limit=0.05 与 ROB-0004（2026-10-26T08:43:08Z 预注册，早于确认轮）相同；methods=[mul",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "ROB-0007 的 decisionRule 声明为 relative-range/0.05，但 reference 字段是描述性文本；按 robustness.js 的 num()→null、denominator=|reference||1| 执行，记录/message 的「relative spread 0.008210」实为绝对极差。以本 plan 明写的 reference=首个实验 0.35422354618559243 ",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "ROB-0007 三条链接实验不是逐代码版本一致：EXP-0086/0087 冻结 src/robustness_wrapper.py sha=1e7cd0aeb0b7，而 EXP-0098 冻结 sha=7d7ab6aca6c2（当前项目版本），EXP-0086/0087 的 dependencies 与当前文件哈希不符，check-stale 会把它们标为过期。diff 只是 override 字符串→Path 的保持逻辑，且 EX",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "ROB-0007 的 note 写「冻结重复 0/1/2 = 冻结种子 20261025/26/27，各自独立实验」，但 seeds 数组只有 20261025/20261026、perturbations[0] 明说 repeat 0 and repeat 1，实验结果也只有 repeat 0/1；note 与 perturbations/seeds 不一致，容易把 2/3 种子读成 3/3。建议把 note 改为「repeat 0/",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0059",
+   "objectType": "robustnessPlan",
+   "objectId": "ROB-0008",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对 ROB-0008 全字段：(1) 时序：preregisteredAt=2026-10-26T14:06:44.685Z，早于 EXP-0089 startedAt=14:09:27.007Z / 0090=14:10:00.286Z / 0091=14:10:26.395Z；experimentIds[0]=EXP-0089 是参考。(2) 阈值来源：limit=0.10 与 ROB-0005（2026-10-26T08:37:52Z 预注册，早于确认轮）相同；methods=[multiple-seeds,budget-perturbation]；seeds=2（20261025",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "ROB-0008 的 decisionRule 声明 relative-range/0.10，但 reference 字段是描述性文本；按 robustness.js 的 num()→null、denominator=|reference||1| 执行，记录/message 的「relative spread 0.005000」实为绝对极差。以本 plan 明写的 reference=首个实验 0.2103333333333333 重算",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0060",
+   "objectType": "robustnessPlan",
+   "objectId": "ROB-0009",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对 ROB-0009 全字段：(1) 时序：preregisteredAt=2026-10-26T14:06:52.880Z，早于 EXP-0092 startedAt=14:10:50.918Z / 0093=14:11:12.428Z / 0099=14:19:57.044Z；experimentIds[0]=EXP-0092 是参考。(2) 阈值来源：limit=0.05 与 ROB-0006（2026-10-26T08:37:43Z 预注册，早于确认轮）相同；methods=[multiple-seeds,param-perturbation]；seeds=2（20261025/",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "ROB-0009 的 decisionRule 声明 relative-range/0.05，但 reference 字段是描述性文本；按 robustness.js 的 num()→null、denominator=|reference||1| 执行，记录/message 的「relative spread 0.021702」实为绝对极差。以本 plan 明写的 reference=首个实验 0.8777844056665478 重算",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0061",
+   "objectType": "robustnessPlan",
+   "objectId": "ROB-0010",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立核对 ROB-0010 全字段：(1) 时序：preregisteredAt=2026-10-26T14:07:01.242Z，早于 EXP-0095 startedAt=14:11:54.219Z / 0096=14:11:57.892Z / 0097=14:12:01.599Z；experimentIds[0]=EXP-0095 是参考。(2) 规则：decisionRule={type:\"min-value\",limit:1,reference:\"none: every linked experiment must keep nonincrease-rate at 1.0\"}；我遍历",
+   "findings": []
+  },
+  {
+   "id": "REV-0062",
+   "objectType": "experiment",
+   "objectId": "EXP-0080",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "独立审计 EXP-0080 的 QP 证书与 z 空间证据（只读原始产物，不采信 audit/claim 自述）：(1) 证书：用绑定解释器逐行读 experiments/EXP-0080/solver_certificates.jsonl，198 行 / 198 个唯一 64hex problem_hash；status 分布 {optimal:198}；strategy {qp-source-anchor:99, qp-quantile-anchor:99}；feasible 全 true；max_primal_residual=9.989717497660422e-09（min 6.69",
+   "findings": []
+  },
+  {
+   "id": "REV-0063",
+   "objectType": "claim",
+   "objectId": "CLAIM-0048",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前版本 CLAIM-0048（supersedes CLAIM-0040）：(1) 读 state/ledger.json：CLAIM-0040 status=superseded、supersededBy=CLAIM-0048；0048 status=active、stale=false、critical=true；refs=EXP-0073:mae/EXP-0074:mae/EXP-0073:mae_all50，三个 key 都存在且数值 0.35929156588219174 / 0.39817732837288883 / 0.350504156920024；validationI",
+   "findings": []
+  },
+  {
+   "id": "REV-0064",
+   "objectType": "claim",
+   "objectId": "CLAIM-0049",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前版本 CLAIM-0049（supersedes CLAIM-0042，scope 修复）：(1) 数字独立重算：experiments/EXP-0079/metrics.json 的 energy-distance=0.8840256215416039、energy-distance-raw=0.8842957424434824、energy-V-raw=16.182791432827685、energy-U-signed=1.1138668332620816、diversity=19.735647194424246、duplicate-share=0.0、nearest-neigh",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "CLAIM-0049 的 scope 写「21 estimable styles pooled (885 cells)」，但 outputs/q3/style_and_displacement_scope.json 的 all_estimable_styles.cells=177，q3_metrics.csv 复算也是 177 个可估格（n_gen 和=729，21 风格；885=177×5，疑似把 5 个 model 误乘进格数）。0",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "CLAIM-0049 仍报告无符号 V=16.182791、nearest-neighbor=17.632、edge-fraction=0.119913，但 refs 只保留 energy-distance/constraint-satisfaction/energy-U-signed/diversity/duplicate-share，supersede 时删掉了原 CLAIM-0042 的 EXP-0079:energy-V-raw",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0065",
+   "objectType": "claim",
+   "objectId": "CLAIM-0050",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前版本 CLAIM-0050（supersedes CLAIM-0043，限定声明 QP）：(1) 证书独立复算：experiments/EXP-0080/solver_certificates.jsonl 198 行/198 唯一 problem_hash/status 全 optimal（99+99）/feasible 全 true；max_primal_residual=9.989717497660422e-09、max_dual_residual=3.393784142602385e-10、max_constraint_violation=0.0、max_kkt_stationa",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "CLAIM-0050 的模型限定写“box 界 + 1 条 stale_cap 半空间与 L1 目标的凸 QP”，但 EXP-0080/outputs.json protocol.qp 的实际目标是 min (z−zref)'Q_t(z−zref) + λ||z−z_anchor||² + ηΣt（Q_t 为 rank-10 二次项），L1 项只是第三项。建议改为“rank-10 二次目标 + λ anchor 项 + L1 惩罚的凸 ",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0066",
+   "objectType": "claim",
+   "objectId": "CLAIM-0051",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前版本 CLAIM-0051（supersedes CLAIM-0044）：(1) 读 state/ledger.json：CLAIM-0044 status=superseded、supersededBy=CLAIM-0051；0051 active、stale=false、critical=false；refs=EXP-0086/0087/0098 的 mae，均存在且为 0.35422354618559243 / 0.36243390816790516 / 0.35763459908881995。(2) 独立重算：绝对极差=max−min=0.00821036198231273；按",
+   "findings": []
+  },
+  {
+   "id": "REV-0067",
+   "objectType": "claim",
+   "objectId": "CLAIM-0052",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前版本 CLAIM-0052（supersedes CLAIM-0045）：(1) 读 state/ledger.json：CLAIM-0045 status=superseded、supersededBy=CLAIM-0052；0052 active、stale=false、critical=false；refs=EXP-0089/0090/0091 的 topk-jaccard，均存在且为 0.2103333333333333 / 0.20733333333333334 / 0.20533333333333334。(2) 独立重算：绝对极差=max−min=0.00499999999",
+   "findings": []
+  },
+  {
+   "id": "REV-0068",
+   "objectType": "claim",
+   "objectId": "CLAIM-0053",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前版本 CLAIM-0053（supersedes CLAIM-0046）：(1) 读 state/ledger.json：CLAIM-0046 status=superseded、supersededBy=CLAIM-0053；0053 active、stale=false、critical=false；refs=EXP-0092/0093/0099 的 energy-distance，均存在且为 0.8777844056665478 / 0.876453018856588 / 0.8981550487535501。(2) 独立重算：绝对极差=max−min=0.02170202989",
+   "findings": []
+  },
+  {
+   "id": "REV-0069",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前 requirementsVersion（版本见 binds）下 REQ-0001..REQ-0007 的 coverage 与 refs：(1) 引用状态逐条解析：REQ-0001→claim CLAIM-0040（status=superseded，supersededBy=CLAIM-0048）；REQ-0003→claim CLAIM-0042（superseded，supersededBy=CLAIM-0049）；REQ-0007→claim CLAIM-0040（superseded）+ CLAIM-0043（superseded，supersededBy=CLAIM-00",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "coverage 未随 claim supersede 重映射：REQ-0001 仍引 CLAIM-0040（superseded→CLAIM-0048）、REQ-0003 仍引 CLAIM-0042（superseded→CLAIM-0049）、REQ-0007 仍引 CLAIM-0040+CLAIM-0043（superseded→CLAIM-0048/0050）。verifyEvidenceRef 对 claim kind 的 s",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "REQ-0002 note 把 modules 描述为“化学类别分组”，但 EXP-0075/outputs.json modules.definition 是 |W|>0.5 的共表达图连通分量（200 行训练集），readingNote 明说分区不平衡（最大模块 172/231），不是化学类别分组。建议改称“共表达模块”，保留“未做外部化学知识库验证”的既有披露；π/Jaccard 数值不受影响。",
+     "resolved": true
+    },
+    {
+     "severity": "minor",
+     "text": "REQ-0004 引用的新证据 outputs/q3/style_and_displacement_scope.json 的 recordedAt 为 \"2026-10-26T15:0xZ\"（非法时间）。artifact 数值与 SCRIPT-0017 记录可独立复算，但作为 coverage 证据应改成有效时间戳（SCRIPT-0017 startedAt=2026-10-26T14:59:21.041Z）或删除该字段。",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0070",
+   "objectType": "targetContract",
+   "objectId": "TGT-0002",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审 TGT-0002 当前版本（contract-revise 后 record version=3，revisions 最后一条 revision=2 at 2026-10-26T14:40:52Z；lead 说的“revision 2”即该 revisions 条目，不是 record version）：(1) 读 state/ledger.json 与 experiments/EXP-0075/outputs.json：researchObject 现为“50 个感官维度与 216 个严格单体化合物的稳定同期关联；231 列 = 216 严格单体 + 15 扩展（7 理化 + 5 派生",
+   "findings": []
+  },
+  {
+   "id": "REV-0071",
+   "objectType": "claim",
+   "objectId": "CLAIM-0054",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前版本 CLAIM-0054（supersedes CLAIM-0049）：(1) 读 state/ledger.json：CLAIM-0049 status=superseded、supersededBy=CLAIM-0054；0054 active、stale=false、critical=true；scope=“177 estimable cells over 21 styles (n_gen 729) + Tripel/Kriek/Lambic 27 cells (n_gen 147)”；refs 8 个 metric key（energy-distance、constraint",
+   "findings": []
+  },
+  {
+   "id": "REV-0072",
+   "objectType": "claim",
+   "objectId": "CLAIM-0055",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前版本 CLAIM-0055（supersedes CLAIM-0050）：(1) 读 state/ledger.json：CLAIM-0050 status=superseded、supersededBy=CLAIM-0055；0055 active、stale=false、critical=true；refs 6 个 metric key（nonincrease-rate、transfer-energy、qp-max-primal-residual、qp-max-dual-residual、qp-max-constraint-violation、qp-status-optimal）全",
+   "findings": []
+  },
+  {
+   "id": "REV-0073",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前 requirementsVersion 下 REQ-0001..REQ-0007 的 coverage 与 refs：(1) REQ-0001→CLAIM-0048(active)+EXP-0073、REQ-0002→CLAIM-0041(active)+EXP-0075、REQ-0003→CLAIM-0054(active)+EXP-0079+artifact、REQ-0007→CLAIM-0048/CLAIM-0055(active)+FIG-0001(active)；这些 refs 均可解析，REQ-0002 note 已改为“共表达图连通分量（非化学类别分组；不平衡 172/",
+   "findings": [
+    {
+     "severity": "major",
+     "text": "REQ-0004 的 claim ref 仍是 CLAIM-0050，但 0050 已被 CLAIM-0055 supersede；verifyEvidenceRef 对 superseded claim 直接判 bad，requirement-coverage 检查会失败。blockedReason/note 也仍写「CLAIM-0050 已绑 EXP-0080…」。请把 REQ-0004 的 claim ref 与 blockedR",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0074",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前 requirementsVersion 下 REQ-0001..REQ-0007 的 coverage 与 refs（只读，不采信 note 自述）：(1) 逐条解析 refs：REQ-0001→CLAIM-0048(active,stale=false)+EXP-0073(succeeded)+data/processed/q1_grade_summary.json+src/q1_fix.py；REQ-0002→CLAIM-0041(active)+EXP-0075(succeeded)+experiments/EXP-0075/outputs.json+outputs/q2/fa",
+   "findings": []
+  },
+  {
+   "id": "REV-0075",
+   "objectType": "robustnessPlan",
+   "objectId": "ROB-0011",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前 ROB-0011（provenance-repair）：(1) 时序：preregisteredAt=2026-10-26T15:16:37.780Z；EXP-0100 startedAt=15:17:26.947Z、EXP-0101=15:17:30.055Z、EXP-0102=15:17:33.133Z，三条全部晚于预注册；experimentIds[0]=EXP-0100 是参考。(2) wrapper 一致性：EXP-0100/0101/0102 的 code.sha256 与 dependencies 中的 src/robustness_wrapper.py 全部为 7d7",
+   "findings": []
+  },
+  {
+   "id": "REV-0076",
+   "objectType": "claim",
+   "objectId": "CLAIM-0056",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前 CLAIM-0056（supersedes CLAIM-0048，改绑 ROB-0011）：(1) 状态：CLAIM-0048 status=superseded、supersededBy=CLAIM-0056；0056 active、stale=false、critical=true；appliesTo.robustnessPlanId=ROB-0011；validationIds=VAL-0063/0064/0065 均 passed。(2) refs：EXP-0073:mae、EXP-0100:mae、EXP-0101:mae、EXP-0102:mae 均存在且数值 0.359",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "CLAIM-0056 的 statement 报告基线 EXP-0074 MAE=0.398177 与全 50 维 MAE=0.350504，但 refs 只有 EXP-0073:mae 和 EXP-0100/0101/0102:mae；supersede 时丢掉了旧 CLAIM-0048 的 EXP-0074:mae 与 EXP-0073:mae_all50 两个 metric ref（VAL-0064 仍覆盖基线比较，但 metri",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0077",
+   "objectType": "claim",
+   "objectId": "CLAIM-0057",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前 CLAIM-0057（supersedes CLAIM-0051，改绑 ROB-0011）：(1) 状态：CLAIM-0051 status=superseded、supersededBy=CLAIM-0057；0057 active、stale=false、critical=false；appliesTo.robustnessPlanId=ROB-0011。(2) refs：EXP-0100:mae、EXP-0101:mae、EXP-0102:mae 均存在，数值 0.35422354618559243 / 0.36243390816790516 / 0.3576345990888",
+   "findings": []
+  },
+  {
+   "id": "REV-0078",
+   "objectType": "requirements-coverage",
+   "objectId": "project-requirements-set",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前 requirementsVersion 下 REQ-0001..REQ-0007 的 coverage/refs（只读，不采信 note 自述）：(1) 逐条解析：REQ-0001→CLAIM-0056(active,stale=false)+EXP-0073(succeeded)+q1_grade_summary.json+src/q1_fix.py；REQ-0002→CLAIM-0041(active)+EXP-0075(succeeded)+EXP-0075/outputs.json+factor_analysis.csv+top3_report.json+src/q2_fix",
+   "findings": []
+  },
+  {
+   "id": "REV-0079",
+   "objectType": "claim",
+   "objectId": "CLAIM-0056",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审当前 CLAIM-0056（REV-0076 F1 后追加 2 个 refs）：(1) 读 state/ledger.json：claim status=active、stale=false、critical=true；refs 现为 6 个：EXP-0073:mae、EXP-0100:mae、EXP-0101:mae、EXP-0102:mae、EXP-0074:mae、EXP-0073:mae_all50；全部 key 存在且数值 0.35929156588219174 / 0.35422354618559243 / 0.36243390816790516 / 0.35763459908",
+   "findings": []
+  },
+  {
+   "id": "REV-0080",
+   "objectType": "targetContract",
+   "objectId": "TGT-0001",
+   "verdict": "findings",
+   "independence": "independent_context",
+   "at": null,
+   "method": "TGT-0001 派生/标签来源独立审查（QC-0003 正式审查）：(1) 读 state/ledger.json TGT-0001：questionId=Q1、taskNature=severity_estimation、labelOrigin=transformed、predictionTime=同批次化学检测后（同期估计、不外推未来）、inputsAvailableAt=同期（化学检测与人工品评同批，横断面）；dataset=DATA-0002、targetColumn=A_malt_all、targetColumns 恰 50 列且全部存在于 DATA-0002 的 335 个字段；",
+   "findings": [
+    {
+     "severity": "minor",
+     "text": "TGT-0001 的当前 labelSource/note 不再显式写“3.xlsx 为空白评分卡、原始人工 0–6 不可识别/不可恢复”；该句只在 revisions[0].before.labelSource 与 report/paper.md:97。事实本身成立（我实读 3.xlsx：summary 12×50 全 0，12 个 beer_* sheet 只有模板/描述词/0–5 刻度、无人工评分；4.csv 仅 250×53 标",
+     "resolved": true
+    }
+   ]
+  },
+  {
+   "id": "REV-0081",
+   "objectType": "targetContract",
+   "objectId": "TGT-0001",
+   "verdict": "passed",
+   "independence": "independent_context",
+   "at": null,
+   "method": "复审 TGT-0001 当前版本（record version=3；revisions 最后一条 revision=2 at 2026-10-26T15:29:57.870Z，changedKeys 仅 [labelSource,note]）：(1) 披露已进入 active 字段：labelSource 现含「3.xlsx 经独立复审实读为空白评分卡模板（summary 12×50 全为 0，beer_* 无人工评分），因此原始人工 0–6 评分在本数据中不可恢复；Q1 的 0–6 相对等级是经 MCON-0001 的训练折经验 CDF→g=clip(floor(6a+0.5),0,6) 派",
+   "findings": []
+  }
+ ],
+ "robustnessPlans": [
+  {
+   "id": "ROB-0001",
+   "questionId": "Q1",
+   "status": "pending",
+   "metricKey": "mae",
+   "decisionRule": {
+    "limit": 0.03,
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0016",
+    "EXP-0017",
+    "EXP-0018"
+   ],
+   "seeds": [
+    20261024,
+    20261025
+   ],
+   "methods": [
+    "multiple-seeds",
+    "param-perturbation"
+   ]
+  },
+  {
+   "id": "ROB-0002",
+   "questionId": "Q2",
+   "status": "pending",
+   "metricKey": "topk-jaccard",
+   "decisionRule": {
+    "limit": 0.05,
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0019",
+    "EXP-0020",
+    "EXP-0021"
+   ],
+   "seeds": [
+    20261024,
+    20261025
+   ],
+   "methods": [
+    "multiple-seeds",
+    "param-perturbation"
+   ]
+  },
+  {
+   "id": "ROB-0003",
+   "questionId": "Q3",
+   "status": "pending",
+   "metricKey": "energy-distance-normalized",
+   "decisionRule": {
+    "limit": 0.25,
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0022",
+    "EXP-0023",
+    "EXP-0024"
+   ],
+   "seeds": [
+    20261024,
+    20261025
+   ],
+   "methods": [
+    "multiple-seeds",
+    "param-perturbation"
+   ]
+  },
+  {
+   "id": "ROB-0004",
+   "questionId": "Q1",
+   "status": "pending",
+   "metricKey": "mae",
+   "decisionRule": {
+    "limit": 0.05,
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0066",
+    "EXP-0067"
+   ],
+   "seeds": [
+    20261025,
+    20261026,
+    20261027
+   ],
+   "methods": [
+    "multiple-seeds",
+    "param-perturbation"
+   ]
+  },
+  {
+   "id": "ROB-0005",
+   "questionId": "Q2",
+   "status": "pending",
+   "metricKey": "topk-jaccard",
+   "decisionRule": {
+    "limit": 0.1,
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0064",
+    "EXP-0065"
+   ],
+   "seeds": [
+    20261025,
+    20261026,
+    20261027
+   ],
+   "methods": [
+    "multiple-seeds"
+   ]
+  },
+  {
+   "id": "ROB-0006",
+   "questionId": "Q3",
+   "status": "pending",
+   "metricKey": "energy-distance",
+   "decisionRule": {
+    "limit": 0.05,
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0062",
+    "EXP-0063"
+   ],
+   "seeds": [
+    20261025,
+    20261026,
+    20261027
+   ],
+   "methods": [
+    "multiple-seeds"
+   ]
+  },
+  {
+   "id": "ROB-0007",
+   "questionId": "Q1",
+   "status": "pending",
+   "metricKey": "mae",
+   "decisionRule": {
+    "limit": 0.05,
+    "reference": "first linked experiment = the post-plan reference",
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0086",
+    "EXP-0087",
+    "EXP-0098"
+   ],
+   "seeds": [
+    20261025,
+    20261026
+   ],
+   "methods": [
+    "multiple-seeds",
+    "param-perturbation"
+   ]
+  },
+  {
+   "id": "ROB-0008",
+   "questionId": "Q2",
+   "status": "pending",
+   "metricKey": "topk-jaccard",
+   "decisionRule": {
+    "limit": 0.1,
+    "reference": "first linked experiment = the post-plan reference",
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0089",
+    "EXP-0090",
+    "EXP-0091"
+   ],
+   "seeds": [
+    20261025,
+    20261026
+   ],
+   "methods": [
+    "multiple-seeds",
+    "budget-perturbation"
+   ]
+  },
+  {
+   "id": "ROB-0009",
+   "questionId": "Q3",
+   "status": "pending",
+   "metricKey": "energy-distance",
+   "decisionRule": {
+    "limit": 0.05,
+    "reference": "first linked experiment = the post-plan reference",
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0092",
+    "EXP-0093",
+    "EXP-0099"
+   ],
+   "seeds": [
+    20261025,
+    20261026
+   ],
+   "methods": [
+    "multiple-seeds",
+    "param-perturbation"
+   ]
+  },
+  {
+   "id": "ROB-0010",
+   "questionId": "Q3",
+   "status": "pending",
+   "metricKey": "nonincrease-rate",
+   "decisionRule": {
+    "limit": 1,
+    "reference": "none: every linked experiment must keep nonincrease-rate at 1.0",
+    "type": "min-value"
+   },
+   "experimentIds": [
+    "EXP-0095",
+    "EXP-0096",
+    "EXP-0097"
+   ],
+   "seeds": [
+    20261025,
+    20261026
+   ],
+   "methods": [
+    "multiple-seeds",
+    "param-perturbation"
+   ]
+  },
+  {
+   "id": "ROB-0011",
+   "questionId": "Q1",
+   "status": "pending",
+   "metricKey": "mae",
+   "decisionRule": {
+    "limit": 0.05,
+    "type": "relative-range"
+   },
+   "experimentIds": [
+    "EXP-0100",
+    "EXP-0101",
+    "EXP-0102"
+   ],
+   "seeds": [
+    20261025,
+    20261026
+   ],
+   "methods": [
+    "multiple-seeds",
+    "param-perturbation"
+   ]
+  }
+ ],
+ "validations_summary": {
+  "total": 69,
+  "passed": 63,
+  "failed": 6,
+  "stale": 50
+ },
+ "splits": [
+  {
+   "id": "SPLIT-0001",
+   "datasetId": "DATA-0001",
+   "method": "random-holdout",
+   "at": null
+  },
+  {
+   "id": "SPLIT-0002",
+   "datasetId": "DATA-0002",
+   "method": "random-holdout",
+   "at": null
+  }
+ ],
+ "datasets": [
+  {
+   "id": "DATA-0001",
+   "kind": null,
+   "path": null,
+   "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+   "rows": null
+  },
+  {
+   "id": "DATA-0002",
+   "kind": null,
+   "path": null,
+   "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+   "rows": null
+  },
+  {
+   "id": "DATA-0003",
+   "kind": null,
+   "path": null,
+   "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+   "rows": null
+  },
+  {
+   "id": "DATA-0004",
+   "kind": null,
+   "path": null,
+   "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+   "rows": null
+  }
+ ]
+}

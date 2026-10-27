@@ -1,0 +1,11 @@
+样本,beer_id,repeat_index,pred_A_malt_all,pred_A_hops_all,pred_A_hops_citrus,pred_A_esters_all,pred_A_esters_isoaa,ref_A_malt_all,ref_A_hops_all,ref_A_hops_citrus,ref_A_esters_all,ref_A_esters_isoaa,_source
+Beer#1,1,0,4,3,3,4,3,5,5,1,2,3,"experiments/EXP-0073/oof_long.csv#(beer=1,repeat=0)grade_pred,grade_true"
+Beer#2,2,0,3,1,2,1,4,3,0,0,0,0,"experiments/EXP-0073/oof_long.csv#(beer=2,repeat=0)grade_pred,grade_true"
+Beer#3,3,0,3,2,3,4,4,2,2,4,4,4,"experiments/EXP-0073/oof_long.csv#(beer=3,repeat=0)grade_pred,grade_true"
+Beer#4,4,0,4,3,4,4,4,4,3,4,5,3,"experiments/EXP-0073/oof_long.csv#(beer=4,repeat=0)grade_pred,grade_true"
+Beer#5,5,0,1,5,5,3,3,5,5,6,4,5,"experiments/EXP-0073/oof_long.csv#(beer=5,repeat=0)grade_pred,grade_true"
+Beer#6,6,0,4,3,3,4,4,1,1,4,5,5,"experiments/EXP-0073/oof_long.csv#(beer=6,repeat=0)grade_pred,grade_true"
+Beer#7,7,0,1,5,5,4,3,1,6,6,1,2,"experiments/EXP-0073/oof_long.csv#(beer=7,repeat=0)grade_pred,grade_true"
+Beer#8,8,0,3,5,4,4,4,4,6,5,4,4,"experiments/EXP-0073/oof_long.csv#(beer=8,repeat=0)grade_pred,grade_true"
+Beer#9,9,0,3,5,4,3,3,3,5,5,3,4,"experiments/EXP-0073/oof_long.csv#(beer=9,repeat=0)grade_pred,grade_true"
+Beer#10,10,0,1,1,4,1,2,1,3,6,5,5,"experiments/EXP-0073/oof_long.csv#(beer=10,repeat=0)grade_pred,grade_true"

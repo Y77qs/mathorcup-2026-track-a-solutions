@@ -1,0 +1,32 @@
+%% src/build/template.tex — pandoc LaTeX template for build_paper.py
+%% The whole document skeleton lives here so that page 1 (title + abstract +
+%% keywords + DRAFT), page 2 (TOC) and the body are produced by ONE pandoc run
+%% from ONE markdown input. Nothing here contains paper text.
+\documentclass[11pt,a4paper]{article}
+
+%% ---- build provenance, injected with -V buildmeta=... ----
+% $buildmeta$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+%% Section numbering is controlled by LaTeX `secnumdepth`, not by the source:
+%%   * default (no --number-sections): secnumdepth = -\maxdimen  -> headings are
+%%     printed exactly as written (use this when the source carries manual numbers)
+%%   * --number-sections: LaTeX numbers 1, 1.1, ... (摘要 stays \section*)
+$if(numbersections)$
+\setcounter{secnumdepth}{2}
+$else$
+\setcounter{secnumdepth}{-\maxdimen}
+$endif$
+
+\title{$title$}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+$body$
+\end{document}

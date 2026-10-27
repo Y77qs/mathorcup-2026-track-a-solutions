@@ -1,0 +1,21 @@
+{
+  "attachment_network_components_tau05": 52,
+  "attachment_network_compounds": 231,
+  "attachment_network_edges_tau05": 644,
+  "attachment_network_largest_component_tau05": 175,
+  "attachment_network_min_eigenvalue_raw": -0.042412709119481015,
+  "bootstrap_reps": 500,
+  "external_6csv_mean_spearman": 0.44505144467935176,
+  "mean_selected_pi": 0.46468,
+  "module_count_tau04": 13,
+  "module_count_tau05": 51,
+  "module_count_tau06": 108,
+  "n_candidates": 219,
+  "n_dimensions": 50,
+  "n_methods": 4,
+  "network_edges_tau05": 732,
+  "network_edges_tau06": 291,
+  "tau": 0.5,
+  "topk-jaccard": 0.21866666666666665,
+  "topk-jaccard-bootstrap-mean": 0.24
+}

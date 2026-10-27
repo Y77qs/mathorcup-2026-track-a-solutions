@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0037",
+  "questionId": "Q1",
+  "modelId": "MODEL-0016",
+  "modelKind": "baseline",
+  "title": "Q1 baseline (fixed): per-target training median under the frozen 3x3x3 nested CV",
+  "assumptions": [
+    "the training median per sensory target is a fair constant baseline",
+    "outer test rows are never used to fit the median"
+  ],
+  "equations": [],
+  "algorithm": null,
+  "params": {
+    "dependencies": [
+      "data/splits/NESTED-CV-1/splits.csv"
+    ],
+    "family": "median",
+    "features": [],
+    "protocol": "3x3x3 nested CV, seeds 20261025-27, style-stratified",
+    "splitsDependency": "data/splits/NESTED-CV-1/splits.csv",
+    "targetContractId": "TGT-0001"
+  },
+  "datasetId": "DATA-0002",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0002",
+    "path": "data/clean/q1_mapped.csv",
+    "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+    "bytes": 979527,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+  "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+  "configVersion": 2,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/q1_baseline_fix.py",
+    "sha256": "25b582c0e7d3cc1126a0e268704f67edb8b5fa91677a7884f5f1e0e31e6adb24",
+    "bytes": 3647
+  },
+  "dependencies": [
+    {
+      "path": "data/splits/NESTED-CV-1/splits.csv",
+      "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "bytes": 58959
+    },
+    {
+      "path": "src/q1_baseline_fix.py",
+      "sha256": "25b582c0e7d3cc1126a0e268704f67edb8b5fa91677a7884f5f1e0e31e6adb24",
+      "bytes": 3647
+    },
+    {
+      "path": "src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536
+    }
+  ],
+  "sourceSnapshot": null,
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q1_baseline_fix.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q1_baseline_fix.py"
+    ],
+    "cwd": "experiments/EXP-0037"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261025,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q1_baseline_fix.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261025,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "7ea6f09f5fb8a1d8ac2ddf3d821e3bfda54b7cb608eb9896980429e316f2d54d",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": null,
+  "createdAt": "2026-10-26T07:55:53.719Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0037",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "baseline",
+    "title": "Q1 baseline (fixed): per-target training median under the frozen 3x3x3 nested CV",
+    "assumptions": [
+      "the training median per sensory target is a fair constant baseline",
+      "outer test rows are never used to fit the median"
+    ],
+    "equations": [],
+    "algorithm": null,
+    "params": {
+      "dependencies": [
+        "data/splits/NESTED-CV-1/splits.csv"
+      ],
+      "family": "median",
+      "features": [],
+      "protocol": "3x3x3 nested CV, seeds 20261025-27, style-stratified",
+      "splitsDependency": "data/splits/NESTED-CV-1/splits.csv",
+      "targetContractId": "TGT-0001"
+    },
+    "codeFile": "src/q1_baseline_fix.py",
+    "datasetId": "DATA-0002",
+    "splitId": null,
+    "seed": 20261025,
+    "args": [],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0016"
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "schema": "v6-contract-tests-1",
+  "generatedAt": "2026-10-26T07:54:50+00:00",
+  "scope": "synthetic oracles and frozen-metadata invariants only; no contest fitting, no contest performance number, no write outside the audit output",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "script": "src/r00_contract_tests.py"
+  },
+  "tests": [
+    {
+      "name": "graph_reduced_rank",
+      "passed": true,
+      "metric": 0.0,
+      "tolerance": 1e-10,
+      "detail": {
+        "problem": "min ||Yc-ZcB||^2/n + lam||B||^2 + gam tr(B'LB) subject to rank(B)<=r; closed form B = A^{-1} C Vr Vr'",
+        "dimensions": {
+          "n": 23,
+          "p": 8,
+          "q": 5,
+          "rank": 2,
+          "lam": 0.7,
+          "gam": 0.3
+        },
+        "objective": 4.189457068952498,
+        "analyticLowerBound": 4.189457068952498,
+        "objectiveGapToAnalyticBound": 0.0,
+        "factorisationGap": 1.3877787807814457e-16,
+        "matrixRank": 2,
+        "competitorObjectiveAboveBound": 7.35883933337306,
+        "graphRidgeGapAtFullRank": 8.326672684688674e-17,
+        "plainRidgeGapAtGammaZero": 1.8041124150158794e-16,
+        "laplacianQuadraticFormMin": 6.472924629675287,
+        "laplacianNullVectorQuadratic": 1.4988010832439613e-15,
+        "laplacianIdentityGap": 5.684341886080802e-14,
+        "interpretation": "the implemented solver attains the analytic optimum and the two factorisations coincide; the unconstrained cases collapse to ridge exactly"
+      }
+    },
+    {
+      "name": "qp_active_set",
+      "passed": true,
+      "metric": 1.5543122344752192e-15,
+      "tolerance": 1e-08,
+      "detail": {
+        "problem": "min 1/2||z-z0||^2 subject to 0<=z<=1 and [[1,1,0,0],[0,0,1,1]] z <= [1.2,0.8]; strictly convex and feasible, so the solution is unique and cross-checkable by exhaustive active sets",
+        "solverA": "scipy.optimize.minimize(SLSQP) with the analytic jacobian",
+        "solverB": "exhaustive active-set KKT enumeration (cvxpy is not installed)",
+        "objectiveSlSqp": 1.0149999999999981,
+        "objectiveOracle": 1.0149999999999997,
+        "objectiveGap": 1.5543122344752192e-15,
+        "solutionGap": 1.3322676295501878e-15,
+        "primalResidual": 1.5543122344752192e-15,
+        "dualResidual": 1.6653345369377348e-16,
+        "complementarityResidual": 1.8651746813702603e-15,
+        "minMultiplier": 0.5,
+        "distinctFeasibleKktPoints": 1,
+        "scipySuccess": true,
+        "optimalPoint": [
+          1.0,
+          0.0,
+          -5.551115123125783e-17,
+          0.8000000000000003
+        ],
+        "boxActive": 3,
+        "generalActive": 1,
+        "cvxpyAvailable": false,
+        "kktViolation": 1.8651746813702603e-15
+      }
+    },
+    {
+      "name": "energy_toy",
+      "passed": true,
+      "metric": -1.0,
+      "tolerance": 1e-12,
+      "detail": {
+        "definition": {
+          "U_unbiased": "2 mean_ij ||g_i-r_j|| - sum_{i!=j}||g_i-g_j||/(m(m-1)) - sum_{i!=j}||r_i-r_j||/(n(n-1))",
+          "V_empirical": "2 mean_ij ||g_i-r_j|| - sum||g_i-g_j||/m^2 - sum||r_i-r_j||/n^2"
+        },
+        "toy": "both groups are the two points {0,1}",
+        "U": -1.0,
+        "V": 0.0,
+        "UmatchesHand": 0.0,
+        "VmatchesHand": 0.0,
+        "signPreserved": true,
+        "nearIdenticalSampleU": -0.7492329769784982,
+        "nearIdenticalSampleV": 0.0048018712625435,
+        "zeroUIndicatesIdentical": true,
+        "interpretation": "U = -1 and V = 0 for two identical two-point samples; a negative U is a finite-sample property, not a bug, so clipping it to zero and then taking a square root would silently hide it"
+      }
+    },
+    {
+      "name": "gradient_finite_difference",
+      "passed": true,
+      "metric": 3.125621289568059e-10,
+      "tolerance": 1e-06,
+      "detail": {
+        "objective": "f(v) = 1/2||clip(Mv+b+s, 0, 1) - t||^2 + 1/2 lam ||v||^2 with an analytic gradient dP/dx = 1 on 0<x<1 and 0 outside",
+        "smoothRegion": "the shift is chosen so all 6 rows sit at 0.5, strictly inside",
+        "clippedRegion": "some rows clipped, evaluation point off the knots",
+        "knotCase": "feature chosen so row 0 lands exactly on the lower knot 0, where the projection is not differentiable; a difference there is allowed and reported instead of hidden",
+        "smoothMaxAbsDiff": 3.125621289568059e-10,
+        "smoothMaxRelDiff": 8.627985530714485e-09,
+        "clippedMaxAbsDiff": 3.3913838404231456e-10,
+        "clippedMaxRelDiff": 8.093326190234501e-10,
+        "knotMaxAbsDiff": 0.07834876578546135,
+        "rowsInsideAtSmoothPoint": 6,
+        "rowsClippedAtClippedPoint": 5,
+        "firstRowAtKnot": 0.0,
+        "allRows": 6,
+        "conclusion": "the implemented gradient matches central finite differences to better than the threshold wherever the objective is differentiable; the only discrepancy is at an explicit non-differentiable knot"
+      }
+    },
+    {
+      "name": "split_invariants",
+      "passed": true,
+      "metric": 0,
+      "tolerance": 0,
+      "detail": {
+        "source": "data/splits/NESTED-CV-1/splits.csv",
+        "manifest": "data/splits/NESTED-CV-1/manifest.json",
+        "structure": {
+          "repeats": 3,
+          "outerFolds": 3,
+          "innerFolds": 3,
+          "rows": 2250
+        },
+        "perFold": {
+          "r0f0": {
+            "nTest": 91,
+            "nInner": 159,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          },
+          "r0f1": {
+            "nTest": 83,
+            "nInner": 167,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          },
+          "r0f2": {
+            "nTest": 76,
+            "nInner": 174,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          },
+          "r1f0": {
+            "nTest": 76,
+            "nInner": 174,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          },
+          "r1f1": {
+            "nTest": 91,
+            "nInner": 159,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          },
+          "r1f2": {
+            "nTest": 83,
+            "nInner": 167,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          },
+          "r2f0": {
+            "nTest": 83,
+            "nInner": 167,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          },
+          "r2f1": {
+            "nTest": 76,
+            "nInner": 174,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          },
+          "r2f2": {
+            "nTest": 91,
+            "nInner": 159,
+            "nStylesTest": 22,
+            "nStylesTrain": 22
+          }
+        },
+        "contestYaml": {
+          "tuning": "train-only-nested-cv; repeats=3; outer_folds=3; inner_folds=3; stratify=tasting_category_fine; seeds=20261025,20261026,20261027",
+          "parsed": {
+            "repeats": "3",
+            "outer_folds": "3",
+            "inner_folds": "3",
+            "stratify": "tasting_category_fine",
+            "seeds": "20261025,20261026,20261027"
+          },
+          "legacyHoldoutSeed": 20261024,
+          "note": "evaluation.split.seed governs the legacy single holdout, not this nested CV; the nested seeds live in evaluation.tuning",
+          "agreement": {
+            "repeats": true,
+            "outerFolds": true,
+            "innerFolds": true,
+            "stratify": true,
+            "seeds": true
+          }
+        },
+        "checks": [
+          {
+            "check": "rowCountIs2250",
+            "passed": true,
+            "detail": 2250
+          },
+          {
+            "check": "columnsPresent",
+            "passed": true,
+            "detail": [
+              "beer",
+              "inner_fold",
+              "outer_fold",
+              "repeat",
+              "role",
+              "style"
+            ]
+          },
+          {
+            "check": "repeats",
+            "passed": true,
+            "detail": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "check": "outerFolds",
+            "passed": true,
+            "detail": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "check": "roles",
+            "passed": true,
+            "detail": [
+              "inner",
+              "outer_test"
+            ]
+          },
+          {
+            "check": "outerTestHasInnerFoldMinusOne",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "check": "manifestCounts_r0f0",
+            "passed": true
+          },
+          {
+            "check": "manifestCounts_r0f1",
+            "passed": true
+          },
+          {
+            "check": "manifestCounts_r0f2",
+            "passed": true
+          },
+          {
+            "check": "manifestCounts_r1f0",
+            "passed": true
+          },
+          {
+            "check": "manifestCounts_r1f1",
+            "passed": true
+          },
+          {
+            "check": "manifestCounts_r1f2",
+            "passed": true
+          },
+          {
+            "check": "manifestCounts_r2f0",
+            "passed": true
+          },
+          {
+            "check": "manifestCounts_r2f1",
+            "passed": true
+          },
+          {
+            "check": "manifestCounts_r2f2",
+            "passed": true
+          },
+          {
+            "check": "outerTrainTestOverlap",
+            "passed": true,
+            "detail": 0
+          },
+          {
+            "check": "outerTestRowsUnique",
+            "passed": true,
+            "detail": 0
+          },
+          {
+            "check": "everyOuterFoldCovers250Rows",
+            "passed": true,
+            "detail": 0
+          },
+          {
+            "check": "innerFoldsPartitionOuterTraining",
+            "passed": true,
+            "detail": 0
+          },
+          {
+            "check": "stylesPresentInEveryFold",
+            "passed": true,
+            "detail": 0
+          },
+          {
+            "check": "contestYamlTuningMatchesManifest",
+            "passed": true,
+            "detail": {
+              "parsed": {
+                "repeats": "3",
+                "outer_folds": "3",
+                "inner_folds": "3",
+                "stratify": "tasting_category_fine",
+                "seeds": "20261025,20261026,20261027"
+              },
+              "manifestSeeds": [
+                20261025,
+                20261026,
+                20261027
+              ],
+              "agreement": {
+                "repeats": true,
+                "outerFolds": true,
+                "innerFolds": true,
+                "stratify": true,
+                "seeds": true
+              }
+            }
+          },
+          {
+            "check": "manifestSplitsHash",
+            "passed": true,
+            "detail": {
+              "manifest": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+              "file": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81"
+            }
+          },
+          {
+            "check": "manifestSourceHash",
+            "passed": true,
+            "detail": {
+              "manifest": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+              "file": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b"
+            }
+          },
+          {
+            "check": "manifestRowCount",
+            "passed": true,
+            "detail": 2250
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "ridge_equivalence",
+      "passed": true,
+      "metric": 2.671474153004283e-16,
+      "tolerance": 1e-10,
+      "detail": {
+        "problem": "same design, same lam, same r: with gam=0 and r>=rank(Zc'Yc) the graph low-rank solution must equal plain Ridge; with gam>0 the only difference in the normal equations is the gam*L term",
+        "dimensions": {
+          "n": 40,
+          "p": 60,
+          "q": 50,
+          "r": 50,
+          "lam": 1.3,
+          "gam": 0.4
+        },
+        "gammaZeroGapToPlainRidge": 2.671474153004283e-16,
+        "gammaPositiveDifference": 0.16611120986048317,
+        "gammaOnlyResidual": 0.4600621435808618,
+        "expectedGammaResidual": 0.46006214358086217,
+        "identityGap": 3.885780586188048e-16,
+        "rankOfCrossMoment": 39,
+        "lowRankConstraintInactive": true,
+        "objectivePlain": 28.272003893026508,
+        "objectiveGraph": 46.78393901878788,
+        "interpretation": "A(gam) B = C with A(gam) = Zc'Zc/n + lam I + gam L, so base B = C - gam L B; the measured identity gap shows the difference is exactly the graph penalty"
+      }
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": [],
+    "allPassed": true
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "token": "e7119b6b397c01ffa678820f",
+  "experimentId": "EXP-0058",
+  "status": "failed",
+  "exitCode": 2,
+  "startedAt": "2026-10-26T08:39:08.743Z",
+  "endedAt": "2026-10-26T08:39:28.784Z",
+  "durationMs": 20041,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0058/constraints.csv",
+      "sha256": "a78bb0e1d97b0e967c08d194bbbfe5185492d6cc63a8088302557e4d20f5989a",
+      "bytes": 2046867,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0058/metrics.json",
+      "sha256": "0102c81f9e3495760b367982757ca4f72f5438ce7349739709041cbcd6cf84d7",
+      "bytes": 1606,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0058/outputs.json",
+      "sha256": "49c7c7287749c453bf133384643dd0312ea161bc98540254f1370c5535c579ed",
+      "bytes": 164587,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0058/q3_metrics.csv",
+      "sha256": "9822a2e4d48464bbf231a66c805eb67ab0810f784519b3df202a1a70fafc272f",
+      "bytes": 180244,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0058/run-seed-20261025.json",
+      "sha256": "c57196b7a2dd58bf5e7212e6edd48ed1d6fac692d7bbc34af5f2954d1e2d61e4",
+      "bytes": 402,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0058/samples-repeat-0.csv",
+      "sha256": "cce4ec4d31ca67f82ffdee071d16fb7918cde02671eda62d65f7abed82aa4922",
+      "bytes": 1049425,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0058/samples.csv",
+      "sha256": "cce4ec4d31ca67f82ffdee071d16fb7918cde02671eda62d65f7abed82aa4922",
+      "bytes": 1049425,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0058/samples_raw-repeat-0.csv",
+      "sha256": "b7a95ff36e3a3fa5a9b4a5dfa03537523fb3841e60826241784a826f2bfec551",
+      "bytes": 1044980,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0058/samples_raw.csv",
+      "sha256": "b7a95ff36e3a3fa5a9b4a5dfa03537523fb3841e60826241784a826f2bfec551",
+      "bytes": 1044980,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0058/seed-receipt.json",
+      "sha256": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+      "bytes": 45,
+      "kind": "json"
+    }
+  ],
+  "figures": [],
+  "failure": {
+    "code": "NONZERO_EXIT",
+    "message": "the script exited with code 2; stderr tail: c /= stddev[:, None]\n/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3066: RuntimeWarning: invalid value encountered in divide\n  c /= stddev[None, :]\nusage: seed_receipt_wrapper.py [-h] [--repeat REPEAT]\nseed_receipt_wrapper.py: error: unrecognized arguments: --target src/q3_fix.py"
+  },
+  "error": "the script exited with code 2; stderr tail: c /= stddev[:, None]\n/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3066: RuntimeWarning: invalid value encountered in divide\n  c /= stddev[None, :]\nusage: seed_receipt_wrapper.py [-h] [--repeat REPEAT]\nseed_receipt_wrapper.py: error: unrecognized arguments: --target src/q3_fix.py",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+    "--target",
+    "src/q3_fix.py",
+    "--repeat",
+    "0"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0058",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

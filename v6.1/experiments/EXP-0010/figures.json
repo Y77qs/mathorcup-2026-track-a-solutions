@@ -1,0 +1,16 @@
+{
+  "figures": [
+    {
+      "name": "q1_fusion_component_mae.png",
+      "path": "figures/q1_fusion_component_mae.png",
+      "sha256": "dc7d0e88336672d8d0910efc7c0dd31054e511a46d1722a9915b3685fb7318db",
+      "bytes": 34571
+    },
+    {
+      "name": "q1_fusion_weights.png",
+      "path": "figures/q1_fusion_weights.png",
+      "sha256": "24e9efbd7113526af2e165020062a5389ed4661717797a6ed749953e87631a84",
+      "bytes": 30305
+    }
+  ]
+}

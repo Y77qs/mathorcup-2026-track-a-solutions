@@ -1,0 +1,138 @@
+{
+ "robId": "ROB-0016",
+ "label": "Q3 generation distribution-quality stability (confirmatory)",
+ "questionId": "Q3",
+ "preregisteredAt": "2026-10-27T11:51:06.386Z",
+ "executedAt": "2026-10-27T12:27:25.407Z",
+ "experimentIds": [
+  "EXP-0127",
+  "EXP-0128"
+ ],
+ "referenceExperimentId": "EXP-0127",
+ "nExecutedBlocks": 2,
+ "methods": [
+  "param-perturbation"
+ ],
+ "methodNote": "台账记录的方法为 param-perturbation，被扰动的对象是冻结种子块；不得写成 multiple-seeds，也不得把两个执行块连同补充块写成 n=3 的计划结果",
+ "perturbations": [
+  {
+   "name": "frozen seed block repeat=1",
+   "detail": "declared protocol constant SEEDS/repeat changed from 0 to 1 (registered seed 20261026); everything else unchanged"
+  },
+  {
+   "name": "frozen seed block repeat=2",
+   "detail": "declared protocol constant SEEDS/repeat changed from 0 to 2 (registered seed 20261027); everything else unchanged"
+  }
+ ],
+ "metricKey": "energy-distance",
+ "decisionRule": {
+  "limit": 0.05,
+  "reference": "first linked experiment = the post-plan repeat-0 reference",
+  "type": "relative-range"
+ },
+ "seeds": [
+  20261025,
+  20261026,
+  20261027
+ ],
+ "repeats": 3,
+ "budget": {},
+ "dataUse": {
+  "holdoutRowsUsed": 0,
+  "note": "class-holdout nested CV inside the training folds only; no external holdout used"
+ },
+ "values": [
+  0.8639056831482218,
+  0.8702681221486325
+ ],
+ "interval": {
+  "low": 0.8639056831482218,
+  "high": 0.8702681221486325,
+  "mean": 0.8670869026484271,
+  "n": 2
+ },
+ "absoluteSpread": 0.006362439000410669,
+ "relativeSpread": 0.00736473798531437,
+ "decisionOutcome": {
+  "supported": true,
+  "passed": true,
+  "message": "relative spread 0.006362 <= 0.05"
+ },
+ "decisionPassed": true,
+ "executionStatus": "completed",
+ "conclusion": "relative spread 0.006362 <= 0.05",
+ "conclusionScope": "within the declared perturbations only",
+ "satisfiedMethods": [
+  "param-perturbation"
+ ],
+ "pairs": [
+  {
+   "changed": [
+    "seed",
+    "params"
+   ],
+   "changedParams": [
+    "perturbation",
+    "protocol"
+   ]
+  }
+ ],
+ "scopeNote": "EXP-0127 reference; two executed frozen seed blocks (repeat 0/1); constraint-satisfaction excluded from the decision",
+ "supplementary": {
+  "EXP-0127": {
+   "constraint-satisfaction": 1,
+   "diversity": 17.384758901326247,
+   "duplicate-share": 0,
+   "profile-spearman": 0.47588801920768303,
+   "profile-pooled-spearman": 0.8042737094837934,
+   "energy-distance-raw": 0.8658151958695621,
+   "energy-V-raw": 15.787303117990362,
+   "energy-U-signed": 1.5469955559298514,
+   "energy-V-subset-tripel-kriek-lambic": 34.104045426186936,
+   "t2n-increases": 123,
+   "t2n-proxy-increase-share": 0.492,
+   "nonenal-increases-design": 0,
+   "constraints-verified": 6558,
+   "constraints-conditional": 2732,
+   "constraints-not-identifiable": 210,
+   "constraints-infeasible": 0,
+   "n-cells-estimable": 59,
+   "n-cells-subset": 9
+  },
+  "EXP-0128": {
+   "constraint-satisfaction": 1,
+   "diversity": 17.495222513494433,
+   "duplicate-share": 0,
+   "profile-spearman": 0.48459447779111625,
+   "profile-pooled-spearman": 0.9103001200480192,
+   "energy-distance-raw": 0.8698099568600529,
+   "energy-V-raw": 16.00701215032768,
+   "energy-U-signed": 1.5127654143848699,
+   "energy-V-subset-tripel-kriek-lambic": 33.91238750171267,
+   "t2n-increases": 111,
+   "t2n-proxy-increase-share": 0.444,
+   "nonenal-increases-design": 0,
+   "constraints-verified": 6550,
+   "constraints-conditional": 2740,
+   "constraints-not-identifiable": 210,
+   "constraints-infeasible": 0,
+   "n-cells-estimable": 59,
+   "n-cells-subset": 9
+  }
+ },
+ "supplementarySeedBlock": {
+  "experimentId": "EXP-0132",
+  "metricKey": "energy-distance",
+  "value": 0.8838886425477438,
+  "inPlanExecutionSet": false,
+  "note": "repeat-2 frozen seed block executed AFTER the plan was registered; NOT part of the ROB-0016 execution set and not merged into its values/spread/decision"
+ },
+ "constructionNote": "constraint-satisfaction = 1.000 in every run is a CONSTRUCTION property of the constrained projection, not evidence of distribution quality; the decision uses energy-distance only, and the un-normalised V / signed U are reported alongside it",
+ "limitations": [
+  "generation and transfer must not be merged into one Q3 success rate",
+  "the executed plan has TWO linked blocks (repeat 0/1); the repeat-2 block was run after registration and is reported separately, not merged",
+  "the ledger records the method as param-perturbation (the perturbed object is the frozen seed block); it is NOT a multiple-seeds plan and there is no parameter/budget perturbation",
+  "energy-distance is a distributional discrepancy, not a scientific validity proof",
+  "the sensory t2n proxy still increases on part of the generated rows while the real chemical trans-2-nonenal never increases; the two are different propositions"
+ ]
+}

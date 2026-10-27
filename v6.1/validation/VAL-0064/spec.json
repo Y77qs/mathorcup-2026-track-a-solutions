@@ -1,0 +1,69 @@
+{
+  "checkType": "baseline-compare",
+  "metric": "mae",
+  "tolerance": {
+    "absolute": 1e-9,
+    "relative": 0.000001,
+    "source": "checks[i].tolerance"
+  },
+  "candidateMetric": 0.35929156588219174,
+  "baselineMetric": 0.39817732837288883,
+  "metricDirection": "minimize",
+  "mode": "improve",
+  "baselineExperimentId": "EXP-0074",
+  "expectedHashes": {},
+  "experimentId": "EXP-0073",
+  "validationPlanId": "VP-0015",
+  "provenanceSummary": {
+    "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+    "experiment": {
+      "id": "EXP-0073",
+      "status": "succeeded",
+      "metricsSha256": "8cb8a9c8dce4088f18549deb8cc1301dedbc933ca8d381983344f70d3ab32759",
+      "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+      "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+    },
+    "inputs": [
+      {
+        "kind": "experiment-code",
+        "path": "experiments/EXP-0073/inputs/src/q1_fix.py",
+        "sha256": "2fb4b4b09216fb3ce3c15542e15e434863d9c70245d96f1185d6fa616fca2c12"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0073/inputs/data/clean/q1_mapped.csv",
+        "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0073/inputs/data/splits/NESTED-CV-1/manifest.json",
+        "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0073/inputs/data/splits/NESTED-CV-1/splits.csv",
+        "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0073/inputs/src/q1_fix.py",
+        "sha256": "2fb4b4b09216fb3ce3c15542e15e434863d9c70245d96f1185d6fa616fca2c12"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0073/inputs/src/target_columns.py",
+        "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126"
+      },
+      {
+        "kind": "experiment-dependency",
+        "path": "experiments/EXP-0073/inputs/src/v6_common.py",
+        "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4"
+      },
+      {
+        "kind": "dataset",
+        "path": "data/clean/q1_mapped.csv",
+        "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b"
+      }
+    ]
+  }
+}

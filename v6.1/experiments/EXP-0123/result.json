@@ -1,0 +1,340 @@
+{
+  "token": "6c73408b8b2ef4b7ff1a28c9",
+  "experimentId": "EXP-0123",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-27T11:47:56.396Z",
+  "endedAt": "2026-10-27T11:48:31.416Z",
+  "durationMs": 35020,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "topk-jaccard": 0.20733333333333334,
+    "topk-jaccard-rep1": 0.20733333333333334,
+    "topk-jaccard-point": 0.19766666666666666,
+    "external_6csv_mean_spearman_aligned": 0.9210176180408739,
+    "external_6csv_rows_matched": 44,
+    "external_6csv_mean_spearman_aligned_strict": 0.9080152788388083,
+    "n_strict_candidates": 216,
+    "n_extended_candidates": 15,
+    "pi_mean": 0.42080666666666666,
+    "pi_below_0.5_count": 419,
+    "pi_below_0.5_denominator": 600,
+    "sign_stability_mean": 0.9821966666666666,
+    "sign_stability_legacy_mean": 0.7246566666666666,
+    "sign_negative_point_count": 166,
+    "sign_direction_undetermined_count": 0,
+    "sign_zero_count": 0,
+    "sign_invalid_count": 0,
+    "n_dimensions": 50,
+    "n_methods": 4,
+    "n_repeats": 1,
+    "bootstrap_reps": 500,
+    "seed": 20261026,
+    "external_6csv_mean_spearman_superseded_positional": 0.44505144467935176
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0123/bootstrap_pi.csv",
+      "sha256": "dfe1e6d89d65c37bc57e501548f09d1bf83382a841433a2911e6fef699953d3f",
+      "bytes": 17184865,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/bootstrap_pi_extended.csv",
+      "sha256": "e6d7e7098e9945e0eb0a32c59e51f8d3c9039ac31ae5ed227413d501636e7944",
+      "bytes": 15286471,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/candidate_scores.csv",
+      "sha256": "3a3bfc9a2b0f34edf7ff74a0d143426408067921611d060618be738173bfa140",
+      "bytes": 1506476,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/extended_top3.csv",
+      "sha256": "292b050eca85d510438045ac1b5fa557495343452045c3117dd9994b1a7d9ac9",
+      "bytes": 23739,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/extended_top3_by_method.csv",
+      "sha256": "50f88c2b56abd186b18c70d9d9ae09579ff19fa56e56ec195771df6b368c086d",
+      "bytes": 101884,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/metrics.json",
+      "sha256": "77eccf73f1deccaca11f64b07106eb3ab87b8a2ac4c314ae40401b1464cdb157",
+      "bytes": 860,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/outputs.json",
+      "sha256": "4fe78030033929d157bcae140d0f13bfaf1631792df2b0f963944a35f4ec05d4",
+      "bytes": 1814299,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/seed-receipt.json",
+      "sha256": "4afd8e1b4ff82c514ed0664c0d8f2f178a10811c8308dbc4877d72a235a332c0",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/sets.json",
+      "sha256": "74bb9d5a08e205a3d679390eca795c0a79ff9a8181340c4f32eb6a26b337f795",
+      "bytes": 33440,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/sign_counts.csv",
+      "sha256": "80544959afbfea5af37f07cc15ef1b1f297d125dc018db4155a3d0fc8726390a",
+      "bytes": 1379470,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/sign_stability_summary.json",
+      "sha256": "23d0d353eedea70b0c452b1b37ba43800c8d25ba2a5fc4907cf532b9b805fd4a",
+      "bytes": 10000,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/strict_lowpi_sign_status.csv",
+      "sha256": "b4ef93d64c219a93d792caac03cf669b3693e1b0a60dbb6ef04e4063837460c2",
+      "bytes": 24889,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/strict_top3.csv",
+      "sha256": "4f053c4459d741282c60a9e81445e85afdcf6803c2f41fe842721e13d7b6315f",
+      "bytes": 25217,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/strict_top3_by_method.csv",
+      "sha256": "3ea20ddb51f46618d91bafb893acd2b5f35691821be938391705be3d96014b64",
+      "bytes": 108511,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/data/clean/q1_mapped.csv",
+      "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "bytes": 979527,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/data/clean/q2_chem_meta.json",
+      "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+      "bytes": 52977,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/data/clean/q2_raw.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/data/processed/sensory_name_alignment.csv",
+      "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+      "bytes": 1469,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/data/raw/imported/415709ac10f2f730-2.csv",
+      "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+      "bytes": 1000771,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/data/raw/imported/a55004fb0390299a-6.csv",
+      "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+      "bytes": 42937,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/data/splits/SPLIT-0001/train.csv",
+      "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+      "bytes": 687898,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/experiments/EXP-0075/repeat0/strict_top3.csv",
+      "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+      "bytes": 19358,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/experiments/EXP-0075/repeat1/strict_top3.csv",
+      "sha256": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+      "bytes": 19412,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/experiments/EXP-0075/repeat2/strict_top3.csv",
+      "sha256": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+      "bytes": 19497,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/src/q1_lib.py",
+      "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+      "bytes": 23474,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/src/q2_fix.py",
+      "sha256": "e656b91c8371ce8019c1b3976344d89b44623b27ba5fe1a1861dd0c155cf832b",
+      "bytes": 141866,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/src/q2_lib.py",
+      "sha256": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+      "bytes": 16108,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/src/robustness_wrapper.py",
+      "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+      "bytes": 4147,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/src/seed_receipt_wrapper.py",
+      "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+      "bytes": 4571,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/inputs/src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/bootstrap_pi.csv",
+      "sha256": "dfe1e6d89d65c37bc57e501548f09d1bf83382a841433a2911e6fef699953d3f",
+      "bytes": 17184865,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/bootstrap_pi_extended.csv",
+      "sha256": "e6d7e7098e9945e0eb0a32c59e51f8d3c9039ac31ae5ed227413d501636e7944",
+      "bytes": 15286471,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/candidate_scores.csv",
+      "sha256": "3a3bfc9a2b0f34edf7ff74a0d143426408067921611d060618be738173bfa140",
+      "bytes": 1506476,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/extended_top3.csv",
+      "sha256": "292b050eca85d510438045ac1b5fa557495343452045c3117dd9994b1a7d9ac9",
+      "bytes": 23739,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/extended_top3_by_method.csv",
+      "sha256": "50f88c2b56abd186b18c70d9d9ae09579ff19fa56e56ec195771df6b368c086d",
+      "bytes": 101884,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/metrics.json",
+      "sha256": "77eccf73f1deccaca11f64b07106eb3ab87b8a2ac4c314ae40401b1464cdb157",
+      "bytes": 860,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/outputs.json",
+      "sha256": "4fe78030033929d157bcae140d0f13bfaf1631792df2b0f963944a35f4ec05d4",
+      "bytes": 1814299,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/sets.json",
+      "sha256": "74bb9d5a08e205a3d679390eca795c0a79ff9a8181340c4f32eb6a26b337f795",
+      "bytes": 33440,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/sign_counts.csv",
+      "sha256": "80544959afbfea5af37f07cc15ef1b1f297d125dc018db4155a3d0fc8726390a",
+      "bytes": 1379470,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/sign_stability_summary.json",
+      "sha256": "23d0d353eedea70b0c452b1b37ba43800c8d25ba2a5fc4907cf532b9b805fd4a",
+      "bytes": 10000,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/strict_lowpi_sign_status.csv",
+      "sha256": "b4ef93d64c219a93d792caac03cf669b3693e1b0a60dbb6ef04e4063837460c2",
+      "bytes": 24889,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/strict_lowpi_sign_status.md",
+      "sha256": "c4832e3a68c1516914b70ac1d7be3421efc2c6e4fced802ea4f588188dbe0551",
+      "bytes": 29177,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/strict_top3.csv",
+      "sha256": "4f053c4459d741282c60a9e81445e85afdcf6803c2f41fe842721e13d7b6315f",
+      "bytes": 25217,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0123/repeat1/strict_top3_by_method.csv",
+      "sha256": "3ea20ddb51f46618d91bafb893acd2b5f35691821be938391705be3d96014b64",
+      "bytes": 108511,
+      "kind": "data"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0123/inputs/src/robustness_wrapper.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0123/inputs/src/robustness_wrapper.py",
+    "--target",
+    "src/q2_fix.py",
+    "--set",
+    "ALIGN_CSV=\"data/processed/sensory_name_alignment.csv\"",
+    "--repeat",
+    "1",
+    "--reps",
+    "500"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0123",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

@@ -1,0 +1,292 @@
+{
+ "kind": "q3-scope-numbers",
+ "derivedFrom": "confirmatory v6 run: EXP-0109 generation + EXP-0110 transfer",
+ "energy_distance_pooling": {
+  "definition": "n_gen-weighted mean of E_V_norm over the cells of the delivered generator (copula-selected, stage=design)",
+  "valueDefinition": "E_V_norm = normalised empirical energy distance V; V_raw = the same statistic before normalisation; U_signed = the signed counterpart (may be negative, never clipped at zero)",
+  "all_estimable_styles": {
+   "value": 0.8726874826148661,
+   "V_raw": 15.99994601104919,
+   "U_signed": 1.6153896894821214,
+   "cells": 177,
+   "n_gen": 729.0,
+   "styles": 21
+  },
+  "tripel_kriek_lambic": {
+   "value": 1.8078909138627393,
+   "V_raw": 33.78288729066554,
+   "U_signed": 1.0278782459401254,
+   "cells": 27,
+   "n_gen": 147.0
+  },
+  "per_style": {
+   "Amber": {
+    "cells": 9,
+    "n_gen": 36.0,
+    "energy_distance_pooled": 0.571698850043573
+   },
+   "Blond": {
+    "cells": 9,
+    "n_gen": 93.0,
+    "energy_distance_pooled": 0.2511050290294597
+   },
+   "Brett/cofermented": {
+    "cells": 9,
+    "n_gen": 18.0,
+    "energy_distance_pooled": 1.2463394050329044
+   },
+   "Brown": {
+    "cells": 9,
+    "n_gen": 36.0,
+    "energy_distance_pooled": 0.5368294753427679
+   },
+   "Brut": {
+    "cells": 3,
+    "n_gen": 6.0,
+    "energy_distance_pooled": 2.551800045930826
+   },
+   "Christmas": {
+    "cells": 9,
+    "n_gen": 27.0,
+    "energy_distance_pooled": 0.7738551425028883
+   },
+   "Dubbel": {
+    "cells": 9,
+    "n_gen": 30.0,
+    "energy_distance_pooled": 0.7030949126920482
+   },
+   "Flanders old brown": {
+    "cells": 6,
+    "n_gen": 12.0,
+    "energy_distance_pooled": 1.2318241832927501
+   },
+   "Fruitbeer": {
+    "cells": 9,
+    "n_gen": 24.0,
+    "energy_distance_pooled": 1.0808565071377145
+   },
+   "Hoppy": {
+    "cells": 9,
+    "n_gen": 51.0,
+    "energy_distance_pooled": 0.5006996732218385
+   },
+   "Kriek": {
+    "cells": 9,
+    "n_gen": 30.0,
+    "energy_distance_pooled": 7.407906574994278
+   },
+   "Lambic": {
+    "cells": 9,
+    "n_gen": 33.0,
+    "energy_distance_pooled": 0.5985238463334966
+   },
+   "Low/No alcohol": {
+    "cells": 9,
+    "n_gen": 24.0,
+    "energy_distance_pooled": 0.8794778868873375
+   },
+   "Pils/Lager": {
+    "cells": 9,
+    "n_gen": 33.0,
+    "energy_distance_pooled": 0.6418128394198575
+   },
+   "Saison": {
+    "cells": 9,
+    "n_gen": 30.0,
+    "energy_distance_pooled": 0.738510541053677
+   },
+   "Scotch": {
+    "cells": 6,
+    "n_gen": 12.0,
+    "energy_distance_pooled": 1.2787771009975122
+   },
+   "Stout/Porter": {
+    "cells": 9,
+    "n_gen": 39.0,
+    "energy_distance_pooled": 0.5376268893569236
+   },
+   "Strong ale": {
+    "cells": 9,
+    "n_gen": 54.0,
+    "energy_distance_pooled": 0.3737018493486398
+   },
+   "Tripel": {
+    "cells": 9,
+    "n_gen": 84.0,
+    "energy_distance_pooled": 0.2829938114165347
+   },
+   "West Flanders ale": {
+    "cells": 9,
+    "n_gen": 21.0,
+    "energy_distance_pooled": 0.9541918918982262
+   },
+   "Wheat": {
+    "cells": 9,
+    "n_gen": 36.0,
+    "energy_distance_pooled": 0.56128152404936
+   }
+  },
+  "source": "experiments/EXP-0109/q3_metrics.csv",
+  "sourceSha256": "cafc5a334eece00ddd9db0151c3ff3d9eb85b6075cec83c3de9fc3887ba6d0a5",
+  "metricsSource": "experiments/EXP-0109/metrics.json",
+  "metricsSourceSha256": "2ce8572aec359941eee4814e506f9bd3d06af6f7c20397e43d5d267862a14813",
+  "note": "the confirmatory metric energy-distance pools ALL estimable styles; the three named styles pool to a much larger distance, so a three-style scope must not reuse the all-style number. V_raw and U_signed are read from the same run's metrics.json and are not interchanged with the normalised V."
+ },
+ "transfer_displacement": {
+  "strategy": "qp-quantile-anchor",
+  "per_column": {
+   "DMS": {
+    "rows": 99,
+    "max_abs_stored": 0.0,
+    "mean_abs_stored": 0.0
+   },
+   "X2.3.butanedione": {
+    "rows": 99,
+    "max_abs_stored": 0.523885882,
+    "mean_abs_stored": 0.05801110672222226
+   },
+   "X4VG": {
+    "rows": 99,
+    "max_abs_stored": 0.301029996,
+    "mean_abs_stored": 0.010864013213142235
+   },
+   "X.E..2.nonenal": {
+    "rows": 99,
+    "max_abs_stored": 0.0010492560000000108,
+    "mean_abs_stored": 2.0788989898997968e-05
+   }
+  },
+  "source": "experiments/EXP-0110/transfers.csv",
+  "sourceSha256": "315d1ef1a39f43b4038757ab2d15a7121611e2ebac16c78028723c69d7e37629",
+  "note": "stored |new - source| per column: max and mean; this is DESIGN MOVEMENT, not a constraint residual"
+ },
+ "transfer_verdicts": {
+  "strategy": "qp-quantile-anchor",
+  "counts": {
+   "verified": 3465,
+   "conditional": 198,
+   "not_identifiable": 99,
+   "failed": 0
+  },
+  "records": 3762,
+  "verified_denominator": 3663,
+  "by_bound_type": {
+   "upper_source_value": {
+    "verified": 198,
+    "conditional": 99,
+    "not_identifiable": 99,
+    "failed": 0
+   },
+   "lower_zero": {
+    "verified": 3267,
+    "conditional": 0,
+    "not_identifiable": 0,
+    "failed": 0
+   },
+   "upper_source_value_proxy": {
+    "verified": 0,
+    "conditional": 99,
+    "not_identifiable": 0,
+    "failed": 0
+   }
+  },
+  "source": "experiments/EXP-0110/transfer_verdicts.csv",
+  "sourceSha256": "c4a4286cf18ee43eaab96880e6f68bf4f3285429227fbb061daeee884939eed3",
+  "note": "four-layer source-state verdict over the declared upper-bound records of the delivered strategy; not-identifiable records are excluded from the verified denominator and are never counted as verified or as failed"
+ },
+ "transfer_baselines": {
+  "definition": "full feasible region = box ∩ the single stale-proxy half-space; the full-feasible mean projection is the reference baseline, the box-only mean projection is a diagnostic control, and source-fixed is the no-transfer control",
+  "baselines": {
+   "full_feasible_mean_projection": {
+    "strategy": "target-mean-projection-full",
+    "transfer_energy": 6.379240954520166,
+    "transfer_energy_normalized": 0.3484579723871347,
+    "transfer_energy_U": 5.2545558755628745,
+    "nonincrease_rate": 1.0,
+    "stale_proxy_rate": 1.0,
+    "chem4_nonincreasing": true
+   },
+   "box_only_mean_projection": {
+    "strategy": "target-mean-projection",
+    "transfer_energy": 6.94148284204317,
+    "transfer_energy_normalized": 0.3794022877525747,
+    "transfer_energy_U": 5.8913686262015315,
+    "nonincrease_rate": 0.41414141414141414,
+    "stale_proxy_rate": 0.41414141414141414,
+    "chem4_nonincreasing": true
+   },
+   "source_fixed": {
+    "strategy": "source-fixed",
+    "transfer_energy": 7.196326285149654,
+    "transfer_energy_normalized": 0.3957781788879555,
+    "transfer_energy_U": 4.817735233962364,
+    "nonincrease_rate": 1.0,
+    "stale_proxy_rate": 1.0,
+    "chem4_nonincreasing": true
+   },
+   "delivered_qp": {
+    "strategy": "qp-quantile-anchor",
+    "transfer_energy": 2.0798861351916886,
+    "transfer_energy_normalized": 0.11341058752359791,
+    "transfer_energy_U": -0.3456899316462696,
+    "nonincrease_rate": 1.0,
+    "stale_proxy_rate": 1.0,
+    "chem4_nonincreasing": true
+   }
+  },
+  "source": "experiments/EXP-0110/metrics.json",
+  "metricsSourceSha256": "28890bdad41407cfaf4e7bfe0b26add3da880612b39afbea9919f0bc46bf72e1",
+  "outputsSource": "experiments/EXP-0110/outputs.json",
+  "outputsSourceSha256": "7dfa1df64632cf602c2aa80dd03e897c5e7dcadcd8d3a0583b8bfbd7133187ec"
+ },
+ "transfer_target_vs_movement": {
+  "per_strategy": {
+   "qp-quantile-anchor": {
+    "rows": 99,
+    "target_mahalanobis_mean": 1.3045966134356977,
+    "mean_abs_change_z_mean": 0.48776097446614564,
+    "l1_change_z_max": 147.07269291125434,
+    "nonincrease_all": true
+   },
+   "qp-source-anchor": {
+    "rows": 99,
+    "target_mahalanobis_mean": 1.668938043224805,
+    "mean_abs_change_z_mean": 0.02113803071600964,
+    "l1_change_z_max": 8.987317945004053,
+    "nonincrease_all": true
+   },
+   "source-fixed": {
+    "rows": 99,
+    "target_mahalanobis_mean": 1.8280829094219329,
+    "mean_abs_change_z_mean": 0.0,
+    "l1_change_z_max": 0.0,
+    "nonincrease_all": true
+   },
+   "target-mean-projection": {
+    "rows": 99,
+    "target_mahalanobis_mean": 0.09458776026337515,
+    "mean_abs_change_z_mean": 0.675523715910455,
+    "l1_change_z_max": 179.8486410367313,
+    "nonincrease_all": false
+   },
+   "target-mean-projection-full": {
+    "rows": 99,
+    "target_mahalanobis_mean": 0.1704499074770747,
+    "mean_abs_change_z_mean": 0.6749183116422016,
+    "l1_change_z_max": 178.11166005133913,
+    "nonincrease_all": true
+   }
+  },
+  "source": "experiments/EXP-0110/transfers.csv",
+  "sourceSha256": "315d1ef1a39f43b4038757ab2d15a7121611e2ebac16c78028723c69d7e37629",
+  "note": "target_mahalanobis and mean_abs_change_z are reported so a Pareto view can be built; l1_change_z_max and nonincrease_all are copied so the delivered strategy can be checked against the no-transfer control"
+ },
+ "inputs": {
+  "experiments/EXP-0109/q3_metrics.csv": "cafc5a334eece00ddd9db0151c3ff3d9eb85b6075cec83c3de9fc3887ba6d0a5",
+  "experiments/EXP-0109/metrics.json": "2ce8572aec359941eee4814e506f9bd3d06af6f7c20397e43d5d267862a14813",
+  "experiments/EXP-0110/transfers.csv": "315d1ef1a39f43b4038757ab2d15a7121611e2ebac16c78028723c69d7e37629",
+  "experiments/EXP-0110/transfer_verdicts.csv": "c4a4286cf18ee43eaab96880e6f68bf4f3285429227fbb061daeee884939eed3",
+  "experiments/EXP-0110/outputs.json": "7dfa1df64632cf602c2aa80dd03e897c5e7dcadcd8d3a0583b8bfbd7133187ec",
+  "experiments/EXP-0110/metrics.json": "28890bdad41407cfaf4e7bfe0b26add3da880612b39afbea9919f0bc46bf72e1"
+ }
+}

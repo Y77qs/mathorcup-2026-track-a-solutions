@@ -1,6 +1,6 @@
-# 2026 MathorCup 大数据挑战赛 · 赛道 A 初赛 —— 七篇论文（v1 / v2 / v3 / v4 / v5 / v5.1 / v6，按时间顺序）
+# 2026 MathorCup 大数据挑战赛 · 赛道 A 初赛 —— 八篇论文（v1 / v2 / v3 / v4 / v5 / v5.1 / v6 / v6.1，按时间顺序）
 
-## 1. 七篇论文
+## 1. 八篇论文
 
 | | 论文题目 | 时间（CST） | 页数 | 最终状态（是否可用） |
 |---|---|---|---|---|
@@ -11,10 +11,11 @@
 | [`v5/`](v5/) | 《基于稳健表示、共表达网络与风格条件生成的啤酒化合物—感官强度建模》 | 2026-10-24 19:20–22:40 | 18 | **可用（final）**：台账 22:36:58 冻结，`final=true`，交付包 `20261024-223751`（非 DRAFT），论文与 final 状态一致 |
 | [`v5.1/`](v5.1/) | 同上（修订版） | 2026-10-25 09:15 | 21（8 图） | **可用（论文修订稿）**：按修改建议重写摘要/图表/表格并复核，结果沿用 v5、未新跑实验；不改 v5 台账 |
 | [`v6/`](v6/) | 同上（确认性重跑） | 2026-10-27 11:07 | 30（9 图） | **不可用（DRAFT）**：QC-0033 failed、freeze 被拒，`final=false`；交付为 DRAFT 包 |
+| [`v6.1/`](v6.1/) | 同上（复赛修正轮） | 2026-10-27 22:07 | 38（9 图） | **不可用（DRAFT）**：`final=false`、`qualityPassed=false`；V6.1 显式恢复轮后仍 DRAFT |
 
-> v1–v3 均为草稿，未提交任何竞赛平台；v4、v5 是两套由台账判定为 final 的完整解；v5.1 是 v5 论文的修订版；v6 是在 v5 项目上的确认性重跑，因 QC-0033 失败与 freeze 被拒，仍为 DRAFT。
+> v1–v3 均为草稿，未提交任何竞赛平台；v4、v5 是两套由台账判定为 final 的完整解；v5.1 是 v5 论文的修订版；v6 是确认性重跑、v6.1 是同日的复赛修正轮，两者均因门禁未过而保持 DRAFT。
 
-## 2. 七篇论文的关系
+## 2. 八篇论文的关系
 
 **v1 是第一套完整解**（10-23，47 页长报告）：数据核实作为建模前置，交付四套 0–6 分级口径，正文数字全部由台账占位符渲染。
 
@@ -30,7 +31,9 @@
 
 **v6 是确认性重跑**（10-27 11:07，30 页 / 9 图）：在 v5 的同一项目上继续做确认轮实验（Q1 四模型共用嵌套交叉验证、Q2 候选宇宙拆 216 单体 + 15 扩展、Q3 凸二次规划证书），重写论文并产出 DRAFT 交付包；因 QC-0033 failed 与 required 检查未过，freeze 被拒，`final=false`。
 
-按时间：**v1 → v2 → v3 → v4 → v5 → v5.1 → v6**。
+**v6.1 是复赛修正轮**（10-27 22:07，38 页 / 9 图）：在 v6 上按“v6.1 显式恢复轮”重跑 Q3 截距/NA/边际/V 选参、Q2 方向一致率与完整可行域基线等科学修正，论文扩至 38 页；交付仍为 DRAFT（`final=false`、`qualityPassed=false`）。
+
+按时间：**v1 → v2 → v3 → v4 → v5 → v5.1 → v6 → v6.1**。
 
 ## 3. 论文概括与复现
 
@@ -77,5 +80,12 @@
 - **材料**：`v6/report/`（30 页论文 6 件 + BUILD-INPUTS/evidence_manifest/pdf-audit + 15 张表 + 30 份逐页文本）、`v6/src/`（49 个 Python）、`v6/data/`、`v6/experiments/`（102 个，保留元数据/输出/predictions）、`v6/validation/`（69 条）、`v6/figures/`（9 张确认图 + 13 张主图）、`v6/outputs/`、`v6/state/ledger.json`（rev 4782）、`v6/delivery/`（DRAFT 包 28.2 MB + 支撑包 3.3 MB）、`v6/rework-notes/`（审查与变更记录文本）、`v6/DELIVERY-NOTES.md`
 - **说明**：本目录为 2.3 GB 原项目的裁剪归档（116 MB）：未含插件 `.rework/plugin|dist|plugin-review`、`state/devrun`、`state/repro-clean`、实验 `inputs/`、`repeat*/` 与大批逐实验 CSV，清单见 `v6/README.md` §8
 - **复现**：`REPRODUCE.md` 与 DRAFT 包内 `README_REPRODUCE.md`；论文重建 `src/build_paper.py --build --pdf ...`，表格 `src/paper_tables.py`，确认图 `src/make_confirmatory_figures.py`
+
+### v6.1 · 复赛修正轮（38 页，DRAFT）
+
+- **概括**：在 v6 上做复赛修正：Q1 四模型共用嵌套交叉验证（30 维 MAE 0.3593 vs 基线 0.3982；50 维 0.3505 vs 0.3919）；Q2 新增“与总体 Spearman 同方向的一致率”0.9817（旧 P(ρ>0) 仅作历史对照），四方法 Top-3 平均 Jaccard 0.2091；Q3 修正截距/NA/边际与 V 选参，化学 t2n 与感官代理分列，199 个 QP 证书均最优、交付策略转移能量 2.0799；稳健性按问题分列并披露结构性未通过项。
+- **材料**：`v6.1/paper/`（38 页 pdf 3.11 MB + md/tex/rendered/refs + BUILD-INPUTS/evidence_manifest/pdf-audit + 15 张表 + 30 份逐页文本）、`v6.1/src/`（52 个 Python）、`v6.1/data/`、`v6.1/experiments/`（133 个，保留元数据/输出/predictions）、`v6.1/validation/`（77 条）、`v6.1/figures/`（9 张确认图 + confirmatory_v2 + 主图，共 43 PNG）、`v6.1/outputs/`、`v6.1/state/ledger.json`（rev 5220）、`v6.1/delivery/`（DRAFT 32.2 MB + support 21.7 MB + FINAL 被拒回执）、`v6.1/rework-notes/`、`v6.1/DELIVERY-NOTES.md`
+- **说明**：原项目约 3.0 GB → 本目录 202 MB；未含 `state/devrun`（1.2 GB）、`state/repro-clean`（365 MB）、插件 `.rework` 材料、实验 `inputs/`/`repeat*/`/大批 CSV、DRAFT 包内 `revised-20261025`（已单列为 `v5.1/`），清单见 `v6.1/README.md` §7
+- **复现**：`REPRODUCE.md` 与 DRAFT 包内 `README_REPRODUCE.md`；论文重建 `src/build_paper.py --build --pdf --no-caption-ids --outdir report --allow-report-output`，表格 `src/paper_tables.py`，确认图 `src/make_confirmatory_figures.py`
 
 > 更细的目录说明、未完成项与缺陷披露见各论文目录的 `README.md`、`docs/` 与原始台账。

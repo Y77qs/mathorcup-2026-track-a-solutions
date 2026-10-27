@@ -1,0 +1,178 @@
+[q2_fix] repeat=0 seed=20261025 reps=500 -> /Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0041/repeat0
+[q2_fix] repeat=0 done in 50.9s topk-jaccard=0.210333
+[q2_fix] repeat=1 seed=20261026 reps=500 -> /Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0041/repeat1
+[q2_fix] repeat=1 done in 44.6s topk-jaccard=0.207333
+[q2_fix] repeat=2 seed=20261027 reps=500 -> /Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0041/repeat2
+[q2_fix] repeat=2 done in 37.6s topk-jaccard=0.209667
+[q2_fix] contract channel wrote no metrics.json; writing it directly
+[q2_fix] contract channel wrote no outputs.json; writing it directly
+{
+  "repeats": [
+    0,
+    1,
+    2
+  ],
+  "seedPerRepeat": {
+    "0": 20261025,
+    "1": 20261026,
+    "2": 20261027
+  },
+  "topk-jaccard": 0.2091111111111111,
+  "topk-jaccard-per-repeat": {
+    "rep0": 0.2103333333333333,
+    "rep1": 0.20733333333333334,
+    "rep2": 0.20966666666666664
+  },
+  "external_6csv_mean_spearman_aligned": 0.9210176180408739,
+  "external_6csv_rows_matched": 44,
+  "n_strict_candidates": 216,
+  "pi_mean": 0.42045666666666665,
+  "pi_below_0.5_count": 1263,
+  "pi_below_0.5_denominator": 1800,
+  "sign_stability_mean": 0.7225544444444444,
+  "bootstrap_reps": 500,
+  "totalSeconds": 133.7,
+  "setsEntries": 200,
+  "selfChecks": {
+    "0": {
+      "sets_entries": 200,
+      "sets_dimensions": 50,
+      "sets_methods": [
+        "consensus",
+        "graph_lowrank",
+        "total_spearman",
+        "within_style_spearman"
+      ],
+      "sets_each_k3_unique": true,
+      "sets_strict_only": true,
+      "sets_matches_memory": true,
+      "bootstrap_rows": 300000,
+      "bootstrap_rows_expected": 300000,
+      "bootstrap_extended_rows": 300000,
+      "strict_header_ok": true,
+      "strict_rows": 150,
+      "strict_kinds": [
+        "single_compound"
+      ],
+      "strict_forbidden": [],
+      "strict_compounds": 55,
+      "strict_by_method_header_ok": true,
+      "strict_by_method_rows": 600,
+      "strict_by_method_counts": {
+        "total_spearman": 150,
+        "within_style_spearman": 150,
+        "graph_lowrank": 150,
+        "consensus": 150
+      },
+      "strict_by_method_forbidden": [],
+      "top3_nan": 0,
+      "alternative_rank4_empty": 0,
+      "extended_header_ok": true,
+      "extended_rows": 150,
+      "extended_kinds": [
+        "derived_sum",
+        "element_or_index",
+        "physical_parameter"
+      ],
+      "extended_by_method_header_ok": true,
+      "extended_by_method_rows": 600,
+      "candidate_rows": 11550,
+      "candidate_nan": 0,
+      "allPassed": true
+    },
+    "1": {
+      "sets_entries": 200,
+      "sets_dimensions": 50,
+      "sets_methods": [
+        "consensus",
+        "graph_lowrank",
+        "total_spearman",
+        "within_style_spearman"
+      ],
+      "sets_each_k3_unique": true,
+      "sets_strict_only": true,
+      "sets_matches_memory": true,
+      "bootstrap_rows": 300000,
+      "bootstrap_rows_expected": 300000,
+      "bootstrap_extended_rows": 300000,
+      "strict_header_ok": true,
+      "strict_rows": 150,
+      "strict_kinds": [
+        "single_compound"
+      ],
+      "strict_forbidden": [],
+      "strict_compounds": 55,
+      "strict_by_method_header_ok": true,
+      "strict_by_method_rows": 600,
+      "strict_by_method_counts": {
+        "total_spearman": 150,
+        "within_style_spearman": 150,
+        "graph_lowrank": 150,
+        "consensus": 150
+      },
+      "strict_by_method_forbidden": [],
+      "top3_nan": 0,
+      "alternative_rank4_empty": 0,
+      "extended_header_ok": true,
+      "extended_rows": 150,
+      "extended_kinds": [
+        "derived_sum",
+        "element_or_index",
+        "physical_parameter"
+      ],
+      "extended_by_method_header_ok": true,
+      "extended_by_method_rows": 600,
+      "candidate_rows": 11550,
+      "candidate_nan": 0,
+      "allPassed": true
+    },
+    "2": {
+      "sets_entries": 200,
+      "sets_dimensions": 50,
+      "sets_methods": [
+        "consensus",
+        "graph_lowrank",
+        "total_spearman",
+        "within_style_spearman"
+      ],
+      "sets_each_k3_unique": true,
+      "sets_strict_only": true,
+      "sets_matches_memory": true,
+      "bootstrap_rows": 300000,
+      "bootstrap_rows_expected": 300000,
+      "bootstrap_extended_rows": 300000,
+      "strict_header_ok": true,
+      "strict_rows": 150,
+      "strict_kinds": [
+        "single_compound"
+      ],
+      "strict_forbidden": [],
+      "strict_compounds": 53,
+      "strict_by_method_header_ok": true,
+      "strict_by_method_rows": 600,
+      "strict_by_method_counts": {
+        "total_spearman": 150,
+        "within_style_spearman": 150,
+        "graph_lowrank": 150,
+        "consensus": 150
+      },
+      "strict_by_method_forbidden": [],
+      "top3_nan": 0,
+      "alternative_rank4_empty": 0,
+      "extended_header_ok": true,
+      "extended_rows": 150,
+      "extended_kinds": [
+        "derived_sum",
+        "element_or_index",
+        "physical_parameter"
+      ],
+      "extended_by_method_header_ok": true,
+      "extended_by_method_rows": 600,
+      "candidate_rows": 11550,
+      "candidate_nan": 0,
+      "allPassed": true
+    }
+  },
+  "outDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0041",
+  "primaryDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0041/repeat0"
+}

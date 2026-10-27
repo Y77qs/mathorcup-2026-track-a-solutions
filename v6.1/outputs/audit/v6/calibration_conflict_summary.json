@@ -1,0 +1,222 @@
+{
+  "scope": "cell-by-cell comparison of 1.csv against the 8.xlsx calibration sheet on the storage scale; no fitting, no substitution of either source",
+  "inputs": {
+    "data/raw/imported/419849227a02e0c7-1.csv": {
+      "sha256": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69",
+      "role": "main input (stored values)"
+    },
+    "data/raw/imported/f2316766792111d9-8.xlsx": {
+      "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+      "role": "calibration table (concentrations)"
+    }
+  },
+  "tierSource": "data/processed/v6_constants.json",
+  "tierCounts": {
+    "log10": 37,
+    "linear": 33,
+    "unverified": 161
+  },
+  "tolerance": {
+    "atol": 1e-07,
+    "rtol": 1e-07,
+    "substantiveRelThreshold": 0.01
+  },
+  "comparisonBasis": {
+    "formula": {
+      "log10": "expected_storage = log10(calibrated)",
+      "linear": "expected_storage = calibrated"
+    },
+    "rationale": "1.csv stores log10(c) for the 37 log10-calibrated fields and c for the 33 linear-calibrated fields; comparing a stored log10 value with a raw concentration is a unit mismatch, not a data conflict",
+    "maxAbsStorageErrorLog10Columns": 2.9231044816377164e-09
+  },
+  "comparableCells": 16613,
+  "totalCellsCompared": 17500,
+  "cellStateCounts": {
+    "comparable_positive": 16613,
+    "calibrated_zero": 815,
+    "calibrated_missing": 69,
+    "calibrated_negative": 3
+  },
+  "strict": {
+    "definition": "not isclose(stored, expected_storage, atol=1e-07, rtol=1e-07)",
+    "cells": 80,
+    "beers": 24,
+    "fields": 32,
+    "tierBreakdown": {
+      "log10": 0,
+      "linear": 80
+    },
+    "fieldsAffected": [
+      "E.caryophyllene",
+      "X.E..2.nonenal",
+      "X.E..beta.damascenone",
+      "X.E..beta.ocimene",
+      "X.E.E..2.4.decadienal",
+      "X1.alpha.terpineol",
+      "X2.3.butanedione",
+      "X2.ethyl.3.methylpyrazine",
+      "X2.methyltetrahydrofuran.3.one",
+      "X3.methylbutanal",
+      "X3Z.hexenol",
+      "X5.methylfurfural",
+      "Z.nerolidol",
+      "alpha.humulene",
+      "amyl.acetate",
+      "benzaldehyde",
+      "benzyl.alcohol",
+      "citronellol",
+      "ethyl.butyrate",
+      "ethyl.isobutyrate",
+      "ethyl.nicotinate",
+      "ethyl.pentanoate",
+      "eugenol",
+      "furfural",
+      "gamma.nonalactone",
+      "geraniol",
+      "hexyl.acetate",
+      "linalool",
+      "methylpyrazine",
+      "n.hexanol",
+      "phenylacetaldehyde",
+      "styrene"
+    ],
+    "beersAffected": [
+      5,
+      9,
+      24,
+      27,
+      32,
+      34,
+      64,
+      67,
+      80,
+      89,
+      103,
+      123,
+      126,
+      130,
+      151,
+      156,
+      158,
+      172,
+      177,
+      181,
+      224,
+      232,
+      235,
+      247
+    ]
+  },
+  "substantive": {
+    "definition": "rel_diff = |stored-expected_storage|/|expected_storage| > 0.01",
+    "cells": 79,
+    "beers": 24,
+    "fields": 32,
+    "tierBreakdown": {
+      "log10": 0,
+      "linear": 79
+    },
+    "fieldsAffected": [
+      "E.caryophyllene",
+      "X.E..2.nonenal",
+      "X.E..beta.damascenone",
+      "X.E..beta.ocimene",
+      "X.E.E..2.4.decadienal",
+      "X1.alpha.terpineol",
+      "X2.3.butanedione",
+      "X2.ethyl.3.methylpyrazine",
+      "X2.methyltetrahydrofuran.3.one",
+      "X3.methylbutanal",
+      "X3Z.hexenol",
+      "X5.methylfurfural",
+      "Z.nerolidol",
+      "alpha.humulene",
+      "amyl.acetate",
+      "benzaldehyde",
+      "benzyl.alcohol",
+      "citronellol",
+      "ethyl.butyrate",
+      "ethyl.isobutyrate",
+      "ethyl.nicotinate",
+      "ethyl.pentanoate",
+      "eugenol",
+      "furfural",
+      "gamma.nonalactone",
+      "geraniol",
+      "hexyl.acetate",
+      "linalool",
+      "methylpyrazine",
+      "n.hexanol",
+      "phenylacetaldehyde",
+      "styrene"
+    ],
+    "beersAffected": [
+      5,
+      9,
+      24,
+      27,
+      32,
+      34,
+      64,
+      67,
+      80,
+      89,
+      103,
+      123,
+      126,
+      130,
+      151,
+      156,
+      158,
+      172,
+      177,
+      181,
+      224,
+      232,
+      235,
+      247
+    ]
+  },
+  "previousAudit": {
+    "claimed": {
+      "cells": 80,
+      "beers": 24,
+      "fields": 32,
+      "atol": 1e-07,
+      "rtol": 1e-07,
+      "source": "MathorCup_A_独立审查与重跑方案/01_独立复核与修复优先级.md F09"
+    },
+    "matchesStrict": true,
+    "beerCountMatches": true,
+    "fieldCountMatches": true,
+    "differenceReason": null,
+    "comparedAt_24_beers": {
+      "previousBeers": 24,
+      "recomputedBeers": 24,
+      "sameBeerCount": true,
+      "previousCells": 80,
+      "recomputedCells": 80
+    }
+  },
+  "directStoredVsCalibrated": {
+    "definition": "not isclose(stored, calibrated, atol=1e-07, rtol=1e-07) with NO scale conversion",
+    "strictCells": 8532,
+    "strictBeers": 250,
+    "strictFields": 69,
+    "substantiveCells": 8531,
+    "whyNotUsed": "expected by construction for the 37 log10 columns: stored=log10(c) and calibrated=c, so almost every positive cell differs; it measures the scale transform, not a data conflict"
+  },
+  "keyChecks": {
+    "joinKey": "beer",
+    "beerUnique": true,
+    "beerIs1To250": true,
+    "calibrationTableBeerAligned": true,
+    "beerIdUnique": true,
+    "beerIdUsedForJoin": false,
+    "beerIdNote": "beer_id is recorded but never used to join: the 4.csv/7.csv copies are truncated, so an EAN-like key would silently drop or mis-merge rows"
+  },
+  "notResolved": [
+    "the cause of the substantive conflicts is not established; neither source is declared authoritative, so 1.csv stays the main input and no value is replaced",
+    "a conflict is a disagreement between two files, not proof that either is wrong"
+  ]
+}

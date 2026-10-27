@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0035",
+  "questionId": "Q1",
+  "modelId": "MODEL-0014",
+  "modelKind": "evaluation",
+  "title": "Audit: the nine mandatory ablations gathered from EXP-0003 / EXP-0029 / EXP-0033 into renderable metrics",
+  "assumptions": [
+    "The nine mandatory ablations are not all numeric metrics of the experiments that produced them; several live only in outputs.json. This experiment makes each cell machine-renderable so the paper cannot quote it by hand.",
+    "Ablation 5 (independent marginals vs copula) has a negative energy-distance delta but a worse dependence-spectrum MAE; both readings are emitted, and the paper must report the negative energy-distance result rather than hiding it.",
+    "This is an audit of existing experiments only: no new data, no new holdout use, no refit. Q1/DATA-0002/TGT-0001 is used only as the registration anchor; the audit covers Q1, Q2 and Q3.",
+    "No split is attached, so nothing here consumes SPLIT-0002 holdout exposure."
+  ],
+  "equations": [],
+  "algorithm": "Pure audit/reporting step: reads the registered outputs.json / metrics.json of EXP-0003 (Q1 ablations 1-3), EXP-0029 (Q2 ablation 4 + pi-first diagnostics) and EXP-0033 (Q3 ablations 5-9), asserts that all nine mandatory ablations are present, and re-emits every ablation cell as a numeric metric plus a four-panel figure. No model is fitted here and the Q1 dataset binding is only the registration anchor required by the ledger.",
+  "params": {
+    "freezeSources": true,
+    "dependenciesComplete": true,
+    "dependencies": [
+      "experiments/EXP-0003/outputs.json",
+      "experiments/EXP-0029/outputs.json",
+      "experiments/EXP-0033/metrics.json"
+    ],
+    "note": "nine mandatory ablations (blueprint sections 7-8), gathered from the experiments that ran them",
+    "targetContractId": "TGT-0001"
+  },
+  "datasetId": "DATA-0002",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0002",
+    "path": "data/clean/q1_mapped.csv",
+    "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+    "bytes": 979527,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+  "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+  "configVersion": 1,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/ablation_summary.py",
+    "sha256": "95ca010ad9b476fe9ed01aec68c28d763556a5a37a81bccc5c3251939836608c",
+    "bytes": 15245
+  },
+  "dependencies": [
+    {
+      "path": "experiments/EXP-0003/outputs.json",
+      "sha256": "99cf6edf684154925a80543773617791dc5b47d3967d8f325e3620a64cbec69e",
+      "bytes": 47691
+    },
+    {
+      "path": "experiments/EXP-0029/outputs.json",
+      "sha256": "11bfa6875dbb64cd16df7ae542cc8fff3c78ae09b23d86da2eaa7b141a196410",
+      "bytes": 142183
+    },
+    {
+      "path": "experiments/EXP-0033/metrics.json",
+      "sha256": "b43632258e8bebe8323407d7885a9417ac369925ab1e21f72e915c9d32199995",
+      "bytes": 2606
+    },
+    {
+      "path": "src/ablation_summary.py",
+      "sha256": "95ca010ad9b476fe9ed01aec68c28d763556a5a37a81bccc5c3251939836608c",
+      "bytes": 15245
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0035/inputs/src/ablation_summary.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0035/inputs/experiments/EXP-0003/outputs.json",
+        "sha256": "99cf6edf684154925a80543773617791dc5b47d3967d8f325e3620a64cbec69e",
+        "bytes": 47691,
+        "originalPath": "experiments/EXP-0003/outputs.json"
+      },
+      {
+        "path": "experiments/EXP-0035/inputs/experiments/EXP-0029/outputs.json",
+        "sha256": "11bfa6875dbb64cd16df7ae542cc8fff3c78ae09b23d86da2eaa7b141a196410",
+        "bytes": 142183,
+        "originalPath": "experiments/EXP-0029/outputs.json"
+      },
+      {
+        "path": "experiments/EXP-0035/inputs/experiments/EXP-0033/metrics.json",
+        "sha256": "b43632258e8bebe8323407d7885a9417ac369925ab1e21f72e915c9d32199995",
+        "bytes": 2606,
+        "originalPath": "experiments/EXP-0033/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0035/inputs/src/ablation_summary.py",
+        "sha256": "95ca010ad9b476fe9ed01aec68c28d763556a5a37a81bccc5c3251939836608c",
+        "bytes": 15245,
+        "originalPath": "src/ablation_summary.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/ablation_summary.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/src/ablation_summary.py"
+    ],
+    "cwd": "experiments/EXP-0035"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261024,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/src/ablation_summary.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261024,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "ac6800a4cc48090608c3c9506587bf62de73016940fcfe3f4ff159f30eaa33b9",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "ablation-summary-v1",
+  "createdAt": "2026-10-24T12:44:00.782Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0035",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "evaluation",
+    "title": "Audit: the nine mandatory ablations gathered from EXP-0003 / EXP-0029 / EXP-0033 into renderable metrics",
+    "assumptions": [
+      "The nine mandatory ablations are not all numeric metrics of the experiments that produced them; several live only in outputs.json. This experiment makes each cell machine-renderable so the paper cannot quote it by hand.",
+      "Ablation 5 (independent marginals vs copula) has a negative energy-distance delta but a worse dependence-spectrum MAE; both readings are emitted, and the paper must report the negative energy-distance result rather than hiding it.",
+      "This is an audit of existing experiments only: no new data, no new holdout use, no refit. Q1/DATA-0002/TGT-0001 is used only as the registration anchor; the audit covers Q1, Q2 and Q3.",
+      "No split is attached, so nothing here consumes SPLIT-0002 holdout exposure."
+    ],
+    "equations": [],
+    "algorithm": "Pure audit/reporting step: reads the registered outputs.json / metrics.json of EXP-0003 (Q1 ablations 1-3), EXP-0029 (Q2 ablation 4 + pi-first diagnostics) and EXP-0033 (Q3 ablations 5-9), asserts that all nine mandatory ablations are present, and re-emits every ablation cell as a numeric metric plus a four-panel figure. No model is fitted here and the Q1 dataset binding is only the registration anchor required by the ledger.",
+    "params": {
+      "freezeSources": true,
+      "dependenciesComplete": true,
+      "dependencies": [
+        "experiments/EXP-0003/outputs.json",
+        "experiments/EXP-0029/outputs.json",
+        "experiments/EXP-0033/metrics.json"
+      ],
+      "note": "nine mandatory ablations (blueprint sections 7-8), gathered from the experiments that ran them",
+      "targetContractId": "TGT-0001"
+    },
+    "codeFile": "src/ablation_summary.py",
+    "datasetId": "DATA-0002",
+    "splitId": null,
+    "seed": 20261024,
+    "args": [],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0014"
+  }
+}

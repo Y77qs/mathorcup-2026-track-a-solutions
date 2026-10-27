@@ -1,0 +1,24 @@
+{
+ "all": 0.8682257250051136,
+ "named": 1.8190721005846824,
+ "named_cells": 135,
+ "disp": {
+  "DMS": {
+   "max_abs_stored": 0.0,
+   "mean_abs_stored": 0.0
+  },
+  "X2.3.butanedione": {
+   "max_abs_stored": 0.523885882,
+   "mean_abs_stored": 0.093904405
+  },
+  "X4VG": {
+   "max_abs_stored": 0.323278758,
+   "mean_abs_stored": 0.012708453
+  },
+  "X.E..2.nonenal": {
+   "max_abs_stored": 0.001008854,
+   "mean_abs_stored": 1.019e-05
+  }
+ },
+ "sha256": "f039d07461f0ebacb494070d330512476096a79d576c2d1d62ab1042726476ed"
+}

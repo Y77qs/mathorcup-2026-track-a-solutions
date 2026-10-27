@@ -1,0 +1,117 @@
+{
+  "token": "acbeaa771ececae322ecb824",
+  "experimentId": "EXP-0024",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T12:06:08.487Z",
+  "endedAt": "2026-10-24T12:06:10.938Z",
+  "durationMs": 2450,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "constraint-satisfaction": 1.0,
+    "energy-distance-normalized": 0.22763409106161775,
+    "kappa": 15.0,
+    "kappa_r": 20.0,
+    "n-generation": 250.0,
+    "seed_used": 20261024.0
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0024/metrics.json",
+      "sha256": "e2547ca89951a384dc5ec808cfb5c1384731ff989f187df5bf845add09d61801",
+      "bytes": 178,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0024/outputs.json",
+      "sha256": "59bfa72a5bcf6b70c69fef99849b9722f71abbd08fce4c61581c9a75d094ee45",
+      "bytes": 14520,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0024/samples.csv",
+      "sha256": "d7cfcc6441bf33a4dfaba80dbf6d31647cc4fe00fa78e3e5e2d7cbc2f4b434a0",
+      "bytes": 1047282,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0024/seed-receipt.json",
+      "sha256": "884893ea21ded490d35ebd7c54fe32eca685c6753afed43489a1a4f7b4fbc00e",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0024/inputs/data/clean/q3_style_protocol.json",
+      "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+      "bytes": 3703,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0024/inputs/data/clean/q3_thresholds.json",
+      "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+      "bytes": 5531,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0024/inputs/data/processed/q1_grade_params.json",
+      "sha256": "d85d2a7bb3c4ac248deaacf73bbfbfc281fcaff2e9a15990b0c30e9626381fa4",
+      "bytes": 147244,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0024/inputs/src/q3_generate.py",
+      "sha256": "f124916a20ee6ac662e923a677d1c1726a7d1dc76970ee2b1dc8a0f15b725913",
+      "bytes": 63385,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0024/inputs/src/q3_lib.py",
+      "sha256": "364afe5a45064cba5d1ffdafddabee94c7226ea0ebbfe04b06254a49d256de28",
+      "bytes": 52200,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0024/inputs/src/q3_robust.py",
+      "sha256": "552db0cc6a000d78c98b07688e57ffbd9c80f16f552d1d61a12cbb68f9e0157f",
+      "bytes": 8020,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0024/inputs/src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0024/inputs/src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435,
+      "kind": "file"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0024/inputs/src/q3_robust.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0024/inputs/src/q3_robust.py",
+    "--seed",
+    "20261024",
+    "--kappa",
+    "15",
+    "--kappa-r",
+    "20"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0024",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

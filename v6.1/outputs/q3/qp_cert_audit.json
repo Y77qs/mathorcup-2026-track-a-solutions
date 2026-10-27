@@ -1,0 +1,231 @@
+{
+ "kind": "q3-transfer-qp-batch.audit",
+ "auditTarget": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0110",
+ "auditOutput": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/outputs/q3",
+ "note": "Independent recomputation over the saved artifacts. NOT a native optimization-feasibility/optimization-objective validation: the pack wants one declared optimization model + one solution.csv, this experiment is a batch of QPs with per-problem certificates.",
+ "doesNotReplaceOtherEvidence": "This audit covers exactly the run directory named in auditTarget. It does not rewrite, re-sign or retire any other experiment's record; a pre-v6 batch keeps its own (uncorrected) evidence and the limitations below.",
+ "artifactGeneration": "v6",
+ "inputs": {
+  "solver_certificates.jsonl": {
+   "sha256": "8535fd6f5443ef42f13f761970846ecd61bcea99de6b63f2a9a992e175a274e8",
+   "bytes": 192599
+  },
+  "transfer_constraints.csv": {
+   "sha256": "e75e350c1d0f57ddb16ec5acb3192c17f285793a67dac6237d6e3997c4e90cd7",
+   "bytes": 5130536
+  },
+  "transfers.csv": {
+   "sha256": "315d1ef1a39f43b4038757ab2d15a7121611e2ebac16c78028723c69d7e37629",
+   "bytes": 5823027
+  },
+  "metrics.json": {
+   "sha256": "28890bdad41407cfaf4e7bfe0b26add3da880612b39afbea9919f0bc46bf72e1",
+   "bytes": 2457
+  }
+ },
+ "certificates": {
+  "count": 198,
+  "expected_count": 198,
+  "unique_problem_hash": 198,
+  "hash_format_violations": 0,
+  "strategy_counts": {
+   "qp-source-anchor": 99,
+   "qp-quantile-anchor": 99
+  },
+  "status_counts": {
+   "optimal": 198
+  },
+  "feasible_true": 198,
+  "max_constraint_violation": 0.0,
+  "max_primal_residual": 9.994750582720258e-09,
+  "max_dual_residual": 2.1051915766179263e-10,
+  "max_kkt_stationarity_residual": 4.068630810349429e-09,
+  "internal_inconsistencies": 0,
+  "aggregates_vs_recorded": {
+   "qp-solves": {
+    "recomputed": 198,
+    "recorded": 198,
+    "match": true
+   },
+   "qp-status-optimal": {
+    "recomputed": 198,
+    "recorded": 198,
+    "match": true
+   },
+   "qp-status-infeasible": {
+    "recomputed": 0,
+    "recorded": 0,
+    "match": true
+   },
+   "qp-status-not-converged": {
+    "recomputed": 0,
+    "recorded": 0,
+    "match": true
+   },
+   "qp-max-constraint-violation": {
+    "recomputed": 0.0,
+    "recorded": 0.0,
+    "match": true
+   },
+   "qp-max-primal-residual": {
+    "recomputed": 9.994750582720258e-09,
+    "recorded": 9.994750582720258e-09,
+    "match": true
+   },
+   "qp-max-dual-residual": {
+    "recomputed": 2.1051915766179263e-10,
+    "recorded": 2.1051915766179263e-10,
+    "match": true
+   }
+  }
+ },
+ "halfspace_row": {
+  "certificatesCarryIntercept": true,
+  "nCertificates": 198,
+  "definition": "a'z_new <= b, b = a'z_source + STALE_TOL = f(z_source) - c + STALE_TOL",
+  "missingInterceptFields": 0,
+  "b_equals_a_dot_source_plus_tol_violations": 0,
+  "f_source_equals_a_dot_source_plus_c_violations": 0,
+  "prediction_delta_identity_violations": 0,
+  "halfspace_residual_positive": 0,
+  "maxAbsHalfspaceResidual": 0.08196907301694953,
+  "interceptRange": [
+   -0.10860385674698787,
+   -0.013708071262500055
+  ],
+  "maxRecordedIdentityError": 8.274037093680878e-17
+ },
+ "design_movement": {
+  "rows": 495,
+  "columns": 231,
+  "strategies": [
+   "qp-quantile-anchor",
+   "qp-source-anchor",
+   "source-fixed",
+   "target-mean-projection",
+   "target-mean-projection-full"
+  ],
+  "stored_space_sum_abs_change_max": 646.0926571902313,
+  "stored_space_rows_with_zero_change": 99,
+  "l1_zero_iff_opt_equals_src_mismatches": 0,
+  "z_space_l1_recomputable_from_artifacts": false
+ },
+ "nonincrease": {
+  "definition": "all four capped chemistry columns nonincreasing in PHYSICAL space (after <= before*(1+1e-9)+1e-12) AND stale_hops nonincreasing",
+  "cap_flag_mismatches": 0,
+  "stale_flag_mismatches": 0,
+  "nonincrease_all_mismatches": 0,
+  "stale_halfspace_identity_mismatches": 0,
+  "rows_at_stale_tolerance_boundary": 189,
+  "staleRule": "delta = f_new - f_source must satisfy delta <= STALE_TOL + 1e-9, the production rule (declared numerical tolerance plus the CSV round-trip guard); rows landing exactly on the boundary are counted, not hidden",
+  "rate_recomputed_vs_recorded": {
+   "source-fixed": {
+    "recomputed": 1.0,
+    "recorded": 1.0,
+    "rows_non_fallback": 99,
+    "match": true
+   },
+   "target-mean-projection": {
+    "recomputed": 0.41414141414141414,
+    "recorded": 0.41414141414141414,
+    "rows_non_fallback": 99,
+    "match": true
+   },
+   "target-mean-projection-full": {
+    "recomputed": 1.0,
+    "recorded": 1.0,
+    "rows_non_fallback": 99,
+    "match": true
+   },
+   "qp-source-anchor": {
+    "recomputed": 1.0,
+    "recorded": 1.0,
+    "rows_non_fallback": 99,
+    "match": true
+   },
+   "qp-quantile-anchor": {
+    "recomputed": 1.0,
+    "recorded": 1.0,
+    "rows_non_fallback": 99,
+    "match": true
+   }
+  }
+ },
+ "constraint_residual": {
+  "rows": 18810,
+  "groups": 495,
+  "verdicts": {
+   "verified": 17325,
+   "not_identifiable": 495,
+   "conditional": 932,
+   "failed": 58
+  },
+  "verdictClasses": {
+   "verified": 17325,
+   "conditional": 932,
+   "not_identifiable": 495,
+   "failed": 58
+  },
+  "verdictClassNote": "an 'infeasible' label in a pre-v6 artifact is the same class as 'failed'",
+  "violating_records": 58,
+  "residual_sum": 4.57955019893058,
+  "recompute_mismatch": {
+   "upper_source_value": 0,
+   "upper_source_value_proxy": 4,
+   "lower_zero": 0
+  },
+  "recompute_max_abs_diff": {
+   "upper_source_value": 0.0,
+   "upper_source_value_proxy": 1.0000000003410059e-09,
+   "lower_zero": 0.0
+  },
+  "sourceStateRecheck": {
+   "rows_with_source_state": 18810,
+   "imputed_but_verified": 0,
+   "floor_coded_but_verified": 0,
+   "recomputed_verdict_mismatch": 0
+  },
+  "convention": "residual = clamp(new - source, 0) in stored space for upper bounds; residual = clamp(-new, 0) for lower_zero rows. A BOUND residual, not the movement."
+ },
+ "source_missing_state": {
+  "inventoryFile": "transfer_sources.csv",
+  "nRows": 396,
+  "available": true,
+  "nMissingCells": 18,
+  "nFloorCodedCells": 81,
+  "missingDetail": [
+   [
+    28,
+    "chem__X2.3.butanedione"
+   ],
+   [
+    119,
+    "chem__X2.3.butanedione"
+   ]
+  ],
+  "floorCodedColumns": [
+   "chem__X4VG"
+  ],
+  "imputedValuesLookFinite": true,
+  "upperBoundVerifiedForUnidentifiedSource": {
+   "n": 0,
+   "examples": []
+  },
+  "declaredMissingCellsPresent": [
+   [
+    28,
+    "chem__X2.3.butanedione"
+   ],
+   [
+    119,
+    "chem__X2.3.butanedione"
+   ]
+  ]
+ },
+ "separation_statement": "Design movement and constraint residual are reported separately; the movement is not a violation and the violation is not a distance. The z-space movement declared by the experiment is not recomputable from the saved artifacts.",
+ "limitations": [
+  "l1_change_z / mean_abs_change_z are z-space (centre/scale are per-fold fit statistics not saved in transfers.csv); their magnitudes are therefore NOT independently recomputable from the artifacts. Only the structural relation (l1==0 iff opt==src) is checked, plus the stored-space movement sum|opt-src| which is reported separately below."
+ ],
+ "hard_failures": [],
+ "passed": true
+}

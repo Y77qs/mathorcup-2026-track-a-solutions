@@ -1,0 +1,151 @@
+{
+ "shape": {
+  "nSamples": 250,
+  "nFeatures": 231,
+  "nTargets": 50,
+  "nStyles": 22,
+  "styleCounts": {
+   "Blond": 31,
+   "Tripel": 28,
+   "Strong ale": 18,
+   "Hoppy": 17,
+   "Stout/Porter": 13,
+   "Wheat": 12,
+   "Amber": 12,
+   "Brown": 12,
+   "Lambic": 11,
+   "Pils/Lager": 11,
+   "Dubbel": 10,
+   "Kriek": 10,
+   "Saison": 10,
+   "Christmas": 9,
+   "Low/No alcohol": 8,
+   "Fruitbeer": 8,
+   "West Flanders ale": 7,
+   "Brett/cofermented": 6,
+   "Scotch": 5,
+   "Flanders old brown": 5,
+   "Brut": 4,
+   "Faro": 3
+  }
+ },
+ "alignment": {
+  "beerUnique": true,
+  "oneFourBeerEqual": true,
+  "styleEqual": true,
+  "beerIdFourDistinct": 96,
+  "note": "beer is a permutation of 1..250 and row-aligns 1.csv/4.csv; beer_id in 4.csv/7.csv is truncated."
+ },
+ "scale": {
+  "calibratedColumns": 70,
+  "log10Calibrated": 37,
+  "linearCalibrated": 33,
+  "unverified": 161,
+  "calibratedZeroCells": 755,
+  "floorValue": -1.81781854,
+  "floorColumns": 142,
+  "floorCells": 6807
+ },
+ "missing": {
+  "cells": 73,
+  "columns": {
+   "X2.3.butanedione": 9,
+   "X3.methylbutanal": 7,
+   "ethyl.isobutyrate": 1,
+   "methylpyrazine": 12,
+   "furfural": 1,
+   "amyl.acetate": 27,
+   "phenylacetaldehyde": 1,
+   "ethyl.nicotinate": 2,
+   "aroma_hops_sum": 13
+  },
+  "rowsWithMissing": 63
+ },
+ "corrMatrix": {
+  "shape": [
+   231,
+   231
+  ],
+  "matchedFeatures": 231,
+  "direct": 158,
+  "viaXlsxShortName": 73
+ },
+ "variableTypes": {
+  "singleCompound": 219,
+  "derivedSum": 5,
+  "physical": 7
+ },
+ "thresholds": {
+  "defects": {
+   "DMS": {
+    "mean": 17.25,
+    "median": 19.0,
+    "unit": "ug/L"
+   },
+   "X2.3.butanedione": {
+    "mean": 0.29925,
+    "median": 0.09,
+    "unit": "mg/L"
+   },
+   "X4VG": {
+    "mean": 0.206333333,
+    "median": 0.2,
+    "unit": "mg/L"
+   },
+   "X.E..2.nonenal": {
+    "mean": null,
+    "median": null,
+    "unit": "mg/L"
+   },
+   "stale_hops": {
+    "mean": null,
+    "median": null,
+    "unit": "standardized sensory label"
+   }
+  }
+ },
+ "inputs": {
+  "419849227a02e0c7-1.csv": {
+   "sha256": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69",
+   "bytes": 700705
+  },
+  "415709ac10f2f730-2.csv": {
+   "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+   "bytes": 1000771
+  },
+  "43a7b38682ed81ce-4.csv": {
+   "sha256": "43a7b38682ed81ce64d97ebc1874c09dffac023ade4877f34e3c83ef7d42dc1c",
+   "bytes": 162887
+  },
+  "f2316766792111d9-8.xlsx": {
+   "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+   "bytes": 1740092
+  }
+ },
+ "outputs": {
+  "q2_raw.csv": {
+   "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+   "bytes": 858381
+  },
+  "target_columns.py": {
+   "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+   "bytes": 29435
+  },
+  "q2_chem_meta.json": {
+   "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+   "bytes": 52977
+  },
+  "q3_thresholds.json": {
+   "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+   "bytes": 5531
+  },
+  "fields_q2raw.json": {
+   "sha256": "528d19c887da17fbbcbc95813e8b74a01affadcedbb9e7253abb45542d7fb788",
+   "bytes": 73891
+  },
+  "targetcolumns.csv": {
+   "sha256": "ef789f4dc3355e3fb0332c94593a25da44e34ea8478f9fdf55973ca83f530dff",
+   "bytes": 15744
+  }
+ }
+}

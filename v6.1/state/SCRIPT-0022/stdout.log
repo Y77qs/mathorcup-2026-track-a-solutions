@@ -1,0 +1,1 @@
+{"path": "report/evidence_manifest.json", "sha256": "0b65d24a4f86d4ea86b7b8ffe2587219303344e3e1bc94c5c4942a6da30cf69b", "claims": {"Q1": "CLAIM-0056/CLAIM-0057", "Q2": "CLAIM-0041/CLAIM-0052", "Q3gen": "CLAIM-0054/CLAIM-0053", "Q3mig": "CLAIM-0055/CLAIM-0047"}, "selection": {"Q1": "provisional", "Q2": "validated", "Q3": "provisional"}}

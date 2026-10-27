@@ -1,0 +1,115 @@
+{
+  "token": "51531278fb7d4066f622ef56",
+  "experimentId": "EXP-0052",
+  "status": "failed",
+  "exitCode": 1,
+  "startedAt": "2026-10-26T08:19:12.954Z",
+  "endedAt": "2026-10-26T08:19:13.621Z",
+  "durationMs": 667,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0052/inputs/MathorCup_A_独立审查与重跑方案/sensory_name_alignment.csv",
+      "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+      "bytes": 1469,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/data/clean/q1_mapped.csv",
+      "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "bytes": 979527,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/data/clean/q2_chem_meta.json",
+      "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+      "bytes": 52977,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/data/clean/q2_raw.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/data/raw/imported/a55004fb0390299a-6.csv",
+      "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+      "bytes": 42937,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/data/splits/NESTED-CV-1/splits.csv",
+      "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "bytes": 58959,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/data/splits/SPLIT-0001/train.csv",
+      "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+      "bytes": 687898,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/src/q1_lib.py",
+      "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+      "bytes": 23474,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/src/q2_fix.py",
+      "sha256": "fd010c4fc691fa9b161b7364d0f284b75d1177862e357c8637e5a4b1b1424d57",
+      "bytes": 83579,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/src/q2_lib.py",
+      "sha256": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+      "bytes": 16108,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0052/inputs/src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536,
+      "kind": "file"
+    }
+  ],
+  "figures": [],
+  "failure": {
+    "code": "NONZERO_EXIT",
+    "message": "the script exited with code 1; stderr tail: ^^^^^^^^^^^\n  File \"/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nPermissionError: [Errno 1] Operation not permitted: '/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0052/inputs/MathorCup_A_独立审查与重跑方案/sensory_name_alignment.csv'"
+  },
+  "error": "the script exited with code 1; stderr tail: ^^^^^^^^^^^\n  File \"/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/io/common.py\", line 873, in get_handle\n    handle = open(\n             ^^^^^\nPermissionError: [Errno 1] Operation not permitted: '/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0052/inputs/MathorCup_A_独立审查与重跑方案/sensory_name_alignment.csv'",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0052/inputs/src/q2_fix.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0052/inputs/src/q2_fix.py",
+    "--repeat",
+    "all"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0052",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

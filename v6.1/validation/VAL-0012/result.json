@@ -1,0 +1,60 @@
+{
+  "checkType": "simulation-seeds",
+  "passed": true,
+  "observed": {
+    "runs": 3,
+    "distinctSeeds": 3,
+    "extremes": {
+      "constraint-satisfaction": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "runs": 3,
+        "declaredRange": {
+          "min": 0.0,
+          "max": 1.0
+        }
+      }
+    }
+  },
+  "expected": {
+    "requiredSeeds": 3,
+    "ranges": {
+      "constraint-satisfaction": {
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "reportedExtremes": null
+  },
+  "delta": null,
+  "message": "3 run(s) with 3 distinct seed(s), all metrics inside the declared ranges",
+  "details": {
+    "violations": [],
+    "perRun": [
+      {
+        "metric": "constraint-satisfaction",
+        "values": [
+          {
+            "run": 1,
+            "seed": 20261024,
+            "value": 1.0
+          },
+          {
+            "run": 2,
+            "seed": 20261025,
+            "value": 1.0
+          },
+          {
+            "run": 3,
+            "seed": 20261026,
+            "value": 1.0
+          }
+        ]
+      }
+    ],
+    "requiredSeeds": 3,
+    "reportedExtremes": null,
+    "tolerance": null
+  }
+}

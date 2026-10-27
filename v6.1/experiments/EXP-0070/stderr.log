@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0070/inputs/src/seed_receipt_wrapper.py", line 107, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0070/inputs/src/seed_receipt_wrapper.py", line 78, in main
+    if original.read_bytes() != patched.read_bytes():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0070/inputs/MathorCup_A_独立审查与重跑方案/sensory_name_alignment.csv'

@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-27T12:23:35.609Z",
+  "revision": 4921,
+  "runtimeRevision": 5950,
+  "sourceLedgerSha256": "07e15fcd237dc63f2e0539b650f6ea8b292957c059bbfb4659981efa23553738",
+  "ledgerSha256": "89c4b40c5eaec26eef726def0c9fb0a2f6d4b78c511bf46dca7cd47828145694",
+  "sessionHashes": {
+    "session-0eb4baec-28a0-4fd1-a1eb-e71ce21d8666": "b65cca92bcdbe6cb209fbf917a84080a142760e188b54835fcf0720126d57ac5",
+    "ab5ac473-ca97-4385-8a48-22c3023c4fc7": "e24a60923bfd12c2920369e39100568b1e56750835f177faca23a760d594beee",
+    "d83ee0f9-a080-4ee8-97eb-9af8a84ea521": "6641fbedb8411a0e68e28926f05f4bf2fb75c34fb586cab4fd6818d3ce87ab6c"
+  }
+}

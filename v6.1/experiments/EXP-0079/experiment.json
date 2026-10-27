@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0079",
+  "questionId": "Q3",
+  "modelId": "MODEL-0053",
+  "modelKind": "candidate",
+  "title": "CONFIRMATORY Q3 generation (frozen sources): shrinkage margins + fixed copula + constrained projection",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": null,
+  "params": {
+    "confirmatoryRound": "R04-frozen",
+    "dependencies": [
+      "data/clean/q3.csv",
+      "data/clean/q3_style_protocol.json",
+      "data/clean/q3_thresholds.json",
+      "data/splits/NESTED-CV-1/splits.csv",
+      "data/splits/NESTED-CV-1/manifest.json",
+      "src/q3_fix.py",
+      "src/v6_common.py",
+      "src/target_columns.py",
+      "src/q_common.py"
+    ],
+    "dependenciesComplete": true,
+    "family": "copula-constrained",
+    "freezeSources": true,
+    "metricDefinition": "constraint-satisfaction + n_gen-weighted normalised empirical V",
+    "protocol": "confirmatory round, frozen sources: 3 repeats x 3 outer folds, seeds 20261025-27, Tripel/Kriek/Lambic class holdout",
+    "supersedesIncompleteFreeze": "EXP-0076",
+    "targetContractId": "TGT-0003",
+    "vpId": "VP-0014"
+  },
+  "datasetId": "DATA-0004",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0004",
+    "path": "data/clean/q3.csv",
+    "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+    "bytes": 858381,
+    "targetColumn": "overall",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+  "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+  "configVersion": 2,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/q3_fix.py",
+    "sha256": "ae599242db4b5ca7c2256bfa551cee1cbbcb1a4de33627fde9647d0c0b381f16",
+    "bytes": 73818
+  },
+  "dependencies": [
+    {
+      "path": "data/clean/q3.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381
+    },
+    {
+      "path": "data/clean/q3_style_protocol.json",
+      "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+      "bytes": 3703
+    },
+    {
+      "path": "data/clean/q3_thresholds.json",
+      "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+      "bytes": 5531
+    },
+    {
+      "path": "data/splits/NESTED-CV-1/manifest.json",
+      "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+      "bytes": 4548
+    },
+    {
+      "path": "data/splits/NESTED-CV-1/splits.csv",
+      "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "bytes": 58959
+    },
+    {
+      "path": "src/q3_fix.py",
+      "sha256": "ae599242db4b5ca7c2256bfa551cee1cbbcb1a4de33627fde9647d0c0b381f16",
+      "bytes": 73818
+    },
+    {
+      "path": "src/q3_lib.py",
+      "sha256": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb",
+      "bytes": 53999
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365
+    },
+    {
+      "path": "src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435
+    },
+    {
+      "path": "src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0079/inputs/src/q3_fix.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0079/inputs/data/clean/q3.csv",
+        "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+        "bytes": 858381,
+        "originalPath": "data/clean/q3.csv"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/data/clean/q3_style_protocol.json",
+        "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+        "bytes": 3703,
+        "originalPath": "data/clean/q3_style_protocol.json"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/data/clean/q3_thresholds.json",
+        "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+        "bytes": 5531,
+        "originalPath": "data/clean/q3_thresholds.json"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/data/splits/NESTED-CV-1/manifest.json",
+        "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+        "bytes": 4548,
+        "originalPath": "data/splits/NESTED-CV-1/manifest.json"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/data/splits/NESTED-CV-1/splits.csv",
+        "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+        "bytes": 58959,
+        "originalPath": "data/splits/NESTED-CV-1/splits.csv"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/src/q3_fix.py",
+        "sha256": "ae599242db4b5ca7c2256bfa551cee1cbbcb1a4de33627fde9647d0c0b381f16",
+        "bytes": 73818,
+        "originalPath": "src/q3_fix.py"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/src/q3_lib.py",
+        "sha256": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb",
+        "bytes": 53999,
+        "originalPath": "src/q3_lib.py"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/src/q_common.py",
+        "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+        "bytes": 11365,
+        "originalPath": "src/q_common.py"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/src/target_columns.py",
+        "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "bytes": 29435,
+        "originalPath": "src/target_columns.py"
+      },
+      {
+        "path": "experiments/EXP-0079/inputs/src/v6_common.py",
+        "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+        "bytes": 13536,
+        "originalPath": "src/v6_common.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q3_fix.py",
+    "args": [
+      "--repeat",
+      "all"
+    ],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q3_fix.py",
+      "--repeat",
+      "all"
+    ],
+    "cwd": "experiments/EXP-0079"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261025,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q3_fix.py",
+      "--repeat",
+      "all"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261025,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "a44ab342dfe816885f35c03683f06a06740fac0a122c9869cb594b7724850abd",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": null,
+  "createdAt": "2026-10-26T13:26:20.040Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0079",
+  "registration": {
+    "questionId": "Q3",
+    "modelKind": "candidate",
+    "title": "CONFIRMATORY Q3 generation (frozen sources): shrinkage margins + fixed copula + constrained projection",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": null,
+    "params": {
+      "confirmatoryRound": "R04-frozen",
+      "dependencies": [
+        "data/clean/q3.csv",
+        "data/clean/q3_style_protocol.json",
+        "data/clean/q3_thresholds.json",
+        "data/splits/NESTED-CV-1/splits.csv",
+        "data/splits/NESTED-CV-1/manifest.json",
+        "src/q3_fix.py",
+        "src/v6_common.py",
+        "src/target_columns.py",
+        "src/q_common.py"
+      ],
+      "dependenciesComplete": true,
+      "family": "copula-constrained",
+      "freezeSources": true,
+      "metricDefinition": "constraint-satisfaction + n_gen-weighted normalised empirical V",
+      "protocol": "confirmatory round, frozen sources: 3 repeats x 3 outer folds, seeds 20261025-27, Tripel/Kriek/Lambic class holdout",
+      "supersedesIncompleteFreeze": "EXP-0076",
+      "targetContractId": "TGT-0003",
+      "vpId": "VP-0014"
+    },
+    "codeFile": "src/q3_fix.py",
+    "datasetId": "DATA-0004",
+    "splitId": null,
+    "seed": 20261025,
+    "args": [
+      "--repeat",
+      "all"
+    ],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0053"
+  }
+}

@@ -1,0 +1,232 @@
+nodeId,corrIndex,feature,corrLabel,kind,moduleId,moduleSize,degree,placement,x,y
+0,0,acetaldehyde,Acetaldehyde,single_compound,0,175,6,largest,0.700281430,-0.099931173
+1,1,CS2,Carbon disulfide,single_compound,4,1,0,isolated,1.249330734,0.040898854
+2,2,DES,Diethyl sulfide,single_compound,0,175,2,largest,0.984218611,0.274992061
+3,3,DMS,Dimethyl sulfide,single_compound,0,175,1,largest,0.984218611,-0.028900443
+4,4,ethyl_2.methyl_butyrate,Ethyl 2-methylbutyrate,single_compound,0,175,4,largest,-0.419287908,0.331919048
+5,5,ethyl_acetate,Ethyl acetate,single_compound,0,175,11,largest,0.565078484,-0.052032908
+6,6,ethyl_decanoate,Ethyl decanoate,single_compound,0,175,13,largest,0.106408444,-0.362434259
+7,7,ethyl_hexanoate,Ethyl hexanoate,single_compound,0,175,11,largest,0.506661883,-0.127723500
+8,8,ethyl_isovalerate,Ethyl 3-methylbutyrate,single_compound,0,175,6,largest,-0.424285354,0.267138738
+9,9,ethyl_octanoate,Ethyl octanoate,single_compound,0,175,11,largest,0.334751803,-0.209057327
+10,10,ethyl_propionate,Ethyl propionate,single_compound,5,1,0,isolated,1.233304165,0.203619342
+11,11,H2S,Hydrogen sulfide,single_compound,0,175,3,largest,0.957365060,0.039659630
+12,12,isoamyl_alcohol,Isoamyl alcohol,single_compound,0,175,8,largest,0.743070091,-0.049852684
+13,13,isobutanol,Isobutanol,single_compound,0,175,5,largest,0.814571812,-0.082059584
+14,14,isobutyl_acetate,Isobutyl acetate,single_compound,0,175,9,largest,0.760646459,0.004332798
+15,15,isopentyl_acetate,Isoamyl acetate,single_compound,0,175,10,largest,0.739749515,0.059228450
+16,16,MeSH,Methanethiol,single_compound,0,175,4,largest,0.943089595,0.138543403
+17,17,octyl_acetate,Octyl acetate,single_compound,0,175,1,largest,0.141859460,1.000000000
+18,18,phenethyl_acetate,Phenethyl acetate,single_compound,0,175,4,largest,0.848648284,0.136065771
+19,19,phenethyl_alcohol,Phenethyl alcohol,single_compound,6,1,0,isolated,1.196175420,0.362855847
+20,20,X4VG,4-vinylguaiacol,single_compound,7,1,0,isolated,1.138579781,0.515883787
+21,21,SO2.mg.L.,Sulfur dioxide,single_compound,8,1,0,isolated,1.061502727,0.660084813
+22,22,acetic_acid.g.L.,Acetic acid,single_compound,0,175,1,largest,-0.557224292,0.625701896
+23,23,ammonia.mg.L.,Ammonia,single_compound,9,1,0,isolated,0.966263067,0.792991605
+24,24,color.EBC.,Color,physical_parameter,0,175,6,largest,0.002603620,0.589561622
+25,25,betaglucan.mg.L.,Betaglucan,single_compound,10,1,0,isolated,0.854490378,0.912330091
+26,26,lactic_acid.mg.L.,Lactic acid,single_compound,0,175,4,largest,-0.507089705,0.353503128
+27,27,glycerol,Glycerol,single_compound,0,175,11,largest,0.651322146,-0.121310691
+28,28,iron,Iron,single_compound,1,3,1,small,-0.635384743,1.261557134
+29,29,pH,pH,physical_parameter,1,3,1,small,-0.915000000,1.423344232
+30,30,protein.g.L.,Protein,single_compound,0,175,4,largest,-0.078475046,0.579105306
+31,31,bitterness,Iso-alpha acids,physical_parameter,1,3,2,small,-0.774615257,1.342116761
+32,32,GFS,Sugars,physical_parameter,11,1,0,isolated,0.728097121,1.016058356
+33,33,ethanol..v.v.,Ethanol,physical_parameter,0,175,19,largest,0.623335380,-0.018109014
+34,34,CO2.PSI.,Carbon dioxide,physical_parameter,12,1,0,isolated,0.589245921,1.102401580
+35,35,unfermentables,Unfermentables,physical_parameter,0,175,1,largest,0.942018492,-0.164864570
+36,36,kcalperc,Caloric value,derived_sum,0,175,14,largest,0.595446337,-0.099382180
+37,37,X1.propanol,1-propanol,single_compound,0,175,5,largest,0.920949136,1.000000000
+38,38,X2.3.butanedione,Diacetyl,single_compound,0,175,7,largest,0.229360274,0.478861115
+39,39,X3.methylbutanal,3-methylbutanal,single_compound,0,175,1,largest,0.417110964,0.722660411
+40,40,propylene.glycol,Propylene glycol,single_compound,13,1,0,isolated,0.440312560,1.169882408
+41,41,propyl.acetate,N-propyl acetate,single_compound,0,175,3,largest,0.984218611,1.000000000
+42,42,n.pentanol,N-pentanol,single_compound,0,175,5,largest,0.890961282,1.000000000
+43,43,X2.methyl.1.butanol,2-methyl-1-butanol,single_compound,0,175,6,largest,0.704456357,0.868332349
+44,44,isopentyl.formate,Isopentyl formate,single_compound,0,175,5,largest,0.828022574,1.000000000
+45,45,ethyl.isobutyrate,Ethyl isobutyrate,single_compound,0,175,2,largest,0.340117702,0.081535078
+46,46,X3.methyl.2.butenal,3-methyl-2-butenal,single_compound,0,175,5,largest,0.951637575,1.000000000
+47,47,X2.methyltetrahydrofuran.3.one,2-methyltetrahydrofuran-3-one,single_compound,14,1,0,isolated,0.283845329,1.217346224
+48,48,ethyl.butyrate,Ethyl butyrate,single_compound,0,175,5,largest,0.718747014,-0.153456139
+49,49,butyl.acetate,Butyl acetate,single_compound,0,175,1,largest,0.196341047,0.311464669
+50,50,methylpyrazine,Methylpyrazine,single_compound,0,175,4,largest,-0.030026809,0.593782665
+51,51,furfural,Furfural,single_compound,0,175,2,largest,0.017931304,1.000000000
+52,52,ethyl.lactate,Ethyl lactate,single_compound,15,1,0,isolated,0.122521425,1.243980908
+53,53,X3Z.hexenol,Cis-3-hexenol,single_compound,16,1,0,isolated,-0.040898854,1.249330734
+54,54,n.hexanol,N-hexanol,single_compound,0,175,5,largest,0.804351209,-0.012982776
+55,55,styrene,Styrene,single_compound,17,1,0,isolated,-0.203619342,1.233304165
+56,56,X2.furanmethanol,Furfuryl alcohol,single_compound,0,175,1,largest,0.452572245,0.154520611
+57,57,X3.methyl.2.hexanol,3-methyl-2-hexanol,single_compound,0,175,17,largest,0.240525778,-0.017117740
+58,58,X3.furanmethanol,3-furanmethanol,single_compound,0,175,14,largest,0.014514572,0.092498739
+59,59,X2.acetylfuran,2-acetylfuran,single_compound,0,175,10,largest,0.025287870,0.415438472
+60,60,X2.6.dimethyl.pyrazine,"2,6-dimethylpyrazine",single_compound,0,175,3,largest,0.084253955,0.688997798
+61,61,amyl.acetate,Amyl acetate,single_compound,0,175,1,largest,0.360282077,0.782238164
+62,62,ethyl.tiglate,Ethyl tiglate,single_compound,0,175,2,largest,-0.466829771,-0.002166498
+63,63,benzaldehyde,Benzaldehyde,single_compound,0,175,2,largest,0.064548522,0.603337172
+64,64,X5.methylfurfural,5-methylfurfural,single_compound,0,175,6,largest,-0.027915175,0.676594280
+65,65,n.heptanol,N-heptanol,single_compound,0,175,7,largest,-0.090343045,-0.021511640
+66,66,X1.octen.3.ol,1-octen-3-ol,single_compound,0,175,17,largest,-0.274526662,-0.196914717
+67,67,X3.methylthio.propanol,Methionol,single_compound,0,175,1,largest,-0.148916362,-0.972236758
+68,68,isomaltol,Isomaltol,single_compound,0,175,10,largest,-0.073213139,0.078888660
+69,69,X6.methyl.5.hepten.2.one,Methyl heptenone,single_compound,18,1,0,isolated,-0.362855847,1.196175420
+70,70,X2.pentyl.furan,2-pentyl furan,single_compound,0,175,2,largest,0.473587209,-0.304787905
+71,71,ethyl.hex..3E..enoate,Ethyl 3-hexanoate,single_compound,0,175,3,largest,-0.417304407,-0.110535614
+72,72,alpha.phellandrene,α-phellandrene,single_compound,0,175,3,largest,-0.988018148,0.742692945
+73,73,dehydroxy.cis.linalool.oxide,Dehydroxy-cis-linalool oxide,single_compound,19,1,0,isolated,-0.515883787,1.138579781
+74,74,hexyl.acetate,Hexyl acetate,single_compound,20,1,0,isolated,-0.660084813,1.061502727
+75,75,isopentyl.butanoate,Isopentyl butanoate,single_compound,0,175,3,largest,-0.498316563,-0.500360640
+76,76,X2.ethyl.1.hexanol,2-ethyl-1-hexanol,single_compound,0,175,6,largest,0.300772923,0.147893065
+77,77,beta.phellandrene,Beta-phellandrene,single_compound,0,175,7,largest,-0.894596648,0.602713841
+78,78,limonene,Limonene,single_compound,0,175,3,largest,-0.988018148,0.675558367
+79,79,eucalyptol,Eucalyptol,single_compound,21,1,0,isolated,-0.792991605,0.966263067
+80,80,benzyl.alcohol,Benzyl alcohol,single_compound,0,175,1,largest,-0.988018148,0.034046710
+81,81,ethyl.hex..2E..enoate,Ethyl 2-hexenoate,single_compound,0,175,16,largest,-0.245887286,-0.252803931
+82,82,phenylacetaldehyde,Phenylacetaldehyde,single_compound,0,175,1,largest,-0.988018148,1.000000000
+83,83,X.E..beta.ocimene,E-β-ocimene,single_compound,0,175,2,largest,-0.988018148,0.905772326
+84,84,prenyl.isobutyrate,Prenyl isobutyrate,single_compound,0,175,14,largest,-0.258000150,0.187746291
+85,85,ethyl.furoate,Ethyl furoate,single_compound,0,175,11,largest,-0.076428825,0.345048204
+86,86,ortho.cresol,O-cresol,single_compound,0,175,13,largest,0.152894392,0.008374663
+87,87,ethyl.5.methylhexanoate,Ethyl 5-methylhexanoate,single_compound,0,175,11,largest,-0.260250376,-0.067918576
+88,88,X2.acetylpyrrole,2-acetylpyrrole,single_compound,0,175,5,largest,0.031485126,0.726471392
+89,89,isoamyl.lactate,Isoamyl lactate,single_compound,0,175,4,largest,-0.379522274,0.055622113
+90,90,n.octanol,N-octanol,single_compound,0,175,10,largest,0.080400073,-0.167624270
+91,91,cis.linalool.oxide,Cis-linalool oxide,single_compound,22,1,0,isolated,-0.912330091,0.854490378
+92,92,meta.cymenene,Meta-cymenene,single_compound,23,1,0,isolated,-1.016058356,0.728097121
+93,93,terpinolene,Terpinolene,single_compound,0,175,5,largest,-0.912248317,0.516057307
+94,94,linalool,Linalool,single_compound,0,175,5,largest,-0.988018148,0.655254664
+95,95,nonan.2.ol,2-nonanol,single_compound,0,175,10,largest,-0.310915709,-0.166345855
+96,96,n.nonanal,N-nonanal,single_compound,24,1,0,isolated,-1.102401580,0.589245921
+97,97,X2.methyl.benzofuran,2-methyl-benzofuran,single_compound,0,175,4,largest,-0.809779679,0.370997382
+98,98,heptyl.acetate,Heptyl acetate,single_compound,0,175,1,largest,0.984218611,0.620554281
+99,99,X4.methyl.1.pentanol,4-methyl-1-pentanol,single_compound,0,175,14,largest,0.282727142,-0.179063897
+100,100,neo.allo.ocimene,Neo-allo-ocimene,single_compound,3,2,1,small,1.690000000,-0.000000000
+101,101,x.methyl.1.octanol,X-methyl-1-octanol,single_compound,0,175,4,largest,0.194357152,-0.186421880
+102,102,trans.dihydro.beta.terpineol,Trans-dihydro-β-terpineol,single_compound,25,1,0,isolated,-1.169882408,0.440312560
+103,103,cis.beta.terpineol,Cis-β-terpineol,single_compound,26,1,0,isolated,-1.217346224,0.283845329
+104,104,y.methyl.1.octanol,Y-methyl-1-octanol,single_compound,0,175,6,largest,-0.258496968,-0.562710452
+105,105,camphor,Camphor,single_compound,0,175,2,largest,-0.950524718,0.408281701
+106,106,isobutyl.hexanoate,Isobutyl hexanoate,single_compound,0,175,19,largest,-0.135444288,-0.354522404
+107,107,nerol.oxide,Nerol oxide,single_compound,0,175,30,largest,-0.222666025,-0.373491823
+108,108,X.E..2.nonenal,E-2-nonenal,single_compound,0,175,11,largest,-0.023245742,-0.144858066
+109,109,cis.dihydro.beta.terpineol,Cis-dihydro-β-terpineol,single_compound,0,175,5,largest,-0.174167838,-0.458021494
+110,110,X4.ethyl.phenol,4-ethyl-phenol,single_compound,0,175,4,largest,-0.359163092,0.247061489
+111,111,isoborneol,Isoborneol,single_compound,0,175,8,largest,-0.547106287,0.089467160
+112,112,ethyl.benzoate,Ethyl benzoate,single_compound,0,175,11,largest,-0.213285048,-0.029731676
+113,113,n.nonanol,N-nonanol,single_compound,0,175,14,largest,-0.165949978,-0.140365083
+114,114,terpinen.4.ol,Terpinen-4-ol,single_compound,0,175,9,largest,-0.840867356,0.454969924
+115,115,diethyl.succinate,Diethyl succinate,single_compound,0,175,4,largest,-0.740868540,0.115097250
+116,116,vinyl.caprylate,Vinyl caprylate,single_compound,27,1,0,isolated,-1.243980908,0.122521425
+117,117,X1.alpha.terpineol,Alpha-terpineol,single_compound,0,175,5,largest,-0.940273486,0.574270829
+118,118,ethyl..E..linalool,Ethyl linalool,single_compound,0,175,11,largest,-0.690797226,0.302407556
+119,119,ethyl.nicotinate,Ethyl nicotinate,single_compound,0,175,2,largest,-0.988018148,-0.047111829
+120,120,citronellol,Citronellol,single_compound,0,175,3,largest,-0.988018148,0.791012084
+121,121,nerol,Nerol,single_compound,0,175,1,largest,-0.988018148,0.335343434
+122,122,hydroxy.methyl.furfural,5-hydroxymethylfurfural,single_compound,0,175,1,largest,-0.988018148,0.208564430
+123,123,E.ocimenone,Ocimenone,single_compound,0,175,4,largest,-0.695279559,0.209791491
+124,124,cumin.aldehyde,Cumin aldehyde,single_compound,0,175,3,largest,-0.301418071,0.178235224
+125,125,ethyl.phenylacetate,Ethyl phenylacetate,single_compound,0,175,18,largest,-0.313123130,0.131800298
+126,126,isopentyl.hexanoate,Isopentyl hexanoate,single_compound,0,175,21,largest,-0.031537959,-0.373350211
+127,127,geraniol,Geraniol,single_compound,0,175,2,largest,-0.988018148,0.865188470
+128,128,beta.cyclohomocitral,β-cyclohomocitral,single_compound,0,175,2,largest,0.123318679,-0.972236758
+129,129,E.cinnamaldehyde,Cinnamaldehyde,single_compound,0,175,3,largest,0.946473888,0.334164110
+130,130,n.decanol,N-decanol,single_compound,0,175,5,largest,0.395187796,-0.652519969
+131,131,neryl.formate,Neryl formate,single_compound,0,175,11,largest,-0.282002539,0.051349139
+132,132,X4.ethyl.guaiacol,4-ethyl-guaiacol,single_compound,0,175,6,largest,-0.263076007,0.263655087
+133,133,X2.undecanone,2-undecanone,single_compound,28,1,0,isolated,-1.249330734,-0.040898854
+134,134,trans.dihydro.alpha.terpinyl.acetate,Trans-dihydro-α-terpinyl acetate,single_compound,0,175,22,largest,-0.137316989,-0.393104057
+135,135,terpinen.4.ol.acetate,Terpinen-4-ol acetate,single_compound,0,175,3,largest,-0.521103334,-0.225761542
+136,136,X2.undecanol,2-undecanol,single_compound,0,175,16,largest,-0.334763872,-0.357273946
+137,137,delta.terpinyl.acetate,Terpiryl acetate,single_compound,29,1,0,isolated,-1.233304165,-0.203619342
+138,138,X.E.E..2.4.decadienal,"E,E-2,4-decadienal",single_compound,0,175,4,largest,0.083976867,0.288960883
+139,139,methyl.geranate,Methyl geranate,single_compound,0,175,15,largest,-0.300256011,-0.399346166
+140,140,car.3.en.2.one,Car-3-en-2-one,single_compound,0,175,1,largest,0.561697426,-0.972236758
+141,141,dimethoxy..E..citral,Dimethoxy-E-citral,single_compound,0,175,2,largest,0.529885037,-0.775704427
+142,142,X2.butyloctanoate,2-butyl octanoate,single_compound,0,175,15,largest,0.010365623,-0.414657507
+143,143,X4.methoxysalicylaldehyde,4-methoxysalicylaldehyde,single_compound,0,175,1,largest,-0.246382026,1.000000000
+144,144,ethyl.hydrocinnamate,Ethyl hydrocinnamate,single_compound,0,175,3,largest,0.020309184,0.888685940
+145,145,eugenol,Eugenol,single_compound,30,1,0,isolated,-1.196175420,-0.362855847
+146,146,gamma.nonalactone,Gamma-nonalactone,single_compound,0,175,3,largest,-0.988018148,-0.193819475
+147,147,methyl.para.anisate,Methyl para-anisate,single_compound,31,1,0,isolated,-1.138579781,-0.515883787
+148,148,X.E..beta.damascenone,E-β-damascenone,single_compound,0,175,1,largest,-0.988018148,-0.476756157
+149,149,ethyl..9..decenoate,Ethyl 9-decenoate,single_compound,0,175,15,largest,-0.132460403,-0.468395068
+150,150,vanillin,Vanillin,single_compound,32,1,0,isolated,-1.061502727,-0.660084813
+151,151,geosmin,Geosmin,single_compound,0,175,1,largest,-0.385524923,-0.731812320
+152,152,dodecanal,Dodecanal,single_compound,33,1,0,isolated,-0.966263067,-0.792991605
+153,153,X4.8.alpha.epoxy.caryophyllane,"4,8-α-epoxy-caryophyllane",single_compound,34,1,0,isolated,-0.854490378,-0.912330091
+154,154,E.caryophyllene,Caryophyllene,single_compound,35,1,0,isolated,-0.728097121,-1.016058356
+155,155,X.E..alpha.ionone,E-α-ionone,single_compound,0,175,5,largest,-0.154623398,0.081427920
+156,156,perillyl.acetate,Perillyl acetate,single_compound,0,175,9,largest,-0.198490236,0.155635871
+157,157,beta.humulene,β-humulene,single_compound,36,1,0,isolated,-0.589245921,-1.102401580
+158,158,X2.phenyl.ethyl.butyrate,2-phenyl ethyl butyrate,single_compound,0,175,15,largest,-0.069737348,-0.471851380
+159,159,X.Z..beta.farnesene,Z-β-farnesene,single_compound,0,175,19,largest,-0.106987314,-0.434239398
+160,160,pentyl.octanoate,Pentyl octanoate,single_compound,0,175,20,largest,-0.023723508,-0.399207740
+161,161,X.E..beta.farnesene,E-β-farnesene,single_compound,0,175,2,largest,0.672021570,-0.608993813
+162,162,X2.methylbutyl.octanoate,2-methylbutyl octanoate,single_compound,0,175,18,largest,-0.089618864,-0.388989102
+163,163,alpha.humulene,Alpha-humulene,single_compound,0,175,1,largest,0.313366367,0.505808564
+164,164,neryl.propanoate,Neryl propanoate,single_compound,0,175,16,largest,-0.247863231,-0.291740182
+165,165,X9.epi..E..caryophyllene,9-epi-E-caryophyllene,single_compound,0,175,4,largest,0.399678757,-0.341620587
+166,166,ethyl..E..cinnamate,Ethyl cinnamate,single_compound,0,175,2,largest,0.233502616,0.591215331
+167,167,linalool.isovalerate,Linalool isovalerate,single_compound,37,1,0,isolated,-0.440312560,-1.169882408
+168,168,alpha.terpinyl.isobutanoate,α-terpinyl isobutanoate,single_compound,0,175,6,largest,0.392908634,-0.409846889
+169,169,n.dodecanol,N-dodecanol,single_compound,0,175,7,largest,0.493469636,-0.488588621
+170,170,germacrene.D,Germacrene D,single_compound,0,175,7,largest,-0.312293643,-0.073379195
+171,171,X.E..beta.ionone,E-β-ionone,single_compound,0,175,15,largest,-0.130450631,-0.139339181
+172,172,valencene,Valencene,single_compound,38,1,0,isolated,-0.283845329,-1.217346224
+173,173,neryl.isobutanoate,Neryl isobutanoate,single_compound,0,175,2,largest,-0.476935644,-0.571112526
+174,174,E.methyl.isoeugenol,Methyl isoeugenol,single_compound,2,3,1,small,-0.643970816,-1.431194665
+175,175,X.Z..dihydro.apofarnesal,Z-dihydro-apofarnesal,single_compound,2,3,1,small,-0.915000000,-1.247400674
+176,176,butylated.hydroxytoluene,Butylated hydroxytoluene,single_compound,2,3,2,small,-0.766029184,-1.348422788
+177,177,X.E..dihydro.apofarnesal,E-dihydro-apofarnesal,single_compound,39,1,0,isolated,-0.122521425,-1.243980908
+178,178,Z.nerolidol,Z-nerolidol,single_compound,40,1,0,isolated,0.040898854,-1.249330734
+179,179,X.E..ortho.methoxy.cinnamaldehyde,E-ortho-methoxy cinnamaldehyde,single_compound,0,175,5,largest,-0.518131511,-0.166634839
+180,180,alpha.calacorene,α-calacorene,single_compound,0,175,26,largest,-0.292722556,-0.294994389
+181,181,E.nerolidol,E-nerolidol,single_compound,0,175,5,largest,0.447935354,-0.942067404
+182,182,dihydroisocaryophyllene.epoxide,Tobacarol,single_compound,0,175,3,largest,0.606840832,-0.972236758
+183,183,caryophyllene.alcohol,Caryophyllene alcohol,single_compound,0,175,7,largest,-0.408613573,-0.350422201
+184,184,neryl.isovalerate,Neryl isovalerate,single_compound,0,175,2,largest,-0.410584650,-0.560677379
+185,185,spathulenol,Spathulenol,single_compound,0,175,1,largest,-0.836273820,-0.295449545
+186,186,caryophyllene.oxide,Caryophyllene oxide,single_compound,0,175,9,largest,-0.312745920,-0.490525805
+187,187,humulene.epoxide.II,Humulene epoxide II,single_compound,0,175,16,largest,-0.232727059,-0.453297492
+188,188,alloaromadendrene.epoxide,Allo-aromadendrene epoxide,single_compound,0,175,19,largest,-0.336764111,-0.309967826
+189,189,X1.10.di.epi.cubenol,Epicubenol,single_compound,0,175,18,largest,-0.305219876,-0.346650734
+190,190,isopropyl.laurate,Isopropyl laurate,single_compound,41,1,0,isolated,0.203619342,-1.233304165
+191,191,caryophylla.4.12..8.13..dien.5.alpha.ol,"Caryophylla-4,8-dien-5-ol",single_compound,0,175,20,largest,-0.209759028,-0.408580377
+192,192,gamma.eudesmol,Gamma-eudesmol,single_compound,0,175,1,largest,-0.211739552,0.674914466
+193,193,alpha.muurolol,α-muurolol,single_compound,0,175,20,largest,-0.268124404,-0.429688835
+194,194,X1.2.dihydro.8.hydroxy..2E..linalool,"1,2-dihydro-8-hydroxy-2E-linalool",single_compound,0,175,21,largest,-0.062623015,-0.380543532
+195,195,tau.cadinol,Tau-cadinol,single_compound,42,1,0,isolated,0.362855847,-1.196175420
+196,196,selin.11.en.4.alpha.ol,Kongol,single_compound,0,175,7,largest,-0.409551816,-0.409882331
+197,197,alpha.eudesmol,α-eudesmol,single_compound,43,1,0,isolated,0.515883787,-1.138579781
+198,198,X14.hydroxy.9.epi..E..caryophyllene,14-hydroxy-9-epi-(E)-caryophyllene,single_compound,0,175,2,largest,0.859281665,1.000000000
+199,199,tau.muurolol,Tau-muurolol,single_compound,0,175,12,largest,-0.347984142,-0.407774588
+200,200,n.tetradecanol,N-tetradecanol,single_compound,0,175,6,largest,0.474434553,-0.611979226
+201,201,foeniculin,Eoeniculin,single_compound,44,1,0,isolated,0.660084813,-1.061502727
+202,202,cadalene,Cadalene,single_compound,45,1,0,isolated,0.792991605,-0.966263067
+203,203,X2.3.dihydro.farnesol,"2,3-dihydro-farnesol",single_compound,0,175,5,largest,0.575514137,-0.920972139
+204,204,X2E.6Z.farnesal,"E,Z-farnesal",single_compound,0,175,3,largest,0.738994734,-0.972236758
+205,205,caryophyllene.acetate,Caryophyllene acetate,single_compound,46,1,0,isolated,0.912330091,-0.854490378
+206,206,X14.hydroxy.alpha.humulene,14-hydroxy-α-humulene,single_compound,47,1,0,isolated,1.016058356,-0.728097121
+207,207,X2Z.6E.farnesal,"Z,E-farnesal",single_compound,0,175,2,largest,0.829312640,-0.972236758
+208,208,X2Z.6Z.farnesol,"Z,Z-farnesol",single_compound,48,1,0,isolated,1.102401580,-0.589245921
+209,209,X2Z.6E.farnesol,"Z,E-farnesol",single_compound,0,175,8,largest,0.616631289,-0.849149826
+210,210,ambroxide,Ambroxide,single_compound,0,175,6,largest,-0.358443899,-0.131004524
+211,211,benzyl.benzoate,Benzyl benzoate,single_compound,0,175,1,largest,-0.690842680,-0.218164895
+212,212,X2E.6E.methyl.farnesoate,"2E,6E-methyl farnesoate",single_compound,49,1,0,isolated,1.169882408,-0.440312560
+213,213,ethyl.tetradecanoate,Ethyl tetradecanoate,single_compound,0,175,16,largest,-0.021960458,-0.463077890
+214,214,X2.ethylhexylsalicylate,2-ethylhexyl acrylate,single_compound,50,1,0,isolated,1.217346224,-0.283845329
+215,215,isopropyl.tetradecanoate,Isopropyl tetradecanoate,single_compound,0,175,3,largest,0.643341672,-0.670401449
+216,216,ethyl.pentadecanoate,Ethyl pentadecanoate,single_compound,0,175,16,largest,-0.036421760,-0.489115112
+217,217,methyl.hexadecanoate,Methyl hexadecanoate,single_compound,0,175,2,largest,0.921691053,-0.702327015
+218,218,Z.Z.geranyl.linalool,"Z,Z-geranyl linalool",single_compound,0,175,7,largest,0.051656405,-0.558519615
+219,219,ethyl.hexadecanoate,Ethyl hexadecanoate,single_compound,0,175,14,largest,0.007650972,-0.494472218
+220,220,manool.oxide,Manool oxide,single_compound,0,175,1,largest,0.984218611,-0.972236758
+221,221,X13.epi.manool.oxide,13-epi manool oxide,single_compound,3,2,1,small,1.410000000,-0.000000000
+222,222,isopropyl.hexadecanoate,Isopropyl hexadecanoate,single_compound,0,175,3,largest,0.920444499,-0.799312302
+223,223,manool,Manool,single_compound,0,175,6,largest,0.652148275,-0.546721674
+224,224,ethyl.octadecanoate,Ethyl octadecanoate,single_compound,0,175,7,largest,0.103408174,-0.431714786
+225,225,ethyl.pentanoate,Ethyl pentanoate,single_compound,0,175,5,largest,-0.182078186,0.422228339
+226,226,X2.ethyl.3.methylpyrazine,2-ethyl-3-methylpyrazine,single_compound,51,1,0,isolated,1.243980908,-0.122521425
+227,227,esters_sum,Total ester compounds,derived_sum,0,175,15,largest,0.634161438,-0.043669329
+228,228,aroma_hops_sum,Total hop aroma compounds,derived_sum,0,175,5,largest,-0.988018148,0.706569793
+229,229,acids_sum,Total acids,derived_sum,0,175,5,largest,-0.448899235,0.419082603
+230,230,sulfur_sum,Total sulfur compounds,derived_sum,0,175,5,largest,0.977867455,0.092414310

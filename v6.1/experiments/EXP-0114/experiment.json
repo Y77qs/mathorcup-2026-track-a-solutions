@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0114",
+  "questionId": "Q2",
+  "modelId": "MODEL-0050",
+  "modelKind": "candidate",
+  "title": "ROB Q2 v6-fix seed block 3/3 (repeat 2, seed 20261027)",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": null,
+  "params": {
+    "dependencies": [
+      "src/robustness_wrapper.py",
+      "src/seed_receipt_wrapper.py",
+      "src/q2_fix.py",
+      "src/q2_lib.py",
+      "src/q1_lib.py",
+      "src/q_common.py",
+      "src/target_columns.py",
+      "src/v6_common.py",
+      "data/splits/SPLIT-0001/train.csv",
+      "data/clean/q1_mapped.csv",
+      "data/clean/q2_raw.csv",
+      "data/clean/q2_chem_meta.json",
+      "data/raw/imported/415709ac10f2f730-2.csv",
+      "data/raw/imported/a55004fb0390299a-6.csv",
+      "data/processed/sensory_name_alignment.csv",
+      "experiments/EXP-0075/repeat0/strict_top3.csv",
+      "experiments/EXP-0075/repeat1/strict_top3.csv",
+      "experiments/EXP-0075/repeat2/strict_top3.csv"
+    ],
+    "dependenciesComplete": true,
+    "freezeSources": true,
+    "perturbation": "seed block repeat=2 (registered seed 20261027), 500 bootstrap replicates, code/data/pi ordering unchanged",
+    "protocol": "ROB seed block for the v6-fixed Q2; the main reference experiment is EXP-0107 (repeat 0 = seed 20261025)",
+    "robustnessPlan": "ROB-0012 (to be pre-registered before this experiment's decision rule is read)",
+    "targetContractId": "TGT-0002",
+    "vpId": "VP-0018"
+  },
+  "datasetId": "DATA-0001",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0001",
+    "path": "data/clean/q2_raw.csv",
+    "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+    "bytes": 858381,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+  "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+  "configVersion": 2,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/robustness_wrapper.py",
+    "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+    "bytes": 4147
+  },
+  "dependencies": [
+    {
+      "path": "data/clean/q1_mapped.csv",
+      "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "bytes": 979527
+    },
+    {
+      "path": "data/clean/q2_chem_meta.json",
+      "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+      "bytes": 52977
+    },
+    {
+      "path": "data/clean/q2_raw.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381
+    },
+    {
+      "path": "data/processed/sensory_name_alignment.csv",
+      "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+      "bytes": 1469
+    },
+    {
+      "path": "data/raw/imported/415709ac10f2f730-2.csv",
+      "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+      "bytes": 1000771
+    },
+    {
+      "path": "data/raw/imported/a55004fb0390299a-6.csv",
+      "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+      "bytes": 42937
+    },
+    {
+      "path": "data/splits/SPLIT-0001/train.csv",
+      "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+      "bytes": 687898
+    },
+    {
+      "path": "experiments/EXP-0075/repeat0/strict_top3.csv",
+      "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+      "bytes": 19358
+    },
+    {
+      "path": "experiments/EXP-0075/repeat1/strict_top3.csv",
+      "sha256": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+      "bytes": 19412
+    },
+    {
+      "path": "experiments/EXP-0075/repeat2/strict_top3.csv",
+      "sha256": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+      "bytes": 19497
+    },
+    {
+      "path": "src/q1_lib.py",
+      "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+      "bytes": 23474
+    },
+    {
+      "path": "src/q2_fix.py",
+      "sha256": "e656b91c8371ce8019c1b3976344d89b44623b27ba5fe1a1861dd0c155cf832b",
+      "bytes": 141866
+    },
+    {
+      "path": "src/q2_lib.py",
+      "sha256": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+      "bytes": 16108
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365
+    },
+    {
+      "path": "src/robustness_wrapper.py",
+      "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+      "bytes": 4147
+    },
+    {
+      "path": "src/seed_receipt_wrapper.py",
+      "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+      "bytes": 4571
+    },
+    {
+      "path": "src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435
+    },
+    {
+      "path": "src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0114/inputs/src/robustness_wrapper.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0114/inputs/data/clean/q1_mapped.csv",
+        "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+        "bytes": 979527,
+        "originalPath": "data/clean/q1_mapped.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/data/clean/q2_chem_meta.json",
+        "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+        "bytes": 52977,
+        "originalPath": "data/clean/q2_chem_meta.json"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/data/clean/q2_raw.csv",
+        "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+        "bytes": 858381,
+        "originalPath": "data/clean/q2_raw.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/data/processed/sensory_name_alignment.csv",
+        "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+        "bytes": 1469,
+        "originalPath": "data/processed/sensory_name_alignment.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/data/raw/imported/415709ac10f2f730-2.csv",
+        "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+        "bytes": 1000771,
+        "originalPath": "data/raw/imported/415709ac10f2f730-2.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/data/raw/imported/a55004fb0390299a-6.csv",
+        "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+        "bytes": 42937,
+        "originalPath": "data/raw/imported/a55004fb0390299a-6.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/data/splits/SPLIT-0001/train.csv",
+        "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+        "bytes": 687898,
+        "originalPath": "data/splits/SPLIT-0001/train.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/experiments/EXP-0075/repeat0/strict_top3.csv",
+        "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+        "bytes": 19358,
+        "originalPath": "experiments/EXP-0075/repeat0/strict_top3.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/experiments/EXP-0075/repeat1/strict_top3.csv",
+        "sha256": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+        "bytes": 19412,
+        "originalPath": "experiments/EXP-0075/repeat1/strict_top3.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/experiments/EXP-0075/repeat2/strict_top3.csv",
+        "sha256": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+        "bytes": 19497,
+        "originalPath": "experiments/EXP-0075/repeat2/strict_top3.csv"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/src/q1_lib.py",
+        "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+        "bytes": 23474,
+        "originalPath": "src/q1_lib.py"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/src/q2_fix.py",
+        "sha256": "e656b91c8371ce8019c1b3976344d89b44623b27ba5fe1a1861dd0c155cf832b",
+        "bytes": 141866,
+        "originalPath": "src/q2_fix.py"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/src/q2_lib.py",
+        "sha256": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+        "bytes": 16108,
+        "originalPath": "src/q2_lib.py"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/src/q_common.py",
+        "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+        "bytes": 11365,
+        "originalPath": "src/q_common.py"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/src/robustness_wrapper.py",
+        "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+        "bytes": 4147,
+        "originalPath": "src/robustness_wrapper.py"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/src/seed_receipt_wrapper.py",
+        "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+        "bytes": 4571,
+        "originalPath": "src/seed_receipt_wrapper.py"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/src/target_columns.py",
+        "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "bytes": 29435,
+        "originalPath": "src/target_columns.py"
+      },
+      {
+        "path": "experiments/EXP-0114/inputs/src/v6_common.py",
+        "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+        "bytes": 13536,
+        "originalPath": "src/v6_common.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/robustness_wrapper.py",
+    "args": [
+      "--target",
+      "src/q2_fix.py",
+      "--set",
+      "ALIGN_CSV=\"data/processed/sensory_name_alignment.csv\"",
+      "--repeat",
+      "2",
+      "--reps",
+      "500"
+    ],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/robustness_wrapper.py",
+      "--target",
+      "src/q2_fix.py",
+      "--set",
+      "ALIGN_CSV=\"data/processed/sensory_name_alignment.csv\"",
+      "--repeat",
+      "2",
+      "--reps",
+      "500"
+    ],
+    "cwd": "experiments/EXP-0114"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261027,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/robustness_wrapper.py",
+      "--target",
+      "src/q2_fix.py",
+      "--set",
+      "ALIGN_CSV=\"data/processed/sensory_name_alignment.csv\"",
+      "--repeat",
+      "2",
+      "--reps",
+      "500"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261027,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "e549491a9cf306b6ed8cce9e1739c8be3ddc8aed17d3f60d873b892936a30906",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "v6fix-rob-q2-seed20261027",
+  "createdAt": "2026-10-27T11:32:05.031Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0114",
+  "registration": {
+    "questionId": "Q2",
+    "modelKind": "candidate",
+    "title": "ROB Q2 v6-fix seed block 3/3 (repeat 2, seed 20261027)",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": null,
+    "params": {
+      "dependencies": [
+        "src/robustness_wrapper.py",
+        "src/seed_receipt_wrapper.py",
+        "src/q2_fix.py",
+        "src/q2_lib.py",
+        "src/q1_lib.py",
+        "src/q_common.py",
+        "src/target_columns.py",
+        "src/v6_common.py",
+        "data/splits/SPLIT-0001/train.csv",
+        "data/clean/q1_mapped.csv",
+        "data/clean/q2_raw.csv",
+        "data/clean/q2_chem_meta.json",
+        "data/raw/imported/415709ac10f2f730-2.csv",
+        "data/raw/imported/a55004fb0390299a-6.csv",
+        "data/processed/sensory_name_alignment.csv",
+        "experiments/EXP-0075/repeat0/strict_top3.csv",
+        "experiments/EXP-0075/repeat1/strict_top3.csv",
+        "experiments/EXP-0075/repeat2/strict_top3.csv"
+      ],
+      "dependenciesComplete": true,
+      "freezeSources": true,
+      "perturbation": "seed block repeat=2 (registered seed 20261027), 500 bootstrap replicates, code/data/pi ordering unchanged",
+      "protocol": "ROB seed block for the v6-fixed Q2; the main reference experiment is EXP-0107 (repeat 0 = seed 20261025)",
+      "robustnessPlan": "ROB-0012 (to be pre-registered before this experiment's decision rule is read)",
+      "targetContractId": "TGT-0002",
+      "vpId": "VP-0018"
+    },
+    "codeFile": "src/robustness_wrapper.py",
+    "datasetId": "DATA-0001",
+    "splitId": null,
+    "seed": 20261027,
+    "args": [
+      "--target",
+      "src/q2_fix.py",
+      "--set",
+      "ALIGN_CSV=\"data/processed/sensory_name_alignment.csv\"",
+      "--repeat",
+      "2",
+      "--reps",
+      "500"
+    ],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0050"
+  }
+}

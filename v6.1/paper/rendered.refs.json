@@ -1,0 +1,2022 @@
+{
+  "generatedAt": "2026-10-27T13:43:52.465Z",
+  "input": "report/paper.md",
+  "inputSha256": "b319ccd9a8c31749cad3db8828c4cca055afd449a5b47397996185df93a8b0df",
+  "output": "report/rendered.md",
+  "sha256": "59c731bcae1087cded39b135c3684a55f9b2e2858f5737a34075489a8289649c",
+  "allowStale": false,
+  "placeholders": 203,
+  "passes": 1,
+  "refs": [
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae",
+      "value": 0.35929156588219174
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_median",
+      "value": 0.39817732837288883
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50",
+      "value": 0.350504156920024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50_median",
+      "value": 0.3918800487369867
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard",
+      "value": 0.2091111111111111
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_mean",
+      "value": 0.9816877777777778
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_legacy_mean",
+      "value": 0.7225544444444444
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance",
+      "value": 0.8726874826148657
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "nonenal-increases-design",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-increases",
+      "value": 366
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-proxy-increase-share",
+      "value": 0.488
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-verified-primary",
+      "value": 3465
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-verified-denominator-primary",
+      "value": 3663
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy",
+      "value": 2.0798861351916886
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "eq_ridge_rank50_max_abs_diff",
+      "value": 3.9968028886505635e-15
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_median",
+      "value": 0.39817732837288883
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50_median",
+      "value": 0.3918800487369867
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae",
+      "value": 0.35929156588219174
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50",
+      "value": 0.350504156920024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "macro_r2_af30",
+      "value": 0.1854199218782663
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "skill_af30",
+      "value": 0.09765940881064172
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0041",
+      "path": "figures/confirmatory_v2/Q1-per-target-skill.png",
+      "sha256": "2557001da5d9510a8f8afbfd682d4149c2b276b294901892dbc45ee0c8cf5838"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0042",
+      "path": "figures/confirmatory_v2/Q1-model-comparison.png",
+      "sha256": "a461da972ec8e999b9d643e945cf792f262d61c88aa85680fc67e7ba8119122e"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_ridge0",
+      "value": 0.3666617580105253
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_graph_ridge",
+      "value": 0.3664110157826924
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_ridge0",
+      "value": 0.3666617580105253
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae",
+      "value": 0.35929156588219174
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0043",
+      "path": "figures/confirmatory_v2/Q1-grade-distribution.png",
+      "sha256": "e2cf95cdb0e4fa5d16a79db21f08f1abc8f8136346a2b02612285ea60daa27d4"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae",
+      "value": 0.35929156588219174
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_median",
+      "value": 0.39817732837288883
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50",
+      "value": 0.350504156920024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50_median",
+      "value": 0.3918800487369867
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0044",
+      "path": "figures/confirmatory_v2/Q2-network.png",
+      "sha256": "4f8321a856a66e9a0f6807d11bb8e893630149be640c619b2355e9e3e09bcd9b"
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0045",
+      "path": "figures/confirmatory_v2/Q2-attachment2-network.png",
+      "sha256": "5b0c129a52cb17b02d8c25d30cb967adce0f2b0e6269f1b68a6eb510736ec80d"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "bootstrap_reps",
+      "value": 500
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_legacy_mean",
+      "value": 0.7225544444444444
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_mean",
+      "value": 0.42045666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_below_0.5_count",
+      "value": 1263
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_below_0.5_denominator",
+      "value": 1800
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "cross_repeat_jaccard",
+      "value": 0.8748333333333335
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard",
+      "value": 0.2091111111111111
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard-point",
+      "value": 0.19766666666666666
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard",
+      "value": 0.2091111111111111
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0046",
+      "path": "figures/confirmatory_v2/Q2-stability.png",
+      "sha256": "bb03ab24177c345c2ef3ba0e251f78d2b1834a210b93d59c0872094dc6e84ab9"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_mean",
+      "value": 0.9816877777777778
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_legacy_mean",
+      "value": 0.7225544444444444
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_negative_point_count",
+      "value": 503
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_direction_undetermined_count",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_zero_count",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_invalid_count",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "external_6csv_mean_spearman_aligned",
+      "value": 0.9210176180408739
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "external_6csv_mean_spearman_aligned_strict",
+      "value": 0.9080152788388083
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard",
+      "value": 0.2091111111111111
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "cross_repeat_jaccard",
+      "value": 0.8748333333333335
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_mean",
+      "value": 0.42045666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_below_0.5_count",
+      "value": 1263
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_mean",
+      "value": 0.9816877777777778
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_legacy_mean",
+      "value": 0.7225544444444444
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-cells",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-samples",
+      "value": 750
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-cells-estimable",
+      "value": 177
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-samples-estimable",
+      "value": 729
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-cells-excluded-energy",
+      "value": 21
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraint-satisfaction-raw",
+      "value": 0.12666666666666668
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "nonenal-increases-design",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "nonenal-max-increase-design",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-increases",
+      "value": 366
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-proxy-increase-share",
+      "value": 0.488
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-samples",
+      "value": 750
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance",
+      "value": 0.8726874826148657
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-V-raw",
+      "value": 15.99994601104919
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-U-signed",
+      "value": 1.6153896894821214
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "diversity",
+      "value": 17.4190014733392
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "nearest-neighbor",
+      "value": 15.52015363005555
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "duplicate-share",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "edge-fraction",
+      "value": 0.1236709956709957
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance",
+      "value": 0.8726874826148657
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0047",
+      "path": "figures/confirmatory_v2/Q3-energy-comparison.png",
+      "sha256": "5de16529353bfeb2356d658dd72185713fe0ea819757a13e97dd8f8ab5866546"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "dependence-spectrum-mae",
+      "value": 0.005622900215633008
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "covariance-trace-ratio",
+      "value": 0.8370976437048002
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "marginal-error",
+      "value": 0.49331012037675936
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "profile-pooled-spearman",
+      "value": 0.9045378151260504
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "profile-spearman",
+      "value": 0.4710350060024013
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "profile-mae",
+      "value": 0.22434160673912668
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance",
+      "value": 0.8726874826148657
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-cells-estimable",
+      "value": 177
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-samples-estimable",
+      "value": 729
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-cells-subset",
+      "value": 27
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-V-subset-tripel-kriek-lambic",
+      "value": 33.78288729066554
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance",
+      "value": 0.8726874826148657
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "n-cells",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-above-style-bound",
+      "value": 90
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0048",
+      "path": "figures/confirmatory_v2/Q3-per-style-energy.png",
+      "sha256": "69dda2f9ab9dcab9c926819e471bf0079de5a1ceb27f7401db6f25b135e73631"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraints-verified",
+      "value": 19670
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraints-conditional",
+      "value": 8211
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraints-not-identifiable",
+      "value": 619
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraints-infeasible",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraint-records-verified-share",
+      "value": 0.6901754385964912
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-stale-intercept-c-min",
+      "value": -0.10860385674698787
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-stale-intercept-c-max",
+      "value": -0.013708071262500055
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-stale-identity-error",
+      "value": 8.274037093680878e-17
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-stale-halfspace-residual",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-status-optimal",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-status-infeasible",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-status-not-converged",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-primal-residual",
+      "value": 9.994750582720258e-9
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-dual-residual",
+      "value": 2.1051915766179263e-10
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-constraint-violation",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "objective-gradient-fd-max-abs",
+      "value": 2.3575514873641623e-9
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-stale-intercept-c-min",
+      "value": -0.10860385674698787
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-stale-intercept-c-max",
+      "value": -0.013708071262500055
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-stale-identity-error",
+      "value": 8.274037093680878e-17
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-DMS",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-X2.3.butanedione",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-X4VG",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-X.E..2.nonenal",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-qp-quantile-anchor",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-qp-source-anchor",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-source-fixed",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-target-mean-projection",
+      "value": 0.41414141414141414
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-target-mean-projection-full",
+      "value": 6.379240954520166
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-target-mean-projection-full",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy",
+      "value": 2.0798861351916886
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-target-mean-projection",
+      "value": 6.94148284204317
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-target-mean-projection",
+      "value": 0.41414141414141414
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonenal-nonincrease-rate-primary",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "t2n-proxy-increase-share-primary",
+      "value": 0.06060606060606061
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-verified-primary",
+      "value": 3465
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-conditional-primary",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-not-identifiable-primary",
+      "value": 99
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-failed-primary",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-verified-denominator-primary",
+      "value": 3663
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-constraint-violation",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0049",
+      "path": "figures/confirmatory_v2/Q3-transfer-shift.png",
+      "sha256": "0b4ac2b1efd1654071777657c2aa7444757ab9a3e97c8880084dbe618a8755cd"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "target-mean-self-distance",
+      "value": 4.74908413763155e-16
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "target-mean-self-distance-legacy",
+      "value": 0.6654909915445382
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy",
+      "value": 2.0798861351916886
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-normalized",
+      "value": 0.11341058752359791
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-source-fixed",
+      "value": 7.196326285149654
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-target-mean-projection",
+      "value": 6.94148284204317
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-target-mean-projection-full",
+      "value": 6.379240954520166
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance",
+      "value": 0.8726874826148657
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraints-verified",
+      "value": 19670
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraints-conditional",
+      "value": 8211
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraints-not-identifiable",
+      "value": 619
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraints-infeasible",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy",
+      "value": 2.0798861351916886
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-normalized",
+      "value": 0.11341058752359791
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-target-mean-projection-full",
+      "value": 6.379240954520166
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-target-mean-projection-full",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "nonenal-increases-design",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-increases",
+      "value": 366
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-proxy-increase-share",
+      "value": 0.488
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "t2n-proxy-increase-share-primary",
+      "value": 0.06060606060606061
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0100",
+      "metricKey": "mae",
+      "value": 0.35422354618559243
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0101",
+      "metricKey": "mae",
+      "value": 0.36243390816790516
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0102",
+      "metricKey": "mae",
+      "value": 0.35763459908881995
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0125",
+      "metricKey": "topk-jaccard",
+      "value": 0.2103333333333333
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0126",
+      "metricKey": "topk-jaccard",
+      "value": 0.20733333333333334
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0131",
+      "metricKey": "topk-jaccard",
+      "value": 0.20966666666666664
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0127",
+      "metricKey": "energy-distance",
+      "value": 0.8639056831482218
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0128",
+      "metricKey": "energy-distance",
+      "value": 0.8702681221486325
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0132",
+      "metricKey": "energy-distance",
+      "value": 0.8838886425477438
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0129",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0130",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0133",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "figure",
+      "figureId": "FIG-0050",
+      "path": "figures/confirmatory_v2/ROB-summary.png",
+      "sha256": "22ed0dffee7f6e07d61b64ca891f206bd71754abcae617c2ce5f2bd7c7d1999f"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_mean",
+      "value": 0.9816877777777778
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae",
+      "value": 0.35929156588219174
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_median",
+      "value": 0.39817732837288883
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50",
+      "value": 0.350504156920024
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50_median",
+      "value": 0.3918800487369867
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard",
+      "value": 0.2091111111111111
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_mean",
+      "value": 0.42045666666666665
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_mean",
+      "value": 0.9816877777777778
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_legacy_mean",
+      "value": 0.7225544444444444
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance",
+      "value": 0.8726874826148657
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "nonenal-increases-design",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-increases",
+      "value": 366
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-proxy-increase-share",
+      "value": 0.488
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy",
+      "value": 2.0798861351916886
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-target-mean-projection-full",
+      "value": 6.379240954520166
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0056"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae",
+      "value": 0.35929156588219174
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0100",
+      "metricKey": "mae",
+      "value": 0.35422354618559243
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0101",
+      "metricKey": "mae",
+      "value": 0.36243390816790516
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0102",
+      "metricKey": "mae",
+      "value": 0.35763459908881995
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0074",
+      "metricKey": "mae",
+      "value": 0.39817732837288883
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50",
+      "value": 0.350504156920024
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0059"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0100",
+      "metricKey": "mae",
+      "value": 0.35422354618559243
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0101",
+      "metricKey": "mae",
+      "value": 0.36243390816790516
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0102",
+      "metricKey": "mae",
+      "value": 0.35763459908881995
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0060"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard",
+      "value": 0.2091111111111111
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard-point",
+      "value": 0.19766666666666666
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_mean",
+      "value": 0.9816877777777778
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_legacy_mean",
+      "value": 0.7225544444444444
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_below_0.5_count",
+      "value": 1263
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_below_0.5_denominator",
+      "value": 1800
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0063"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0125",
+      "metricKey": "topk-jaccard",
+      "value": 0.2103333333333333
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0126",
+      "metricKey": "topk-jaccard",
+      "value": 0.20733333333333334
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0131",
+      "metricKey": "topk-jaccard",
+      "value": 0.20966666666666664
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0061"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance",
+      "value": 0.8726874826148657
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraint-satisfaction",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-V-raw",
+      "value": 15.99994601104919
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-U-signed",
+      "value": 1.6153896894821214
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-V-subset-tripel-kriek-lambic",
+      "value": 33.78288729066554
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "nonenal-increases-design",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-increases",
+      "value": 366
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0064"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0127",
+      "metricKey": "energy-distance",
+      "value": 0.8639056831482218
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0128",
+      "metricKey": "energy-distance",
+      "value": 0.8702681221486325
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0132",
+      "metricKey": "energy-distance",
+      "value": 0.8838886425477438
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0067"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy",
+      "value": 2.0798861351916886
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-primal-residual",
+      "value": 9.994750582720258e-9
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-dual-residual",
+      "value": 2.1051915766179263e-10
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-constraint-violation",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-stale-halfspace-residual",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-target-mean-projection-full",
+      "value": 6.379240954520166
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-target-mean-projection-full",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-verified-primary",
+      "value": 3465
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-verified-denominator-primary",
+      "value": 3663
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-not-identifiable-primary",
+      "value": 99
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-conditional-primary",
+      "value": 198
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-failed-primary",
+      "value": 0
+    },
+    {
+      "pass": 1,
+      "kind": "claim",
+      "claimId": "CLAIM-0065"
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0129",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0130",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    },
+    {
+      "pass": 1,
+      "kind": "metric",
+      "experimentId": "EXP-0133",
+      "metricKey": "nonincrease-rate",
+      "value": 1
+    }
+  ],
+  "staleRefs": [],
+  "warnings": [],
+  "bindings": {
+    "schemaVersion": 2,
+    "inputSha256": "b319ccd9a8c31749cad3db8828c4cca055afd449a5b47397996185df93a8b0df",
+    "configVersion": 2,
+    "configRawSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+    "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+    "freeze": {
+      "at": "2026-10-24T14:36:58.240Z",
+      "revision": 2731,
+      "configVersion": 1,
+      "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+      "claimIds": [
+        "CLAIM-0012",
+        "CLAIM-0014",
+        "CLAIM-0018",
+        "CLAIM-0019",
+        "CLAIM-0021",
+        "CLAIM-0022"
+      ],
+      "figureIds": [
+        "FIG-0001",
+        "FIG-0002",
+        "FIG-0003",
+        "FIG-0004",
+        "FIG-0005",
+        "FIG-0006",
+        "FIG-0007",
+        "FIG-0008",
+        "FIG-0009",
+        "FIG-0010",
+        "FIG-0011",
+        "FIG-0012",
+        "FIG-0013",
+        "FIG-0014",
+        "FIG-0015",
+        "FIG-0016",
+        "FIG-0017",
+        "FIG-0018",
+        "FIG-0019",
+        "FIG-0020",
+        "FIG-0021",
+        "FIG-0022",
+        "FIG-0023",
+        "FIG-0024",
+        "FIG-0026",
+        "FIG-0028",
+        "FIG-0029",
+        "FIG-0030",
+        "FIG-0031"
+      ]
+    },
+    "selections": [
+      {
+        "questionId": "Q1",
+        "modelId": "MODEL-0048",
+        "selectionStatus": "provisional",
+        "selectionRecordedAt": "2026-10-26T13:59:24.389Z",
+        "selectionEvidence": {
+          "experimentId": "EXP-0073",
+          "validationIds": [
+            "VAL-0055",
+            "VAL-0062",
+            "VAL-0063",
+            "VAL-0064",
+            "VAL-0065"
+          ],
+          "configVersion": 2,
+          "configRawSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+          "recordedAt": "2026-10-26T13:59:24.376Z"
+        },
+        "modelVersion": "904b9401e8ca068e46b99832bcaab6dac9cdd4164f5eedabea34e060606daeb1",
+        "experimentId": "EXP-0102",
+        "metricsSha256": "5a0914ff1313930198a6f7f7066181cd21e85f1baa5723367585d075f5d0bea0"
+      },
+      {
+        "questionId": "Q2",
+        "modelId": "MODEL-0050",
+        "selectionStatus": "provisional",
+        "selectionRecordedAt": "2026-10-27T12:41:08.968Z",
+        "selectionEvidence": {
+          "experimentId": "EXP-0131",
+          "validationIds": [],
+          "configVersion": 2,
+          "configRawSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+          "recordedAt": "2026-10-27T12:41:08.946Z"
+        },
+        "modelVersion": "5fd7f38022de9685fc6127f52f232154e5f2e3b3a1f68d730a899d3897a4feb0",
+        "experimentId": "EXP-0131",
+        "metricsSha256": "8e40824d46d712f43b5761cc7f26d1fee89587385a4ed9651155f7bcda56924f"
+      },
+      {
+        "questionId": "Q3",
+        "modelId": "MODEL-0053",
+        "selectionStatus": "provisional",
+        "selectionRecordedAt": "2026-10-26T13:59:33.433Z",
+        "selectionEvidence": {
+          "experimentId": "EXP-0079",
+          "validationIds": [
+            "VAL-0060",
+            "VAL-0066",
+            "VAL-0068"
+          ],
+          "configVersion": 2,
+          "configRawSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+          "recordedAt": "2026-10-26T13:59:33.420Z"
+        },
+        "modelVersion": "40552145b0678abd06cc8e6d05f1e3a418af140eca84f41cb53203708d28b726",
+        "experimentId": "EXP-0132",
+        "metricsSha256": "058bf3b83c0e3645177d532841cbf8dd95aecdfe566bc42d152d3613080053a3"
+      }
+    ],
+    "evidence": {
+      "claims": [
+        {
+          "id": "CLAIM-0056",
+          "version": "23cd841218c6c9a8cf1b3b6258524dec13081cd18b1f84e4762130f60c4d93e9",
+          "status": "active"
+        },
+        {
+          "id": "CLAIM-0059",
+          "version": "50589a190012fb8e894730e1fa3b794893f8145644981cf8f11600dcca5eb5f3",
+          "status": "active"
+        },
+        {
+          "id": "CLAIM-0060",
+          "version": "eb284401859d3a6dd4023dd3100510f2ec20185fe385babdbca939e3a5102e2f",
+          "status": "active"
+        },
+        {
+          "id": "CLAIM-0061",
+          "version": "7fce618fab58b813d2e40927f9ae005248afb334063a040ecf7dd00a7b13cdfb",
+          "status": "active"
+        },
+        {
+          "id": "CLAIM-0063",
+          "version": "73e62d397370acb3561a684901190226b0ffcf9bb8911cdb54ed20f17a28c6a9",
+          "status": "active"
+        },
+        {
+          "id": "CLAIM-0064",
+          "version": "048afaec8d3804416316619798b2e536ed5f541c544c280c492ff10d90b5d86d",
+          "status": "active"
+        },
+        {
+          "id": "CLAIM-0065",
+          "version": "24449c5d3c9c343a0f917c36fe6c515f177a7851082ac465cd2a2578c254b1bf",
+          "status": "active"
+        },
+        {
+          "id": "CLAIM-0067",
+          "version": "35d4bb343e4686c43369319d0551b1ea938d87392090e4cb56e4d4952d260d09",
+          "status": "active"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "EXP-0073",
+          "metricsSha256": "8cb8a9c8dce4088f18549deb8cc1301dedbc933ca8d381983344f70d3ab32759",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0074",
+          "metricsSha256": "ec11814caa0160bd3941265f10cf6823461c3053e7de699685eb87ee6e2f3d5d",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0100",
+          "metricsSha256": "8b098e2ba2745a15566ab4c52c002bcf959d1e54e60f0d12cd64ff8c3d317802",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0101",
+          "metricsSha256": "da5e06bc2175f0073533a283b67d1abfc546ed6bed2ffadcae01a0083cfb836f",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0102",
+          "metricsSha256": "5a0914ff1313930198a6f7f7066181cd21e85f1baa5723367585d075f5d0bea0",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0107",
+          "metricsSha256": "4c81c496906f50fc42608bf4180ec2335b729b59e5da534108a36c4ec3607e28",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0109",
+          "metricsSha256": "06276773b7da6b03471cb8b4f648d457c66a3fe1e655512aee087f8fd0737067",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0110",
+          "metricsSha256": "57feab82edd36c5d16e62ad7374a74dc55a83eea35129b7c83eaf8e615e729a7",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0125",
+          "metricsSha256": "4788fb29dd7a70c8fe445e9c3d1ef69e6fe1b04d416bc04f1ce95f18aed6c397",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0126",
+          "metricsSha256": "eef9fe768d55adc20f6ba3ca0c2f8c692d969f160e0fb1e2ab87e3154e9f6132",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0127",
+          "metricsSha256": "c9e34f88300e34a22c02b6a79638151d54cdf9daaa39fa57e0933cb17fd5e504",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0128",
+          "metricsSha256": "a47c81cb2ac0978765c15a38a077e6b056e3bc538d1b8f09cb301ba14d167e96",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0129",
+          "metricsSha256": "3dafc5d4d44c3efc6233167cc6a04212a6a9af2813bcbb2c3c4d5bdfe9e56e99",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0130",
+          "metricsSha256": "affc41989ed9fcd6a33a9c67aa59c6a4e43db35e79862ee137448efee22e6ff1",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0131",
+          "metricsSha256": "8e40824d46d712f43b5761cc7f26d1fee89587385a4ed9651155f7bcda56924f",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0132",
+          "metricsSha256": "058bf3b83c0e3645177d532841cbf8dd95aecdfe566bc42d152d3613080053a3",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        },
+        {
+          "id": "EXP-0133",
+          "metricsSha256": "80bc2a6cd63f152fab52cbb3960997e1e56764dcee6e0a39b862a9a659c8c0d5",
+          "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc"
+        }
+      ],
+      "figures": [
+        {
+          "id": "FIG-0041",
+          "sha256": "2557001da5d9510a8f8afbfd682d4149c2b276b294901892dbc45ee0c8cf5838"
+        },
+        {
+          "id": "FIG-0042",
+          "sha256": "a461da972ec8e999b9d643e945cf792f262d61c88aa85680fc67e7ba8119122e"
+        },
+        {
+          "id": "FIG-0043",
+          "sha256": "e2cf95cdb0e4fa5d16a79db21f08f1abc8f8136346a2b02612285ea60daa27d4"
+        },
+        {
+          "id": "FIG-0044",
+          "sha256": "4f8321a856a66e9a0f6807d11bb8e893630149be640c619b2355e9e3e09bcd9b"
+        },
+        {
+          "id": "FIG-0045",
+          "sha256": "5b0c129a52cb17b02d8c25d30cb967adce0f2b0e6269f1b68a6eb510736ec80d"
+        },
+        {
+          "id": "FIG-0046",
+          "sha256": "bb03ab24177c345c2ef3ba0e251f78d2b1834a210b93d59c0872094dc6e84ab9"
+        },
+        {
+          "id": "FIG-0047",
+          "sha256": "5de16529353bfeb2356d658dd72185713fe0ea819757a13e97dd8f8ab5866546"
+        },
+        {
+          "id": "FIG-0048",
+          "sha256": "69dda2f9ab9dcab9c926819e471bf0079de5a1ceb27f7401db6f25b135e73631"
+        },
+        {
+          "id": "FIG-0049",
+          "sha256": "0b4ac2b1efd1654071777657c2aa7444757ab9a3e97c8880084dbe618a8755cd"
+        },
+        {
+          "id": "FIG-0050",
+          "sha256": "22ed0dffee7f6e07d61b64ca891f206bd71754abcae617c2ce5f2bd7c7d1999f"
+        }
+      ]
+    }
+  }
+}

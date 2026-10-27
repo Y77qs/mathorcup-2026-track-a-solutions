@@ -1,0 +1,24 @@
+/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3065: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3066: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3065: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/baozhashizitou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3066: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py", line 63, in main
+    return int(module.main(rest) or 0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py", line 71, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py", line 65, in main
+    return int(module.main() or 0)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'

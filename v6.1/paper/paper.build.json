@@ -1,0 +1,95 @@
+{
+ "preview": false,
+ "outdir": "report",
+ "numberSections": false,
+ "wideTables": "rotate",
+ "source": "report/rendered.md",
+ "sourceSha256": "59c731bcae1087cded39b135c3684a55f9b2e2858f5737a34075489a8289649c",
+ "preprocessed": "report/paper.pandoc.md",
+ "preprocessedSha256": "3961cac4fdb0bd890096f2f30c955c7390378bb01d1ce1069701810612538b44",
+ "tex": "report/paper.tex",
+ "texSha256": "3286dde052752682369d8e579489994bf418302013644eba62db3868798b3597",
+ "tables": 15,
+ "layouts": {
+  "q1-models": "minipage-resizebox",
+  "q1-groups": "minipage-tabular",
+  "q1-grades": "sidewaystable",
+  "q1-scores-aroma": "sidewaystable",
+  "q1-scores-flavour": "sidewaystable",
+  "q2-universe": "minipage-p",
+  "q2-core-top3": "longtable",
+  "q3-raw-design": "minipage-p",
+  "q3-quality": "minipage-p",
+  "q3-qp-certs": "longtable",
+  "q3-transfer-stages": "minipage-p",
+  "q3-transfer-columns": "minipage-p",
+  "rob-confirmatory": "sidewaystable",
+  "q2-stability": "longtable",
+  "q3-constraints": "minipage-p"
+ },
+ "claims": [],
+ "figures": [
+  "FIG-0041",
+  "FIG-0042",
+  "FIG-0043",
+  "FIG-0044",
+  "FIG-0045",
+  "FIG-0046",
+  "FIG-0047",
+  "FIG-0048",
+  "FIG-0049",
+  "FIG-0050"
+ ],
+ "texNormalization": {
+  "ltcaptype_none_removed": 6,
+  "texttt_breakpoints": 74,
+  "display_math_fitted": 19,
+  "changed": 1
+ },
+ "checks": [
+  {
+   "name": "tex-no-ltcaptype-none",
+   "passed": true,
+   "detail": "pandoc LTcaptype-none wrappers removed (6)"
+  },
+  {
+   "name": "tex-has-source-sha",
+   "passed": true,
+   "detail": "source sha256 embedded in .tex"
+  },
+  {
+   "name": "tex-has-md-sha",
+   "passed": true,
+   "detail": "pandoc-input sha256 embedded in .tex"
+  },
+  {
+   "name": "tex-no-placeholders",
+   "passed": true,
+   "detail": "no unresolved {{...}} (nor pandoc-escaped \\{\\{) in .tex"
+  },
+  {
+   "name": "tex-no-pending",
+   "passed": true,
+   "detail": "no PENDING-FIGURE in .tex"
+  },
+  {
+   "name": "tex-no-fancyhdr",
+   "passed": true,
+   "detail": "no running-header package"
+  },
+  {
+   "name": "tex-booktabs",
+   "passed": true,
+   "detail": "booktabs rules present"
+  }
+ ],
+ "pdf": {
+  "ok": true,
+  "logs": [
+   "report/xelatex-1.log",
+   "report/xelatex-2.log"
+  ],
+  "pdf": "report/paper.pdf",
+  "pdfBytes": 3111844
+ }
+}

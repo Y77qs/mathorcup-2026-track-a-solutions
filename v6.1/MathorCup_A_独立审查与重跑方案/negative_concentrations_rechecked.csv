@@ -1,0 +1,143 @@
+saved_row,style,column,value
+12,Blond,chem__X.E..beta.damascenone,-3.75836658864735
+12,Blond,chem__alpha.humulene,-0.0181642867375759
+22,Brut,chem__X.E..beta.damascenone,-1.7306553585609237
+27,Dubbel,chem__X.E..beta.damascenone,-3.362692762246261
+27,Dubbel,chem__alpha.humulene,-0.0282663634842542
+31,Flanders old brown,chem__X.E..beta.damascenone,-3.5347651730297556
+31,Flanders old brown,chem__alpha.humulene,-0.0244969958405512
+36,Hoppy,chem__E.caryophyllene,-0.0766743954207344
+36,Hoppy,chem__X.E..beta.damascenone,-130.65350215077078
+36,Hoppy,chem__X.E.E..2.4.decadienal,-0.0021968818558282
+36,Hoppy,chem__X2.ethyl.3.methylpyrazine,-0.0003593074915041
+36,Hoppy,chem__X2.methyltetrahydrofuran.3.one,-81.79177671746841
+36,Hoppy,chem__X3.methylbutanal,-0.6045349910102821
+36,Hoppy,chem__Z.nerolidol,-0.0156157119987275
+36,Hoppy,chem__alpha.humulene,-0.0038519376439883
+36,Hoppy,chem__benzaldehyde,-0.0005259324382871
+36,Hoppy,chem__ethyl.isobutyrate,-0.0054732894343348
+36,Hoppy,chem__furfural,-0.0011055268912189
+42,Kriek,chem__X.E..beta.damascenone,-1.87909420730712
+42,Kriek,chem__alpha.humulene,-0.0068918151725966
+52,Low/No alcohol,chem__X.E..beta.damascenone,-0.0542439190048898
+55,Pils/Lager,chem__X.E..beta.damascenone,-2.18077100975417
+55,Pils/Lager,chem__alpha.humulene,-0.0040323946369534
+62,Scotch,chem__X.E..beta.damascenone,-10.256728167548614
+62,Scotch,chem__alpha.humulene,-0.0740592674498247
+68,Strong ale,chem__E.caryophyllene,-0.1073895028942694
+68,Strong ale,chem__X.E..beta.damascenone,-184.45467740412585
+68,Strong ale,chem__X.E.E..2.4.decadienal,-0.0030349785945222
+68,Strong ale,chem__X2.methyltetrahydrofuran.3.one,-115.47153737613912
+68,Strong ale,chem__X3.methylbutanal,-0.689561118942089
+68,Strong ale,chem__Z.nerolidol,-0.0090113004074257
+68,Strong ale,chem__ethyl.pentanoate,-0.0145851025341154
+68,Strong ale,chem__furfural,-0.0048783772760153
+68,Strong ale,chem__gamma.nonalactone,-63.25400075557947
+70,Strong ale,chem__E.caryophyllene,-0.0972954804232526
+70,Strong ale,chem__X.E..beta.damascenone,-170.3866927930513
+70,Strong ale,chem__X.E.E..2.4.decadienal,-0.0023924708077932
+70,Strong ale,chem__X2.methyltetrahydrofuran.3.one,-106.39194028575118
+70,Strong ale,chem__X3.methylbutanal,-1.1970992465061543
+70,Strong ale,chem__Z.nerolidol,-0.004686544890532
+70,Strong ale,chem__ethyl.isobutyrate,-0.0081822836067933
+70,Strong ale,chem__ethyl.pentanoate,-0.0105698331812396
+70,Strong ale,chem__furfural,-0.0099425716068326
+70,Strong ale,chem__gamma.nonalactone,-58.35261185703015
+72,Strong ale,chem__E.caryophyllene,-0.0112095380407665
+72,Strong ale,chem__X.E..beta.damascenone,-19.944000911361705
+72,Strong ale,chem__X.E.E..2.4.decadienal,-9.84589860369152e-05
+72,Strong ale,chem__X2.methyltetrahydrofuran.3.one,-12.948684169823183
+72,Strong ale,chem__furfural,-0.0015586293897361
+72,Strong ale,chem__gamma.nonalactone,-6.005892907843924
+73,Strong ale,chem__E.caryophyllene,-0.0826513935633706
+73,Strong ale,chem__X.E..beta.damascenone,-141.4953138269532
+73,Strong ale,chem__X.E.E..2.4.decadienal,-0.0022056273792952
+73,Strong ale,chem__X2.methyltetrahydrofuran.3.one,-89.00725666754767
+73,Strong ale,chem__X3.methylbutanal,-1.194341858201115
+73,Strong ale,chem__Z.nerolidol,-0.001224010770945
+73,Strong ale,chem__benzaldehyde,-0.0019262359656058
+73,Strong ale,chem__gamma.nonalactone,-47.82618836757807
+77,Tripel,chem__X.E..beta.damascenone,-1.994724439743211
+77,Tripel,chem__alpha.humulene,-0.0158008517422397
+79,Tripel,chem__X.E..beta.damascenone,-5.323492686371178
+79,Tripel,chem__alpha.humulene,-0.04255863591325
+87,Wheat,chem__E.caryophyllene,-0.0657422775141232
+87,Wheat,chem__X.E..beta.damascenone,-112.28047617654872
+87,Wheat,chem__X2.methyltetrahydrofuran.3.one,-70.5285199480396
+87,Wheat,chem__X3.methylbutanal,-0.8244064920912405
+87,Wheat,chem__Z.nerolidol,-0.0010432391461786
+87,Wheat,chem__benzaldehyde,-0.0016583020740196
+87,Wheat,chem__ethyl.pentanoate,-0.0042039266420126
+87,Wheat,chem__furfural,-0.0087685931073729
+87,Wheat,chem__gamma.nonalactone,-38.344576324193454
+89,Wheat,chem__E.caryophyllene,-0.0315455645815456
+89,Wheat,chem__X.E..beta.damascenone,-71.22902261727494
+89,Wheat,chem__X.E.E..2.4.decadienal,-0.0012018179266444
+89,Wheat,chem__X2.methyltetrahydrofuran.3.one,-44.63802266434705
+89,Wheat,chem__X3.methylbutanal,-0.5929398738230248
+89,Wheat,chem__benzaldehyde,-0.0003528855504915
+89,Wheat,chem__gamma.nonalactone,-23.78188080483124
+97,Blond,chem__X.E..beta.damascenone,-10.586348316724484
+97,Blond,chem__alpha.humulene,-0.0139933626568742
+105,Brett/cofermented,chem__X.E..beta.damascenone,-6.990975556097562
+107,Brown,chem__X.E..beta.damascenone,-14.17067194282832
+107,Brown,chem__alpha.humulene,-0.0196900089378493
+109,Brown,chem__X.E..beta.damascenone,-1.876288277740124
+109,Brown,chem__phenylacetaldehyde,-0.0001872423758747
+110,Brown,chem__X.E..beta.damascenone,-1.4128590519898034
+110,Brown,chem__amyl.acetate,-2.6583920495194383e-05
+111,Brut,chem__X.E..beta.damascenone,-287.4149883618913
+111,Brut,chem__X.E.E..2.4.decadienal,-0.003540370343948
+111,Brut,chem__Z.nerolidol,-0.0057251972208356
+111,Brut,chem__alpha.humulene,-0.155218364094784
+111,Brut,chem__diethyl.succinate,-0.023746642370335
+112,Christmas,chem__X.E..beta.damascenone,-265.6657637141268
+112,Christmas,chem__X.E.E..2.4.decadienal,-0.0033119943272134
+112,Christmas,chem__Z.nerolidol,-0.0160181620951552
+112,Christmas,chem__alpha.humulene,-0.1642059686651656
+112,Christmas,chem__citronellol,-0.1252662630317489
+113,Christmas,chem__X.E..2.nonenal,-0.002372220513037
+113,Christmas,chem__X.E..beta.damascenone,-297.444595951367
+113,Christmas,chem__X.E.E..2.4.decadienal,-0.0040077031673949
+113,Christmas,chem__X1.alpha.terpineol,-0.3717781478433777
+113,Christmas,chem__X3.methylbutanal,-0.4251261170492177
+113,Christmas,chem__Z.nerolidol,-0.0375613914911039
+113,Christmas,chem__alpha.humulene,-0.1748240411591456
+114,Christmas,chem__X.E..beta.damascenone,-46.25307771970508
+114,Christmas,chem__alpha.humulene,-0.0208871422587307
+129,Hoppy,chem__X3.methylbutanal,-0.0273754583047092
+129,Hoppy,chem__Z.nerolidol,-0.0079969189788584
+129,Hoppy,chem__alpha.humulene,-0.023527301541407
+135,Lambic,chem__X.E..beta.damascenone,-12.45267330024132
+135,Lambic,chem__alpha.humulene,-0.0059807905655148
+137,Low/No alcohol,chem__X.E..beta.damascenone,-13.254588930776244
+137,Low/No alcohol,chem__alpha.humulene,-0.0167813248976619
+147,Scotch,chem__X.E..beta.damascenone,-11.08552095167548
+147,Scotch,chem__alpha.humulene,-0.0056779450908976
+147,Scotch,chem__citronellol,-0.0619917018858687
+148,Scotch,chem__X.E..beta.damascenone,-99.8440580972692
+148,Scotch,chem__X.E.E..2.4.decadienal,-0.0013466320363701
+148,Scotch,chem__Z.nerolidol,-0.005016212294016
+148,Scotch,chem__alpha.humulene,-0.0536367368005105
+159,Tripel,chem__X.E..beta.damascenone,-9.820439809732004
+159,Tripel,chem__amyl.acetate,-0.0003419775262788
+163,Tripel,chem__X.E..beta.damascenone,-11.017540390902584
+163,Tripel,chem__alpha.humulene,-0.0112553612557876
+168,West Flanders ale,chem__X.E..beta.damascenone,-8.750589508214551
+168,West Flanders ale,chem__alpha.humulene,-0.0125995873480559
+173,Wheat,chem__X.E..beta.damascenone,-6.349431812005751
+173,Wheat,chem__diethyl.succinate,-0.0129445402698878
+173,Wheat,chem__phenylacetaldehyde,-0.0011653412990934
+182,Blond,chem__X3.methylbutanal,-0.1247449816150618
+197,Christmas,chem__X3.methylbutanal,-0.2738091849348113
+197,Christmas,chem__ethyl.nicotinate,-0.0004197529176604
+197,Christmas,chem__linalool,-0.036456782120918
+209,Hoppy,chem__X2.methyltetrahydrofuran.3.one,-3.836495924418922
+209,Hoppy,chem__gamma.nonalactone,-1.368816892911359
+209,Hoppy,chem__methylpyrazine,-2.0260862913690873e-06
+217,Low/No alcohol,chem__X.E.E..2.4.decadienal,-1.6022907176242224e-05
+217,Low/No alcohol,chem__X3.methylbutanal,-0.3417857511323173
+217,Low/No alcohol,chem__citronellol,-0.1182526272937741
+217,Low/No alcohol,chem__ethyl.isobutyrate,-0.0134756298698208
+217,Low/No alcohol,chem__linalool,-0.4183100048814144
+235,Tripel,chem__amyl.acetate,-0.0003796378980249

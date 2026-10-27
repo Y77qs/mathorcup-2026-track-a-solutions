@@ -1,0 +1,20 @@
+[q3_transfer_fix] repeats=[0, 1, 2] rows=396 solves=198 elapsed=6.9s
+  transfer-energy                            2.261080494465066
+  transfer-energy-U                          -0.14768122611614823
+  transfer-energy-normalized                 0.12363579466496381
+  target-mean-self-distance                  4.74908413763155e-16
+  target-mean-self-distance-legacy           0.6654909915445382
+  qp-max-primal-residual                     9.989717497660422e-09
+  qp-max-dual-residual                       3.393784142602385e-10
+  qp-max-constraint-violation                0.0
+  nonincrease-rate                           1.0
+  nonincrease-rate-source-anchor             1.0
+  objective-gradient-fd-max-abs              4.493432292917987e-09
+  objective-gradient-fd-max-rel              8.35746576166791e-06
+  qp-status-optimal                          198
+  qp-status-not-converged                    0
+  qp-status-infeasible                       0
+  energy[source-fixed] V=7.1963 U=4.8177 nonincrease=1.0
+  energy[target-mean-projection] V=6.9415 U=5.8914 nonincrease=0.41414141414141414
+  energy[qp-source-anchor] V=7.2406 U=4.8958 nonincrease=1.0
+  energy[qp-quantile-anchor] V=2.2611 U=-0.1477 nonincrease=1.0

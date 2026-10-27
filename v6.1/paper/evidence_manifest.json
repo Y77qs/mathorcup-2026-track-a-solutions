@@ -1,0 +1,804 @@
+{
+ "kind": "paper-evidence-manifest",
+ "generatedFrom": "state/ledger.json",
+ "ledgerRevision": 5055,
+ "draftOnly": true,
+ "citationRule": "only objects listed here may appear in report/paper.md; ids are read from the ledger, never hand-typed",
+ "questions": {
+  "Q1": {
+   "questionId": "Q1",
+   "selectedModelId": "MODEL-0048",
+   "selectionStatus": "provisional",
+   "claim": {
+    "claimId": "CLAIM-0056",
+    "status": "active",
+    "critical": true,
+    "claimType": "contemporaneous_association",
+    "targetContractId": "TGT-0001",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0100",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0101",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0102",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0074",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50"
+     }
+    ],
+    "validationIds": [
+     "VAL-0063",
+     "VAL-0064",
+     "VAL-0065"
+    ],
+    "limitations": [
+     "内部 OOF 重验证，不是外部独立测试",
+     "split-integrity 与 holdout-metrics 结构性不可满足，Q1 selection 仍为 provisional",
+     "固定种子复跑（EXP-0083 / VAL-0065）只证确定性重现，不是独立实现",
+     "ROB-0011 只覆盖 2/3 冻结种子（repeat 0/1）；旧 ROB-0007 及其分母=1 口径限制保留为历史",
+     "绝对极差 0.008210 与相对极差 0.023178 分列；判定上限 0.05 沿用既有规则、未按结果调整",
+     "结论只适用于当前候选 MODEL-0048、当前数据与当前协议"
+    ],
+    "statement": "确认轮 Q1：train-only 3×3×3 嵌套 CV 下图正则低秩（MODEL-0048 / EXP-0073）A/F30 等权 MAE = 0.359292，同协议中位数基线（EXP-0074）0.398177，差 0.038886；全 50 维 0.350504。证据：VAL-0063/0064/0065；稳健性**ROB-0011**（统一 wrapper 7d7ab6aca6c2）：参考 EXP-0100（repeat 0）、种子扰动 EXP-0101（repeat 1 / seed 20261026）、参数扰动 EXP-0102（内层 λ 网格 ×0.5，标量 lambdaMultiplier=0.5）→ mae 0.354224 / 0.362434 / 0.357635，**绝对极差 0.008210、相对极差 0.023178 ≤ 0.05（插件原生相对口径）**，decisionPassed=true。三值与旧 ROB-0007 逐位相同，只证当前协议下一致。限制：内部 OOF 非外部测试；split-integrity/holdout-metrics 不可满足、provisional；确定性重现≠独立实现；仅 2/3 种子；旧 ROB-0007 与分母=1 口径限制保留为历史。"
+   },
+   "robustnessClaim": {
+    "claimId": "CLAIM-0059",
+    "status": "active",
+    "critical": false,
+    "claimType": "descriptive",
+    "targetContractId": "TGT-0001",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0100",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0101",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0102",
+      "metricKey": "mae"
+     }
+    ],
+    "validationIds": [],
+    "limitations": [
+     "仅覆盖三个冻结种子中的两个（重复 0 与 1）",
+     "参数扰动只沿单一方向：内层正则网格整体乘以 0.5",
+     "无留出集；划分完整性与留出指标检查结构性不可满足",
+     "绝对极差与相对极差只描述本组扰动，不构成模型全面稳定的证据",
+     "固定种子的独立复跑只证明确定性重现，不是独立实现"
+    ],
+    "statement": "问题一的稳健性检验同时覆盖种子扰动与内层正则强度扰动：Aroma/Flavour 30 维等权 MAE 分别为 0.3542、0.3624、0.3576，绝对极差 0.0082、相对极差 0.0232，均在预设上限 0.05 之内。该检验只覆盖三个冻结种子中的两个，扰动也只沿单一参数方向（内层正则网格整体乘 0.5）；固定种子的独立复跑只证明确定性重现，不构成独立实现或独立稳健性证据。"
+   },
+   "robustnessPlan": {
+    "robId": "ROB-0011",
+    "preregisteredAt": "2026-10-26T15:16:37.780Z",
+    "executedAt": "2026-10-26T15:17:58.968Z",
+    "experimentIds": [
+     "EXP-0100",
+     "EXP-0101",
+     "EXP-0102"
+    ],
+    "metricKey": "mae",
+    "decisionRule": {
+     "limit": 0.05,
+     "type": "relative-range"
+    },
+    "values": [
+     0.35422354618559243,
+     0.36243390816790516,
+     0.35763459908881995
+    ],
+    "spread": 0.00821036198231273,
+    "decisionPassed": true,
+    "executionStatus": "completed"
+   },
+   "experiment": {
+    "id": "EXP-0073",
+    "status": "succeeded",
+    "metricsSha256": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f",
+    "resultSha256": "0be1a81d74ef4ee8f05702fdb10c25006dce2a1103cfb1d221d1434e07f550cc",
+    "dependencies": 6
+   },
+   "validations": {
+    "VAL-0063": {
+     "checkType": "leakage",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0064": {
+     "checkType": "baseline-compare",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0065": {
+     "checkType": "independent-rerun",
+     "passed": true,
+     "stale": null
+    }
+   }
+  },
+  "Q2": {
+   "questionId": "Q2",
+   "selectedModelId": "MODEL-0050",
+   "selectionStatus": "provisional",
+   "claim": {
+    "claimId": "CLAIM-0060",
+    "status": "active",
+    "critical": true,
+    "claimType": "contemporaneous_association",
+    "targetContractId": "TGT-0002",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "topk-jaccard-point"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_mean"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "sign_stability_legacy_mean"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_below_0.5_count"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0107",
+      "metricKey": "pi_below_0.5_denominator"
+     }
+    ],
+    "validationIds": [
+     "VAL-0073"
+    ],
+    "limitations": [
+     "同期关联，不是因果，也不是对未来感官的预测",
+     "6.csv 只是同源秩相关对照，不是独立外部验证集",
+     "严格共识 150 条中 95 条入选频率 π<0.5，符号方向稳定不等于入选稳定",
+     "符号为总体 Spearman 点估计方向；不是低秩模型系数方向，也不是因果方向",
+     "独立复跑为同代码同数据同种子的确定性重现（fixed-seed reproduction），不是独立实现复跑"
+    ],
+    "statement": "确认轮 Q2（v6 修正后，EXP-0107）：在固定 200 行训练集、3 个冻结种子块与每次 500 次风格分层 bootstrap 下，50 维 × 4 方法 Top-3 平均两两 Jaccard 为 0.2091111111111111（点估计口径 0.19766666666666666，跨重复一致率 0.8748333333333335）；入选频率 π 均值 0.42045666666666665，1800 个交付格中有 1263 个 π<0.5，主共识 150 条严格项中 95 条 π<0.5。符号稳定性改为“与总体 Spearman 点估计同方向”的一致率后为 0.9816877777777778，而旧口径 P(ρ>0) 为 0.7225544444444444；旧值可逐位复现（150/150 行 π 与旧 sign_stability 完全相同），说明此前 36 条负方向条目的低值来自定义错误而不是方向不稳。"
+   },
+   "robustnessClaim": {
+    "claimId": "CLAIM-0063",
+    "status": "active",
+    "critical": false,
+    "claimType": "rule_reproduction",
+    "targetContractId": null,
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0125",
+      "metricKey": "topk-jaccard"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0126",
+      "metricKey": "topk-jaccard"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0131",
+      "metricKey": "topk-jaccard"
+     }
+    ],
+    "validationIds": [],
+    "limitations": [
+     "已执行记录覆盖 2 个种子块（EXP-0125 参考 + EXP-0126 扰动）；计划声明 3 个种子块，第 3 块 EXP-0131（repeat 2）也是预登记后跑的 succeeded 实验，但工具拒绝覆盖已执行计划，未并入计划记录",
+     "只扰动冻结种子块，未做预算/划分/参数网格扰动",
+     "jaccard 是方法间集合一致性，不是预测准确率",
+     "同期关联，不是因果"
+    ],
+    "statement": "Q2 稳健性（ROB-0015，v6 修正后）：在固定 200 行训练集上只改变冻结种子块（repeat 0→1），topk-jaccard 从 0.2103333333333333 变为 0.20733333333333334，相对极差 0.003000 / 0.210333 ≈ 1.43%，满足预登记 relative-range ≤ 0.10；预登记后跑的第三个种子块 EXP-0131（repeat 2）为 0.20966666666666664，也落在同一区间内（相对极差 1.43%），但它不在计划记录的执行集内（工具拒绝覆盖已执行计划），故只作为补充证据列出。"
+   },
+   "robustnessPlan": {
+    "robId": "ROB-0015",
+    "preregisteredAt": "2026-10-27T11:50:53.535Z",
+    "executedAt": "2026-10-27T12:27:12.057Z",
+    "experimentIds": [
+     "EXP-0125",
+     "EXP-0126"
+    ],
+    "metricKey": "topk-jaccard",
+    "decisionRule": {
+     "limit": 0.1,
+     "reference": "first linked experiment = the post-plan repeat-0 reference",
+     "type": "relative-range"
+    },
+    "values": [
+     0.2103333333333333,
+     0.20733333333333334
+    ],
+    "spread": 0.002999999999999947,
+    "decisionPassed": true,
+    "executionStatus": "completed"
+   },
+   "experiment": {
+    "id": "EXP-0107",
+    "status": "succeeded",
+    "metricsSha256": "e14f77628789d3778fe96c57b3259d2ff2dfd4267f0f108e522d91bf30f3dc75",
+    "resultSha256": "1e5c33259fbd83c51f4009e6f93687ea20fc86bdc5aa21ca7f684f8b92805953",
+    "dependencies": 17
+   },
+   "validations": {
+    "VAL-0073": {
+     "checkType": "independent-rerun",
+     "passed": true,
+     "stale": null
+    }
+   }
+  },
+  "Q3gen": {
+   "questionId": "Q3",
+   "selectedModelId": "MODEL-0053",
+   "selectionStatus": "provisional",
+   "claim": {
+    "claimId": "CLAIM-0061",
+    "status": "active",
+    "critical": true,
+    "claimType": "descriptive",
+    "targetContractId": "TGT-0003",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-distance"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "constraint-satisfaction"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-V-raw"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-U-signed"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "energy-V-subset-tripel-kriek-lambic"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "nonenal-increases-design"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0109",
+      "metricKey": "t2n-increases"
+     }
+    ],
+    "validationIds": [
+     "VAL-0076",
+     "VAL-0077"
+    ],
+    "limitations": [
+     "constraint-satisfaction=1.0 是投影构造性质，不是经验发现；约束后谱必须披露边界夹断",
+     "生成器仍未胜过同风格训练行重采样参照（V 归一化 0.813731 更小），且本轮 copula-shared-only / style-empirical / independent-marginals 的 V 也略优于选中配置",
+     "感官 t2n 代理仍有 366/750（48.8%）增加；未加感官硬约束，真实化学 trans-2-nonenal 增加 0 条，两者是不同命题",
+     "Kriek 等小风格的 V 远高于整体（约 140），本轮未改善",
+     "边际 pooled fallback 占 458 行中的一部分（Faro 等小风格），已逐格声明"
+    ],
+    "statement": "确认轮 Q3 生成（v6 修正后，EXP-0109）：约束后设计谱的 constraint-satisfaction = 1.0（投影构造性质，不是经验发现），21 个可估计风格 177 个可估格的 n_gen 加权归一化经验能量距离 V = 0.8726874826148657（原始 V = 15.99994601104919，带符号诊断 U = 1.6153896894821214）；Tripel/Kriek/Lambic 子集 27 格的 V = 33.78288729066554（归一化 1.8078909138627393，U = 1.0278782459401254），分母与全风格不同。真实化学 trans-2-nonenal 相对原始抽样增加 0 条（maxIncrease=0），感官 t2n 代理仍增加 366/750（48.8%），两者分开报告。四类约束记录为 verified 19670 / conditional 8211 / not_identifiable 619 / infeasible 0。边际只用未填补有效观测估计，内层 (κ,κ_R) 选参改用与外层一致的经验 V 口径并重跑；同风格训练行重采样参照的 V 归一化为 0.8137313，仍优于本生成器，本结论不宣称优于该基线。"
+   },
+   "robustnessClaim": {
+    "claimId": "CLAIM-0064",
+    "status": "active",
+    "critical": false,
+    "claimType": "rule_reproduction",
+    "targetContractId": null,
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0127",
+      "metricKey": "energy-distance"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0128",
+      "metricKey": "energy-distance"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0132",
+      "metricKey": "energy-distance"
+     }
+    ],
+    "validationIds": [],
+    "limitations": [
+     "已执行记录覆盖 2 个种子块（EXP-0127 参考 + EXP-0128 扰动）；计划声明 3 个种子块，第 3 块 EXP-0132（repeat 2）也是预登记后跑的 succeeded 实验，但工具拒绝覆盖已执行计划，未并入计划记录",
+     "只扰动冻结种子块；未做参数网格或预算扰动",
+     "energy-distance 是分布质量指标，不是生成准确率；生成器仍未胜过同风格重采样基线"
+    ],
+    "statement": "Q3 生成稳健性（ROB-0016，v6 修正后）：只改变冻结种子块（repeat 0→1），归一化经验能量距离从 0.8639056831482218 变为 0.8702681221486325，相对极差 0.006362 / 0.863906 ≈ 0.74%，满足预登记 relative-range ≤ 0.05；预登记后跑的第三个种子块 EXP-0132（repeat 2）为 0.8838886425477438，三块相对极差 2.31% 仍 ≤ 0.05，但该第三块不在计划记录的执行集内（工具拒绝覆盖已执行计划），只作补充证据。"
+   },
+   "robustnessPlan": {
+    "robId": "ROB-0016",
+    "preregisteredAt": "2026-10-27T11:51:06.386Z",
+    "executedAt": "2026-10-27T12:27:25.407Z",
+    "experimentIds": [
+     "EXP-0127",
+     "EXP-0128"
+    ],
+    "metricKey": "energy-distance",
+    "decisionRule": {
+     "limit": 0.05,
+     "reference": "first linked experiment = the post-plan repeat-0 reference",
+     "type": "relative-range"
+    },
+    "values": [
+     0.8639056831482218,
+     0.8702681221486325
+    ],
+    "spread": 0.006362439000410669,
+    "decisionPassed": true,
+    "executionStatus": "completed"
+   },
+   "experiment": {
+    "id": "EXP-0109",
+    "status": "succeeded",
+    "metricsSha256": "2ce8572aec359941eee4814e506f9bd3d06af6f7c20397e43d5d267862a14813",
+    "resultSha256": "8c2d351888b969741a912115925670704918fc3ce64c7d2145141a2ed67fa436",
+    "dependencies": 10
+   },
+   "validations": {
+    "VAL-0076": {
+     "checkType": "leakage",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0077": {
+     "checkType": "independent-rerun",
+     "passed": true,
+     "stale": null
+    }
+   }
+  },
+  "Q3mig": {
+   "questionId": "Q3",
+   "selectedModelId": "MODEL-0053",
+   "selectionStatus": "provisional",
+   "claim": {
+    "claimId": "CLAIM-0067",
+    "status": "active",
+    "critical": true,
+    "claimType": "optimal_under_model",
+    "targetContractId": "TGT-0003",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-solves"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-primal-residual"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-dual-residual"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-constraint-violation"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "qp-max-stale-halfspace-residual"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "transfer-energy-target-mean-projection-full"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "nonincrease-rate-target-mean-projection-full"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-verified-primary"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-verified-denominator-primary"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-not-identifiable-primary"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-conditional-primary"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0110",
+      "metricKey": "verdict-failed-primary"
+     }
+    ],
+    "validationIds": [
+     "VAL-0074",
+     "VAL-0075"
+    ],
+    "limitations": [
+     "不增只在 1e-9 声明容差内成立；131/198 个 QP 解恰落在 stale 代理边界（qp-quantile 67、qp-source 64；495 行全策略合计 189/495）",
+     "198 个 QP 是 11 源 × 9 训练上下文 × 2 策略的重复求解，不是 198 款独立啤酒",
+     "stale_hops 是训练内线性代理，不是化学/感官测量",
+     "真实化学 trans-2-nonenal 不增与感官 t2n 代理不增是两个命题；t2n 代理仍有 6.06% 增加",
+     "旧 EXP-0080 未保存截距 c/centre/scale，修正结论只能来自新运行；不据此声称旧解违反不增",
+     "conditional 198 = 99 条 nonenal 源值上界（c_new≤c_source，不是训练 q90）+ 99 条 stale_hops 代理判定"
+    ],
+    "statement": "确认轮 Q3 迁移（v6 修正后，EXP-0110）：在 Pils/Lager→Tripel 的 11 源 × 3 重复 × 3 外折 × 5 策略（495 行）上，凸 QP 主策略 qp-quantile-anchor 的逐化学列不增率 = 1.0（DMS、双乙酰、4VG、真实 trans-2-nonenal 各 1.0），198 个 QP 全部 optimal，max primal = 9.994750582720258e-09、max dual = 2.1051915766179263e-10、max 约束违反 = 0。stale 半空间右端修正为 b = a'z_source + 1e-9（九折截距 c ∈ [-0.1086, -0.0137] 全为负；identity error 8.27e-17、半空间残差 0）；131/198 个解贴在该声明边界（qp-quantile 67、qp-source 64；495 行全策略合计 189/495），故“不增”只在 1e-9 容差内成立。完整可行域均值投影基线非增率 = 1.0、V = 6.379240954520166；QP 主策略 V = 2.0798861351916886；box-only 诊断 V = 6.94148284204317、非增率 0.41414141414141414。源状态分层（主策略 3762 条）：verified 3465（可核验分母 3663）、conditional 198、not_identifiable 99、failed 0；不可识别 99 = 81 条 4VG 地板存储码（physical_source = physical_new = 0，上界近乎空转）+ 18 条 beer119/beer28 源双乙酰缺失；条件 198 = 99 条 trans-2-nonenal 源值上界（c_new ≤ c_source，不是训练 q90）+ 99 条 stale_hops 代理判定。"
+   },
+   "robustnessClaim": {
+    "claimId": "CLAIM-0065",
+    "status": "active",
+    "critical": false,
+    "claimType": "rule_reproduction",
+    "targetContractId": null,
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0129",
+      "metricKey": "nonincrease-rate"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0130",
+      "metricKey": "nonincrease-rate"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0133",
+      "metricKey": "nonincrease-rate"
+     }
+    ],
+    "validationIds": [],
+    "limitations": [
+     "已执行记录覆盖 2 个种子块（EXP-0129 参考 + EXP-0130 扰动）；计划声明 3 个种子块，第 3 块 EXP-0133（repeat 2）也是预登记后跑的 succeeded 实验，但工具拒绝覆盖已执行计划，未并入计划记录",
+     "nonincrease-rate 在 QP 构造下饱和为 1.0，只有落在 1e-9 声明容差内的不增；min-value 判定不区分 1.0 的强弱",
+     "只扰动冻结种子块"
+    ],
+    "statement": "Q3 迁移稳健性（ROB-0017，v6 修正后）：只改变冻结种子块（repeat 0→1），逐化学列不增率在参考 EXP-0129 与扰动 EXP-0130 均为 1.0，满足预登记 min-value = 1（最小值 1 ≥ 1）；预登记后跑的第三个种子块 EXP-0133（repeat 2）同样为 1.0，但不在计划记录的执行集内（工具拒绝覆盖已执行计划），只作补充证据。"
+   },
+   "robustnessPlan": {
+    "robId": "ROB-0017",
+    "preregisteredAt": "2026-10-27T11:51:19.140Z",
+    "executedAt": "2026-10-27T12:27:38.764Z",
+    "experimentIds": [
+     "EXP-0129",
+     "EXP-0130"
+    ],
+    "metricKey": "nonincrease-rate",
+    "decisionRule": {
+     "limit": 1,
+     "reference": "every linked experiment must keep nonincrease-rate at 1.0",
+     "type": "min-value"
+    },
+    "values": [
+     1,
+     1
+    ],
+    "spread": 0,
+    "decisionPassed": true,
+    "executionStatus": "completed"
+   },
+   "experiment": {
+    "id": "EXP-0110",
+    "status": "succeeded",
+    "metricsSha256": "28890bdad41407cfaf4e7bfe0b26add3da880612b39afbea9919f0bc46bf72e1",
+    "resultSha256": "632b61d8e24988c2b068f2ec224ae2679eeccdaf1dbe13e16523bdd80a304189",
+    "dependencies": 11
+   },
+   "validations": {
+    "VAL-0074": {
+     "checkType": "leakage",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0075": {
+     "checkType": "independent-rerun",
+     "passed": true,
+     "stale": null
+    }
+   }
+  }
+ },
+ "forbiddenInPaper": {
+  "retiredClaims": [
+   "CLAIM-0001",
+   "CLAIM-0002",
+   "CLAIM-0003",
+   "CLAIM-0004",
+   "CLAIM-0005",
+   "CLAIM-0006",
+   "CLAIM-0007",
+   "CLAIM-0008",
+   "CLAIM-0009",
+   "CLAIM-0010",
+   "CLAIM-0011",
+   "CLAIM-0012",
+   "CLAIM-0013",
+   "CLAIM-0014",
+   "CLAIM-0015",
+   "CLAIM-0016",
+   "CLAIM-0017",
+   "CLAIM-0018",
+   "CLAIM-0019",
+   "CLAIM-0020",
+   "CLAIM-0021",
+   "CLAIM-0022",
+   "CLAIM-0023",
+   "CLAIM-0024",
+   "CLAIM-0025",
+   "CLAIM-0026",
+   "CLAIM-0027",
+   "CLAIM-0028",
+   "CLAIM-0029",
+   "CLAIM-0030",
+   "CLAIM-0031",
+   "CLAIM-0032",
+   "CLAIM-0033",
+   "CLAIM-0034",
+   "CLAIM-0035",
+   "CLAIM-0036",
+   "CLAIM-0037",
+   "CLAIM-0038",
+   "CLAIM-0039",
+   "CLAIM-0040",
+   "CLAIM-0041",
+   "CLAIM-0042",
+   "CLAIM-0043",
+   "CLAIM-0044",
+   "CLAIM-0045",
+   "CLAIM-0046",
+   "CLAIM-0047",
+   "CLAIM-0048",
+   "CLAIM-0049",
+   "CLAIM-0050",
+   "CLAIM-0051",
+   "CLAIM-0052",
+   "CLAIM-0053",
+   "CLAIM-0054",
+   "CLAIM-0055",
+   "CLAIM-0057",
+   "CLAIM-0058",
+   "CLAIM-0062",
+   "CLAIM-0066"
+  ],
+  "supersededRobustnessPlans": [
+   "ROB-0008",
+   "ROB-0009",
+   "ROB-0010"
+  ],
+  "pilotExperiments": "EXP-0038..EXP-0072 and EXP-0076/0077 (pilot round) and EXP-0075/0079/0080 + EXP-0089..0099 (previous confirmatory round) must not be cited as current evidence",
+  "retiredFigures": [
+   "FIG-0001",
+   "FIG-0002",
+   "FIG-0003",
+   "FIG-0004",
+   "FIG-0005",
+   "FIG-0006",
+   "FIG-0007",
+   "FIG-0008",
+   "FIG-0009",
+   "FIG-0010",
+   "FIG-0011",
+   "FIG-0012",
+   "FIG-0013",
+   "FIG-0014",
+   "FIG-0015",
+   "FIG-0016",
+   "FIG-0017",
+   "FIG-0018",
+   "FIG-0019",
+   "FIG-0020",
+   "FIG-0021",
+   "FIG-0022",
+   "FIG-0023",
+   "FIG-0024",
+   "FIG-0025",
+   "FIG-0026",
+   "FIG-0027",
+   "FIG-0028",
+   "FIG-0029",
+   "FIG-0030",
+   "FIG-0031",
+   "FIG-0032",
+   "FIG-0033",
+   "FIG-0034",
+   "FIG-0035",
+   "FIG-0036",
+   "FIG-0037",
+   "FIG-0038",
+   "FIG-0039",
+   "FIG-0040"
+  ]
+ },
+ "figures": {
+  "note": "ACTIVE figures only; sha256 is the CURRENT file bytes. retiredFigures above are history and must not be cited by the paper.",
+  "paperCited": [
+   "FIG-0041",
+   "FIG-0042",
+   "FIG-0043",
+   "FIG-0044",
+   "FIG-0045",
+   "FIG-0046",
+   "FIG-0047",
+   "FIG-0048",
+   "FIG-0049",
+   "FIG-0050"
+  ],
+  "active": [
+   {
+    "figureId": "FIG-0041",
+    "path": "figures/confirmatory_v2/Q1-per-target-skill.png",
+    "sha256": "2557001da5d9510a8f8afbfd682d4149c2b276b294901892dbc45ee0c8cf5838",
+    "caption": "问题一：逐目标相对误差改善 1−MAE模型/MAE中位数（图低秩，内部嵌套CV折外池化）；A/F30 0.0977、全50维 0.1056，12 个目标为负。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0042",
+    "path": "figures/confirmatory_v2/Q1-model-comparison.png",
+    "sha256": "a461da972ec8e999b9d643e945cf792f262d61c88aa85680fc67e7ba8119122e",
+    "caption": "问题一：四模型同协议折外MAE（内部3×3×3嵌套重验证，非holdout）：中位数0.398、岭0.367、图岭0.366、图低秩0.359；全50维另列。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0043",
+    "path": "figures/confirmatory_v2/Q1-grade-distribution.png",
+    "sha256": "e2cf95cdb0e4fa5d16a79db21f08f1abc8f8136346a2b02612285ea60daa27d4",
+    "caption": "问题一：相对等级 0–6 的折外预测分布与参照分布对照（内部嵌套CV、中秩经验CDF；属相对等级，未恢复人工评分）。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0044",
+    "path": "figures/confirmatory_v2/Q2-network.png",
+    "sha256": "4f8321a856a66e9a0f6807d11bb8e893630149be640c619b2355e9e3e09bcd9b",
+    "caption": "问题二：τ=0.5 Spearman 阈值网络（由 EXP-0107 注册输入重算，复现 732 边/51 分量）；严格单体216与扩展15分色，边非因果。",
+    "experimentIds": [
+     "EXP-0107"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0045",
+    "path": "figures/confirmatory_v2/Q2-attachment2-network.png",
+    "sha256": "5b0c129a52cb17b02d8c25d30cb967adce0f2b0e6269f1b68a6eb510736ec80d",
+    "caption": "问题二附件2：描述性化学相关网络（231 节点/645 边/52 分量，x/y 取自 nodes.csv）；仅解释网络结构，预测训练图仍在训练折内构建。",
+    "experimentIds": [],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0046",
+    "path": "figures/confirmatory_v2/Q2-stability.png",
+    "sha256": "bb03ab24177c345c2ef3ba0e251f78d2b1834a210b93d59c0872094dc6e84ab9",
+    "caption": "问题二：Top-3 入选频率 π、符号一致率与旧口径 p_positive；ROB-0015 为冻结种子块参数扰动（计划 n=2，补充块单列）。",
+    "experimentIds": [
+     "EXP-0107"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0047",
+    "path": "figures/confirmatory_v2/Q3-energy-comparison.png",
+    "sha256": "5de16529353bfeb2356d658dd72185713fe0ea819757a13e97dd8f8ab5866546",
+    "caption": "问题三：归一化经验 V 能量距离（V/D_train）对照；生成设计谱 0.8727 未优于源样本重采样 0.8137，带符号 U 单列不截零。",
+    "experimentIds": [
+     "EXP-0109"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0048",
+    "path": "figures/confirmatory_v2/Q3-per-style-energy.png",
+    "sha256": "69dda2f9ab9dcab9c926819e471bf0079de5a1ceb27f7401db6f25b135e73631",
+    "caption": "问题三：逐风格 n_gen 加权能量距离（21 可估风格）；三风格池化 1.8079 与 21 风格池化 0.8727 不得互替。",
+    "experimentIds": [
+     "EXP-0109"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0049",
+    "path": "figures/confirmatory_v2/Q3-transfer-shift.png",
+    "sha256": "0b4ac2b1efd1654071777657c2aa7444757ab9a3e97c8880084dbe618a8755cd",
+    "caption": "问题三：迁移三组量分面板——存储位移 |opt−src|、z 空间位移、约束残差 clamp(new−src,0)；残差非位移，按策略区分。",
+    "experimentIds": [
+     "EXP-0110"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0050",
+    "path": "figures/confirmatory_v2/ROB-summary.png",
+    "sha256": "22ed0dffee7f6e07d61b64ca891f206bd71754abcae617c2ce5f2bd7c7d1999f",
+    "caption": "四组稳健性：绝对极差与参照比值并排、各自预注册上限；ROB-0015/16/17 为冻结种子块参数扰动（计划 n=2），ROB-0017 饱和极差非改善。",
+    "experimentIds": [],
+    "citedInPaper": true
+   }
+  ]
+ },
+ "qualitySnapshot": {
+  "note": "run modeling_validate quality-report for the authoritative current values; this snapshot is informational",
+  "questions": {
+   "Q1": "provisional",
+   "Q2": "provisional",
+   "Q3": "provisional"
+  }
+ }
+}

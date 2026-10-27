@@ -1,0 +1,17 @@
+[robustness_wrapper] overrides: {"LAMBDAS": {"before": "(0.1, 1.0, 10.0)", "after": "(0.05, 0.5, 5.0)"}}
+[q1_fix] repeat=0 seed=20261025
+  [q1_fix] r0f0 train=159 test= 91 | ridge(rankgauss,lam=5) graph-ridge(rankgauss,lam=5,gamma=0.1) lowrank(rankgauss,lam=5,gamma=0,r=10)
+  [q1_fix] r0f1 train=167 test= 83 | ridge(rankgauss,lam=5) graph-ridge(rankgauss,lam=5,gamma=0.1) lowrank(rankgauss,lam=5,gamma=0,r=6)
+  [q1_fix] r0f2 train=174 test= 76 | ridge(rankgauss,lam=5) graph-ridge(rankgauss,lam=5,gamma=0.1) lowrank(rankgauss,lam=5,gamma=0,r=6)
+[q1_fix] metrics channel: modeling_contract (90 keys, 0 non-finite keys withheld)
+[q1_fix] OOF pooled over 1 repeat(s), 250 rows each
+[q1_fix] model              mae_af30    mae_all50   skill_af30
+[q1_fix] median             0.397808     0.391448     0.000000
+[q1_fix] ridge              0.357143     0.348862     0.102222
+[q1_fix] graph-ridge        0.357407     0.349181     0.101557
+[q1_fix] graph-lowrank      0.357635     0.349398     0.100986
+[q1_fix] repeat 0: median=0.397808 ridge0=0.357143 graph-ridge=0.357407 graph-lowrank=0.357635
+[q1_fix] equivalence r=50,gamma=0 vs ridge: max|diff|=2.665e-15 passed=True
+[q1_fix] grade(primary): QWK=0.28594863763962197 agreement=0.2229 gradeMAE=1.4057
+[q1_fix] checks: rows=250 foldMismatch=0 leaks=0 recomputeMaxDiff=0.00e+00
+[q1_fix] elapsed=0.5s out=/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0088

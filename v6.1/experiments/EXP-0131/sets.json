@@ -1,0 +1,1802 @@
+[
+  {
+    "dimension": "A_malt_all",
+    "method": "total_spearman",
+    "items": [
+      "acetaldehyde",
+      "methylpyrazine",
+      "X2.acetylpyrrole"
+    ]
+  },
+  {
+    "dimension": "A_malt_all",
+    "method": "within_style_spearman",
+    "items": [
+      "furfural",
+      "ethyl_octanoate",
+      "X4.8.alpha.epoxy.caryophyllane"
+    ]
+  },
+  {
+    "dimension": "A_malt_all",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "nerol",
+      "X2.acetylfuran"
+    ]
+  },
+  {
+    "dimension": "A_malt_all",
+    "method": "consensus",
+    "items": [
+      "furfural",
+      "X2.acetylfuran",
+      "beta.phellandrene"
+    ]
+  },
+  {
+    "dimension": "A_malt_grain",
+    "method": "total_spearman",
+    "items": [
+      "terpinen.4.ol",
+      "furfural",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "A_malt_grain",
+    "method": "within_style_spearman",
+    "items": [
+      "methyl.geranate",
+      "delta.terpinyl.acetate",
+      "ethyl_2.methyl_butyrate"
+    ]
+  },
+  {
+    "dimension": "A_malt_grain",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "X2.3.butanedione",
+      "X4VG"
+    ]
+  },
+  {
+    "dimension": "A_malt_grain",
+    "method": "consensus",
+    "items": [
+      "terpinen.4.ol",
+      "furfural",
+      "DMS"
+    ]
+  },
+  {
+    "dimension": "A_malt_bread",
+    "method": "total_spearman",
+    "items": [
+      "acetaldehyde",
+      "ambroxide",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "A_malt_bread",
+    "method": "within_style_spearman",
+    "items": [
+      "X4.ethyl.guaiacol",
+      "DMS",
+      "neryl.formate"
+    ]
+  },
+  {
+    "dimension": "A_malt_bread",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "acetaldehyde",
+      "X2.3.butanedione"
+    ]
+  },
+  {
+    "dimension": "A_malt_bread",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "X4.ethyl.guaiacol",
+      "terpinen.4.ol"
+    ]
+  },
+  {
+    "dimension": "A_malt_cara",
+    "method": "total_spearman",
+    "items": [
+      "acetaldehyde",
+      "phenethyl_acetate",
+      "X2.ethyl.1.hexanol"
+    ]
+  },
+  {
+    "dimension": "A_malt_cara",
+    "method": "within_style_spearman",
+    "items": [
+      "X2.methyl.benzofuran",
+      "X2.ethyl.1.hexanol",
+      "ethyl.hex..2E..enoate"
+    ]
+  },
+  {
+    "dimension": "A_malt_cara",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "nerol",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "A_malt_cara",
+    "method": "consensus",
+    "items": [
+      "X2.methyl.benzofuran",
+      "furfural",
+      "X2.ethyl.1.hexanol"
+    ]
+  },
+  {
+    "dimension": "A_malt_burn",
+    "method": "total_spearman",
+    "items": [
+      "isobutanol",
+      "isoamyl_alcohol",
+      "DES"
+    ]
+  },
+  {
+    "dimension": "A_malt_burn",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl.octadecanoate",
+      "ethyl_2.methyl_butyrate",
+      "selin.11.en.4.alpha.ol"
+    ]
+  },
+  {
+    "dimension": "A_malt_burn",
+    "method": "graph_lowrank",
+    "items": [
+      "nerol",
+      "ethyl.hydrocinnamate",
+      "methylpyrazine"
+    ]
+  },
+  {
+    "dimension": "A_malt_burn",
+    "method": "consensus",
+    "items": [
+      "ethyl.hydrocinnamate",
+      "selin.11.en.4.alpha.ol",
+      "SO2.mg.L."
+    ]
+  },
+  {
+    "dimension": "A_hops_all",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "linalool",
+      "humulene.epoxide.II"
+    ]
+  },
+  {
+    "dimension": "A_hops_all",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "linalool",
+      "phenethyl_acetate"
+    ]
+  },
+  {
+    "dimension": "A_hops_all",
+    "method": "graph_lowrank",
+    "items": [
+      "beta.cyclohomocitral",
+      "butyl.acetate",
+      "DMS"
+    ]
+  },
+  {
+    "dimension": "A_hops_all",
+    "method": "consensus",
+    "items": [
+      "ethyl_octanoate",
+      "DMS",
+      "cis.dihydro.beta.terpineol"
+    ]
+  },
+  {
+    "dimension": "A_hops_citrus",
+    "method": "total_spearman",
+    "items": [
+      "humulene.epoxide.II",
+      "citronellol",
+      "linalool"
+    ]
+  },
+  {
+    "dimension": "A_hops_citrus",
+    "method": "within_style_spearman",
+    "items": [
+      "X1.alpha.terpineol",
+      "X2.butyloctanoate",
+      "linalool"
+    ]
+  },
+  {
+    "dimension": "A_hops_citrus",
+    "method": "graph_lowrank",
+    "items": [
+      "geraniol",
+      "terpinolene",
+      "beta.phellandrene"
+    ]
+  },
+  {
+    "dimension": "A_hops_citrus",
+    "method": "consensus",
+    "items": [
+      "citronellol",
+      "geraniol",
+      "cis.dihydro.beta.terpineol"
+    ]
+  },
+  {
+    "dimension": "A_hops_tropical",
+    "method": "total_spearman",
+    "items": [
+      "DMS",
+      "citronellol",
+      "X3.furanmethanol"
+    ]
+  },
+  {
+    "dimension": "A_hops_tropical",
+    "method": "within_style_spearman",
+    "items": [
+      "X.E..beta.ocimene",
+      "beta.phellandrene",
+      "DMS"
+    ]
+  },
+  {
+    "dimension": "A_hops_tropical",
+    "method": "graph_lowrank",
+    "items": [
+      "DMS",
+      "beta.phellandrene",
+      "terpinolene"
+    ]
+  },
+  {
+    "dimension": "A_hops_tropical",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "DMS",
+      "X.E..dihydro.apofarnesal"
+    ]
+  },
+  {
+    "dimension": "A_hops_noble",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "linalool"
+    ]
+  },
+  {
+    "dimension": "A_hops_noble",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_decanoate",
+      "ethyl_octanoate",
+      "phenethyl_acetate"
+    ]
+  },
+  {
+    "dimension": "A_hops_noble",
+    "method": "graph_lowrank",
+    "items": [
+      "beta.cyclohomocitral",
+      "dimethoxy..E..citral",
+      "ethyl_isovalerate"
+    ]
+  },
+  {
+    "dimension": "A_hops_noble",
+    "method": "consensus",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "cis.dihydro.beta.terpineol"
+    ]
+  },
+  {
+    "dimension": "A_hops_woody",
+    "method": "total_spearman",
+    "items": [
+      "trans.dihydro.alpha.terpinyl.acetate",
+      "neryl.propanoate",
+      "alpha.eudesmol"
+    ]
+  },
+  {
+    "dimension": "A_hops_woody",
+    "method": "within_style_spearman",
+    "items": [
+      "neryl.propanoate",
+      "phenethyl_alcohol",
+      "ethyl.phenylacetate"
+    ]
+  },
+  {
+    "dimension": "A_hops_woody",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.3.butanedione",
+      "X2.methyltetrahydrofuran.3.one",
+      "beta.cyclohomocitral"
+    ]
+  },
+  {
+    "dimension": "A_hops_woody",
+    "method": "consensus",
+    "items": [
+      "X.E..ortho.methoxy.cinnamaldehyde",
+      "ethyl_2.methyl_butyrate",
+      "nonan.2.ol"
+    ]
+  },
+  {
+    "dimension": "A_esters_all",
+    "method": "total_spearman",
+    "items": [
+      "acetaldehyde",
+      "n.hexanol",
+      "isoamyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "A_esters_all",
+    "method": "within_style_spearman",
+    "items": [
+      "isopentyl_acetate",
+      "acetaldehyde",
+      "phenethyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "A_esters_all",
+    "method": "graph_lowrank",
+    "items": [
+      "acetaldehyde",
+      "X2.methyltetrahydrofuran.3.one",
+      "phenethyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "A_esters_all",
+    "method": "consensus",
+    "items": [
+      "acetaldehyde",
+      "isoamyl_alcohol",
+      "isopentyl_acetate"
+    ]
+  },
+  {
+    "dimension": "A_esters_ethac",
+    "method": "total_spearman",
+    "items": [
+      "X2E.6Z.farnesal",
+      "E.nerolidol",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "A_esters_ethac",
+    "method": "within_style_spearman",
+    "items": [
+      "X2.3.dihydro.farnesol",
+      "X2E.6Z.farnesal",
+      "E.nerolidol"
+    ]
+  },
+  {
+    "dimension": "A_esters_ethac",
+    "method": "graph_lowrank",
+    "items": [
+      "propylene.glycol",
+      "phenethyl_alcohol",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "A_esters_ethac",
+    "method": "consensus",
+    "items": [
+      "X2E.6Z.farnesal",
+      "phenethyl_alcohol",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "A_esters_isoaa",
+    "method": "total_spearman",
+    "items": [
+      "n.hexanol",
+      "isopentyl_acetate",
+      "isoamyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "A_esters_isoaa",
+    "method": "within_style_spearman",
+    "items": [
+      "n.hexanol",
+      "isopentyl_acetate",
+      "isoamyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "A_esters_isoaa",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.methyltetrahydrofuran.3.one",
+      "acetaldehyde",
+      "X14.hydroxy.alpha.humulene"
+    ]
+  },
+  {
+    "dimension": "A_esters_isoaa",
+    "method": "consensus",
+    "items": [
+      "isopentyl_acetate",
+      "acetaldehyde",
+      "isoamyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "A_esters_flower",
+    "method": "total_spearman",
+    "items": [
+      "X.E..dihydro.apofarnesal",
+      "isobutyl_acetate",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "A_esters_flower",
+    "method": "within_style_spearman",
+    "items": [
+      "X.E..dihydro.apofarnesal",
+      "beta.phellandrene",
+      "X2.3.dihydro.farnesol"
+    ]
+  },
+  {
+    "dimension": "A_esters_flower",
+    "method": "graph_lowrank",
+    "items": [
+      "beta.phellandrene",
+      "X2.methyltetrahydrofuran.3.one",
+      "caryophyllene.acetate"
+    ]
+  },
+  {
+    "dimension": "A_esters_flower",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "acetaldehyde",
+      "X.E..dihydro.apofarnesal"
+    ]
+  },
+  {
+    "dimension": "A_esters_fruity",
+    "method": "total_spearman",
+    "items": [
+      "beta.phellandrene",
+      "lactic_acid.mg.L.",
+      "X1.10.di.epi.cubenol"
+    ]
+  },
+  {
+    "dimension": "A_esters_fruity",
+    "method": "within_style_spearman",
+    "items": [
+      "isopentyl_acetate",
+      "neryl.propanoate",
+      "X2.ethyl.3.methylpyrazine"
+    ]
+  },
+  {
+    "dimension": "A_esters_fruity",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.methyltetrahydrofuran.3.one",
+      "beta.phellandrene",
+      "caryophyllene.acetate"
+    ]
+  },
+  {
+    "dimension": "A_esters_fruity",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "phenethyl_alcohol",
+      "X2.pentyl.furan"
+    ]
+  },
+  {
+    "dimension": "F_malt_all",
+    "method": "total_spearman",
+    "items": [
+      "acetaldehyde",
+      "MeSH",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "F_malt_all",
+    "method": "within_style_spearman",
+    "items": [
+      "acetaldehyde",
+      "ethyl.hydrocinnamate",
+      "furfural"
+    ]
+  },
+  {
+    "dimension": "F_malt_all",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "MeSH",
+      "nerol"
+    ]
+  },
+  {
+    "dimension": "F_malt_all",
+    "method": "consensus",
+    "items": [
+      "acetaldehyde",
+      "ethyl.hydrocinnamate",
+      "MeSH"
+    ]
+  },
+  {
+    "dimension": "F_malt_grain",
+    "method": "total_spearman",
+    "items": [
+      "isoborneol",
+      "acetaldehyde",
+      "X.E..beta.ionone"
+    ]
+  },
+  {
+    "dimension": "F_malt_grain",
+    "method": "within_style_spearman",
+    "items": [
+      "isoborneol",
+      "selin.11.en.4.alpha.ol",
+      "X2.3.butanedione"
+    ]
+  },
+  {
+    "dimension": "F_malt_grain",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.3.butanedione",
+      "phenethyl_alcohol",
+      "propylene.glycol"
+    ]
+  },
+  {
+    "dimension": "F_malt_grain",
+    "method": "consensus",
+    "items": [
+      "X2.3.butanedione",
+      "acetaldehyde",
+      "terpinen.4.ol"
+    ]
+  },
+  {
+    "dimension": "F_malt_bread",
+    "method": "total_spearman",
+    "items": [
+      "acetaldehyde",
+      "n.hexanol",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "F_malt_bread",
+    "method": "within_style_spearman",
+    "items": [
+      "X2.ethylhexylsalicylate",
+      "beta.phellandrene",
+      "ethyl.butyrate"
+    ]
+  },
+  {
+    "dimension": "F_malt_bread",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "acetaldehyde",
+      "X2.3.butanedione"
+    ]
+  },
+  {
+    "dimension": "F_malt_bread",
+    "method": "consensus",
+    "items": [
+      "acetaldehyde",
+      "beta.phellandrene",
+      "ethyl.butyrate"
+    ]
+  },
+  {
+    "dimension": "F_malt_cara",
+    "method": "total_spearman",
+    "items": [
+      "acetaldehyde",
+      "MeSH",
+      "ethyl.butyrate"
+    ]
+  },
+  {
+    "dimension": "F_malt_cara",
+    "method": "within_style_spearman",
+    "items": [
+      "X2.3.butanedione",
+      "X3.methyl.2.butenal",
+      "styrene"
+    ]
+  },
+  {
+    "dimension": "F_malt_cara",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "acetaldehyde",
+      "nerol"
+    ]
+  },
+  {
+    "dimension": "F_malt_cara",
+    "method": "consensus",
+    "items": [
+      "acetaldehyde",
+      "DES",
+      "X3.methyl.2.butenal"
+    ]
+  },
+  {
+    "dimension": "F_malt_burn",
+    "method": "total_spearman",
+    "items": [
+      "glycerol",
+      "MeSH",
+      "isobutanol"
+    ]
+  },
+  {
+    "dimension": "F_malt_burn",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_isovalerate",
+      "ethyl_2.methyl_butyrate",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "F_malt_burn",
+    "method": "graph_lowrank",
+    "items": [
+      "nerol",
+      "phenethyl_alcohol",
+      "CS2"
+    ]
+  },
+  {
+    "dimension": "F_malt_burn",
+    "method": "consensus",
+    "items": [
+      "MeSH",
+      "glycerol",
+      "ethyl.hydrocinnamate"
+    ]
+  },
+  {
+    "dimension": "F_hops_all",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "cis.dihydro.beta.terpineol",
+      "methyl.geranate"
+    ]
+  },
+  {
+    "dimension": "F_hops_all",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_isovalerate",
+      "ethyl_decanoate"
+    ]
+  },
+  {
+    "dimension": "F_hops_all",
+    "method": "graph_lowrank",
+    "items": [
+      "ethyl_isovalerate",
+      "beta.cyclohomocitral",
+      "geosmin"
+    ]
+  },
+  {
+    "dimension": "F_hops_all",
+    "method": "consensus",
+    "items": [
+      "ethyl_octanoate",
+      "cis.dihydro.beta.terpineol",
+      "DMS"
+    ]
+  },
+  {
+    "dimension": "F_hops_citrus",
+    "method": "total_spearman",
+    "items": [
+      "delta.terpinyl.acetate",
+      "geraniol",
+      "humulene.epoxide.II"
+    ]
+  },
+  {
+    "dimension": "F_hops_citrus",
+    "method": "within_style_spearman",
+    "items": [
+      "phenethyl_alcohol",
+      "lactic_acid.mg.L.",
+      "isoamyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "F_hops_citrus",
+    "method": "graph_lowrank",
+    "items": [
+      "DMS",
+      "beta.phellandrene",
+      "terpinolene"
+    ]
+  },
+  {
+    "dimension": "F_hops_citrus",
+    "method": "consensus",
+    "items": [
+      "geraniol",
+      "geosmin",
+      "phenethyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "F_hops_tropical",
+    "method": "total_spearman",
+    "items": [
+      "DMS",
+      "hexyl.acetate",
+      "geraniol"
+    ]
+  },
+  {
+    "dimension": "F_hops_tropical",
+    "method": "within_style_spearman",
+    "items": [
+      "hexyl.acetate",
+      "X.E..beta.ocimene",
+      "beta.phellandrene"
+    ]
+  },
+  {
+    "dimension": "F_hops_tropical",
+    "method": "graph_lowrank",
+    "items": [
+      "DMS",
+      "beta.phellandrene",
+      "caryophyllene.acetate"
+    ]
+  },
+  {
+    "dimension": "F_hops_tropical",
+    "method": "consensus",
+    "items": [
+      "DMS",
+      "terpinolene",
+      "beta.phellandrene"
+    ]
+  },
+  {
+    "dimension": "F_hops_noble",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "F_hops_noble",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "phenethyl_acetate"
+    ]
+  },
+  {
+    "dimension": "F_hops_noble",
+    "method": "graph_lowrank",
+    "items": [
+      "beta.cyclohomocitral",
+      "ethyl_isovalerate",
+      "dimethoxy..E..citral"
+    ]
+  },
+  {
+    "dimension": "F_hops_noble",
+    "method": "consensus",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "F_hops_woody",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_decanoate",
+      "isobutanol",
+      "ethyl.tetradecanoate"
+    ]
+  },
+  {
+    "dimension": "F_hops_woody",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl.hexadecanoate",
+      "ethyl.tetradecanoate",
+      "ethyl_decanoate"
+    ]
+  },
+  {
+    "dimension": "F_hops_woody",
+    "method": "graph_lowrank",
+    "items": [
+      "nerol",
+      "cis.dihydro.beta.terpineol",
+      "geosmin"
+    ]
+  },
+  {
+    "dimension": "F_hops_woody",
+    "method": "consensus",
+    "items": [
+      "ethyl_decanoate",
+      "cis.dihydro.beta.terpineol",
+      "ethyl_octanoate"
+    ]
+  },
+  {
+    "dimension": "F_esters_all",
+    "method": "total_spearman",
+    "items": [
+      "acetaldehyde",
+      "ethyl_acetate",
+      "n.hexanol"
+    ]
+  },
+  {
+    "dimension": "F_esters_all",
+    "method": "within_style_spearman",
+    "items": [
+      "acetaldehyde",
+      "isopentyl_acetate",
+      "phenethyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "F_esters_all",
+    "method": "graph_lowrank",
+    "items": [
+      "acetaldehyde",
+      "phenethyl_alcohol",
+      "X2.methyltetrahydrofuran.3.one"
+    ]
+  },
+  {
+    "dimension": "F_esters_all",
+    "method": "consensus",
+    "items": [
+      "acetaldehyde",
+      "isopentyl_acetate",
+      "isoamyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "F_esters_ethac",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_acetate",
+      "glycerol",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "F_esters_ethac",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_acetate",
+      "acetaldehyde",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "F_esters_ethac",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "acetaldehyde",
+      "propylene.glycol"
+    ]
+  },
+  {
+    "dimension": "F_esters_ethac",
+    "method": "consensus",
+    "items": [
+      "acetaldehyde",
+      "ethyl_acetate",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "F_esters_isoaa",
+    "method": "total_spearman",
+    "items": [
+      "n.hexanol",
+      "isopentyl_acetate",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "F_esters_isoaa",
+    "method": "within_style_spearman",
+    "items": [
+      "isopentyl_acetate",
+      "neryl.propanoate",
+      "ethyl.phenylacetate"
+    ]
+  },
+  {
+    "dimension": "F_esters_isoaa",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.methyltetrahydrofuran.3.one",
+      "acetaldehyde",
+      "phenethyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "F_esters_isoaa",
+    "method": "consensus",
+    "items": [
+      "isopentyl_acetate",
+      "acetaldehyde",
+      "isoamyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "F_esters_flower",
+    "method": "total_spearman",
+    "items": [
+      "beta.phellandrene",
+      "eucalyptol",
+      "X.E..dihydro.apofarnesal"
+    ]
+  },
+  {
+    "dimension": "F_esters_flower",
+    "method": "within_style_spearman",
+    "items": [
+      "eucalyptol",
+      "beta.phellandrene",
+      "X.E..dihydro.apofarnesal"
+    ]
+  },
+  {
+    "dimension": "F_esters_flower",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.methyltetrahydrofuran.3.one",
+      "beta.phellandrene",
+      "caryophyllene.acetate"
+    ]
+  },
+  {
+    "dimension": "F_esters_flower",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "eucalyptol",
+      "X.E..dihydro.apofarnesal"
+    ]
+  },
+  {
+    "dimension": "F_esters_fruity",
+    "method": "total_spearman",
+    "items": [
+      "beta.phellandrene",
+      "acetic_acid.g.L.",
+      "humulene.epoxide.II"
+    ]
+  },
+  {
+    "dimension": "F_esters_fruity",
+    "method": "within_style_spearman",
+    "items": [
+      "X2.ethyl.3.methylpyrazine",
+      "n.octanol",
+      "nerol"
+    ]
+  },
+  {
+    "dimension": "F_esters_fruity",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.methyltetrahydrofuran.3.one",
+      "beta.phellandrene",
+      "benzyl.alcohol"
+    ]
+  },
+  {
+    "dimension": "F_esters_fruity",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "octyl_acetate",
+      "MeSH"
+    ]
+  },
+  {
+    "dimension": "acidity",
+    "method": "total_spearman",
+    "items": [
+      "X4.ethyl.phenol",
+      "prenyl.isobutyrate",
+      "neryl.formate"
+    ]
+  },
+  {
+    "dimension": "acidity",
+    "method": "within_style_spearman",
+    "items": [
+      "X.E..beta.damascenone",
+      "x.methyl.1.octanol",
+      "acetic_acid.g.L."
+    ]
+  },
+  {
+    "dimension": "acidity",
+    "method": "graph_lowrank",
+    "items": [
+      "lactic_acid.mg.L.",
+      "acetic_acid.g.L.",
+      "DES"
+    ]
+  },
+  {
+    "dimension": "acidity",
+    "method": "consensus",
+    "items": [
+      "acetic_acid.g.L.",
+      "X4.ethyl.phenol",
+      "X4.ethyl.guaiacol"
+    ]
+  },
+  {
+    "dimension": "bitternes",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "humulene.epoxide.II"
+    ]
+  },
+  {
+    "dimension": "bitternes",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "X2.methylbutyl.octanoate"
+    ]
+  },
+  {
+    "dimension": "bitternes",
+    "method": "graph_lowrank",
+    "items": [
+      "beta.cyclohomocitral",
+      "geosmin",
+      "lactic_acid.mg.L."
+    ]
+  },
+  {
+    "dimension": "bitternes",
+    "method": "consensus",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "cis.dihydro.beta.terpineol"
+    ]
+  },
+  {
+    "dimension": "sweetness",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_decanoate",
+      "pentyl.octanoate",
+      "X1.2.dihydro.8.hydroxy..2E..linalool"
+    ]
+  },
+  {
+    "dimension": "sweetness",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_decanoate",
+      "neryl.propanoate",
+      "pentyl.octanoate"
+    ]
+  },
+  {
+    "dimension": "sweetness",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.methyltetrahydrofuran.3.one",
+      "dimethoxy..E..citral",
+      "beta.cyclohomocitral"
+    ]
+  },
+  {
+    "dimension": "sweetness",
+    "method": "consensus",
+    "items": [
+      "ethyl_decanoate",
+      "beta.cyclohomocitral",
+      "octyl_acetate"
+    ]
+  },
+  {
+    "dimension": "X4vg",
+    "method": "total_spearman",
+    "items": [
+      "X4VG",
+      "neryl.formate",
+      "ethyl.furoate"
+    ]
+  },
+  {
+    "dimension": "X4vg",
+    "method": "within_style_spearman",
+    "items": [
+      "X4VG",
+      "delta.terpinyl.acetate",
+      "isopentyl.butanoate"
+    ]
+  },
+  {
+    "dimension": "X4vg",
+    "method": "graph_lowrank",
+    "items": [
+      "ethyl_isovalerate",
+      "limonene",
+      "lactic_acid.mg.L."
+    ]
+  },
+  {
+    "dimension": "X4vg",
+    "method": "consensus",
+    "items": [
+      "ethyl_isovalerate",
+      "delta.terpinyl.acetate",
+      "neryl.formate"
+    ]
+  },
+  {
+    "dimension": "diacetyl",
+    "method": "total_spearman",
+    "items": [
+      "eugenol",
+      "ethyl_decanoate",
+      "alpha.calacorene"
+    ]
+  },
+  {
+    "dimension": "diacetyl",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_decanoate",
+      "ethyl_octanoate",
+      "eugenol"
+    ]
+  },
+  {
+    "dimension": "diacetyl",
+    "method": "graph_lowrank",
+    "items": [
+      "beta.cyclohomocitral",
+      "DMS",
+      "ethyl_isovalerate"
+    ]
+  },
+  {
+    "dimension": "diacetyl",
+    "method": "consensus",
+    "items": [
+      "beta.cyclohomocitral",
+      "cis.dihydro.beta.terpineol",
+      "beta.phellandrene"
+    ]
+  },
+  {
+    "dimension": "dms",
+    "method": "total_spearman",
+    "items": [
+      "benzaldehyde",
+      "phenethyl_alcohol",
+      "terpinen.4.ol"
+    ]
+  },
+  {
+    "dimension": "dms",
+    "method": "within_style_spearman",
+    "items": [
+      "phenethyl_alcohol",
+      "x.methyl.1.octanol",
+      "spathulenol"
+    ]
+  },
+  {
+    "dimension": "dms",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "ethyl_isovalerate",
+      "X2.methyltetrahydrofuran.3.one"
+    ]
+  },
+  {
+    "dimension": "dms",
+    "method": "consensus",
+    "items": [
+      "phenethyl_alcohol",
+      "beta.phellandrene",
+      "X.Z..dihydro.apofarnesal"
+    ]
+  },
+  {
+    "dimension": "metallic",
+    "method": "total_spearman",
+    "items": [
+      "H2S",
+      "linalool.isovalerate",
+      "ethyl_isovalerate"
+    ]
+  },
+  {
+    "dimension": "metallic",
+    "method": "within_style_spearman",
+    "items": [
+      "linalool.isovalerate",
+      "lactic_acid.mg.L.",
+      "gamma.eudesmol"
+    ]
+  },
+  {
+    "dimension": "metallic",
+    "method": "graph_lowrank",
+    "items": [
+      "ethyl_isovalerate",
+      "limonene",
+      "X.Z..dihydro.apofarnesal"
+    ]
+  },
+  {
+    "dimension": "metallic",
+    "method": "consensus",
+    "items": [
+      "cis.dihydro.beta.terpineol",
+      "X6.methyl.5.hepten.2.one",
+      "ethyl_isovalerate"
+    ]
+  },
+  {
+    "dimension": "stale_hops",
+    "method": "total_spearman",
+    "items": [
+      "X2.undecanol",
+      "alloaromadendrene.epoxide",
+      "neryl.propanoate"
+    ]
+  },
+  {
+    "dimension": "stale_hops",
+    "method": "within_style_spearman",
+    "items": [
+      "n.hexanol",
+      "gamma.eudesmol",
+      "X2.undecanol"
+    ]
+  },
+  {
+    "dimension": "stale_hops",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.methyltetrahydrofuran.3.one",
+      "beta.cyclohomocitral",
+      "X2.3.butanedione"
+    ]
+  },
+  {
+    "dimension": "stale_hops",
+    "method": "consensus",
+    "items": [
+      "isopentyl_acetate",
+      "X.E..ortho.methoxy.cinnamaldehyde",
+      "n.hexanol"
+    ]
+  },
+  {
+    "dimension": "t2n",
+    "method": "total_spearman",
+    "items": [
+      "beta.phellandrene",
+      "terpinen.4.ol",
+      "dimethoxy..E..citral"
+    ]
+  },
+  {
+    "dimension": "t2n",
+    "method": "within_style_spearman",
+    "items": [
+      "E.cinnamaldehyde",
+      "vinyl.caprylate",
+      "beta.phellandrene"
+    ]
+  },
+  {
+    "dimension": "t2n",
+    "method": "graph_lowrank",
+    "items": [
+      "ethyl_isovalerate",
+      "beta.phellandrene",
+      "phenethyl_alcohol"
+    ]
+  },
+  {
+    "dimension": "t2n",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "glycerol",
+      "terpinolene"
+    ]
+  },
+  {
+    "dimension": "orange",
+    "method": "total_spearman",
+    "items": [
+      "camphor",
+      "terpinolene",
+      "beta.phellandrene"
+    ]
+  },
+  {
+    "dimension": "orange",
+    "method": "within_style_spearman",
+    "items": [
+      "camphor",
+      "beta.phellandrene",
+      "terpinolene"
+    ]
+  },
+  {
+    "dimension": "orange",
+    "method": "graph_lowrank",
+    "items": [
+      "geraniol",
+      "X1.alpha.terpineol",
+      "beta.phellandrene"
+    ]
+  },
+  {
+    "dimension": "orange",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "terpinolene",
+      "limonene"
+    ]
+  },
+  {
+    "dimension": "coriander",
+    "method": "total_spearman",
+    "items": [
+      "X2.methyl.benzofuran",
+      "alpha.phellandrene",
+      "camphor"
+    ]
+  },
+  {
+    "dimension": "coriander",
+    "method": "within_style_spearman",
+    "items": [
+      "beta.phellandrene",
+      "E.ocimenone",
+      "alpha.phellandrene"
+    ]
+  },
+  {
+    "dimension": "coriander",
+    "method": "graph_lowrank",
+    "items": [
+      "geraniol",
+      "X1.alpha.terpineol",
+      "limonene"
+    ]
+  },
+  {
+    "dimension": "coriander",
+    "method": "consensus",
+    "items": [
+      "beta.phellandrene",
+      "limonene",
+      "X2.methyl.benzofuran"
+    ]
+  },
+  {
+    "dimension": "clove",
+    "method": "total_spearman",
+    "items": [
+      "limonene",
+      "eucalyptol",
+      "X3.methyl.2.butenal"
+    ]
+  },
+  {
+    "dimension": "clove",
+    "method": "within_style_spearman",
+    "items": [
+      "limonene",
+      "cis.dihydro.beta.terpineol",
+      "X2.methylbutyl.octanoate"
+    ]
+  },
+  {
+    "dimension": "clove",
+    "method": "graph_lowrank",
+    "items": [
+      "limonene",
+      "X1.alpha.terpineol",
+      "geraniol"
+    ]
+  },
+  {
+    "dimension": "clove",
+    "method": "consensus",
+    "items": [
+      "limonene",
+      "eucalyptol",
+      "X3.methyl.2.butenal"
+    ]
+  },
+  {
+    "dimension": "lactic",
+    "method": "total_spearman",
+    "items": [
+      "ethyl.furoate",
+      "prenyl.isobutyrate",
+      "perillyl.acetate"
+    ]
+  },
+  {
+    "dimension": "lactic",
+    "method": "within_style_spearman",
+    "items": [
+      "isopentyl_acetate",
+      "ethyl_acetate",
+      "ethyl_hexanoate"
+    ]
+  },
+  {
+    "dimension": "lactic",
+    "method": "graph_lowrank",
+    "items": [
+      "lactic_acid.mg.L.",
+      "acetic_acid.g.L.",
+      "X2.furanmethanol"
+    ]
+  },
+  {
+    "dimension": "lactic",
+    "method": "consensus",
+    "items": [
+      "isopentyl_acetate",
+      "butyl.acetate",
+      "perillyl.acetate"
+    ]
+  },
+  {
+    "dimension": "acetic",
+    "method": "total_spearman",
+    "items": [
+      "isopentyl_acetate",
+      "prenyl.isobutyrate",
+      "ethyl.furoate"
+    ]
+  },
+  {
+    "dimension": "acetic",
+    "method": "within_style_spearman",
+    "items": [
+      "E.methyl.isoeugenol",
+      "isopentyl_acetate",
+      "valencene"
+    ]
+  },
+  {
+    "dimension": "acetic",
+    "method": "graph_lowrank",
+    "items": [
+      "lactic_acid.mg.L.",
+      "acetic_acid.g.L.",
+      "X2.furanmethanol"
+    ]
+  },
+  {
+    "dimension": "acetic",
+    "method": "consensus",
+    "items": [
+      "isopentyl_acetate",
+      "DES",
+      "E.cinnamaldehyde"
+    ]
+  },
+  {
+    "dimension": "barnyard",
+    "method": "total_spearman",
+    "items": [
+      "n.hexanol",
+      "gamma.eudesmol",
+      "neryl.formate"
+    ]
+  },
+  {
+    "dimension": "barnyard",
+    "method": "within_style_spearman",
+    "items": [
+      "n.hexanol",
+      "gamma.eudesmol",
+      "linalool.isovalerate"
+    ]
+  },
+  {
+    "dimension": "barnyard",
+    "method": "graph_lowrank",
+    "items": [
+      "X2.methyltetrahydrofuran.3.one",
+      "beta.cyclohomocitral",
+      "X2.3.butanedione"
+    ]
+  },
+  {
+    "dimension": "barnyard",
+    "method": "consensus",
+    "items": [
+      "gamma.eudesmol",
+      "n.hexanol",
+      "isopentyl_acetate"
+    ]
+  },
+  {
+    "dimension": "alcohol",
+    "method": "total_spearman",
+    "items": [
+      "glycerol",
+      "ethyl_octanoate",
+      "ethyl_hexanoate"
+    ]
+  },
+  {
+    "dimension": "alcohol",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_hexanoate",
+      "ethyl_decanoate"
+    ]
+  },
+  {
+    "dimension": "alcohol",
+    "method": "graph_lowrank",
+    "items": [
+      "acetaldehyde",
+      "phenethyl_alcohol",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "alcohol",
+    "method": "consensus",
+    "items": [
+      "acetaldehyde",
+      "ethyl_hexanoate",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "aftertaste",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_decanoate",
+      "ethyl_octanoate",
+      "X.E..2.nonenal"
+    ]
+  },
+  {
+    "dimension": "aftertaste",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_decanoate",
+      "ethyl_isovalerate",
+      "ethyl_octanoate"
+    ]
+  },
+  {
+    "dimension": "aftertaste",
+    "method": "graph_lowrank",
+    "items": [
+      "ethyl_isovalerate",
+      "phenethyl_alcohol",
+      "nerol"
+    ]
+  },
+  {
+    "dimension": "aftertaste",
+    "method": "consensus",
+    "items": [
+      "ethyl_isovalerate",
+      "ethyl_octanoate",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "body",
+    "method": "total_spearman",
+    "items": [
+      "glycerol",
+      "isobutanol",
+      "ethyl_octanoate"
+    ]
+  },
+  {
+    "dimension": "body",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_hexanoate",
+      "X3.methyl.2.hexanol"
+    ]
+  },
+  {
+    "dimension": "body",
+    "method": "graph_lowrank",
+    "items": [
+      "phenethyl_alcohol",
+      "acetaldehyde",
+      "nerol"
+    ]
+  },
+  {
+    "dimension": "body",
+    "method": "consensus",
+    "items": [
+      "glycerol",
+      "ethyl_hexanoate",
+      "ethyl_octanoate"
+    ]
+  },
+  {
+    "dimension": "co2",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_hexanoate",
+      "X3.methyl.2.hexanol"
+    ]
+  },
+  {
+    "dimension": "co2",
+    "method": "within_style_spearman",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_decanoate",
+      "heptyl.acetate"
+    ]
+  },
+  {
+    "dimension": "co2",
+    "method": "graph_lowrank",
+    "items": [
+      "acetaldehyde",
+      "butyl.acetate",
+      "glycerol"
+    ]
+  },
+  {
+    "dimension": "co2",
+    "method": "consensus",
+    "items": [
+      "ethyl_octanoate",
+      "ethyl_hexanoate",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "dimension": "overall",
+    "method": "total_spearman",
+    "items": [
+      "ethyl_acetate",
+      "isopentyl_acetate",
+      "ethyl_octanoate"
+    ]
+  },
+  {
+    "dimension": "overall",
+    "method": "within_style_spearman",
+    "items": [
+      "acetaldehyde",
+      "isopentyl_acetate",
+      "ethyl_acetate"
+    ]
+  },
+  {
+    "dimension": "overall",
+    "method": "graph_lowrank",
+    "items": [
+      "acetaldehyde",
+      "propylene.glycol",
+      "X14.hydroxy.alpha.humulene"
+    ]
+  },
+  {
+    "dimension": "overall",
+    "method": "consensus",
+    "items": [
+      "acetaldehyde",
+      "ethyl_acetate",
+      "X2.butyloctanoate"
+    ]
+  }
+]

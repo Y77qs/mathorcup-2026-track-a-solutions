@@ -1,0 +1,1712 @@
+[
+ {
+  "name": "row",
+  "type": "integer",
+  "unit": null,
+  "description": "0-based position in 1.csv/4.csv (row-aligned); the holdout assignment uses this id."
+ },
+ {
+  "name": "beer",
+  "type": "integer",
+  "unit": null,
+  "description": "1.csv/4.csv beer label (permutation of 1..250); join key."
+ },
+ {
+  "name": "beer_id",
+  "type": "string",
+  "unit": null,
+  "description": "1.csv EAN-like code; 4.csv/7.csv copies are truncated, so it is not a join key."
+ },
+ {
+  "name": "tasting_category_fine",
+  "type": "string",
+  "unit": null,
+  "description": "tasting_category_fine, 22 styles; conditioning label for Q3 and stratifier for Q2."
+ },
+ {
+  "name": "chem__acetaldehyde",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'acetaldehyde', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__CS2",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'CS2', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__DES",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'DES', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__DMS",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'DMS', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl_2.methyl_butyrate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ethyl_2.methyl_butyrate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl_acetate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ethyl_acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl_decanoate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ethyl_decanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl_hexanoate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ethyl_hexanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl_isovalerate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ethyl_isovalerate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl_octanoate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ethyl_octanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl_propionate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ethyl_propionate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__H2S",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'H2S', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isoamyl_alcohol",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'isoamyl_alcohol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isobutanol",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'isobutanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isobutyl_acetate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'isobutyl_acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isopentyl_acetate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'isopentyl_acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__MeSH",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'MeSH', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__octyl_acetate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'octyl_acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__phenethyl_acetate",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'phenethyl_acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__phenethyl_alcohol",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'phenethyl_alcohol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X4VG",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'X4VG', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__SO2.mg.L.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'SO2.mg.L.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__acetic_acid.g.L.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'acetic_acid.g.L.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ammonia.mg.L.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ammonia.mg.L.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__color.EBC.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'color.EBC.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__betaglucan.mg.L.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'betaglucan.mg.L.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__lactic_acid.mg.L.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'lactic_acid.mg.L.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__glycerol",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'glycerol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__iron",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'iron', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__pH",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'pH', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__protein.g.L.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'protein.g.L.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__bitterness",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'bitterness', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__GFS",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'GFS', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethanol..v.v.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'ethanol..v.v.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__CO2.PSI.",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'CO2.PSI.', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__unfermentables",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'unfermentables', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__kcalperc",
+  "type": "number",
+  "unit": "stored value (log10 of concentration)",
+  "description": "1.csv column 'kcalperc', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X1.propanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X1.propanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.3.butanedione",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X2.3.butanedione', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X3.methylbutanal",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X3.methylbutanal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__propylene.glycol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'propylene.glycol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__propyl.acetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'propyl.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.pentanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'n.pentanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.methyl.1.butanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.methyl.1.butanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isopentyl.formate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isopentyl.formate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.isobutyrate",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'ethyl.isobutyrate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X3.methyl.2.butenal",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X3.methyl.2.butenal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.methyltetrahydrofuran.3.one",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X2.methyltetrahydrofuran.3.one', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.butyrate",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'ethyl.butyrate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__butyl.acetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'butyl.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__methylpyrazine",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'methylpyrazine', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__furfural",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'furfural', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.lactate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.lactate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X3Z.hexenol",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X3Z.hexenol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.hexanol",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'n.hexanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__styrene",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'styrene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.furanmethanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.furanmethanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X3.methyl.2.hexanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X3.methyl.2.hexanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X3.furanmethanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X3.furanmethanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.acetylfuran",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.acetylfuran', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.6.dimethyl.pyrazine",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.6.dimethyl.pyrazine', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__amyl.acetate",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'amyl.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.tiglate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.tiglate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__benzaldehyde",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'benzaldehyde', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X5.methylfurfural",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X5.methylfurfural', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.heptanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'n.heptanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X1.octen.3.ol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X1.octen.3.ol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X3.methylthio.propanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X3.methylthio.propanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isomaltol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isomaltol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X6.methyl.5.hepten.2.one",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X6.methyl.5.hepten.2.one', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.pentyl.furan",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.pentyl.furan', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.hex..3E..enoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.hex..3E..enoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__alpha.phellandrene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'alpha.phellandrene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__dehydroxy.cis.linalool.oxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'dehydroxy.cis.linalool.oxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__hexyl.acetate",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'hexyl.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isopentyl.butanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isopentyl.butanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.ethyl.1.hexanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.ethyl.1.hexanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__beta.phellandrene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'beta.phellandrene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__limonene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'limonene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__eucalyptol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'eucalyptol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__benzyl.alcohol",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'benzyl.alcohol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.hex..2E..enoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.hex..2E..enoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__phenylacetaldehyde",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'phenylacetaldehyde', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E..beta.ocimene",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X.E..beta.ocimene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__prenyl.isobutyrate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'prenyl.isobutyrate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.furoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.furoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ortho.cresol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ortho.cresol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.5.methylhexanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.5.methylhexanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.acetylpyrrole",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.acetylpyrrole', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isoamyl.lactate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isoamyl.lactate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.octanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'n.octanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__cis.linalool.oxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'cis.linalool.oxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__meta.cymenene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'meta.cymenene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__terpinolene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'terpinolene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__linalool",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'linalool', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__nonan.2.ol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'nonan.2.ol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.nonanal",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'n.nonanal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.methyl.benzofuran",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.methyl.benzofuran', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__heptyl.acetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'heptyl.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X4.methyl.1.pentanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X4.methyl.1.pentanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__neo.allo.ocimene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'neo.allo.ocimene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__x.methyl.1.octanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'x.methyl.1.octanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__trans.dihydro.beta.terpineol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'trans.dihydro.beta.terpineol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__cis.beta.terpineol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'cis.beta.terpineol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__y.methyl.1.octanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'y.methyl.1.octanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__camphor",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'camphor', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isobutyl.hexanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isobutyl.hexanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__nerol.oxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'nerol.oxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E..2.nonenal",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X.E..2.nonenal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__cis.dihydro.beta.terpineol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'cis.dihydro.beta.terpineol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X4.ethyl.phenol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X4.ethyl.phenol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isoborneol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isoborneol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.benzoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.benzoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.nonanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'n.nonanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__terpinen.4.ol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'terpinen.4.ol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__diethyl.succinate",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'diethyl.succinate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__vinyl.caprylate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'vinyl.caprylate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X1.alpha.terpineol",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X1.alpha.terpineol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl..E..linalool",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl..E..linalool', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.nicotinate",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'ethyl.nicotinate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__citronellol",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'citronellol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__nerol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'nerol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__hydroxy.methyl.furfural",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'hydroxy.methyl.furfural', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__E.ocimenone",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'E.ocimenone', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__cumin.aldehyde",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'cumin.aldehyde', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.phenylacetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.phenylacetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isopentyl.hexanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isopentyl.hexanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__geraniol",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'geraniol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__beta.cyclohomocitral",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'beta.cyclohomocitral', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__E.cinnamaldehyde",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'E.cinnamaldehyde', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.decanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'n.decanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__neryl.formate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'neryl.formate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X4.ethyl.guaiacol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X4.ethyl.guaiacol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.undecanone",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.undecanone', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__trans.dihydro.alpha.terpinyl.acetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'trans.dihydro.alpha.terpinyl.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__terpinen.4.ol.acetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'terpinen.4.ol.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.undecanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.undecanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__delta.terpinyl.acetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'delta.terpinyl.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E.E..2.4.decadienal",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X.E.E..2.4.decadienal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__methyl.geranate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'methyl.geranate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__car.3.en.2.one",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'car.3.en.2.one', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__dimethoxy..E..citral",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'dimethoxy..E..citral', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.butyloctanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.butyloctanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X4.methoxysalicylaldehyde",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X4.methoxysalicylaldehyde', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.hydrocinnamate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.hydrocinnamate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__eugenol",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'eugenol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__gamma.nonalactone",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'gamma.nonalactone', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__methyl.para.anisate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'methyl.para.anisate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E..beta.damascenone",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X.E..beta.damascenone', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl..9..decenoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl..9..decenoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__vanillin",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'vanillin', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__geosmin",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'geosmin', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__dodecanal",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'dodecanal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X4.8.alpha.epoxy.caryophyllane",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X4.8.alpha.epoxy.caryophyllane', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__E.caryophyllene",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'E.caryophyllene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E..alpha.ionone",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X.E..alpha.ionone', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__perillyl.acetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'perillyl.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__beta.humulene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'beta.humulene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.phenyl.ethyl.butyrate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.phenyl.ethyl.butyrate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.Z..beta.farnesene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X.Z..beta.farnesene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__pentyl.octanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'pentyl.octanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E..beta.farnesene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X.E..beta.farnesene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.methylbutyl.octanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.methylbutyl.octanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__alpha.humulene",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'alpha.humulene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__neryl.propanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'neryl.propanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X9.epi..E..caryophyllene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X9.epi..E..caryophyllene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl..E..cinnamate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl..E..cinnamate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__linalool.isovalerate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'linalool.isovalerate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__alpha.terpinyl.isobutanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'alpha.terpinyl.isobutanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.dodecanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'n.dodecanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__germacrene.D",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'germacrene.D', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E..beta.ionone",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X.E..beta.ionone', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__valencene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'valencene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__neryl.isobutanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'neryl.isobutanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__E.methyl.isoeugenol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'E.methyl.isoeugenol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.Z..dihydro.apofarnesal",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X.Z..dihydro.apofarnesal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__butylated.hydroxytoluene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'butylated.hydroxytoluene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E..dihydro.apofarnesal",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X.E..dihydro.apofarnesal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__Z.nerolidol",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'Z.nerolidol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X.E..ortho.methoxy.cinnamaldehyde",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X.E..ortho.methoxy.cinnamaldehyde', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__alpha.calacorene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'alpha.calacorene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__E.nerolidol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'E.nerolidol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__dihydroisocaryophyllene.epoxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'dihydroisocaryophyllene.epoxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__caryophyllene.alcohol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'caryophyllene.alcohol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__neryl.isovalerate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'neryl.isovalerate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__spathulenol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'spathulenol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__caryophyllene.oxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'caryophyllene.oxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__humulene.epoxide.II",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'humulene.epoxide.II', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__alloaromadendrene.epoxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'alloaromadendrene.epoxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X1.10.di.epi.cubenol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X1.10.di.epi.cubenol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isopropyl.laurate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isopropyl.laurate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__caryophylla.4.12..8.13..dien.5.alpha.ol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'caryophylla.4.12..8.13..dien.5.alpha.ol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__gamma.eudesmol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'gamma.eudesmol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__alpha.muurolol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'alpha.muurolol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X1.2.dihydro.8.hydroxy..2E..linalool",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X1.2.dihydro.8.hydroxy..2E..linalool', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__tau.cadinol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'tau.cadinol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__selin.11.en.4.alpha.ol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'selin.11.en.4.alpha.ol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__alpha.eudesmol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'alpha.eudesmol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X14.hydroxy.9.epi..E..caryophyllene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X14.hydroxy.9.epi..E..caryophyllene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__tau.muurolol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'tau.muurolol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__n.tetradecanol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'n.tetradecanol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__foeniculin",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'foeniculin', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__cadalene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'cadalene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.3.dihydro.farnesol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.3.dihydro.farnesol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2E.6Z.farnesal",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2E.6Z.farnesal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__caryophyllene.acetate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'caryophyllene.acetate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X14.hydroxy.alpha.humulene",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X14.hydroxy.alpha.humulene', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2Z.6E.farnesal",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2Z.6E.farnesal', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2Z.6Z.farnesol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2Z.6Z.farnesol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2Z.6E.farnesol",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2Z.6E.farnesol', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ambroxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ambroxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__benzyl.benzoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'benzyl.benzoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2E.6E.methyl.farnesoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2E.6E.methyl.farnesoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.tetradecanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.tetradecanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.ethylhexylsalicylate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X2.ethylhexylsalicylate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isopropyl.tetradecanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isopropyl.tetradecanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.pentadecanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.pentadecanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__methyl.hexadecanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'methyl.hexadecanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__Z.Z.geranyl.linalool",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'Z.Z.geranyl.linalool', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.hexadecanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.hexadecanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__manool.oxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'manool.oxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X13.epi.manool.oxide",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'X13.epi.manool.oxide', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__isopropyl.hexadecanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'isopropyl.hexadecanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__manool",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'manool', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.octadecanoate",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'ethyl.octadecanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__ethyl.pentanoate",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'ethyl.pentanoate', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__X2.ethyl.3.methylpyrazine",
+  "type": "number",
+  "unit": "stored concentration",
+  "description": "1.csv column 'X2.ethyl.3.methylpyrazine', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__esters_sum",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'esters_sum', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__aroma_hops_sum",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'aroma_hops_sum', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__acids_sum",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'acids_sum', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "chem__sulfur_sum",
+  "type": "number",
+  "unit": "stored value, scale not directly calibrated",
+  "description": "1.csv column 'sulfur_sum', value unchanged from the raw attachment (missing cells stay blank; Q1 imputes inside the training fold)."
+ },
+ {
+  "name": "A_malt_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_malt_all' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_malt_grain",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_malt_grain' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_malt_bread",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_malt_bread' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_malt_cara",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_malt_cara' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_malt_burn",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_malt_burn' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_hops_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_hops_all' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_hops_citrus",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_hops_citrus' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_hops_tropical",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_hops_tropical' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_hops_noble",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_hops_noble' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_hops_woody",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_hops_woody' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_esters_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_esters_all' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_esters_ethac",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_esters_ethac' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_esters_isoaa",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_esters_isoaa' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_esters_flower",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_esters_flower' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "A_esters_fruity",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'A_esters_fruity' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_malt_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_malt_all' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_malt_grain",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_malt_grain' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_malt_bread",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_malt_bread' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_malt_cara",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_malt_cara' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_malt_burn",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_malt_burn' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_hops_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_hops_all' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_hops_citrus",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_hops_citrus' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_hops_tropical",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_hops_tropical' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_hops_noble",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_hops_noble' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_hops_woody",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_hops_woody' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_esters_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_esters_all' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_esters_ethac",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_esters_ethac' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_esters_isoaa",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_esters_isoaa' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_esters_flower",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_esters_flower' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "F_esters_fruity",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'F_esters_fruity' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "acidity",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'acidity' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "bitternes",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'bitternes' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "sweetness",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'sweetness' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "X4vg",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'X4vg' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "diacetyl",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'diacetyl' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "dms",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'dms' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "metallic",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'metallic' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "stale_hops",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'stale_hops' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "t2n",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 't2n' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "orange",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'orange' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "coriander",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'coriander' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "clove",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'clove' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "lactic",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'lactic' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "acetic",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'acetic' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "barnyard",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'barnyard' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "alcohol",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'alcohol' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "aftertaste",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'aftertaste' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "body",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'body' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "co2",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'co2' (continuous, mean 0; NOT an original 0-6 score)."
+ },
+ {
+  "name": "overall",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory target 'overall' (continuous, mean 0; NOT an original 0-6 score)."
+ }
+]

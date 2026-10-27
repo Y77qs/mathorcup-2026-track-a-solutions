@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/r05_q3_docs.py", line 52, in <module>
+    "q3_generation": rob("ROB-0009"),
+                     ^^^^^^^^^^^^^^^
+  File "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/r05_q3_docs.py", line 32, in rob
+    "values": v.get("values"), "mean": v.get("mean"), "spread": v.get("spread"),
+              ^^^^^
+AttributeError: 'list' object has no attribute 'get'

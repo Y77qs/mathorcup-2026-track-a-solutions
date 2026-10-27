@@ -1,0 +1,71 @@
+--- .rework/evidence/snapshot/report/paper.md	2026-10-24 21:46:57
++++ /tmp/paperfix-check/report/paper.md	2026-10-24 22:01:50
+@@ -10,7 +10,7 @@
+ 
+ **问题二**用附件 2.csv 的 Spearman 关联矩阵构建附件描述网络、用 200 行训练集重算的图作正则化网络，对 {{metric:EXP-0029:n_candidates}} 个单体化合物候选计算总体 Spearman、风格残差化 Spearman 与图正则低秩系数，按列内百分位合成综合分 $S_{jt}$。主指标为 4 种方法 Top-3 集合的平均两两 Jaccard：候选 {{metric:EXP-0029:topk-jaccard}}、维度无关基线 {{metric:EXP-0002:topk-jaccard}}。最终 Top-3 按蓝图规定的“bootstrap 入选频率 $\pi$ 优先、平均综合分 $S$ 裁决并列”给出；$\pi$ 均值仅 {{metric:EXP-0029:mean_selected_pi}}、没有化合物达到 $\pi=1$，说明单维 Top-3 存在实质竞争。
+ 
+-**问题三**用风格内经验边际与池化边际的层次收缩（$\kappa=5$）与混合 floor 边际描述 $p(X\mid s)$，用向共享相关矩阵收缩的高斯 Copula（$\kappa_R=20$）描述依赖结构，采样后投影到五条硬缺陷约束。低缺陷生成的约束满足率为 {{metric:EXP-0033:constraint-satisfaction}}（无条件基线与未约束生成分别为 {{metric:EXP-0008:constraint-satisfaction}} 与 {{metric:EXP-0033:constraint-satisfaction-unconstrained}}）；归一化能量距离 {{metric:EXP-0033:energy-distance-normalized}}（同量真实—真实参照 {{metric:EXP-0033:energy-distance-real-reference}}）；缺陷超阈率由 {{metric:EXP-0033:defect-exceedance-rate-unconstrained}}（真实数据 {{metric:EXP-0033:defect-exceedance-rate-real}}）降到 {{metric:EXP-0033:defect-exceedance-rate}}。Pils/Lager→Tripel 迁移把目标马氏距离由 {{metric:EXP-0033:ablation-quantile-transfer-mahalanobis}} 降到 {{metric:EXP-0033:target-mahalanobis}}，但“策略相对不恶化率 1.0”是投影构造保证的；在 cap-at-max 策略下，输出对“逐缺陷严格不增”这一更严标准的达标率只有 {{metric:EXP-0033:transfer-scenario-strict-nonworsen-min}}，两种口径必须分开读，不能把 1.0 读成经验性的可行性结论。
++**问题三**用风格内经验边际与池化边际的层次收缩（$\kappa=5$）与混合 floor 边际描述 $p(X\mid s)$，用向共享相关矩阵收缩的高斯 Copula（$\kappa_R=20$）描述依赖结构，采样后投影到五条硬缺陷约束。低缺陷生成的约束满足率为 {{metric:EXP-0033:constraint-satisfaction}}（无条件基线与未约束生成分别为 {{metric:EXP-0008:constraint-satisfaction}} 与 {{metric:EXP-0033:constraint-satisfaction-unconstrained}}）；归一化能量距离 {{metric:EXP-0033:energy-distance-normalized}}（同量真实—真实参照 {{metric:EXP-0033:energy-distance-real-reference}}）；缺陷超阈率由 {{metric:EXP-0033:defect-exceedance-rate-unconstrained}}（真实数据 {{metric:EXP-0033:defect-exceedance-rate-real}}）降到 {{metric:EXP-0033:defect-exceedance-rate}}。Pils/Lager→Tripel 迁移把目标马氏距离由 {{metric:EXP-0033:ablation-quantile-transfer-mahalanobis}} 降到 {{metric:EXP-0033:target-mahalanobis}}，但“策略相对不恶化率 {{metric:EXP-0033:transfer-nonworsen-rate}}”是投影构造保证的；在 cap-at-max 策略下，输出对“逐缺陷严格不增”这一更严标准的达标率只有 {{metric:EXP-0033:transfer-scenario-strict-nonworsen-min}}，两种口径必须分开读，不能把该策略相对率读成经验性的可行性结论。
+ 
+ 台账现有 {{value:count:experiments}} 个实验、{{value:count:validations}} 条验证、{{value:count:claims}} 条结论（含被替代的历史记录）与 {{value:count:figures}} 张图；三项预注册稳健性判定全部通过（见第 7 节），九项必做消融逐项完成（见第 8 节）。全部数字由台账占位符渲染，失败实验与未通过的检查按原样保留并披露（第 7 节）。
+ 
+@@ -40,7 +40,7 @@
+ 
+ ### 2.2 尺度—编码—单位—证据字典
+ 
+-以 8.xlsx 的 Calibrated chemical dataset（70 个化合物的原始浓度）对 1.csv 回算，逐列判定存储尺度：**37 列**与 $\log_{10}$(原始浓度) 数值一致，**33 列**与原始浓度线性一致，其余 **161 列**无校准表直接覆盖。37 个 log10 列中有 {{metric:EXP-0004:audit_calibrated_zero_cells}} 个单元格对应校准表记录的 0，其存储值等于该列最小正浓度一半的 $\log_{10}$（编码点）；161 个未校准列中有 {{metric:EXP-0004:audit_floor_columns}} 列共享地板值（约 $-1.8178$），合计 {{metric:EXP-0004:audit_floor_cells}} 个单元格。字典逐变量记录名称、类型、存储尺度、反变换、单位、编码规则与证据等级；变量类型区分单体化合物（{{metric:EXP-0029:n_candidates}}）、派生汇总量（5：`kcalperc`、`acids_sum`、`esters_sum`、`aroma_hops_sum`、`sulfur_sum`）与理化指标（7）。
++以 8.xlsx 的 Calibrated chemical dataset（70 个化合物的原始浓度）对 1.csv 回算，逐列判定存储尺度：**37 列**与 $\log_{10}$(原始浓度) 数值一致，**33 列**与原始浓度线性一致，其余 **161 列**无校准表直接覆盖（逐列判定表见 `outputs/audit/scale_identification.csv`，由 `src/prepare_base.py` 生成并随包交付）。37 个 log10 列中有 {{metric:EXP-0004:audit_calibrated_zero_cells}} 个单元格对应校准表记录的 0，其存储值等于该列最小正浓度一半的 $\log_{10}$（编码点）；161 个未校准列中有 {{metric:EXP-0004:audit_floor_columns}} 列共享地板值（约 $-1.8178$），合计 {{metric:EXP-0004:audit_floor_cells}} 个单元格。字典逐变量记录名称、类型、存储尺度、反变换、单位、编码规则与证据等级；变量类型区分单体化合物（{{metric:EXP-0029:n_candidates}}）、派生汇总量（5：`kcalperc`、`acids_sum`、`esters_sum`、`aroma_hops_sum`、`sulfur_sum`）与理化指标（7）。
+ 
+ **必须区分三件事**：记录为零、真实浓度严格为零、已知低于检出限。主模型首先复现**观测分布**；在缺少可信检出限时，我们不把最小正观测值当作仪器检出限，因此不做左删失建模，而是在 Copula 生成中用 floor 混合边际显式表示编码点。
+ 
+@@ -98,7 +98,7 @@
+ $$
+ a_{it}=\widehat F^{\mathrm{mid}}_{Y_t,\mathrm{train}}(\widehat y_{it}),\qquad g^{\mathrm{cont}}_{it}=6a_{it},\qquad g_{it}=\min\{6,\max[0,\lfloor 6a_{it}+1/2\rfloor]\},
+ $$
+-该主规则由模型契约 MCON-0001 的分段声明式公式与 7 个边界样例（覆盖 $a=0,\,1/12,\,1/6,\,1/2,\,3/4,\,11/12,\,1$）固定下来；敏感性分析另用训练折 5%/95% 分位到 0/6 的有界线性映射，仅用于检验分级对参考端点的敏感性。**等级 0 不自动表示该风味不存在，等级 6 不自动表示原人工评分满分，缺陷维度的相对高等级不等于已超过化学缺陷阈值**；标准化标签的 0 也不作为真实等级 3 的锚点。
++该主规则由模型契约 MCON-0001 的分段声明式公式与 7 个边界样例（覆盖 $a=0$、$1/12$、$1/6$、$1/2$、$3/4$、$11/12$、$1$）固定下来；敏感性分析另用训练折 5%/95% 分位到 0/6 的有界线性映射，仅用于检验分级对参考端点的敏感性。**等级 0 不自动表示该风味不存在，等级 6 不自动表示原人工评分满分，缺陷维度的相对高等级不等于已超过化学缺陷阈值**；标准化标签的 0 也不作为真实等级 3 的锚点。
+ 
+ 交付层给出全部 {{metric:EXP-0026:n_rows}} 行 × {{metric:EXP-0026:n_targets}} 个维度的分级表（EXP-0026 的 `grades_all.csv`：每个维度一列 $g^{\mathrm{cont}}$、一列整数 $g$），其中 {{metric:EXP-0026:n_train_rows}} 行训练样本为 **in-sample**、{{metric:EXP-0026:n_holdout_rows}} 行留出样本为 out-of-sample。分级的二次加权 $\kappa$ 为 {{metric:EXP-0026:grade_qwk}}、分级 MAE 为 {{metric:EXP-0026:grade_mae}}、整级一致率为 {{metric:EXP-0026:grade_agreement}}；预测被收缩会使预测级分布更集中，而参考级近均匀，因此一致率有限，这一偏差如实报告而不修饰。
+ 
+@@ -213,7 +213,7 @@
+ $$
+ \mathcal E^2=2\mathbb E\|X-Y\|-\mathbb E\|X-X'\|-\mathbb E\|Y-Y'\|,\qquad \mathcal E_{\mathrm{norm}}=\sqrt{\max(\mathcal E^2,0)/D_{\mathrm{ref}}},
+ $$
+-$D_{\mathrm{ref}}$ 为同量真实训练样本的典型两两距离，并提供同量真实—真实参照。**物理有效性**检查非负、训练支撑与派生量一致性；**缺陷风险**检查 3 个有阈值缺陷（DMS 17.25 μg/L、双乙酰 0.29925 mg/L、4VG 0.206333 mg/L，取 8.xlsx 均值）与 t2n 的风格上界。普通条件生成与低缺陷生成（对有阈值缺陷施加 $e_j(c)=\max(c_j/T_j-1,0)=0$，t2n 用风格训练 q90 上界）分别评价。
++$D_{\mathrm{ref}}$ 为同量真实训练样本的典型两两距离，并提供同量真实—真实参照。**物理有效性**检查非负、训练支撑与派生量一致性；**缺陷风险**检查 3 个有阈值缺陷（DMS 17.25 μg/L、双乙酰 0.29925 mg/L、4VG 0.206333 mg/L，取 8.xlsx 均值，阈值登记在 `data/clean/q3_thresholds.json`）与 t2n 的风格上界。普通条件生成与低缺陷生成（对有阈值缺陷施加 $e_j(c)=\max(c_j/T_j-1,0)=0$，t2n 用风格训练 q90 上界）分别评价。
+ 
+ 结果为：低缺陷生成的约束满足率 {{metric:EXP-0033:constraint-satisfaction}}（{{metric:EXP-0036:q3-n-generation}} 行 OOF 生成 + {{metric:EXP-0036:q3-n-style-holdout}} 行未见风格 + {{metric:EXP-0036:q3-n-transfer}} 行迁移，全部满足 MCON-0003 的五条约束），未约束生成仅 {{metric:EXP-0033:constraint-satisfaction-unconstrained}}，无条件全局高斯基线 {{metric:EXP-0008:constraint-satisfaction}}；缺陷超阈率方面，未约束生成 {{metric:EXP-0033:defect-exceedance-rate-unconstrained}}、真实数据 {{metric:EXP-0033:defect-exceedance-rate-real}}、低缺陷生成 {{metric:EXP-0033:defect-exceedance-rate}}。约束投影的代价很小：$\mathcal E_{\mathrm{norm}}$ 由 {{metric:EXP-0033:energy-distance-normalized-unconstrained}} 变为 {{metric:EXP-0033:energy-distance-normalized}}（真实—真实参照 {{metric:EXP-0033:energy-distance-real-reference}}；无条件基线 {{metric:EXP-0008:energy-distance-normalized}}）。逐风格的能量距离见本节末图：未见风格扩展的 $\mathcal E_{\mathrm{norm}}$ 为 {{metric:EXP-0033:style-holdout-energy-distance-normalized}}，Tripel 较好而 Kriek/Lambic 区间很宽，小样本如实披露。
+ 
+@@ -241,7 +241,7 @@
+ - **双阈值情景**：$T_j$ 分别取 8.xlsx 的 mean 与 median；
+ - **题目指定缺陷**：DMS、双乙酰、4VG 用阈值；t2n 无阈值，施加 $c_{\mathrm{t2n}}^{\mathrm{new}}\le c_{\mathrm{t2n}}^{\mathrm{source}}$；stale hops 是感官维度，用 Q1 代理筛查并报告不确定性。
+ 
+-结果：**必须分清两个口径**。策略相对非恶化率四种情景都是 {{metric:EXP-0033:transfer-nonworsen-rate}}，但它由可行域投影构造保证、不是经验发现；严格逐缺陷不增率在「绝对不增」策略下与策略相对率相同（两者都由 $c^{\mathrm{new}}\le c^{\mathrm{source}}$ 这一约束直接保证），在「超阈不恶化」（cap-at-max）策略下只有 {{metric:EXP-0033:transfer-scenario-strict-nonworsen-min}}；逐缺陷拆分（DMS、2,3-丁二酮、4VG 与两个代理维度）见 EXP-0033 的 `outputs.transfer-scenarios`，其中 t2n 与 stale hops 是代理。对 t2n/stale 两个代理约束做 100 次标签代理重抽样，其联合非恶化率的 2.5% 分位为 {{metric:EXP-0033:transfer-nonworsen-rate-bootstrap-low}}（这是代理口径，不是五类缺陷严格率的下界）。平均 L1 改动 {{metric:EXP-0033:transfer-mean-l1}}；目标马氏距离从 {{metric:EXP-0033:ablation-quantile-transfer-mahalanobis}} 降到 {{metric:EXP-0033:target-mahalanobis}}。Pareto 前沿（$\lambda\in\{0.1,1,10\}\times\eta\in\{0,0.01,0.1\}$）见本节末图：$\lambda$ 越大目标越近、改动越大，$\eta$ 只带来很小额外代价，9 个格点的非恶化率全部与可行域允许的最大值一致。**两种策略的差别不在可行性或代价，而在保证的强度**：四种情景在各自可行域内都可行，平均 L1 改动与目标马氏距离在两种策略下几乎相同（逐情景数值见 EXP-0033 `outputs.transfer-scenarios`），差别只是后者把每个缺陷都压到不超过源样本、前者只压到不超过 $\max(c^{\mathrm{source}},T)$，因此后者的输出对“逐缺陷严格不增”这一更严标准的达标率只有 {{metric:EXP-0033:transfer-scenario-strict-nonworsen-min}}。上式的 {{metric:EXP-0033:transfer-scenario-strict-nonworsen-min}} 是**该策略输出的严格达标率**，不是“源样本中存在严格不增可行解的比例”；任何把两个口径混读的说法都不成立。迁移结论登记如下：
++结果：**必须分清两个口径**。策略相对非恶化率四种情景都是 {{metric:EXP-0033:transfer-nonworsen-rate}}，但它由可行域投影构造保证、不是经验发现；严格逐缺陷不增率在「绝对不增」策略下与策略相对率相同（两者都由 $c^{\mathrm{new}}\le c^{\mathrm{source}}$ 这一约束直接保证），在「超阈不恶化」（cap-at-max）策略下只有 {{metric:EXP-0033:transfer-scenario-strict-nonworsen-min}}；逐缺陷拆分（DMS、2,3-丁二酮、4VG 与两个代理维度）见 EXP-0033 的 `outputs.transfer-scenarios`，其中 t2n 与 stale hops 是代理。对 t2n/stale 两个代理约束做 100 次标签代理重抽样，其联合非恶化率的 2.5% 分位为 {{metric:EXP-0033:transfer-nonworsen-rate-bootstrap-low}}（这是代理口径，不是五类缺陷严格率的下界）。平均 L1 改动 {{metric:EXP-0033:transfer-mean-l1}}；目标马氏距离从 {{metric:EXP-0033:ablation-quantile-transfer-mahalanobis}} 降到 {{metric:EXP-0033:target-mahalanobis}}。Pareto 前沿（$\lambda\in\{0.1,1,10\}\times\eta\in\{0,0.01,0.1\}$）见本节末图：$\lambda$ 越大目标越近、改动越大，$\eta$ 只带来很小额外代价，9 个格点的非恶化率全部与可行域允许的最大值一致。**两种策略的差别不在可行性或代价，而在保证的强度**；逐情景数值与严格达标率口径见下方登记的迁移结论与 EXP-0033 `outputs.transfer-scenarios`，两种口径不可混读。迁移结论登记如下：
+ 
+ {{claim:CLAIM-0022}}
+ 
+@@ -259,7 +259,7 @@
+ 
+ ## 7 验证设计与稳健性（含失败与限制披露）
+ 
+-**协议先于比较**：在登记任何候选之前，三问各登记且仅登记一个验证计划（Q1：split-integrity、leakage、holdout-metrics、baseline-compare、independent-rerun；Q2：leakage、holdout-metrics、independent-rerun；Q3：leakage、holdout-metrics、simulation-seeds、independent-rerun）。检查由插件原生重算：Q1 的 50 维 MAE 由注册预测文件与测试真值复算（VAL-0034）、Q2 的 topk-jaccard 由 `sets.json` 复算（VAL-0038）、Q3 的 constraint-satisfaction 由 `samples.csv` 与 MCON-0003 的五条数值约束复算（VAL-0041），三者的复算值与实验记录值之差都在机器精度量级；三问的独立复跑都用**新实验 id** 在固定 seed 下逐项比较全部数值指标（VAL-0036 / VAL-0039 / VAL-0043，全部 delta = 0）。
++**协议先于比较**：在登记任何候选之前，三问各登记且仅登记一个验证计划（Q1：split-integrity、leakage、holdout-metrics、baseline-compare、independent-rerun；Q2：leakage、holdout-metrics、independent-rerun；Q3：leakage、holdout-metrics、simulation-seeds、independent-rerun）。检查由插件原生重算：Q1 的 50 维 MAE 由注册预测文件与测试真值复算（VAL-0034）、Q2 的 topk-jaccard 由 `sets.json` 复算（VAL-0038）、Q3 的 constraint-satisfaction 由 `samples.csv` 与 MCON-0003 的五条数值约束复算（VAL-0041），三者的复算值与实验记录值之差都在机器精度量级；三问的独立复跑都用**新实验 id** 在固定 seed 下逐项比较全部数值指标（VAL-0036 / VAL-0039 / VAL-0043，全部在声明的容差内复现，逐项比较见各 VAL 的 `result.json`）。
+ 
+ **Holdout 预算**：SPLIT-0002 共 5 条实验记录 = **3 次模型曝光**（EXP-0001 基线、EXP-0003 C1、EXP-0004 C2）＋ **2 次 verified rerun**（EXP-0010、EXP-0025，按 `verifiedRerun` 不计曝光；其中只有 EXP-0010 有独立复跑验证记录，见 VAL-0005/VAL-0031/VAL-0036，EXP-0025 是台账中第二条未单独验证的 verified rerun）。每行曝光 3 次，达到 `maxHoldoutReuse: 3` 上限，之后不再在该划分上注册任何非复跑实验；Q1 的稳健性扰动（EXP-0016–0018）与 Q2 的（EXP-0019–0021）只用 `SPLIT-0001/train.csv` 作依赖、不挂 split，因此不消耗曝光。SPLIT-0001 不挂载任何正式评估实验，其训练行被 Q1/Q2 的稳健性与 Q2 的关联分析使用。
+ 
+@@ -305,7 +305,7 @@
+ 
+ ## 9 结论、建议与局限
+ 
+-**结论**。(1) 在 50 维标准化感官标签上，训练内 OOF 融合相对逐目标中位数基线把留出 MAE 从 {{metric:EXP-0001:mae}} 降到 {{metric:EXP-0004:mae}}（Skill {{metric:EXP-0004:skill_50dim}}），而图正则与低秩约束本身只有弱增益；分级以训练折中点经验 CDF 定义并交付全部 {{metric:EXP-0026:n_rows}} 行。(2) 每个感官维度的 Top-3 在风格分层 bootstrap 下并不唯一（$\pi$ 均值 {{metric:EXP-0029:mean_selected_pi}}，无化合物 $\pi=1$），总体关联与风格内关联给出的答案显著不同（Jaccard {{metric:EXP-0035:ablation4-total-vs-within-jaccard}}），把风格混杂显式建模是必要的。(3) 风格条件 Copula 生成器在几乎不损失分布合理性的前提下把缺陷超阈率从与真实数据相当的 {{metric:EXP-0033:defect-exceedance-rate-unconstrained}} 降到 {{metric:EXP-0033:defect-exceedance-rate}}；跨风格迁移的「策略相对不恶化率」在四种情景下都等于可行域投影保证的上界，在「绝对不增」策略下「严格逐缺陷不增率」同样由约束构造保证，而在「超阈不恶化（cap-at-max）」策略下输出对严格不增的达标率只有 {{metric:EXP-0033:transfer-scenario-strict-nonworsen-min}}；两种策略的可行率与代价几乎相同，所以差别是**保证强度**而不是可行性，不能把 1.0 读成经验性的可行性结论，也也不能把该达标率读成“只有少数源样本可行”。
++**结论**。(1) 在 50 维标准化感官标签上，训练内 OOF 融合相对逐目标中位数基线把留出 MAE 从 {{metric:EXP-0001:mae}} 降到 {{metric:EXP-0004:mae}}（Skill {{metric:EXP-0004:skill_50dim}}），而图正则与低秩约束本身只有弱增益；分级以训练折中点经验 CDF 定义并交付全部 {{metric:EXP-0026:n_rows}} 行。(2) 每个感官维度的 Top-3 在风格分层 bootstrap 下并不唯一（$\pi$ 均值 {{metric:EXP-0029:mean_selected_pi}}，无化合物 $\pi=1$），总体关联与风格内关联给出的答案显著不同（Jaccard {{metric:EXP-0035:ablation4-total-vs-within-jaccard}}），把风格混杂显式建模是必要的。(3) 风格条件 Copula 生成器在几乎不损失分布合理性的前提下把缺陷超阈率从与真实数据相当的 {{metric:EXP-0033:defect-exceedance-rate-unconstrained}} 降到 {{metric:EXP-0033:defect-exceedance-rate}}；跨风格迁移的「策略相对不恶化率」在四种情景下都等于可行域投影保证的上界，在「绝对不增」策略下「严格逐缺陷不增率」同样由约束构造保证，而在「超阈不恶化（cap-at-max）」策略下输出对严格不增的达标率只有 {{metric:EXP-0033:transfer-scenario-strict-nonworsen-min}}；两种策略的可行率与代价几乎相同，所以差别是**保证强度**而不是可行性，不能把该策略相对率读成经验性的可行性结论，也不能把该达标率读成“只有少数源样本可行”。
+ 
+ **建议**。对酿造实践，我们只提供**关联与生成合理性**层面的证据：不能把 Top-3 读成因果靶点；不能把 0–6 相对等级读成人工评分；生成的谱需要真实酿造与品评复核。若用于工艺优化，应先在小规模实验中检验“超阈不恶化”与“绝对不增”两种策略的实际代价。
+ 
+@@ -330,4 +330,4 @@
+   - {{claim:CLAIM-0021}}
+   - {{claim:CLAIM-0022}}
+   - {{claim:CLAIM-0012}}
+-- 图：论文实际引用的 14 张为 FIG-0016–FIG-0024、FIG-0026、FIG-0028、FIG-0029、FIG-0030、FIG-0031（Q1 五张、Q2 三张、Q3 五张、九项消融汇总一张；FIG-0030/0031 是图面修订后重新登记的缺陷超阈率图与 Pareto 图）。逐图 sha256 入台账；被取代的 FIG-0025/0027 是同一路径的旧字节记录，保留为历史。
++- 图：论文实际引用的 14 张为 FIG-0016–FIG-0024、FIG-0026、FIG-0028、FIG-0029、FIG-0030、FIG-0031（Q1 五张、Q2 三张、Q3 五张、九项消融汇总一张；FIG-0030/0031 是图面修订后重新登记的缺陷超阈率图与 Pareto 图）。逐图 sha256 入台账；被取代的 FIG-0025/0027 已用 figure-retire 标记为 superseded（分别指向 FIG-0030/FIG-0031），旧字节归档到 `figures/archive/FIG-0025-q3_defect_exceedance.png` 与 `figures/archive/FIG-0027-q3_pareto.png`（归档字节与登记 sha256 逐字节核验一致），旧记录、路径历史与旧→新关系保留在台账。

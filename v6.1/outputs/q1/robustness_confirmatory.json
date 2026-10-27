@@ -1,0 +1,127 @@
+{
+ "robId": "ROB-0007",
+ "label": "Q1 mae stability (confirmatory)",
+ "questionId": "Q1",
+ "preregisteredAt": "2026-10-26T14:06:35.757Z",
+ "executedAt": "2026-10-26T14:20:32.231Z",
+ "experimentIds": [
+  "EXP-0086",
+  "EXP-0087",
+  "EXP-0098"
+ ],
+ "referenceExperimentId": "EXP-0086",
+ "nExecutedBlocks": 3,
+ "methods": [
+  "multiple-seeds",
+  "param-perturbation"
+ ],
+ "methodNote": "台账记录的方法为 param-perturbation，被扰动的对象是冻结种子块；不得写成 multiple-seeds，也不得把两个执行块连同补充块写成 n=3 的计划结果",
+ "perturbations": [
+  {
+   "description": "seed block: run the frozen q1_fix.py on repeat 0 and repeat 1 as two separate post-plan experiments (frozen SEEDS 20261025 / 20261026); compare A/F30 pooled mae",
+   "id": "q1-seed-block",
+   "kind": "multiple-seeds"
+  },
+  {
+   "description": "lambda grid perturbation: LAMBDAS (0.1,1.0,10.0) -> (0.05,0.5,5.0) at the inner selection step, same outer folds / representations / ranks / gamma grids; other protocol steps unchanged",
+   "id": "q1-lambda-half",
+   "kind": "param-perturbation"
+  }
+ ],
+ "metricKey": "mae",
+ "decisionRule": {
+  "limit": 0.05,
+  "reference": "first linked experiment = the post-plan reference",
+  "type": "relative-range"
+ },
+ "seeds": [
+  20261025,
+  20261026
+ ],
+ "repeats": 3,
+ "budget": {
+  "bootstrapIterations": 2000,
+  "bootstrapSeed": 20261024
+ },
+ "dataUse": {
+  "holdoutReuse": 0,
+  "note": "train-only 3x3x3 nested CV; no holdout is consumed; the immutable NESTED-CV-1 assignment is reused; split-integrity/holdout-metrics structural gaps do not disappear because of robustness"
+ },
+ "values": [
+  0.35422354618559243,
+  0.36243390816790516,
+  0.35763459908881995
+ ],
+ "interval": {
+  "low": 0.35422354618559243,
+  "high": 0.36243390816790516,
+  "mean": 0.3580973511474392,
+  "n": 3
+ },
+ "absoluteSpread": 0.00821036198231273,
+ "relativeSpread": 0.023178476051987185,
+ "decisionOutcome": {
+  "supported": true,
+  "passed": true,
+  "message": "relative spread 0.008210 <= 0.05"
+ },
+ "decisionPassed": true,
+ "executionStatus": "completed",
+ "conclusion": "relative spread 0.008210 <= 0.05",
+ "conclusionScope": "within the declared perturbations only",
+ "satisfiedMethods": [
+  "multiple-seeds",
+  "param-perturbation"
+ ],
+ "pairs": [
+  {
+   "changed": [
+    "seed"
+   ],
+   "changedParams": []
+  },
+  {
+   "changed": [
+    "params"
+   ],
+   "changedParams": [
+    "lambdaMultiplier"
+   ]
+  }
+ ],
+ "scopeNote": "MODEL-0048 / EXP-0073; train-only 3x3x3 nested CV",
+ "alsoRegisteredAs": "ROB-0011",
+ "supplementary": {
+  "EXP-0086": {
+   "mae_all50": 0.3469404548907072,
+   "mae_ridge0": 0.3646781359347143,
+   "mae_graph_ridge": 0.3648555048691404,
+   "per_group__Aroma15__mae": 0.35844636318549217,
+   "per_group__Flavour15__mae": 0.35000072918569297,
+   "per_group__Other20__mae": 0.33601581794837904
+  },
+  "EXP-0087": {
+   "mae_all50": 0.3528973794333655,
+   "mae_ridge0": 0.366740441583955,
+   "mae_graph_ridge": 0.3668887718800212,
+   "per_group__Aroma15__mae": 0.367427606951164,
+   "per_group__Flavour15__mae": 0.35744020938464627,
+   "per_group__Other20__mae": 0.33859258633155614
+  },
+  "EXP-0098": {
+   "mae_all50": 0.3493976669582246,
+   "mae_ridge0": 0.35714301746970906,
+   "mae_graph_ridge": 0.35740745239196714,
+   "per_group__Aroma15__mae": 0.3616070505033714,
+   "per_group__Flavour15__mae": 0.3536621476742685,
+   "per_group__Other20__mae": 0.3370422687623317
+  }
+ },
+ "limitations": [
+  "split-integrity and holdout-metrics stay structurally unsatisfiable (no holdout, EXP-0073 has no splitId); robustness does not remove them",
+  "multiple-seeds = frozen repeat blocks 0/1 only (2 of the 3 frozen seeds were executed); the third seed was not run in ROB-0007",
+  "fixed-seed rerun (VAL-0065/EXP-0083) is deterministic reproduction, not a robustness perturbation",
+  "param-perturbation changes only the inner lambda grid (x0.5); no other hyper-parameter was perturbed",
+  "ROB-0011 re-executed the same design on the provenance-consistent wrapper and repeated these values; it does not widen the scope above"
+ ]
+}

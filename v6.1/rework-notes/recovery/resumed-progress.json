@@ -1,0 +1,83 @@
+{
+  "at": "2026-10-27T12:29:48.512230+00:00",
+  "runId": "RUN-0004",
+  "status": "running",
+  "stopReason": null,
+  "oldRunsUnchanged": true,
+  "newRequestCount": 17,
+  "settledNativeRequests": 16,
+  "oldUnknownRequest": {
+    "key": "ab5ac473-ca97-4385-8a48-22c3023c4fc7:1:67",
+    "reserved": 1304576,
+    "at": "2026-10-27T11:50:39.354Z",
+    "settled": false,
+    "usageUnknown": true,
+    "attemptEventId": "ab5ac473-ca97-4385-8a48-22c3023c4fc7:461"
+  },
+  "collectedExperiments": [
+    {
+      "id": "EXP-0125",
+      "status": "succeeded",
+      "startedAt": "2026-10-27T11:52:50.056Z",
+      "endedAt": "2026-10-27T11:53:22.011Z"
+    },
+    {
+      "id": "EXP-0126",
+      "status": "succeeded",
+      "startedAt": "2026-10-27T11:53:51.904Z",
+      "endedAt": "2026-10-27T11:54:28.748Z"
+    },
+    {
+      "id": "EXP-0127",
+      "status": "succeeded",
+      "startedAt": "2026-10-27T11:53:22.437Z",
+      "endedAt": "2026-10-27T11:53:49.410Z"
+    },
+    {
+      "id": "EXP-0128",
+      "status": "succeeded",
+      "startedAt": "2026-10-27T11:54:29.073Z",
+      "endedAt": "2026-10-27T11:55:00.329Z"
+    },
+    {
+      "id": "EXP-0129",
+      "status": "succeeded",
+      "startedAt": "2026-10-27T11:55:03.239Z",
+      "endedAt": "2026-10-27T11:55:07.263Z"
+    },
+    {
+      "id": "EXP-0130",
+      "status": "succeeded",
+      "startedAt": "2026-10-27T11:55:08.722Z",
+      "endedAt": "2026-10-27T11:55:12.916Z"
+    }
+  ],
+  "newGapExperiments": [
+    {
+      "id": "EXP-0131",
+      "status": "succeeded",
+      "seed": 20261027,
+      "startedAt": "2026-10-27T12:28:40.562Z"
+    },
+    {
+      "id": "EXP-0132",
+      "status": "queued",
+      "seed": 20261027,
+      "startedAt": null
+    },
+    {
+      "id": "EXP-0133",
+      "status": "succeeded",
+      "seed": 20261027,
+      "startedAt": "2026-10-27T12:29:10.366Z"
+    }
+  ],
+  "lastAuto": {
+    "tool": "experiment",
+    "signature": "{\"t\":\"experiment\",\"a\":{\"action\":\"status\"},\"r\":{\"ok\":true,\"code\":null,\"ids\":[],\"evidence\":[]}}",
+    "significant": false,
+    "revisionBefore": 4942,
+    "revisionAfter": 4944,
+    "at": "2026-10-27T12:29:39.445Z"
+  }
+}

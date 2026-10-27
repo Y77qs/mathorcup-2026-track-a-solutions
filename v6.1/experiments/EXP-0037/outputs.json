@@ -1,0 +1,34 @@
+{
+  "q1_baseline": {
+    "model": "median",
+    "note": "this baseline never sees the outer test rows; it is the reference for Skill = 1 - MAE/MAE_baseline",
+    "per_repeat_mae_af30": {
+      "0": [
+        0.4020725051476923,
+        0.37474625758771085,
+        0.39696612220763167
+      ],
+      "1": [
+        0.3951951757513158,
+        0.39008937633868135,
+        0.39169695469903615
+      ],
+      "2": [
+        0.3759901118373493,
+        0.4098428107865789,
+        0.39174755132439565
+      ]
+    },
+    "protocol": {
+      "definition": "per-target training median fitted inside each outer training set; OOF pooled over 3 repeats",
+      "repeats": 3,
+      "seeds": [
+        20261025,
+        20261026,
+        20261027
+      ],
+      "splits": "data/splits/NESTED-CV-1/splits.csv",
+      "splits_sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81"
+    }
+  }
+}

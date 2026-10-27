@@ -1,0 +1,124 @@
+{
+ "certificates": {
+  "count": 198,
+  "unique_problem_hash": 198,
+  "hash_format_violations": 0,
+  "strategy_counts": {
+   "qp-source-anchor": 99,
+   "qp-quantile-anchor": 99
+  },
+  "status_counts": {
+   "optimal": 198
+  },
+  "feasible_true": 198,
+  "max_constraint_violation": 0.0,
+  "max_primal_residual": 9.989717497660422e-09,
+  "max_dual_residual": 3.393784142602385e-10,
+  "max_kkt_stationarity_residual": 5.616718630759355e-09,
+  "internal_inconsistencies": 0,
+  "aggregates_vs_recorded": {
+   "qp-solves": {
+    "recomputed": 198,
+    "recorded": 198,
+    "match": true
+   },
+   "qp-status-optimal": {
+    "recomputed": 198,
+    "recorded": 198,
+    "match": true
+   },
+   "qp-status-infeasible": {
+    "recomputed": 0,
+    "recorded": 0,
+    "match": true
+   },
+   "qp-status-not-converged": {
+    "recomputed": 0,
+    "recorded": 0,
+    "match": true
+   },
+   "qp-max-constraint-violation": {
+    "recomputed": 0.0,
+    "recorded": 0.0,
+    "match": true
+   },
+   "qp-max-primal-residual": {
+    "recomputed": 9.989717497660422e-09,
+    "recorded": 9.989717497660422e-09,
+    "match": true
+   },
+   "qp-max-dual-residual": {
+    "recomputed": 3.393784142602385e-10,
+    "recorded": 3.393784142602385e-10,
+    "match": true
+   }
+  }
+ },
+ "transfer_movement": {
+  "rows": 396,
+  "columns": 231,
+  "max_abs_delta_l1_change_z": 363.219397777574,
+  "max_abs_delta_mean_abs_change_z": 1.5723783453574633,
+  "per_strategy_rows": {
+   "source-fixed": 99,
+   "target-mean-projection": 99,
+   "qp-source-anchor": 99,
+   "qp-quantile-anchor": 99
+  },
+  "nonincrease_rate_recomputed_vs_recorded": {
+   "source-fixed": {
+    "recomputed": 1.0,
+    "recorded": 1.0,
+    "match": true
+   },
+   "target-mean-projection": {
+    "recomputed": 0.41414141414141414,
+    "recorded": 0.41414141414141414,
+    "match": true
+   },
+   "qp-source-anchor": {
+    "recomputed": 1.0,
+    "recorded": 1.0,
+    "match": true
+   },
+   "qp-quantile-anchor": {
+    "recomputed": 1.0,
+    "recorded": 1.0,
+    "match": true
+   }
+  },
+  "flag_mismatches": {
+   "capped_columns_and_all_flag": 58,
+   "t2n_increasing": 0,
+   "stale_hops": 0
+  }
+ },
+ "constraint_residual": {
+  "rows": 15048,
+  "groups": 396,
+  "verdicts": {
+   "verified": 13932,
+   "not_identifiable": 324,
+   "conditional": 734,
+   "infeasible": 58
+  },
+  "violating_records": 58,
+  "recompute_mismatch": {
+   "upper_source_value": 0,
+   "upper_source_value_proxy": 4,
+   "lower_zero": 0
+  },
+  "recompute_max_abs_diff": {
+   "upper_source_value": 0.0,
+   "upper_source_value_proxy": 1.0000000003410059e-09,
+   "lower_zero": 0.0
+  },
+  "lower_zero_rows_with_negative_stored_value": 0,
+  "convention": "residual = clamp(new - source, 0) in stored space for upper bounds; residual = clamp(-new, 0) for the lower_zero rows. This is a BOUND residual, not the design movement reported under transfer_movement."
+ },
+ "hard_failures": [
+  "recorded l1_change_z / mean_abs_change_z do not reproduce from opt-src",
+  "non-increase flags disagree with the recorded stored/physical values"
+ ],
+ "passed": false
+}

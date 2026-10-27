@@ -1,0 +1,120 @@
+{
+  "ok": true,
+  "code": null,
+  "message": null,
+  "hint": null,
+  "projectId": "beer-2026-a-v3",
+  "revision": 4922,
+  "runtimeRevision": 5950,
+  "stage": "intake",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6",
+  "action": "quality",
+  "subaction": "run-control",
+  "control": "recover",
+  "runId": "RUN-0004",
+  "preflight": {
+    "ok": true,
+    "at": "2026-10-27T12:23:35.783Z",
+    "checks": [
+      {
+        "id": "project-dir",
+        "ok": true,
+        "detail": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6"
+      },
+      {
+        "id": "statement",
+        "ok": true,
+        "detail": "problem/statement.md"
+      },
+      {
+        "id": "python-probe",
+        "ok": true,
+        "detail": "recorded ok"
+      },
+      {
+        "id": "module:numpy",
+        "ok": true,
+        "detail": "present"
+      },
+      {
+        "id": "module:pandas",
+        "ok": true,
+        "detail": "present"
+      },
+      {
+        "id": "module:scipy",
+        "ok": true,
+        "detail": "present"
+      },
+      {
+        "id": "module:sklearn",
+        "ok": true,
+        "detail": "present"
+      },
+      {
+        "id": "module:matplotlib",
+        "ok": true,
+        "detail": "present"
+      },
+      {
+        "id": "module:openpyxl",
+        "ok": true,
+        "detail": "present"
+      },
+      {
+        "id": "module:sympy",
+        "ok": true,
+        "detail": "present"
+      },
+      {
+        "id": "format:md",
+        "ok": true,
+        "detail": "declared renderer"
+      },
+      {
+        "id": "format:tex",
+        "ok": true,
+        "detail": "declared renderer"
+      },
+      {
+        "id": "format:pdf",
+        "ok": true,
+        "detail": "declared renderer"
+      }
+    ],
+    "failed": []
+  },
+  "budget": {
+    "softTokenLimit": null,
+    "hardTokenLimit": null
+  },
+  "recovery": {
+    "fromRunId": "RUN-0003",
+    "reason": "用户于 2026-10-27 明确授权显式恢复 v6.1；保留 RUN-0003、失败请求、unknown 和 1,304,576 token 未结算上界；先回收已完成实验，再续做缺口，不重复训练、不清空历史、不降低科学质量门。",
+    "authorizedAt": "2026-10-27T12:23:35.783Z",
+    "acceptedUnsettledUpperBound": 1304576,
+    "requestKeys": [
+      "ab5ac473-ca97-4385-8a48-22c3023c4fc7:1:67"
+    ],
+    "inheritedRunIds": [
+      "RUN-0001",
+      "RUN-0002",
+      "RUN-0003"
+    ]
+  },
+  "exposure": {
+    "used": null,
+    "knownTotalTokens": 659008162,
+    "currentRunKnownTotalTokens": null,
+    "inheritedKnownTotalTokens": 659008162,
+    "inheritedUnsettledUpperBound": 1304576,
+    "unsettledUpperBound": 1304576,
+    "unknown": true,
+    "softLimit": null,
+    "hardLimit": null,
+    "softExceeded": false,
+    "hardExceeded": false,
+    "status": "unknown",
+    "enforcement": "unknown usage retained, including explicitly acknowledged historical reservations"
+  }
+}

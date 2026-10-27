@@ -1,0 +1,3 @@
+wrote data/splits/NESTED-CV-1/splits.csv rows=2250 sha256=8ad8e75dcedcb2c1
+wrote data/splits/NESTED-CV-1/manifest.json
+style counts: {'Amber': 12, 'Blond': 31, 'Brett/cofermented': 6, 'Brown': 12, 'Brut': 4, 'Christmas': 9, 'Dubbel': 10, 'Faro': 3, 'Flanders old brown': 5, 'Fruitbeer': 8, 'Hoppy': 17, 'Kriek': 10, 'Lambic': 11, 'Low/No alcohol': 8, 'Pils/Lager': 11, 'Saison': 10, 'Scotch': 5, 'Stout/Porter': 13, 'Strong ale': 18, 'Tripel': 28, 'West Flanders ale': 7, 'Wheat': 12}

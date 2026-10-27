@@ -1,0 +1,43 @@
+{
+ "ROB-0007": {
+  "decisionPassed": true,
+  "values": [
+   0.35422354618559243,
+   0.36243390816790516,
+   0.35763459908881995
+  ],
+  "spread": 0.00821036198231273,
+  "rule": "relative spread 0.008210 <= 0.05"
+ },
+ "ROB-0008": {
+  "decisionPassed": true,
+  "values": [
+   0.2103333333333333,
+   0.20733333333333334,
+   0.20533333333333334
+  ],
+  "spread": 0.004999999999999949,
+  "rule": "relative spread 0.005000 <= 0.1"
+ },
+ "ROB-0009": {
+  "decisionPassed": true,
+  "values": [
+   0.8777844056665478,
+   0.876453018856588,
+   0.8981550487535501
+  ],
+  "spread": 0.021702029896962127,
+  "rule": "relative spread 0.021702 <= 0.05"
+ },
+ "ROB-0010": {
+  "decisionPassed": true,
+  "values": [
+   1,
+   1,
+   1
+  ],
+  "spread": 0,
+  "rule": "min 1 satisfies min-value limit 1"
+ }
+}
+notExecuted: []

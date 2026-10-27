@@ -1,0 +1,597 @@
+{
+ "pdf": ".rework/previews/preview-E/preview.pdf",
+ "pages": 30,
+ "page_size": [
+  595.28,
+  841.89
+ ],
+ "margin_L": 62.36,
+ "margin_R": 532.92,
+ "per_page": [
+  {
+   "page": 1,
+   "chars": 1250,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [],
+   "page_number": null,
+   "pageno_x": null,
+   "outside_margin": [],
+   "first_line": "基于稳健表示、共表达网络与风格条件生成的啤酒化合物—感"
+  },
+  {
+   "page": 2,
+   "chars": 3336,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [],
+   "page_number": null,
+   "pageno_x": null,
+   "outside_margin": [],
+   "first_line": "目录"
+  },
+  {
+   "page": 3,
+   "chars": 975,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [],
+   "page_number": null,
+   "pageno_x": null,
+   "outside_margin": [],
+   "first_line": "7.1 检验设计 . . . . . . . . . . . . . . . . . . . . . . . "
+  },
+  {
+   "page": 4,
+   "chars": 1694,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "1",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 1,
+   "pageno_x": 294.9,
+   "outside_margin": [
+    [
+     55.14,
+     424.7,
+     "（选择记录与冻结身份一致） 。四者不可互相替代。"
+    ]
+   ],
+   "first_line": "1 问题重述与分析"
+  },
+  {
+   "page": 5,
+   "chars": 1391,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "2",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 2,
+   "pageno_x": 294.9,
+   "outside_margin": [],
+   "first_line": "2 数据核实与统一字典"
+  },
+  {
+   "page": 6,
+   "chars": 1258,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "3",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 3,
+   "pageno_x": 294.9,
+   "outside_margin": [],
+   "first_line": "3 模型假设、符号与总体框架"
+  },
+  {
+   "page": 7,
+   "chars": 1866,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "4",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 4,
+   "pageno_x": 294.9,
+   "outside_margin": [
+    [
+     56.43,
+     183.5,
+     "（"
+    ]
+   ],
+   "first_line": "训练图的边权为 wjk = bρjk 1{|bρjk | ≥ τ }，wjj = 0 ，其中 τ = 0 .5"
+  },
+  {
+   "page": 8,
+   "chars": 680,
+   "images": 2,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "5",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 5,
+   "pageno_x": 294.9,
+   "outside_margin": [],
+   "first_line": "本文使用两个 Skill 口径，二者不可混用：逐维 Skillt = 1 − MAEt,model/MAEt,"
+  },
+  {
+   "page": 9,
+   "chars": 1811,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "6",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 6,
+   "pageno_x": 294.9,
+   "outside_margin": [],
+   "first_line": "表 2 指标分组误差与折间波动"
+  },
+  {
+   "page": 10,
+   "chars": 851,
+   "images": 1,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "7",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 7,
+   "pageno_x": 294.9,
+   "outside_margin": [],
+   "first_line": "图 3 问题一：相对等级 0–6 的折外预测分布与参照分布对照（内部嵌套 CV、中秩经验 CDF；属相对等级，"
+  },
+  {
+   "page": 11,
+   "chars": 1683,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "8",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 8,
+   "pageno_x": 294.9,
+   "outside_margin": [],
+   "first_line": "表 5 Beer#1–Beer#10 的 Flavour 核心维度相对等级"
+  },
+  {
+   "page": 12,
+   "chars": 1122,
+   "images": 1,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "9",
+     294.9,
+     36.9
+    ]
+   ],
+   "page_number": 9,
+   "pageno_x": 294.9,
+   "outside_margin": [],
+   "first_line": "表 6 候选宇宙构成与两张表的划分"
+  },
+  {
+   "page": 13,
+   "chars": 1862,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "10",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 10,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "5.4 四种方法与综合打分"
+  },
+  {
+   "page": 14,
+   "chars": 2052,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "11",
+     292.4,
+     36.9
+    ]
+   ],
+   "page_number": 11,
+   "pageno_x": 292.4,
+   "outside_margin": [],
+   "first_line": "感官"
+  },
+  {
+   "page": 15,
+   "chars": 1673,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "12",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 12,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "表中 “类别” 依据绝对关联强度分类：风格内关联不低于总体关联绝对值的 0.8 倍记作 “内”，未"
+  },
+  {
+   "page": 16,
+   "chars": 1112,
+   "images": 1,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "13",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 13,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "图 5 问题二：Top-3 入选频率 π 与符号一致性 （500 次风格内 bootstrap、3 重复） ；"
+  },
+  {
+   "page": 17,
+   "chars": 1575,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "14",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 14,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "第二，集合一致性不等于识别准确率。方法间 Jaccard 与跨重复 Jaccard 描述的是不同方法、不"
+  },
+  {
+   "page": 18,
+   "chars": 1270,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "15",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 15,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "两项必须分开读：归一化能量距离从原始抽样到设计谱的变化量测度的是 “投影让分布偏离了"
+  },
+  {
+   "page": 19,
+   "chars": 1681,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "16",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 16,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "6.6 生成质量与参照对照"
+  },
+  {
+   "page": 20,
+   "chars": 704,
+   "images": 2,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "17",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 17,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "图 6 问题三：归一化经验 V 能量距离（V/D_train）对照；生成设计谱 0.8840 未优于源样本重采"
+  },
+  {
+   "page": 21,
+   "chars": 1674,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "18",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 18,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "表 11 声明约束的核验构成"
+  },
+  {
+   "page": 22,
+   "chars": 2034,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "19",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 19,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "表 12 二次规划求解证书摘要"
+  },
+  {
+   "page": 23,
+   "chars": 1761,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "20",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 20,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "求 stale_hops 代理不增，qp-quantile-anchor、qp-source-anchor 与"
+  },
+  {
+   "page": 24,
+   "chars": 813,
+   "images": 1,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "21",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 21,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "图 8 问题三：迁移三组量分面板——存储位移 |opt−src|、z 空间位移、约束残差 clamp(new−"
+  },
+  {
+   "page": 25,
+   "chars": 1990,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "22",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 22,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "其中 mref 为参考运行（扰动前的对照）指标。四个问题对象各有独立计划、独立上限，不合并"
+  },
+  {
+   "page": 26,
+   "chars": 1147,
+   "images": 1,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "23",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 23,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "图 9 四组稳健性：绝对极差与真实相对极差并排、各自预注册上限；仅2/3 冻结种子，含预算扰动与迁移侧"
+  },
+  {
+   "page": 27,
+   "chars": 1647,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "24",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 24,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "区分 “有改善” 与 “未移动”；target-mean-projection 参照控制的综合不增率明显低于 "
+  },
+  {
+   "page": 28,
+   "chars": 722,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "25",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 25,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "测：初赛题面及附件 1–8. 2026."
+  },
+  {
+   "page": 29,
+   "chars": 1837,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "26",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 26,
+   "pageno_x": 292.2,
+   "outside_margin": [
+    [
+     55.14,
+     615.8,
+     "（同数据"
+    ],
+    [
+     55.14,
+     615.8,
+     "report/tables/q2-full-to"
+    ]
+   ],
+   "first_line": "附录 A 　逐维误差、逐风格与完整 Top-3（完整表见支撑材料）"
+  },
+  {
+   "page": 30,
+   "chars": 990,
+   "images": 0,
+   "header_count": 0,
+   "footer_items": [
+    [
+     "27",
+     292.2,
+     36.9
+    ]
+   ],
+   "page_number": 27,
+   "pageno_x": 292.2,
+   "outside_margin": [],
+   "first_line": "3. 验证检查点仍不完整：问题一的划分完整性与留出指标、问题三的原生优化可行性与优化目"
+  }
+ ],
+ "checks": {
+  "page1_has_DRAFT": true,
+  "DRAFT_total": 5,
+  "page1_has_abstract": true,
+  "page1_has_keywords": true,
+  "identity_leak": [],
+  "stale_图件尚未登记": false,
+  "fig_numbers": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "tab_numbers": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   23
+  ],
+  "bold_table_title_hits": [
+   "表 q3-quality",
+   "表 q1-models",
+   "表 q1-styles",
+   "表 q1-targets",
+   "表 q1-grades",
+   "表 q1-scores-aroma",
+   "表 q2-core-top3",
+   "表 q2-core-top3",
+   "表 q3-quality",
+   "表 q3-quality",
+   "表 q3-transfer-stages",
+   "表 q3-transfer-columns",
+   "表 q3-transfer-",
+   "表q3-transfer-columns",
+   "表 q1-models",
+   "表 q2-stability",
+   "表 q3-quality",
+   "表q3-transfer-stages",
+   "表\nq3-transfer-stages",
+   "表 q3-quality",
+   "表 q3-quality",
+   "表 q2-core-top3"
+  ],
+  "appendix_B_numbering": [
+   "B.1",
+   "B.2",
+   "B.3",
+   "B.1",
+   "B.2",
+   "B.3"
+  ],
+  "orphan_dot_numbering": false
+ }
+}

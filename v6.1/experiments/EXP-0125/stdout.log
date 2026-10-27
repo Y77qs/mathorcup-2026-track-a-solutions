@@ -1,0 +1,136 @@
+[robustness_wrapper] overrides: {"ALIGN_CSV": {"before": "PosixPath('/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0125/inputs/MathorCup_A_独立审查与重跑方案/sensory_name_alignment.csv')", "after": "PosixPath('/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0125/inputs/data/processed/sensory_name_alignment.csv')"}}
+[q2_fix] direction self-test passed: stable-positive.sign_stability==1, stable-negative.sign_stability==1, stable-negative.legacy==0 (the superseded bug), alternating.sign_stability==0.5, all-zero.status==direction-undetermined, all-zero.n_zero==reps, all-zero.sign_stability==0, all-invalid.n_invalid==reps and valid==0, all-invalid.status==direction-undetermined, near-zero.all_bucketed_as_zero, alternating.p_positive==p_negative==0.5
+[q2_fix] repeat=0 seed=20261025 reps=500 -> /Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0125/repeat0
+[q2_fix] repeat=0 done in 30.9s topk-jaccard=0.210333
+[q2_fix] contract channel wrote no metrics.json; writing it directly
+[q2_fix] contract channel wrote no outputs.json; writing it directly
+{
+  "repeats": [
+    0
+  ],
+  "seedPerRepeat": {
+    "0": 20261025
+  },
+  "topk-jaccard": 0.2103333333333333,
+  "topk-jaccard-per-repeat": {
+    "rep0": 0.2103333333333333
+  },
+  "external_6csv_mean_spearman_aligned": 0.9210176180408739,
+  "external_6csv_rows_matched": 44,
+  "n_strict_candidates": 216,
+  "pi_mean": 0.41860333333333327,
+  "pi_below_0.5_count": 423,
+  "pi_below_0.5_denominator": 600,
+  "sign_stability_mean": 0.98198,
+  "sign_stability_legacy_mean": 0.7203133333333334,
+  "sign_negative_point_count": 169,
+  "sign_direction_undetermined_count": 0,
+  "sign_zero_count": 0,
+  "sign_invalid_count": 0,
+  "zeroTolerance": 1e-12,
+  "selfTestPassed": true,
+  "bootstrap_reps": 500,
+  "totalSeconds": 31.1,
+  "setsEntries": 200,
+  "selfChecks": {
+    "0": {
+      "sets_entries": 200,
+      "sets_dimensions": 50,
+      "sets_methods": [
+        "consensus",
+        "graph_lowrank",
+        "total_spearman",
+        "within_style_spearman"
+      ],
+      "sets_each_k3_unique": true,
+      "sets_strict_only": true,
+      "sets_matches_memory": true,
+      "bootstrap_rows": 300000,
+      "bootstrap_rows_expected": 300000,
+      "bootstrap_extended_rows": 300000,
+      "strict_header_ok": true,
+      "strict_rows": 150,
+      "strict_kinds": [
+        "single_compound"
+      ],
+      "strict_forbidden": [],
+      "strict_compounds": 55,
+      "strict_by_method_header_ok": true,
+      "strict_by_method_rows": 600,
+      "strict_by_method_counts": {
+        "total_spearman": 150,
+        "within_style_spearman": 150,
+        "graph_lowrank": 150,
+        "consensus": 150
+      },
+      "strict_by_method_forbidden": [],
+      "top3_nan": 0,
+      "alternative_rank4_empty": 0,
+      "extended_header_ok": true,
+      "extended_rows": 150,
+      "extended_kinds": [
+        "derived_sum",
+        "element_or_index",
+        "physical_parameter"
+      ],
+      "extended_by_method_header_ok": true,
+      "extended_by_method_rows": 600,
+      "candidate_rows": 11550,
+      "candidate_nan": 0,
+      "sign_counts_header_ok": true,
+      "sign_counts_rows": 11550,
+      "sign_counts_partition_reps": true,
+      "sign_counts_invalid_cells": 0,
+      "sign_counts_zero_cells": 11,
+      "sign_counts_status_values": [],
+      "sign_ratio_max_abs_diff": 0.0,
+      "sign_undetermined_cells": 0,
+      "lowpi_header_ok": true,
+      "lowpi_rows": 95,
+      "lowpi_expected_rows": 95,
+      "lowpi_status_values": [],
+      "sign_summary_exists": true,
+      "sign_summary_zero_tolerance": 1e-12,
+      "sign_summary_zero_tolerance_ok": true,
+      "sign_summary_reps": 500,
+      "sign_summary_self_test_passed": true,
+      "allPassed": true
+    }
+  },
+  "legacyReproduction": {
+    "0": {
+      "available": true,
+      "reference": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0125/inputs/experiments/EXP-0075/repeat0/strict_top3.csv",
+      "passed": true,
+      "reason": "recomputed legacy p_positive compared with the recorded sign_stability",
+      "referenceSha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+      "rowsCompared": 150,
+      "rowsInReference": 150,
+      "rowsRecomputed": 150,
+      "keySetsEqual": true,
+      "compoundMismatches": 0,
+      "piExactMatches": 150,
+      "piMaxAbsDiff": 0.0,
+      "legacyExactMatches": 150,
+      "legacyMaxAbsDiff": 0.0,
+      "recomputedNegativePointRows": 36,
+      "recomputedNegativeLegacyMin": 0.0,
+      "recomputedNegativeLegacyMax": 0.022,
+      "recomputedNegativeLegacyWithin0To0.022": 36,
+      "recomputedNegativeLegacyExactZero": 27,
+      "v6Claim": {
+        "negativePointRows": 36,
+        "legacyRange": [
+          0.0,
+          0.022
+        ],
+        "legacyExactZero": 27
+      },
+      "v6ClaimReproduced": true,
+      "v6ClaimScope": "the v6 note quotes the primary repeat (seed 20261025); this repeat is it"
+    }
+  },
+  "exported": null,
+  "outDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0125",
+  "primaryDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0125/repeat0"
+}

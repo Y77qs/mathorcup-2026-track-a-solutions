@@ -1,0 +1,14 @@
+[q3_fix] repeats=[1] rows=250 elapsed=18.9s
+  constraint-satisfaction      1.0
+  constraint-satisfaction-raw  0.128
+  energy-distance              0.876453018856588
+  energy-V-raw                 16.077648428499984
+  energy-U-signed              0.9636872814202118
+  diversity                    19.6095697689185
+  duplicate-share              0.0
+  n-linear-negative-raw        0
+  n-linear-negative-design     0
+  t2n-increases                98
+  profile-mae                  0.2445210120339369
+  profile-spearman             0.3863840576230492
+  constraints verified/conditional/not_identifiable/infeasible: 6534/2739/227/0

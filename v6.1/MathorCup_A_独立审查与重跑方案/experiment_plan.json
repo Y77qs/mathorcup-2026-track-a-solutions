@@ -1,0 +1,270 @@
+{
+  "status": "proposal_completed_experiments_not_run",
+  "delivery_date": "2026-10-26",
+  "authoritative_documents": [
+    "01_独立复核与修复优先级.md",
+    "02_改进建模方案.md",
+    "03_插件重跑清单与提示词.md"
+  ],
+  "problem_taxonomy": [
+    "small_sample_multioutput_prediction",
+    "associational_graph_analysis",
+    "conditional_generation",
+    "constrained_design"
+  ],
+  "input_policy": {
+    "primary": "1.csv",
+    "join_key": "beer",
+    "calibration_conflicts": "flag_80_cells_no_silent_overwrite",
+    "q1_targets": {
+      "primary": "30_A_F",
+      "supplemental": "20_other"
+    },
+    "q3_candidate_free_variables": 226,
+    "q3_derived_variables": 5,
+    "unknown_grade_anchors": "relative_grades_only",
+    "missing_thresholds": "do_not_invent"
+  },
+  "validation": {
+    "interpretation": "internal_revalidation_after_historical_data_exposure",
+    "outer_folds": 3,
+    "outer_repeats": 3,
+    "inner_folds": 3,
+    "repeat_seeds": [
+      20261025,
+      20261026,
+      20261027
+    ],
+    "split": "style_within_shuffle_round_robin_with_rotating_offsets",
+    "legacy_holdout": "historical_reference_only",
+    "fit_lineage_required": true,
+    "paired_bootstrap_unit": "beer_averaged_over_repeats_within_style",
+    "paired_bootstrap_n": 2000,
+    "interval_scope": "sample_composition_sensitivity_conditional_on_saved_predictions"
+  },
+  "q1": {
+    "representations": [
+      "clipped_z_8",
+      "rankgauss"
+    ],
+    "lambda": [
+      0.1,
+      1,
+      10
+    ],
+    "gamma": [
+      0,
+      0.1,
+      1
+    ],
+    "rank": [
+      3,
+      6,
+      10,
+      50
+    ],
+    "grid_cells": 72,
+    "inner_factorizations": 486,
+    "solver": "centered_generalized_reduced_rank_ridge_exact_Cholesky_SVD",
+    "fusion": "optional_nonnegative_sum1_MAE_LP_on_inner_predictions",
+    "HGB": {
+      "max_iter": 200,
+      "learning_rate": 0.06,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 0.1,
+      "early_stopping": false
+    },
+    "HGB_target_fits_excluding_final": 1800,
+    "acceptance": {
+      "MAE_AF30_relative_gain_min": 0.01,
+      "improvement_all_3_repeats": true,
+      "MAE50_relative_degradation_max": 0.01,
+      "each_A15_F15_relative_degradation_max": 0.02,
+      "interval_spans_zero": "limited_evidence_prefer_simple"
+    }
+  },
+  "q2": {
+    "legacy": "FIX_candidate_dictionary_alignment_consensus",
+    "T": "total_graph_ridge_primary_top3",
+    "W": "style_adjusted_graph_ridge_diagnostics_not_averaged_with_T",
+    "lambda": [
+      0.1,
+      1,
+      10
+    ],
+    "gamma": [
+      0,
+      0.1,
+      1
+    ],
+    "tau_main": 0.5,
+    "tau_sensitivity": [
+      0.4,
+      0.6
+    ],
+    "bootstrap_pilot": 100,
+    "bootstrap_final_each_FIX_T_W": 500,
+    "retune_bootstrap_sensitivity": 100,
+    "final_sample_scope": 250,
+    "same_200_row_comparison_required": true,
+    "module": "complete_linkage_1_minus_abs_rho_threshold_0.5_reference_annotation",
+    "pi_interpretation": "conditional_selection_frequency_not_causal_probability"
+  },
+  "q3": {
+    "baseline": [
+      "within_style_row_resampling",
+      "independent_shrunk_marginals"
+    ],
+    "candidate": "Gaussian_Copula_with_observation_states_and_joint_feasible_projection",
+    "kappa": [
+      5,
+      15,
+      50
+    ],
+    "kappa_R": [
+      20,
+      100
+    ],
+    "inner_copula_candidate_fits": 162,
+    "primary_metric_columns": "common_226_non_derived",
+    "generation_stages": [
+      "raw_conditional",
+      "low_defect_design"
+    ],
+    "main_energy": "V_empirical_raw_and_divide_global_train_mean_pair_distance",
+    "U_metric": "signed_diagnostic_only_requires_both_sample_sizes_ge2",
+    "distribution_draw_count": "match_real_outer_style_holdout_count",
+    "diversity_draw_count": 100,
+    "diversity": "mean_off_diagonal_distance_same_style_training_resample_reference",
+    "generation_acceptance": {
+      "relative_energy_gain_min": 0.05,
+      "same_direction_repeats_min": 2,
+      "diversity_degradation_vs_resample_max": 0.1,
+      "hard_constraints": "all_identifiable_pass"
+    },
+    "transfer": {
+      "source": "Pils/Lager",
+      "target": "Tripel",
+      "lambda": [
+        0.1,
+        1,
+        10
+      ],
+      "eta": [
+        0,
+        0.05
+      ],
+      "comparators": [
+        "unchanged_source",
+        "target_mean_projection",
+        "individual_target_reference_QP"
+      ],
+      "direct_chemical_nonincrease": [
+        "DMS",
+        "X2.3.butanedione",
+        "X4VG",
+        "X.E..2.nonenal"
+      ],
+      "stale_hops": "proxy_only",
+      "floor_zero_missing": "state_branch_or_unverifiable",
+      "hard_constraint_slack": "no_silent_relaxation",
+      "fallback": "no_transfer_not_success",
+      "scaled_primal_max": 1e-06,
+      "relative_KKT_residual_max": 1e-05,
+      "physical_atol": "per_column_units_and_report_precision"
+    }
+  },
+  "resource_proposal": {
+    "total_wall_minutes": 120,
+    "workers_max": 2,
+    "blas_threads_per_worker": 1,
+    "excess": "save_results_stop_optional_candidates_mark_required_incomplete"
+  },
+  "experiments": [
+    {
+      "id": "R00",
+      "purpose": "freeze_data_contract_and_conflict_states",
+      "status": "not_run"
+    },
+    {
+      "id": "R01",
+      "purpose": "fix_F01_F08_and_oracles",
+      "status": "not_run"
+    },
+    {
+      "id": "R02",
+      "purpose": "smoke_and_resource_estimate",
+      "status": "not_run"
+    },
+    {
+      "id": "Q1-F",
+      "purpose": "paired_linear_comparison",
+      "status": "not_run"
+    },
+    {
+      "id": "Q1-C",
+      "purpose": "optional_fusion",
+      "status": "not_run"
+    },
+    {
+      "id": "Q2-F",
+      "purpose": "repaired_legacy",
+      "status": "not_run"
+    },
+    {
+      "id": "Q2-C",
+      "purpose": "T_W_graph_ridge",
+      "status": "not_run"
+    },
+    {
+      "id": "Q3-F",
+      "purpose": "repaired_generation",
+      "status": "not_run"
+    },
+    {
+      "id": "Q3-C",
+      "purpose": "226_variable_candidate_and_QP_transfer",
+      "status": "not_run"
+    },
+    {
+      "id": "R03",
+      "purpose": "clean_environment_reproduction_and_decision",
+      "status": "not_run"
+    }
+  ],
+  "verified_this_review": [
+    "saved_prediction_arithmetic",
+    "name_alignment",
+    "negative_concentrations",
+    "chemical_t2n_change",
+    "PCA_centering",
+    "energy_U_V_distinction",
+    "calibration_conflicts",
+    "synthetic_exact_solver"
+  ],
+  "not_completed": [
+    "contest_model_retraining",
+    "new_performance_comparison",
+    "full_five_view_consensus",
+    "excellence_pipeline",
+    "physical_brewing_validation",
+    "competition_submission"
+  ],
+  "sources": [
+    {
+      "type": "primary_paper",
+      "url": "https://dept.stat.lsa.umich.edu/~jizhu/pubs/Mukherjee-SADM11.pdf",
+      "role": "reduced_rank_ridge_background"
+    },
+    {
+      "type": "primary_paper",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378375813000633",
+      "role": "energy_statistics_U_V_distinction"
+    },
+    {
+      "type": "official_solver_docs",
+      "url": "https://osqp.org/docs/solver/",
+      "role": "QP_form_residuals_infeasibility"
+    }
+  ]
+}

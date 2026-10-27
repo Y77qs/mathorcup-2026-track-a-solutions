@@ -1,0 +1,181 @@
+{
+  "token": "3d6a3ed68441ee829a86aa74",
+  "experimentId": "EXP-0064",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-26T08:41:56.431Z",
+  "endedAt": "2026-10-26T08:42:21.254Z",
+  "durationMs": 24822,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "topk-jaccard": 0.2103333333333333,
+    "topk-jaccard-rep0": 0.2103333333333333,
+    "topk-jaccard-point": 0.19766666666666666,
+    "external_6csv_mean_spearman_aligned": 0.9210176180408739,
+    "external_6csv_rows_matched": 44,
+    "external_6csv_mean_spearman_aligned_strict": 0.9080152788388083,
+    "n_strict_candidates": 216,
+    "n_extended_candidates": 15,
+    "pi_mean": 0.41860333333333327,
+    "pi_below_0.5_count": 423,
+    "pi_below_0.5_denominator": 600,
+    "sign_stability_mean": 0.7203133333333334,
+    "n_dimensions": 50,
+    "n_methods": 4,
+    "n_repeats": 1,
+    "bootstrap_reps": 500,
+    "seed": 20261025,
+    "external_6csv_mean_spearman_superseded_positional": 0.44505144467935176
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0064/bootstrap_pi.csv",
+      "sha256": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+      "bytes": 17178411,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/bootstrap_pi_extended.csv",
+      "sha256": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+      "bytes": 15287285,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/candidate_scores.csv",
+      "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+      "bytes": 1506356,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/extended_top3.csv",
+      "sha256": "53dd5ef364e488b9f021124c3dcd1fc54fa3d6f658a82661855fe2fc4f45bbde",
+      "bytes": 17724,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/extended_top3_by_method.csv",
+      "sha256": "99f0bcff019c2fc9c88877ed246469237f4d4cb5803c4467a0f7a61b4aed7a15",
+      "bytes": 77647,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/metrics.json",
+      "sha256": "50c33007f7506694e8654a895b425c0e3ed68fadad69855a6719f1c7284c6503",
+      "bytes": 677,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0064/outputs.json",
+      "sha256": "a53b4421b1eb53f265abe4bbd841981de5316441a69cd2bc16d33ef837fcaff1",
+      "bytes": 1489444,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0064/seed-receipt.json",
+      "sha256": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0064/sets.json",
+      "sha256": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075",
+      "bytes": 33311,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0064/strict_top3.csv",
+      "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+      "bytes": 19358,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/strict_top3_by_method.csv",
+      "sha256": "33171a8c99c898a1e7c3f237ea34e33af70fc5cbda1ddb419fe4c61f7af46d09",
+      "bytes": 84982,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/bootstrap_pi.csv",
+      "sha256": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+      "bytes": 17178411,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/bootstrap_pi_extended.csv",
+      "sha256": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+      "bytes": 15287285,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/candidate_scores.csv",
+      "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+      "bytes": 1506356,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/extended_top3.csv",
+      "sha256": "53dd5ef364e488b9f021124c3dcd1fc54fa3d6f658a82661855fe2fc4f45bbde",
+      "bytes": 17724,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/extended_top3_by_method.csv",
+      "sha256": "99f0bcff019c2fc9c88877ed246469237f4d4cb5803c4467a0f7a61b4aed7a15",
+      "bytes": 77647,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/metrics.json",
+      "sha256": "50c33007f7506694e8654a895b425c0e3ed68fadad69855a6719f1c7284c6503",
+      "bytes": 677,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/outputs.json",
+      "sha256": "a53b4421b1eb53f265abe4bbd841981de5316441a69cd2bc16d33ef837fcaff1",
+      "bytes": 1489444,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/sets.json",
+      "sha256": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075",
+      "bytes": 33311,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/strict_top3.csv",
+      "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+      "bytes": 19358,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0064/repeat0/strict_top3_by_method.csv",
+      "sha256": "33171a8c99c898a1e7c3f237ea34e33af70fc5cbda1ddb419fe4c61f7af46d09",
+      "bytes": 84982,
+      "kind": "data"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+    "--target",
+    "src/q2_fix.py",
+    "--repeat",
+    "0"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0064",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

@@ -1,0 +1,5710 @@
+{
+  "q1": {
+    "artifacts": {
+      "importance": "omitted (this experiment makes no feature-importance claim)",
+      "innerGrid": "inner_grid.json",
+      "metrics": "metrics.json",
+      "oofLong": "oof_long.csv",
+      "predictions": "predictions.csv",
+      "predictionsAllModels": "predictions_all_models.csv"
+    },
+    "baseline": {
+      "definition": "per-target median of the outer-training labels, applied once to each outer_test row",
+      "perFoldMaeAf30": {
+        "r0f0": 0.40239511441794873,
+        "r0f1": 0.37944483236907633,
+        "r0f2": 0.4123690906907894,
+        "r1f0": 0.4038677920587719,
+        "r1f1": 0.38824124182673997,
+        "r1f2": 0.40437047629718875,
+        "r2f0": 0.3771442647305221,
+        "r2f1": 0.41652374422105265,
+        "r2f2": 0.40258940241428576
+      },
+      "perRepeatMaeAf30": {
+        "0": 0.3978077095646667,
+        "1": 0.39834661894146667,
+        "2": 0.3983776566125333
+      },
+      "pooledMaeAf30": 0.39817732837288883,
+      "pooledMaeAll50": 0.3918800487369867,
+      "skillDefinition": "skill_af30(model) = 1 - mae_af30(model) / mae_af30(median) over the same pooled OOF rows; the median model's own skill is 0 by construction"
+    },
+    "checks": {
+      "equivalence": {
+        "criterion": "max |prediction difference| < 1e-9 over every outer fold",
+        "maxAbsPredictionDifference": 3.9968028886505635e-15,
+        "note": "rank 50 with gamma = 0 uses the same normal matrix and the same intercept as ridge",
+        "passed": true,
+        "perFold": [
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.9984014443252818e-15,
+            "nColumns": 240,
+            "outer_fold": 0,
+            "passed": true,
+            "rank": 50,
+            "repeat": 0,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.5543122344752192e-15,
+            "nColumns": 240,
+            "outer_fold": 1,
+            "passed": true,
+            "rank": 50,
+            "repeat": 0,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 3.9968028886505635e-15,
+            "nColumns": 240,
+            "outer_fold": 2,
+            "passed": true,
+            "rank": 50,
+            "repeat": 0,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 2.4424906541753444e-15,
+            "nColumns": 240,
+            "outer_fold": 0,
+            "passed": true,
+            "rank": 50,
+            "repeat": 1,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 2.1094237467877974e-15,
+            "nColumns": 240,
+            "outer_fold": 1,
+            "passed": true,
+            "rank": 50,
+            "repeat": 1,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.7763568394002505e-15,
+            "nColumns": 240,
+            "outer_fold": 2,
+            "passed": true,
+            "rank": 50,
+            "repeat": 1,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.3877787807814457e-15,
+            "nColumns": 240,
+            "outer_fold": 0,
+            "passed": true,
+            "rank": 50,
+            "repeat": 2,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 8.326672684688674e-16,
+            "nColumns": 240,
+            "outer_fold": 1,
+            "passed": true,
+            "rank": 50,
+            "repeat": 2,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.4432899320127035e-15,
+            "nColumns": 240,
+            "outer_fold": 2,
+            "passed": true,
+            "rank": 50,
+            "repeat": 2,
+            "representation": "rankgauss"
+          }
+        ]
+      },
+      "gradeRange": {
+        "max": 6,
+        "min": 0,
+        "passed": true
+      },
+      "maeRecomputedFromOofLong": {
+        "graph-lowrank": {
+          "absDifference": 5.551115123125783e-17,
+          "fromMetrics": 0.35929156588219174,
+          "fromOofLong": 0.3592915658821918
+        },
+        "graph-ridge": {
+          "absDifference": 5.551115123125783e-17,
+          "fromMetrics": 0.3664110157826924,
+          "fromOofLong": 0.36641101578269236
+        },
+        "median": {
+          "absDifference": 5.551115123125783e-17,
+          "fromMetrics": 0.39817732837288883,
+          "fromOofLong": 0.3981773283728889
+        },
+        "ridge": {
+          "absDifference": 0.0,
+          "fromMetrics": 0.3666617580105253,
+          "fromOofLong": 0.3666617580105253
+        }
+      },
+      "metricChannel": {
+        "channel": "modeling_contract",
+        "dropped": [],
+        "keys": 110
+      },
+      "noNaNInPredictionTable": {
+        "passed": true
+      },
+      "oofDefinition": {
+        "passed": true,
+        "predictionsThatCameFromATrainingSet": 0,
+        "rule": "(repeat, outer_fold, beer) with role=inner IS the training set of that fold; a beer predicted in that fold must never appear in it",
+        "trainingPairsChecked": 1500
+      },
+      "outerFoldMatchesSplits": {
+        "mismatches": 0,
+        "passed": true
+      },
+      "predictionsRows": {
+        "beerCountPerRepeat": {
+          "0": 250,
+          "1": 250,
+          "2": 250
+        },
+        "expected": 750,
+        "rows": 750,
+        "uniqueBeerPerRepeat": {
+          "0": 250,
+          "1": 250,
+          "2": 250
+        }
+      }
+    },
+    "definition": {
+      "mae": "A/F30 equal-weight mean of |y_true - y_pred| over the CONCATENATED OOF rows (3 repeat(s) x 250 beers = 750 rows); it is NOT the mean of per-repeat scores",
+      "oof": "a beer's prediction comes from the model fitted on that beer's outer-fold training rows; the beer is in that fold's outer_test set and was in no fit, no imputation median, no standardisation, no graph, no tuning decision and no grading cut point",
+      "predictionsCsv": "250 rows per repeat for the candidate graph-lowrank model; predictions_all_models.csv has all four models and oof_long.csv has every (beer, target, model) row",
+      "primaryModel": "graph-lowrank"
+    },
+    "devNotes": [
+      {
+        "item": "lambda grid edge probe",
+        "provenance": "separate exploratory run, NOT part of this artifact",
+        "result": "ridge, inner pooled AF30 MAE averaged over the same 9 outer folds: lambda=1 -> 0.3763, 10 -> 0.3701, 30 -> 0.3848, 100 -> 0.4000, 300 -> 0.4077; zscore shows the same shape. lambda=10 is therefore an interior optimum and the frozen grid {0.1,1,10} is not truncated, even though 10 is its largest value"
+      },
+      {
+        "item": "rank grid",
+        "provenance": "this artifact",
+        "result": "rank 6 is selected in 9/9 outer folds within the prescribed grid {3,6,10}; ranks 3 and 10 are never chosen, so the rank is stable but the grid is coarse (see selectionDiagnostics)"
+      }
+    ],
+    "excluded": [
+      {
+        "item": "HGB / gradient-boosted nonlinear baseline",
+        "kind": "optional-enhancement",
+        "status": "not_run",
+        "why": "separable nonlinear probe; out of scope for this Q1 repair, left to a later experiment"
+      },
+      {
+        "item": "fusion / stacking (median + graph + HGB)",
+        "kind": "optional-enhancement",
+        "status": "not_run",
+        "why": "the fused pipeline was the v5.1 source of in-sample/holdout mixing; not reused here"
+      },
+      {
+        "item": "exact rank-r low-rank solution",
+        "kind": "scope-note",
+        "status": "implemented",
+        "why": "B = A^{-1} C Vr Vr^T (eigenvectors of C^T A^{-1} C) is the exact minimiser, so the 25-sweep ALS of the legacy code is NOT used and nothing about low rank is skipped"
+      },
+      {
+        "item": "PSD projection of the Laplacian (legacy eigenvalue clipping)",
+        "kind": "defect-fix",
+        "status": "dropped",
+        "why": "L = diag(sum|W|) - W is PSD by Gershgorin, so clipping silently changed the penalty; the measured minimum eigenvalue is recorded per fold as evidence instead"
+      },
+      {
+        "item": "external panel / true test data",
+        "kind": "scope-note",
+        "status": "not_available",
+        "why": "no external evaluation set exists; every number here is internal nested CV"
+      }
+    ],
+    "fixes": {
+      "protocol": "frozen NESTED-CV-1 splits via v6_common.iter_outer / iter_inner, no local fold drawing",
+      "ridgeIsOrdinaryRidge": "gamma = 0 and r = 50; the v5.1 'ridge' was a gamma = 1 graph ridge and now appears separately as graph-ridge",
+      "trueOOF": "every beer is predicted by a model that never saw it; q1_grade_all.py's in-sample 200-row predictions are not reused",
+      "uniformIntercept": "every model uses b = ybar - zbar B; the legacy low-rank model refreshed the intercept every ALS sweep while its ridge reference held the label mean fixed"
+    },
+    "grade": {
+      "perModel": {
+        "graph-lowrank": {
+          "exact_agreement": 0.22890666666666667,
+          "grade_counts_predicted": [
+            1315,
+            1915,
+            4151,
+            9493,
+            13092,
+            7140,
+            394
+          ],
+          "grade_counts_reference": [
+            3190,
+            6229,
+            6227,
+            6189,
+            6259,
+            6211,
+            3195
+          ],
+          "grade_mae": 1.41112,
+          "n_grade_cells": 37500,
+          "note": "relative grades of a prediction, not an accuracy claim about the panel's original 0-6 score",
+          "qwk": 0.33208074241098406,
+          "within_one_agreement": 0.6046133333333333
+        },
+        "graph-ridge": {
+          "exact_agreement": 0.21501333333333333,
+          "grade_counts_predicted": [
+            412,
+            1007,
+            3156,
+            11488,
+            15347,
+            5985,
+            105
+          ],
+          "grade_counts_reference": [
+            3190,
+            6229,
+            6227,
+            6189,
+            6259,
+            6211,
+            3195
+          ],
+          "grade_mae": 1.4390666666666667,
+          "n_grade_cells": 37500,
+          "note": "relative grades of a prediction, not an accuracy claim about the panel's original 0-6 score",
+          "qwk": 0.259026387812079,
+          "within_one_agreement": 0.5833066666666666
+        },
+        "median": {
+          "exact_agreement": 0.16504,
+          "grade_counts_predicted": [
+            0,
+            0,
+            0,
+            37500,
+            0,
+            0,
+            0
+          ],
+          "grade_counts_reference": [
+            3190,
+            6229,
+            6227,
+            6189,
+            6259,
+            6211,
+            3195
+          ],
+          "grade_mae": 1.5072266666666667,
+          "n_grade_cells": 37500,
+          "note": "relative grades of a prediction, not an accuracy claim about the panel's original 0-6 score",
+          "qwk": 0.0,
+          "within_one_agreement": 0.498
+        },
+        "ridge": {
+          "exact_agreement": 0.21048,
+          "grade_counts_predicted": [
+            141,
+            699,
+            2787,
+            12102,
+            16372,
+            5388,
+            11
+          ],
+          "grade_counts_reference": [
+            3190,
+            6229,
+            6227,
+            6189,
+            6259,
+            6211,
+            3195
+          ],
+          "grade_mae": 1.4401066666666666,
+          "n_grade_cells": 37500,
+          "note": "relative grades of a prediction, not an accuracy claim about the panel's original 0-6 score",
+          "qwk": 0.2389627411535259,
+          "within_one_agreement": 0.5799466666666667
+        }
+      },
+      "rule": "F = mid-rank empirical CDF of the outer-training labels; g = clip(floor(6F(y)+0.5),0,6); the observed outer_test label goes through the same F, so this is RELATIVE grade consistency only"
+    },
+    "models": {
+      "graph-lowrank": {
+        "folds": [
+          {
+            "graph": {
+              "edges": 642,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 49,
+              "minEigenvalue231": -4.56912288848913e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                35,
+                25,
+                34
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                100,
+                104,
+                114
+              ],
+              "n_valid_rows": [
+                59,
+                55,
+                45
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 47,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 0,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 0.1,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.36864156523931707,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.00010820982948961388,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.3687497750688067,
+              "selectedInnerMaeAf30": 0.36864156523931707
+            },
+            "testMaeAf30": 0.35492591637841747,
+            "testMaeAll50": 0.3515556295690408
+          },
+          {
+            "graph": {
+              "edges": 723,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 44,
+              "minEigenvalue231": -5.841887284748642e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                40,
+                26,
+                36
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                119,
+                104,
+                111
+              ],
+              "n_valid_rows": [
+                48,
+                63,
+                56
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 51,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 1,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 0.1,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3669191784183669,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 9.349669054492526e-05,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.36701267510891183,
+              "selectedInnerMaeAf30": 0.3669191784183669
+            },
+            "testMaeAf30": 0.34498906961519554,
+            "testMaeAll50": 0.34331297690507057
+          },
+          {
+            "graph": {
+              "edges": 654,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 43,
+              "minEigenvalue231": -3.799437669911867e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                29,
+                36,
+                31
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                116,
+                123,
+                109
+              ],
+              "n_valid_rows": [
+                58,
+                51,
+                65
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 48,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 2,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 0.0,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.35594632326430947,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.00010774181229095126,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.3560540650766004,
+              "selectedInnerMaeAf30": 0.35594632326430947
+            },
+            "testMaeAf30": 0.36346757076185404,
+            "testMaeAll50": 0.34537597827333155
+          },
+          {
+            "graph": {
+              "edges": 650,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 48,
+              "minEigenvalue231": -5.870735772198525e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                34,
+                37,
+                39
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                109,
+                116,
+                123
+              ],
+              "n_valid_rows": [
+                65,
+                58,
+                51
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 55,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 0,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 1.0,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.36454851156839263,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.0006023695890001179,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.36515088115739275,
+              "selectedInnerMaeAf30": 0.36454851156839263
+            },
+            "testMaeAf30": 0.36428283803925626,
+            "testMaeAll50": 0.357512886918663
+          },
+          {
+            "graph": {
+              "edges": 743,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 40,
+              "minEigenvalue231": -5.220775416923613e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                31,
+                24,
+                29
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                114,
+                100,
+                104
+              ],
+              "n_valid_rows": [
+                45,
+                59,
+                55
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 42,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 1,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 0.1,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "zscore"
+            },
+            "pooledValidMaeAf30": 0.36486799357973615,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.00012356909932070836,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.36499156267905686,
+              "selectedInnerMaeAf30": 0.36486799357973615
+            },
+            "testMaeAf30": 0.36179711438293527,
+            "testMaeAll50": 0.3529826547985426
+          },
+          {
+            "graph": {
+              "edges": 654,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 46,
+              "minEigenvalue231": -4.137002333149669e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                35,
+                35,
+                28
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                111,
+                119,
+                104
+              ],
+              "n_valid_rows": [
+                56,
+                48,
+                63
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 49,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 2,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 1.0,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.36359357426637334,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.00037915935062371453,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.36397273361699706,
+              "selectedInnerMaeAf30": 0.36359357426637334
+            },
+            "testMaeAf30": 0.36143908364030963,
+            "testMaeAll50": 0.3485776369380195
+          },
+          {
+            "graph": {
+              "edges": 662,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 47,
+              "minEigenvalue231": -4.083961598093885e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                37,
+                34,
+                33
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                104,
+                111,
+                119
+              ],
+              "n_valid_rows": [
+                63,
+                56,
+                48
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 52,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 0,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 0.1,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3784819014740831,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.0004894238260079176,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.37897132530009103,
+              "selectedInnerMaeAf30": 0.3784819014740831
+            },
+            "testMaeAf30": 0.34915726592818663,
+            "testMaeAll50": 0.34230477365053186
+          },
+          {
+            "graph": {
+              "edges": 695,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 41,
+              "minEigenvalue231": -4.827262838558044e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                31,
+                34,
+                33
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                123,
+                109,
+                116
+              ],
+              "n_valid_rows": [
+                51,
+                65,
+                58
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 49,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 1,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 0.0,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.35095644007683013,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.00045768272675572597,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.35141412280358586,
+              "selectedInnerMaeAf30": 0.35095644007683013
+            },
+            "testMaeAf30": 0.37313415100959674,
+            "testMaeAll50": 0.36442879330718586
+          },
+          {
+            "graph": {
+              "edges": 650,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 47,
+              "minEigenvalue231": -6.07219394149003e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                29,
+                35,
+                26
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                104,
+                114,
+                100
+              ],
+              "n_valid_rows": [
+                55,
+                45,
+                59
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 45,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 2,
+            "params": {
+              "family": "graph-lowrank",
+              "gamma": 0.0,
+              "lambda": 1.0,
+              "rank": 6,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3595097842202981,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.0003195634593455843,
+              "nCells": 54,
+              "rankAtGridEdge": false,
+              "runnerUpInnerMaeAf30": 0.3598293476796437,
+              "selectedInnerMaeAf30": 0.3595097842202981
+            },
+            "testMaeAf30": 0.3622644205989077,
+            "testMaeAll50": 0.34956895169955643
+          }
+        ],
+        "metricSuffix": "graph_lowrank",
+        "pooled": {
+          "groups": {
+            "Aroma15": {
+              "mae": 0.364626380622291,
+              "n": 15
+            },
+            "Flavour15": {
+              "mae": 0.3539567511420926,
+              "n": 15
+            }
+          },
+          "macro_r2_50": 0.22541248352789295,
+          "macro_r2_af30": 0.1854199218782663,
+          "mae_af30": 0.35929156588219174,
+          "mae_all50": 0.350504156920024,
+          "r2_na": 0,
+          "skill_af30": 0.09765940881064172
+        }
+      },
+      "graph-ridge": {
+        "folds": [
+          {
+            "graph": {
+              "edges": 642,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 49,
+              "minEigenvalue231": -4.56912288848913e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                35,
+                25,
+                34
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                100,
+                104,
+                114
+              ],
+              "n_valid_rows": [
+                59,
+                55,
+                45
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 47,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 0,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 0.1,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3713333875025135,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.0009680309892386441,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.37230141849175213,
+              "selectedInnerMaeAf30": 0.3713333875025135
+            },
+            "testMaeAf30": 0.37052368477398095,
+            "testMaeAll50": 0.3667478146210615
+          },
+          {
+            "graph": {
+              "edges": 723,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 44,
+              "minEigenvalue231": -5.841887284748642e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                40,
+                26,
+                36
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                119,
+                104,
+                111
+              ],
+              "n_valid_rows": [
+                48,
+                63,
+                56
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 51,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 1,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 0.1,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.375944778891967,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.00019581255848483137,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3761405914504518,
+              "selectedInnerMaeAf30": 0.375944778891967
+            },
+            "testMaeAf30": 0.3482929877838424,
+            "testMaeAll50": 0.34680370287258017
+          },
+          {
+            "graph": {
+              "edges": 654,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 43,
+              "minEigenvalue231": -3.799437669911867e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                29,
+                36,
+                31
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                116,
+                123,
+                109
+              ],
+              "n_valid_rows": [
+                58,
+                51,
+                65
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 48,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 2,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 0.1,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3621630223423989,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.0010935685978558096,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3632565909402547,
+              "selectedInnerMaeAf30": 0.3621630223423989
+            },
+            "testMaeAf30": 0.3761566173262361,
+            "testMaeAll50": 0.35846068343931214
+          },
+          {
+            "graph": {
+              "edges": 650,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 48,
+              "minEigenvalue231": -5.870735772198525e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                34,
+                37,
+                39
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                109,
+                116,
+                123
+              ],
+              "n_valid_rows": [
+                65,
+                58,
+                51
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 55,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 0,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 0.1,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3673659597037037,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.0009447032136966071,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.36831066291740033,
+              "selectedInnerMaeAf30": 0.3673659597037037
+            },
+            "testMaeAf30": 0.37107244487475416,
+            "testMaeAll50": 0.36276706762300914
+          },
+          {
+            "graph": {
+              "edges": 743,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 40,
+              "minEigenvalue231": -5.220775416923613e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                31,
+                24,
+                29
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                114,
+                100,
+                104
+              ],
+              "n_valid_rows": [
+                45,
+                59,
+                55
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 42,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 1,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 1.0,
+              "lambda": 1.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.374496755864053,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.00011995912518225627,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.37461671498923527,
+              "selectedInnerMaeAf30": 0.374496755864053
+            },
+            "testMaeAf30": 0.3601985126929906,
+            "testMaeAll50": 0.3510916541574024
+          },
+          {
+            "graph": {
+              "edges": 654,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 46,
+              "minEigenvalue231": -4.137002333149669e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                35,
+                35,
+                28
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                111,
+                119,
+                104
+              ],
+              "n_valid_rows": [
+                56,
+                48,
+                63
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 49,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 2,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 0.1,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.37044123713565,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.000840398011332455,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3712816351469825,
+              "selectedInnerMaeAf30": 0.37044123713565
+            },
+            "testMaeAf30": 0.37039304222243197,
+            "testMaeAll50": 0.35774016735709163
+          },
+          {
+            "graph": {
+              "edges": 662,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 47,
+              "minEigenvalue231": -4.083961598093885e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                37,
+                34,
+                33
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                104,
+                111,
+                119
+              ],
+              "n_valid_rows": [
+                63,
+                56,
+                48
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 52,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 0,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 0.1,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3818823353513407,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.0006610237199707325,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.38254335907131143,
+              "selectedInnerMaeAf30": 0.3818823353513407
+            },
+            "testMaeAf30": 0.3559512626202494,
+            "testMaeAll50": 0.3492026891914356
+          },
+          {
+            "graph": {
+              "edges": 695,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 41,
+              "minEigenvalue231": -4.827262838558044e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                31,
+                34,
+                33
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                123,
+                109,
+                116
+              ],
+              "n_valid_rows": [
+                51,
+                65,
+                58
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 49,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 1,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 1.0,
+              "lambda": 1.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3611313887432615,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": false,
+              "marginToRunnerUp": 0.000595163972527013,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3617265527157885,
+              "selectedInnerMaeAf30": 0.3611313887432615
+            },
+            "testMaeAf30": 0.3754906354770751,
+            "testMaeAll50": 0.3652460429601392
+          },
+          {
+            "graph": {
+              "edges": 650,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 47,
+              "minEigenvalue231": -6.07219394149003e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                29,
+                35,
+                26
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                104,
+                114,
+                100
+              ],
+              "n_valid_rows": [
+                55,
+                45,
+                59
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 45,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 2,
+            "params": {
+              "family": "graph-ridge",
+              "gamma": 0.1,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.365910604907565,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": true,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.0007353797465816103,
+              "nCells": 12,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3666459846541466,
+              "selectedInnerMaeAf30": 0.365910604907565
+            },
+            "testMaeAf30": 0.37132911599989527,
+            "testMaeAll50": 0.3597013923193501
+          }
+        ],
+        "metricSuffix": "graph_ridge",
+        "pooled": {
+          "groups": {
+            "Aroma15": {
+              "mae": 0.3710930646597712,
+              "n": 15
+            },
+            "Flavour15": {
+              "mae": 0.36172896690561357,
+              "n": 15
+            }
+          },
+          "macro_r2_50": 0.19864114864198007,
+          "macro_r2_af30": 0.15762232655981326,
+          "mae_af30": 0.3664110157826924,
+          "mae_all50": 0.35745225485008,
+          "r2_na": 0,
+          "skill_af30": 0.07977931018826767
+        }
+      },
+      "median": {
+        "folds": [
+          {
+            "graph": {
+              "edges": 642,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 49,
+              "minEigenvalue231": -4.56912288848913e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                35,
+                25,
+                34
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                100,
+                104,
+                114
+              ],
+              "n_valid_rows": [
+                59,
+                55,
+                45
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 47,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 0,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.4023951144179488,
+            "testMaeAll50": 0.40207250514769227
+          },
+          {
+            "graph": {
+              "edges": 723,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 44,
+              "minEigenvalue231": -5.841887284748642e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                40,
+                26,
+                36
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                119,
+                104,
+                111
+              ],
+              "n_valid_rows": [
+                48,
+                63,
+                56
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 51,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 1,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.3794448323690763,
+            "testMaeAll50": 0.3747462575877109
+          },
+          {
+            "graph": {
+              "edges": 654,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 43,
+              "minEigenvalue231": -3.799437669911867e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                29,
+                36,
+                31
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                116,
+                123,
+                109
+              ],
+              "n_valid_rows": [
+                58,
+                51,
+                65
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 48,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 2,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.4123690906907895,
+            "testMaeAll50": 0.39696612220763156
+          },
+          {
+            "graph": {
+              "edges": 650,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 48,
+              "minEigenvalue231": -5.870735772198525e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                34,
+                37,
+                39
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                109,
+                116,
+                123
+              ],
+              "n_valid_rows": [
+                65,
+                58,
+                51
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 55,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 0,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.40386779205877193,
+            "testMaeAll50": 0.39519517575131574
+          },
+          {
+            "graph": {
+              "edges": 743,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 40,
+              "minEigenvalue231": -5.220775416923613e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                31,
+                24,
+                29
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                114,
+                100,
+                104
+              ],
+              "n_valid_rows": [
+                45,
+                59,
+                55
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 42,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 1,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.38824124182673997,
+            "testMaeAll50": 0.3900893763386813
+          },
+          {
+            "graph": {
+              "edges": 654,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 46,
+              "minEigenvalue231": -4.137002333149669e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                35,
+                35,
+                28
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                111,
+                119,
+                104
+              ],
+              "n_valid_rows": [
+                56,
+                48,
+                63
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 49,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 2,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.40437047629718875,
+            "testMaeAll50": 0.39169695469903615
+          },
+          {
+            "graph": {
+              "edges": 662,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 47,
+              "minEigenvalue231": -4.083961598093885e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                37,
+                34,
+                33
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                104,
+                111,
+                119
+              ],
+              "n_valid_rows": [
+                63,
+                56,
+                48
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 52,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 0,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.3771442647305221,
+            "testMaeAll50": 0.37599011183734943
+          },
+          {
+            "graph": {
+              "edges": 695,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 41,
+              "minEigenvalue231": -4.827262838558044e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                31,
+                34,
+                33
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                123,
+                109,
+                116
+              ],
+              "n_valid_rows": [
+                51,
+                65,
+                58
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 49,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 1,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.41652374422105265,
+            "testMaeAll50": 0.4098428107865789
+          },
+          {
+            "graph": {
+              "edges": 650,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 47,
+              "minEigenvalue231": -6.07219394149003e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                29,
+                35,
+                26
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                104,
+                114,
+                100
+              ],
+              "n_valid_rows": [
+                55,
+                45,
+                59
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 45,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 2,
+            "params": {
+              "family": "median",
+              "gamma": null,
+              "lambda": null,
+              "rank": null,
+              "representation": "none"
+            },
+            "pooledValidMaeAf30": null,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": null,
+            "testMaeAf30": 0.40258940241428576,
+            "testMaeAll50": 0.39174755132439565
+          }
+        ],
+        "metricSuffix": "median",
+        "pooled": {
+          "groups": {
+            "Aroma15": {
+              "mae": 0.3953307641536889,
+              "n": 15
+            },
+            "Flavour15": {
+              "mae": 0.40102389259208887,
+              "n": 15
+            }
+          },
+          "macro_r2_50": -0.06506629237549312,
+          "macro_r2_af30": -0.05836641075846393,
+          "mae_af30": 0.39817732837288883,
+          "mae_all50": 0.3918800487369867,
+          "r2_na": 0,
+          "skill_af30": 0.0
+        }
+      },
+      "ridge": {
+        "folds": [
+          {
+            "graph": {
+              "edges": 642,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 49,
+              "minEigenvalue231": -4.56912288848913e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                35,
+                25,
+                34
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                100,
+                104,
+                114
+              ],
+              "n_valid_rows": [
+                59,
+                55,
+                45
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 47,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 0,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3712005647154985,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.005095472234104559,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.37629603694960306,
+              "selectedInnerMaeAf30": 0.3712005647154985
+            },
+            "testMaeAf30": 0.3703825599159463,
+            "testMaeAll50": 0.36656434278469097
+          },
+          {
+            "graph": {
+              "edges": 723,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 44,
+              "minEigenvalue231": -5.841887284748642e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                40,
+                26,
+                36
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                119,
+                104,
+                111
+              ],
+              "n_valid_rows": [
+                48,
+                63,
+                56
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 51,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 1,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.37580992504715544,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.00286528052840046,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3786752055755559,
+              "selectedInnerMaeAf30": 0.37580992504715544
+            },
+            "testMaeAf30": 0.34809923762336153,
+            "testMaeAll50": 0.34658109287800637
+          },
+          {
+            "graph": {
+              "edges": 654,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 43,
+              "minEigenvalue231": -3.799437669911867e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                29,
+                36,
+                31
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                116,
+                123,
+                109
+              ],
+              "n_valid_rows": [
+                58,
+                51,
+                65
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 48,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 2,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.36199933247920685,
+            "repeat": 0,
+            "seed": 20261025,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.0055445694654196465,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3675439019446265,
+              "selectedInnerMaeAf30": 0.36199933247920685
+            },
+            "testMaeAf30": 0.3759537409024796,
+            "testMaeAll50": 0.35823705217885793
+          },
+          {
+            "graph": {
+              "edges": 650,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 48,
+              "minEigenvalue231": -5.870735772198525e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                34,
+                37,
+                39
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                109,
+                116,
+                123
+              ],
+              "n_valid_rows": [
+                65,
+                58,
+                51
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 55,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 0,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.36722794000867653,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.006075818780136577,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3733037587888131,
+              "selectedInnerMaeAf30": 0.36722794000867653
+            },
+            "testMaeAf30": 0.37092061573471113,
+            "testMaeAll50": 0.3625862290450846
+          },
+          {
+            "graph": {
+              "edges": 743,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 40,
+              "minEigenvalue231": -5.220775416923613e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                31,
+                24,
+                29
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                114,
+                100,
+                104
+              ],
+              "n_valid_rows": [
+                45,
+                59,
+                55
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 42,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 1,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.37445242327546235,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.003117238155315838,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3775696614307782,
+              "selectedInnerMaeAf30": 0.37445242327546235
+            },
+            "testMaeAf30": 0.3600999518134814,
+            "testMaeAll50": 0.3541463529387277
+          },
+          {
+            "graph": {
+              "edges": 654,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 46,
+              "minEigenvalue231": -4.137002333149669e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                35,
+                35,
+                28
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                111,
+                119,
+                104
+              ],
+              "n_valid_rows": [
+                56,
+                48,
+                63
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 49,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 2,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.37031601218491533,
+            "repeat": 1,
+            "seed": 20261026,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.004748101297898433,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.37506411348281377,
+              "selectedInnerMaeAf30": 0.37031601218491533
+            },
+            "testMaeAf30": 0.3701933492183603,
+            "testMaeAll50": 0.3575179378668879
+          },
+          {
+            "graph": {
+              "edges": 662,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 47,
+              "minEigenvalue231": -4.083961598093885e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                37,
+                34,
+                33
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 167,
+              "n_train_rows": [
+                104,
+                111,
+                119
+              ],
+              "n_valid_rows": [
+                63,
+                56,
+                48
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                }
+              }
+            },
+            "missingCellsInTrain": 52,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 83,
+            "n_train": 167,
+            "outer_fold": 0,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.3818106927126476,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.0034067731073425533,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.38521746581999017,
+              "selectedInnerMaeAf30": 0.3818106927126476
+            },
+            "testMaeAf30": 0.3557851665447119,
+            "testMaeAll50": 0.34899206922336057
+          },
+          {
+            "graph": {
+              "edges": 695,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 41,
+              "minEigenvalue231": -4.827262838558044e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                31,
+                34,
+                33
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 174,
+              "n_train_rows": [
+                123,
+                109,
+                116
+              ],
+              "n_valid_rows": [
+                51,
+                65,
+                58
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 2,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "1": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 3,
+                  "Faro": 1,
+                  "Flanders old brown": 2,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 3,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 3,
+                  "Scotch": 2,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 7,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 49,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 76,
+            "n_train": 174,
+            "outer_fold": 1,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.36258179489484155,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.00047561933231754505,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.3630574142271591,
+              "selectedInnerMaeAf30": 0.36258179489484155
+            },
+            "testMaeAf30": 0.37943184764446375,
+            "testMaeAll50": 0.3704787649113919
+          },
+          {
+            "graph": {
+              "edges": 650,
+              "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)",
+              "isolatedNodes": 47,
+              "minEigenvalue231": -6.07219394149003e-15,
+              "nodes": 231,
+              "nonFiniteRho": 0,
+              "tau": 0.5
+            },
+            "inner": {
+              "missingCellsInInnerTrain": [
+                29,
+                35,
+                26
+              ],
+              "n_folds": 3,
+              "n_pooled_valid_rows": 159,
+              "n_train_rows": [
+                104,
+                114,
+                100
+              ],
+              "n_valid_rows": [
+                55,
+                45,
+                59
+              ],
+              "styleCountsBelowTwo": [
+                "Brett/cofermented",
+                "Brut",
+                "Faro",
+                "Flanders old brown",
+                "Fruitbeer",
+                "Low/No alcohol",
+                "Scotch",
+                "West Flanders ale"
+              ],
+              "styleValidCounts": {
+                "0": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 1,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 3
+                },
+                "1": {
+                  "Amber": 2,
+                  "Blond": 6,
+                  "Brett/cofermented": 1,
+                  "Brown": 2,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 1,
+                  "Hoppy": 3,
+                  "Kriek": 2,
+                  "Lambic": 2,
+                  "Low/No alcohol": 1,
+                  "Pils/Lager": 2,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 2,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 1,
+                  "Wheat": 2
+                },
+                "2": {
+                  "Amber": 3,
+                  "Blond": 7,
+                  "Brett/cofermented": 2,
+                  "Brown": 3,
+                  "Brut": 1,
+                  "Christmas": 2,
+                  "Dubbel": 2,
+                  "Faro": 1,
+                  "Flanders old brown": 1,
+                  "Fruitbeer": 2,
+                  "Hoppy": 4,
+                  "Kriek": 2,
+                  "Lambic": 3,
+                  "Low/No alcohol": 2,
+                  "Pils/Lager": 3,
+                  "Saison": 2,
+                  "Scotch": 1,
+                  "Stout/Porter": 3,
+                  "Strong ale": 4,
+                  "Tripel": 6,
+                  "West Flanders ale": 2,
+                  "Wheat": 3
+                }
+              }
+            },
+            "missingCellsInTrain": 45,
+            "n_columns": 240,
+            "n_features": 240,
+            "n_targets": 50,
+            "n_test": 91,
+            "n_train": 159,
+            "outer_fold": 2,
+            "params": {
+              "family": "ridge",
+              "gamma": 0.0,
+              "lambda": 10.0,
+              "rank": null,
+              "representation": "rankgauss"
+            },
+            "pooledValidMaeAf30": 0.36573102651602823,
+            "repeat": 2,
+            "seed": 20261027,
+            "selectionDiagnostics": {
+              "gammaAtGridEdge": false,
+              "lambdaAtGridEdge": true,
+              "marginToRunnerUp": 0.004150118248383128,
+              "nCells": 6,
+              "rankAtGridEdge": null,
+              "runnerUpInnerMaeAf30": 0.36988114476441136,
+              "selectedInnerMaeAf30": 0.36573102651602823
+            },
+            "testMaeAf30": 0.3711503833410581,
+            "testMaeAll50": 0.3594927697493483
+          }
+        ],
+        "metricSuffix": "ridge0",
+        "pooled": {
+          "groups": {
+            "Aroma15": {
+              "mae": 0.37047773847092125,
+              "n": 15
+            },
+            "Flavour15": {
+              "mae": 0.36284577755012926,
+              "n": 15
+            }
+          },
+          "macro_r2_50": 0.19484381557098224,
+          "macro_r2_af30": 0.158449098139072,
+          "mae_af30": 0.3666617580105253,
+          "mae_all50": 0.35819204288222983,
+          "r2_na": 0,
+          "skill_af30": 0.07914958516384818
+        }
+      }
+    },
+    "perFold": {
+      "r0f0": {
+        "mae_graph_lowrank": 0.3549259163784175,
+        "mae_median": 0.40239511441794873,
+        "n_rows": 91,
+        "skill_af30": 0.11796663612130043
+      },
+      "r0f1": {
+        "mae_graph_lowrank": 0.3449890696151955,
+        "mae_median": 0.37944483236907633,
+        "n_rows": 83,
+        "skill_af30": 0.09080572408577858
+      },
+      "r0f2": {
+        "mae_graph_lowrank": 0.36346757076185404,
+        "mae_median": 0.4123690906907894,
+        "n_rows": 76,
+        "skill_af30": 0.11858677343400514
+      },
+      "r1f0": {
+        "mae_graph_lowrank": 0.36428283803925626,
+        "mae_median": 0.4038677920587719,
+        "n_rows": 76,
+        "skill_af30": 0.09801463448651315
+      },
+      "r1f1": {
+        "mae_graph_lowrank": 0.36179711438293527,
+        "mae_median": 0.38824124182673997,
+        "n_rows": 91,
+        "skill_af30": 0.06811261812212599
+      },
+      "r1f2": {
+        "mae_graph_lowrank": 0.3614390836403097,
+        "mae_median": 0.40437047629718875,
+        "n_rows": 83,
+        "skill_af30": 0.10616846474549979
+      },
+      "r2f0": {
+        "mae_graph_lowrank": 0.34915726592818663,
+        "mae_median": 0.3771442647305221,
+        "n_rows": 83,
+        "skill_af30": 0.07420767440897658
+      },
+      "r2f1": {
+        "mae_graph_lowrank": 0.37313415100959674,
+        "mae_median": 0.41652374422105265,
+        "n_rows": 76,
+        "skill_af30": 0.10417075572150025
+      },
+      "r2f2": {
+        "mae_graph_lowrank": 0.3622644205989077,
+        "mae_median": 0.40258940241428576,
+        "n_rows": 91,
+        "skill_af30": 0.10016404200794526
+      }
+    },
+    "perRepeat": {
+      "0": {
+        "mae_all50_graph_lowrank": 0.3469404548907072,
+        "mae_all50_graph_ridge": 0.35760708164131394,
+        "mae_all50_median": 0.39144785054399994,
+        "mae_all50_ridge0": 0.3573984074714984,
+        "mae_graph_lowrank": 0.35422354618559243,
+        "mae_graph_ridge": 0.3648555048691404,
+        "mae_median": 0.3978077095646667,
+        "mae_ridge0": 0.3646781359347143,
+        "n_rows": 250,
+        "seed": 20261025
+      },
+      "1": {
+        "mae_all50_graph_lowrank": 0.3528973794333655,
+        "mae_all50_graph_ridge": 0.35684828623324377,
+        "mae_all50_median": 0.39217525537576003,
+        "mae_all50_ridge0": 0.3578314414712094,
+        "mae_graph_lowrank": 0.36243390816790516,
+        "mae_graph_ridge": 0.3668887718800212,
+        "mae_median": 0.39834661894146667,
+        "mae_ridge0": 0.366740441583955,
+        "n_rows": 250,
+        "seed": 20261026
+      },
+      "2": {
+        "mae_all50_graph_lowrank": 0.35167463643599967,
+        "mae_all50_graph_ridge": 0.3579013966756824,
+        "mae_all50_median": 0.3920170402912,
+        "mae_all50_ridge0": 0.3593462797039817,
+        "mae_graph_lowrank": 0.36121724329307786,
+        "mae_graph_ridge": 0.3674887705989154,
+        "mae_median": 0.3983776566125333,
+        "mae_ridge0": 0.36856669651290647,
+        "n_rows": 250,
+        "seed": 20261027
+      }
+    },
+    "perRepeatByModel": {
+      "graph-lowrank": {
+        "0": 0.35422354618559243,
+        "1": 0.36243390816790516,
+        "2": 0.36121724329307786
+      },
+      "graph-ridge": {
+        "0": 0.3648555048691404,
+        "1": 0.3668887718800212,
+        "2": 0.3674887705989154
+      },
+      "median": {
+        "0": 0.3978077095646667,
+        "1": 0.39834661894146667,
+        "2": 0.3983776566125333
+      },
+      "ridge": {
+        "0": 0.3646781359347143,
+        "1": 0.366740441583955,
+        "2": 0.36856669651290647
+      }
+    },
+    "protocol": {
+      "dataFile": "data/clean/q1_mapped.csv",
+      "dataSha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "dataSha256MatchesManifest": false,
+      "designColumns": 240,
+      "equivalence": {
+        "criterion": "max |prediction difference| < 1e-9 over every outer fold",
+        "maxAbsPredictionDifference": 3.9968028886505635e-15,
+        "note": "rank 50 with gamma = 0 uses the same normal matrix and the same intercept as ridge",
+        "passed": true,
+        "perFold": [
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.9984014443252818e-15,
+            "nColumns": 240,
+            "outer_fold": 0,
+            "passed": true,
+            "rank": 50,
+            "repeat": 0,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.5543122344752192e-15,
+            "nColumns": 240,
+            "outer_fold": 1,
+            "passed": true,
+            "rank": 50,
+            "repeat": 0,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 3.9968028886505635e-15,
+            "nColumns": 240,
+            "outer_fold": 2,
+            "passed": true,
+            "rank": 50,
+            "repeat": 0,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 2.4424906541753444e-15,
+            "nColumns": 240,
+            "outer_fold": 0,
+            "passed": true,
+            "rank": 50,
+            "repeat": 1,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 2.1094237467877974e-15,
+            "nColumns": 240,
+            "outer_fold": 1,
+            "passed": true,
+            "rank": 50,
+            "repeat": 1,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.7763568394002505e-15,
+            "nColumns": 240,
+            "outer_fold": 2,
+            "passed": true,
+            "rank": 50,
+            "repeat": 1,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.3877787807814457e-15,
+            "nColumns": 240,
+            "outer_fold": 0,
+            "passed": true,
+            "rank": 50,
+            "repeat": 2,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 8.326672684688674e-16,
+            "nColumns": 240,
+            "outer_fold": 1,
+            "passed": true,
+            "rank": 50,
+            "repeat": 2,
+            "representation": "rankgauss"
+          },
+          {
+            "gamma": 0.0,
+            "lambda": 10.0,
+            "maxAbsPredictionDifference": 1.4432899320127035e-15,
+            "nColumns": 240,
+            "outer_fold": 2,
+            "passed": true,
+            "rank": 50,
+            "repeat": 2,
+            "representation": "rankgauss"
+          }
+        ]
+      },
+      "gradeRule": "F = mid-rank empirical CDF of the outer-training labels; g = clip(floor(6F(y)+0.5),0,6); the observed outer_test label goes through the same F, so this is RELATIVE grade consistency only",
+      "graphGammaGrid": [
+        0.1,
+        1.0
+      ],
+      "interceptRule": "b = ybar - zbar @ B for ridge, graph-ridge and graph-lowrank",
+      "lambdaGrid": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "lowrankGammaGrid": [
+        0.0,
+        0.1,
+        1.0
+      ],
+      "lowrankSolver": "A = Zc^T Zc/n + lambda I + gamma L (Cholesky), C = Zc^T Yc/n, B = A^{-1} C Vr Vr^T with Vr the leading r eigenvectors of C^T A^{-1} C; no explicit inverse, no ALS sweeps",
+      "metricKeyConvention": "nested blocks are flattened with '__' (per_group__<name>__mae, per_style__<name>__mae, per_fold__r<r>f<f>__mae) because modeling_contract.emit_metrics accepts finite numbers only",
+      "missingIndicatorCellsInDataset": 73,
+      "nChemFeatures": 231,
+      "nInnerFolds": 3,
+      "nMissingIndicators": 9,
+      "nOuterFolds": 3,
+      "nRows": 250,
+      "randomness": "none: no RNG draw anywhere; every fold comes from the frozen splits.csv",
+      "rankGrid": [
+        3,
+        6,
+        10
+      ],
+      "repeats": [
+        0,
+        1,
+        2
+      ],
+      "representation": [
+        "zscore",
+        "rankgauss"
+      ],
+      "seeds": {
+        "0": 20261025,
+        "1": 20261026,
+        "2": 20261027
+      },
+      "selectionRule": "inner 3-fold CV inside each outer training set; candidates are scored by the equal-weight MAE over the CONCATENATED validation rows (not the mean of per-fold scores); the winner is refitted on the whole outer training set",
+      "splitsCsv": "data/splits/NESTED-CV-1/splits.csv",
+      "splitsSha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "splitsSha256MatchesManifest": false,
+      "tau": 0.5,
+      "zclip": 8.0
+    },
+    "runtimeSeconds": 1.3881702089856844,
+    "status": "succeeded"
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0115",
+  "questionId": "Q3",
+  "modelId": "MODEL-0053",
+  "modelKind": "candidate",
+  "title": "ROB Q3 generation v6-fix seed block 2/3 (repeat 1, seed 20261026)",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": null,
+  "params": {
+    "dependencies": [
+      "src/robustness_wrapper.py",
+      "src/seed_receipt_wrapper.py",
+      "data/clean/q3.csv",
+      "data/clean/q3_style_protocol.json",
+      "data/clean/q3_thresholds.json",
+      "data/splits/NESTED-CV-1/splits.csv",
+      "data/splits/NESTED-CV-1/manifest.json",
+      "src/q3_fix.py",
+      "src/q3_lib.py",
+      "src/v6_common.py",
+      "src/target_columns.py",
+      "src/q_common.py"
+    ],
+    "dependenciesComplete": true,
+    "freezeSources": true,
+    "perturbation": "seed block repeat=1 (registered seed 20261026), code/data/selection rule unchanged",
+    "protocol": "ROB seed block for the v6-fixed Q3 generation; main reference is EXP-0109 (repeat 0 = seed 20261025)",
+    "robustnessPlan": "ROB-0013 (to be pre-registered before the decision rule is read)",
+    "targetContractId": "TGT-0003",
+    "vpId": "VP-0020"
+  },
+  "datasetId": "DATA-0004",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0004",
+    "path": "data/clean/q3.csv",
+    "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+    "bytes": 858381,
+    "targetColumn": "overall",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+  "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+  "configVersion": 2,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/robustness_wrapper.py",
+    "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+    "bytes": 4147
+  },
+  "dependencies": [
+    {
+      "path": "data/clean/q3.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381
+    },
+    {
+      "path": "data/clean/q3_style_protocol.json",
+      "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+      "bytes": 3703
+    },
+    {
+      "path": "data/clean/q3_thresholds.json",
+      "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+      "bytes": 5531
+    },
+    {
+      "path": "data/splits/NESTED-CV-1/manifest.json",
+      "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+      "bytes": 4548
+    },
+    {
+      "path": "data/splits/NESTED-CV-1/splits.csv",
+      "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "bytes": 58959
+    },
+    {
+      "path": "src/q3_fix.py",
+      "sha256": "e4aee1f5c460358ad709f761b7cbd3b59398c15440064cfa23280f67c0f09019",
+      "bytes": 94885
+    },
+    {
+      "path": "src/q3_lib.py",
+      "sha256": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+      "bytes": 62195
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365
+    },
+    {
+      "path": "src/robustness_wrapper.py",
+      "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+      "bytes": 4147
+    },
+    {
+      "path": "src/seed_receipt_wrapper.py",
+      "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+      "bytes": 4571
+    },
+    {
+      "path": "src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435
+    },
+    {
+      "path": "src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0115/inputs/src/robustness_wrapper.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0115/inputs/data/clean/q3.csv",
+        "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+        "bytes": 858381,
+        "originalPath": "data/clean/q3.csv"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/data/clean/q3_style_protocol.json",
+        "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+        "bytes": 3703,
+        "originalPath": "data/clean/q3_style_protocol.json"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/data/clean/q3_thresholds.json",
+        "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+        "bytes": 5531,
+        "originalPath": "data/clean/q3_thresholds.json"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/data/splits/NESTED-CV-1/manifest.json",
+        "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+        "bytes": 4548,
+        "originalPath": "data/splits/NESTED-CV-1/manifest.json"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/data/splits/NESTED-CV-1/splits.csv",
+        "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+        "bytes": 58959,
+        "originalPath": "data/splits/NESTED-CV-1/splits.csv"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/src/q3_fix.py",
+        "sha256": "e4aee1f5c460358ad709f761b7cbd3b59398c15440064cfa23280f67c0f09019",
+        "bytes": 94885,
+        "originalPath": "src/q3_fix.py"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/src/q3_lib.py",
+        "sha256": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+        "bytes": 62195,
+        "originalPath": "src/q3_lib.py"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/src/q_common.py",
+        "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+        "bytes": 11365,
+        "originalPath": "src/q_common.py"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/src/robustness_wrapper.py",
+        "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+        "bytes": 4147,
+        "originalPath": "src/robustness_wrapper.py"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/src/seed_receipt_wrapper.py",
+        "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+        "bytes": 4571,
+        "originalPath": "src/seed_receipt_wrapper.py"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/src/target_columns.py",
+        "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "bytes": 29435,
+        "originalPath": "src/target_columns.py"
+      },
+      {
+        "path": "experiments/EXP-0115/inputs/src/v6_common.py",
+        "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+        "bytes": 13536,
+        "originalPath": "src/v6_common.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/robustness_wrapper.py",
+    "args": [
+      "--target",
+      "src/q3_fix.py",
+      "--repeat",
+      "1"
+    ],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/robustness_wrapper.py",
+      "--target",
+      "src/q3_fix.py",
+      "--repeat",
+      "1"
+    ],
+    "cwd": "experiments/EXP-0115"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261026,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/robustness_wrapper.py",
+      "--target",
+      "src/q3_fix.py",
+      "--repeat",
+      "1"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261026,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "c3586db0d5ee0b46057e5bcadc692d32d3f8141fb66b15ec74748a0a18183be4",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "v6fix-rob-q3gen-seed20261026",
+  "createdAt": "2026-10-27T11:32:17.383Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0115",
+  "registration": {
+    "questionId": "Q3",
+    "modelKind": "candidate",
+    "title": "ROB Q3 generation v6-fix seed block 2/3 (repeat 1, seed 20261026)",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": null,
+    "params": {
+      "dependencies": [
+        "src/robustness_wrapper.py",
+        "src/seed_receipt_wrapper.py",
+        "data/clean/q3.csv",
+        "data/clean/q3_style_protocol.json",
+        "data/clean/q3_thresholds.json",
+        "data/splits/NESTED-CV-1/splits.csv",
+        "data/splits/NESTED-CV-1/manifest.json",
+        "src/q3_fix.py",
+        "src/q3_lib.py",
+        "src/v6_common.py",
+        "src/target_columns.py",
+        "src/q_common.py"
+      ],
+      "dependenciesComplete": true,
+      "freezeSources": true,
+      "perturbation": "seed block repeat=1 (registered seed 20261026), code/data/selection rule unchanged",
+      "protocol": "ROB seed block for the v6-fixed Q3 generation; main reference is EXP-0109 (repeat 0 = seed 20261025)",
+      "robustnessPlan": "ROB-0013 (to be pre-registered before the decision rule is read)",
+      "targetContractId": "TGT-0003",
+      "vpId": "VP-0020"
+    },
+    "codeFile": "src/robustness_wrapper.py",
+    "datasetId": "DATA-0004",
+    "splitId": null,
+    "seed": 20261026,
+    "args": [
+      "--target",
+      "src/q3_fix.py",
+      "--repeat",
+      "1"
+    ],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0053"
+  }
+}

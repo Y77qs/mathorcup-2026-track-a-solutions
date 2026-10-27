@@ -1,0 +1,2354 @@
+[
+  {
+    "ok": true,
+    "code": null,
+    "message": null,
+    "hint": null,
+    "projectId": "beer-2026-a-v3",
+    "revision": 4923,
+    "runtimeRevision": 5950,
+    "stage": "intake",
+    "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6",
+    "action": "status",
+    "checkedAt": "2026-10-27T12:23:36.130Z",
+    "experiments": [
+      {
+        "id": "EXP-0125",
+        "experimentId": "EXP-0125",
+        "status": "succeeded",
+        "questionId": "Q2",
+        "modelId": "MODEL-0050",
+        "modelKind": "candidate",
+        "datasetId": "DATA-0001",
+        "splitId": null,
+        "rerunOf": null,
+        "pid": 24606,
+        "token": null,
+        "startedAt": "2026-10-27T11:52:50.056Z",
+        "endedAt": "2026-10-27T11:53:22.011Z",
+        "durationMs": 31954,
+        "exitCode": 0,
+        "metrics": {
+          "topk-jaccard": 0.2103333333333333,
+          "topk-jaccard-rep0": 0.2103333333333333,
+          "topk-jaccard-point": 0.19766666666666666,
+          "external_6csv_mean_spearman_aligned": 0.9210176180408739,
+          "external_6csv_rows_matched": 44,
+          "external_6csv_mean_spearman_aligned_strict": 0.9080152788388083,
+          "n_strict_candidates": 216,
+          "n_extended_candidates": 15,
+          "pi_mean": 0.41860333333333327,
+          "pi_below_0.5_count": 423,
+          "pi_below_0.5_denominator": 600,
+          "sign_stability_mean": 0.98198,
+          "sign_stability_legacy_mean": 0.7203133333333334,
+          "sign_negative_point_count": 169,
+          "sign_direction_undetermined_count": 0,
+          "sign_zero_count": 0,
+          "sign_invalid_count": 0,
+          "n_dimensions": 50,
+          "n_methods": 4,
+          "n_repeats": 1,
+          "bootstrap_reps": 500,
+          "seed": 20261025,
+          "external_6csv_mean_spearman_superseded_positional": 0.44505144467935176
+        },
+        "metricsError": null,
+        "outputFiles": [
+          {
+            "path": "experiments/EXP-0125/bootstrap_pi.csv",
+            "sha256": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+            "bytes": 17178411,
+            "kind": "data",
+            "sha256Now": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+            "bytesNow": 17178411,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/bootstrap_pi_extended.csv",
+            "sha256": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+            "bytes": 15287285,
+            "kind": "data",
+            "sha256Now": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+            "bytesNow": 15287285,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/candidate_scores.csv",
+            "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+            "bytes": 1506356,
+            "kind": "data",
+            "sha256Now": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+            "bytesNow": 1506356,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/extended_top3.csv",
+            "sha256": "c445467debe8341d285bd64638746d2b9319f61649d89f99e4302952710c4f48",
+            "bytes": 23796,
+            "kind": "data",
+            "sha256Now": "c445467debe8341d285bd64638746d2b9319f61649d89f99e4302952710c4f48",
+            "bytesNow": 23796,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/extended_top3_by_method.csv",
+            "sha256": "21e792e99c5de14f09884fc845fb23c8edb249798aa9ec1e9d693ea36f071d4a",
+            "bytes": 102050,
+            "kind": "data",
+            "sha256Now": "21e792e99c5de14f09884fc845fb23c8edb249798aa9ec1e9d693ea36f071d4a",
+            "bytesNow": 102050,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/metrics.json",
+            "sha256": "c1b4e52d17fedeab4513b2ee385b99f2496fed7bfb9288f961270e0dca6c2d8e",
+            "bytes": 847,
+            "kind": "json",
+            "sha256Now": "c1b4e52d17fedeab4513b2ee385b99f2496fed7bfb9288f961270e0dca6c2d8e",
+            "bytesNow": 847,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/outputs.json",
+            "sha256": "288bdadf96f8cdaa7ad54e67d83b9e23f504635eb79a901305a1279b992dfb99",
+            "bytes": 1815314,
+            "kind": "json",
+            "sha256Now": "288bdadf96f8cdaa7ad54e67d83b9e23f504635eb79a901305a1279b992dfb99",
+            "bytesNow": 1815314,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/seed-receipt.json",
+            "sha256": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+            "bytes": 45,
+            "kind": "json",
+            "sha256Now": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+            "bytesNow": 45,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/sets.json",
+            "sha256": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075",
+            "bytes": 33311,
+            "kind": "json",
+            "sha256Now": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075",
+            "bytesNow": 33311,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/sign_counts.csv",
+            "sha256": "7091f85285154d59ddd87e93790d86aa72919efa893b9fbc9517a023e51d879c",
+            "bytes": 1380240,
+            "kind": "data",
+            "sha256Now": "7091f85285154d59ddd87e93790d86aa72919efa893b9fbc9517a023e51d879c",
+            "bytesNow": 1380240,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/sign_stability_summary.json",
+            "sha256": "62486dd2fb6da53b3faa58223b73794ac338a3f5c3cb00149def696d801564e0",
+            "bytes": 9916,
+            "kind": "json",
+            "sha256Now": "62486dd2fb6da53b3faa58223b73794ac338a3f5c3cb00149def696d801564e0",
+            "bytesNow": 9916,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/strict_lowpi_sign_status.csv",
+            "sha256": "8f95abd4abeb56673cd992d745f53b935f47966f84a8eeeb516fb5fc4db6d1fe",
+            "bytes": 25092,
+            "kind": "data",
+            "sha256Now": "8f95abd4abeb56673cd992d745f53b935f47966f84a8eeeb516fb5fc4db6d1fe",
+            "bytesNow": 25092,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/strict_top3.csv",
+            "sha256": "2e4f4737d347b07ff4dfb5aa36a91f07599e65430de9357d027b37b8b2566cdb",
+            "bytes": 25238,
+            "kind": "data",
+            "sha256Now": "2e4f4737d347b07ff4dfb5aa36a91f07599e65430de9357d027b37b8b2566cdb",
+            "bytesNow": 25238,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/strict_top3_by_method.csv",
+            "sha256": "c044103629621be3d08e1fbd9f51154afe4518ee042fde6bbd4ba479fa69b202",
+            "bytes": 108500,
+            "kind": "data",
+            "sha256Now": "c044103629621be3d08e1fbd9f51154afe4518ee042fde6bbd4ba479fa69b202",
+            "bytesNow": 108500,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/data/clean/q1_mapped.csv",
+            "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+            "bytes": 979527,
+            "kind": "data",
+            "sha256Now": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+            "bytesNow": 979527,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/data/clean/q2_chem_meta.json",
+            "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+            "bytes": 52977,
+            "kind": "json",
+            "sha256Now": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+            "bytesNow": 52977,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/data/clean/q2_raw.csv",
+            "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytes": 858381,
+            "kind": "data",
+            "sha256Now": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytesNow": 858381,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/data/processed/sensory_name_alignment.csv",
+            "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+            "bytes": 1469,
+            "kind": "data",
+            "sha256Now": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+            "bytesNow": 1469,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/data/raw/imported/415709ac10f2f730-2.csv",
+            "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+            "bytes": 1000771,
+            "kind": "data",
+            "sha256Now": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+            "bytesNow": 1000771,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/data/raw/imported/a55004fb0390299a-6.csv",
+            "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+            "bytes": 42937,
+            "kind": "data",
+            "sha256Now": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+            "bytesNow": 42937,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/data/splits/SPLIT-0001/train.csv",
+            "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+            "bytes": 687898,
+            "kind": "data",
+            "sha256Now": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+            "bytesNow": 687898,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/experiments/EXP-0075/repeat0/strict_top3.csv",
+            "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+            "bytes": 19358,
+            "kind": "data",
+            "sha256Now": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+            "bytesNow": 19358,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/experiments/EXP-0075/repeat1/strict_top3.csv",
+            "sha256": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+            "bytes": 19412,
+            "kind": "data",
+            "sha256Now": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+            "bytesNow": 19412,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/experiments/EXP-0075/repeat2/strict_top3.csv",
+            "sha256": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+            "bytes": 19497,
+            "kind": "data",
+            "sha256Now": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+            "bytesNow": 19497,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/src/q1_lib.py",
+            "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+            "bytes": 23474,
+            "kind": "file",
+            "sha256Now": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+            "bytesNow": 23474,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/src/q2_fix.py",
+            "sha256": "e656b91c8371ce8019c1b3976344d89b44623b27ba5fe1a1861dd0c155cf832b",
+            "bytes": 141866,
+            "kind": "file",
+            "sha256Now": "e656b91c8371ce8019c1b3976344d89b44623b27ba5fe1a1861dd0c155cf832b",
+            "bytesNow": 141866,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/src/q2_lib.py",
+            "sha256": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+            "bytes": 16108,
+            "kind": "file",
+            "sha256Now": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+            "bytesNow": 16108,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/src/q_common.py",
+            "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytes": 11365,
+            "kind": "file",
+            "sha256Now": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytesNow": 11365,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/src/robustness_wrapper.py",
+            "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytes": 4147,
+            "kind": "file",
+            "sha256Now": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytesNow": 4147,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/src/seed_receipt_wrapper.py",
+            "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytes": 4571,
+            "kind": "file",
+            "sha256Now": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytesNow": 4571,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/src/target_columns.py",
+            "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytes": 29435,
+            "kind": "file",
+            "sha256Now": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytesNow": 29435,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/inputs/src/v6_common.py",
+            "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytes": 13536,
+            "kind": "file",
+            "sha256Now": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytesNow": 13536,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/bootstrap_pi.csv",
+            "sha256": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+            "bytes": 17178411,
+            "kind": "data",
+            "sha256Now": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+            "bytesNow": 17178411,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/bootstrap_pi_extended.csv",
+            "sha256": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+            "bytes": 15287285,
+            "kind": "data",
+            "sha256Now": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+            "bytesNow": 15287285,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/candidate_scores.csv",
+            "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+            "bytes": 1506356,
+            "kind": "data",
+            "sha256Now": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+            "bytesNow": 1506356,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/extended_top3.csv",
+            "sha256": "c445467debe8341d285bd64638746d2b9319f61649d89f99e4302952710c4f48",
+            "bytes": 23796,
+            "kind": "data",
+            "sha256Now": "c445467debe8341d285bd64638746d2b9319f61649d89f99e4302952710c4f48",
+            "bytesNow": 23796,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/extended_top3_by_method.csv",
+            "sha256": "21e792e99c5de14f09884fc845fb23c8edb249798aa9ec1e9d693ea36f071d4a",
+            "bytes": 102050,
+            "kind": "data",
+            "sha256Now": "21e792e99c5de14f09884fc845fb23c8edb249798aa9ec1e9d693ea36f071d4a",
+            "bytesNow": 102050,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/metrics.json",
+            "sha256": "c1b4e52d17fedeab4513b2ee385b99f2496fed7bfb9288f961270e0dca6c2d8e",
+            "bytes": 847,
+            "kind": "json",
+            "sha256Now": "c1b4e52d17fedeab4513b2ee385b99f2496fed7bfb9288f961270e0dca6c2d8e",
+            "bytesNow": 847,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/outputs.json",
+            "sha256": "288bdadf96f8cdaa7ad54e67d83b9e23f504635eb79a901305a1279b992dfb99",
+            "bytes": 1815314,
+            "kind": "json",
+            "sha256Now": "288bdadf96f8cdaa7ad54e67d83b9e23f504635eb79a901305a1279b992dfb99",
+            "bytesNow": 1815314,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/sets.json",
+            "sha256": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075",
+            "bytes": 33311,
+            "kind": "json",
+            "sha256Now": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075",
+            "bytesNow": 33311,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/sign_counts.csv",
+            "sha256": "7091f85285154d59ddd87e93790d86aa72919efa893b9fbc9517a023e51d879c",
+            "bytes": 1380240,
+            "kind": "data",
+            "sha256Now": "7091f85285154d59ddd87e93790d86aa72919efa893b9fbc9517a023e51d879c",
+            "bytesNow": 1380240,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/sign_stability_summary.json",
+            "sha256": "62486dd2fb6da53b3faa58223b73794ac338a3f5c3cb00149def696d801564e0",
+            "bytes": 9916,
+            "kind": "json",
+            "sha256Now": "62486dd2fb6da53b3faa58223b73794ac338a3f5c3cb00149def696d801564e0",
+            "bytesNow": 9916,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/strict_lowpi_sign_status.csv",
+            "sha256": "8f95abd4abeb56673cd992d745f53b935f47966f84a8eeeb516fb5fc4db6d1fe",
+            "bytes": 25092,
+            "kind": "data",
+            "sha256Now": "8f95abd4abeb56673cd992d745f53b935f47966f84a8eeeb516fb5fc4db6d1fe",
+            "bytesNow": 25092,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/strict_lowpi_sign_status.md",
+            "sha256": "38f6d2d989c9ef2335ce7b2f4b2a0e148ac2d6bd99a9062cc5cbe7b3afda2e42",
+            "bytes": 29396,
+            "kind": "file",
+            "sha256Now": "38f6d2d989c9ef2335ce7b2f4b2a0e148ac2d6bd99a9062cc5cbe7b3afda2e42",
+            "bytesNow": 29396,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/strict_top3.csv",
+            "sha256": "2e4f4737d347b07ff4dfb5aa36a91f07599e65430de9357d027b37b8b2566cdb",
+            "bytes": 25238,
+            "kind": "data",
+            "sha256Now": "2e4f4737d347b07ff4dfb5aa36a91f07599e65430de9357d027b37b8b2566cdb",
+            "bytesNow": 25238,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0125/repeat0/strict_top3_by_method.csv",
+            "sha256": "c044103629621be3d08e1fbd9f51154afe4518ee042fde6bbd4ba479fa69b202",
+            "bytes": 108500,
+            "kind": "data",
+            "sha256Now": "c044103629621be3d08e1fbd9f51154afe4518ee042fde6bbd4ba479fa69b202",
+            "bytesNow": 108500,
+            "verified": true
+          }
+        ],
+        "figures": [],
+        "failure": null,
+        "logs": {
+          "stdout": "experiments/EXP-0125/stdout.log",
+          "stderr": "experiments/EXP-0125/stderr.log",
+          "run": "experiments/EXP-0125/run.json"
+        },
+        "dir": "experiments/EXP-0125",
+        "timedOut": false,
+        "cancelled": false,
+        "revision": 4923,
+        "waitNote": "finalized by status"
+      }
+    ],
+    "experimentId": "EXP-0125",
+    "status": "succeeded"
+  },
+  {
+    "ok": true,
+    "code": null,
+    "message": null,
+    "hint": null,
+    "projectId": "beer-2026-a-v3",
+    "revision": 4924,
+    "runtimeRevision": 5952,
+    "stage": "intake",
+    "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6",
+    "action": "status",
+    "checkedAt": "2026-10-27T12:23:36.735Z",
+    "experiments": [
+      {
+        "id": "EXP-0126",
+        "experimentId": "EXP-0126",
+        "status": "succeeded",
+        "questionId": "Q2",
+        "modelId": "MODEL-0050",
+        "modelKind": "candidate",
+        "datasetId": "DATA-0001",
+        "splitId": null,
+        "rerunOf": null,
+        "pid": 24668,
+        "token": null,
+        "startedAt": "2026-10-27T11:53:51.904Z",
+        "endedAt": "2026-10-27T11:54:28.748Z",
+        "durationMs": 36843,
+        "exitCode": 0,
+        "metrics": {
+          "topk-jaccard": 0.20733333333333334,
+          "topk-jaccard-rep1": 0.20733333333333334,
+          "topk-jaccard-point": 0.19766666666666666,
+          "external_6csv_mean_spearman_aligned": 0.9210176180408739,
+          "external_6csv_rows_matched": 44,
+          "external_6csv_mean_spearman_aligned_strict": 0.9080152788388083,
+          "n_strict_candidates": 216,
+          "n_extended_candidates": 15,
+          "pi_mean": 0.42080666666666666,
+          "pi_below_0.5_count": 419,
+          "pi_below_0.5_denominator": 600,
+          "sign_stability_mean": 0.9821966666666666,
+          "sign_stability_legacy_mean": 0.7246566666666666,
+          "sign_negative_point_count": 166,
+          "sign_direction_undetermined_count": 0,
+          "sign_zero_count": 0,
+          "sign_invalid_count": 0,
+          "n_dimensions": 50,
+          "n_methods": 4,
+          "n_repeats": 1,
+          "bootstrap_reps": 500,
+          "seed": 20261026,
+          "external_6csv_mean_spearman_superseded_positional": 0.44505144467935176
+        },
+        "metricsError": null,
+        "outputFiles": [
+          {
+            "path": "experiments/EXP-0126/bootstrap_pi.csv",
+            "sha256": "dfe1e6d89d65c37bc57e501548f09d1bf83382a841433a2911e6fef699953d3f",
+            "bytes": 17184865,
+            "kind": "data",
+            "sha256Now": "dfe1e6d89d65c37bc57e501548f09d1bf83382a841433a2911e6fef699953d3f",
+            "bytesNow": 17184865,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/bootstrap_pi_extended.csv",
+            "sha256": "e6d7e7098e9945e0eb0a32c59e51f8d3c9039ac31ae5ed227413d501636e7944",
+            "bytes": 15286471,
+            "kind": "data",
+            "sha256Now": "e6d7e7098e9945e0eb0a32c59e51f8d3c9039ac31ae5ed227413d501636e7944",
+            "bytesNow": 15286471,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/candidate_scores.csv",
+            "sha256": "3a3bfc9a2b0f34edf7ff74a0d143426408067921611d060618be738173bfa140",
+            "bytes": 1506476,
+            "kind": "data",
+            "sha256Now": "3a3bfc9a2b0f34edf7ff74a0d143426408067921611d060618be738173bfa140",
+            "bytesNow": 1506476,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/extended_top3.csv",
+            "sha256": "292b050eca85d510438045ac1b5fa557495343452045c3117dd9994b1a7d9ac9",
+            "bytes": 23739,
+            "kind": "data",
+            "sha256Now": "292b050eca85d510438045ac1b5fa557495343452045c3117dd9994b1a7d9ac9",
+            "bytesNow": 23739,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/extended_top3_by_method.csv",
+            "sha256": "50f88c2b56abd186b18c70d9d9ae09579ff19fa56e56ec195771df6b368c086d",
+            "bytes": 101884,
+            "kind": "data",
+            "sha256Now": "50f88c2b56abd186b18c70d9d9ae09579ff19fa56e56ec195771df6b368c086d",
+            "bytesNow": 101884,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/metrics.json",
+            "sha256": "77eccf73f1deccaca11f64b07106eb3ab87b8a2ac4c314ae40401b1464cdb157",
+            "bytes": 860,
+            "kind": "json",
+            "sha256Now": "77eccf73f1deccaca11f64b07106eb3ab87b8a2ac4c314ae40401b1464cdb157",
+            "bytesNow": 860,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/outputs.json",
+            "sha256": "e841dd50fa5a7c84dfc0364741e5d486a8c0a2c100fa943364fac9653ce8e802",
+            "bytes": 1814296,
+            "kind": "json",
+            "sha256Now": "e841dd50fa5a7c84dfc0364741e5d486a8c0a2c100fa943364fac9653ce8e802",
+            "bytesNow": 1814296,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/seed-receipt.json",
+            "sha256": "4afd8e1b4ff82c514ed0664c0d8f2f178a10811c8308dbc4877d72a235a332c0",
+            "bytes": 45,
+            "kind": "json",
+            "sha256Now": "4afd8e1b4ff82c514ed0664c0d8f2f178a10811c8308dbc4877d72a235a332c0",
+            "bytesNow": 45,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/sets.json",
+            "sha256": "74bb9d5a08e205a3d679390eca795c0a79ff9a8181340c4f32eb6a26b337f795",
+            "bytes": 33440,
+            "kind": "json",
+            "sha256Now": "74bb9d5a08e205a3d679390eca795c0a79ff9a8181340c4f32eb6a26b337f795",
+            "bytesNow": 33440,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/sign_counts.csv",
+            "sha256": "80544959afbfea5af37f07cc15ef1b1f297d125dc018db4155a3d0fc8726390a",
+            "bytes": 1379470,
+            "kind": "data",
+            "sha256Now": "80544959afbfea5af37f07cc15ef1b1f297d125dc018db4155a3d0fc8726390a",
+            "bytesNow": 1379470,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/sign_stability_summary.json",
+            "sha256": "d97b1d31bfda781dcf37ecd14836070dcdb9d8ca3c98c082255ceac37dc1668d",
+            "bytes": 10000,
+            "kind": "json",
+            "sha256Now": "d97b1d31bfda781dcf37ecd14836070dcdb9d8ca3c98c082255ceac37dc1668d",
+            "bytesNow": 10000,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/strict_lowpi_sign_status.csv",
+            "sha256": "b4ef93d64c219a93d792caac03cf669b3693e1b0a60dbb6ef04e4063837460c2",
+            "bytes": 24889,
+            "kind": "data",
+            "sha256Now": "b4ef93d64c219a93d792caac03cf669b3693e1b0a60dbb6ef04e4063837460c2",
+            "bytesNow": 24889,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/strict_top3.csv",
+            "sha256": "4f053c4459d741282c60a9e81445e85afdcf6803c2f41fe842721e13d7b6315f",
+            "bytes": 25217,
+            "kind": "data",
+            "sha256Now": "4f053c4459d741282c60a9e81445e85afdcf6803c2f41fe842721e13d7b6315f",
+            "bytesNow": 25217,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/strict_top3_by_method.csv",
+            "sha256": "3ea20ddb51f46618d91bafb893acd2b5f35691821be938391705be3d96014b64",
+            "bytes": 108511,
+            "kind": "data",
+            "sha256Now": "3ea20ddb51f46618d91bafb893acd2b5f35691821be938391705be3d96014b64",
+            "bytesNow": 108511,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/data/clean/q1_mapped.csv",
+            "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+            "bytes": 979527,
+            "kind": "data",
+            "sha256Now": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+            "bytesNow": 979527,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/data/clean/q2_chem_meta.json",
+            "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+            "bytes": 52977,
+            "kind": "json",
+            "sha256Now": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+            "bytesNow": 52977,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/data/clean/q2_raw.csv",
+            "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytes": 858381,
+            "kind": "data",
+            "sha256Now": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytesNow": 858381,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/data/processed/sensory_name_alignment.csv",
+            "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+            "bytes": 1469,
+            "kind": "data",
+            "sha256Now": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+            "bytesNow": 1469,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/data/raw/imported/415709ac10f2f730-2.csv",
+            "sha256": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+            "bytes": 1000771,
+            "kind": "data",
+            "sha256Now": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+            "bytesNow": 1000771,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/data/raw/imported/a55004fb0390299a-6.csv",
+            "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+            "bytes": 42937,
+            "kind": "data",
+            "sha256Now": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+            "bytesNow": 42937,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/data/splits/SPLIT-0001/train.csv",
+            "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+            "bytes": 687898,
+            "kind": "data",
+            "sha256Now": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+            "bytesNow": 687898,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/experiments/EXP-0075/repeat0/strict_top3.csv",
+            "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+            "bytes": 19358,
+            "kind": "data",
+            "sha256Now": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+            "bytesNow": 19358,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/experiments/EXP-0075/repeat1/strict_top3.csv",
+            "sha256": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+            "bytes": 19412,
+            "kind": "data",
+            "sha256Now": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+            "bytesNow": 19412,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/experiments/EXP-0075/repeat2/strict_top3.csv",
+            "sha256": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+            "bytes": 19497,
+            "kind": "data",
+            "sha256Now": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+            "bytesNow": 19497,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/src/q1_lib.py",
+            "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+            "bytes": 23474,
+            "kind": "file",
+            "sha256Now": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+            "bytesNow": 23474,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/src/q2_fix.py",
+            "sha256": "e656b91c8371ce8019c1b3976344d89b44623b27ba5fe1a1861dd0c155cf832b",
+            "bytes": 141866,
+            "kind": "file",
+            "sha256Now": "e656b91c8371ce8019c1b3976344d89b44623b27ba5fe1a1861dd0c155cf832b",
+            "bytesNow": 141866,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/src/q2_lib.py",
+            "sha256": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+            "bytes": 16108,
+            "kind": "file",
+            "sha256Now": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+            "bytesNow": 16108,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/src/q_common.py",
+            "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytes": 11365,
+            "kind": "file",
+            "sha256Now": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytesNow": 11365,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/src/robustness_wrapper.py",
+            "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytes": 4147,
+            "kind": "file",
+            "sha256Now": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytesNow": 4147,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/src/seed_receipt_wrapper.py",
+            "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytes": 4571,
+            "kind": "file",
+            "sha256Now": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytesNow": 4571,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/src/target_columns.py",
+            "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytes": 29435,
+            "kind": "file",
+            "sha256Now": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytesNow": 29435,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/inputs/src/v6_common.py",
+            "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytes": 13536,
+            "kind": "file",
+            "sha256Now": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytesNow": 13536,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/bootstrap_pi.csv",
+            "sha256": "dfe1e6d89d65c37bc57e501548f09d1bf83382a841433a2911e6fef699953d3f",
+            "bytes": 17184865,
+            "kind": "data",
+            "sha256Now": "dfe1e6d89d65c37bc57e501548f09d1bf83382a841433a2911e6fef699953d3f",
+            "bytesNow": 17184865,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/bootstrap_pi_extended.csv",
+            "sha256": "e6d7e7098e9945e0eb0a32c59e51f8d3c9039ac31ae5ed227413d501636e7944",
+            "bytes": 15286471,
+            "kind": "data",
+            "sha256Now": "e6d7e7098e9945e0eb0a32c59e51f8d3c9039ac31ae5ed227413d501636e7944",
+            "bytesNow": 15286471,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/candidate_scores.csv",
+            "sha256": "3a3bfc9a2b0f34edf7ff74a0d143426408067921611d060618be738173bfa140",
+            "bytes": 1506476,
+            "kind": "data",
+            "sha256Now": "3a3bfc9a2b0f34edf7ff74a0d143426408067921611d060618be738173bfa140",
+            "bytesNow": 1506476,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/extended_top3.csv",
+            "sha256": "292b050eca85d510438045ac1b5fa557495343452045c3117dd9994b1a7d9ac9",
+            "bytes": 23739,
+            "kind": "data",
+            "sha256Now": "292b050eca85d510438045ac1b5fa557495343452045c3117dd9994b1a7d9ac9",
+            "bytesNow": 23739,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/extended_top3_by_method.csv",
+            "sha256": "50f88c2b56abd186b18c70d9d9ae09579ff19fa56e56ec195771df6b368c086d",
+            "bytes": 101884,
+            "kind": "data",
+            "sha256Now": "50f88c2b56abd186b18c70d9d9ae09579ff19fa56e56ec195771df6b368c086d",
+            "bytesNow": 101884,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/metrics.json",
+            "sha256": "77eccf73f1deccaca11f64b07106eb3ab87b8a2ac4c314ae40401b1464cdb157",
+            "bytes": 860,
+            "kind": "json",
+            "sha256Now": "77eccf73f1deccaca11f64b07106eb3ab87b8a2ac4c314ae40401b1464cdb157",
+            "bytesNow": 860,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/outputs.json",
+            "sha256": "e841dd50fa5a7c84dfc0364741e5d486a8c0a2c100fa943364fac9653ce8e802",
+            "bytes": 1814296,
+            "kind": "json",
+            "sha256Now": "e841dd50fa5a7c84dfc0364741e5d486a8c0a2c100fa943364fac9653ce8e802",
+            "bytesNow": 1814296,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/sets.json",
+            "sha256": "74bb9d5a08e205a3d679390eca795c0a79ff9a8181340c4f32eb6a26b337f795",
+            "bytes": 33440,
+            "kind": "json",
+            "sha256Now": "74bb9d5a08e205a3d679390eca795c0a79ff9a8181340c4f32eb6a26b337f795",
+            "bytesNow": 33440,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/sign_counts.csv",
+            "sha256": "80544959afbfea5af37f07cc15ef1b1f297d125dc018db4155a3d0fc8726390a",
+            "bytes": 1379470,
+            "kind": "data",
+            "sha256Now": "80544959afbfea5af37f07cc15ef1b1f297d125dc018db4155a3d0fc8726390a",
+            "bytesNow": 1379470,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/sign_stability_summary.json",
+            "sha256": "d97b1d31bfda781dcf37ecd14836070dcdb9d8ca3c98c082255ceac37dc1668d",
+            "bytes": 10000,
+            "kind": "json",
+            "sha256Now": "d97b1d31bfda781dcf37ecd14836070dcdb9d8ca3c98c082255ceac37dc1668d",
+            "bytesNow": 10000,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/strict_lowpi_sign_status.csv",
+            "sha256": "b4ef93d64c219a93d792caac03cf669b3693e1b0a60dbb6ef04e4063837460c2",
+            "bytes": 24889,
+            "kind": "data",
+            "sha256Now": "b4ef93d64c219a93d792caac03cf669b3693e1b0a60dbb6ef04e4063837460c2",
+            "bytesNow": 24889,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/strict_lowpi_sign_status.md",
+            "sha256": "c4832e3a68c1516914b70ac1d7be3421efc2c6e4fced802ea4f588188dbe0551",
+            "bytes": 29177,
+            "kind": "file",
+            "sha256Now": "c4832e3a68c1516914b70ac1d7be3421efc2c6e4fced802ea4f588188dbe0551",
+            "bytesNow": 29177,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/strict_top3.csv",
+            "sha256": "4f053c4459d741282c60a9e81445e85afdcf6803c2f41fe842721e13d7b6315f",
+            "bytes": 25217,
+            "kind": "data",
+            "sha256Now": "4f053c4459d741282c60a9e81445e85afdcf6803c2f41fe842721e13d7b6315f",
+            "bytesNow": 25217,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0126/repeat1/strict_top3_by_method.csv",
+            "sha256": "3ea20ddb51f46618d91bafb893acd2b5f35691821be938391705be3d96014b64",
+            "bytes": 108511,
+            "kind": "data",
+            "sha256Now": "3ea20ddb51f46618d91bafb893acd2b5f35691821be938391705be3d96014b64",
+            "bytesNow": 108511,
+            "verified": true
+          }
+        ],
+        "figures": [],
+        "failure": null,
+        "logs": {
+          "stdout": "experiments/EXP-0126/stdout.log",
+          "stderr": "experiments/EXP-0126/stderr.log",
+          "run": "experiments/EXP-0126/run.json"
+        },
+        "dir": "experiments/EXP-0126",
+        "timedOut": false,
+        "cancelled": false,
+        "revision": 4924,
+        "waitNote": "finalized by status"
+      }
+    ],
+    "experimentId": "EXP-0126",
+    "status": "succeeded"
+  },
+  {
+    "ok": true,
+    "code": null,
+    "message": null,
+    "hint": null,
+    "projectId": "beer-2026-a-v3",
+    "revision": 4925,
+    "runtimeRevision": 5954,
+    "stage": "intake",
+    "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6",
+    "action": "status",
+    "checkedAt": "2026-10-27T12:23:37.333Z",
+    "experiments": [
+      {
+        "id": "EXP-0127",
+        "experimentId": "EXP-0127",
+        "status": "succeeded",
+        "questionId": "Q3",
+        "modelId": "MODEL-0053",
+        "modelKind": "candidate",
+        "datasetId": "DATA-0004",
+        "splitId": null,
+        "rerunOf": null,
+        "pid": 24640,
+        "token": null,
+        "startedAt": "2026-10-27T11:53:22.437Z",
+        "endedAt": "2026-10-27T11:53:49.410Z",
+        "durationMs": 26973,
+        "exitCode": 0,
+        "metrics": {
+          "constraint-records-verified-share": 0.6903157894736842,
+          "constraint-satisfaction": 1,
+          "constraint-satisfaction-raw": 0.116,
+          "constraint-satisfaction-repeat0": 1,
+          "constraints-conditional": 2732,
+          "constraints-infeasible": 0,
+          "constraints-not-identifiable": 210,
+          "constraints-verified": 6558,
+          "constraints_conditional": 2732,
+          "constraints_infeasible": 0,
+          "constraints_not_identifiable": 210,
+          "constraints_verified": 6558,
+          "covariance-trace-ratio": 0.803921259088925,
+          "dependence-error": 0.3983063964351623,
+          "dependence-spectrum-mae": 0.006503874629311189,
+          "diversity": 17.384758901326247,
+          "diversity-repeat0": 17.384758901326247,
+          "duplicate-share": 0,
+          "duplicate-share-repeat0": 0,
+          "duplicate_share": 0,
+          "edge-fraction": 0.12384415584415585,
+          "energy-U-all-estimable": 1.5469955559298514,
+          "energy-U-signed": 1.5469955559298514,
+          "energy-U-subset-tripel-kriek-lambic": 1.2332330897093922,
+          "energy-V-all-estimable": 15.787303117990362,
+          "energy-V-raw": 15.787303117990362,
+          "energy-V-subset-tripel-kriek-lambic": 34.104045426186936,
+          "energy-distance": 0.8639056831482218,
+          "energy-distance-normalized-all": 0.8639056831482218,
+          "energy-distance-raw": 0.8658151958695621,
+          "energy-distance-repeat0": 0.8639056831482218,
+          "marginal-error": 0.48781180051253903,
+          "n-cells": 66,
+          "n-cells-estimable": 59,
+          "n-cells-estimable-subset": 9,
+          "n-cells-excluded-energy": 7,
+          "n-cells-excluded-from-energy": 7,
+          "n-cells-subset": 9,
+          "n-linear-negative-design": 0,
+          "n-linear-negative-raw": 0,
+          "n-linear-negative_design": 0,
+          "n-linear-negative_raw": 0,
+          "n-repeats": 1,
+          "n-samples": 250,
+          "n-samples-estimable": 243,
+          "nearest-neighbor": 15.404350710244216,
+          "nonenal-increases-design": 0,
+          "nonenal-max-increase-design": 0,
+          "profile-mae": 0.22435048361412738,
+          "profile-pooled-spearman": 0.8042737094837934,
+          "profile-spearman": 0.47588801920768303,
+          "t2n-above-style-bound": 28,
+          "t2n-increase-max": 0.018426735143375998,
+          "t2n-increase-mean": 0.0008268607806524356,
+          "t2n-increases": 123,
+          "t2n-proxy-increase-share": 0.492,
+          "t2n_increases": 123
+        },
+        "metricsError": null,
+        "outputFiles": [
+          {
+            "path": "experiments/EXP-0127/constraints.csv",
+            "sha256": "73a2d64d1d8b4ba091e9e0bccfb3e81890eefa73855bd02bff33e601584837c5",
+            "bytes": 2047413,
+            "kind": "data",
+            "sha256Now": "73a2d64d1d8b4ba091e9e0bccfb3e81890eefa73855bd02bff33e601584837c5",
+            "bytesNow": 2047413,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/energy_summary.csv",
+            "sha256": "35af0bb0341864ff6b7d427408aa4658ed842dc494d798feada4cd8aea557096",
+            "bytes": 2038,
+            "kind": "data",
+            "sha256Now": "35af0bb0341864ff6b7d427408aa4658ed842dc494d798feada4cd8aea557096",
+            "bytesNow": 2038,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/marginal_state.csv",
+            "sha256": "dcb2fd05a6ce956cad3cf9a71a9e879baea651c31cb177c874fb1da08ea538fd",
+            "bytes": 1719465,
+            "kind": "data",
+            "sha256Now": "dcb2fd05a6ce956cad3cf9a71a9e879baea651c31cb177c874fb1da08ea538fd",
+            "bytesNow": 1719465,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/metrics.json",
+            "sha256": "8f4910c498ba486b308461cf012b95d1648d1120140afab4d8eece4de4e8847a",
+            "bytes": 2137,
+            "kind": "json",
+            "sha256Now": "8f4910c498ba486b308461cf012b95d1648d1120140afab4d8eece4de4e8847a",
+            "bytesNow": 2137,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/outputs.json",
+            "sha256": "30c580865675efc4e35f6e9089bb073b02de2c83b98d3f8fe813bf05fb3c59f6",
+            "bytes": 528524,
+            "kind": "json",
+            "sha256Now": "30c580865675efc4e35f6e9089bb073b02de2c83b98d3f8fe813bf05fb3c59f6",
+            "bytesNow": 528524,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/q3_metrics.csv",
+            "sha256": "3abb088f05a982de67f13ea4f776cef359aec962e3b57b448ac9e1a0a3532d61",
+            "bytes": 180064,
+            "kind": "data",
+            "sha256Now": "3abb088f05a982de67f13ea4f776cef359aec962e3b57b448ac9e1a0a3532d61",
+            "bytesNow": 180064,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/run-seed-20261025.json",
+            "sha256": "0bcedf8e4d8202b65b9046a1e2721b2438451831958a5863cf966c901dac5b69",
+            "bytes": 404,
+            "kind": "json",
+            "sha256Now": "0bcedf8e4d8202b65b9046a1e2721b2438451831958a5863cf966c901dac5b69",
+            "bytesNow": 404,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/samples-repeat-0.csv",
+            "sha256": "994a3ea55cc606527395e4c599816758c724c262ccf873c2ec461e4f0518debf",
+            "bytes": 1048197,
+            "kind": "data",
+            "sha256Now": "994a3ea55cc606527395e4c599816758c724c262ccf873c2ec461e4f0518debf",
+            "bytesNow": 1048197,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/samples.csv",
+            "sha256": "994a3ea55cc606527395e4c599816758c724c262ccf873c2ec461e4f0518debf",
+            "bytes": 1048197,
+            "kind": "data",
+            "sha256Now": "994a3ea55cc606527395e4c599816758c724c262ccf873c2ec461e4f0518debf",
+            "bytesNow": 1048197,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/samples_difference.csv",
+            "sha256": "4305725b3ecbaed547849ee05973e632df7bd90708a1d176877938606ca37ab0",
+            "bytes": 367712,
+            "kind": "data",
+            "sha256Now": "4305725b3ecbaed547849ee05973e632df7bd90708a1d176877938606ca37ab0",
+            "bytesNow": 367712,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/samples_raw-repeat-0.csv",
+            "sha256": "efeffeb174ea88f796dd4337073883ed9589b8eb0e916d5aa19dcdcc64a490dd",
+            "bytes": 1045261,
+            "kind": "data",
+            "sha256Now": "efeffeb174ea88f796dd4337073883ed9589b8eb0e916d5aa19dcdcc64a490dd",
+            "bytesNow": 1045261,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/samples_raw.csv",
+            "sha256": "efeffeb174ea88f796dd4337073883ed9589b8eb0e916d5aa19dcdcc64a490dd",
+            "bytes": 1045261,
+            "kind": "data",
+            "sha256Now": "efeffeb174ea88f796dd4337073883ed9589b8eb0e916d5aa19dcdcc64a490dd",
+            "bytesNow": 1045261,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/seed-receipt.json",
+            "sha256": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+            "bytes": 45,
+            "kind": "json",
+            "sha256Now": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+            "bytesNow": 45,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/sensory_profiles.csv",
+            "sha256": "eb9392f8b6c8ce66479679c58263692ec3db20e00d458bd0e371f17dede77de4",
+            "bytes": 524760,
+            "kind": "data",
+            "sha256Now": "eb9392f8b6c8ce66479679c58263692ec3db20e00d458bd0e371f17dede77de4",
+            "bytesNow": 524760,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/tuning_table.csv",
+            "sha256": "9a7c1ba644b8ca30b7e2bf447f0b46d3f2a10eda122f4f7dd45ddf09023d5380",
+            "bytes": 9820,
+            "kind": "data",
+            "sha256Now": "9a7c1ba644b8ca30b7e2bf447f0b46d3f2a10eda122f4f7dd45ddf09023d5380",
+            "bytesNow": 9820,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/verdict_layers.csv",
+            "sha256": "2b5351631338ffc683ddbb8548c0c3d7f42a6f3b52e85b8b99efafe301ea804e",
+            "bytes": 121923,
+            "kind": "data",
+            "sha256Now": "2b5351631338ffc683ddbb8548c0c3d7f42a6f3b52e85b8b99efafe301ea804e",
+            "bytesNow": 121923,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/data/clean/q3.csv",
+            "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytes": 858381,
+            "kind": "data",
+            "sha256Now": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytesNow": 858381,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/data/clean/q3_style_protocol.json",
+            "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+            "bytes": 3703,
+            "kind": "json",
+            "sha256Now": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+            "bytesNow": 3703,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/data/clean/q3_thresholds.json",
+            "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+            "bytes": 5531,
+            "kind": "json",
+            "sha256Now": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+            "bytesNow": 5531,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/data/splits/NESTED-CV-1/manifest.json",
+            "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+            "bytes": 4548,
+            "kind": "json",
+            "sha256Now": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+            "bytesNow": 4548,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/data/splits/NESTED-CV-1/splits.csv",
+            "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+            "bytes": 58959,
+            "kind": "data",
+            "sha256Now": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+            "bytesNow": 58959,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/src/q3_fix.py",
+            "sha256": "e4aee1f5c460358ad709f761b7cbd3b59398c15440064cfa23280f67c0f09019",
+            "bytes": 94885,
+            "kind": "file",
+            "sha256Now": "e4aee1f5c460358ad709f761b7cbd3b59398c15440064cfa23280f67c0f09019",
+            "bytesNow": 94885,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/src/q3_lib.py",
+            "sha256": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+            "bytes": 62195,
+            "kind": "file",
+            "sha256Now": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+            "bytesNow": 62195,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/src/q_common.py",
+            "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytes": 11365,
+            "kind": "file",
+            "sha256Now": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytesNow": 11365,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/src/robustness_wrapper.py",
+            "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytes": 4147,
+            "kind": "file",
+            "sha256Now": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytesNow": 4147,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/src/seed_receipt_wrapper.py",
+            "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytes": 4571,
+            "kind": "file",
+            "sha256Now": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytesNow": 4571,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/src/target_columns.py",
+            "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytes": 29435,
+            "kind": "file",
+            "sha256Now": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytesNow": 29435,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0127/inputs/src/v6_common.py",
+            "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytes": 13536,
+            "kind": "file",
+            "sha256Now": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytesNow": 13536,
+            "verified": true
+          }
+        ],
+        "figures": [],
+        "failure": null,
+        "logs": {
+          "stdout": "experiments/EXP-0127/stdout.log",
+          "stderr": "experiments/EXP-0127/stderr.log",
+          "run": "experiments/EXP-0127/run.json"
+        },
+        "dir": "experiments/EXP-0127",
+        "timedOut": false,
+        "cancelled": false,
+        "revision": 4925,
+        "waitNote": "finalized by status"
+      }
+    ],
+    "experimentId": "EXP-0127",
+    "status": "succeeded"
+  },
+  {
+    "ok": true,
+    "code": null,
+    "message": null,
+    "hint": null,
+    "projectId": "beer-2026-a-v3",
+    "revision": 4926,
+    "runtimeRevision": 5956,
+    "stage": "intake",
+    "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6",
+    "action": "status",
+    "checkedAt": "2026-10-27T12:23:37.893Z",
+    "experiments": [
+      {
+        "id": "EXP-0128",
+        "experimentId": "EXP-0128",
+        "status": "succeeded",
+        "questionId": "Q3",
+        "modelId": "MODEL-0053",
+        "modelKind": "candidate",
+        "datasetId": "DATA-0004",
+        "splitId": null,
+        "rerunOf": null,
+        "pid": 24693,
+        "token": null,
+        "startedAt": "2026-10-27T11:54:29.073Z",
+        "endedAt": "2026-10-27T11:55:00.329Z",
+        "durationMs": 31256,
+        "exitCode": 0,
+        "metrics": {
+          "constraint-records-verified-share": 0.6894736842105263,
+          "constraint-satisfaction": 1,
+          "constraint-satisfaction-raw": 0.12,
+          "constraint-satisfaction-repeat1": 1,
+          "constraints-conditional": 2740,
+          "constraints-infeasible": 0,
+          "constraints-not-identifiable": 210,
+          "constraints-verified": 6550,
+          "constraints_conditional": 2740,
+          "constraints_infeasible": 0,
+          "constraints_not_identifiable": 210,
+          "constraints_verified": 6550,
+          "covariance-trace-ratio": 0.9461103838728817,
+          "dependence-error": 0.381967875494828,
+          "dependence-spectrum-mae": 0.005470050138963326,
+          "diversity": 17.495222513494433,
+          "diversity-repeat1": 17.495222513494433,
+          "duplicate-share": 0,
+          "duplicate-share-repeat1": 0,
+          "duplicate_share": 0,
+          "edge-fraction": 0.12567965367965364,
+          "energy-U-all-estimable": 1.5127654143848699,
+          "energy-U-signed": 1.5127654143848699,
+          "energy-U-subset-tripel-kriek-lambic": 1.285505116300519,
+          "energy-V-all-estimable": 16.00701215032768,
+          "energy-V-raw": 16.00701215032768,
+          "energy-V-subset-tripel-kriek-lambic": 33.91238750171267,
+          "energy-distance": 0.8702681221486325,
+          "energy-distance-normalized-all": 0.8702681221486325,
+          "energy-distance-raw": 0.8698099568600529,
+          "energy-distance-repeat1": 0.8702681221486325,
+          "marginal-error": 0.48995547407366224,
+          "n-cells": 66,
+          "n-cells-estimable": 59,
+          "n-cells-estimable-subset": 9,
+          "n-cells-excluded-energy": 7,
+          "n-cells-excluded-from-energy": 7,
+          "n-cells-subset": 9,
+          "n-linear-negative-design": 0,
+          "n-linear-negative-raw": 0,
+          "n-linear-negative_design": 0,
+          "n-linear-negative_raw": 0,
+          "n-repeats": 1,
+          "n-samples": 250,
+          "n-samples-estimable": 243,
+          "nearest-neighbor": 15.773558554896434,
+          "nonenal-increases-design": 0,
+          "nonenal-max-increase-design": 0,
+          "profile-mae": 0.22437639479602614,
+          "profile-pooled-spearman": 0.9103001200480192,
+          "profile-spearman": 0.48459447779111625,
+          "t2n-above-style-bound": 35,
+          "t2n-increase-max": 0.010170040162669758,
+          "t2n-increase-mean": 0.001108538128282102,
+          "t2n-increases": 111,
+          "t2n-proxy-increase-share": 0.444,
+          "t2n_increases": 111
+        },
+        "metricsError": null,
+        "outputFiles": [
+          {
+            "path": "experiments/EXP-0128/constraints.csv",
+            "sha256": "97983bde647e673630e36c04607c43d3f38bf5d12f540bb3cb87df6388d6bf47",
+            "bytes": 2045694,
+            "kind": "data",
+            "sha256Now": "97983bde647e673630e36c04607c43d3f38bf5d12f540bb3cb87df6388d6bf47",
+            "bytesNow": 2045694,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/energy_summary.csv",
+            "sha256": "71c00741c5ee943abe80c54df2302af9964c312503254f585ea669fcf0fc7097",
+            "bytes": 2040,
+            "kind": "data",
+            "sha256Now": "71c00741c5ee943abe80c54df2302af9964c312503254f585ea669fcf0fc7097",
+            "bytesNow": 2040,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/marginal_state.csv",
+            "sha256": "d60586430213f031ab6a7b2ec6ead012d5679a2fa7ede9db5a02f6b0de924de6",
+            "bytes": 1719443,
+            "kind": "data",
+            "sha256Now": "d60586430213f031ab6a7b2ec6ead012d5679a2fa7ede9db5a02f6b0de924de6",
+            "bytesNow": 1719443,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/metrics.json",
+            "sha256": "8ec49803ba222e891c5582f788f6ca51ba20f0cc1b4292967087f54eaf81e12d",
+            "bytes": 2131,
+            "kind": "json",
+            "sha256Now": "8ec49803ba222e891c5582f788f6ca51ba20f0cc1b4292967087f54eaf81e12d",
+            "bytesNow": 2131,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/outputs.json",
+            "sha256": "66050e14ad17597f52a2bdb9351431d4f4ba3607e78ab7a89ffe00ac0db8cf50",
+            "bytes": 528499,
+            "kind": "json",
+            "sha256Now": "66050e14ad17597f52a2bdb9351431d4f4ba3607e78ab7a89ffe00ac0db8cf50",
+            "bytesNow": 528499,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/q3_metrics.csv",
+            "sha256": "c02b0e06906ceaa7ad9bcfba32e76def3ddcac73679fa4f14ffeeb52a54ff2ef",
+            "bytes": 179886,
+            "kind": "data",
+            "sha256Now": "c02b0e06906ceaa7ad9bcfba32e76def3ddcac73679fa4f14ffeeb52a54ff2ef",
+            "bytesNow": 179886,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/run-seed-20261026.json",
+            "sha256": "75775e13af48ce49d4690e1804c076f7c2c2999fb7c9eb06cf302f240a725c26",
+            "bytes": 403,
+            "kind": "json",
+            "sha256Now": "75775e13af48ce49d4690e1804c076f7c2c2999fb7c9eb06cf302f240a725c26",
+            "bytesNow": 403,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/samples-repeat-1.csv",
+            "sha256": "7f842499bdd7021302df090a96836108ad8a9bd6dd8ee3f793b84fc927e917ed",
+            "bytes": 1047224,
+            "kind": "data",
+            "sha256Now": "7f842499bdd7021302df090a96836108ad8a9bd6dd8ee3f793b84fc927e917ed",
+            "bytesNow": 1047224,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/samples.csv",
+            "sha256": "7f842499bdd7021302df090a96836108ad8a9bd6dd8ee3f793b84fc927e917ed",
+            "bytes": 1047224,
+            "kind": "data",
+            "sha256Now": "7f842499bdd7021302df090a96836108ad8a9bd6dd8ee3f793b84fc927e917ed",
+            "bytesNow": 1047224,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/samples_difference.csv",
+            "sha256": "3f617fd6f95bce484fb71fbbf9b04651d95f1fcf8cbef7b4419d97b3f7f1a593",
+            "bytes": 355746,
+            "kind": "data",
+            "sha256Now": "3f617fd6f95bce484fb71fbbf9b04651d95f1fcf8cbef7b4419d97b3f7f1a593",
+            "bytesNow": 355746,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/samples_raw-repeat-1.csv",
+            "sha256": "829a9ed47482ecb6a8c74bc1527a3f58058571682c445d6702a70e1609475492",
+            "bytes": 1044842,
+            "kind": "data",
+            "sha256Now": "829a9ed47482ecb6a8c74bc1527a3f58058571682c445d6702a70e1609475492",
+            "bytesNow": 1044842,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/samples_raw.csv",
+            "sha256": "829a9ed47482ecb6a8c74bc1527a3f58058571682c445d6702a70e1609475492",
+            "bytes": 1044842,
+            "kind": "data",
+            "sha256Now": "829a9ed47482ecb6a8c74bc1527a3f58058571682c445d6702a70e1609475492",
+            "bytesNow": 1044842,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/seed-receipt.json",
+            "sha256": "4afd8e1b4ff82c514ed0664c0d8f2f178a10811c8308dbc4877d72a235a332c0",
+            "bytes": 45,
+            "kind": "json",
+            "sha256Now": "4afd8e1b4ff82c514ed0664c0d8f2f178a10811c8308dbc4877d72a235a332c0",
+            "bytesNow": 45,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/sensory_profiles.csv",
+            "sha256": "db15294eb6a80364a59b94b6f7fa4b145ff07add2575e0a02dd29c6c3fb49978",
+            "bytes": 524815,
+            "kind": "data",
+            "sha256Now": "db15294eb6a80364a59b94b6f7fa4b145ff07add2575e0a02dd29c6c3fb49978",
+            "bytesNow": 524815,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/tuning_table.csv",
+            "sha256": "bd7ac9020baf789f9ddea6bfa8c1557a4fd840f90dc843911d72edcd05b40535",
+            "bytes": 9817,
+            "kind": "data",
+            "sha256Now": "bd7ac9020baf789f9ddea6bfa8c1557a4fd840f90dc843911d72edcd05b40535",
+            "bytesNow": 9817,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/verdict_layers.csv",
+            "sha256": "ea38ea0d2e8d288afb26d2617efcb17d6628dd3086c871001123bb2ca6453df8",
+            "bytes": 121924,
+            "kind": "data",
+            "sha256Now": "ea38ea0d2e8d288afb26d2617efcb17d6628dd3086c871001123bb2ca6453df8",
+            "bytesNow": 121924,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/data/clean/q3.csv",
+            "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytes": 858381,
+            "kind": "data",
+            "sha256Now": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytesNow": 858381,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/data/clean/q3_style_protocol.json",
+            "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+            "bytes": 3703,
+            "kind": "json",
+            "sha256Now": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+            "bytesNow": 3703,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/data/clean/q3_thresholds.json",
+            "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+            "bytes": 5531,
+            "kind": "json",
+            "sha256Now": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+            "bytesNow": 5531,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/data/splits/NESTED-CV-1/manifest.json",
+            "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+            "bytes": 4548,
+            "kind": "json",
+            "sha256Now": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+            "bytesNow": 4548,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/data/splits/NESTED-CV-1/splits.csv",
+            "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+            "bytes": 58959,
+            "kind": "data",
+            "sha256Now": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+            "bytesNow": 58959,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/src/q3_fix.py",
+            "sha256": "e4aee1f5c460358ad709f761b7cbd3b59398c15440064cfa23280f67c0f09019",
+            "bytes": 94885,
+            "kind": "file",
+            "sha256Now": "e4aee1f5c460358ad709f761b7cbd3b59398c15440064cfa23280f67c0f09019",
+            "bytesNow": 94885,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/src/q3_lib.py",
+            "sha256": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+            "bytes": 62195,
+            "kind": "file",
+            "sha256Now": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+            "bytesNow": 62195,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/src/q_common.py",
+            "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytes": 11365,
+            "kind": "file",
+            "sha256Now": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytesNow": 11365,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/src/robustness_wrapper.py",
+            "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytes": 4147,
+            "kind": "file",
+            "sha256Now": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytesNow": 4147,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/src/seed_receipt_wrapper.py",
+            "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytes": 4571,
+            "kind": "file",
+            "sha256Now": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytesNow": 4571,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/src/target_columns.py",
+            "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytes": 29435,
+            "kind": "file",
+            "sha256Now": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytesNow": 29435,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0128/inputs/src/v6_common.py",
+            "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytes": 13536,
+            "kind": "file",
+            "sha256Now": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytesNow": 13536,
+            "verified": true
+          }
+        ],
+        "figures": [],
+        "failure": null,
+        "logs": {
+          "stdout": "experiments/EXP-0128/stdout.log",
+          "stderr": "experiments/EXP-0128/stderr.log",
+          "run": "experiments/EXP-0128/run.json"
+        },
+        "dir": "experiments/EXP-0128",
+        "timedOut": false,
+        "cancelled": false,
+        "revision": 4926,
+        "waitNote": "finalized by status"
+      }
+    ],
+    "experimentId": "EXP-0128",
+    "status": "succeeded"
+  },
+  {
+    "ok": true,
+    "code": null,
+    "message": null,
+    "hint": null,
+    "projectId": "beer-2026-a-v3",
+    "revision": 4927,
+    "runtimeRevision": 5958,
+    "stage": "intake",
+    "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6",
+    "action": "status",
+    "checkedAt": "2026-10-27T12:23:38.448Z",
+    "experiments": [
+      {
+        "id": "EXP-0129",
+        "experimentId": "EXP-0129",
+        "status": "succeeded",
+        "questionId": "Q3",
+        "modelId": "MODEL-0054",
+        "modelKind": "candidate",
+        "datasetId": "DATA-0004",
+        "splitId": null,
+        "rerunOf": null,
+        "pid": 24732,
+        "token": null,
+        "startedAt": "2026-10-27T11:55:03.239Z",
+        "endedAt": "2026-10-27T11:55:07.263Z",
+        "durationMs": 4023,
+        "exitCode": 0,
+        "metrics": {
+          "fallback-share-qp-quantile-anchor": 0,
+          "fallback-share-qp-source-anchor": 0,
+          "fallback-share-source-fixed": 0,
+          "fallback-share-target-mean-projection": 0,
+          "fallback-share-target-mean-projection-full": 0,
+          "n-folds": 3,
+          "n-sources": 11,
+          "n-transfer-rows": 165,
+          "nonenal-nonincrease-rate-primary": 1,
+          "nonincrease-rate": 1,
+          "nonincrease-rate-DMS": 1,
+          "nonincrease-rate-X.E..2.nonenal": 1,
+          "nonincrease-rate-X2.3.butanedione": 1,
+          "nonincrease-rate-X4VG": 1,
+          "nonincrease-rate-qp-quantile-anchor": 1,
+          "nonincrease-rate-qp-source-anchor": 1,
+          "nonincrease-rate-repeat0": 1,
+          "nonincrease-rate-source-anchor": 1,
+          "nonincrease-rate-source-fixed": 1,
+          "nonincrease-rate-target-mean-projection": 0.36363636363636365,
+          "nonincrease-rate-target-mean-projection-full": 1,
+          "objective-gradient-fd-max-abs": 1.8818617584376307e-9,
+          "objective-gradient-fd-max-rel": 0.00004447371161693248,
+          "qp-max-constraint-violation": 0,
+          "qp-max-dual-residual": 2.1051915766179263e-10,
+          "qp-max-primal-residual": 9.941884759889774e-9,
+          "qp-max-stale-halfspace-residual": 0,
+          "qp-max-stale-identity-error": 8.274037093680878e-17,
+          "qp-solves": 66,
+          "qp-stale-intercept-c-max": -0.04146639063815788,
+          "qp-stale-intercept-c-min": -0.07519741873749995,
+          "qp-status-infeasible": 0,
+          "qp-status-not-converged": 0,
+          "qp-status-optimal": 66,
+          "t2n-proxy-increase-share-primary": 0,
+          "target-mean-self-distance": 4.74908413763155e-16,
+          "target-mean-self-distance-legacy": 0.6654909915445382,
+          "transfer-energy": 2.0318686923914226,
+          "transfer-energy-U": -0.38718910084268465,
+          "transfer-energy-normalized": 0.11090389780520646,
+          "transfer-energy-qp-quantile-anchor": 2.0318686923914226,
+          "transfer-energy-qp-source-anchor": 7.117483176564392,
+          "transfer-energy-repeat0": 2.0318686923914226,
+          "transfer-energy-source-fixed": 7.224122612795708,
+          "transfer-energy-target-mean-projection": 6.9419053222343905,
+          "transfer-energy-target-mean-projection-full": 6.372746913006741,
+          "verdict-conditional-primary": 66,
+          "verdict-failed-primary": 0,
+          "verdict-not-identifiable-primary": 33,
+          "verdict-records-primary": 1254,
+          "verdict-verified-denominator-primary": 1221,
+          "verdict-verified-primary": 1155
+        },
+        "metricsError": null,
+        "outputFiles": [
+          {
+            "path": "experiments/EXP-0129/marginal_state.csv",
+            "sha256": "a2d344b57e3f7cb28bfaa7da026f4f96639c20bbbdd00c5b22255b8b390f58c9",
+            "bytes": 1814324,
+            "kind": "data",
+            "sha256Now": "a2d344b57e3f7cb28bfaa7da026f4f96639c20bbbdd00c5b22255b8b390f58c9",
+            "bytesNow": 1814324,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/metrics.json",
+            "sha256": "ac414db5353c1005c4084f9d0587d3430e4fb675dd83a7b4a9579f97b169bb80",
+            "bytes": 2273,
+            "kind": "json",
+            "sha256Now": "ac414db5353c1005c4084f9d0587d3430e4fb675dd83a7b4a9579f97b169bb80",
+            "bytesNow": 2273,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/outputs.json",
+            "sha256": "61db25e28b4af90135b453ef70a914ea0946ce3cea4a2a13e182512ade712a61",
+            "bytes": 231280,
+            "kind": "json",
+            "sha256Now": "61db25e28b4af90135b453ef70a914ea0946ce3cea4a2a13e182512ade712a61",
+            "bytesNow": 231280,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/run-seed-20261025.json",
+            "sha256": "d6c05ee6e9b59f8d48cebfd8749fff48324dbab075bd82f20fe1c6a2e00e448b",
+            "bytes": 293,
+            "kind": "json",
+            "sha256Now": "d6c05ee6e9b59f8d48cebfd8749fff48324dbab075bd82f20fe1c6a2e00e448b",
+            "bytesNow": 293,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/seed-receipt.json",
+            "sha256": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+            "bytes": 45,
+            "kind": "json",
+            "sha256Now": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+            "bytesNow": 45,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/solver_certificates.jsonl",
+            "sha256": "0668a4bc6ef69d7500ef90f454dd14fae56f94b8b7034fd1047777115b1f542c",
+            "bytes": 64163,
+            "kind": "file",
+            "sha256Now": "0668a4bc6ef69d7500ef90f454dd14fae56f94b8b7034fd1047777115b1f542c",
+            "bytesNow": 64163,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/transfer_constraints.csv",
+            "sha256": "4ccf1a7be9fc2ecac5a81c1452fcaf31eba45b246886b17e9e8fe7f0d332dbae",
+            "bytes": 1710953,
+            "kind": "data",
+            "sha256Now": "4ccf1a7be9fc2ecac5a81c1452fcaf31eba45b246886b17e9e8fe7f0d332dbae",
+            "bytesNow": 1710953,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/transfer_metrics.json",
+            "sha256": "dafd9263d85d8980ddac1514e1f52960f581fa5e6ad6b7951fd2783f3cf56e7e",
+            "bytes": 2273,
+            "kind": "json",
+            "sha256Now": "dafd9263d85d8980ddac1514e1f52960f581fa5e6ad6b7951fd2783f3cf56e7e",
+            "bytesNow": 2273,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/transfer_outputs.json",
+            "sha256": "8d53606ac2b5a6a7c18383902124a775e2dfcb7f40ed94b06ecb9c4cb7af7aa4",
+            "bytes": 242783,
+            "kind": "json",
+            "sha256Now": "8d53606ac2b5a6a7c18383902124a775e2dfcb7f40ed94b06ecb9c4cb7af7aa4",
+            "bytesNow": 242783,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/transfer_sources.csv",
+            "sha256": "4df7e261185b445651d6b01ef39c45b1064b8772c9916aeb3578734eee321264",
+            "bytes": 17424,
+            "kind": "data",
+            "sha256Now": "4df7e261185b445651d6b01ef39c45b1064b8772c9916aeb3578734eee321264",
+            "bytesNow": 17424,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/transfer_verdicts.csv",
+            "sha256": "84fb583749ceb2496f150dc2ea6a46f69ba5d90d4346082b38b38c7d048e5b7b",
+            "bytes": 124966,
+            "kind": "data",
+            "sha256Now": "84fb583749ceb2496f150dc2ea6a46f69ba5d90d4346082b38b38c7d048e5b7b",
+            "bytesNow": 124966,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/transfers.csv",
+            "sha256": "51a32710a343719fe4221ef3de12f2936e4b65dfe1336a01533138694bbfde5b",
+            "bytes": 1956159,
+            "kind": "data",
+            "sha256Now": "51a32710a343719fe4221ef3de12f2936e4b65dfe1336a01533138694bbfde5b",
+            "bytesNow": 1956159,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/data/clean/q1_mapped.csv",
+            "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+            "bytes": 979527,
+            "kind": "data",
+            "sha256Now": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+            "bytesNow": 979527,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/data/clean/q3.csv",
+            "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytes": 858381,
+            "kind": "data",
+            "sha256Now": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytesNow": 858381,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/data/clean/q3_style_protocol.json",
+            "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+            "bytes": 3703,
+            "kind": "json",
+            "sha256Now": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+            "bytesNow": 3703,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/data/clean/q3_thresholds.json",
+            "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+            "bytes": 5531,
+            "kind": "json",
+            "sha256Now": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+            "bytesNow": 5531,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/data/splits/NESTED-CV-1/manifest.json",
+            "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+            "bytes": 4548,
+            "kind": "json",
+            "sha256Now": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+            "bytesNow": 4548,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/data/splits/NESTED-CV-1/splits.csv",
+            "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+            "bytes": 58959,
+            "kind": "data",
+            "sha256Now": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+            "bytesNow": 58959,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/src/q3_lib.py",
+            "sha256": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+            "bytes": 62195,
+            "kind": "file",
+            "sha256Now": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+            "bytesNow": 62195,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/src/q3_transfer_fix.py",
+            "sha256": "1135580a24ec4f313abfefe3b7270f2b1c41531058d690cb2ac4326fdc9a0db4",
+            "bytes": 91440,
+            "kind": "file",
+            "sha256Now": "1135580a24ec4f313abfefe3b7270f2b1c41531058d690cb2ac4326fdc9a0db4",
+            "bytesNow": 91440,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/src/q_common.py",
+            "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytes": 11365,
+            "kind": "file",
+            "sha256Now": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytesNow": 11365,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/src/robustness_wrapper.py",
+            "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytes": 4147,
+            "kind": "file",
+            "sha256Now": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytesNow": 4147,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/src/seed_receipt_wrapper.py",
+            "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytes": 4571,
+            "kind": "file",
+            "sha256Now": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytesNow": 4571,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/src/target_columns.py",
+            "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytes": 29435,
+            "kind": "file",
+            "sha256Now": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytesNow": 29435,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0129/inputs/src/v6_common.py",
+            "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytes": 13536,
+            "kind": "file",
+            "sha256Now": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytesNow": 13536,
+            "verified": true
+          }
+        ],
+        "figures": [],
+        "failure": null,
+        "logs": {
+          "stdout": "experiments/EXP-0129/stdout.log",
+          "stderr": "experiments/EXP-0129/stderr.log",
+          "run": "experiments/EXP-0129/run.json"
+        },
+        "dir": "experiments/EXP-0129",
+        "timedOut": false,
+        "cancelled": false,
+        "revision": 4927,
+        "waitNote": "finalized by status"
+      }
+    ],
+    "experimentId": "EXP-0129",
+    "status": "succeeded"
+  },
+  {
+    "ok": true,
+    "code": null,
+    "message": null,
+    "hint": null,
+    "projectId": "beer-2026-a-v3",
+    "revision": 4928,
+    "runtimeRevision": 5960,
+    "stage": "intake",
+    "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6",
+    "action": "status",
+    "checkedAt": "2026-10-27T12:23:39.001Z",
+    "experiments": [
+      {
+        "id": "EXP-0130",
+        "experimentId": "EXP-0130",
+        "status": "succeeded",
+        "questionId": "Q3",
+        "modelId": "MODEL-0054",
+        "modelKind": "candidate",
+        "datasetId": "DATA-0004",
+        "splitId": null,
+        "rerunOf": null,
+        "pid": 24737,
+        "token": null,
+        "startedAt": "2026-10-27T11:55:08.722Z",
+        "endedAt": "2026-10-27T11:55:12.916Z",
+        "durationMs": 4193,
+        "exitCode": 0,
+        "metrics": {
+          "fallback-share-qp-quantile-anchor": 0,
+          "fallback-share-qp-source-anchor": 0,
+          "fallback-share-source-fixed": 0,
+          "fallback-share-target-mean-projection": 0,
+          "fallback-share-target-mean-projection-full": 0,
+          "n-folds": 3,
+          "n-sources": 11,
+          "n-transfer-rows": 165,
+          "nonenal-nonincrease-rate-primary": 1,
+          "nonincrease-rate": 1,
+          "nonincrease-rate-DMS": 1,
+          "nonincrease-rate-X.E..2.nonenal": 1,
+          "nonincrease-rate-X2.3.butanedione": 1,
+          "nonincrease-rate-X4VG": 1,
+          "nonincrease-rate-qp-quantile-anchor": 1,
+          "nonincrease-rate-qp-source-anchor": 1,
+          "nonincrease-rate-repeat1": 1,
+          "nonincrease-rate-source-anchor": 1,
+          "nonincrease-rate-source-fixed": 1,
+          "nonincrease-rate-target-mean-projection": 0.42424242424242425,
+          "nonincrease-rate-target-mean-projection-full": 1,
+          "objective-gradient-fd-max-abs": 1.6530039004258867e-9,
+          "objective-gradient-fd-max-rel": 0.000024550598058982065,
+          "qp-max-constraint-violation": 0,
+          "qp-max-dual-residual": 1.4201884113163032e-10,
+          "qp-max-primal-residual": 9.994750582720258e-9,
+          "qp-max-stale-halfspace-residual": 0,
+          "qp-max-stale-identity-error": 2.828193152570687e-17,
+          "qp-solves": 66,
+          "qp-stale-intercept-c-max": -0.04228282546052633,
+          "qp-stale-intercept-c-min": -0.07354975186875007,
+          "qp-status-infeasible": 0,
+          "qp-status-not-converged": 0,
+          "qp-status-optimal": 66,
+          "t2n-proxy-increase-share-primary": 0.15151515151515152,
+          "target-mean-self-distance": 2.846286235985642e-16,
+          "target-mean-self-distance-legacy": 0.5990533257265976,
+          "transfer-energy": 2.160688028634076,
+          "transfer-energy-U": -0.2785040880262842,
+          "transfer-energy-normalized": 0.11734539663606688,
+          "transfer-energy-qp-quantile-anchor": 2.160688028634076,
+          "transfer-energy-qp-source-anchor": 7.109486204901297,
+          "transfer-energy-repeat1": 2.160688028634076,
+          "transfer-energy-source-fixed": 7.215802743050221,
+          "transfer-energy-target-mean-projection": 6.9679024352936745,
+          "transfer-energy-target-mean-projection-full": 6.4040448269957695,
+          "verdict-conditional-primary": 66,
+          "verdict-failed-primary": 0,
+          "verdict-not-identifiable-primary": 33,
+          "verdict-records-primary": 1254,
+          "verdict-verified-denominator-primary": 1221,
+          "verdict-verified-primary": 1155
+        },
+        "metricsError": null,
+        "outputFiles": [
+          {
+            "path": "experiments/EXP-0130/marginal_state.csv",
+            "sha256": "8968b47c8d064fabfba80780d4c7383419b0fbc7bbfdf429a2cf443021885f73",
+            "bytes": 1814943,
+            "kind": "data",
+            "sha256Now": "8968b47c8d064fabfba80780d4c7383419b0fbc7bbfdf429a2cf443021885f73",
+            "bytesNow": 1814943,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/metrics.json",
+            "sha256": "a4e6437447226e3f4611e6a69d2ce199340166a8abd4086bb891ce6c392902bc",
+            "bytes": 2288,
+            "kind": "json",
+            "sha256Now": "a4e6437447226e3f4611e6a69d2ce199340166a8abd4086bb891ce6c392902bc",
+            "bytesNow": 2288,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/outputs.json",
+            "sha256": "75e7bc200f25c149d5eb617a4135259f8d5676d7365e0fb81c1ecb7e3fc34324",
+            "bytes": 231329,
+            "kind": "json",
+            "sha256Now": "75e7bc200f25c149d5eb617a4135259f8d5676d7365e0fb81c1ecb7e3fc34324",
+            "bytesNow": 231329,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/run-seed-20261026.json",
+            "sha256": "49ec01b75d11e064f3ef40a98dc543f04d2d6e6be3572287b40ad87b7a29042e",
+            "bytes": 291,
+            "kind": "json",
+            "sha256Now": "49ec01b75d11e064f3ef40a98dc543f04d2d6e6be3572287b40ad87b7a29042e",
+            "bytesNow": 291,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/seed-receipt.json",
+            "sha256": "4afd8e1b4ff82c514ed0664c0d8f2f178a10811c8308dbc4877d72a235a332c0",
+            "bytes": 45,
+            "kind": "json",
+            "sha256Now": "4afd8e1b4ff82c514ed0664c0d8f2f178a10811c8308dbc4877d72a235a332c0",
+            "bytesNow": 45,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/solver_certificates.jsonl",
+            "sha256": "72776d392f16f9d177d8422480f418378c12175a09bdd47888f54eb20c0e1628",
+            "bytes": 64256,
+            "kind": "file",
+            "sha256Now": "72776d392f16f9d177d8422480f418378c12175a09bdd47888f54eb20c0e1628",
+            "bytesNow": 64256,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/transfer_constraints.csv",
+            "sha256": "8aee320849c5efd6e47984b496b98692cdef7f6a762d3686c8fa79e93e57c606",
+            "bytes": 1710476,
+            "kind": "data",
+            "sha256Now": "8aee320849c5efd6e47984b496b98692cdef7f6a762d3686c8fa79e93e57c606",
+            "bytesNow": 1710476,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/transfer_metrics.json",
+            "sha256": "1f9bdce9b76f93c56ef38fc8b8da37a452cdd6fb2a495d64f1b87f7737a2ba15",
+            "bytes": 2288,
+            "kind": "json",
+            "sha256Now": "1f9bdce9b76f93c56ef38fc8b8da37a452cdd6fb2a495d64f1b87f7737a2ba15",
+            "bytesNow": 2288,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/transfer_outputs.json",
+            "sha256": "b17789b315c5e7f25ba011f211756eacf4ab377f07f448d841a5d3c32e419262",
+            "bytes": 242832,
+            "kind": "json",
+            "sha256Now": "b17789b315c5e7f25ba011f211756eacf4ab377f07f448d841a5d3c32e419262",
+            "bytesNow": 242832,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/transfer_sources.csv",
+            "sha256": "b135990cff096193647cbcd637b7e92402c230ae6146059281282ad9ede088a4",
+            "bytes": 17432,
+            "kind": "data",
+            "sha256Now": "b135990cff096193647cbcd637b7e92402c230ae6146059281282ad9ede088a4",
+            "bytesNow": 17432,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/transfer_verdicts.csv",
+            "sha256": "0b73c305597dfc1fb98ae44438719db4f40543c4d0c2c51ab7e555209af47f6c",
+            "bytes": 124966,
+            "kind": "data",
+            "sha256Now": "0b73c305597dfc1fb98ae44438719db4f40543c4d0c2c51ab7e555209af47f6c",
+            "bytesNow": 124966,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/transfers.csv",
+            "sha256": "09127dea93bd47c493bf9dd9c3b615f7d4f3aa51e49681d80cea2e9b7d3c2fa0",
+            "bytes": 1952895,
+            "kind": "data",
+            "sha256Now": "09127dea93bd47c493bf9dd9c3b615f7d4f3aa51e49681d80cea2e9b7d3c2fa0",
+            "bytesNow": 1952895,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/data/clean/q1_mapped.csv",
+            "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+            "bytes": 979527,
+            "kind": "data",
+            "sha256Now": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+            "bytesNow": 979527,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/data/clean/q3.csv",
+            "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytes": 858381,
+            "kind": "data",
+            "sha256Now": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+            "bytesNow": 858381,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/data/clean/q3_style_protocol.json",
+            "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+            "bytes": 3703,
+            "kind": "json",
+            "sha256Now": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+            "bytesNow": 3703,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/data/clean/q3_thresholds.json",
+            "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+            "bytes": 5531,
+            "kind": "json",
+            "sha256Now": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+            "bytesNow": 5531,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/data/splits/NESTED-CV-1/manifest.json",
+            "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+            "bytes": 4548,
+            "kind": "json",
+            "sha256Now": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+            "bytesNow": 4548,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/data/splits/NESTED-CV-1/splits.csv",
+            "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+            "bytes": 58959,
+            "kind": "data",
+            "sha256Now": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+            "bytesNow": 58959,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/src/q3_lib.py",
+            "sha256": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+            "bytes": 62195,
+            "kind": "file",
+            "sha256Now": "5f4bdb16b2739a811f807785ff56974c99818ca27a7cb29c5fbcff284cf21888",
+            "bytesNow": 62195,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/src/q3_transfer_fix.py",
+            "sha256": "1135580a24ec4f313abfefe3b7270f2b1c41531058d690cb2ac4326fdc9a0db4",
+            "bytes": 91440,
+            "kind": "file",
+            "sha256Now": "1135580a24ec4f313abfefe3b7270f2b1c41531058d690cb2ac4326fdc9a0db4",
+            "bytesNow": 91440,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/src/q_common.py",
+            "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytes": 11365,
+            "kind": "file",
+            "sha256Now": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+            "bytesNow": 11365,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/src/robustness_wrapper.py",
+            "sha256": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytes": 4147,
+            "kind": "file",
+            "sha256Now": "7d7ab6aca6c24df154bd096fda15bd0717a3e9ec6217778ed8475424b43cfdec",
+            "bytesNow": 4147,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/src/seed_receipt_wrapper.py",
+            "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytes": 4571,
+            "kind": "file",
+            "sha256Now": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+            "bytesNow": 4571,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/src/target_columns.py",
+            "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytes": 29435,
+            "kind": "file",
+            "sha256Now": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+            "bytesNow": 29435,
+            "verified": true
+          },
+          {
+            "path": "experiments/EXP-0130/inputs/src/v6_common.py",
+            "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytes": 13536,
+            "kind": "file",
+            "sha256Now": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+            "bytesNow": 13536,
+            "verified": true
+          }
+        ],
+        "figures": [],
+        "failure": null,
+        "logs": {
+          "stdout": "experiments/EXP-0130/stdout.log",
+          "stderr": "experiments/EXP-0130/stderr.log",
+          "run": "experiments/EXP-0130/run.json"
+        },
+        "dir": "experiments/EXP-0130",
+        "timedOut": false,
+        "cancelled": false,
+        "revision": 4928,
+        "waitNote": "finalized by status"
+      }
+    ],
+    "experimentId": "EXP-0130",
+    "status": "succeeded"
+  }
+]

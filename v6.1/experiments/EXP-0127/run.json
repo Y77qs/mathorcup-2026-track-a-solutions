@@ -1,0 +1,19 @@
+{
+  "pid": 24640,
+  "token": "8edddce6eabaf1ce057b6c0a",
+  "experimentId": "EXP-0127",
+  "startedAt": "2026-10-27T11:53:22.437Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0127/inputs/src/robustness_wrapper.py",
+    "--target",
+    "src/q3_fix.py",
+    "--repeat",
+    "0"
+  ],
+  "childPid": 24643,
+  "childPgid": 24643,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6"
+}

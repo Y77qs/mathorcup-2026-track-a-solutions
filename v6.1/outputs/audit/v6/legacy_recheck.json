@@ -1,0 +1,274 @@
+{
+  "schema": "v6-legacy-recheck-1",
+  "generatedAt": "2026-10-26T07:54:50+00:00",
+  "scope": "recompute only; no model fitting, no generator refit, no optimiser rerun, no edit of any old record",
+  "oldRecord": {
+    "source": "MathorCup_A_独立审查与重跑方案/independent_recheck.json + 01_独立复核与修复优先级.md",
+    "values": {
+      "negativeLinearCells": 142,
+      "negativeLinearRows": 40,
+      "negativeLinearFields": 22,
+      "t2nIncreases": 6,
+      "t2nTransfers": 11,
+      "t2nMaxIncrease": 0.7633000015,
+      "externalSpearman": 0.44505144467935176,
+      "externalSpearmanAligned": 0.9210176180408739,
+      "targetMeanSelfDistance": 0.6044870518234862,
+      "transferMeanDistanceOld": 0.43282026794869743,
+      "transferMeanDistanceCorrected": 0.6205347648114844,
+      "energyU": -0.3195653428479943,
+      "energyV": 1.7453876944348181
+    }
+  },
+  "items": {
+    "q3.negativeLinearCells": {
+      "value": {
+        "cells": 142,
+        "rows": 40,
+        "fields": 22
+      },
+      "old_claimed": {
+        "cells": 142,
+        "rows": 40,
+        "fields": 22
+      },
+      "matches": true,
+      "tolerance": "exact integer equality",
+      "method": "count cells < -1e-10 among the 33 linear-calibrated chem__ columns of the 250 group=='generation' rows of experiments/EXP-0033/samples.csv; rows/fields are the distinct affected indices",
+      "inputs_sha256": {
+        "experiments/EXP-0033/samples.csv": "783583453829b3642cc8695550b37ab1e23a4c013d0168501a0618b77eeed398",
+        "data/clean/q3.csv": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+        "src/q3_lib.py": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb"
+      },
+      "notes": null
+    },
+    "q3.t2nIncrease": {
+      "value": {
+        "increases": 6,
+        "transfers": 11,
+        "maxIncrease": 0.7633000015187316
+      },
+      "old_claimed": {
+        "increases": 6,
+        "transfers": 11,
+        "maxIncrease": 0.7633000015
+      },
+      "matches": true,
+      "tolerance": "exact integer equality for counts, relative 1e-9 for the maximum",
+      "method": "join each group=='transfer' row to its q3.csv source row through the saved `slot` index (not beer_id) and count delta = after - before > 1e-10 for chem__X.E..2.nonenal; the maximum delta is reported in the stored units",
+      "inputs_sha256": {
+        "experiments/EXP-0033/samples.csv": "783583453829b3642cc8695550b37ab1e23a4c013d0168501a0618b77eeed398",
+        "data/clean/q3.csv": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+        "src/q3_lib.py": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb"
+      },
+      "notes": {
+        "perTransfer": [
+          {
+            "sourceRow": 8,
+            "sourceBeer": 124,
+            "before": 0.000803907,
+            "after": 0.7641039085187316,
+            "delta": 0.7633000015187316
+          },
+          {
+            "sourceRow": 19,
+            "sourceBeer": 81,
+            "before": 0.003422001,
+            "after": 6.14e-05,
+            "delta": -0.003360601
+          },
+          {
+            "sourceRow": 22,
+            "sourceBeer": 218,
+            "before": 0.001110656,
+            "after": 6.14e-05,
+            "delta": -0.001049256
+          },
+          {
+            "sourceRow": 23,
+            "sourceBeer": 96,
+            "before": 0.011935009,
+            "after": 6.14e-05,
+            "delta": -0.011873609
+          },
+          {
+            "sourceRow": 24,
+            "sourceBeer": 230,
+            "before": 0.001499421,
+            "after": 0.1573858215642045,
+            "delta": 0.1558864005642045
+          },
+          {
+            "sourceRow": 36,
+            "sourceBeer": 185,
+            "before": 0.001743376,
+            "after": 0.4178901358714005,
+            "delta": 0.4161467598714005
+          },
+          {
+            "sourceRow": 41,
+            "sourceBeer": 139,
+            "before": 0.002011718,
+            "after": 6.14e-05,
+            "delta": -0.001950318
+          },
+          {
+            "sourceRow": 51,
+            "sourceBeer": 209,
+            "before": 0.00271219,
+            "after": 0.3131703577929516,
+            "delta": 0.3104581677929516
+          },
+          {
+            "sourceRow": 104,
+            "sourceBeer": 119,
+            "before": 0.004837684,
+            "after": 0.5588840467549273,
+            "delta": 0.5540463627549274
+          },
+          {
+            "sourceRow": 108,
+            "sourceBeer": 90,
+            "before": 0.001816275,
+            "after": 6.14e-05,
+            "delta": -0.001754875
+          },
+          {
+            "sourceRow": 171,
+            "sourceBeer": 28,
+            "before": 0.011530408,
+            "after": 0.3745370750182261,
+            "delta": 0.3630066670182261
+          }
+        ]
+      }
+    },
+    "q2.externalSpearman": {
+      "value": 0.44505144467935176,
+      "old_claimed": 0.44505144467935176,
+      "matches": true,
+      "tolerance": "relative 1e-12",
+      "method": "read experiments/EXP-0029/metrics.json:external_6csv_mean_spearman as saved; no recomputation is involved, so this item only certifies the saved value is still present and unedited",
+      "inputs_sha256": {
+        "experiments/EXP-0029/metrics.json": "6451db1aa3d48d40fbcfdfbd001516921080bdf982d373da85a0958799b83836"
+      },
+      "notes": null
+    },
+    "q2.externalSpearmanAligned": {
+      "value": 0.9210176180408739,
+      "old_claimed": 0.9210176180408739,
+      "matches": true,
+      "tolerance": "relative 1e-9",
+      "method": "same-source rank comparison recomputed without fitting: Spearman matrix between the 200 frozen SPLIT-0001 TRAIN rows (231 chem, median-filled) and the 50 targets; 6.csv |correlation| rows are matched to feature positions through 2.csv's own row labels (44/44 unique, name normalised) and its 50 columns are matched to the targets through the 8.xlsx 'Sensory names' bridge; the score is the mean over 50 columns of the rank correlation between the model and 6.csv",
+      "inputs_sha256": {
+        "experiments/EXP-0029/metrics.json": "6451db1aa3d48d40fbcfdfbd001516921080bdf982d373da85a0958799b83836",
+        "data/raw/imported/415709ac10f2f730-2.csv": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+        "data/raw/imported/a55004fb0390299a-6.csv": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+        "data/splits/SPLIT-0001/train.csv": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+        "data/raw/imported/f2316766792111d9-8.xlsx": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a",
+        "data/clean/q2_chem_meta.json": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4"
+      },
+      "notes": {
+        "columnsThatWereMisordered": [
+          {
+            "position": 46,
+            "external": "Carbonation",
+            "mapped_target": "co2",
+            "positional_target": "aftertaste"
+          },
+          {
+            "position": 47,
+            "external": "Aftertaste",
+            "mapped_target": "aftertaste",
+            "positional_target": "body"
+          },
+          {
+            "position": 48,
+            "external": "Body",
+            "mapped_target": "body",
+            "positional_target": "co2"
+          }
+        ],
+        "positionalSensoryOrderScore": 0.896862579281184,
+        "note": "0.9210176 reproduces only with the name bridge; with the old positional column assumption the score is the reported positional value, and the chemical-side indexing bug alone yields the 0.445 saved metric",
+        "chemicalBridge": {
+          "source": "data/clean/q2_chem_meta.json corrLabel/corrIndex, confirmed label-by-label against the 2.csv row labels",
+          "corrLabelConfirmations": 231,
+          "positionalShortcutAgreesWithNameBridge": true
+        },
+        "extraInput": "8.xlsx 'Sensory names' is not in the three listed data files; it is the only registered display-name -> R-name bridge, so without it the aligned value cannot be recomputed (it is not a fit, just a dictionary)"
+      }
+    },
+    "q3.targetMeanSelfDistance": {
+      "value": 0.6044870518234867,
+      "old_claimed": 0.6044870518234862,
+      "matches": true,
+      "tolerance": "relative 1e-9",
+      "method": "the algebra of src/q3_lib.py:917-960 reproduced statically on data/clean/q3.csv: standardise by the 250-row mean/sd, take the 10-component PCA of the mean-centred Tripel block, standardise the scores, shrink the 0.9/0.1 correlation matrix, then score the target mean WITH the omitted z_mean (old path) and WITH it (corrected). No optimiser is run; the fitted per-fold object is not persisted, so the static reconstruction is the strongest available check",
+      "inputs_sha256": {
+        "experiments/EXP-0033/samples.csv": "783583453829b3642cc8695550b37ab1e23a4c013d0168501a0618b77eeed398",
+        "data/clean/q3.csv": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+        "src/q3_lib.py": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb"
+      },
+      "notes": {
+        "targetStyle": "Tripel",
+        "targetRows": 28,
+        "correctedValue": 3.1100846430449835e-16,
+        "defect": "q3_lib.score() omits (Z - z_mean); the target mean is its own centre"
+      }
+    },
+    "q3.transferMeanDistance": {
+      "value": {
+        "old": 0.43282026794869766,
+        "corrected": 0.6205347648114847
+      },
+      "old_claimed": {
+        "old": 0.43282026794869743,
+        "corrected": 0.6205347648114844
+      },
+      "matches": true,
+      "tolerance": "relative 1e-9",
+      "method": "mean Mahalanobis distance of the 11 saved transfer spectra to the target-style centre under the same static reconstruction, computed with and without the omitted z_mean; this is an evaluation change only, not a re-optimisation",
+      "inputs_sha256": {
+        "experiments/EXP-0033/samples.csv": "783583453829b3642cc8695550b37ab1e23a4c013d0168501a0618b77eeed398",
+        "data/clean/q3.csv": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+        "src/q3_lib.py": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb"
+      },
+      "notes": {
+        "note": "the old spectrum was not re-designer; only the evaluation changes"
+      }
+    },
+    "q3.transferEnergy": {
+      "value": {
+        "U": -0.3195653428479943,
+        "V": 1.7453876944348181
+      },
+      "old_claimed": {
+        "U": -0.3195653428479943,
+        "V": 1.7453876944348181
+      },
+      "matches": true,
+      "tolerance": "relative 1e-9",
+      "method": "saved transfer spectra z-scored with the frozen q3.csv mean/sd against the real Tripel reference rows (28 of 250): U unbiased = 2 mean||G-R|| - within(G)/(m(m-1)) - within(R)/(n(n-1)); V empirical = 2 mean||G-R|| - within(G)/m^2 - within(R)/n^2; the sign of U is preserved, a negative U is a possible finite-sample value",
+      "inputs_sha256": {
+        "experiments/EXP-0033/samples.csv": "783583453829b3642cc8695550b37ab1e23a4c013d0168501a0618b77eeed398",
+        "data/clean/q3.csv": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+        "src/q3_lib.py": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb"
+      },
+      "notes": {
+        "reference": "real Tripel rows of data/clean/q3.csv",
+        "noOptimisation": true
+      }
+    }
+  },
+  "summary": {
+    "items": 7,
+    "matched": 7,
+    "mismatched": [],
+    "allMatch": true
+  },
+  "notDone": [
+    "a per-fold refit of the Q3 optimiser is not attempted: the task forbids rerunning the optimisation and the fitted object is not persisted",
+    "no new model is trained, so none of these numbers is a fixed-model performance claim"
+  ]
+}

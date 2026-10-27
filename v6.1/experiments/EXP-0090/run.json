@@ -1,0 +1,23 @@
+{
+  "pid": 85033,
+  "token": "84fcaf8e6626bb517ec6854c",
+  "experimentId": "EXP-0090",
+  "startedAt": "2026-10-26T14:10:00.286Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0090/inputs/src/robustness_wrapper.py",
+    "--target",
+    "src/q2_fix.py",
+    "--set",
+    "ALIGN_CSV=\"data/processed/sensory_name_alignment.csv\"",
+    "--repeat",
+    "1",
+    "--reps",
+    "500"
+  ],
+  "childPid": 85036,
+  "childPgid": 85036,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6"
+}
