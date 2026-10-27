@@ -1,0 +1,89 @@
+{
+  "token": "2c41296c18997349f35a7049",
+  "experimentId": "EXP-0069",
+  "status": "failed",
+  "exitCode": 1,
+  "startedAt": "2026-10-26T08:46:05.320Z",
+  "endedAt": "2026-10-26T08:46:05.393Z",
+  "durationMs": 73,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {},
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0069/seed-receipt.json",
+      "sha256": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0069/inputs/data/clean/q1_mapped.csv",
+      "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "bytes": 979527,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0069/inputs/data/clean/q2_chem_meta.json",
+      "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+      "bytes": 52977,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0069/inputs/data/clean/q2_raw.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0069/inputs/data/processed/sensory_name_alignment.csv",
+      "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+      "bytes": 1469,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0069/inputs/data/raw/imported/a55004fb0390299a-6.csv",
+      "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+      "bytes": 42937,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0069/inputs/data/splits/SPLIT-0001/train.csv",
+      "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+      "bytes": 687898,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0069/inputs/src/seed_receipt_wrapper.py",
+      "sha256": "dc3d8db7ec66aa89104460559f33fc4bee1ff3694f7877f1f974dde409e9e8f7",
+      "bytes": 4322,
+      "kind": "file"
+    }
+  ],
+  "figures": [],
+  "failure": {
+    "code": "NONZERO_EXIT",
+    "message": "the script exited with code 1; stderr tail: wrapped target does not exist: /Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0069/inputs/src/q2_fix.py"
+  },
+  "error": "the script exited with code 1; stderr tail: wrapped target does not exist: /Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0069/inputs/src/q2_fix.py",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0069/inputs/src/seed_receipt_wrapper.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0069/inputs/src/seed_receipt_wrapper.py",
+    "--target",
+    "src/q2_fix.py",
+    "--patch-align-to",
+    "data/processed/sensory_name_alignment.csv",
+    "--repeat",
+    "all"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0069",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

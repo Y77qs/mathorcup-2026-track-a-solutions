@@ -1,0 +1,13 @@
+对象,口径,mae,n,mae_median_same_fold,_source
+香气 15 维（指标组）,group,0.36462638062229125,15.0,,"experiments/EXP-0073/metrics.json#per_group__Aroma15__mae,experiments/EXP-0073/metrics.json#per_group__Aroma15__n"
+风味 15 维（指标组）,group,0.3539567511420925,15.0,,"experiments/EXP-0073/metrics.json#per_group__Flavour15__mae,experiments/EXP-0073/metrics.json#per_group__Flavour15__n"
+其余 20 维（指标组）,group,0.33732304347677255,20.0,,"experiments/EXP-0073/metrics.json#per_group__Other20__mae,experiments/EXP-0073/metrics.json#per_group__Other20__n"
+第 1 次重复 · 第 1 折,fold,0.3549259163784175,91.0,0.40239511441794873,"experiments/EXP-0073/metrics.json#per_fold__r0f0__mae,experiments/EXP-0073/metrics.json#per_fold__r0f0__n_rows,experiments/EXP-0073/metrics.json#per_fold__r0f0__mae_median"
+第 1 次重复 · 第 2 折,fold,0.3449890696151955,83.0,0.37944483236907633,"experiments/EXP-0073/metrics.json#per_fold__r0f1__mae,experiments/EXP-0073/metrics.json#per_fold__r0f1__n_rows,experiments/EXP-0073/metrics.json#per_fold__r0f1__mae_median"
+第 1 次重复 · 第 3 折,fold,0.36346757076185404,76.0,0.4123690906907894,"experiments/EXP-0073/metrics.json#per_fold__r0f2__mae,experiments/EXP-0073/metrics.json#per_fold__r0f2__n_rows,experiments/EXP-0073/metrics.json#per_fold__r0f2__mae_median"
+第 2 次重复 · 第 1 折,fold,0.36428283803925626,76.0,0.4038677920587719,"experiments/EXP-0073/metrics.json#per_fold__r1f0__mae,experiments/EXP-0073/metrics.json#per_fold__r1f0__n_rows,experiments/EXP-0073/metrics.json#per_fold__r1f0__mae_median"
+第 2 次重复 · 第 2 折,fold,0.36179711438293527,91.0,0.38824124182673997,"experiments/EXP-0073/metrics.json#per_fold__r1f1__mae,experiments/EXP-0073/metrics.json#per_fold__r1f1__n_rows,experiments/EXP-0073/metrics.json#per_fold__r1f1__mae_median"
+第 2 次重复 · 第 3 折,fold,0.3614390836403097,83.0,0.40437047629718875,"experiments/EXP-0073/metrics.json#per_fold__r1f2__mae,experiments/EXP-0073/metrics.json#per_fold__r1f2__n_rows,experiments/EXP-0073/metrics.json#per_fold__r1f2__mae_median"
+第 3 次重复 · 第 1 折,fold,0.34915726592818663,83.0,0.3771442647305221,"experiments/EXP-0073/metrics.json#per_fold__r2f0__mae,experiments/EXP-0073/metrics.json#per_fold__r2f0__n_rows,experiments/EXP-0073/metrics.json#per_fold__r2f0__mae_median"
+第 3 次重复 · 第 2 折,fold,0.37313415100959674,76.0,0.41652374422105265,"experiments/EXP-0073/metrics.json#per_fold__r2f1__mae,experiments/EXP-0073/metrics.json#per_fold__r2f1__n_rows,experiments/EXP-0073/metrics.json#per_fold__r2f1__mae_median"
+第 3 次重复 · 第 3 折,fold,0.3622644205989077,91.0,0.40258940241428576,"experiments/EXP-0073/metrics.json#per_fold__r2f2__mae,experiments/EXP-0073/metrics.json#per_fold__r2f2__n_rows,experiments/EXP-0073/metrics.json#per_fold__r2f2__mae_median"

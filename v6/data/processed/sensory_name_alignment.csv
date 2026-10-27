@@ -1,0 +1,52 @@
+external_header,target
+Malt aroma - overall,A_malt_all
+Malt aroma - grain,A_malt_grain
+Malt aroma - bread,A_malt_bread
+Malt aroma - caramel,A_malt_cara
+Malt aroma - smoked,A_malt_burn
+Hops aroma - overall,A_hops_all
+Hops aroma - citrus,A_hops_citrus
+Hops aroma - tropical fruit,A_hops_tropical
+Hops aroma - grassy,A_hops_noble
+Hops aroma - woody,A_hops_woody
+Esters aroma - overall,A_esters_all
+Esters aroma - nail polish,A_esters_ethac
+Esters aroma - banana,A_esters_isoaa
+Esters aroma - floral,A_esters_flower
+Esters aroma - fruity,A_esters_fruity
+Malt taste - overall,F_malt_all
+Malt taste - grain,F_malt_grain
+Malt taste - bread,F_malt_bread
+Malt taste - caramel,F_malt_cara
+Malt taste - smoked,F_malt_burn
+Hops taste - overall,F_hops_all
+Hops taste - citrus,F_hops_citrus
+Hops taste - tropical fruit,F_hops_tropical
+Hops taste - grassy,F_hops_noble
+Hops taste - woody,F_hops_woody
+Esters taste - overall,F_esters_all
+Esters taste - nail polish,F_esters_ethac
+Esters taste - banana,F_esters_isoaa
+Esters taste - floral,F_esters_flower
+Esters taste - fruity,F_esters_fruity
+Acidity,acidity
+Bitterness,bitternes
+Sweetness,sweetness
+4-vinyl guaiacol,X4vg
+Diacetyl,diacetyl
+Dimethyl sulfide,dms
+Metallic,metallic
+Stale hops,stale_hops
+Trans-2-nonenal,t2n
+Orange,orange
+Coriander,coriander
+Clove,clove
+Lactic acid,lactic
+Acetic acid,acetic
+Barnyard,barnyard
+Alcohol,alcohol
+Carbonation,co2
+Aftertaste,aftertaste
+Body,body
+"Overall appreciation
+(Trained panel)",overall

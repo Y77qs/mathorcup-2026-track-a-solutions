@@ -1,0 +1,60 @@
+{
+  "token": "a74d3480967aaa7fd19b2b3a",
+  "experimentId": "EXP-0037",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-26T07:55:57.363Z",
+  "endedAt": "2026-10-26T07:55:57.780Z",
+  "durationMs": 417,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "macro_r2_50": -0.06506629237549315,
+    "mae": 0.3918800487369866,
+    "mae_all50": 0.3918800487369866,
+    "mae_rep0": 0.3912616283143449,
+    "mae_rep1": 0.3923271689296777,
+    "mae_rep2": 0.39252682464944133,
+    "n_repeats": 3.0,
+    "n_rows": 750.0,
+    "n_targets": 50.0
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0037/metrics.json",
+      "sha256": "94a2465a2d29ed67b2c5b897fe0bfb01700a8c9ca0c16fdd360d1c2ead5a1cdc",
+      "bytes": 269,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0037/outputs.json",
+      "sha256": "d626b9c989bf29cddd833939ff3eb12237f2a2c0c023523e8e56031c1a352c4a",
+      "bytes": 901,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0037/predictions.csv",
+      "sha256": "bc2b7dad3a2838a3b8b331d88855d6dedc5ce31109e703dc3b867013088e8ad0",
+      "bytes": 983537,
+      "kind": "predictions"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q1_baseline_fix.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q1_baseline_fix.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0037",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

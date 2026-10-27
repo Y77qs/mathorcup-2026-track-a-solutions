@@ -1,0 +1,16 @@
+[q1_fix] repeat=0 seed=20261025
+  [q1_fix] r0f0 train=159 test= 91 | ridge(rankgauss,lam=10) graph-ridge(rankgauss,lam=10,gamma=0.1) lowrank(rankgauss,lam=1,gamma=0.1,r=6)
+  [q1_fix] r0f1 train=167 test= 83 | ridge(rankgauss,lam=10) graph-ridge(rankgauss,lam=10,gamma=0.1) lowrank(rankgauss,lam=1,gamma=0.1,r=6)
+  [q1_fix] r0f2 train=174 test= 76 | ridge(rankgauss,lam=10) graph-ridge(rankgauss,lam=10,gamma=0.1) lowrank(rankgauss,lam=1,gamma=0,r=6)
+[q1_fix] metrics channel: modeling_contract (90 keys, 0 non-finite keys withheld)
+[q1_fix] OOF pooled over 1 repeat(s), 250 rows each
+[q1_fix] model              mae_af30    mae_all50   skill_af30
+[q1_fix] median             0.397808     0.391448     0.000000
+[q1_fix] ridge              0.364678     0.357398     0.083280
+[q1_fix] graph-ridge        0.364856     0.357607     0.082835
+[q1_fix] graph-lowrank      0.354224     0.346940     0.109561
+[q1_fix] repeat 0: median=0.397808 ridge0=0.364678 graph-ridge=0.364856 graph-lowrank=0.354224
+[q1_fix] equivalence r=50,gamma=0 vs ridge: max|diff|=3.997e-15 passed=True
+[q1_fix] grade(primary): QWK=0.34282052748752534 agreement=0.2346 gradeMAE=1.3948
+[q1_fix] checks: rows=250 foldMismatch=0 leaks=0 recomputeMaxDiff=1.11e-16
+[q1_fix] elapsed=0.5s out=/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0100

@@ -1,0 +1,178 @@
+{
+ "kind": "build-paper-inputs",
+ "generatedAt": "2026-10-27T03:07:25Z",
+ "mode": "build",
+ "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6",
+ "builder": {
+  "path": "src/build_paper.py",
+  "role": "builder-script",
+  "sha256": "40b0022f1fb964abd7bc525619415017098691b52ab75181cc50aef0572b8fe3",
+  "bytes": 112808
+ },
+ "support": [
+  {
+   "path": "src/build/header.tex",
+   "role": "latex-header",
+   "sha256": "0d35a9640f355225d95df79ac4512c7b2eb670ed0c9bbda69bd9e5a634cd3926",
+   "bytes": 7131
+  },
+  {
+   "path": "src/build/template.tex",
+   "role": "pandoc-template",
+   "sha256": "b1140b188bdc5e1864c6a052a243f991d16fd0661db4078e5cfe69322ebfa042",
+   "bytes": 985
+  }
+ ],
+ "inputs": [
+  {
+   "path": "report/rendered.md",
+   "role": "build-source",
+   "sha256": "c5cf631d327df4cedee02368fc480af5120e9dcd9937a6d4169197d6e2dd6245",
+   "bytes": 96658
+  },
+  {
+   "path": "report/tables/INDEX.json",
+   "role": "table-index",
+   "sha256": "6a78f7ce8d0da89451efbe2de925e453ceccf6412513f8ef313b0452e9309605",
+   "bytes": 42919
+  },
+  {
+   "path": "state/ledger.json",
+   "role": "ledger",
+   "sha256": "05291a10cca6d2139a764ee38750ddba76f9e54f4d08f0749a811e75d12f1f7b",
+   "bytes": 9758989
+  },
+  {
+   "path": "report/paper.md",
+   "role": "paper-source-draft",
+   "sha256": "95fd30f0f1908a2bb6575dbf47a2a260f5dec00e733c699b9369821503897416",
+   "bytes": 95405
+  },
+  {
+   "path": "report/evidence_manifest.json",
+   "role": "evidence-manifest",
+   "sha256": "db5980ed5981189dd4d824371905dee56e66501b4df84adbb5e347e9ec13d561",
+   "bytes": 26775
+  }
+ ],
+ "tools": {
+  "pandoc": "pandoc 3.11",
+  "xelatex": "XeTeX 3.141592653-2.6-0.999997 (TeX Live 2025)"
+ },
+ "ledgerRevision": 4723,
+ "outputs": [
+  {
+   "path": "report/paper.tex",
+   "role": "build-output",
+   "sha256": "e874741b348e191c01bf19a3884cf59c412b528ced996059626d9cfeef842591",
+   "bytes": 130625
+  },
+  {
+   "path": "report/paper.pdf",
+   "role": "build-output",
+   "sha256": "952b73e341d6411ae28bd658045af1a53edf22824763570801a8a0e01076e73e",
+   "bytes": 2514164
+  }
+ ],
+ "sameSourcePath": "tex and pdf are produced by ONE build_paper.py run from the preprocessed markdown recorded above; the .tex embeds the source sha256 as '% build=...' for independent verification",
+ "preprocessed": {
+  "path": "report/paper.pandoc.md",
+  "role": "pandoc-input",
+  "sha256": "1b9c23a633221a143e12c567ba293b674eb1ee590851cb49f44aec35607092f6",
+  "bytes": 112466
+ },
+ "build": {
+  "preview": false,
+  "outdir": "report",
+  "numberSections": true,
+  "wideTables": "wrap",
+  "source": "report/rendered.md",
+  "sourceSha256": "c5cf631d327df4cedee02368fc480af5120e9dcd9937a6d4169197d6e2dd6245",
+  "preprocessed": "report/paper.pandoc.md",
+  "preprocessedSha256": "1b9c23a633221a143e12c567ba293b674eb1ee590851cb49f44aec35607092f6",
+  "tex": "report/paper.tex",
+  "texSha256": "e874741b348e191c01bf19a3884cf59c412b528ced996059626d9cfeef842591",
+  "tables": 15,
+  "layouts": {
+   "q1-models": "minipage-resizebox",
+   "q1-groups": "minipage-tabular",
+   "q1-grades": "minipage-p",
+   "q1-scores-aroma": "minipage-p",
+   "q1-scores-flavour": "minipage-p",
+   "q2-universe": "minipage-p",
+   "q2-core-top3": "longtable",
+   "q2-stability": "longtable",
+   "q3-raw-design": "minipage-p",
+   "q3-quality": "minipage-p",
+   "q3-constraints": "minipage-p",
+   "q3-qp-certs": "longtable",
+   "q3-transfer-stages": "minipage-p",
+   "q3-transfer-columns": "minipage-p",
+   "rob-confirmatory": "minipage-p"
+  },
+  "claims": [],
+  "figures": [
+   "FIG-0032",
+   "FIG-0033",
+   "FIG-0034",
+   "FIG-0035",
+   "FIG-0036",
+   "FIG-0037",
+   "FIG-0038",
+   "FIG-0039",
+   "FIG-0040"
+  ],
+  "texNormalization": {
+   "ltcaptype_none_removed": 5,
+   "texttt_breakpoints": 63,
+   "display_math_fitted": 15,
+   "changed": 1
+  },
+  "checks": [
+   {
+    "name": "tex-no-ltcaptype-none",
+    "passed": true,
+    "detail": "pandoc LTcaptype-none wrappers removed (5)"
+   },
+   {
+    "name": "tex-has-source-sha",
+    "passed": true,
+    "detail": "source sha256 embedded in .tex"
+   },
+   {
+    "name": "tex-has-md-sha",
+    "passed": true,
+    "detail": "pandoc-input sha256 embedded in .tex"
+   },
+   {
+    "name": "tex-no-placeholders",
+    "passed": true,
+    "detail": "no unresolved {{...}} (nor pandoc-escaped \\{\\{) in .tex"
+   },
+   {
+    "name": "tex-no-pending",
+    "passed": true,
+    "detail": "no PENDING-FIGURE in .tex"
+   },
+   {
+    "name": "tex-no-fancyhdr",
+    "passed": true,
+    "detail": "no running-header package"
+   },
+   {
+    "name": "tex-booktabs",
+    "passed": true,
+    "detail": "booktabs rules present"
+   }
+  ],
+  "pdf": {
+   "ok": true,
+   "logs": [
+    "report/xelatex-1.log",
+    "report/xelatex-2.log"
+   ],
+   "pdf": "report/paper.pdf",
+   "pdfBytes": 2514164
+  }
+ }
+}

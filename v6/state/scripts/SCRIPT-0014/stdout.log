@@ -1,0 +1,2 @@
+WROTE .rework/R04-independent-recompute.json sha256 65dda05d009cc8da07ee4e043b4f8eae15855a8bcd6172ba20757d6693c86eff
+{"Q1_af30": 0.359291565882192, "Q2_pooled": 0.209111111111111, "Q2_pi_bootstraps": 500, "Q3gen_edge_fraction": 0.11991341991341999, "Q3gen_U": 1.1138668332620816, "Q3t_residual_examples": {"chem__X.E..2.nonenal": 3.5561831257524545e-17, "chem__X2.3.butanedione": 1.8041124150158791e-16}, "Q3t_move_nonenal": {"max_abs_stored": 0.001008854, "max_abs_physical": 0.001008854, "max_positive_physical": 0.0}}

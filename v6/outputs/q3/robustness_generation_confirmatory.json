@@ -1,0 +1,129 @@
+{
+ "robId": "ROB-0009",
+ "label": "Q3 generation distribution-quality stability (confirmatory)",
+ "questionId": "Q3",
+ "preregisteredAt": "2026-10-26T14:06:52.880Z",
+ "executedAt": "2026-10-26T14:20:43.580Z",
+ "experimentIds": [
+  "EXP-0092",
+  "EXP-0093",
+  "EXP-0099"
+ ],
+ "methods": [
+  "multiple-seeds",
+  "param-perturbation"
+ ],
+ "perturbations": [
+  {
+   "description": "generation seed block: run the frozen q3_fix.py on repeat 0 and repeat 1 as two separate post-plan experiments (frozen SEEDS 20261025 / 20261026); compare normalised empirical-V energy distance",
+   "id": "q3gen-seed-block",
+   "kind": "multiple-seeds"
+  },
+  {
+   "description": "marginal shrinkage grid perturbation: KAPPAS (0.0,5.0,15.0) -> (0.0,10.0,20.0) at the inner selection step; KAPPA_RS, copulas, constraints and folds unchanged",
+   "id": "q3gen-kappa-grid",
+   "kind": "param-perturbation"
+  }
+ ],
+ "metricKey": "energy-distance",
+ "decisionRule": {
+  "limit": 0.05,
+  "reference": "first linked experiment = the post-plan reference",
+  "type": "relative-range"
+ },
+ "seeds": [
+  20261025,
+  20261026
+ ],
+ "repeats": 2,
+ "budget": {
+  "bootstrapIterations": 2000,
+  "bootstrapSeed": 20261024
+ },
+ "dataUse": {
+  "holdoutReuse": 0,
+  "note": "train-only 3x3x3 outer folds + whole-style holdout of Tripel/Kriek/Lambic inside the protocol; NESTED-CV-1 assignment reused unchanged"
+ },
+ "values": [
+  0.8777844056665478,
+  0.876453018856588,
+  0.8981550487535501
+ ],
+ "interval": {
+  "low": 0.876453018856588,
+  "high": 0.8981550487535501,
+  "mean": 0.884130824425562,
+  "n": 3
+ },
+ "decisionOutcome": {
+  "supported": true,
+  "passed": true,
+  "message": "relative spread 0.021702 <= 0.05"
+ },
+ "decisionPassed": true,
+ "executionStatus": "completed",
+ "conclusion": "relative spread 0.021702 <= 0.05",
+ "conclusionScope": "within the declared perturbations only",
+ "satisfiedMethods": [
+  "multiple-seeds",
+  "param-perturbation"
+ ],
+ "pairs": [
+  {
+   "changed": [
+    "seed"
+   ],
+   "changedParams": []
+  },
+  {
+   "changed": [
+    "params"
+   ],
+   "changedParams": [
+    "kappaShift"
+   ]
+  }
+ ],
+ "scopeNote": "EXP-0079 generation; constraint-satisfaction excluded from the decision",
+ "supplementary": {
+  "EXP-0092": {
+   "constraint-satisfaction": 1,
+   "diversity": 19.68777093870324,
+   "duplicate-share": 0,
+   "profile-spearman": 0.39275831932773103,
+   "profile-pooled-spearman": 0.7541416566626651,
+   "constraints-verified": 6547,
+   "constraints-conditional": 2725,
+   "constraints-not-identifiable": 228,
+   "constraints-infeasible": 0
+  },
+  "EXP-0093": {
+   "constraint-satisfaction": 1,
+   "diversity": 19.6095697689185,
+   "duplicate-share": 0,
+   "profile-spearman": 0.3863840576230492,
+   "profile-pooled-spearman": 0.8219447779111644,
+   "constraints-verified": 6534,
+   "constraints-conditional": 2739,
+   "constraints-not-identifiable": 227,
+   "constraints-infeasible": 0
+  },
+  "EXP-0099": {
+   "constraint-satisfaction": 1,
+   "diversity": 20.516471473986,
+   "duplicate-share": 0,
+   "profile-spearman": 0.31863318127250906,
+   "profile-pooled-spearman": 0.7826650660264105,
+   "constraints-verified": 6539,
+   "constraints-conditional": 2721,
+   "constraints-not-identifiable": 240,
+   "constraints-infeasible": 0
+  }
+ },
+ "constructionNote": "constraint-satisfaction = 1.000 in every run is a CONSTRUCTION property of the constrained projection, not evidence of distribution quality; the decision uses energy-distance only",
+ "limitations": [
+  "generation and transfer must not be merged into one Q3 success rate",
+  "two frozen repeats executed (0/1); the third was not run",
+  "energy-distance is a distributional discrepancy, not a scientific validity proof"
+ ]
+}

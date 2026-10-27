@@ -1,0 +1,1313 @@
+{
+  "dimension_blind_evidence": {
+    "meanPercentile": {
+      "consensus": 0.7115086646279307,
+      "graph_lowrank": 0.8294189602446483,
+      "total_spearman": 0.7384709480122323,
+      "within_style_spearman": 0.6699082568807339
+    },
+    "note": "mean within-dimension percentile rank of the shared global set; a dimension-specific Top-3 would sit near the top of this column",
+    "perMethod": {
+      "consensus": [
+        {
+          "dimension": "A_malt_all",
+          "meanPercentile": 0.7701325178389399
+        },
+        {
+          "dimension": "A_malt_grain",
+          "meanPercentile": 0.7262996941896024
+        },
+        {
+          "dimension": "A_malt_bread",
+          "meanPercentile": 0.7945973496432212
+        },
+        {
+          "dimension": "A_malt_cara",
+          "meanPercentile": 0.7762487257900103
+        },
+        {
+          "dimension": "A_malt_burn",
+          "meanPercentile": 0.6462793068297655
+        },
+        {
+          "dimension": "A_hops_all",
+          "meanPercentile": 0.6467889908256882
+        },
+        {
+          "dimension": "A_hops_citrus",
+          "meanPercentile": 0.519367991845056
+        },
+        {
+          "dimension": "A_hops_tropical",
+          "meanPercentile": 0.8287461773700305
+        },
+        {
+          "dimension": "A_hops_noble",
+          "meanPercentile": 0.5056065239551478
+        },
+        {
+          "dimension": "A_hops_woody",
+          "meanPercentile": 0.5316004077471966
+        },
+        {
+          "dimension": "A_esters_all",
+          "meanPercentile": 0.8277268093781855
+        },
+        {
+          "dimension": "A_esters_ethac",
+          "meanPercentile": 0.746177370030581
+        },
+        {
+          "dimension": "A_esters_isoaa",
+          "meanPercentile": 0.8460754332313966
+        },
+        {
+          "dimension": "A_esters_flower",
+          "meanPercentile": 0.9704383282364932
+        },
+        {
+          "dimension": "A_esters_fruity",
+          "meanPercentile": 0.745158002038736
+        },
+        {
+          "dimension": "F_malt_all",
+          "meanPercentile": 0.8374108053007135
+        },
+        {
+          "dimension": "F_malt_grain",
+          "meanPercentile": 0.7864424057084608
+        },
+        {
+          "dimension": "F_malt_bread",
+          "meanPercentile": 0.9220183486238532
+        },
+        {
+          "dimension": "F_malt_cara",
+          "meanPercentile": 0.737512742099898
+        },
+        {
+          "dimension": "F_malt_burn",
+          "meanPercentile": 0.7262996941896024
+        },
+        {
+          "dimension": "F_hops_all",
+          "meanPercentile": 0.6228338430173292
+        },
+        {
+          "dimension": "F_hops_citrus",
+          "meanPercentile": 0.4801223241590214
+        },
+        {
+          "dimension": "F_hops_tropical",
+          "meanPercentile": 0.8771661569826708
+        },
+        {
+          "dimension": "F_hops_noble",
+          "meanPercentile": 0.518348623853211
+        },
+        {
+          "dimension": "F_hops_woody",
+          "meanPercentile": 0.47298674821610603
+        },
+        {
+          "dimension": "F_esters_all",
+          "meanPercentile": 0.8047910295616717
+        },
+        {
+          "dimension": "F_esters_ethac",
+          "meanPercentile": 0.800203873598369
+        },
+        {
+          "dimension": "F_esters_isoaa",
+          "meanPercentile": 0.8318042813455658
+        },
+        {
+          "dimension": "F_esters_flower",
+          "meanPercentile": 0.8802242609582059
+        },
+        {
+          "dimension": "F_esters_fruity",
+          "meanPercentile": 0.7660550458715596
+        },
+        {
+          "dimension": "acidity",
+          "meanPercentile": 0.6095820591233436
+        },
+        {
+          "dimension": "bitternes",
+          "meanPercentile": 0.46738022426095815
+        },
+        {
+          "dimension": "sweetness",
+          "meanPercentile": 0.7339449541284404
+        },
+        {
+          "dimension": "X4vg",
+          "meanPercentile": 0.5565749235474006
+        },
+        {
+          "dimension": "diacetyl",
+          "meanPercentile": 0.6539245667686034
+        },
+        {
+          "dimension": "dms",
+          "meanPercentile": 0.6885830784913355
+        },
+        {
+          "dimension": "metallic",
+          "meanPercentile": 0.6060142711518859
+        },
+        {
+          "dimension": "stale_hops",
+          "meanPercentile": 0.8134556574923547
+        },
+        {
+          "dimension": "t2n",
+          "meanPercentile": 0.7232415902140673
+        },
+        {
+          "dimension": "orange",
+          "meanPercentile": 0.7466870540265035
+        },
+        {
+          "dimension": "coriander",
+          "meanPercentile": 0.8037716615698267
+        },
+        {
+          "dimension": "clove",
+          "meanPercentile": 0.6411824668705403
+        },
+        {
+          "dimension": "lactic",
+          "meanPercentile": 0.700815494393476
+        },
+        {
+          "dimension": "acetic",
+          "meanPercentile": 0.7477064220183487
+        },
+        {
+          "dimension": "barnyard",
+          "meanPercentile": 0.8017329255861365
+        },
+        {
+          "dimension": "alcohol",
+          "meanPercentile": 0.5922528032619776
+        },
+        {
+          "dimension": "aftertaste",
+          "meanPercentile": 0.5861365953109072
+        },
+        {
+          "dimension": "body",
+          "meanPercentile": 0.6304791029561673
+        },
+        {
+          "dimension": "co2",
+          "meanPercentile": 0.7385321100917431
+        },
+        {
+          "dimension": "overall",
+          "meanPercentile": 0.7879714576962282
+        }
+      ],
+      "graph_lowrank": [
+        {
+          "dimension": "A_malt_all",
+          "meanPercentile": 0.8348623853211009
+        },
+        {
+          "dimension": "A_malt_grain",
+          "meanPercentile": 0.8440366972477064
+        },
+        {
+          "dimension": "A_malt_bread",
+          "meanPercentile": 0.8593272171253824
+        },
+        {
+          "dimension": "A_malt_cara",
+          "meanPercentile": 0.8853211009174312
+        },
+        {
+          "dimension": "A_malt_burn",
+          "meanPercentile": 0.8318042813455658
+        },
+        {
+          "dimension": "A_hops_all",
+          "meanPercentile": 0.6941896024464832
+        },
+        {
+          "dimension": "A_hops_citrus",
+          "meanPercentile": 0.5397553516819572
+        },
+        {
+          "dimension": "A_hops_tropical",
+          "meanPercentile": 0.6605504587155964
+        },
+        {
+          "dimension": "A_hops_noble",
+          "meanPercentile": 0.7522935779816514
+        },
+        {
+          "dimension": "A_hops_woody",
+          "meanPercentile": 0.5519877675840978
+        },
+        {
+          "dimension": "A_esters_all",
+          "meanPercentile": 0.981651376146789
+        },
+        {
+          "dimension": "A_esters_ethac",
+          "meanPercentile": 0.9709480122324159
+        },
+        {
+          "dimension": "A_esters_isoaa",
+          "meanPercentile": 0.948012232415902
+        },
+        {
+          "dimension": "A_esters_flower",
+          "meanPercentile": 0.9342507645259938
+        },
+        {
+          "dimension": "A_esters_fruity",
+          "meanPercentile": 0.9220183486238532
+        },
+        {
+          "dimension": "F_malt_all",
+          "meanPercentile": 0.8730886850152905
+        },
+        {
+          "dimension": "F_malt_grain",
+          "meanPercentile": 0.9159021406727829
+        },
+        {
+          "dimension": "F_malt_bread",
+          "meanPercentile": 0.7507645259938838
+        },
+        {
+          "dimension": "F_malt_cara",
+          "meanPercentile": 0.874617737003058
+        },
+        {
+          "dimension": "F_malt_burn",
+          "meanPercentile": 0.9128440366972477
+        },
+        {
+          "dimension": "F_hops_all",
+          "meanPercentile": 0.9373088685015291
+        },
+        {
+          "dimension": "F_hops_citrus",
+          "meanPercentile": 0.7186544342507645
+        },
+        {
+          "dimension": "F_hops_tropical",
+          "meanPercentile": 0.7492354740061162
+        },
+        {
+          "dimension": "F_hops_noble",
+          "meanPercentile": 0.9311926605504587
+        },
+        {
+          "dimension": "F_hops_woody",
+          "meanPercentile": 0.8165137614678898
+        },
+        {
+          "dimension": "F_esters_all",
+          "meanPercentile": 0.9908256880733944
+        },
+        {
+          "dimension": "F_esters_ethac",
+          "meanPercentile": 0.9831804281345566
+        },
+        {
+          "dimension": "F_esters_isoaa",
+          "meanPercentile": 0.9510703363914373
+        },
+        {
+          "dimension": "F_esters_flower",
+          "meanPercentile": 0.8516819571865444
+        },
+        {
+          "dimension": "F_esters_fruity",
+          "meanPercentile": 0.9571865443425076
+        },
+        {
+          "dimension": "acidity",
+          "meanPercentile": 0.6483180428134556
+        },
+        {
+          "dimension": "bitternes",
+          "meanPercentile": 0.874617737003058
+        },
+        {
+          "dimension": "sweetness",
+          "meanPercentile": 0.5718654434250764
+        },
+        {
+          "dimension": "X4vg",
+          "meanPercentile": 0.6100917431192661
+        },
+        {
+          "dimension": "diacetyl",
+          "meanPercentile": 0.4877675840978593
+        },
+        {
+          "dimension": "dms",
+          "meanPercentile": 0.9862385321100917
+        },
+        {
+          "dimension": "metallic",
+          "meanPercentile": 0.5535168195718655
+        },
+        {
+          "dimension": "stale_hops",
+          "meanPercentile": 0.7522935779816513
+        },
+        {
+          "dimension": "t2n",
+          "meanPercentile": 0.9770642201834864
+        },
+        {
+          "dimension": "orange",
+          "meanPercentile": 0.9204892966360857
+        },
+        {
+          "dimension": "coriander",
+          "meanPercentile": 0.9373088685015291
+        },
+        {
+          "dimension": "clove",
+          "meanPercentile": 0.6559633027522936
+        },
+        {
+          "dimension": "lactic",
+          "meanPercentile": 0.743119266055046
+        },
+        {
+          "dimension": "acetic",
+          "meanPercentile": 0.709480122324159
+        },
+        {
+          "dimension": "barnyard",
+          "meanPercentile": 0.743119266055046
+        },
+        {
+          "dimension": "alcohol",
+          "meanPercentile": 0.981651376146789
+        },
+        {
+          "dimension": "aftertaste",
+          "meanPercentile": 0.9877675840978594
+        },
+        {
+          "dimension": "body",
+          "meanPercentile": 0.9847094801223242
+        },
+        {
+          "dimension": "co2",
+          "meanPercentile": 0.9357798165137615
+        },
+        {
+          "dimension": "overall",
+          "meanPercentile": 0.9847094801223242
+        }
+      ],
+      "total_spearman": [
+        {
+          "dimension": "A_malt_all",
+          "meanPercentile": 0.9357798165137615
+        },
+        {
+          "dimension": "A_malt_grain",
+          "meanPercentile": 0.6452599388379204
+        },
+        {
+          "dimension": "A_malt_bread",
+          "meanPercentile": 0.981651376146789
+        },
+        {
+          "dimension": "A_malt_cara",
+          "meanPercentile": 0.8929663608562691
+        },
+        {
+          "dimension": "A_malt_burn",
+          "meanPercentile": 0.7737003058103976
+        },
+        {
+          "dimension": "A_hops_all",
+          "meanPercentile": 0.7767584097859327
+        },
+        {
+          "dimension": "A_hops_citrus",
+          "meanPercentile": 0.4938837920489297
+        },
+        {
+          "dimension": "A_hops_tropical",
+          "meanPercentile": 0.7966360856269113
+        },
+        {
+          "dimension": "A_hops_noble",
+          "meanPercentile": 0.7767584097859327
+        },
+        {
+          "dimension": "A_hops_woody",
+          "meanPercentile": 0.1376146788990826
+        },
+        {
+          "dimension": "A_esters_all",
+          "meanPercentile": 0.9847094801223242
+        },
+        {
+          "dimension": "A_esters_ethac",
+          "meanPercentile": 0.981651376146789
+        },
+        {
+          "dimension": "A_esters_isoaa",
+          "meanPercentile": 0.9159021406727829
+        },
+        {
+          "dimension": "A_esters_flower",
+          "meanPercentile": 0.9480122324159023
+        },
+        {
+          "dimension": "A_esters_fruity",
+          "meanPercentile": 0.27370030581039756
+        },
+        {
+          "dimension": "F_malt_all",
+          "meanPercentile": 0.9847094801223242
+        },
+        {
+          "dimension": "F_malt_grain",
+          "meanPercentile": 0.5443425076452599
+        },
+        {
+          "dimension": "F_malt_bread",
+          "meanPercentile": 0.9954128440366974
+        },
+        {
+          "dimension": "F_malt_cara",
+          "meanPercentile": 0.9709480122324159
+        },
+        {
+          "dimension": "F_malt_burn",
+          "meanPercentile": 0.9831804281345565
+        },
+        {
+          "dimension": "F_hops_all",
+          "meanPercentile": 0.8669724770642202
+        },
+        {
+          "dimension": "F_hops_citrus",
+          "meanPercentile": 0.16972477064220184
+        },
+        {
+          "dimension": "F_hops_tropical",
+          "meanPercentile": 0.9036697247706421
+        },
+        {
+          "dimension": "F_hops_noble",
+          "meanPercentile": 0.874617737003058
+        },
+        {
+          "dimension": "F_hops_woody",
+          "meanPercentile": 0.6284403669724771
+        },
+        {
+          "dimension": "F_esters_all",
+          "meanPercentile": 0.9862385321100917
+        },
+        {
+          "dimension": "F_esters_ethac",
+          "meanPercentile": 0.9908256880733944
+        },
+        {
+          "dimension": "F_esters_isoaa",
+          "meanPercentile": 0.9311926605504587
+        },
+        {
+          "dimension": "F_esters_flower",
+          "meanPercentile": 0.573394495412844
+        },
+        {
+          "dimension": "F_esters_fruity",
+          "meanPercentile": 0.2874617737003058
+        },
+        {
+          "dimension": "acidity",
+          "meanPercentile": 0.709480122324159
+        },
+        {
+          "dimension": "bitternes",
+          "meanPercentile": 0.8623853211009175
+        },
+        {
+          "dimension": "sweetness",
+          "meanPercentile": 0.40214067278287463
+        },
+        {
+          "dimension": "X4vg",
+          "meanPercentile": 0.709480122324159
+        },
+        {
+          "dimension": "diacetyl",
+          "meanPercentile": 0.3608562691131499
+        },
+        {
+          "dimension": "dms",
+          "meanPercentile": 0.4296636085626911
+        },
+        {
+          "dimension": "metallic",
+          "meanPercentile": 0.3746177370030581
+        },
+        {
+          "dimension": "stale_hops",
+          "meanPercentile": 0.6529051987767583
+        },
+        {
+          "dimension": "t2n",
+          "meanPercentile": 0.7629969418960245
+        },
+        {
+          "dimension": "orange",
+          "meanPercentile": 0.8960244648318043
+        },
+        {
+          "dimension": "coriander",
+          "meanPercentile": 0.7935779816513762
+        },
+        {
+          "dimension": "clove",
+          "meanPercentile": 0.38990825688073394
+        },
+        {
+          "dimension": "lactic",
+          "meanPercentile": 0.6467889908256881
+        },
+        {
+          "dimension": "acetic",
+          "meanPercentile": 0.5489296636085628
+        },
+        {
+          "dimension": "barnyard",
+          "meanPercentile": 0.6880733944954128
+        },
+        {
+          "dimension": "alcohol",
+          "meanPercentile": 0.981651376146789
+        },
+        {
+          "dimension": "aftertaste",
+          "meanPercentile": 0.8501529051987768
+        },
+        {
+          "dimension": "body",
+          "meanPercentile": 0.9724770642201834
+        },
+        {
+          "dimension": "co2",
+          "meanPercentile": 0.9510703363914373
+        },
+        {
+          "dimension": "overall",
+          "meanPercentile": 0.9342507645259938
+        }
+      ],
+      "within_style_spearman": [
+        {
+          "dimension": "A_malt_all",
+          "meanPercentile": 0.7278287461773701
+        },
+        {
+          "dimension": "A_malt_grain",
+          "meanPercentile": 0.7064220183486238
+        },
+        {
+          "dimension": "A_malt_bread",
+          "meanPercentile": 0.2324159021406728
+        },
+        {
+          "dimension": "A_malt_cara",
+          "meanPercentile": 0.6666666666666666
+        },
+        {
+          "dimension": "A_malt_burn",
+          "meanPercentile": 0.746177370030581
+        },
+        {
+          "dimension": "A_hops_all",
+          "meanPercentile": 0.8623853211009175
+        },
+        {
+          "dimension": "A_hops_citrus",
+          "meanPercentile": 0.7691131498470948
+        },
+        {
+          "dimension": "A_hops_tropical",
+          "meanPercentile": 0.5902140672782875
+        },
+        {
+          "dimension": "A_hops_noble",
+          "meanPercentile": 0.7446483180428135
+        },
+        {
+          "dimension": "A_hops_woody",
+          "meanPercentile": 0.11926605504587157
+        },
+        {
+          "dimension": "A_esters_all",
+          "meanPercentile": 0.5412844036697247
+        },
+        {
+          "dimension": "A_esters_ethac",
+          "meanPercentile": 0.4250764525993884
+        },
+        {
+          "dimension": "A_esters_isoaa",
+          "meanPercentile": 0.7324159021406728
+        },
+        {
+          "dimension": "A_esters_flower",
+          "meanPercentile": 0.6483180428134556
+        },
+        {
+          "dimension": "A_esters_fruity",
+          "meanPercentile": 0.4908256880733945
+        },
+        {
+          "dimension": "F_malt_all",
+          "meanPercentile": 0.6513761467889908
+        },
+        {
+          "dimension": "F_malt_grain",
+          "meanPercentile": 0.698776758409786
+        },
+        {
+          "dimension": "F_malt_bread",
+          "meanPercentile": 0.5519877675840978
+        },
+        {
+          "dimension": "F_malt_cara",
+          "meanPercentile": 0.8180428134556575
+        },
+        {
+          "dimension": "F_malt_burn",
+          "meanPercentile": 0.7721712538226299
+        },
+        {
+          "dimension": "F_hops_all",
+          "meanPercentile": 0.9174311926605506
+        },
+        {
+          "dimension": "F_hops_citrus",
+          "meanPercentile": 0.5764525993883792
+        },
+        {
+          "dimension": "F_hops_tropical",
+          "meanPercentile": 0.7308868501529052
+        },
+        {
+          "dimension": "F_hops_noble",
+          "meanPercentile": 0.9082568807339451
+        },
+        {
+          "dimension": "F_hops_woody",
+          "meanPercentile": 0.7966360856269112
+        },
+        {
+          "dimension": "F_esters_all",
+          "meanPercentile": 0.5474006116207951
+        },
+        {
+          "dimension": "F_esters_ethac",
+          "meanPercentile": 0.8608562691131499
+        },
+        {
+          "dimension": "F_esters_isoaa",
+          "meanPercentile": 0.8623853211009175
+        },
+        {
+          "dimension": "F_esters_flower",
+          "meanPercentile": 0.7691131498470948
+        },
+        {
+          "dimension": "F_esters_fruity",
+          "meanPercentile": 0.6865443425076453
+        },
+        {
+          "dimension": "acidity",
+          "meanPercentile": 0.5795107033639143
+        },
+        {
+          "dimension": "bitternes",
+          "meanPercentile": 0.9113149847094801
+        },
+        {
+          "dimension": "sweetness",
+          "meanPercentile": 0.827217125382263
+        },
+        {
+          "dimension": "X4vg",
+          "meanPercentile": 0.4220183486238532
+        },
+        {
+          "dimension": "diacetyl",
+          "meanPercentile": 0.7599388379204893
+        },
+        {
+          "dimension": "dms",
+          "meanPercentile": 0.5489296636085627
+        },
+        {
+          "dimension": "metallic",
+          "meanPercentile": 0.20642201834862384
+        },
+        {
+          "dimension": "stale_hops",
+          "meanPercentile": 0.5856269113149847
+        },
+        {
+          "dimension": "t2n",
+          "meanPercentile": 0.36391437308868496
+        },
+        {
+          "dimension": "orange",
+          "meanPercentile": 0.4831804281345566
+        },
+        {
+          "dimension": "coriander",
+          "meanPercentile": 0.40672782874617736
+        },
+        {
+          "dimension": "clove",
+          "meanPercentile": 0.581039755351682
+        },
+        {
+          "dimension": "lactic",
+          "meanPercentile": 0.581039755351682
+        },
+        {
+          "dimension": "acetic",
+          "meanPercentile": 0.5871559633027523
+        },
+        {
+          "dimension": "barnyard",
+          "meanPercentile": 0.6620795107033639
+        },
+        {
+          "dimension": "alcohol",
+          "meanPercentile": 0.9908256880733944
+        },
+        {
+          "dimension": "aftertaste",
+          "meanPercentile": 0.9724770642201834
+        },
+        {
+          "dimension": "body",
+          "meanPercentile": 0.9633027522935781
+        },
+        {
+          "dimension": "co2",
+          "meanPercentile": 0.981651376146789
+        },
+        {
+          "dimension": "overall",
+          "meanPercentile": 0.9296636085626911
+        }
+      ]
+    }
+  },
+  "global_top3": [
+    {
+      "compound": "acetaldehyde",
+      "globalScore": 0.22483409588538397,
+      "meanAbsBetaGraph": 0.030280564729348692,
+      "meanAbsRhoTotal": 0.22483409588538397,
+      "meanAbsRhoWithin": 0.1332881442623006,
+      "meanConsensusPercentile": 0.7707645259938839,
+      "method": "total_spearman",
+      "rank": 1
+    },
+    {
+      "compound": "n.hexanol",
+      "globalScore": 0.21340965101290038,
+      "meanAbsBetaGraph": 0.010588270163666078,
+      "meanAbsRhoTotal": 0.21340965101290038,
+      "meanAbsRhoWithin": 0.08707235600282633,
+      "meanConsensusPercentile": 0.5787767584097859,
+      "method": "total_spearman",
+      "rank": 2
+    },
+    {
+      "compound": "glycerol",
+      "globalScore": 0.20832183567238988,
+      "meanAbsBetaGraph": 0.018244669704585652,
+      "meanAbsRhoTotal": 0.20832183567238988,
+      "meanAbsRhoWithin": 0.0946479938374228,
+      "meanConsensusPercentile": 0.639204892966361,
+      "method": "total_spearman",
+      "rank": 3
+    },
+    {
+      "compound": "ethyl_decanoate",
+      "globalScore": 0.13934555965072234,
+      "meanAbsBetaGraph": 0.014604957255339144,
+      "meanAbsRhoTotal": 0.18272176844419277,
+      "meanAbsRhoWithin": 0.13934555965072234,
+      "meanConsensusPercentile": 0.6476758409785933,
+      "method": "within_style_spearman",
+      "rank": 1
+    },
+    {
+      "compound": "ethyl_octanoate",
+      "globalScore": 0.13903476930255168,
+      "meanAbsBetaGraph": 0.016092045829624667,
+      "meanAbsRhoTotal": 0.1981567254161282,
+      "meanAbsRhoWithin": 0.13903476930255168,
+      "meanConsensusPercentile": 0.6407951070336391,
+      "method": "within_style_spearman",
+      "rank": 2
+    },
+    {
+      "compound": "acetaldehyde",
+      "globalScore": 0.1332881442623006,
+      "meanAbsBetaGraph": 0.030280564729348692,
+      "meanAbsRhoTotal": 0.22483409588538397,
+      "meanAbsRhoWithin": 0.1332881442623006,
+      "meanConsensusPercentile": 0.7707645259938839,
+      "method": "within_style_spearman",
+      "rank": 3
+    },
+    {
+      "compound": "phenethyl_alcohol",
+      "globalScore": 0.0316557176885495,
+      "meanAbsBetaGraph": 0.0316557176885495,
+      "meanAbsRhoTotal": 0.11889912971538857,
+      "meanAbsRhoWithin": 0.08812731613326355,
+      "meanConsensusPercentile": 0.6433944954128441,
+      "method": "graph_lowrank",
+      "rank": 1
+    },
+    {
+      "compound": "acetaldehyde",
+      "globalScore": 0.030280564729348692,
+      "meanAbsBetaGraph": 0.030280564729348692,
+      "meanAbsRhoTotal": 0.22483409588538397,
+      "meanAbsRhoWithin": 0.1332881442623006,
+      "meanConsensusPercentile": 0.7707645259938839,
+      "method": "graph_lowrank",
+      "rank": 2
+    },
+    {
+      "compound": "ethyl_isovalerate",
+      "globalScore": 0.027279300916179847,
+      "meanAbsBetaGraph": 0.027279300916179847,
+      "meanAbsRhoTotal": 0.12320115539656007,
+      "meanAbsRhoWithin": 0.11089242229592779,
+      "meanConsensusPercentile": 0.6588073394495413,
+      "method": "graph_lowrank",
+      "rank": 3
+    },
+    {
+      "compound": "acetaldehyde",
+      "globalScore": 0.7707645259938838,
+      "meanAbsBetaGraph": 0.030280564729348692,
+      "meanAbsRhoTotal": 0.22483409588538397,
+      "meanAbsRhoWithin": 0.1332881442623006,
+      "meanConsensusPercentile": 0.7707645259938839,
+      "method": "consensus",
+      "rank": 1
+    },
+    {
+      "compound": "beta.phellandrene",
+      "globalScore": 0.6831804281345567,
+      "meanAbsBetaGraph": 0.0266608122081468,
+      "meanAbsRhoTotal": 0.1399414223964684,
+      "meanAbsRhoWithin": 0.12071920418739658,
+      "meanConsensusPercentile": 0.6831804281345566,
+      "method": "consensus",
+      "rank": 2
+    },
+    {
+      "compound": "isopentyl_acetate",
+      "globalScore": 0.6805810397553517,
+      "meanAbsBetaGraph": 0.015027131794133097,
+      "meanAbsRhoTotal": 0.20295085419750616,
+      "meanAbsRhoWithin": 0.1302469872110953,
+      "meanConsensusPercentile": 0.6805810397553518,
+      "method": "consensus",
+      "rank": 3
+    }
+  ],
+  "method_jaccard": {
+    "definition": "J = |A n B| / (2k - |A n B|), k = 3; mean over 50 dimensions and the 6 method pairs",
+    "pairs": {
+      "graph_lowrank|consensus": {
+        "mean": 0.19999999999999996,
+        "perDimension": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "total_spearman|consensus": {
+        "mean": 0.19999999999999996,
+        "perDimension": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "total_spearman|graph_lowrank": {
+        "mean": 0.19999999999999996,
+        "perDimension": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "total_spearman|within_style_spearman": {
+        "mean": 0.19999999999999996,
+        "perDimension": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "within_style_spearman|consensus": {
+        "mean": 0.19999999999999996,
+        "perDimension": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "within_style_spearman|graph_lowrank": {
+        "mean": 0.19999999999999996,
+        "perDimension": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      }
+    },
+    "summary": {
+      "overall": 0.19999999999999996,
+      "pairMeans": {
+        "graph_lowrank|consensus": 0.19999999999999996,
+        "total_spearman|consensus": 0.19999999999999996,
+        "total_spearman|graph_lowrank": 0.19999999999999996,
+        "total_spearman|within_style_spearman": 0.19999999999999996,
+        "within_style_spearman|consensus": 0.19999999999999996,
+        "within_style_spearman|graph_lowrank": 0.19999999999999996
+      }
+    }
+  },
+  "sets_path": "sets.json",
+  "settings": {
+    "candidates": "219 single-compound columns (COMPOUND_CANDIDATES)",
+    "coverage": {
+      "nDatasetRows": 250,
+      "nTrainRows": 200,
+      "trainRowsFoundInDataset": 200
+    },
+    "graph": {
+      "gamma": 0.1,
+      "lambda": 1.0,
+      "nIter": 25,
+      "rank": 6,
+      "representation": "zscore",
+      "tau": 0.5
+    },
+    "k": 3,
+    "method": "dimension-blind global Top-3 (one shared set per scoring method)",
+    "modelKind": "baseline",
+    "scoring": "each method's score averaged over the 50 dimensions; consensus = mean within-dimension percentile rank, averaged over methods and dimensions",
+    "seed": 20261024,
+    "tau": 0.5,
+    "trainingRows": "200 rows of data/splits/SPLIT-0001/train.csv (registered dependency; no split)"
+  }
+}

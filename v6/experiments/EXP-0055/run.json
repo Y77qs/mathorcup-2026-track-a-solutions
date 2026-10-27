@@ -1,0 +1,17 @@
+{
+  "pid": 61409,
+  "token": "5f5e209de96ec57c317837a8",
+  "experimentId": "EXP-0055",
+  "startedAt": "2026-10-26T08:20:51.591Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0051/inputs/src/q3_transfer_fix.py",
+    "--repeat",
+    "all"
+  ],
+  "childPid": 61412,
+  "childPgid": 61412,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6"
+}

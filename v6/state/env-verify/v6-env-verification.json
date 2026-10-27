@@ -1,0 +1,79 @@
+{
+  "kind": "v6-env-verification",
+  "purpose": "independent import + real minimal computation under the frozen interpreter",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "pythonVersion": "3.12.14",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "threadEnv": {
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "VECLIB_MAXIMUM_THREADS": null,
+    "NUMEXPR_NUM_THREADS": null
+  },
+  "checks": {
+    "numpy": {
+      "version": "2.3.5",
+      "residual_max_abs": 4.884981308350689e-15,
+      "coef_max_abs_error": 1.5543122344752192e-15,
+      "ok": true
+    },
+    "pandas": {
+      "version": "2.2.3",
+      "rows": 250,
+      "styles": 22,
+      "unique_beers": 250,
+      "ok": true
+    },
+    "scipy": {
+      "version": "1.18.1",
+      "solver_status": 0,
+      "objective": 0.7499999999999996,
+      "x": [
+        1.5000000000000004,
+        0.0,
+        3.3306690738754696e-16
+      ],
+      "constraint_sum": 1.5000000000000009,
+      "ok": true
+    },
+    "scipy_linalg": {
+      "cholesky_residual": 1.7763568394002505e-15,
+      "ok": true
+    },
+    "sklearn": {
+      "version": "1.9.1",
+      "r2": 0.9985167479774549,
+      "ok": true
+    },
+    "matplotlib": {
+      "version": "3.11.2",
+      "png_bytes": 2798,
+      "png_signature": "89504e470d0a1a0a",
+      "ok": true
+    },
+    "openpyxl": {
+      "version": "3.1.5",
+      "roundtrip": [
+        "beer",
+        1
+      ],
+      "ok": true
+    },
+    "sympy": {
+      "version": "1.14.0",
+      "derivative": "t*(2*log(t) + 1)",
+      "ok": true
+    },
+    "splits_artifact": {
+      "rows": 2250,
+      "overlaps": 0,
+      "ok": true
+    }
+  },
+  "ok": true,
+  "notes": [
+    "this receipt proves imports + a real computation, NOT that run-control requiredModules passed",
+    "run-control requiredModules compares probe values to boolean true; the 2.8.10 probe stores version strings"
+  ]
+}

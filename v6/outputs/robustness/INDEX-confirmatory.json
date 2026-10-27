@@ -1,0 +1,45 @@
+{
+ "kind": "confirmatory-robustness.index",
+ "recordedAt": "2026-10-26T14:21Z",
+ "confirmatory": [
+  {
+   "robId": "ROB-0007",
+   "file": "outputs/q1/robustness_confirmatory.json",
+   "decisionPassed": true
+  },
+  {
+   "robId": "ROB-0008",
+   "file": "outputs/q2/robustness_confirmatory.json",
+   "decisionPassed": true
+  },
+  {
+   "robId": "ROB-0009",
+   "file": "outputs/q3/robustness_generation_confirmatory.json",
+   "decisionPassed": true
+  },
+  {
+   "robId": "ROB-0010",
+   "file": "outputs/q3/robustness_transfer_confirmatory.json",
+   "decisionPassed": true
+  }
+ ],
+ "pilot_plans_NOT_confirmatory": [
+  "ROB-0001",
+  "ROB-0002",
+  "ROB-0003",
+  "ROB-0004",
+  "ROB-0005",
+  "ROB-0006"
+ ],
+ "separationNote": "ROB-0001..ROB-0006 belong to the pilot/exploratory round and are NOT linked to any ledger record of this batch; this index deliberately does not merge their values with the confirmatory ones.",
+ "notExecuted": [],
+ "survivingStructuralGaps": {
+  "Q1": [
+   "split-integrity (EXP-0073 has no splitId)",
+   "holdout-metrics (no holdout in train-only nested CV)"
+  ],
+  "Q3": [
+   "native optimization-feasibility/optimization-objective not passed"
+  ]
+ }
+}

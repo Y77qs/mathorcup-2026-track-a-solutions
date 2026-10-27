@@ -1,0 +1,167 @@
+感官
+维度
+第 1 位 第 2 位 第 3 位 第 3 位同模块替代
+候选
+香
+气·
+烘烤
+ethyl.hydrocinnamate ｜
+0.558/0.9860 ｜+·内
+selin.11.en.4.alpha.ol ｜
+0.228/0.9380 ｜+·内
+SO2.mg.L. ｜0.194/
+0.9287 ｜−·混
+—（无）
+香
+气·
+酒花
+总体
+ethyl_octanoate ｜
+0.832/0.9829 ｜+·混
+cis.dihydro.beta.terpineol
+｜0.270/0.9271 ｜+·风
+DMS ｜0.260/0.9209 ｜
++·风
+—（无同模块替代）
+香
+气·
+柑橘
+citronellol ｜0.596/
+0.9674 ｜+·混
+geraniol ｜0.502/0.9581 ｜
++·混
+X1.alpha.terpineol ｜
+0.238/0.9271 ｜+·内
+linalool
+香
+气·
+热带
+水果
+beta.phellandrene ｜
+0.666/0.9860 ｜+·内
+DMS ｜0.648/0.9953 ｜+·
+混
+X.E..dihydro.apofarnesal
+｜0.202/0.9380 ｜−·混
+—（无）
+香
+气·
+贵族
+酒花
+ethyl_octanoate ｜
+0.932/0.9953 ｜+·混
+ethyl_decanoate ｜0.692/
+0.9721 ｜+·混
+cis.dihydro.beta.terpineol
+｜0.200/0.9302 ｜+·混
+—（无同模块替代）
+香
+气·
+木质
+X.E..ortho.methoxy.
+cinnamaldehyde ｜
+0.306/0.8837 ｜+·内
+hydroxy.methyl.furfural ｜
+0.188/0.8837 ｜+·内
+nonan.2.ol ｜0.180/
+0.9209 ｜+·内
+hydroxy.methyl.
+furfural
+香
+气·
+酯香
+总体
+acetaldehyde ｜0.928/
+0.9984 ｜+·内
+isopentyl_acetate ｜0.458/
+0.9752 ｜+·内
+isoamyl_alcohol ｜0.416/
+0.9752 ｜+·内
+X2E.6Z.farnesal
+香
+气·
+乙酸
+乙酯
+X2E.6Z.farnesal ｜
+0.616/0.9922 ｜+·内
+acetaldehyde ｜0.360/
+0.9442 ｜+·混
+phenethyl_alcohol ｜
+0.348/0.9457 ｜+·内
+—（无）
+香
+气·
+乙酸
+异戊
+酯
+isopentyl_acetate ｜
+0.610/0.9876 ｜+·内
+acetaldehyde ｜0.448/
+0.9845 ｜+·内
+X2E.6Z.farnesal ｜0.362/
+0.9798 ｜+·内
+isoamyl_alcohol
+香
+气·
+花香
+beta.phellandrene ｜
+0.530/0.9907 ｜+·内
+acetaldehyde ｜0.358/
+0.9860 ｜+·内
+X.E..dihydro.apofarnesal
+｜0.300/0.9411 ｜−·内
+—（无）
+香
+气·
+果香
+beta.phellandrene ｜
+0.596/0.9814 ｜+·混
+lactic_acid.mg.L. ｜0.166/
+0.8744 ｜+·混
+propylene.glycol ｜0.158/
+0.7767 ｜−·内
+—（无）
+风
+味·
+麦芽
+总体
+acetaldehyde ｜0.686/
+0.9876 ｜+·风
+MeSH ｜0.220/0.8977 ｜
++·风
+X.E..alpha.ionone ｜
+0.204/0.9364 ｜−·风
+X2.acetylpyrrole
+风
+味·
+酒花
+总体
+ethyl_octanoate ｜
+0.890/0.9798 ｜+·混
+cis.dihydro.beta.terpineol
+｜0.506/0.9659 ｜+·混
+DMS ｜0.294/0.9349 ｜
++·混
+ethyl_decanoate
+风
+味·
+柑橘
+geraniol ｜0.600/0.9876
+｜+·混
+geosmin ｜0.260/0.9535
+｜+·混
+phenethyl_alcohol ｜
+0.232/0.9240 ｜−·内
+—（无）
+风
+味·
+酯香
+总体
+acetaldehyde ｜0.976/
+1.0000 ｜+·混
+isopentyl_acetate ｜0.462/
+0.9674 ｜+·内
+isoamyl_alcohol ｜0.336/
+0.9690 ｜+·混
+isopentyl_acetate
+11

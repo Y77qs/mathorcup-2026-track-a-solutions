@@ -1,0 +1,1 @@
+{"ok": true, "out": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/state/env-verify/v6-env-verification.json", "checks": {"numpy": true, "pandas": true, "scipy": true, "scipy_linalg": true, "sklearn": true, "matplotlib": true, "openpyxl": true, "sympy": true, "splits_artifact": true}}

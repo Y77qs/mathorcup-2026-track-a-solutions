@@ -1,0 +1,2908 @@
+{
+  "scope": "state dictionary recomputed from the two raw sources; the registered definition of every count is stated with the number",
+  "inputs": {
+    "data/raw/imported/419849227a02e0c7-1.csv": {
+      "sha256": "419849227a02e0c792cd405e6865035b7f58af1a92efa362dbb68a7ca2882f69"
+    },
+    "data/raw/imported/f2316766792111d9-8.xlsx": {
+      "sha256": "f2316766792111d98281bd35c8403682be8c8069d166a7a7d5887ffbb227700a"
+    }
+  },
+  "definitions": {
+    "calibratedZeroCells": "cells in the 37 log10-calibrated columns where the calibration workbook records concentration exactly 0; the stored value of such a cell is the log10 floor code log10(min(positive)/2), not 0",
+    "linearCalibratedZeros": "the 33 linear-calibrated columns also contain calibrated zeros; they are reported separately and are NOT counted as floor codes, because 0 is a plausible measured concentration there",
+    "floorColumns": "uncalibrated columns whose minimum stored value equals -1.81781854 within 1e-06",
+    "floorCells": "cells equal to the estimated floor value (median of the per-column minima) within 1e-06, summed over the floor columns",
+    "floorTolerance": 1e-06
+  },
+  "estimatedFloorValue": -1.81781854,
+  "floorCandidateValue": -1.81781854,
+  "recomputed": {
+    "calibratedZeroCells": 755,
+    "floorColumns": 142,
+    "floorCells": 6807,
+    "missingCells": 73,
+    "missingColumns": 9,
+    "rowsWithMissing": 63
+  },
+  "registered": {
+    "calibratedZeroCells": 755,
+    "floorColumns": 142,
+    "floorCells": 6807,
+    "missingCells": 73,
+    "missingColumns": 9,
+    "rowsWithMissing": 63
+  },
+  "assertions": [
+    {
+      "name": "calibratedZeroCells",
+      "registered": 755,
+      "recomputed": 755,
+      "matches": true
+    },
+    {
+      "name": "floorColumns",
+      "registered": 142,
+      "recomputed": 142,
+      "matches": true
+    },
+    {
+      "name": "floorCells",
+      "registered": 6807,
+      "recomputed": 6807,
+      "matches": true
+    },
+    {
+      "name": "missingCells",
+      "registered": 73,
+      "recomputed": 73,
+      "matches": true
+    },
+    {
+      "name": "missingColumns",
+      "registered": 9,
+      "recomputed": 9,
+      "matches": true
+    },
+    {
+      "name": "rowsWithMissing",
+      "registered": 63,
+      "recomputed": 63,
+      "matches": true
+    }
+  ],
+  "drifted": [],
+  "calibratedZerosByColumn": {
+    "log10": {
+      "acetaldehyde": 1,
+      "CS2": 209,
+      "DES": 29,
+      "DMS": 1,
+      "ethyl_2.methyl_butyrate": 85,
+      "ethyl_acetate": 0,
+      "ethyl_decanoate": 1,
+      "ethyl_hexanoate": 1,
+      "ethyl_isovalerate": 83,
+      "ethyl_octanoate": 0,
+      "ethyl_propionate": 10,
+      "H2S": 10,
+      "isoamyl_alcohol": 2,
+      "isobutanol": 5,
+      "isobutyl_acetate": 8,
+      "isopentyl_acetate": 1,
+      "MeSH": 0,
+      "octyl_acetate": 110,
+      "phenethyl_acetate": 1,
+      "phenethyl_alcohol": 0,
+      "X4VG": 168,
+      "SO2.mg.L.": 1,
+      "acetic_acid.g.L.": 2,
+      "ammonia.mg.L.": 5,
+      "color.EBC.": 0,
+      "betaglucan.mg.L.": 10,
+      "lactic_acid.mg.L.": 0,
+      "glycerol": 0,
+      "iron": 3,
+      "pH": 0,
+      "protein.g.L.": 0,
+      "bitterness": 2,
+      "GFS": 6,
+      "ethanol..v.v.": 1,
+      "CO2.PSI.": 0,
+      "unfermentables": 0,
+      "kcalperc": 0
+    },
+    "linear": {
+      "X2.3.butanedione": 9,
+      "X3.methylbutanal": 7,
+      "ethyl.isobutyrate": 1,
+      "ethyl.butyrate": 0,
+      "X2.methyltetrahydrofuran.3.one": 0,
+      "methylpyrazine": 12,
+      "furfural": 1,
+      "X3Z.hexenol": 0,
+      "n.hexanol": 0,
+      "styrene": 0,
+      "ethyl.pentanoate": 0,
+      "amyl.acetate": 27,
+      "benzaldehyde": 0,
+      "X5.methylfurfural": 0,
+      "X2.ethyl.3.methylpyrazine": 0,
+      "hexyl.acetate": 0,
+      "benzyl.alcohol": 0,
+      "phenylacetaldehyde": 1,
+      "X.E..beta.ocimene": 0,
+      "linalool": 0,
+      "X.E..2.nonenal": 0,
+      "diethyl.succinate": 0,
+      "X1.alpha.terpineol": 0,
+      "ethyl.nicotinate": 2,
+      "citronellol": 0,
+      "geraniol": 0,
+      "X.E.E..2.4.decadienal": 0,
+      "eugenol": 0,
+      "gamma.nonalactone": 0,
+      "X.E..beta.damascenone": 0,
+      "E.caryophyllene": 0,
+      "alpha.humulene": 0,
+      "Z.nerolidol": 0
+    },
+    "log10Total": 755,
+    "linearTotal": 60
+  },
+  "floorColumns": [
+    "E.cinnamaldehyde",
+    "E.methyl.isoeugenol",
+    "E.nerolidol",
+    "E.ocimenone",
+    "X.E..alpha.ionone",
+    "X.E..beta.farnesene",
+    "X.E..dihydro.apofarnesal",
+    "X.E..ortho.methoxy.cinnamaldehyde",
+    "X.Z..beta.farnesene",
+    "X.Z..dihydro.apofarnesal",
+    "X1.10.di.epi.cubenol",
+    "X1.2.dihydro.8.hydroxy..2E..linalool",
+    "X1.octen.3.ol",
+    "X1.propanol",
+    "X13.epi.manool.oxide",
+    "X14.hydroxy.9.epi..E..caryophyllene",
+    "X14.hydroxy.alpha.humulene",
+    "X2.3.dihydro.farnesol",
+    "X2.6.dimethyl.pyrazine",
+    "X2.acetylfuran",
+    "X2.acetylpyrrole",
+    "X2.butyloctanoate",
+    "X2.ethyl.1.hexanol",
+    "X2.ethylhexylsalicylate",
+    "X2.furanmethanol",
+    "X2.methyl.benzofuran",
+    "X2.methylbutyl.octanoate",
+    "X2.pentyl.furan",
+    "X2.phenyl.ethyl.butyrate",
+    "X2.undecanol",
+    "X2.undecanone",
+    "X2E.6E.methyl.farnesoate",
+    "X2E.6Z.farnesal",
+    "X2Z.6E.farnesal",
+    "X2Z.6E.farnesol",
+    "X2Z.6Z.farnesol",
+    "X3.methylthio.propanol",
+    "X4.8.alpha.epoxy.caryophyllane",
+    "X4.ethyl.guaiacol",
+    "X4.ethyl.phenol",
+    "X4.methoxysalicylaldehyde",
+    "X4.methyl.1.pentanol",
+    "X6.methyl.5.hepten.2.one",
+    "X9.epi..E..caryophyllene",
+    "Z.Z.geranyl.linalool",
+    "alloaromadendrene.epoxide",
+    "alpha.calacorene",
+    "alpha.eudesmol",
+    "alpha.muurolol",
+    "alpha.phellandrene",
+    "alpha.terpinyl.isobutanoate",
+    "ambroxide",
+    "benzyl.benzoate",
+    "beta.cyclohomocitral",
+    "beta.humulene",
+    "beta.phellandrene",
+    "butyl.acetate",
+    "butylated.hydroxytoluene",
+    "cadalene",
+    "camphor",
+    "car.3.en.2.one",
+    "caryophylla.4.12..8.13..dien.5.alpha.ol",
+    "caryophyllene.acetate",
+    "caryophyllene.alcohol",
+    "caryophyllene.oxide",
+    "cis.beta.terpineol",
+    "cis.dihydro.beta.terpineol",
+    "cis.linalool.oxide",
+    "cumin.aldehyde",
+    "dehydroxy.cis.linalool.oxide",
+    "delta.terpinyl.acetate",
+    "dihydroisocaryophyllene.epoxide",
+    "dimethoxy..E..citral",
+    "dodecanal",
+    "ethyl..9..decenoate",
+    "ethyl..E..cinnamate",
+    "ethyl..E..linalool",
+    "ethyl.5.methylhexanoate",
+    "ethyl.furoate",
+    "ethyl.hex..2E..enoate",
+    "ethyl.hexadecanoate",
+    "ethyl.hydrocinnamate",
+    "ethyl.lactate",
+    "ethyl.octadecanoate",
+    "ethyl.pentadecanoate",
+    "ethyl.phenylacetate",
+    "ethyl.tetradecanoate",
+    "ethyl.tiglate",
+    "eucalyptol",
+    "foeniculin",
+    "gamma.eudesmol",
+    "geosmin",
+    "germacrene.D",
+    "heptyl.acetate",
+    "humulene.epoxide.II",
+    "hydroxy.methyl.furfural",
+    "isoamyl.lactate",
+    "isobutyl.hexanoate",
+    "isomaltol",
+    "isopentyl.butanoate",
+    "isopentyl.hexanoate",
+    "isopropyl.hexadecanoate",
+    "isopropyl.laurate",
+    "isopropyl.tetradecanoate",
+    "limonene",
+    "linalool.isovalerate",
+    "manool",
+    "manool.oxide",
+    "meta.cymenene",
+    "methyl.geranate",
+    "methyl.hexadecanoate",
+    "methyl.para.anisate",
+    "n.decanol",
+    "n.dodecanol",
+    "n.nonanal",
+    "n.nonanol",
+    "n.tetradecanol",
+    "neo.allo.ocimene",
+    "nerol",
+    "nerol.oxide",
+    "neryl.formate",
+    "neryl.isobutanoate",
+    "neryl.isovalerate",
+    "neryl.propanoate",
+    "ortho.cresol",
+    "pentyl.octanoate",
+    "perillyl.acetate",
+    "prenyl.isobutyrate",
+    "propyl.acetate",
+    "propylene.glycol",
+    "selin.11.en.4.alpha.ol",
+    "spathulenol",
+    "tau.cadinol",
+    "tau.muurolol",
+    "terpinen.4.ol",
+    "terpinen.4.ol.acetate",
+    "trans.dihydro.beta.terpineol",
+    "valencene",
+    "vanillin",
+    "vinyl.caprylate",
+    "x.methyl.1.octanol",
+    "y.methyl.1.octanol"
+  ],
+  "floorColumnsCount": 142,
+  "floorCellsByColumn": {
+    "E.cinnamaldehyde": 45,
+    "E.methyl.isoeugenol": 96,
+    "E.nerolidol": 8,
+    "E.ocimenone": 2,
+    "X.E..alpha.ionone": 6,
+    "X.E..beta.farnesene": 78,
+    "X.E..dihydro.apofarnesal": 100,
+    "X.E..ortho.methoxy.cinnamaldehyde": 69,
+    "X.Z..beta.farnesene": 16,
+    "X.Z..dihydro.apofarnesal": 60,
+    "X1.10.di.epi.cubenol": 11,
+    "X1.2.dihydro.8.hydroxy..2E..linalool": 72,
+    "X1.octen.3.ol": 4,
+    "X1.propanol": 7,
+    "X13.epi.manool.oxide": 39,
+    "X14.hydroxy.9.epi..E..caryophyllene": 26,
+    "X14.hydroxy.alpha.humulene": 79,
+    "X2.3.dihydro.farnesol": 13,
+    "X2.6.dimethyl.pyrazine": 94,
+    "X2.acetylfuran": 3,
+    "X2.acetylpyrrole": 3,
+    "X2.butyloctanoate": 35,
+    "X2.ethyl.1.hexanol": 71,
+    "X2.ethylhexylsalicylate": 79,
+    "X2.furanmethanol": 3,
+    "X2.methyl.benzofuran": 25,
+    "X2.methylbutyl.octanoate": 14,
+    "X2.pentyl.furan": 47,
+    "X2.phenyl.ethyl.butyrate": 7,
+    "X2.undecanol": 21,
+    "X2.undecanone": 60,
+    "X2E.6E.methyl.farnesoate": 79,
+    "X2E.6Z.farnesal": 81,
+    "X2Z.6E.farnesal": 98,
+    "X2Z.6E.farnesol": 36,
+    "X2Z.6Z.farnesol": 88,
+    "X3.methylthio.propanol": 26,
+    "X4.8.alpha.epoxy.caryophyllane": 68,
+    "X4.ethyl.guaiacol": 3,
+    "X4.ethyl.phenol": 10,
+    "X4.methoxysalicylaldehyde": 11,
+    "X4.methyl.1.pentanol": 4,
+    "X6.methyl.5.hepten.2.one": 212,
+    "X9.epi..E..caryophyllene": 10,
+    "Z.Z.geranyl.linalool": 30,
+    "alloaromadendrene.epoxide": 18,
+    "alpha.calacorene": 2,
+    "alpha.eudesmol": 86,
+    "alpha.muurolol": 43,
+    "alpha.phellandrene": 138,
+    "alpha.terpinyl.isobutanoate": 8,
+    "ambroxide": 16,
+    "benzyl.benzoate": 14,
+    "beta.cyclohomocitral": 5,
+    "beta.humulene": 178,
+    "beta.phellandrene": 108,
+    "butyl.acetate": 18,
+    "butylated.hydroxytoluene": 91,
+    "cadalene": 6,
+    "camphor": 44,
+    "car.3.en.2.one": 9,
+    "caryophylla.4.12..8.13..dien.5.alpha.ol": 62,
+    "caryophyllene.acetate": 110,
+    "caryophyllene.alcohol": 4,
+    "caryophyllene.oxide": 52,
+    "cis.beta.terpineol": 160,
+    "cis.dihydro.beta.terpineol": 203,
+    "cis.linalool.oxide": 120,
+    "cumin.aldehyde": 5,
+    "dehydroxy.cis.linalool.oxide": 106,
+    "delta.terpinyl.acetate": 6,
+    "dihydroisocaryophyllene.epoxide": 6,
+    "dimethoxy..E..citral": 65,
+    "dodecanal": 17,
+    "ethyl..9..decenoate": 5,
+    "ethyl..E..cinnamate": 6,
+    "ethyl..E..linalool": 1,
+    "ethyl.5.methylhexanoate": 2,
+    "ethyl.furoate": 52,
+    "ethyl.hex..2E..enoate": 57,
+    "ethyl.hexadecanoate": 54,
+    "ethyl.hydrocinnamate": 3,
+    "ethyl.lactate": 195,
+    "ethyl.octadecanoate": 22,
+    "ethyl.pentadecanoate": 38,
+    "ethyl.phenylacetate": 1,
+    "ethyl.tetradecanoate": 15,
+    "ethyl.tiglate": 13,
+    "eucalyptol": 141,
+    "foeniculin": 152,
+    "gamma.eudesmol": 128,
+    "geosmin": 137,
+    "germacrene.D": 20,
+    "heptyl.acetate": 52,
+    "humulene.epoxide.II": 18,
+    "hydroxy.methyl.furfural": 1,
+    "isoamyl.lactate": 19,
+    "isobutyl.hexanoate": 6,
+    "isomaltol": 29,
+    "isopentyl.butanoate": 72,
+    "isopentyl.hexanoate": 31,
+    "isopropyl.hexadecanoate": 142,
+    "isopropyl.laurate": 2,
+    "isopropyl.tetradecanoate": 26,
+    "limonene": 212,
+    "linalool.isovalerate": 35,
+    "manool": 11,
+    "manool.oxide": 6,
+    "meta.cymenene": 194,
+    "methyl.geranate": 9,
+    "methyl.hexadecanoate": 24,
+    "methyl.para.anisate": 22,
+    "n.decanol": 6,
+    "n.dodecanol": 7,
+    "n.nonanal": 100,
+    "n.nonanol": 7,
+    "n.tetradecanol": 37,
+    "neo.allo.ocimene": 63,
+    "nerol": 6,
+    "nerol.oxide": 11,
+    "neryl.formate": 49,
+    "neryl.isobutanoate": 20,
+    "neryl.isovalerate": 17,
+    "neryl.propanoate": 6,
+    "ortho.cresol": 2,
+    "pentyl.octanoate": 25,
+    "perillyl.acetate": 1,
+    "prenyl.isobutyrate": 3,
+    "propyl.acetate": 16,
+    "propylene.glycol": 72,
+    "selin.11.en.4.alpha.ol": 123,
+    "spathulenol": 75,
+    "tau.cadinol": 21,
+    "tau.muurolol": 54,
+    "terpinen.4.ol": 4,
+    "terpinen.4.ol.acetate": 25,
+    "trans.dihydro.beta.terpineol": 84,
+    "valencene": 170,
+    "vanillin": 22,
+    "vinyl.caprylate": 6,
+    "x.methyl.1.octanol": 21,
+    "y.methyl.1.octanol": 152
+  },
+  "unverifiedMinima": {
+    "X1.propanol": -1.81781854,
+    "propylene.glycol": -1.81781854,
+    "propyl.acetate": -1.81781854,
+    "n.pentanol": 5.699394702,
+    "X2.methyl.1.butanol": 5.791555388,
+    "isopentyl.formate": 5.248896163,
+    "X3.methyl.2.butenal": 4.813145217,
+    "butyl.acetate": -1.81781854,
+    "ethyl.lactate": -1.81781854,
+    "X2.furanmethanol": -1.81781854,
+    "X3.methyl.2.hexanol": 7.022096616,
+    "X3.furanmethanol": 6.010021132,
+    "X2.acetylfuran": -1.81781854,
+    "X2.6.dimethyl.pyrazine": -1.81781854,
+    "ethyl.tiglate": -1.81781854,
+    "n.heptanol": 4.838275282,
+    "X1.octen.3.ol": -1.81781854,
+    "X3.methylthio.propanol": -1.81781854,
+    "isomaltol": -1.81781854,
+    "X6.methyl.5.hepten.2.one": -1.81781854,
+    "X2.pentyl.furan": -1.81781854,
+    "ethyl.hex..3E..enoate": 4.454240386,
+    "alpha.phellandrene": -1.81781854,
+    "dehydroxy.cis.linalool.oxide": -1.81781854,
+    "isopentyl.butanoate": -1.81781854,
+    "X2.ethyl.1.hexanol": -1.81781854,
+    "beta.phellandrene": -1.81781854,
+    "limonene": -1.81781854,
+    "eucalyptol": -1.81781854,
+    "ethyl.hex..2E..enoate": -1.81781854,
+    "prenyl.isobutyrate": -1.81781854,
+    "ethyl.furoate": -1.81781854,
+    "ortho.cresol": -1.81781854,
+    "ethyl.5.methylhexanoate": -1.81781854,
+    "X2.acetylpyrrole": -1.81781854,
+    "isoamyl.lactate": -1.81781854,
+    "n.octanol": 4.757804822,
+    "cis.linalool.oxide": -1.81781854,
+    "meta.cymenene": -1.81781854,
+    "terpinolene": 4.017764507,
+    "nonan.2.ol": 4.51232489,
+    "n.nonanal": -1.81781854,
+    "X2.methyl.benzofuran": -1.81781854,
+    "heptyl.acetate": -1.81781854,
+    "X4.methyl.1.pentanol": -1.81781854,
+    "neo.allo.ocimene": -1.81781854,
+    "x.methyl.1.octanol": -1.81781854,
+    "trans.dihydro.beta.terpineol": -1.81781854,
+    "cis.beta.terpineol": -1.81781854,
+    "y.methyl.1.octanol": -1.81781854,
+    "camphor": -1.81781854,
+    "isobutyl.hexanoate": -1.81781854,
+    "nerol.oxide": -1.81781854,
+    "cis.dihydro.beta.terpineol": -1.81781854,
+    "X4.ethyl.phenol": -1.81781854,
+    "isoborneol": 4.297495721,
+    "ethyl.benzoate": 3.698708271,
+    "n.nonanol": -1.81781854,
+    "terpinen.4.ol": -1.81781854,
+    "vinyl.caprylate": -1.81781854,
+    "ethyl..E..linalool": -1.81781854,
+    "nerol": -1.81781854,
+    "hydroxy.methyl.furfural": -1.81781854,
+    "E.ocimenone": -1.81781854,
+    "cumin.aldehyde": -1.81781854,
+    "ethyl.phenylacetate": -1.81781854,
+    "isopentyl.hexanoate": -1.81781854,
+    "beta.cyclohomocitral": -1.81781854,
+    "E.cinnamaldehyde": -1.81781854,
+    "n.decanol": -1.81781854,
+    "neryl.formate": -1.81781854,
+    "X4.ethyl.guaiacol": -1.81781854,
+    "X2.undecanone": -1.81781854,
+    "trans.dihydro.alpha.terpinyl.acetate": 3.383275314,
+    "terpinen.4.ol.acetate": -1.81781854,
+    "X2.undecanol": -1.81781854,
+    "delta.terpinyl.acetate": -1.81781854,
+    "methyl.geranate": -1.81781854,
+    "car.3.en.2.one": -1.81781854,
+    "dimethoxy..E..citral": -1.81781854,
+    "X2.butyloctanoate": -1.81781854,
+    "X4.methoxysalicylaldehyde": -1.81781854,
+    "ethyl.hydrocinnamate": -1.81781854,
+    "methyl.para.anisate": -1.81781854,
+    "ethyl..9..decenoate": -1.81781854,
+    "vanillin": -1.81781854,
+    "geosmin": -1.81781854,
+    "dodecanal": -1.81781854,
+    "X4.8.alpha.epoxy.caryophyllane": -1.81781854,
+    "X.E..alpha.ionone": -1.81781854,
+    "perillyl.acetate": -1.81781854,
+    "beta.humulene": -1.81781854,
+    "X2.phenyl.ethyl.butyrate": -1.81781854,
+    "X.Z..beta.farnesene": -1.81781854,
+    "pentyl.octanoate": -1.81781854,
+    "X.E..beta.farnesene": -1.81781854,
+    "X2.methylbutyl.octanoate": -1.81781854,
+    "neryl.propanoate": -1.81781854,
+    "X9.epi..E..caryophyllene": -1.81781854,
+    "ethyl..E..cinnamate": -1.81781854,
+    "linalool.isovalerate": -1.81781854,
+    "alpha.terpinyl.isobutanoate": -1.81781854,
+    "n.dodecanol": -1.81781854,
+    "germacrene.D": -1.81781854,
+    "X.E..beta.ionone": 3.936969793,
+    "valencene": -1.81781854,
+    "neryl.isobutanoate": -1.81781854,
+    "E.methyl.isoeugenol": -1.81781854,
+    "X.Z..dihydro.apofarnesal": -1.81781854,
+    "butylated.hydroxytoluene": -1.81781854,
+    "X.E..dihydro.apofarnesal": -1.81781854,
+    "X.E..ortho.methoxy.cinnamaldehyde": -1.81781854,
+    "alpha.calacorene": -1.81781854,
+    "E.nerolidol": -1.81781854,
+    "dihydroisocaryophyllene.epoxide": -1.81781854,
+    "caryophyllene.alcohol": -1.81781854,
+    "neryl.isovalerate": -1.81781854,
+    "spathulenol": -1.81781854,
+    "caryophyllene.oxide": -1.81781854,
+    "humulene.epoxide.II": -1.81781854,
+    "alloaromadendrene.epoxide": -1.81781854,
+    "X1.10.di.epi.cubenol": -1.81781854,
+    "isopropyl.laurate": -1.81781854,
+    "caryophylla.4.12..8.13..dien.5.alpha.ol": -1.81781854,
+    "gamma.eudesmol": -1.81781854,
+    "alpha.muurolol": -1.81781854,
+    "X1.2.dihydro.8.hydroxy..2E..linalool": -1.81781854,
+    "tau.cadinol": -1.81781854,
+    "selin.11.en.4.alpha.ol": -1.81781854,
+    "alpha.eudesmol": -1.81781854,
+    "X14.hydroxy.9.epi..E..caryophyllene": -1.81781854,
+    "tau.muurolol": -1.81781854,
+    "n.tetradecanol": -1.81781854,
+    "foeniculin": -1.81781854,
+    "cadalene": -1.81781854,
+    "X2.3.dihydro.farnesol": -1.81781854,
+    "X2E.6Z.farnesal": -1.81781854,
+    "caryophyllene.acetate": -1.81781854,
+    "X14.hydroxy.alpha.humulene": -1.81781854,
+    "X2Z.6E.farnesal": -1.81781854,
+    "X2Z.6Z.farnesol": -1.81781854,
+    "X2Z.6E.farnesol": -1.81781854,
+    "ambroxide": -1.81781854,
+    "benzyl.benzoate": -1.81781854,
+    "X2E.6E.methyl.farnesoate": -1.81781854,
+    "ethyl.tetradecanoate": -1.81781854,
+    "X2.ethylhexylsalicylate": -1.81781854,
+    "isopropyl.tetradecanoate": -1.81781854,
+    "ethyl.pentadecanoate": -1.81781854,
+    "methyl.hexadecanoate": -1.81781854,
+    "Z.Z.geranyl.linalool": -1.81781854,
+    "ethyl.hexadecanoate": -1.81781854,
+    "manool.oxide": -1.81781854,
+    "X13.epi.manool.oxide": -1.81781854,
+    "isopropyl.hexadecanoate": -1.81781854,
+    "manool": -1.81781854,
+    "ethyl.octadecanoate": -1.81781854,
+    "esters_sum": -0.532634033,
+    "aroma_hops_sum": 0.672328375,
+    "acids_sum": -1.204001089,
+    "sulfur_sum": -0.153867111
+  },
+  "missing": {
+    "X2.3.butanedione": 9,
+    "X3.methylbutanal": 7,
+    "ethyl.isobutyrate": 1,
+    "methylpyrazine": 12,
+    "furfural": 1,
+    "amyl.acetate": 27,
+    "phenylacetaldehyde": 1,
+    "ethyl.nicotinate": 2,
+    "aroma_hops_sum": 13
+  },
+  "zeroCodeVerification": {
+    "acetaldehyde": {
+      "zeroCells": 1,
+      "floorCodeLog10": -1.9028294884445534,
+      "medianAbsDiffAtZero": 4.4455328307435593e-10
+    },
+    "CS2": {
+      "zeroCells": 209,
+      "floorCodeLog10": -2.1462916517629305,
+      "medianAbsDiffAtZero": 2.370694751618885e-10
+    },
+    "DES": {
+      "zeroCells": 29,
+      "floorCodeLog10": -1.9052669062462182,
+      "medianAbsDiffAtZero": 2.462181569740096e-10
+    },
+    "DMS": {
+      "zeroCells": 1,
+      "floorCodeLog10": 0.04621119978938551,
+      "medianAbsDiffAtZero": 2.1061449112513841e-10
+    },
+    "ethyl_2.methyl_butyrate": {
+      "zeroCells": 85,
+      "floorCodeLog10": -3.195519810894007,
+      "medianAbsDiffAtZero": 1.059929921609637e-10
+    },
+    "ethyl_acetate": {
+      "zeroCells": 0,
+      "floorCodeLog10": -0.9003797776674579,
+      "medianAbsDiffAtZero": null
+    },
+    "ethyl_decanoate": {
+      "zeroCells": 1,
+      "floorCodeLog10": -2.9757196239529202,
+      "medianAbsDiffAtZero": 4.707967349304454e-11
+    },
+    "ethyl_hexanoate": {
+      "zeroCells": 1,
+      "floorCodeLog10": -2.476904161747432,
+      "medianAbsDiffAtZero": 2.525677444964458e-10
+    },
+    "ethyl_isovalerate": {
+      "zeroCells": 83,
+      "floorCodeLog10": -4.487004488651758,
+      "medianAbsDiffAtZero": 3.482423238665433e-10
+    },
+    "ethyl_octanoate": {
+      "zeroCells": 0,
+      "floorCodeLog10": -2.305833704066802,
+      "medianAbsDiffAtZero": null
+    },
+    "ethyl_propionate": {
+      "zeroCells": 10,
+      "floorCodeLog10": -2.442793660234468,
+      "medianAbsDiffAtZero": 2.344680005705868e-10
+    },
+    "H2S": {
+      "zeroCells": 10,
+      "floorCodeLog10": -1.586071885943832,
+      "medianAbsDiffAtZero": 5.616795917262607e-11
+    },
+    "isoamyl_alcohol": {
+      "zeroCells": 2,
+      "floorCodeLog10": -0.7308374345682553,
+      "medianAbsDiffAtZero": 4.317446400392555e-10
+    },
+    "isobutanol": {
+      "zeroCells": 5,
+      "floorCodeLog10": -1.3211175853292643,
+      "medianAbsDiffAtZero": 3.292641714836009e-10
+    },
+    "isobutyl_acetate": {
+      "zeroCells": 8,
+      "floorCodeLog10": -3.265600257479433,
+      "medianAbsDiffAtZero": 4.794329377943995e-10
+    },
+    "isopentyl_acetate": {
+      "zeroCells": 1,
+      "floorCodeLog10": -1.1894986522334703,
+      "medianAbsDiffAtZero": 2.3347035416065864e-10
+    },
+    "MeSH": {
+      "zeroCells": 0,
+      "floorCodeLog10": -2.0851281824599495,
+      "medianAbsDiffAtZero": null
+    },
+    "octyl_acetate": {
+      "zeroCells": 110,
+      "floorCodeLog10": -3.4550023202996023,
+      "medianAbsDiffAtZero": 2.9960212089008564e-10
+    },
+    "phenethyl_acetate": {
+      "zeroCells": 1,
+      "floorCodeLog10": -2.2216678312709353,
+      "medianAbsDiffAtZero": 2.709352742158444e-10
+    },
+    "phenethyl_alcohol": {
+      "zeroCells": 0,
+      "floorCodeLog10": -0.3427050640199281,
+      "medianAbsDiffAtZero": null
+    },
+    "X4VG": {
+      "zeroCells": 168,
+      "floorCodeLog10": -2.013157380779982,
+      "medianAbsDiffAtZero": 2.2001822586048547e-10
+    },
+    "SO2.mg.L.": {
+      "zeroCells": 1,
+      "floorCodeLog10": -1.0,
+      "medianAbsDiffAtZero": 0.0
+    },
+    "acetic_acid.g.L.": {
+      "zeroCells": 2,
+      "floorCodeLog10": -1.7569619513137056,
+      "medianAbsDiffAtZero": 3.1370550601650393e-10
+    },
+    "ammonia.mg.L.": {
+      "zeroCells": 5,
+      "floorCodeLog10": -0.8538719643217619,
+      "medianAbsDiffAtZero": 3.2176195041699884e-10
+    },
+    "color.EBC.": {
+      "zeroCells": 0,
+      "floorCodeLog10": 0.3521825181113625,
+      "medianAbsDiffAtZero": null
+    },
+    "betaglucan.mg.L.": {
+      "zeroCells": 10,
+      "floorCodeLog10": 0.09691001300805642,
+      "medianAbsDiffAtZero": 8.056416644919295e-12
+    },
+    "lactic_acid.mg.L.": {
+      "zeroCells": 0,
+      "floorCodeLog10": 1.0107238653917732,
+      "medianAbsDiffAtZero": null
+    },
+    "glycerol": {
+      "zeroCells": 0,
+      "floorCodeLog10": -1.0969100130080565,
+      "medianAbsDiffAtZero": null
+    },
+    "iron": {
+      "zeroCells": 3,
+      "floorCodeLog10": -2.6989700043360187,
+      "medianAbsDiffAtZero": 3.3601876836542033e-10
+    },
+    "pH": {
+      "zeroCells": 0,
+      "floorCodeLog10": 0.26951294421791633,
+      "medianAbsDiffAtZero": null
+    },
+    "protein.g.L.": {
+      "zeroCells": 0,
+      "floorCodeLog10": -1.0,
+      "medianAbsDiffAtZero": null
+    },
+    "bitterness": {
+      "zeroCells": 2,
+      "floorCodeLog10": -1.1441780945939701,
+      "medianAbsDiffAtZero": 4.0602987638749255e-10
+    },
+    "GFS": {
+      "zeroCells": 6,
+      "floorCodeLog10": -2.6020599913279625,
+      "medianAbsDiffAtZero": 3.2796254600953034e-10
+    },
+    "ethanol..v.v.": {
+      "zeroCells": 1,
+      "floorCodeLog10": -1.4559319556497243,
+      "medianAbsDiffAtZero": 3.502755863138418e-10
+    },
+    "CO2.PSI.": {
+      "zeroCells": 0,
+      "floorCodeLog10": -0.2309921290562261,
+      "medianAbsDiffAtZero": null
+    },
+    "unfermentables": {
+      "zeroCells": 0,
+      "floorCodeLog10": 0.07096091580093378,
+      "medianAbsDiffAtZero": null
+    },
+    "kcalperc": {
+      "zeroCells": 0,
+      "floorCodeLog10": 0.6542563664135594,
+      "medianAbsDiffAtZero": null
+    }
+  },
+  "calibratedNegativeCells": {
+    "count": 3,
+    "cells": [
+      {
+        "beer": 134,
+        "field": "betaglucan.mg.L.",
+        "calibrated": -2.0
+      },
+      {
+        "beer": 18,
+        "field": "betaglucan.mg.L.",
+        "calibrated": -2.0
+      },
+      {
+        "beer": 116,
+        "field": "unfermentables",
+        "calibrated": -16.755
+      }
+    ]
+  },
+  "perColumn": {
+    "acetaldehyde": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.902829488,
+      "storedMax": 1.268627576,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "CS2": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.146291652,
+      "storedMax": -0.008552402,
+      "calibratedZeros": 209,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "DES": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.905266906,
+      "storedMax": 0.671646697,
+      "calibratedZeros": 29,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "DMS": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": 0.0462112,
+      "storedMax": 2.716380377,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl_2.methyl_butyrate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -3.195519811,
+      "storedMax": -0.539583303,
+      "calibratedZeros": 85,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl_acetate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -0.599349782,
+      "storedMax": 2.116964264,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl_decanoate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.975719624,
+      "storedMax": -0.186983093,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl_hexanoate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.476904162,
+      "storedMax": -0.078258916,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl_isovalerate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -4.487004489,
+      "storedMax": -0.85884822,
+      "calibratedZeros": 83,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl_octanoate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.004803708,
+      "storedMax": 0.301065823,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl_propionate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.44279366,
+      "storedMax": -0.087870979,
+      "calibratedZeros": 10,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "H2S": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.586071886,
+      "storedMax": 1.694089969,
+      "calibratedZeros": 10,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "isoamyl_alcohol": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -0.730837435,
+      "storedMax": 2.009009514,
+      "calibratedZeros": 2,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "isobutanol": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.321117585,
+      "storedMax": 1.523693932,
+      "calibratedZeros": 5,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "isobutyl_acetate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -3.265600257,
+      "storedMax": -0.327583468,
+      "calibratedZeros": 8,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "isopentyl_acetate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.189498652,
+      "storedMax": 1.116660035,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "MeSH": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.784098187,
+      "storedMax": 0.540736044,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "octyl_acetate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -3.45500232,
+      "storedMax": -1.44267329,
+      "calibratedZeros": 110,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "phenethyl_acetate": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.221667831,
+      "storedMax": 0.10738467,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "phenethyl_alcohol": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -0.041675068,
+      "storedMax": 1.889005553,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X4VG": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.013157381,
+      "storedMax": -0.164417223,
+      "calibratedZeros": 168,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "SO2.mg.L.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.0,
+      "storedMax": 1.07371835,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "acetic_acid.g.L.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.756961951,
+      "storedMax": 0.5132176,
+      "calibratedZeros": 2,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ammonia.mg.L.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -0.853871964,
+      "storedMax": 2.303260873,
+      "calibratedZeros": 5,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "color.EBC.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": 0.653212514,
+      "storedMax": 2.476179262,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "betaglucan.mg.L.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": 0.096910013,
+      "storedMax": 2.603144373,
+      "calibratedZeros": 10,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "lactic_acid.mg.L.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": 1.311753861,
+      "storedMax": 3.856577858,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "glycerol": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -0.795880017,
+      "storedMax": 0.77633791,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "iron": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.698970004,
+      "storedMax": 0.701999475,
+      "calibratedZeros": 3,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "pH": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": 0.57054294,
+      "storedMax": 0.674401813,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "protein.g.L.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -0.698970004,
+      "storedMax": 1.546542663,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "bitterness": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.144178095,
+      "storedMax": 1.794142844,
+      "calibratedZeros": 2,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "GFS": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -2.602059991,
+      "storedMax": 1.914263803,
+      "calibratedZeros": 6,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethanol..v.v.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -1.455931956,
+      "storedMax": 1.06595298,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "CO2.PSI.": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": -0.230992129,
+      "storedMax": 0.707570176,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "unfermentables": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": 0.070960916,
+      "storedMax": 1.896085085,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "kcalperc": {
+      "tier": "log10",
+      "missing": 0,
+      "storedMin": 0.955286362,
+      "storedMax": 1.978453886,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X1.propanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.441162091,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 7
+    },
+    "X2.3.butanedione": {
+      "tier": "linear",
+      "missing": 9,
+      "storedMin": 5.9e-08,
+      "storedMax": 121.7310182,
+      "calibratedZeros": 9,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X3.methylbutanal": {
+      "tier": "linear",
+      "missing": 7,
+      "storedMin": 5.5e-09,
+      "storedMax": 127.059107,
+      "calibratedZeros": 7,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "propylene.glycol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.479163406,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 72
+    },
+    "propyl.acetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.382127173,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 16
+    },
+    "n.pentanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 5.699394702,
+      "storedMax": 8.668641086,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X2.methyl.1.butanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 5.791555388,
+      "storedMax": 9.049596762,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "isopentyl.formate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 5.248896163,
+      "storedMax": 9.02388642,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl.isobutyrate": {
+      "tier": "linear",
+      "missing": 1,
+      "storedMin": 5e-10,
+      "storedMax": 0.885719554,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X3.methyl.2.butenal": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 4.813145217,
+      "storedMax": 7.353395541,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X2.methyltetrahydrofuran.3.one": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000297441,
+      "storedMax": 12596.43287,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl.butyrate": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000205621,
+      "storedMax": 1.883683746,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "butyl.acetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.0949975,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 18
+    },
+    "methylpyrazine": {
+      "tier": "linear",
+      "missing": 12,
+      "storedMin": 2.4e-08,
+      "storedMax": 0.896099334,
+      "calibratedZeros": 12,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "furfural": {
+      "tier": "linear",
+      "missing": 1,
+      "storedMin": 6.45e-08,
+      "storedMax": 1.818860513,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl.lactate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.76057924,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 195
+    },
+    "X3Z.hexenol": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.001319407,
+      "storedMax": 3.423350433,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "n.hexanol": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.005802034,
+      "storedMax": 7.804921899,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "styrene": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000239015,
+      "storedMax": 2.931368836,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X2.furanmethanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 9.62304446,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 3
+    },
+    "X3.methyl.2.hexanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 7.022096616,
+      "storedMax": 8.719027268,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X3.furanmethanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 6.010021132,
+      "storedMax": 8.02024773,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X2.acetylfuran": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.727171188,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 3
+    },
+    "X2.6.dimethyl.pyrazine": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.506732776,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 94
+    },
+    "amyl.acetate": {
+      "tier": "linear",
+      "missing": 27,
+      "storedMin": 1e-09,
+      "storedMax": 0.074072754,
+      "calibratedZeros": 27,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl.tiglate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.243452006,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 13
+    },
+    "benzaldehyde": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000286933,
+      "storedMax": 0.487929493,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X5.methylfurfural": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 1.1e-05,
+      "storedMax": 0.039860957,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "n.heptanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 4.838275282,
+      "storedMax": 7.248115259,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X1.octen.3.ol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.901417298,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 4
+    },
+    "X3.methylthio.propanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.052450059,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 26
+    },
+    "isomaltol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.77098142,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 29
+    },
+    "X6.methyl.5.hepten.2.one": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.196559379,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 212
+    },
+    "X2.pentyl.furan": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.961376371,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 47
+    },
+    "ethyl.hex..3E..enoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 4.454240386,
+      "storedMax": 7.233225226,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "alpha.phellandrene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.879015322,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 138
+    },
+    "dehydroxy.cis.linalool.oxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.644817969,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 106
+    },
+    "hexyl.acetate": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000169398,
+      "storedMax": 10.80822273,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "isopentyl.butanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.207394693,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 72
+    },
+    "X2.ethyl.1.hexanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.033751614,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 71
+    },
+    "beta.phellandrene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.69656588,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 108
+    },
+    "limonene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.321958479,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 212
+    },
+    "eucalyptol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.235643581,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 141
+    },
+    "benzyl.alcohol": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 2.85e-08,
+      "storedMax": 0.335620269,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl.hex..2E..enoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.754247813,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 57
+    },
+    "phenylacetaldehyde": {
+      "tier": "linear",
+      "missing": 1,
+      "storedMin": 2.43e-07,
+      "storedMax": 0.36299261,
+      "calibratedZeros": 1,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X.E..beta.ocimene": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000206056,
+      "storedMax": 1.518681466,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "prenyl.isobutyrate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.231632304,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 3
+    },
+    "ethyl.furoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.499622228,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 52
+    },
+    "ortho.cresol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.095126241,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 2
+    },
+    "ethyl.5.methylhexanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.828449689,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 2
+    },
+    "X2.acetylpyrrole": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.042944332,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 3
+    },
+    "isoamyl.lactate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.413283913,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 19
+    },
+    "n.octanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 4.757804822,
+      "storedMax": 7.798774544,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "cis.linalool.oxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.756957047,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 120
+    },
+    "meta.cymenene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.194849661,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 194
+    },
+    "terpinolene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 4.017764507,
+      "storedMax": 8.756310825,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "linalool": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.013179154,
+      "storedMax": 32.48474769,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "nonan.2.ol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 4.51232489,
+      "storedMax": 7.389021494,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "n.nonanal": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.257586624,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 100
+    },
+    "X2.methyl.benzofuran": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.464135669,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 25
+    },
+    "heptyl.acetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.869827866,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 52
+    },
+    "X4.methyl.1.pentanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.885881615,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 4
+    },
+    "neo.allo.ocimene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.086688944,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 63
+    },
+    "x.methyl.1.octanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.1776631,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 21
+    },
+    "trans.dihydro.beta.terpineol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.800840571,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 84
+    },
+    "cis.beta.terpineol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.308991501,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 160
+    },
+    "y.methyl.1.octanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.292889237,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 152
+    },
+    "camphor": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.062584988,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 44
+    },
+    "isobutyl.hexanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.124007833,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "nerol.oxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.365693032,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 11
+    },
+    "X.E..2.nonenal": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 6.14e-05,
+      "storedMax": 14.9100917,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "cis.dihydro.beta.terpineol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.942235074,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 203
+    },
+    "X4.ethyl.phenol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.301198549,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 10
+    },
+    "isoborneol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 4.297495721,
+      "storedMax": 7.139664237,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl.benzoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 3.698708271,
+      "storedMax": 8.422288664,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "n.nonanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.194401184,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 7
+    },
+    "terpinen.4.ol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.69077521,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 4
+    },
+    "diethyl.succinate": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.001359126,
+      "storedMax": 1.279587673,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "vinyl.caprylate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.129236688,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "X1.alpha.terpineol": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.019008189,
+      "storedMax": 10.78934238,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl..E..linalool": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.988744854,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 1
+    },
+    "ethyl.nicotinate": {
+      "tier": "linear",
+      "missing": 2,
+      "storedMin": 2.4e-07,
+      "storedMax": 0.305614725,
+      "calibratedZeros": 2,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "citronellol": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.006587682,
+      "storedMax": 11.74178698,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "nerol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.301212808,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "hydroxy.methyl.furfural": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.734525607,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 1
+    },
+    "E.ocimenone": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.158246118,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 2
+    },
+    "cumin.aldehyde": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.964922169,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 5
+    },
+    "ethyl.phenylacetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.603322468,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 1
+    },
+    "isopentyl.hexanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.901244614,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 31
+    },
+    "geraniol": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 6.3e-06,
+      "storedMax": 2.225405554,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "beta.cyclohomocitral": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.293785229,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 5
+    },
+    "E.cinnamaldehyde": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.458884056,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 45
+    },
+    "n.decanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.054363595,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "neryl.formate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.478981811,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 49
+    },
+    "X4.ethyl.guaiacol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 9.105451598,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 3
+    },
+    "X2.undecanone": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.989762528,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 60
+    },
+    "trans.dihydro.alpha.terpinyl.acetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 3.383275314,
+      "storedMax": 7.115462826,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "terpinen.4.ol.acetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.329537716,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 25
+    },
+    "X2.undecanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.192732656,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 21
+    },
+    "delta.terpinyl.acetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.170804613,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "X.E.E..2.4.decadienal": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 4e-08,
+      "storedMax": 0.164755801,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "methyl.geranate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.472583795,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 9
+    },
+    "car.3.en.2.one": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.874246817,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 9
+    },
+    "dimethoxy..E..citral": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.051629393,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 65
+    },
+    "X2.butyloctanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.371862183,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 35
+    },
+    "X4.methoxysalicylaldehyde": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.386392879,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 11
+    },
+    "ethyl.hydrocinnamate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.41694431,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 3
+    },
+    "eugenol": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 3.86e-05,
+      "storedMax": 3.567575906,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "gamma.nonalactone": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000229679,
+      "storedMax": 7256.135876,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "methyl.para.anisate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.627316931,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 22
+    },
+    "X.E..beta.damascenone": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.004363221,
+      "storedMax": 5991.012523,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "ethyl..9..decenoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.744308855,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 5
+    },
+    "vanillin": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.9043886,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 22
+    },
+    "geosmin": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.521321909,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 137
+    },
+    "dodecanal": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.802592365,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 17
+    },
+    "X4.8.alpha.epoxy.caryophyllane": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.150409828,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 68
+    },
+    "E.caryophyllene": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 1.64e-05,
+      "storedMax": 40.92665991,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X.E..alpha.ionone": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.47036121,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "perillyl.acetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.852435538,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 1
+    },
+    "beta.humulene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.849300818,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 178
+    },
+    "X2.phenyl.ethyl.butyrate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.210040509,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 7
+    },
+    "X.Z..beta.farnesene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.931947609,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 16
+    },
+    "pentyl.octanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.788372449,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 25
+    },
+    "X.E..beta.farnesene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.209900677,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 78
+    },
+    "X2.methylbutyl.octanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.045721306,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 14
+    },
+    "alpha.humulene": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000879728,
+      "storedMax": 6.0622472,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "neryl.propanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.21256931,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "X9.epi..E..caryophyllene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.415609995,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 10
+    },
+    "ethyl..E..cinnamate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.509118018,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "linalool.isovalerate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.595991289,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 35
+    },
+    "alpha.terpinyl.isobutanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.77627527,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 8
+    },
+    "n.dodecanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.496912635,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 7
+    },
+    "germacrene.D": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.94201045,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 20
+    },
+    "X.E..beta.ionone": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": 3.936969793,
+      "storedMax": 8.44070099,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "valencene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.192349451,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 170
+    },
+    "neryl.isobutanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.586626186,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 20
+    },
+    "E.methyl.isoeugenol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.35234211,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 96
+    },
+    "X.Z..dihydro.apofarnesal": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.858233017,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 60
+    },
+    "butylated.hydroxytoluene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.293064967,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 91
+    },
+    "X.E..dihydro.apofarnesal": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.637727083,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 100
+    },
+    "Z.nerolidol": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.000224199,
+      "storedMax": 2.743348644,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X.E..ortho.methoxy.cinnamaldehyde": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.791970513,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 69
+    },
+    "alpha.calacorene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.281503717,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 2
+    },
+    "E.nerolidol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.665994746,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 8
+    },
+    "dihydroisocaryophyllene.epoxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.248762,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "caryophyllene.alcohol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.665432864,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 4
+    },
+    "neryl.isovalerate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.437570934,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 17
+    },
+    "spathulenol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.785301507,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 75
+    },
+    "caryophyllene.oxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.834719018,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 52
+    },
+    "humulene.epoxide.II": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.203723787,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 18
+    },
+    "alloaromadendrene.epoxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.59458312,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 18
+    },
+    "X1.10.di.epi.cubenol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.16110532,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 11
+    },
+    "isopropyl.laurate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.362384134,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 2
+    },
+    "caryophylla.4.12..8.13..dien.5.alpha.ol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.482746119,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 62
+    },
+    "gamma.eudesmol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.396605901,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 128
+    },
+    "alpha.muurolol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.936927496,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 43
+    },
+    "X1.2.dihydro.8.hydroxy..2E..linalool": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.05973795,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 72
+    },
+    "tau.cadinol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 8.025148966,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 21
+    },
+    "selin.11.en.4.alpha.ol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.116835715,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 123
+    },
+    "alpha.eudesmol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.942127394,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 86
+    },
+    "X14.hydroxy.9.epi..E..caryophyllene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.96506842,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 26
+    },
+    "tau.muurolol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.804515853,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 54
+    },
+    "n.tetradecanol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.470001961,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 37
+    },
+    "foeniculin": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.215406401,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 152
+    },
+    "cadalene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.958319021,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "X2.3.dihydro.farnesol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.493343197,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 13
+    },
+    "X2E.6Z.farnesal": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.498679581,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 81
+    },
+    "caryophyllene.acetate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.231359202,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 110
+    },
+    "X14.hydroxy.alpha.humulene": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.762795932,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 79
+    },
+    "X2Z.6E.farnesal": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.213955253,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 98
+    },
+    "X2Z.6Z.farnesol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.664698221,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 88
+    },
+    "X2Z.6E.farnesol": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.211925474,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 36
+    },
+    "ambroxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.370198014,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 16
+    },
+    "benzyl.benzoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 4.734663754,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 14
+    },
+    "X2E.6E.methyl.farnesoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.37934717,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 79
+    },
+    "ethyl.tetradecanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.981381589,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 15
+    },
+    "X2.ethylhexylsalicylate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.714831083,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 79
+    },
+    "isopropyl.tetradecanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.143863899,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 26
+    },
+    "ethyl.pentadecanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.668396519,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 38
+    },
+    "methyl.hexadecanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.857190276,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 24
+    },
+    "Z.Z.geranyl.linalool": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.23804053,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 30
+    },
+    "ethyl.hexadecanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 7.418010422,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 54
+    },
+    "manool.oxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.034735348,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 6
+    },
+    "X13.epi.manool.oxide": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.0064654,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 39
+    },
+    "isopropyl.hexadecanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 5.56200701,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 142
+    },
+    "manool": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.515499379,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 11
+    },
+    "ethyl.octadecanoate": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.81781854,
+      "storedMax": 6.670236218,
+      "calibratedZeros": null,
+      "floorCoded": true,
+      "floorCells": 22
+    },
+    "ethyl.pentanoate": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 0.004320453,
+      "storedMax": 1.678874433,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "X2.ethyl.3.methylpyrazine": {
+      "tier": "linear",
+      "missing": 0,
+      "storedMin": 4.4e-05,
+      "storedMax": 1.138483735,
+      "calibratedZeros": 0,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "esters_sum": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -0.532634033,
+      "storedMax": 1.468011129,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "aroma_hops_sum": {
+      "tier": "unverified",
+      "missing": 13,
+      "storedMin": 0.672328375,
+      "storedMax": 3.862223736,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "acids_sum": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -1.204001089,
+      "storedMax": 1.444068363,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    },
+    "sulfur_sum": {
+      "tier": "unverified",
+      "missing": 0,
+      "storedMin": -0.153867111,
+      "storedMax": 1.471061968,
+      "calibratedZeros": null,
+      "floorCoded": false,
+      "floorCells": 0
+    }
+  },
+  "notResolved": [
+    "a repeated floor code is a convention, not proof of a measured zero or of a detection limit; no LOD is declared in the attachments",
+    "calibrated negative concentrations are reported in calibratedNegativeCells; their origin is not established here and no value was clipped"
+  ]
+}

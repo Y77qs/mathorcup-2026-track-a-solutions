@@ -1,0 +1,1 @@
+{"ok": false, "runId": "20261026-162212", "runs": [{"role": "q1_generation_lowrank", "passed": true, "exit": 0, "seconds": 2.22}, {"role": "q3_transfer_qp", "passed": false, "exit": 0, "seconds": 17.7}]}

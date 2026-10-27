@@ -1,0 +1,20 @@
+{
+  "topk-jaccard": 0.2103333333333333,
+  "topk-jaccard-rep0": 0.2103333333333333,
+  "topk-jaccard-point": 0.19766666666666666,
+  "external_6csv_mean_spearman_aligned": 0.9210176180408739,
+  "external_6csv_rows_matched": 44,
+  "external_6csv_mean_spearman_aligned_strict": 0.9080152788388083,
+  "n_strict_candidates": 216,
+  "n_extended_candidates": 15,
+  "pi_mean": 0.41860333333333327,
+  "pi_below_0.5_count": 423,
+  "pi_below_0.5_denominator": 600,
+  "sign_stability_mean": 0.7203133333333334,
+  "n_dimensions": 50,
+  "n_methods": 4,
+  "n_repeats": 1,
+  "bootstrap_reps": 500,
+  "seed": 20261025,
+  "external_6csv_mean_spearman_superseded_positional": 0.44505144467935176
+}

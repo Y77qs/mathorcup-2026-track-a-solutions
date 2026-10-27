@@ -1,0 +1,359 @@
+{
+ "generatedAt": "2026-10-27",
+ "note": "one-by-one decision, verified: no active claim/coverage reference; executed only after the new FIG is ACTIVE",
+ "precondition": "the replacement FIG (supersededBy) must be ACTIVE before figure-retire",
+ "entries": [
+  {
+   "figureId": "FIG-0001",
+   "path": "experiments/EXP-0004/figures/q1_fusion_component_mae.png",
+   "sha256": "dc7d0e88336672d8d0910efc7c0dd31054e511a46d1722a9915b3685fb7318db",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0001(superseded)",
+    "CLAIM-0007(superseded)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q1-model-comparison",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0002",
+   "path": "experiments/EXP-0004/figures/q1_fusion_weights.png",
+   "sha256": "24e9efbd7113526af2e165020062a5389ed4661717797a6ed749953e87631a84",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0003",
+   "path": "experiments/EXP-0003/figures/q1_cv_mae_grid.png",
+   "sha256": "ed6506d846da6f980911c216dead9d29cc2a33f39ded1220e81a8ea9f7600e5e",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0002(superseded)",
+    "CLAIM-0008(superseded)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0004",
+   "path": "experiments/EXP-0003/figures/q1_per_target_improvement.png",
+   "sha256": "234c3d58343f6d0cf801a0653501f7b05adc2bae298754d1d881bc1321a0b662",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0002(superseded)",
+    "CLAIM-0008(superseded)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q1-per-target-skill",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0005",
+   "path": "experiments/EXP-0003/figures/q1_grade_confusion.png",
+   "sha256": "864362a8836bd94310d3af59fbfed930db49ef5f296f848df4012773fca5665c",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [],
+   "decision": "supersede",
+   "supersededByFigureName": "Q1-grade-distribution",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0006",
+   "path": "experiments/EXP-0006/figures/q2_bootstrap_stability.png",
+   "sha256": "d192737752ae3e604111c67570619391563a164c5ea6798d7b1cbdaab81abea5",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0003(superseded)",
+    "CLAIM-0009(superseded)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q2-stability",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0007",
+   "path": "experiments/EXP-0006/figures/q2_method_jaccard.png",
+   "sha256": "3f6d8bfc57d10715e4950385189d4d29202e3bde6bbdc1453f836dab7cd6390b",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0003(superseded)",
+    "CLAIM-0009(superseded)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q2-stability",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0008",
+   "path": "experiments/EXP-0006/figures/q2_module_graph.png",
+   "sha256": "227cea51df32c1f5315c628a63bf94d6ae6d16ac91e410e3feec5ca17cbdb33a",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [],
+   "decision": "supersede",
+   "supersededByFigureName": "Q2-network",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0009",
+   "path": "experiments/EXP-0014/figures/energy-distance-by-style.png",
+   "sha256": "1bec850a71a6efd7370d5974966c5292adf1102a2820c7f550fb44bb9db298bd",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0004(superseded)",
+    "CLAIM-0010(superseded)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q3-per-style-energy",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0010",
+   "path": "experiments/EXP-0014/figures/defect-exceedance.png",
+   "sha256": "de50a1d57a9e77388288e88672b75c0090f55e3add92e7939dc423c35e92a0be",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0004(superseded)",
+    "CLAIM-0010(superseded)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0011",
+   "path": "experiments/EXP-0014/figures/transfer-scenarios.png",
+   "sha256": "b020b99397afeb7424e9b1b0783c7917fba84c9e447e14aef23878ab402895f1",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0005(superseded)",
+    "CLAIM-0011(superseded)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0012",
+   "path": "experiments/EXP-0014/figures/transfer-pareto.png",
+   "sha256": "ea25faf2342e3b4a74858078d2837904b44c6508f584f1ff80ca4a06042ce59f",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0005(superseded)",
+    "CLAIM-0011(superseded)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0013",
+   "path": "experiments/EXP-0014/figures/ablation-comparison.png",
+   "sha256": "63153604c807eac5665b33fb686dae96c86b5ed69d631644374f1610f8410311",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0014",
+   "path": "experiments/EXP-0014/figures/profile-recovery.png",
+   "sha256": "f68b0e77d832326b4f03f095979b8aa6fc7249c305348c364e7f9c163654160d",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0015",
+   "path": "experiments/EXP-0008/figures/baseline-energy-distance.png",
+   "sha256": "523af105ce88651a31810632e2cf3e0aa866da9ce385547d260f66ae5014958f",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [],
+   "decision": "supersede",
+   "supersededByFigureName": "Q3-energy-comparison",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0016",
+   "path": "figures/q1_component_mae.png",
+   "sha256": "7dd974449e1dfd4affafdbd861d85c3f25a15b403fcb51086c9e60db05656684",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0013(superseded)",
+    "CLAIM-0018(retracted)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q1-model-comparison",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0017",
+   "path": "figures/q1_fusion_weights.png",
+   "sha256": "019d4e0bcb30882a9ee3513716b041f6418bc7049eb91d8532df50b50ed0b9f0",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0013(superseded)",
+    "CLAIM-0018(retracted)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0018",
+   "path": "figures/q1_per_target.png",
+   "sha256": "a3f6b0f9697465406d6c2680b052e207a9b541b9ed0878c4e51ee55110b27c9a",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0013(superseded)",
+    "CLAIM-0018(retracted)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q1-per-target-skill",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0019",
+   "path": "figures/q1_cv_grid.png",
+   "sha256": "a44a3b2b94655a713508336f817eceabafdc1db0cde7a3dbf1a4acbcd0e5f66a",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0020",
+   "path": "figures/q1_grades_all.png",
+   "sha256": "ef678ce51f91c9a1c164a3f28978d569b3f9bef3a41ed36ab2513ce1df77c3e4",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0021",
+   "path": "figures/q2_bootstrap_pi.png",
+   "sha256": "64dded4f4d27a381912e48eff47c6bb4449edb998f48048415a4db42c8041d75",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0015(superseded)",
+    "CLAIM-0019(retracted)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q2-stability",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0022",
+   "path": "figures/q2_method_jaccard.png",
+   "sha256": "ed7b64d556d07135109c291eea4be3cb3fb9365a25b577f787eb4cc3531c8224",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0015(superseded)",
+    "CLAIM-0019(retracted)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q2-stability",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0023",
+   "path": "figures/q2_modules.png",
+   "sha256": "5734a42d9c5ff4bd9229b19ea8196b8c1122ec3172be5db87da24bb57da0ccbf",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0015(superseded)",
+    "CLAIM-0019(retracted)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q2-network",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0024",
+   "path": "figures/q3_energy_by_style.png",
+   "sha256": "d58b540a9b70c537174fae2fa02a7b82969531a5577d0819cdd991d6344f75ce",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0016(superseded)",
+    "CLAIM-0021(retracted)"
+   ],
+   "decision": "supersede",
+   "supersededByFigureName": "Q3-per-style-energy",
+   "reason": "v6 论文证据链替换：由本轮确认轮同名图替换"
+  },
+  {
+   "figureId": "FIG-0026",
+   "path": "figures/q3_transfer_scenarios.png",
+   "sha256": "7e4be79a9c929fb188986bcccf43ff8e864d1b49d7f604c2fa2f8c691ad5b199",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0017(superseded)",
+    "CLAIM-0020(superseded)",
+    "CLAIM-0022(retracted)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0028",
+   "path": "figures/q3_profile.png",
+   "sha256": "7bf61b6f235470c45cf0e045cd29205c799d8afe0db45491452daafd4cfc68f0",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0016(superseded)",
+    "CLAIM-0021(retracted)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0029",
+   "path": "experiments/EXP-0035/figures/ablation-summary.png",
+   "sha256": "7fca986b270e5dd58c5e8bbb5f7f45bc6ddda88b1932f5b49567e31a3c7254dd",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0014(retracted)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0030",
+   "path": "figures/q3_defect_exceedance.png",
+   "sha256": "4d6c13f894c65ca08b91cfdfb8ce3e6b81e74d2f02d0818a5c9537cdea7ef7d6",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0021(retracted)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  },
+  {
+   "figureId": "FIG-0031",
+   "path": "figures/q3_pareto.png",
+   "sha256": "a404a27fa6adba2b6a5aafdd75c449ae79a62478ee8e894c7d21451dd69dc6d6",
+   "activeClaimOrCoverageRefs": [],
+   "historicalRefs": [
+    "CLAIM-0020(superseded)",
+    "CLAIM-0022(retracted)"
+   ],
+   "decision": "retire",
+   "supersededByFigureName": null,
+   "reason": "v6 论文证据链替换：旧图不在当前论文/active claim/coverage 的证据链中，保留历史"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+对象,key,constraint_residual_max,stored_disp_max,stored_disp_mean,z_disp_max,z_disp_mean,_source
+反-2-壬烯醛,chem__X.E..2.nonenal,3.5561831257524545e-17,0.0010088539999999603,1.019044444445253e-05,,,"experiments/EXP-0080/transfer_constraints.csv#strategy=qp-quantile-anchor,field=chem__X.E..2.nonenal | outputs/q3/style_and_displacement_scope.json#transfer_displacement.per_column.X.E..2.nonenal"
+双乙酰,chem__X2.3.butanedione,1.8041124150158791e-16,0.523885882,0.09390440505094448,,,"experiments/EXP-0080/transfer_constraints.csv#strategy=qp-quantile-anchor,field=chem__X2.3.butanedione | outputs/q3/style_and_displacement_scope.json#transfer_displacement.per_column.X2.3.butanedione"
+4-乙烯基愈创木酚,chem__X4VG,0.0,0.3232787575863183,0.012708452845809699,,,"experiments/EXP-0080/transfer_constraints.csv#strategy=qp-quantile-anchor,field=chem__X4VG | outputs/q3/style_and_displacement_scope.json#transfer_displacement.per_column.X4VG"
+z 空间·逐行 231 维绝对位移均值,z-space,,,,0.642920999440333,0.49943288471694136,"experiments/EXP-0080/transfers.csv#strategy=qp-quantile-anchor,mean_abs_change_z | outputs/q3/zspace_recompute.json#rows_mismatched"
+z 空间·逐行 231 维 L1 位移,z-space,,,,148.5147508707169,115.36899636961348,"experiments/EXP-0080/transfers.csv#strategy=qp-quantile-anchor,l1_change_z | outputs/q3/zspace_recompute.json#rows_mismatched"

@@ -1,0 +1,19 @@
+{
+  "pid": 64126,
+  "token": "3d6a3ed68441ee829a86aa74",
+  "experimentId": "EXP-0064",
+  "startedAt": "2026-10-26T08:41:56.431Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+    "--target",
+    "src/q2_fix.py",
+    "--repeat",
+    "0"
+  ],
+  "childPid": 64129,
+  "childPgid": 64129,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6"
+}

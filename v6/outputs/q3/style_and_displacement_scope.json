@@ -1,0 +1,183 @@
+{
+ "kind": "q3-scope-numbers",
+ "recordedAt": "2026-10-26T15:00:00Z",
+ "energy_distance_pooling": {
+  "definition": "n_gen-weighted mean of E_V_norm over design cells",
+  "all_estimable_styles": {
+   "value": 0.8840256215416037,
+   "cells": 177,
+   "n_gen": 729.0,
+   "styles": 21
+  },
+  "tripel_kriek_lambic": {
+   "value": 1.8305764926829642,
+   "cells": 27,
+   "n_gen": 147.0
+  },
+  "per_style": {
+   "Amber": {
+    "cells": 9,
+    "n_gen": 36.0,
+    "energy_distance_pooled": 0.5523603630908824
+   },
+   "Blond": {
+    "cells": 9,
+    "n_gen": 93.0,
+    "energy_distance_pooled": 0.23719714438276365
+   },
+   "Brett/cofermented": {
+    "cells": 9,
+    "n_gen": 18.0,
+    "energy_distance_pooled": 1.1394066506554201
+   },
+   "Brown": {
+    "cells": 9,
+    "n_gen": 36.0,
+    "energy_distance_pooled": 0.5387968645167516
+   },
+   "Brut": {
+    "cells": 3,
+    "n_gen": 6.0,
+    "energy_distance_pooled": 2.531317561687279
+   },
+   "Christmas": {
+    "cells": 9,
+    "n_gen": 27.0,
+    "energy_distance_pooled": 0.740009700105477
+   },
+   "Dubbel": {
+    "cells": 9,
+    "n_gen": 30.0,
+    "energy_distance_pooled": 0.7121036950544407
+   },
+   "Flanders old brown": {
+    "cells": 6,
+    "n_gen": 12.0,
+    "energy_distance_pooled": 1.3443501215728784
+   },
+   "Fruitbeer": {
+    "cells": 9,
+    "n_gen": 24.0,
+    "energy_distance_pooled": 1.1069460574164138
+   },
+   "Hoppy": {
+    "cells": 9,
+    "n_gen": 51.0,
+    "energy_distance_pooled": 0.5044058300516246
+   },
+   "Kriek": {
+    "cells": 9,
+    "n_gen": 30.0,
+    "energy_distance_pooled": 7.4607239855496665
+   },
+   "Lambic": {
+    "cells": 9,
+    "n_gen": 33.0,
+    "energy_distance_pooled": 0.6651002405454473
+   },
+   "Low/No alcohol": {
+    "cells": 9,
+    "n_gen": 24.0,
+    "energy_distance_pooled": 0.9743153699401943
+   },
+   "Pils/Lager": {
+    "cells": 9,
+    "n_gen": 33.0,
+    "energy_distance_pooled": 0.7098056230617413
+   },
+   "Saison": {
+    "cells": 9,
+    "n_gen": 30.0,
+    "energy_distance_pooled": 0.7866646887864576
+   },
+   "Scotch": {
+    "cells": 6,
+    "n_gen": 12.0,
+    "energy_distance_pooled": 1.2814061569163355
+   },
+   "Stout/Porter": {
+    "cells": 9,
+    "n_gen": 39.0,
+    "energy_distance_pooled": 0.5091714986276171
+   },
+   "Strong ale": {
+    "cells": 9,
+    "n_gen": 54.0,
+    "energy_distance_pooled": 0.37514451524751924
+   },
+   "Tripel": {
+    "cells": 9,
+    "n_gen": 84.0,
+    "energy_distance_pooled": 0.27767520142745256
+   },
+   "West Flanders ale": {
+    "cells": 9,
+    "n_gen": 21.0,
+    "energy_distance_pooled": 1.006302439108645
+   },
+   "Wheat": {
+    "cells": 9,
+    "n_gen": 36.0,
+    "energy_distance_pooled": 0.5978590159650359
+   }
+  },
+  "source": "experiments/EXP-0079/q3_metrics.csv",
+  "sourceSha256": "c7e8a495c51cf8c86ef7f93392e167a0f6b555dc01320d555d8a22ea6c66932d",
+  "note": "the confirmatory metric energy-distance=0.8840256215416039 pools ALL estimable styles; the three named styles pool to a much larger distance, so a three-style scope must not reuse the all-style number"
+ },
+ "transfer_displacement": {
+  "strategy": "qp-quantile-anchor",
+  "per_column": {
+   "DMS": {
+    "rows": 99,
+    "max_abs_stored": 0.0,
+    "mean_abs_stored": 0.0
+   },
+   "X2.3.butanedione": {
+    "rows": 99,
+    "max_abs_stored": 0.523885882,
+    "mean_abs_stored": 0.09390440505094448
+   },
+   "X4VG": {
+    "rows": 99,
+    "max_abs_stored": 0.3232787575863183,
+    "mean_abs_stored": 0.012708452845809699
+   },
+   "X.E..2.nonenal": {
+    "rows": 99,
+    "max_abs_stored": 0.0010088539999999603,
+    "mean_abs_stored": 1.019044444445253e-05
+   }
+  },
+  "note": "stored |new - source| per column: max and mean; this is DESIGN MOVEMENT, not a constraint residual"
+ },
+ "transfer_target_vs_movement": {
+  "per_strategy": {
+   "qp-quantile-anchor": {
+    "rows": 99,
+    "target_mahalanobis_mean": 1.3036274919807729,
+    "mean_abs_change_z_mean": 0.4994328847169414
+   },
+   "qp-source-anchor": {
+    "rows": 99,
+    "target_mahalanobis_mean": 1.6718496700257213,
+    "mean_abs_change_z_mean": 0.06316410124134864
+   },
+   "source-fixed": {
+    "rows": 99,
+    "target_mahalanobis_mean": 1.8280829094219329,
+    "mean_abs_change_z_mean": 0.0
+   },
+   "target-mean-projection": {
+    "rows": 99,
+    "target_mahalanobis_mean": 0.09458776026337515,
+    "mean_abs_change_z_mean": 0.675523715910455
+   }
+  },
+  "note": "target_mahalanobis and mean_abs_change_z are reported so a Pareto view can be built; no dual-threshold (mean/median) scenario exists in the confirmatory round"
+ },
+ "inputs": {
+  "EXP-0079/q3_metrics.csv": "c7e8a495c51cf8c86ef7f93392e167a0f6b555dc01320d555d8a22ea6c66932d",
+  "EXP-0080/transfers.csv": "397a01a274cf7727fddcde07f1bd421bf6774a365e20894d2230d68c9b859b78"
+ }
+}

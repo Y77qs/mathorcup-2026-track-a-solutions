@@ -1,0 +1,44 @@
+{
+ "kind": "q1-baseline-compare.refused-plus-ledger-derived-comparison",
+ "recordedAt": "2026-10-26T13:46Z",
+ "questionId": "Q1",
+ "planId": "VP-0012",
+ "candidate": "EXP-0073",
+ "baseline": "EXP-0074",
+ "toolRefusal": {
+  "code": "VMU_PACK_MODELING_CONTEST_VALIDATION_MISSING",
+  "message": "baseline-compare needs params.baselineMetric or params.baselineExperimentId",
+  "hint": "declare the recorded baseline before comparing (a missing baseline is never assumed improved)",
+  "when": "2026-10-26T13:45Z, checkTypes=[baseline-compare], plan=VP-0012, experiment=EXP-0073"
+ },
+ "whyRefused": "VP-0012 的 baseline-compare 检查 params 为空，未声明 baselineExperimentId/baselineMetric；计划记录不可编辑，故该 required 检查无法执行。这是真实具名拒绝，不是 not_applicable。",
+ "ledgerDerived": {
+  "note": "仅复述与相减台账已登记 metrics，不是一次通过的验证；不进入 claim/交付占位符。",
+  "candidate": {
+   "experimentId": "EXP-0073",
+   "metric": "mae",
+   "value": 0.35929156588219174,
+   "aka": "mae_graph_lowrank，A/F30 等权 OOF MAE"
+  },
+  "baselineExperiment": {
+   "experimentId": "EXP-0074",
+   "metric": "mae",
+   "value": 0.39817732837288883,
+   "kind": "training-fold median baseline"
+  },
+  "inMetricControl": {
+   "key": "baseline_mae_af30",
+   "value": 0.39817732837288883
+  },
+  "delta_vs_baseline": -0.038885762490697084,
+  "skill_af30": 0.09765940881064172,
+  "otherControls": {
+   "mae_ridge0": 0.3666617580105253,
+   "mae_graph_ridge": 0.3664110157826924,
+   "mae_all50": 0.350504156920024,
+   "macro_r2_af30": 0.1854199218782663
+  },
+  "consistency": "EXP-0073.baseline_mae_af30 == EXP-0074.mae (逐位相同)，说明两侧基线口径一致。"
+ },
+ "consequence": "Q1 baseline-compare 仍为缺失 required 检查；MODEL-0048 保持 provisional，本批不重复写选择。"
+}

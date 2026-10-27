@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0036",
+  "questionId": "Q1",
+  "modelId": "MODEL-0015",
+  "modelKind": "evaluation",
+  "title": "Audit: auditable headline table (67 paper numbers copied from the final experiments and checked against their sources)",
+  "assumptions": [
+    "The plugin's metric-recompute check is only defined for an experiment's own primary metricKey; secondary numbers therefore need a separate audit record so the paper can quote them by ledger reference instead of by hand.",
+    "Every copied value is compared against its source metrics.json inside the run; audit-mismatches must be 0 for the run to be meaningful.",
+    "Q1/DATA-0002/TGT-0001 is the registration anchor only; the audit covers Q1, Q2 and Q3.",
+    "No split is attached, so nothing here consumes SPLIT-0002 holdout exposure."
+  ],
+  "equations": [],
+  "algorithm": "Audit/index only: reads the registered metrics.json of the eight final experiments as frozen dependencies, copies 67 headline/secondary numbers under stable audit keys, asserts every copy equals its source (fails on any mismatch), and re-derives six relations (Q1 baseline minus candidate, fusion minus graph OOF, Q3 projection cost, transfer Mahalanobis reduction, constraint-satisfaction gain, Q2 Jaccard gain). No model is fitted and no data is produced.",
+  "params": {
+    "freezeSources": true,
+    "dependenciesComplete": true,
+    "dependencies": [
+      "experiments/EXP-0001/metrics.json",
+      "experiments/EXP-0002/metrics.json",
+      "experiments/EXP-0003/metrics.json",
+      "experiments/EXP-0004/metrics.json",
+      "experiments/EXP-0008/metrics.json",
+      "experiments/EXP-0026/metrics.json",
+      "experiments/EXP-0029/metrics.json",
+      "experiments/EXP-0033/metrics.json"
+    ],
+    "note": "auditable headline table for the paper (67 entries + 6 derived relations)",
+    "targetContractId": "TGT-0001"
+  },
+  "datasetId": "DATA-0002",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0002",
+    "path": "data/clean/q1_mapped.csv",
+    "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+    "bytes": 979527,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+  "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+  "configVersion": 1,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/headline_audit.py",
+    "sha256": "0d7d0d07c9be2da5d1c0312163ac11999e5ebde32a6f7fe65b41d0db50651f47",
+    "bytes": 8840
+  },
+  "dependencies": [
+    {
+      "path": "experiments/EXP-0001/metrics.json",
+      "sha256": "709dff1fd4ff26a8469bdf30549d669702540a93c46c667637e95024e617d63e",
+      "bytes": 198
+    },
+    {
+      "path": "experiments/EXP-0002/metrics.json",
+      "sha256": "e7743b3b94e1f3b6b4e156fb22b0ac42da1bb92b2919d37d9fb6173a50fcc9e4",
+      "bytes": 119
+    },
+    {
+      "path": "experiments/EXP-0003/metrics.json",
+      "sha256": "52176bebf0adaba6e902ae64e2b1b173fa9833c6a3732a6c04ec522810c9a65d",
+      "bytes": 464
+    },
+    {
+      "path": "experiments/EXP-0004/metrics.json",
+      "sha256": "f9a1b8242b59ee769b4ab9f972b2e6682f4af2cb57cf4c7ec3feb1fcf71f2a03",
+      "bytes": 612
+    },
+    {
+      "path": "experiments/EXP-0008/metrics.json",
+      "sha256": "f627d52f18e5b1ba125be19063a04e6449b829592c64ea0c321faaa689dfdf35",
+      "bytes": 576
+    },
+    {
+      "path": "experiments/EXP-0026/metrics.json",
+      "sha256": "7e0d41efa301d62daa44afe29991060fae9e65c87825a748b8ed86a93bd3af2a",
+      "bytes": 546
+    },
+    {
+      "path": "experiments/EXP-0029/metrics.json",
+      "sha256": "6451db1aa3d48d40fbcfdfbd001516921080bdf982d373da85a0958799b83836",
+      "bytes": 657
+    },
+    {
+      "path": "experiments/EXP-0033/metrics.json",
+      "sha256": "b43632258e8bebe8323407d7885a9417ac369925ab1e21f72e915c9d32199995",
+      "bytes": 2606
+    },
+    {
+      "path": "src/headline_audit.py",
+      "sha256": "0d7d0d07c9be2da5d1c0312163ac11999e5ebde32a6f7fe65b41d0db50651f47",
+      "bytes": 8840
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0036/inputs/src/headline_audit.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0036/inputs/experiments/EXP-0001/metrics.json",
+        "sha256": "709dff1fd4ff26a8469bdf30549d669702540a93c46c667637e95024e617d63e",
+        "bytes": 198,
+        "originalPath": "experiments/EXP-0001/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0036/inputs/experiments/EXP-0002/metrics.json",
+        "sha256": "e7743b3b94e1f3b6b4e156fb22b0ac42da1bb92b2919d37d9fb6173a50fcc9e4",
+        "bytes": 119,
+        "originalPath": "experiments/EXP-0002/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0036/inputs/experiments/EXP-0003/metrics.json",
+        "sha256": "52176bebf0adaba6e902ae64e2b1b173fa9833c6a3732a6c04ec522810c9a65d",
+        "bytes": 464,
+        "originalPath": "experiments/EXP-0003/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0036/inputs/experiments/EXP-0004/metrics.json",
+        "sha256": "f9a1b8242b59ee769b4ab9f972b2e6682f4af2cb57cf4c7ec3feb1fcf71f2a03",
+        "bytes": 612,
+        "originalPath": "experiments/EXP-0004/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0036/inputs/experiments/EXP-0008/metrics.json",
+        "sha256": "f627d52f18e5b1ba125be19063a04e6449b829592c64ea0c321faaa689dfdf35",
+        "bytes": 576,
+        "originalPath": "experiments/EXP-0008/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0036/inputs/experiments/EXP-0026/metrics.json",
+        "sha256": "7e0d41efa301d62daa44afe29991060fae9e65c87825a748b8ed86a93bd3af2a",
+        "bytes": 546,
+        "originalPath": "experiments/EXP-0026/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0036/inputs/experiments/EXP-0029/metrics.json",
+        "sha256": "6451db1aa3d48d40fbcfdfbd001516921080bdf982d373da85a0958799b83836",
+        "bytes": 657,
+        "originalPath": "experiments/EXP-0029/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0036/inputs/experiments/EXP-0033/metrics.json",
+        "sha256": "b43632258e8bebe8323407d7885a9417ac369925ab1e21f72e915c9d32199995",
+        "bytes": 2606,
+        "originalPath": "experiments/EXP-0033/metrics.json"
+      },
+      {
+        "path": "experiments/EXP-0036/inputs/src/headline_audit.py",
+        "sha256": "0d7d0d07c9be2da5d1c0312163ac11999e5ebde32a6f7fe65b41d0db50651f47",
+        "bytes": 8840,
+        "originalPath": "src/headline_audit.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/headline_audit.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/src/headline_audit.py"
+    ],
+    "cwd": "experiments/EXP-0036"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261024,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/src/headline_audit.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261024,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "c8c6daa627c18dba8cca2d0be8021dcb3cc5144b1d7eb29eae58e0e866298286",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "headline-audit-v1",
+  "createdAt": "2026-10-24T12:52:43.575Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0036",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "evaluation",
+    "title": "Audit: auditable headline table (67 paper numbers copied from the final experiments and checked against their sources)",
+    "assumptions": [
+      "The plugin's metric-recompute check is only defined for an experiment's own primary metricKey; secondary numbers therefore need a separate audit record so the paper can quote them by ledger reference instead of by hand.",
+      "Every copied value is compared against its source metrics.json inside the run; audit-mismatches must be 0 for the run to be meaningful.",
+      "Q1/DATA-0002/TGT-0001 is the registration anchor only; the audit covers Q1, Q2 and Q3.",
+      "No split is attached, so nothing here consumes SPLIT-0002 holdout exposure."
+    ],
+    "equations": [],
+    "algorithm": "Audit/index only: reads the registered metrics.json of the eight final experiments as frozen dependencies, copies 67 headline/secondary numbers under stable audit keys, asserts every copy equals its source (fails on any mismatch), and re-derives six relations (Q1 baseline minus candidate, fusion minus graph OOF, Q3 projection cost, transfer Mahalanobis reduction, constraint-satisfaction gain, Q2 Jaccard gain). No model is fitted and no data is produced.",
+    "params": {
+      "freezeSources": true,
+      "dependenciesComplete": true,
+      "dependencies": [
+        "experiments/EXP-0001/metrics.json",
+        "experiments/EXP-0002/metrics.json",
+        "experiments/EXP-0003/metrics.json",
+        "experiments/EXP-0004/metrics.json",
+        "experiments/EXP-0008/metrics.json",
+        "experiments/EXP-0026/metrics.json",
+        "experiments/EXP-0029/metrics.json",
+        "experiments/EXP-0033/metrics.json"
+      ],
+      "note": "auditable headline table for the paper (67 entries + 6 derived relations)",
+      "targetContractId": "TGT-0001"
+    },
+    "codeFile": "src/headline_audit.py",
+    "datasetId": "DATA-0002",
+    "splitId": null,
+    "seed": 20261024,
+    "args": [],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0015"
+  }
+}

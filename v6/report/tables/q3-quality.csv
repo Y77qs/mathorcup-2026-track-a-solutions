@@ -1,0 +1,8 @@
+方案,comparison_key,energy_distance,energy_U,diversity,nearest_neighbor,duplicate_share,edge_fraction,scope_remark,_source
+分层收缩混合 Copula 设计谱（主方案）,copula-selected,0.8840256215416039,1.1138668332620816,19.735647194424246,17.63230853329826,0.0,0.11991341991341999,能量/U/多样性/最近邻按 177 格 · 729 份加权；复制率与边饱和按 231×750 格,experiments/EXP-0079/outputs.json#q3.comparisons.copula-selected.design
+仅共享相关 Copula,copula-shared-only,0.8870011382573635,1.1703922539026825,19.73743751661292,17.70405680611725,0.0,0.12090620490620493,能量/U/多样性/最近邻按 177 格 · 729 份加权；复制率与边饱和按 231×750 格,experiments/EXP-0079/outputs.json#q3.comparisons.copula-shared-only.design
+风格内经验 Copula,copula-style-empirical,0.8710985364473407,1.0938495070472876,18.786193958449672,15.616676051036572,0.0,0.11224819624819615,能量/U/多样性/最近邻按 177 格 · 729 份加权；复制率与边饱和按 231×750 格,experiments/EXP-0079/outputs.json#q3.comparisons.copula-style-empirical.design
+独立边际,independent-marginals,0.8852720064264885,1.0910783775111341,19.852191765147143,18.60216240917743,0.0,0.12221645021645025,能量/U/多样性/最近邻按 177 格 · 729 份加权；复制率与边饱和按 231×750 格,experiments/EXP-0079/outputs.json#q3.comparisons.independent-marginals.design
+源样本重采样参照,source-resample,0.8137313223527718,0.1805621288331115,18.391316656042317,16.020993677429125,0.0,0.11968253968253968,同风格训练行重采样参照，不是生成模型；能量/U/多样性/最近邻按 177 格 · 729 份加权；复制率与边饱和按 231×750 格,experiments/EXP-0079/outputs.json#q3.comparisons.source-resample.design
+范围口径：21 个可估风格 · 177 个可估格池化,scope-pooling,0.8840256215416037,,,,,,n_gen=729；与主方案同值，用于声明池化范围,outputs/q3/style_and_displacement_scope.json#energy_distance_pooling
+范围口径：Tripel/Kriek/Lambic 三风格 · 27 个格单独池化,scope-pooling,1.8305764926829642,,,,,,n_gen=147；与上一行不是同一范围，不可互换,outputs/q3/style_and_displacement_scope.json#energy_distance_pooling

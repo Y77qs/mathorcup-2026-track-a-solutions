@@ -1,0 +1,175 @@
+%% src/build/header.tex — page/table/claim formatting for build_paper.py
+%% Included verbatim via `pandoc --include-in-header`. Every setting here is a
+%% LAYOUT setting only: no paper text, no numbers. If you change it, the builder
+%% records a new sha256 in BUILD-INPUTS.json.
+%%
+%% Design constraints (batch brief):
+%%   * no running headers anywhere; body pages show only a centred arabic page number
+%%   * page 1 = title + abstract + keywords + DRAFT banner, page 2 = TOC; neither is numbered
+%%   * anonymous (no author / team anywhere)
+%%   * Chinese figure/table captions; Chinese section names
+%%   * the paper source supplies its own section text, so numbering is decided by the
+%%     pandoc template (`secnumdepth`), never by this header.
+
+%% ---- fonts (system fonts; build_paper.py --check verifies availability) ----
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Menlo}
+\usepackage{xeCJK}
+\setCJKmainfont{Songti SC}
+\setCJKsansfont{Songti SC}
+\setCJKmonofont{Songti SC}
+
+%% ---- maths used by the paper source ----
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%% ---- page geometry ----
+\usepackage{geometry}
+\geometry{a4paper,left=2.2cm,right=2.2cm,top=2.4cm,bottom=2.4cm,footskip=1.1cm}
+
+%% ---- tables / figures / colour ----
+\usepackage{calc}         % pandoc prose-table width expressions use \real{}
+\usepackage{booktabs}      % \toprule \midrule \bottomrule (three-line tables)
+\usepackage{longtable}     % tables that break across pages
+\usepackage{array}         % p{} column helpers
+\usepackage{graphicx}
+\usepackage{lscape}        % landscape pages for the long wide appendix tables
+\usepackage{rotating}     % sidewaystable for wide short tables
+\usepackage{xcolor}
+\usepackage{caption}       % \captionof so tables/figures stay in place (no float drift)
+
+%% ---- Chinese caption and section names ----
+\captionsetup{font=small,labelfont=bf,labelsep=quad,hypcap=false}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\contentsname}{目录}
+\renewcommand{\refname}{参考文献}
+\renewcommand{\appendixname}{附录}
+\renewcommand{\abstractname}{摘要}
+
+%% ---- page style: NO running header, centred arabic footer number ----
+%% `plain` = empty header + centred \thepage footer. The front matter switches
+%% \thepage off through \pagenumbering{gobble}; the builder emits
+%% \pagenumbering{arabic} right after the TOC, so body page 1 is the first body page.
+\pagestyle{plain}
+\AtBeginDocument{\pagenumbering{gobble}}
+
+%% ---- typography ----
+\setcounter{tocdepth}{2}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{3em}
+\setlength{\tabcolsep}{3pt}   % table p{} widths are computed for 2*3pt of padding
+\renewcommand{\arraystretch}{1.12}
+\setlength{\LTcapwidth}{\textwidth}
+
+%% pandoc helpers expected by its LaTeX writer (mirrors its default template)
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+
+%% Code points that Times New Roman lacks (U+2208 \in, U+2460..2462 circled digits,
+%% U+FF5C fullwidth vertical bar) are typeset with the CJK font, which has them.
+%% This changes the FONT, never the character or the number.
+\xeCJKDeclareCharClass{CJK}{"2208,"2460,"2461,"2462,"FF5C}
+
+%% ---- in-place table / figure containers ----
+%% pandoc copies a raw LaTeX block verbatim only between a \begin{...} and its
+%% matching \end{...}; these containers therefore wrap each generated float-free
+%% table/figure so nothing sits outside the raw block.  No floats means tables stay
+%% exactly where the text refers to them (no drift to the end of a section).
+\newenvironment{bptable}{%
+  \par\medskip\noindent\begin{minipage}{\linewidth}\centering
+}{%
+  \end{minipage}\par\medskip
+}
+\newenvironment{bpfigure}{%
+  \par\medskip\noindent\begin{minipage}{\linewidth}\centering
+}{%
+  \end{minipage}\par\medskip
+}
+%% longtable font wrappers: font switches must be active BEFORE \begin{longtable},
+%% because booktabs/longtable rules may only appear at a row boundary.
+\newenvironment{bpLTsmall}{\small\renewcommand{\arraystretch}{1.02}}{}
+\newenvironment{bpLTfootnotesize}{\footnotesize\renewcommand{\arraystretch}{1.02}}{}
+\newenvironment{bpLTscriptsize}{\scriptsize\renewcommand{\arraystretch}{1.05}}{}
+
+%% ---- hyperlinks: the rendered source carries DOIs / URLs as markdown links ----
+%% (pandoc emits \href for those; without hyperref they are undefined control sequences)
+\usepackage[hidelinks,breaklinks]{hyperref}
+\hypersetup{unicode=true,pdfcreator={build-paper.py}}
+
+%% ---- conditional fitting for wide display equations ----
+%% The source has a couple of display equations slightly wider than the text
+%% block; they are scaled down only when they are actually too wide.  The maths
+%% symbols themselves are unchanged -- only the size of an over-wide line.
+\newsavebox{\bpMathBox}
+\newcommand{\bpMathFit}[1]{%
+  \sbox{\bpMathBox}{$\displaystyle #1$}%
+  \ifdim\wd\bpMathBox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\bpMathBox}}%
+  \else
+    \usebox{\bpMathBox}%
+  \fi
+}
+
+%% ---- evidence-registry block (the eight claim-placeholder registrations) ----
+%% Small font, framed, light background: visually distinct from prose without
+%% deleting or reordering any claim text.
+\newsavebox{\bpEvidBox}
+\newenvironment{evidenceregistry}{%
+  \par\medskip\noindent
+  \setlength{\fboxsep}{5pt}\setlength{\fboxrule}{0.4pt}%
+  \begin{lrbox}{\bpEvidBox}%
+  \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}%
+  \small\setlength{\parindent}{0pt}\setlength{\parskip}{2pt}%
+}{%
+  \end{minipage}%
+  \end{lrbox}%
+  \noindent\fcolorbox{black!30}{black!4}{\usebox{\bpEvidBox}}%
+  \par\medskip
+}
+
+%% ---- table note (the `注：...` paragraph of every table block) ----
+\newenvironment{tablenote}{%
+  \par\smallskip\noindent\footnotesize
+  \setlength{\parindent}{0pt}\setlength{\parskip}{0pt}%
+  \raggedright
+}{%
+  \par\medskip
+}
+
+%% ---- DRAFT banner (page 1) ----
+\newsavebox{\bpDraftBox}
+\newenvironment{draftbanner}{%
+  \par\medskip\noindent
+  \setlength{\fboxsep}{5pt}\setlength{\fboxrule}{0.4pt}%
+  \begin{lrbox}{\bpDraftBox}%
+  \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}%
+  \small\setlength{\parindent}{0pt}\setlength{\parskip}{0pt}%
+  \raggedright
+}{%
+  \end{minipage}%
+  \end{lrbox}%
+  \noindent\fcolorbox{black!45}{yellow!8}{\usebox{\bpDraftBox}}%
+  \par\medskip
+}
+%% ---- display-only tightening (preview-D): never changes content or FIG bytes ----
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\floatsep}{4pt plus 1pt minus 1pt}
+\setlength{\intextsep}{5pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{0pt}
+\setkeys{Gin}{height=0.23\textheight,keepaspectratio}
+\renewcommand{\arraystretch}{0.90}
+\AtBeginEnvironment{longtable}{\small}
+\setlength{\abovedisplayskip}{4pt plus 1pt}
+\setlength{\belowdisplayskip}{4pt plus 1pt}
+\setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowdisplayshortskip}{2pt}
+\setlength{\parskip}{0pt}
+\setlength{\topsep}{2pt plus 1pt}
+\setlength{\partopsep}{0pt}
+%% ---- end display-only tightening ----

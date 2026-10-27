@@ -1,0 +1,17 @@
+指标,数值,口径与说明,_source
+Top-3 平均两两 Jaccard（入选频率优先集合，主指标）,0.2091,50 维 × 4 方法 × 6 个方法对，三次重复池化；集合为最终交付集合,experiments/EXP-0075/metrics.json#topk-jaccard
+Top-3 平均两两 Jaccard（点估计集合）,0.1977,同一统计量，集合改为点估计 Top-3；与主指标的差异来自集合规则而不是数据,experiments/EXP-0075/metrics.json#topk-jaccard-point
+第一次重复的 Jaccard,0.2103,该次重复自身的池化值,experiments/EXP-0075/metrics.json#topk-jaccard-rep0
+第二次重复的 Jaccard,0.2073,该次重复自身的池化值,experiments/EXP-0075/metrics.json#topk-jaccard-rep1
+第三次重复的 Jaccard,0.2097,该次重复自身的池化值,experiments/EXP-0075/metrics.json#topk-jaccard-rep2
+跨重复集合一致率（Jaccard）,0.8748,交付集合在两次重复之间的重合程度,experiments/EXP-0075/metrics.json#cross_repeat_jaccard
+入选频率 π 均值,0.4205,交付严格榜条目：四种方法 × 三次重复池化（每次重复 600 条）,experiments/EXP-0075/metrics.json#pi_mean
+π < 0.5 的条目数 / 分母,1263 / 1800,占比 70.17%；分母为该口径下的条目总数,"experiments/EXP-0075/metrics.json#pi_below_0.5_count,pi_below_0.5_denominator"
+符号一致性均值,0.7226,同一批交付条目中，bootstrap 复制里总体 Spearman 保持同一符号的比例,experiments/EXP-0075/metrics.json#sign_stability_mean
+与附件 6.csv 的同源秩相关（双侧名称对齐）,0.9210,44 行名称两侧对齐；同源对照，不是外部验证,experiments/EXP-0075/metrics.json#external_6csv_mean_spearman_aligned
+与附件 6.csv 的同源秩相关（已废弃：列位置口径）,0.4451,该值由按列位置对齐加索引混用产生，属错位伪影，已弃用，不得作为佐证,experiments/EXP-0075/metrics.json#external_6csv_mean_spearman_superseded_positional
+bootstrap 预算（每次重复）,500,风格内分层重采样次数,experiments/EXP-0075/metrics.json#bootstrap_reps
+稳健性三值（参考 / 种子扰动 / 预算扰动）,0.2103 / 0.2073 / 0.2053,同一指标在三次扰动运行下的取值,"experiments/EXP-0089/metrics.json#topk-jaccard,experiments/EXP-0090/metrics.json#topk-jaccard,experiments/EXP-0091/metrics.json#topk-jaccard; report/evidence_manifest.json#Q2.robustnessPlan"
+绝对极差,0.0050,三值的最大值 − 最小值,"experiments/EXP-0089/metrics.json#topk-jaccard,experiments/EXP-0090/metrics.json#topk-jaccard,experiments/EXP-0091/metrics.json#topk-jaccard"
+真实相对极差,0.0238,绝对极差 / 参考值；判定上限 0.1000,"experiments/EXP-0089/metrics.json#topk-jaccard,experiments/EXP-0090/metrics.json#topk-jaccard,experiments/EXP-0091/metrics.json#topk-jaccard"
+稳健性判定,通过,预注册规则 relative-range；只描述本组扰动,"experiments/EXP-0089/metrics.json#topk-jaccard,experiments/EXP-0090/metrics.json#topk-jaccard,experiments/EXP-0091/metrics.json#topk-jaccard"

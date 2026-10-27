@@ -1,0 +1,42 @@
+{
+ "kind": "analysisPlan.configure.receipt",
+ "recordedAt": "2026-10-26T13:42Z",
+ "tool": {
+  "action": "modeling_project",
+  "sub": "workbench/configure",
+  "questionId": "Q2",
+  "ok": true,
+  "revisionAfter": 4176
+ },
+ "requested": {
+  "features": 231,
+  "excludedFeatures": 54,
+  "metricDirection": "maximize",
+  "source": {
+   "path": "problem/statement.md",
+   "quote": "稳定性可通过 bootstrap 重采样下 Top-3 入选频率、或不同建模方法间 Top-3 的 Jaccard 系数来量化。"
+  }
+ },
+ "persisted": {
+  "profile": "factor-analysis",
+  "decisionTime": "retrospective cross-sectional association: the 231 chemical/physicochemical measurements and the sensory panel scores are contemporaneous; no temporal or causal claim is made",
+  "features": 231,
+  "featuresUnique": 231,
+  "excludedFeatures": 54,
+  "excludedUnique": 54,
+  "metricDirection": "maximize",
+  "source": null,
+  "configuredAt": "2026-10-26T13:41:08.934Z"
+ },
+ "shas": {
+  "analysisPlanCanonicalSha256": "80cc1044f6415593c99086fae2c83f5fe2934a7ec692e5cb0ad267f227b647df",
+  "featuresSha256": "3bf8e6ee4096d628043c5b114deb0c57ef01d8f279fefac10487505cd7a6c5c5",
+  "excludedFeaturesSha256": "b2d68fdfc5be22decfb52c8977780002b59133abef9875f04c3fc589642c4301"
+ },
+ "notes": [
+  "features 逐项来自三个真实来源 + 代码常量，四者同序同集合：data/clean/q2_raw.csv 表头 chem__*（231）、outputs/audit/v6/feature_dictionary.csv（231 行）、data/clean/q2_chem_meta.json（231）、src/target_columns.py FEATURE_COLS（231，与 EXP-0075 params.features 完全一致）。",
+  "231 = 216 single_compound + 7 physical_parameter + 5 derived_sum + 3 element_or_index；严格化合物候选universe=216；扩展指标=15 非单化合物列。",
+  "工具未持久化 source 字段（回执里 source 为 null）——评分原文绑定仍缺失，如实记录，不伪造。"
+ ],
+ "questionId": "Q2"
+}

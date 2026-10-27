@@ -1,0 +1,21 @@
+{
+  "pid": 64759,
+  "token": "2c41296c18997349f35a7049",
+  "experimentId": "EXP-0069",
+  "startedAt": "2026-10-26T08:46:05.320Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0069/inputs/src/seed_receipt_wrapper.py",
+    "--target",
+    "src/q2_fix.py",
+    "--patch-align-to",
+    "data/processed/sensory_name_alignment.csv",
+    "--repeat",
+    "all"
+  ],
+  "childPid": 64762,
+  "childPgid": 64762,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6"
+}

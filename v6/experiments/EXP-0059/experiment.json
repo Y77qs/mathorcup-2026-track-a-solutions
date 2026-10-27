@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0059",
+  "questionId": "Q3",
+  "modelId": "MODEL-0035",
+  "modelKind": "candidate",
+  "title": "Q3 ROB-0006 perturbation B (seed-receipt): generation repeat 1 via frozen script wrapper",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": null,
+  "params": {
+    "dependencies": [
+      "data/clean/q3.csv",
+      "data/clean/q3_style_protocol.json",
+      "data/clean/q3_thresholds.json"
+    ],
+    "family": "copula-constrained",
+    "metricDefinition": "energy-distance (normalised empirical V) for ROB-0006 seed block B",
+    "perturbation": "generation-seed-block",
+    "perturbationPlan": "ROB-0006",
+    "protocol": "wrapper-run of the frozen q3_fix.py on repeat block 1 (seed 20261026) so the runner can verify a seed receipt",
+    "requireSeedReceipt": true,
+    "targetContractId": "TGT-0003",
+    "wrappedTarget": "src/q3_fix.py"
+  },
+  "datasetId": "DATA-0004",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0004",
+    "path": "data/clean/q3.csv",
+    "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+    "bytes": 858381,
+    "targetColumn": "overall",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+  "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+  "configVersion": 2,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/seed_receipt_wrapper.py",
+    "sha256": "7bb029eaab984ebf2372a0d4a83182568391e72e6844a19c7cf75c671b452859",
+    "bytes": 2475
+  },
+  "dependencies": [
+    {
+      "path": "data/clean/q3.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381
+    },
+    {
+      "path": "data/clean/q3_style_protocol.json",
+      "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+      "bytes": 3703
+    },
+    {
+      "path": "data/clean/q3_thresholds.json",
+      "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+      "bytes": 5531
+    },
+    {
+      "path": "src/seed_receipt_wrapper.py",
+      "sha256": "7bb029eaab984ebf2372a0d4a83182568391e72e6844a19c7cf75c671b452859",
+      "bytes": 2475
+    }
+  ],
+  "sourceSnapshot": null,
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/seed_receipt_wrapper.py",
+    "args": [
+      "--target",
+      "src/q3_fix.py",
+      "--repeat",
+      "1"
+    ],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+      "--target",
+      "src/q3_fix.py",
+      "--repeat",
+      "1"
+    ],
+    "cwd": "experiments/EXP-0059"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261026,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+      "--target",
+      "src/q3_fix.py",
+      "--repeat",
+      "1"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261026,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "b698117d72642b27cd2144085433ba8ac904f926789e1969767888d066e86ed1",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": null,
+  "createdAt": "2026-10-26T08:39:05.361Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0059",
+  "registration": {
+    "questionId": "Q3",
+    "modelKind": "candidate",
+    "title": "Q3 ROB-0006 perturbation B (seed-receipt): generation repeat 1 via frozen script wrapper",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": null,
+    "params": {
+      "dependencies": [
+        "data/clean/q3.csv",
+        "data/clean/q3_style_protocol.json",
+        "data/clean/q3_thresholds.json"
+      ],
+      "family": "copula-constrained",
+      "metricDefinition": "energy-distance (normalised empirical V) for ROB-0006 seed block B",
+      "perturbation": "generation-seed-block",
+      "perturbationPlan": "ROB-0006",
+      "protocol": "wrapper-run of the frozen q3_fix.py on repeat block 1 (seed 20261026) so the runner can verify a seed receipt",
+      "requireSeedReceipt": true,
+      "targetContractId": "TGT-0003",
+      "wrappedTarget": "src/q3_fix.py"
+    },
+    "codeFile": "src/seed_receipt_wrapper.py",
+    "datasetId": "DATA-0004",
+    "splitId": null,
+    "seed": 20261026,
+    "args": [
+      "--target",
+      "src/q3_fix.py",
+      "--repeat",
+      "1"
+    ],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0035"
+  }
+}

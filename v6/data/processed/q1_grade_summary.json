@@ -1,0 +1,602 @@
+{
+ "A_malt_all": {
+  "meanGrade": 3.036,
+  "gradeCounts": [
+   21,
+   40,
+   40,
+   42,
+   44,
+   41,
+   22
+  ]
+ },
+ "A_malt_grain": {
+  "meanGrade": 2.984,
+  "gradeCounts": [
+   22,
+   41,
+   41,
+   44,
+   41,
+   39,
+   22
+  ]
+ },
+ "A_malt_bread": {
+  "meanGrade": 2.996,
+  "gradeCounts": [
+   22,
+   40,
+   40,
+   46,
+   41,
+   39,
+   22
+  ]
+ },
+ "A_malt_cara": {
+  "meanGrade": 3.004,
+  "gradeCounts": [
+   21,
+   45,
+   37,
+   42,
+   43,
+   38,
+   24
+  ]
+ },
+ "A_malt_burn": {
+  "meanGrade": 2.992,
+  "gradeCounts": [
+   21,
+   42,
+   42,
+   42,
+   39,
+   44,
+   20
+  ]
+ },
+ "A_hops_all": {
+  "meanGrade": 3.004,
+  "gradeCounts": [
+   21,
+   42,
+   38,
+   46,
+   41,
+   41,
+   21
+  ]
+ },
+ "A_hops_citrus": {
+  "meanGrade": 3.044,
+  "gradeCounts": [
+   23,
+   37,
+   40,
+   43,
+   42,
+   43,
+   22
+  ]
+ },
+ "A_hops_tropical": {
+  "meanGrade": 3.06,
+  "gradeCounts": [
+   22,
+   37,
+   43,
+   35,
+   49,
+   43,
+   21
+  ]
+ },
+ "A_hops_noble": {
+  "meanGrade": 2.964,
+  "gradeCounts": [
+   23,
+   42,
+   41,
+   43,
+   41,
+   36,
+   24
+  ]
+ },
+ "A_hops_woody": {
+  "meanGrade": 2.98,
+  "gradeCounts": [
+   21,
+   42,
+   43,
+   39,
+   42,
+   46,
+   17
+  ]
+ },
+ "A_esters_all": {
+  "meanGrade": 3.032,
+  "gradeCounts": [
+   22,
+   40,
+   41,
+   42,
+   39,
+   42,
+   24
+  ]
+ },
+ "A_esters_ethac": {
+  "meanGrade": 2.98,
+  "gradeCounts": [
+   22,
+   43,
+   42,
+   40,
+   39,
+   42,
+   22
+  ]
+ },
+ "A_esters_isoaa": {
+  "meanGrade": 3.068,
+  "gradeCounts": [
+   19,
+   37,
+   43,
+   44,
+   43,
+   44,
+   20
+  ]
+ },
+ "A_esters_flower": {
+  "meanGrade": 2.944,
+  "gradeCounts": [
+   19,
+   46,
+   43,
+   41,
+   44,
+   37,
+   20
+  ]
+ },
+ "A_esters_fruity": {
+  "meanGrade": 3.028,
+  "gradeCounts": [
+   22,
+   43,
+   35,
+   43,
+   41,
+   45,
+   21
+  ]
+ },
+ "F_malt_all": {
+  "meanGrade": 3.024,
+  "gradeCounts": [
+   17,
+   43,
+   41,
+   46,
+   40,
+   45,
+   18
+  ]
+ },
+ "F_malt_grain": {
+  "meanGrade": 3.064,
+  "gradeCounts": [
+   19,
+   40,
+   41,
+   43,
+   40,
+   47,
+   20
+  ]
+ },
+ "F_malt_bread": {
+  "meanGrade": 3.064,
+  "gradeCounts": [
+   18,
+   41,
+   39,
+   45,
+   43,
+   44,
+   20
+  ]
+ },
+ "F_malt_cara": {
+  "meanGrade": 3.02,
+  "gradeCounts": [
+   19,
+   44,
+   42,
+   40,
+   41,
+   41,
+   23
+  ]
+ },
+ "F_malt_burn": {
+  "meanGrade": 2.972,
+  "gradeCounts": [
+   23,
+   41,
+   38,
+   46,
+   42,
+   40,
+   20
+  ]
+ },
+ "F_hops_all": {
+  "meanGrade": 2.972,
+  "gradeCounts": [
+   21,
+   44,
+   38,
+   46,
+   40,
+   41,
+   20
+  ]
+ },
+ "F_hops_citrus": {
+  "meanGrade": 3.04,
+  "gradeCounts": [
+   20,
+   39,
+   42,
+   46,
+   37,
+   45,
+   21
+  ]
+ },
+ "F_hops_tropical": {
+  "meanGrade": 3.068,
+  "gradeCounts": [
+   20,
+   37,
+   44,
+   43,
+   40,
+   43,
+   23
+  ]
+ },
+ "F_hops_noble": {
+  "meanGrade": 2.932,
+  "gradeCounts": [
+   23,
+   43,
+   44,
+   39,
+   40,
+   41,
+   20
+  ]
+ },
+ "F_hops_woody": {
+  "meanGrade": 2.964,
+  "gradeCounts": [
+   19,
+   46,
+   39,
+   43,
+   45,
+   40,
+   18
+  ]
+ },
+ "F_esters_all": {
+  "meanGrade": 3.092,
+  "gradeCounts": [
+   20,
+   38,
+   45,
+   39,
+   41,
+   38,
+   29
+  ]
+ },
+ "F_esters_ethac": {
+  "meanGrade": 3.044,
+  "gradeCounts": [
+   23,
+   35,
+   44,
+   41,
+   41,
+   45,
+   21
+  ]
+ },
+ "F_esters_isoaa": {
+  "meanGrade": 3.092,
+  "gradeCounts": [
+   19,
+   37,
+   44,
+   41,
+   43,
+   43,
+   23
+  ]
+ },
+ "F_esters_flower": {
+  "meanGrade": 3.012,
+  "gradeCounts": [
+   17,
+   42,
+   41,
+   49,
+   44,
+   36,
+   21
+  ]
+ },
+ "F_esters_fruity": {
+  "meanGrade": 3.012,
+  "gradeCounts": [
+   18,
+   45,
+   45,
+   38,
+   38,
+   44,
+   22
+  ]
+ },
+ "acidity": {
+  "meanGrade": 3.032,
+  "gradeCounts": [
+   22,
+   41,
+   38,
+   42,
+   42,
+   43,
+   22
+  ]
+ },
+ "bitternes": {
+  "meanGrade": 2.932,
+  "gradeCounts": [
+   23,
+   44,
+   39,
+   42,
+   43,
+   41,
+   18
+  ]
+ },
+ "sweetness": {
+  "meanGrade": 3.04,
+  "gradeCounts": [
+   21,
+   40,
+   41,
+   44,
+   40,
+   38,
+   26
+  ]
+ },
+ "X4vg": {
+  "meanGrade": 2.996,
+  "gradeCounts": [
+   22,
+   44,
+   42,
+   38,
+   39,
+   39,
+   26
+  ]
+ },
+ "diacetyl": {
+  "meanGrade": 3.028,
+  "gradeCounts": [
+   24,
+   38,
+   40,
+   40,
+   45,
+   39,
+   24
+  ]
+ },
+ "dms": {
+  "meanGrade": 3.092,
+  "gradeCounts": [
+   18,
+   38,
+   40,
+   47,
+   42,
+   44,
+   21
+  ]
+ },
+ "metallic": {
+  "meanGrade": 3.024,
+  "gradeCounts": [
+   16,
+   45,
+   40,
+   45,
+   43,
+   42,
+   19
+  ]
+ },
+ "stale_hops": {
+  "meanGrade": 2.944,
+  "gradeCounts": [
+   24,
+   43,
+   43,
+   37,
+   41,
+   40,
+   22
+  ]
+ },
+ "t2n": {
+  "meanGrade": 2.972,
+  "gradeCounts": [
+   22,
+   42,
+   42,
+   40,
+   45,
+   37,
+   22
+  ]
+ },
+ "orange": {
+  "meanGrade": 3.088,
+  "gradeCounts": [
+   19,
+   36,
+   44,
+   43,
+   41,
+   47,
+   20
+  ]
+ },
+ "coriander": {
+  "meanGrade": 3.004,
+  "gradeCounts": [
+   16,
+   46,
+   40,
+   44,
+   46,
+   39,
+   19
+  ]
+ },
+ "clove": {
+  "meanGrade": 3.08,
+  "gradeCounts": [
+   13,
+   42,
+   46,
+   44,
+   42,
+   42,
+   21
+  ]
+ },
+ "lactic": {
+  "meanGrade": 3.076,
+  "gradeCounts": [
+   19,
+   36,
+   51,
+   35,
+   40,
+   48,
+   21
+  ]
+ },
+ "acetic": {
+  "meanGrade": 3.012,
+  "gradeCounts": [
+   17,
+   44,
+   45,
+   41,
+   41,
+   40,
+   22
+  ]
+ },
+ "barnyard": {
+  "meanGrade": 2.96,
+  "gradeCounts": [
+   27,
+   37,
+   44,
+   39,
+   40,
+   40,
+   23
+  ]
+ },
+ "alcohol": {
+  "meanGrade": 2.96,
+  "gradeCounts": [
+   22,
+   40,
+   49,
+   36,
+   42,
+   40,
+   21
+  ]
+ },
+ "aftertaste": {
+  "meanGrade": 2.932,
+  "gradeCounts": [
+   23,
+   45,
+   41,
+   38,
+   41,
+   44,
+   18
+  ]
+ },
+ "body": {
+  "meanGrade": 2.984,
+  "gradeCounts": [
+   23,
+   39,
+   44,
+   40,
+   41,
+   43,
+   20
+  ]
+ },
+ "co2": {
+  "meanGrade": 2.98,
+  "gradeCounts": [
+   22,
+   41,
+   39,
+   44,
+   46,
+   38,
+   20
+  ]
+ },
+ "overall": {
+  "meanGrade": 2.924,
+  "gradeCounts": [
+   21,
+   46,
+   42,
+   44,
+   37,
+   39,
+   21
+  ]
+ }
+}

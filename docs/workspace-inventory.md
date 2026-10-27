@@ -8,6 +8,7 @@
 > - `work/my-new-contest-v2/` → [`v4/`](../v4/)（2.8.6 干净重跑，已完成并归档）
 > - `work/my-new-contest-v3/` → [`v5/`](../v5/)（2.8.10 重做，已完成；不含插件 `.rework/` 材料）
 > - `work/my-new-contest-v3/report/revised-20261025/` → [`v5.1/`](../v5.1/)（v5 论文修订版，21 页）
+> - `work/my-new-contest-v6/` → [`v6/`](../v6/)（确认性重跑，30 页，DRAFT）
 > - `work/beer-rerun-2.8.6/`、`work/RERUN-GUIDE-2.8.6.md` 未纳入本仓库
 > - 本仓库另有 [`v2/`](../v2/)（第一套解的整改审计稿，独立论文），来自工作区外路径 `…/Codex/2026-10-23/qing/outputs/建模实战整改最终交付/竞赛副本产物/`，不在本清单扫描范围内。
 >

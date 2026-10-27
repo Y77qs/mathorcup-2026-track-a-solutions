@@ -1,0 +1,1090 @@
+{
+  "certificates_summary": {
+    "infeasible": 0,
+    "maxConstraintViolation": 0.0,
+    "maxDualResidual": 2.3419532979573887e-10,
+    "maxIterations": 71,
+    "maxKktStationarityResidual": 4.064771911385831e-09,
+    "maxPrimalResidual": 9.912789471211436e-09,
+    "residualDefinitions": {
+      "dual_residual": "rho * max |w_k - w_{k-1}|_inf, the scaled ADMM dual residual (A = I)",
+      "kkt_stationarity_residual": "norm of grad_smooth + eta*subgrad(L1) + A_tight' lambda with lambda>=0 from NNLS on the tight constraint rows; the L1 subgradient is 0 on the kink so the set-valued condition is respected",
+      "primal_residual": "max |z - w|_inf of the ADMM consensus split (w is feasible by construction)"
+    },
+    "solves": 66,
+    "statusCounts": {
+      "not_converged": 0,
+      "optimal": 66
+    }
+  },
+  "energy_by_strategy": {
+    "qp-quantile-anchor": {
+      "U": -0.2243466989674824,
+      "V": 2.1889469819441043,
+      "V_normalized": 0.11977646177114236,
+      "nSources": 33,
+      "nTargetReference": 56,
+      "perFold": [
+        {
+          "U": -0.24043769996668374,
+          "V": 2.3948399870529933,
+          "V_norm": 0.11847381760666782,
+          "fold": 0,
+          "m": 11,
+          "n": 18,
+          "repeat": 0
+        },
+        {
+          "U": -0.2296732181150638,
+          "V": 2.243820664977452,
+          "V_norm": 0.11779198974027646,
+          "fold": 1,
+          "m": 11,
+          "n": 19,
+          "repeat": 0
+        },
+        {
+          "U": -0.20292917882069972,
+          "V": 1.9281802938018675,
+          "V_norm": 0.12306357796648283,
+          "fold": 2,
+          "m": 11,
+          "n": 19,
+          "repeat": 0
+        }
+      ]
+    },
+    "qp-source-anchor": {
+      "U": 4.948079292855167,
+      "V": 7.29791137168063,
+      "V_normalized": 0.4043776306426113,
+      "nSources": 33,
+      "nTargetReference": 56,
+      "perFold": [
+        {
+          "U": 4.582823116850392,
+          "V": 7.106786314007195,
+          "V_norm": 0.3515759341280033,
+          "fold": 0,
+          "m": 11,
+          "n": 18,
+          "repeat": 0
+        },
+        {
+          "U": 4.920415491626233,
+          "V": 7.25671614039566,
+          "V_norm": 0.38094979982108945,
+          "fold": 1,
+          "m": 11,
+          "n": 19,
+          "repeat": 0
+        },
+        {
+          "U": 5.340999270088874,
+          "V": 7.530231660639037,
+          "V_norm": 0.48060715797874115,
+          "fold": 2,
+          "m": 11,
+          "n": 19,
+          "repeat": 0
+        }
+      ]
+    },
+    "source-fixed": {
+      "U": 4.847285841991662,
+      "V": 7.224122612795708,
+      "V_normalized": 0.4001344187694724,
+      "nSources": 33,
+      "nTargetReference": 56,
+      "perFold": [
+        {
+          "U": 4.534800850757016,
+          "V": 7.07626282241629,
+          "V_norm": 0.35006592318989904,
+          "fold": 0,
+          "m": 11,
+          "n": 18,
+          "repeat": 0
+        },
+        {
+          "U": 4.799588229918761,
+          "V": 7.171908006268197,
+          "V_norm": 0.37649769764511876,
+          "fold": 1,
+          "m": 11,
+          "n": 19,
+          "repeat": 0
+        },
+        {
+          "U": 5.207468445299208,
+          "V": 7.424197009702636,
+          "V_norm": 0.4738396354733994,
+          "fold": 2,
+          "m": 11,
+          "n": 19,
+          "repeat": 0
+        }
+      ]
+    },
+    "target-mean-projection": {
+      "U": 5.892041376885755,
+      "V": 6.9419053222343905,
+      "V_normalized": 0.3803595169789648,
+      "nSources": 33,
+      "nTargetReference": 56,
+      "perFold": [
+        {
+          "U": 6.3839946862111105,
+          "V": 7.576779100232034,
+          "V_norm": 0.3748266898915111,
+          "fold": 0,
+          "m": 11,
+          "n": 18,
+          "repeat": 0
+        },
+        {
+          "U": 5.936350093486638,
+          "V": 7.004548503300125,
+          "V_norm": 0.36771196482598056,
+          "fold": 1,
+          "m": 11,
+          "n": 19,
+          "repeat": 0
+        },
+        {
+          "U": 5.355779350959514,
+          "V": 6.24438836317101,
+          "V_norm": 0.3985398962194027,
+          "fold": 2,
+          "m": 11,
+          "n": 19,
+          "repeat": 0
+        }
+      ]
+    }
+  },
+  "nonincrease_by_strategy": {
+    "qp-quantile-anchor": {
+      "fallbackShare": 0.0,
+      "meanL1ChangeZ": 115.24373631289039,
+      "meanTargetMahalanobis": 1.3938376221999171,
+      "nAttempted": 33,
+      "nDelivered": 33,
+      "nonincreaseRate": 1.0,
+      "nonincreaseRateIncludingFallback": 1.0,
+      "perField": {
+        "DMS": 1.0,
+        "X.E..2.nonenal": 1.0,
+        "X2.3.butanedione": 1.0,
+        "X4VG": 1.0
+      },
+      "staleProxyRate": 1.0,
+      "t2nDiagnosticIncreaseShare": 0.0
+    },
+    "qp-source-anchor": {
+      "fallbackShare": 0.0,
+      "meanL1ChangeZ": 13.348320987804257,
+      "meanTargetMahalanobis": 1.7458178661717714,
+      "nAttempted": 33,
+      "nDelivered": 33,
+      "nonincreaseRate": 1.0,
+      "nonincreaseRateIncludingFallback": 1.0,
+      "perField": {
+        "DMS": 1.0,
+        "X.E..2.nonenal": 1.0,
+        "X2.3.butanedione": 1.0,
+        "X4VG": 1.0
+      },
+      "staleProxyRate": 1.0,
+      "t2nDiagnosticIncreaseShare": 0.6060606060606061
+    },
+    "source-fixed": {
+      "fallbackShare": 0.0,
+      "meanL1ChangeZ": 0.0,
+      "meanTargetMahalanobis": 1.8388714045532846,
+      "nAttempted": 33,
+      "nDelivered": 33,
+      "nonincreaseRate": 1.0,
+      "nonincreaseRateIncludingFallback": 1.0,
+      "perField": {
+        "DMS": 1.0,
+        "X.E..2.nonenal": 1.0,
+        "X2.3.butanedione": 1.0,
+        "X4VG": 1.0
+      },
+      "staleProxyRate": 1.0,
+      "t2nDiagnosticIncreaseShare": 0.0
+    },
+    "target-mean-projection": {
+      "fallbackShare": 0.0,
+      "meanL1ChangeZ": 156.39719074162898,
+      "meanTargetMahalanobis": 0.09987244394336682,
+      "nAttempted": 33,
+      "nDelivered": 33,
+      "nonincreaseRate": 0.36363636363636365,
+      "nonincreaseRateIncludingFallback": 0.36363636363636365,
+      "perField": {
+        "DMS": 1.0,
+        "X.E..2.nonenal": 1.0,
+        "X2.3.butanedione": 1.0,
+        "X4VG": 1.0
+      },
+      "staleProxyRate": 0.36363636363636365,
+      "t2nDiagnosticIncreaseShare": 0.12121212121212122
+    }
+  },
+  "notes": [
+    "source-fixed and target-mean-projection are references: they never pass through the QP, so their constraint verdicts are statements about the reference point, not about an optimiser success.",
+    "target-mean-projection enforces only the box, so it can (and does) violate the non-increase caps; that is exactly why the QP exists.",
+    "a solve that does not meet the tolerance is labelled status=not_converged/infeasible, the delivered point is the SOURCE point, and the row is marked fallback_to_source=True: 'migration not completed', never a success.",
+    "the stale_hops constraint is a training-internal linear proxy and is reported as a proxy, not a chemical or sensory measurement.",
+    "trans-2-nonenal (the measured column) carries the non-increase statement for the oxidation defect; the t2n sensory proxy is reported as a diagnostic and its increases are counted, not hidden.",
+    "the energy statistic here is V = 2*mean d(G,R) - sum d(G,G)/m^2 - sum d(R,R)/n^2 and U = 2*mean d(G,R) - mean d(G,G) - mean d(R,R) (signed, can be negative; never clipped or square-rooted).",
+    "the 231 stored chemical columns are used as-is; the 226+5 derived-feature identities are NOT verified here."
+  ],
+  "objective_gradient_check": {
+    "checks": [
+      {
+        "fold": 0,
+        "l1_kink_coords": 23,
+        "max_abs_error": 1.1370750452321943e-09,
+        "max_rel_error": 6.894100797257642e-08,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 124,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 21,
+        "max_abs_error": 1.2099014012889597e-09,
+        "max_rel_error": 9.520071416333586e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 124,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 6,
+        "max_abs_error": 3.3030886359419753e-10,
+        "max_rel_error": 2.2282174349435596e-07,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 81,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 2,
+        "max_abs_error": 1.6092874810524904e-09,
+        "max_rel_error": 6.109969264330848e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 81,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 5,
+        "max_abs_error": 4.544328247035878e-10,
+        "max_rel_error": 1.6225469497809762e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 218,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 3,
+        "max_abs_error": 3.166790163433575e-09,
+        "max_rel_error": 2.473436136620801e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 218,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 28,
+        "max_abs_error": 1.4544028203999915e-09,
+        "max_rel_error": 8.759525018812698e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 96,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 22,
+        "max_abs_error": 1.3096128625988968e-09,
+        "max_rel_error": 8.521156080266498e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 96,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 3,
+        "max_abs_error": 6.374892697058598e-10,
+        "max_rel_error": 4.2662316688515234e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 230,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 3,
+        "max_abs_error": 2.964035961117162e-09,
+        "max_rel_error": 7.308308955955657e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 230,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 4,
+        "max_abs_error": 7.774443311348023e-10,
+        "max_rel_error": 3.101964210445941e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 185,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 3,
+        "max_abs_error": 7.723831019212923e-10,
+        "max_rel_error": 5.368284681880504e-09,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 185,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 2,
+        "max_abs_error": 4.774518558292584e-10,
+        "max_rel_error": 1.738581620770927e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 139,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 0,
+        "max_abs_error": 4.3383889536396936e-10,
+        "max_rel_error": 2.7774701056943907e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 139,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 2,
+        "max_abs_error": 1.0096741238224682e-09,
+        "max_rel_error": 7.0766750963575e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 209,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 4,
+        "max_abs_error": 5.212166809265284e-10,
+        "max_rel_error": 2.090553025154467e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 209,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 3,
+        "max_abs_error": 3.8835314131180354e-10,
+        "max_rel_error": 6.2410212481861886e-09,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 119,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 4,
+        "max_abs_error": 1.6381935599718567e-09,
+        "max_rel_error": 1.350143860763969e-07,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 119,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 1,
+        "max_abs_error": 5.158382609948831e-10,
+        "max_rel_error": 5.019433203123671e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 90,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 5,
+        "max_abs_error": 6.047470094139307e-10,
+        "max_rel_error": 8.623406619609144e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 90,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 17,
+        "max_abs_error": 1.0849401654855484e-09,
+        "max_rel_error": 1.3323556319086357e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 28,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 0,
+        "l1_kink_coords": 13,
+        "max_abs_error": 2.1357275947764265e-09,
+        "max_rel_error": 2.0947642716638425e-06,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 28,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 28,
+        "max_abs_error": 1.1152914841661143e-09,
+        "max_rel_error": 6.868389170627998e-08,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 124,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 23,
+        "max_abs_error": 1.2905268798046876e-09,
+        "max_rel_error": 1.1302852197250347e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 124,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 3,
+        "max_abs_error": 6.903498449978285e-10,
+        "max_rel_error": 7.875745533200557e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 81,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 1,
+        "max_abs_error": 3.926005298637847e-09,
+        "max_rel_error": 1.0188621730381905e-07,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 81,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 8,
+        "max_abs_error": 7.084703934623349e-10,
+        "max_rel_error": 4.290986768596965e-09,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 218,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 2,
+        "max_abs_error": 1.7957739739671297e-09,
+        "max_rel_error": 6.010790493961855e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 218,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 33,
+        "max_abs_error": 1.3111583485603262e-09,
+        "max_rel_error": 1.3556784068465233e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 96,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 29,
+        "max_abs_error": 2.111125052550733e-09,
+        "max_rel_error": 2.581409161460742e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 96,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 2,
+        "max_abs_error": 1.2308911667702205e-09,
+        "max_rel_error": 1.0308175796149347e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 230,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 2,
+        "max_abs_error": 1.820915862538186e-09,
+        "max_rel_error": 3.8829481060000824e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 230,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 4,
+        "max_abs_error": 1.3257877018446607e-09,
+        "max_rel_error": 3.589656158198654e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 185,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 6,
+        "max_abs_error": 1.3221815864383757e-09,
+        "max_rel_error": 3.306061646116197e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 185,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 3,
+        "max_abs_error": 1.0518286797100984e-09,
+        "max_rel_error": 1.756030863365128e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 139,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 2,
+        "max_abs_error": 1.8134973522876408e-09,
+        "max_rel_error": 1.275477080009793e-07,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 139,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 4,
+        "max_abs_error": 1.3415486915802077e-09,
+        "max_rel_error": 2.7284960553254432e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 209,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 4,
+        "max_abs_error": 1.6506136180094444e-09,
+        "max_rel_error": 1.1466304521760539e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 209,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 3,
+        "max_abs_error": 1.0118500481937076e-09,
+        "max_rel_error": 1.381866946569205e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 119,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 4,
+        "max_abs_error": 1.5118357121757242e-09,
+        "max_rel_error": 3.1045681350976294e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 119,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 3,
+        "max_abs_error": 1.2853582712080147e-09,
+        "max_rel_error": 7.450198365822851e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 90,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 3,
+        "max_abs_error": 1.3436648599318701e-09,
+        "max_rel_error": 9.375041875168252e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 90,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 23,
+        "max_abs_error": 1.75646884537084e-09,
+        "max_rel_error": 6.149352653070026e-08,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 28,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 1,
+        "l1_kink_coords": 17,
+        "max_abs_error": 1.786702230610615e-09,
+        "max_rel_error": 2.2319708960432277e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 28,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 30,
+        "max_abs_error": 6.972796784410207e-10,
+        "max_rel_error": 2.314948244168145e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 124,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 22,
+        "max_abs_error": 3.743367615882676e-09,
+        "max_rel_error": 4.7147225000570957e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 124,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 6,
+        "max_abs_error": 8.172148513452271e-10,
+        "max_rel_error": 1.7946974905948648e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 81,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 5,
+        "max_abs_error": 7.675538538087778e-10,
+        "max_rel_error": 9.081079905783927e-09,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 81,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 2,
+        "max_abs_error": 6.455364021107357e-10,
+        "max_rel_error": 8.834258887922106e-09,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 218,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 1,
+        "max_abs_error": 1.722568310214001e-09,
+        "max_rel_error": 8.03833969634672e-07,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 218,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 35,
+        "max_abs_error": 1.0248091264486447e-09,
+        "max_rel_error": 4.3892567284377224e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 96,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 26,
+        "max_abs_error": 4.0733754147481704e-09,
+        "max_rel_error": 6.847162037047516e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 96,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 2,
+        "max_abs_error": 5.748692633034125e-10,
+        "max_rel_error": 5.594919830411641e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 230,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 4,
+        "max_abs_error": 8.66231975038545e-10,
+        "max_rel_error": 1.2302191198709302e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 230,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 4,
+        "max_abs_error": 9.06289876478894e-10,
+        "max_rel_error": 8.581539313429508e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 185,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 1,
+        "max_abs_error": 1.891029444145431e-09,
+        "max_rel_error": 5.8211911755008337e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 185,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 2,
+        "max_abs_error": 6.386047107787007e-10,
+        "max_rel_error": 1.7679527238981573e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 139,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 3,
+        "max_abs_error": 6.523155522686341e-10,
+        "max_rel_error": 4.627962515404306e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 139,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 9,
+        "max_abs_error": 5.581442807933712e-10,
+        "max_rel_error": 1.3238162928575899e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 209,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 2,
+        "max_abs_error": 1.7423086307033486e-09,
+        "max_rel_error": 1.557295191105751e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 209,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 5,
+        "max_abs_error": 6.817053588292765e-10,
+        "max_rel_error": 1.1012812400257245e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 119,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 4,
+        "max_abs_error": 1.4515321722363694e-09,
+        "max_rel_error": 5.1544217278228546e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 119,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 2,
+        "max_abs_error": 9.314588544917513e-10,
+        "max_rel_error": 3.026263332882073e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 90,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 2,
+        "max_abs_error": 8.345952193233863e-10,
+        "max_rel_error": 1.728514027604553e-08,
+        "n_coords": 32,
+        "repeat": 0,
+        "source_beer": 90,
+        "strategy": "qp-quantile-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 18,
+        "max_abs_error": 1.0477269538067269e-09,
+        "max_rel_error": 4.6047313310143445e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 28,
+        "strategy": "qp-source-anchor"
+      },
+      {
+        "fold": 2,
+        "l1_kink_coords": 15,
+        "max_abs_error": 2.3254975167752434e-09,
+        "max_rel_error": 5.770920941720374e-07,
+        "n_coords": 231,
+        "repeat": 0,
+        "source_beer": 28,
+        "strategy": "qp-quantile-anchor"
+      }
+    ],
+    "explanation": "the objective is a rank-10 quadratic plus lambda*L2 plus eta*L1; it is smooth except at the L1 kink |z_i-z_source,i|=0. At those coordinates the central difference returns the secant subgradient, which is why the kink coordinates are counted and excluded from the relative error instead of being averaged away",
+    "maxAbsError": 4.0733754147481704e-09,
+    "maxRelError": 2.0947642716638425e-06,
+    "method": "central finite differences (h=1e-6) against the analytic gradient of the implemented objective"
+  },
+  "per_fold": [
+    {
+      "dTarget": 20.214086415311137,
+      "feasibleSetNonempty": true,
+      "fold": 0,
+      "nContext": 152,
+      "nInfeasibleSources": 0,
+      "nTargetReference": 18,
+      "nTrainingSourceRows": 7,
+      "repeat": 0,
+      "sourceBeers": [
+        124,
+        81,
+        218,
+        96,
+        230,
+        185,
+        139,
+        209,
+        119,
+        90,
+        28
+      ],
+      "targetMeanSelfDistance": 2.5182015037445826e-16,
+      "targetMeanSelfDistanceLegacy": 0.6654909915445382
+    },
+    {
+      "dTarget": 19.04900893452032,
+      "feasibleSetNonempty": true,
+      "fold": 1,
+      "nContext": 160,
+      "nInfeasibleSources": 0,
+      "nTargetReference": 19,
+      "nTrainingSourceRows": 7,
+      "repeat": 0,
+      "sourceBeers": [
+        124,
+        81,
+        218,
+        96,
+        230,
+        185,
+        139,
+        209,
+        119,
+        90,
+        28
+      ],
+      "targetMeanSelfDistance": 4.74908413763155e-16,
+      "targetMeanSelfDistanceLegacy": 0.5050289263548918
+    },
+    {
+      "dTarget": 15.668163770819502,
+      "feasibleSetNonempty": true,
+      "fold": 2,
+      "nContext": 166,
+      "nInfeasibleSources": 0,
+      "nTargetReference": 19,
+      "nTrainingSourceRows": 8,
+      "repeat": 0,
+      "sourceBeers": [
+        124,
+        81,
+        218,
+        96,
+        230,
+        185,
+        139,
+        209,
+        119,
+        90,
+        28
+      ],
+      "targetMeanSelfDistance": 3.41060009618782e-16,
+      "targetMeanSelfDistanceLegacy": 0.4115149440468759
+    }
+  ],
+  "per_repeat": [
+    {
+      "nSources": 33,
+      "nonincrease-rate": 1.0,
+      "repeat": 0,
+      "seed": 20261025,
+      "t2n-increases": 0,
+      "transfer-energy": 2.1889469819441043,
+      "transfer-energy-U": -0.2243466989674824
+    }
+  ],
+  "protocol": {
+    "anchors": {
+      "qp-quantile-anchor": "the source beer mapped through its own marginal ranks onto the target marginals (source quantiles preserved against the target reference); this is the delivered variant",
+      "qp-source-anchor": "the declared literal anchor z_source"
+    },
+    "centering": "score(z) = ((z - z_mean) P - score_mean)/score_sd; the fitted z_mean is subtracted both in the objective and in every reported distance (the v5 defect was the missing subtraction)",
+    "constraints": {
+      "box": "declared observed training support; the 33 LINEAR_CALIBRATED columns are also >= 0",
+      "chemicalNonIncrease": {
+        "column": "X.E..2.nonenal",
+        "rule": "c_new <= c_source (a measured column, not t2n)"
+      },
+      "chemistryCaps": {
+        "DMS": "c_new <= c_source (physical), verifiable source value",
+        "X2.3.butanedione": "c_new <= c_source (physical), verifiable source value",
+        "X4VG": "c_new <= c_source (physical), verifiable source value"
+      },
+      "proxyRow": {
+        "column": "stale_hops",
+        "rule": "linear ridge proxy <= source prediction + 1e-9",
+        "state": "PROXY, not a chemical measurement"
+      },
+      "t2n": "diagnostic only, never a constraint"
+    },
+    "eta": 0.01,
+    "fitScope": "each outer fold: median/centre/scale/floor codes/marginals/label proxy/target reference are fitted on that fold's TRAINING rows only, with the source style excluded; the source beers are query inputs",
+    "kappa": 5.0,
+    "lambda": 2.0,
+    "nComponents": 10,
+    "qp": "min (z-zref)' Q_t (z-zref) + lambda||z-z_anchor||^2 + eta*sum(t), s.t. -t<=z-z_source<=t, t>=0, l<=z<=u, A z<=b; Q_t = P' diag(1/sd)^2 Sigma_corr^-1 diag(1/sd)^2 P (rank 10)",
+    "repeats": [
+      0
+    ],
+    "seeds": [
+      20261025
+    ],
+    "solver": "exact ADMM for the declared convex QP: primal-dual, exact box+half-space prox by bisection, Woodbury solve for the rank-10 quadratic; t eliminated at t=|z-z_source| because eta>0",
+    "solverRejected": "scipy.optimize.minimize SLSQP was benchmarked on the 462-variable form (z and t): 26-31 s per solve at status=8 with constraint violations up to 7e-4, so it is not used",
+    "sourceBeers": [
+      124,
+      81,
+      218,
+      96,
+      230,
+      185,
+      139,
+      209,
+      119,
+      90,
+      28
+    ],
+    "sourceStyle": "Pils/Lager",
+    "splitFingerprints": {
+      "data_q3_sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "q3_lib_sha256": "9e0fc7461fd8b40bcee540bfa37d0e27c80ddf041a9ac745473cd836c00a32eb",
+      "splits_sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "target_columns_sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "thresholds_sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+      "v6_common_sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4"
+    },
+    "splits": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0097/inputs/data/splits/NESTED-CV-1/splits.csv",
+    "targetStyle": "Tripel"
+  },
+  "target_mean_assertion": {
+    "assertion": "target mean to itself < 1e-8 with the fixed centring",
+    "maxObserved": 4.74908413763155e-16,
+    "maxObservedLegacyCentering": 0.6654909915445382,
+    "oldValueFromIndependentRecheck": 0.6044870518234862,
+    "perFold": [
+      {
+        "fixed": 2.5182015037445826e-16,
+        "fold": 0,
+        "legacy": 0.6654909915445382,
+        "repeat": 0
+      },
+      {
+        "fixed": 4.74908413763155e-16,
+        "fold": 1,
+        "legacy": 0.5050289263548918,
+        "repeat": 0
+      },
+      {
+        "fixed": 3.41060009618782e-16,
+        "fold": 2,
+        "legacy": 0.4115149440468759,
+        "repeat": 0
+      }
+    ]
+  }
+}

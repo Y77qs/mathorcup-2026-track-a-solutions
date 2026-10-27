@@ -1,0 +1,623 @@
+{
+ "pdf": ".rework/previews/preview-D/preview.pdf",
+ "pdf_header": "%PDF-1.7",
+ "pages": 30,
+ "page_size_pt": [
+  595.28,
+  841.89
+ ],
+ "page_size_cm": [
+  21.0,
+  29.7
+ ],
+ "page1_has_DRAFT": true,
+ "page2_has_DRAFT": false,
+ "per_page": [
+  {
+   "page": 1,
+   "chars": 1250,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [],
+   "footer_count": 0,
+   "page_number_arabic": null,
+   "digits_in_footer": [],
+   "first_line": "基于稳健表示、共表达网络与风格条件生成的啤酒化合物—感",
+   "visitor_err": null
+  },
+  {
+   "page": 2,
+   "chars": 3336,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [],
+   "footer_count": 0,
+   "page_number_arabic": null,
+   "digits_in_footer": [],
+   "first_line": "目录",
+   "visitor_err": null
+  },
+  {
+   "page": 3,
+   "chars": 966,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [],
+   "footer_count": 0,
+   "page_number_arabic": null,
+   "digits_in_footer": [],
+   "first_line": "7.1 检验设计 . . . . . . . . . . . . . . . . . . . . . . . . . .",
+   "visitor_err": null
+  },
+  {
+   "page": 4,
+   "chars": 1694,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "1",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 1,
+   "digits_in_footer": [
+    "1"
+   ],
+   "first_line": "1 问题重述与分析",
+   "visitor_err": null
+  },
+  {
+   "page": 5,
+   "chars": 1391,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "2",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 2,
+   "digits_in_footer": [
+    "2"
+   ],
+   "first_line": "2 数据核实与统一字典",
+   "visitor_err": null
+  },
+  {
+   "page": 6,
+   "chars": 1258,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "3",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 3,
+   "digits_in_footer": [
+    "3"
+   ],
+   "first_line": "3 模型假设、符号与总体框架",
+   "visitor_err": null
+  },
+  {
+   "page": 7,
+   "chars": 1896,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "4",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 4,
+   "digits_in_footer": [
+    "4"
+   ],
+   "first_line": "训练图的边权为 wjk = bρjk 1{|bρjk | ≥ τ }，wjj = 0 ，其中 τ = 0 .5 在任何拟",
+   "visitor_err": null
+  },
+  {
+   "page": 8,
+   "chars": 704,
+   "images": 2,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "5",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 5,
+   "digits_in_footer": [
+    "5"
+   ],
+   "first_line": "本文使用两个 Skill 口径，二者不可混用：逐维 Skillt = 1 − MAEt,model/MAEt,media",
+   "visitor_err": null
+  },
+  {
+   "page": 9,
+   "chars": 1838,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "6",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 6,
+   "digits_in_footer": [
+    "6"
+   ],
+   "first_line": "表 2 指标分组误差与折间波动",
+   "visitor_err": null
+  },
+  {
+   "page": 10,
+   "chars": 959,
+   "images": 1,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "7",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 7,
+   "digits_in_footer": [
+    "7"
+   ],
+   "first_line": "图 3 问题一：相对等级 0–6 的折外预测分布与参照分布对照（内部嵌套 CV、中秩经验 CDF；属相对等级，",
+   "visitor_err": null
+  },
+  {
+   "page": 11,
+   "chars": 1713,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "8",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 8,
+   "digits_in_footer": [
+    "8"
+   ],
+   "first_line": "表 5 Beer#1–Beer#10 的 Flavour 核心维度相对等级",
+   "visitor_err": null
+  },
+  {
+   "page": 12,
+   "chars": 1122,
+   "images": 1,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "9",
+     294.9,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 9,
+   "digits_in_footer": [
+    "9"
+   ],
+   "first_line": "表 6 候选宇宙构成与两张表的划分",
+   "visitor_err": null
+  },
+  {
+   "page": 13,
+   "chars": 1789,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "10",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 10,
+   "digits_in_footer": [
+    "10"
+   ],
+   "first_line": "5.4 四种方法与综合打分",
+   "visitor_err": null
+  },
+  {
+   "page": 14,
+   "chars": 1928,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "11",
+     292.4,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 11,
+   "digits_in_footer": [
+    "11"
+   ],
+   "first_line": "感官",
+   "visitor_err": null
+  },
+  {
+   "page": 15,
+   "chars": 1949,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "12",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 12,
+   "digits_in_footer": [
+    "12"
+   ],
+   "first_line": "位排名的共识分；方向为总体 Spearman 相关的符号；类型按原脚本口径判定——“内”表示 | 风格内相关 | ≥ 0",
+   "visitor_err": null
+  },
+  {
+   "page": 16,
+   "chars": 1112,
+   "images": 1,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "13",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 13,
+   "digits_in_footer": [
+    "13"
+   ],
+   "first_line": "图 5 问题二：Top-3 入选频率 π 与符号一致性 （500 次风格内 bootstrap、3 重复） ；0.5 仅",
+   "visitor_err": null
+  },
+  {
+   "page": 17,
+   "chars": 1605,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "14",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 14,
+   "digits_in_footer": [
+    "14"
+   ],
+   "first_line": "第二，集合一致性不等于识别准确率。方法间 Jaccard 与跨重复 Jaccard 描述的是不同方法、不",
+   "visitor_err": null
+  },
+  {
+   "page": 18,
+   "chars": 1316,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "15",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 15,
+   "digits_in_footer": [
+    "15"
+   ],
+   "first_line": "两项必须分开读：归一化能量距离从原始抽样到设计谱的变化量测度的是 “投影让分布偏离了",
+   "visitor_err": null
+  },
+  {
+   "page": 19,
+   "chars": 1667,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "16",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 16,
+   "digits_in_footer": [
+    "16"
+   ],
+   "first_line": "表 10 生成方案的分布质量与同协议参照对照",
+   "visitor_err": null
+  },
+  {
+   "page": 20,
+   "chars": 732,
+   "images": 2,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "17",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 17,
+   "digits_in_footer": [
+    "17"
+   ],
+   "first_line": "图 6 问题三：归一化经验 V 能量距离（V/D_train）对照；生成设计谱 0.8840 未优于源样本重采样 0.8",
+   "visitor_err": null
+  },
+  {
+   "page": 21,
+   "chars": 1700,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "18",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 18,
+   "digits_in_footer": [
+    "18"
+   ],
+   "first_line": "表 11 声明约束的核验构成",
+   "visitor_err": null
+  },
+  {
+   "page": 22,
+   "chars": 2014,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "19",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 19,
+   "digits_in_footer": [
+    "19"
+   ],
+   "first_line": "表 12 二次规划求解证书摘要",
+   "visitor_err": null
+  },
+  {
+   "page": 23,
+   "chars": 1866,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "20",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 20,
+   "digits_in_footer": [
+    "20"
+   ],
+   "first_line": "学列不增率” 列） ： 无论QP 策略、 平凡对照还是参照控制， 四条cap 都没有被违反。综合不增率另要",
+   "visitor_err": null
+  },
+  {
+   "page": 24,
+   "chars": 813,
+   "images": 1,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "21",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 21,
+   "digits_in_footer": [
+    "21"
+   ],
+   "first_line": "图 8 问题三：迁移三组量分面板——存储位移 |opt−src|、z 空间位移、约束残差 clamp(new−src,0",
+   "visitor_err": null
+  },
+  {
+   "page": 25,
+   "chars": 2023,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "22",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 22,
+   "digits_in_footer": [
+    "22"
+   ],
+   "first_line": "其中 mref 为参考运行（扰动前的对照）指标。四个问题对象各有独立计划、独立上限，不合并",
+   "visitor_err": null
+  },
+  {
+   "page": 26,
+   "chars": 1147,
+   "images": 1,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "23",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 23,
+   "digits_in_footer": [
+    "23"
+   ],
+   "first_line": "图 9 四组稳健性：绝对极差与真实相对极差并排、各自预注册上限；仅2/3 冻结种子，含预算扰动与迁移侧",
+   "visitor_err": null
+  },
+  {
+   "page": 27,
+   "chars": 1647,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "24",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 24,
+   "digits_in_footer": [
+    "24"
+   ],
+   "first_line": "区分 “有改善” 与 “未移动”；target-mean-projection 参照控制的综合不增率明显低于 1（表",
+   "visitor_err": null
+  },
+  {
+   "page": 28,
+   "chars": 722,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "25",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 25,
+   "digits_in_footer": [
+    "25"
+   ],
+   "first_line": "测：初赛题面及附件 1–8. 2026.",
+   "visitor_err": null
+  },
+  {
+   "page": 29,
+   "chars": 1880,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "26",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 26,
+   "digits_in_footer": [
+    "26"
+   ],
+   "first_line": "附录 A 　逐维误差、逐风格与完整 Top-3（完整表见支撑材料）",
+   "visitor_err": null
+  },
+  {
+   "page": 30,
+   "chars": 805,
+   "images": 0,
+   "header_items": [],
+   "header_count": 0,
+   "footer_items": [
+    [
+     "27",
+     292.2,
+     36.9
+    ]
+   ],
+   "footer_count": 1,
+   "page_number_arabic": 27,
+   "digits_in_footer": [
+    "27"
+   ],
+   "first_line": "附录 C 　证据类型、验证状态与限制",
+   "visitor_err": null
+  }
+ ]
+}

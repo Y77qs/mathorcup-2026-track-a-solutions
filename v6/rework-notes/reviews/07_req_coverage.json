@@ -1,0 +1,331 @@
+[
+ {
+  "id": "REQ-0001",
+  "text": "Q1：以 1.csv 的 231 个化学及理化变量为输入，为全部样本输出 3.xlsx 定义的 50 个感官维度（Aroma 15 + Flavour 15 + 口感/缺陷/总体 20，是题面\"约 40\"的超集）的 0–6 分级评分；分级必须由显式、可复核的规则从标准化标签 Y 派生，并披露 3.xlsx 为空白评分卡、原始 0–6 不可识别。",
+  "coverage_kind": "covered",
+  "blockedReason": null,
+  "note": "REQ-0001 ref 改指当前 active CLAIM-0056（ROB-0011 版本，旧 0048 已 superseded）。证据：EXP-0073 A/F30 0.359292 vs 基线 0.398177；VAL-0063/0064/0065；ROB-0011 绝对/相对极差 0.008210/0.023178；50 维评分卡映射 data/processed/q1_grade_summary.json。结构性缺口（split/holdout、provisional、确定性重现、2/3 种子）见 CLAIM-0056 limitations。",
+  "refs": [
+   {
+    "kind": "claim",
+    "id": "CLAIM-0056",
+    "path": null,
+    "exists": true,
+    "status": "active",
+    "stale": false,
+    "supersededBy": null,
+    "ok": true
+   },
+   {
+    "kind": "experiment",
+    "id": "EXP-0073",
+    "path": null,
+    "exists": true,
+    "status": "succeeded",
+    "ok": true
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "data/processed/q1_grade_summary.json",
+    "exists": true,
+    "ok": true,
+    "sha256": "02d8d9361bf6f72e924af4321aa35e18da36b2faa435a9c04b9b2e2eede0b521"
+   },
+   {
+    "kind": "script",
+    "id": null,
+    "path": "src/q1_fix.py",
+    "exists": true,
+    "ok": true,
+    "sha256": "2fb4b4b09216fb3ce3c15542e15e434863d9c70245d96f1185d6fa616fca2c12"
+   }
+  ],
+  "refs_all_ok": true,
+  "source_path": "problem/statement.md",
+  "quote_exact_in_statement": true,
+  "quote": "以 1.csv 化合物数据为基础，给出 3.xlsx 中定义的 Aroma 与 Flavour 两套、共约 40 个感官维度的 0–6 分制的分级评分结果。"
+ },
+ {
+  "id": "REQ-0002",
+  "text": "Q2：用 2.csv 构建化合物共表达图，结合 1.csv 特征，对每个感官维度给出 Top-3 关键单体化合物，并用 bootstrap 入选频率、方法间 Jaccard 系数与化学合理性证据量化稳定性；只声明同期关联，不宣称因果。",
+  "coverage_kind": "covered",
+  "blockedReason": null,
+  "note": "REV-0069 F2 修复：modules 实为共表达图连通分量（非化学类别分组；存在不平衡，172/231 落在主分量），已更正表述；化学合理性证据为 modules 连通分量 + factor_analysis 因子结构 + categoryCounts（216/3/7/5），未做外部化学知识库验证（CLAIM-0041 limitations 明示）。",
+  "refs": [
+   {
+    "kind": "claim",
+    "id": "CLAIM-0041",
+    "path": null,
+    "exists": true,
+    "status": "active",
+    "stale": false,
+    "supersededBy": null,
+    "ok": true
+   },
+   {
+    "kind": "experiment",
+    "id": "EXP-0075",
+    "path": null,
+    "exists": true,
+    "status": "succeeded",
+    "ok": true
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "experiments/EXP-0075/outputs.json",
+    "exists": true,
+    "ok": true,
+    "sha256": "0e6bd13087bdd6fe2216ed97d9b485aafad6d8a96bff4af88eaff67f2725e55c"
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "outputs/q2/factor_analysis.csv",
+    "exists": true,
+    "ok": true,
+    "sha256": "3ea5ec56d7f108a40c4a6047b39627819e9c5145309a5049fe585630ffa35dfe"
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "outputs/q2/top3_report.json",
+    "exists": true,
+    "ok": true,
+    "sha256": "2754a2452ea23d3431d3cfc2a59a1da6bd31503261523d7ccdb8bc5f9d751bba"
+   },
+   {
+    "kind": "script",
+    "id": null,
+    "path": "src/q2_fix.py",
+    "exists": true,
+    "ok": true,
+    "sha256": "fd010c4fc691fa9b161b7364d0f284b75d1177862e357c8637e5a4b1b1424d57"
+   }
+  ],
+  "refs_all_ok": true,
+  "source_path": "problem/statement.md",
+  "quote_exact_in_statement": true,
+  "quote": "利用 2.csv 的化合物相关数据构建化合物共表达图，结合 1.csv 特征，给出每个感官维度的 Top-3 关键因素化合物，并进行稳定性与化学合理性论证。"
+ },
+ {
+  "id": "REQ-0003",
+  "text": "Q3a：以 tasting_category_fine 为条件学习风格条件生成模型，在给定风格（Tripel、Kriek、Lambic 必做）下生成物理有效的化合物谱，并给出经 Q1 预测器映射的感官画像；Tripel/Kriek/Lambic 整类留出作为未见风格扩展，单独报告。",
+  "coverage_kind": "covered",
+  "blockedReason": null,
+  "note": "REV-0069 F1 修复：claim ref 改指当前 active CLAIM-0054（原引 CLAIM-0042 已 superseded）。生成质量：21 风格 177 可估格池化 0.884026 + Tripel/Kriek/Lambic 27 格 1.830576 分列（SCRIPT-0018 产物）；constraint-satisfaction=1.000 为构造性质；source-resample 0.813731 更优、不宣称优于基线；无原生 optimization VAL；双对象限制；ROB-0009 仅 2/3 种子。",
+  "refs": [
+   {
+    "kind": "claim",
+    "id": "CLAIM-0054",
+    "path": null,
+    "exists": true,
+    "status": "active",
+    "stale": false,
+    "supersededBy": null,
+    "ok": true
+   },
+   {
+    "kind": "experiment",
+    "id": "EXP-0079",
+    "path": null,
+    "exists": true,
+    "status": "succeeded",
+    "ok": true
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "experiments/EXP-0079/q3_metrics.csv",
+    "exists": true,
+    "ok": true,
+    "sha256": "c7e8a495c51cf8c86ef7f93392e167a0f6b555dc01320d555d8a22ea6c66932d"
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "outputs/q3/style_and_displacement_scope.json",
+    "exists": true,
+    "ok": true,
+    "sha256": "b78819747e5f08bec7e1d502db613bfe69880da5b9636c51090a827038b7c74b"
+   },
+   {
+    "kind": "script",
+    "id": null,
+    "path": "src/q3_fix.py",
+    "exists": true,
+    "ok": true,
+    "sha256": "ae599242db4b5ca7c2256bfa551cee1cbbcb1a4de33627fde9647d0c0b381f16"
+   }
+  ],
+  "refs_all_ok": true,
+  "source_path": "problem/statement.md",
+  "quote_exact_in_statement": true,
+  "quote": "以 tasting_category_fine 为风格标签，学习风格条件生成模型，在给定风格（如 Tripel、Kriek、Lambic）下生成合理的化合物谱，"
+ },
+ {
+  "id": "REQ-0004",
+  "text": "Q3b：实现 Pils/Lager→Tripel 的跨风格迁移，并把 DMS、双乙酰（X2.3.butanedione）、4VG、trans-2-nonenal、stale hops 的\"不恶化\"作为硬约束（而不是事后筛选）；同时给出 mean/median 双阈值情景与目标接近度—改动量 Pareto 前沿。",
+  "coverage_kind": "insufficient_data",
+  "blockedReason": "硬约束核心已覆盖（CLAIM-0055），但 mean/median 双阈值情景对比与“目标接近度—改动量 Pareto 前沿”在本确认轮无当前证据（EXP-0080 仅 source-cap、EXP-0079 仅 mean；FIG-0026/0031 为先导轮且 experimentId=null，不引用）。",
+  "note": "REV-0073 F1 修复：claim ref 与 note 改指当前 active CLAIM-0055（原 CLAIM-0050 已 superseded）。其余证据与 blockedReason 不变：Pareto 输入物化于 outputs/q3/style_and_displacement_scope.json（SCRIPT-0018，sha256 b7881974…），双阈值情景仍需下一轮登记实验。",
+  "refs": [
+   {
+    "kind": "claim",
+    "id": "CLAIM-0055",
+    "path": null,
+    "exists": true,
+    "status": "active",
+    "stale": false,
+    "supersededBy": null,
+    "ok": true
+   },
+   {
+    "kind": "experiment",
+    "id": "EXP-0080",
+    "path": null,
+    "exists": true,
+    "status": "succeeded",
+    "ok": true
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "experiments/EXP-0080/transfer_constraints.csv",
+    "exists": true,
+    "ok": true,
+    "sha256": "d7ff5c9566cf969a415acf602d6e0bd3cf653e3d36dca9444be234d08f9d3458"
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "outputs/q3/qp_cert_audit.json",
+    "exists": true,
+    "ok": true,
+    "sha256": "713b0143b0e085c8d699d1de3636d811e0ab8b25df187391578ccc6fcb5f0733"
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "outputs/q3/style_and_displacement_scope.json",
+    "exists": true,
+    "ok": true,
+    "sha256": "b78819747e5f08bec7e1d502db613bfe69880da5b9636c51090a827038b7c74b"
+   }
+  ],
+  "refs_all_ok": true,
+  "source_path": "problem/statement.md",
+  "quote_exact_in_statement": true,
+  "quote": "同时做跨风格迁移（如把 Pils/Lager 的化合物谱\"迁移\"为 Tripel 风格，保持缺陷化合物不恶化）。"
+ },
+ {
+  "id": "REQ-0005",
+  "text": "交付：提交完整论文，含摘要、问题分析、数据处理、模型构建、实验结果、结论与建议；论文数字全部来自台账占位符渲染，md/tex/pdf 三格式同版。",
+  "coverage_kind": "insufficient_data",
+  "blockedReason": "本批只做 claim/coverage；论文渲染与三格式同版（render/artifact/check）未执行，不能声称交付覆盖。",
+  "note": "REQ-0005 属论文/交付要求：本批明确不进入论文与交付，未运行 modeling_deliver render/artifact/check，也未验证 md/tex/pdf 同版与占位符渲染完整性。因此不以“文件存在”冒充覆盖。后续批次需先 render 再 check 才能重映射。",
+  "refs": [
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "report/paper.md",
+    "exists": true,
+    "ok": true,
+    "sha256": "16cee72bb12e8b401006fb8a2bfb1ccc6a18cdc22ae6ee43fd9bfd9df5b94307"
+   }
+  ],
+  "refs_all_ok": true,
+  "source_path": "problem/statement.md",
+  "quote_exact_in_statement": true,
+  "quote": "提交完整论文：含摘要、问题分析、数据处理、模型构建、实验结果、结论与建议。"
+ },
+ {
+  "id": "REQ-0006",
+  "text": "交付：支撑材料提交完整、可复现的源代码——全部脚本、依赖快照、固定种子与复现说明可追溯到台账实验。",
+  "coverage_kind": "covered",
+  "blockedReason": null,
+  "note": "当前证据：EXP-0073/0075/0079/0080 每个都带 freezeSources 的 sourceSnapshot（inputs 下数据/代码快照 + sha256）与 dependencies；14 次脚本执行（SCRIPT-0001..0014）带脚本 hash 与输出 hash；种子回执（seed-receipt.json）随多种子实验保存。限制：REPRODUCE.md 成文于先导轮，逐步说明以台账 SCRIPT/EXP 记录为准；本条只覆盖“可追溯”，不覆盖独立复现审查。",
+  "refs": [
+   {
+    "kind": "experiment",
+    "id": "EXP-0080",
+    "path": null,
+    "exists": true,
+    "status": "succeeded",
+    "ok": true
+   },
+   {
+    "kind": "script",
+    "id": null,
+    "path": "src/q3_transfer_fix.py",
+    "exists": true,
+    "ok": true,
+    "sha256": "525d649463132c46402556b5b04400cfe29612903dc94d6cff3147720f5ce962"
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "REPRODUCE.md",
+    "exists": true,
+    "ok": true,
+    "sha256": "67885f857f34ddb365c04ae41b87155fd7a15c7ab1536538a21fa6ccb90e9662"
+   },
+   {
+    "kind": "analysis",
+    "id": null,
+    "path": "experiments/EXP-0080/solver_certificates.jsonl",
+    "exists": true,
+    "ok": true,
+    "sha256": "7a9fb090aba3d2be5316e46716c5a47fc65ca9e5f470e12669b94da45778fcbb"
+   }
+  ],
+  "refs_all_ok": true,
+  "source_path": "problem/statement.md",
+  "quote_exact_in_statement": true,
+  "quote": "支撑材料中提交完整、可复现的源代码。"
+ },
+ {
+  "id": "REQ-0007",
+  "text": "交付：所有图表清晰、结论量化、逻辑完整——每张图有英文标注与中文图注，每个核心结论绑定可复算指标或证据。",
+  "coverage_kind": "insufficient_data",
+  "blockedReason": "图注/英文标注与“每张图—每个结论”的逐项一致性仍未被机器检查覆盖（仅有 9/9 图注与台账 caption 的文本一致性核对）；结论—指标绑定由 active claims 建立。原覆盖引用 FIG-0001 已 superseded，按“引用活跃替代对象”的规则改指其替代图 FIG-0033；本条仍为数据/证据不足，不改为 covered。",
+  "note": null,
+  "refs": [
+   {
+    "kind": "claim",
+    "id": "CLAIM-0056",
+    "path": null,
+    "exists": true,
+    "status": "active",
+    "stale": false,
+    "supersededBy": null,
+    "ok": true
+   },
+   {
+    "kind": "claim",
+    "id": "CLAIM-0055",
+    "path": null,
+    "exists": true,
+    "status": "active",
+    "stale": false,
+    "supersededBy": null,
+    "ok": true
+   },
+   {
+    "kind": "figure",
+    "id": "FIG-0033",
+    "path": null,
+    "exists": true,
+    "status": "active",
+    "supersededBy": null,
+    "sha_match": true,
+    "ok": true
+   }
+  ],
+  "refs_all_ok": true,
+  "source_path": "problem/statement.md",
+  "quote_exact_in_statement": true,
+  "quote": "所有图表清晰、结论量化、逻辑完整。"
+ }
+]

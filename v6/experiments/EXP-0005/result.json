@@ -1,0 +1,160 @@
+{
+  "token": "63bd73a74727fff6f2be903e",
+  "experimentId": "EXP-0005",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T11:56:43.263Z",
+  "endedAt": "2026-10-24T11:56:44.802Z",
+  "durationMs": 1539,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "constraint-satisfaction": 0.12,
+    "constraint-satisfaction-from-csv": 0.12,
+    "covariance-condition-number": 115.97243015160927,
+    "covariance-shrinkage": 0.22234388004406802,
+    "defect-exceedance-rate": 0.88,
+    "defect-exceedance-rate-real": 0.844,
+    "energy-distance-normalized": 0.7513853833897858,
+    "energy-distance-real-reference": 0.19211742120161324,
+    "n-features": 231.0,
+    "n-labels": 50.0,
+    "n-samples": 250.0,
+    "profile-mae": 0.01068129945307366,
+    "profile-spearman": 0.7963025210084033,
+    "style-holdout-energy-distance-normalized": 0.6638982217900483
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0005/figures.json",
+      "sha256": "86c7284b5df574955ff7e80b18c3fb12dc411f3686c910daca9142e13c40be8c",
+      "bytes": 462,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0005/metrics.json",
+      "sha256": "f627d52f18e5b1ba125be19063a04e6449b829592c64ea0c321faaa689dfdf35",
+      "bytes": 576,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0005/outputs.json",
+      "sha256": "61e009f482f8e89b0355c5765197068610e16952f55c2d9e897a513bd349e6d0",
+      "bytes": 8180,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0005/samples.csv",
+      "sha256": "fce7816e4d68bbd7eef8ae0fd003657bd2e04c46c4d969610ed17f85adf3210e",
+      "bytes": 1106776,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0005/seed-receipt.json",
+      "sha256": "884893ea21ded490d35ebd7c54fe32eca685c6753afed43489a1a4f7b4fbc00e",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0005/figures/baseline-defect-exceedance.png",
+      "sha256": "e6eea06e78e7c4154f1b0e51529e27242d8fdf4f31a6a4334e938f2a2540cca3",
+      "bytes": 39931,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0005/figures/baseline-energy-distance.png",
+      "sha256": "523af105ce88651a31810632e2cf3e0aa866da9ce385547d260f66ae5014958f",
+      "bytes": 65204,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0005/inputs/data/clean/q3_style_protocol.json",
+      "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+      "bytes": 3703,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0005/inputs/data/clean/q3_thresholds.json",
+      "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+      "bytes": 5531,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0005/inputs/data/processed/q1_grade_params.json",
+      "sha256": "d85d2a7bb3c4ac248deaacf73bbfbfc281fcaff2e9a15990b0c30e9626381fa4",
+      "bytes": 147244,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0005/inputs/src/q3_baseline.py",
+      "sha256": "6c1c463ced1088ace10d19665d4d90f6da14ea09f258fdf410bdf9aa8fb4ce09",
+      "bytes": 14403,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0005/inputs/src/q3_lib.py",
+      "sha256": "364afe5a45064cba5d1ffdafddabee94c7226ea0ebbfe04b06254a49d256de28",
+      "bytes": 52200,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0005/inputs/src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0005/inputs/src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435,
+      "kind": "file"
+    }
+  ],
+  "figures": [
+    {
+      "path": "experiments/EXP-0005/figures/baseline-defect-exceedance.png",
+      "name": "baseline-defect-exceedance.png",
+      "sha256": "e6eea06e78e7c4154f1b0e51529e27242d8fdf4f31a6a4334e938f2a2540cca3",
+      "bytes": 39931,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0005/figures/baseline-energy-distance.png",
+      "name": "baseline-energy-distance.png",
+      "sha256": "523af105ce88651a31810632e2cf3e0aa866da9ce385547d260f66ae5014958f",
+      "bytes": 65204,
+      "missing": false
+    },
+    {
+      "path": "figures/baseline-defect-exceedance.png",
+      "name": "baseline-defect-exceedance.png",
+      "sha256": "e6eea06e78e7c4154f1b0e51529e27242d8fdf4f31a6a4334e938f2a2540cca3",
+      "bytes": 39931,
+      "missing": true
+    },
+    {
+      "path": "figures/baseline-energy-distance.png",
+      "name": "baseline-energy-distance.png",
+      "sha256": "523af105ce88651a31810632e2cf3e0aa866da9ce385547d260f66ae5014958f",
+      "bytes": 65204,
+      "missing": true
+    }
+  ],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0005/inputs/src/q3_baseline.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0005/inputs/src/q3_baseline.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0005",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

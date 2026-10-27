@@ -1,0 +1,1485 @@
+{
+ "kind": "paper-tables-index",
+ "generatedAt": "2026-10-27T00:57:20Z",
+ "script": {
+  "path": "src/paper_tables.py",
+  "sha256": "f8d881234db6a52e4d3929ab1bf7c25dd9a38d016c9421c83932e656f1fa6940"
+ },
+ "allowedExperiments": [
+  "EXP-0073",
+  "EXP-0074",
+  "EXP-0075",
+  "EXP-0079",
+  "EXP-0080",
+  "EXP-0089",
+  "EXP-0090",
+  "EXP-0091",
+  "EXP-0092",
+  "EXP-0093",
+  "EXP-0099",
+  "EXP-0095",
+  "EXP-0096",
+  "EXP-0097",
+  "EXP-0100",
+  "EXP-0101",
+  "EXP-0102"
+ ],
+ "selfCheck": {
+  "ledger": {
+   "path": "state/ledger.json",
+   "sha256": "ec84bb2b00916efdd6205e4c3bf229b31d175b18de3da7723f2783bc01cf39f2",
+   "revision": 4615
+  },
+  "manifest": {
+   "path": "report/evidence_manifest.json",
+   "sha256": "0b65d24a4f86d4ea86b7b8ffe2587219303344e3e1bc94c5c4942a6da30cf69b"
+  },
+  "rule": "每个用到的实验指标都与台账同 id 同 key 的值逐位比对；不一致即该表具名失败"
+ },
+ "tables": {
+  "T1 q1-models": {
+   "id": "q1-models",
+   "key": "T1 q1-models",
+   "title": "问题一：同协议四模型对照（A/F30、全 50 维、宏平均 R²、Skill）",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0073/inner_grid.json",
+     "sha256": "bdc11114cc0245f383cba43ae2b1a849497c10b89cfac71a08751263e2a06211"
+    },
+    {
+     "path": "experiments/EXP-0073/metrics.json",
+     "sha256": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f"
+    },
+    {
+     "path": "experiments/EXP-0074/metrics.json",
+     "sha256": "19a74561eb67f0bd124c93f4d8beea1c078b36a69ccb7895f2b981d675154e1e"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q1-models.md",
+     "sha256": "89369169d05f5d7d0901a347096f00fd3edacfeacbc822adf1eb72965d39ace9",
+     "bytes": 1189
+    },
+    "csv": {
+     "path": "report/tables/q1-models.csv",
+     "sha256": "7f232ed49cb638291a8c2c6d1267a083d7d3af93f62e133c994bbcb28b6b75ab",
+     "bytes": 1577
+    }
+   },
+   "experiments": [
+    "EXP-0073",
+    "EXP-0074"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0073",
+     "keysCompared": 110,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0074",
+     "keysCompared": 11,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0073",
+     "metricKey": "mae",
+     "artifactValue": 0.35929156588219174,
+     "ledgerValue": 0.35929156588219174,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0073",
+     "metricKey": "mae_all50",
+     "artifactValue": 0.350504156920024,
+     "ledgerValue": 0.350504156920024,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0074",
+     "metricKey": "mae",
+     "artifactValue": 0.39817732837288883,
+     "ledgerValue": 0.39817732837288883,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0074",
+     "metricKey": "mae_all50",
+     "artifactValue": 0.3918800487369866,
+     "ledgerValue": 0.3918800487369866,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "秩网格 [3, 6, 10]；γ 网格 [0.0, 0.1, 1.0]；λ 网格 [0.1, 1.0, 10.0]"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T2 q1-groups": {
+   "id": "q1-groups",
+   "key": "T2 q1-groups",
+   "title": "问题一：三个指标组与九次折外分段的 MAE 与样本数",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0073/metrics.json",
+     "sha256": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q1-groups.md",
+     "sha256": "346c55460e3fde077cdaf481cd0930060902cd08f0cf121bed75678c70c8228a",
+     "bytes": 1224
+    },
+    "csv": {
+     "path": "report/tables/q1-groups.csv",
+     "sha256": "be621ec5e9ef44052700f6dfea1bc9a2bdde4a204ed31266430dedaffd9e054b",
+     "bytes": 2853
+    }
+   },
+   "experiments": [
+    "EXP-0073"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0073",
+     "keysCompared": 110,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "9 个 per_fold 行数之和 = n_rows = 750"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T3 q1-styles": {
+   "id": "q1-styles",
+   "key": "T3 q1-styles",
+   "title": "问题一：逐风格折外 MAE 与样本数",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0073/metrics.json",
+     "sha256": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q1-styles.md",
+     "sha256": "9d4b327caa7784267b363bf7815d71c25814487470f33e37510068f5c722be82",
+     "bytes": 1250
+    },
+    "csv": {
+     "path": "report/tables/q1-styles.csv",
+     "sha256": "e8e6c8329ad9f39e212c100c639536aa5a1780d3b813bab951c41fb69873f015",
+     "bytes": 3564
+    }
+   },
+   "experiments": [
+    "EXP-0073"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0073",
+     "keysCompared": 110,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "风格数 22，折外行数合计 750.0"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": false,
+   "supportOnly": true,
+   "removedFromPaperReason": "页数限制：完整逐维/逐风格表移入支撑材料；数据行（含负结果）与输入输出 SHA 全部保留。"
+  },
+  "T4 q1-targets": {
+   "id": "q1-targets",
+   "key": "T4 q1-targets",
+   "title": "问题一：30 个香气/风味维度的逐维 MAE 与 Skill（升序）",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0073/metrics.json",
+     "sha256": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f"
+    },
+    {
+     "path": "experiments/EXP-0073/oof_long.csv",
+     "sha256": "c97f8bc8d97bdcd9806f3b6662bab9c6ea4bd638cab588d6282d995991269b1f"
+    },
+    {
+     "path": "experiments/EXP-0073/predictions_all_models.csv",
+     "sha256": "3c8d37ec4f709c94e455d18b8ad3b4c7235ac08b61a84fb3ee5dc0969689aaf9"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q1-targets.md",
+     "sha256": "8f60d76335c4be459b2fd43efb88e30f93f78b7f01ef547bd773564c905ad99a",
+     "bytes": 2483
+    },
+    "csv": {
+     "path": "report/tables/q1-targets.csv",
+     "sha256": "f394f090dd9c3277852fc9c0b5eb160bb30bd212ea320fe7846e3d4d32c29e2a",
+     "bytes": 7747
+    }
+   },
+   "experiments": [
+    "EXP-0073"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0073",
+     "keysCompared": 110,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0073",
+     "metricKey": "mae",
+     "artifactValue": 0.3592915658821918,
+     "ledgerValue": 0.35929156588219174,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0073",
+     "metricKey": "mae_median",
+     "artifactValue": 0.3981773283728889,
+     "ledgerValue": 0.39817732837288883,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0073",
+     "metricKey": "mae_all50",
+     "artifactValue": 0.35050415692002407,
+     "ledgerValue": 0.350504156920024,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "改善 24 维 / 恶化 6 维；宽表对齐最大差 5.551e-17"
+   ],
+   "csvShape": "long",
+   "paperIncluded": false,
+   "supportOnly": true,
+   "removedFromPaperReason": "页数限制：完整逐维/逐风格表移入支撑材料；数据行（含负结果）与输入输出 SHA 全部保留。"
+  },
+  "T5 q1-grades": {
+   "id": "q1-grades",
+   "key": "T5 q1-grades",
+   "title": "问题一：各模型的 0–6 相对等级一致性",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0073/metrics.json",
+     "sha256": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f"
+    },
+    {
+     "path": "experiments/EXP-0073/outputs.json",
+     "sha256": "f92305bc01691e9c5d17df98fd1fee367f646210f538d933815236b52385f3da"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q1-grades.md",
+     "sha256": "003871a907665e16bf0094c63cb04e80637c3fb52cff89ac95e07d60eb05f214",
+     "bytes": 1242
+    },
+    "csv": {
+     "path": "report/tables/q1-grades.csv",
+     "sha256": "d5d5e9cb1148b652b1bd65a6f4a41a3874b4dd1ab0a016083badd4e98c44d1c0",
+     "bytes": 860
+    }
+   },
+   "experiments": [
+    "EXP-0073"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0073",
+     "keysCompared": 110,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "等级格数 37500"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T6 q1-scores-aroma": {
+   "id": "q1-scores-aroma",
+   "key": "T6 q1-scores-aroma",
+   "title": "问题一：Beer#1–Beer#10 的香气核心维度相对等级",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0073/oof_long.csv",
+     "sha256": "c97f8bc8d97bdcd9806f3b6662bab9c6ea4bd638cab588d6282d995991269b1f"
+    },
+    {
+     "path": "experiments/EXP-0073/outputs.json",
+     "sha256": "f92305bc01691e9c5d17df98fd1fee367f646210f538d933815236b52385f3da"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q1-scores-aroma.md",
+     "sha256": "0040ad38b0b93fa8a8f0ee6935edc3ad3d1da2916f6b9db8d38f360b526ba4d1",
+     "bytes": 1399
+    },
+    "csv": {
+     "path": "report/tables/q1-scores-aroma.csv",
+     "sha256": "2e0ad4d92ac7157d593057f87dc895d2d2ce0985c995030eca3c9ee6391b225f",
+     "bytes": 1272
+    }
+   },
+   "experiments": [
+    "EXP-0073"
+   ],
+   "checks": [],
+   "notes": [
+    "重复序号 0，十个样本 beer_id=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T7 q1-scores-flavour": {
+   "id": "q1-scores-flavour",
+   "key": "T7 q1-scores-flavour",
+   "title": "问题一：Beer#1–Beer#10 的风味核心维度相对等级",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0073/oof_long.csv",
+     "sha256": "c97f8bc8d97bdcd9806f3b6662bab9c6ea4bd638cab588d6282d995991269b1f"
+    },
+    {
+     "path": "experiments/EXP-0073/outputs.json",
+     "sha256": "f92305bc01691e9c5d17df98fd1fee367f646210f538d933815236b52385f3da"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q1-scores-flavour.md",
+     "sha256": "a1ab3464521df13d9e0f039f6bdaf35522034adc6015fb6022fbdd8830359165",
+     "bytes": 1399
+    },
+    "csv": {
+     "path": "report/tables/q1-scores-flavour.csv",
+     "sha256": "e75e8db4da97daee57e96beeb6db4c132e60bea6c14630e9907c982fe0e6aacb",
+     "bytes": 1272
+    }
+   },
+   "experiments": [
+    "EXP-0073"
+   ],
+   "checks": [],
+   "notes": [
+    "重复序号 0，十个样本 beer_id=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T8 q2-universe": {
+   "id": "q2-universe",
+   "key": "T8 q2-universe",
+   "title": "问题二：候选宇宙构成（严格榜 / 扩展榜分表）",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0075/candidate_scores.csv",
+     "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804"
+    },
+    {
+     "path": "experiments/EXP-0075/metrics.json",
+     "sha256": "27f90dad44a8268623c106b2b76da62e7434424c5085327a85fa49a954b48bf1"
+    },
+    {
+     "path": "experiments/EXP-0075/outputs.json",
+     "sha256": "0e6bd13087bdd6fe2216ed97d9b485aafad6d8a96bff4af88eaff67f2725e55c"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q2-universe.md",
+     "sha256": "83af9df245dda67a83065e9a76f2423297dfaf46130b6480ca401951ef8b69bd",
+     "bytes": 818
+    },
+    "csv": {
+     "path": "report/tables/q2-universe.csv",
+     "sha256": "248cfa36f9dc5a56793d72903364ffa5e09ca83ca9aab0e9c0d7ddaf7e804a0d",
+     "bytes": 1084
+    }
+   },
+   "experiments": [
+    "EXP-0075"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0075",
+     "keysCompared": 21,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "类别计数 {'derived_sum': 5, 'element_or_index': 3, 'physical_parameter': 7, 'single_compound': 216}；维度数 50"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T9 q2-core-top3": {
+   "id": "q2-core-top3",
+   "key": "T9 q2-core-top3",
+   "title": "问题二：20 个核心维度的 Top-3 关键化学因素",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0075/candidate_scores.csv",
+     "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804"
+    },
+    {
+     "path": "experiments/EXP-0075/strict_top3.csv",
+     "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q2-core-top3.md",
+     "sha256": "b0b98a71dc2c4db096f7dbe7b88d35dfff710b2827a9da9869200ca293c03369",
+     "bytes": 4211
+    },
+    "csv": {
+     "path": "report/tables/q2-core-top3.csv",
+     "sha256": "b8d38e3ed6a730425022fee52b5ee4dc4a14f995ee37483d1d4521b529d6010f",
+     "bytes": 17023
+    }
+   },
+   "experiments": [
+    "EXP-0075"
+   ],
+   "checks": [],
+   "notes": [
+    "md 为横向排版，csv 为等价的逐条目长表（20 维 × 3 位 = 60 行）"
+   ],
+   "csvShape": "long",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T10 q2-full-top3": {
+   "id": "q2-full-top3",
+   "key": "T10 q2-full-top3",
+   "title": "问题二：完整 50 维 Top-3（附录长表）",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0075/candidate_scores.csv",
+     "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804"
+    },
+    {
+     "path": "experiments/EXP-0075/strict_top3.csv",
+     "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q2-full-top3.md",
+     "sha256": "d9c9827376edc9ea679a76448af2731c70815cb80dd32e32310f2e07c7380f92",
+     "bytes": 16173
+    },
+    "csv": {
+     "path": "report/tables/q2-full-top3.csv",
+     "sha256": "94e54e65864e0de12e25abe75e669404e4e8dc5510e28372dab085282f02e32c",
+     "bytes": 38043
+    }
+   },
+   "experiments": [
+    "EXP-0075"
+   ],
+   "checks": [],
+   "notes": [
+    "50 维 × 3 = 150 条目"
+   ],
+   "csvShape": "long",
+   "paperIncluded": false,
+   "supportOnly": true,
+   "removedFromPaperReason": "页数限制：完整长表移入支撑材料以把正文控制在 30 页内；数据行、输入/输出 SHA 与表→实验映射全部保留，不代表证据缺失或降级。"
+  },
+  "T11 q2-extended": {
+   "id": "q2-extended",
+   "key": "T11 q2-extended",
+   "title": "问题二：15 个扩展指标的 Top-3",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0075/candidate_scores.csv",
+     "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804"
+    },
+    {
+     "path": "experiments/EXP-0075/extended_top3.csv",
+     "sha256": "53dd5ef364e488b9f021124c3dcd1fc54fa3d6f658a82661855fe2fc4f45bbde"
+    },
+    {
+     "path": "experiments/EXP-0075/metrics.json",
+     "sha256": "27f90dad44a8268623c106b2b76da62e7434424c5085327a85fa49a954b48bf1"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q2-extended.md",
+     "sha256": "b4f6724f313fc0ab0bcd9b343a7e4a7489b938b617903c7bf11832ff26aabb09",
+     "bytes": 14288
+    },
+    "csv": {
+     "path": "report/tables/q2-extended.csv",
+     "sha256": "aee2db31b913c3d840f44fcc36bd253e06d46dfa810267aa8f5e9ab749e72fee",
+     "bytes": 36231
+    }
+   },
+   "experiments": [
+    "EXP-0075"
+   ],
+   "checks": [],
+   "notes": [
+    "50 维 × 3 = 150 条目；候选宇宙 15 个扩展指标"
+   ],
+   "csvShape": "long",
+   "paperIncluded": false,
+   "supportOnly": true,
+   "removedFromPaperReason": "页数限制：完整长表移入支撑材料以把正文控制在 30 页内；数据行、输入/输出 SHA 与表→实验映射全部保留，不代表证据缺失或降级。"
+  },
+  "T12 q2-stability": {
+   "id": "q2-stability",
+   "key": "T12 q2-stability",
+   "title": "问题二：稳定性与同源秩相关对照",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0075/metrics.json",
+     "sha256": "27f90dad44a8268623c106b2b76da62e7434424c5085327a85fa49a954b48bf1"
+    },
+    {
+     "path": "experiments/EXP-0075/outputs.json",
+     "sha256": "0e6bd13087bdd6fe2216ed97d9b485aafad6d8a96bff4af88eaff67f2725e55c"
+    },
+    {
+     "path": "experiments/EXP-0089/metrics.json",
+     "sha256": "50c33007f7506694e8654a895b425c0e3ed68fadad69855a6719f1c7284c6503"
+    },
+    {
+     "path": "experiments/EXP-0090/metrics.json",
+     "sha256": "82ca4280ab18efe439db6cd5e5039de2d4a8d6cd247b2e72ffa945017b2152fa"
+    },
+    {
+     "path": "experiments/EXP-0091/metrics.json",
+     "sha256": "bdf559985d98c514a4cde6b0ba798043aa617ee27747097c59cda0480dd29168"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q2-stability.md",
+     "sha256": "a9096a00b75e626afb3d1ad44de4fec8da69bc93bcf3f2eb12d34000b1b2057b",
+     "bytes": 2323
+    },
+    "csv": {
+     "path": "report/tables/q2-stability.csv",
+     "sha256": "c383933187e18ffe1058462839e222d0249c49d4927bd70712ac0e7c62714217",
+     "bytes": 2995
+    }
+   },
+   "experiments": [
+    "EXP-0075",
+    "EXP-0089",
+    "EXP-0090",
+    "EXP-0091"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0075",
+     "keysCompared": 21,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0089",
+     "keysCompared": 18,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0089",
+     "metricKey": "topk-jaccard",
+     "artifactValue": 0.2103333333333333,
+     "ledgerValue": 0.2103333333333333,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0090",
+     "keysCompared": 18,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0090",
+     "metricKey": "topk-jaccard",
+     "artifactValue": 0.20733333333333334,
+     "ledgerValue": 0.20733333333333334,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0091",
+     "keysCompared": 18,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0091",
+     "metricKey": "topk-jaccard",
+     "artifactValue": 0.20533333333333334,
+     "ledgerValue": 0.20533333333333334,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0075",
+     "metricKey": "topk-jaccard",
+     "artifactValue": 0.2091111111111111,
+     "ledgerValue": 0.2091111111111111,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "三值 [0.2103333333333333, 0.20733333333333334, 0.20533333333333334]；绝对极差 0.004999999999999949；相对极差 0.02377179080824065"
+   ],
+   "csvShape": "long",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T13 q3-raw-design": {
+   "id": "q3-raw-design",
+   "key": "T13 q3-raw-design",
+   "title": "问题三：未约束原始生成与约束后设计谱对照",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0079/metrics.json",
+     "sha256": "f6d5e524a9bfd526239e170dddeb4b1bd5d6f1af65a8593b9aa571e4695bfa7c"
+    },
+    {
+     "path": "experiments/EXP-0079/outputs.json",
+     "sha256": "d6a634fa41888ab7b3f9d8dc37c9c2ac32542f2dc218d6c8039406df933f8511"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q3-raw-design.md",
+     "sha256": "b8e173bd751dd37412c631d52a05e58c592446805750db49ebfa18790a0b9bc1",
+     "bytes": 1807
+    },
+    "csv": {
+     "path": "report/tables/q3-raw-design.csv",
+     "sha256": "3e6f8c17280df1864991c206fb8bbbb180f3a3db5e428dd13c8bd33876eab284",
+     "bytes": 2479
+    }
+   },
+   "experiments": [
+    "EXP-0079"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0079",
+     "keysCompared": 52,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0079",
+     "metricKey": "energy-distance",
+     "artifactValue": 0.8840256215416039,
+     "ledgerValue": 0.8840256215416039,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "投影轮数 mean=1.47979797979798, max=5; 平均改动 0.014182594011416916"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T14 q3-quality": {
+   "id": "q3-quality",
+   "key": "T14 q3-quality",
+   "title": "问题三：生成质量方案比较与池化范围",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0079/metrics.json",
+     "sha256": "f6d5e524a9bfd526239e170dddeb4b1bd5d6f1af65a8593b9aa571e4695bfa7c"
+    },
+    {
+     "path": "experiments/EXP-0079/outputs.json",
+     "sha256": "d6a634fa41888ab7b3f9d8dc37c9c2ac32542f2dc218d6c8039406df933f8511"
+    },
+    {
+     "path": "outputs/q3/style_and_displacement_scope.json",
+     "sha256": "b78819747e5f08bec7e1d502db613bfe69880da5b9636c51090a827038b7c74b"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q3-quality.md",
+     "sha256": "577eb42b7cbd5046d99de288c79061d5bcac7d7b53709e8d3387a1c29a1c4c1d",
+     "bytes": 2784
+    },
+    "csv": {
+     "path": "report/tables/q3-quality.csv",
+     "sha256": "59d17630187a5345fbad6f44575d0da590f89294cd12f2041ed614effc973ff2",
+     "bytes": 2230
+    }
+   },
+   "experiments": [
+    "EXP-0079"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0079",
+     "keysCompared": 52,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0079",
+     "metricKey": "energy-distance",
+     "artifactValue": 0.8840256215416039,
+     "ledgerValue": 0.8840256215416039,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0079",
+     "metricKey": "energy-U-signed",
+     "artifactValue": 1.1138668332620816,
+     "ledgerValue": 1.1138668332620816,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "21 风格池化 0.8840256215416037（177 格 / n_gen=729）；三风格池化 1.8305764926829642（27 格 / n_gen=147）"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T15 q3-constraints": {
+   "id": "q3-constraints",
+   "key": "T15 q3-constraints",
+   "title": "问题三：约束核验汇总与逐类满足情况",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0079/constraints.csv",
+     "sha256": "e5ac3fee3570a07e25e109bbb9d65970fc1d32e5b50205626f8247f02550ba4b"
+    },
+    {
+     "path": "experiments/EXP-0079/metrics.json",
+     "sha256": "f6d5e524a9bfd526239e170dddeb4b1bd5d6f1af65a8593b9aa571e4695bfa7c"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q3-constraints.md",
+     "sha256": "69b722d61b523aa767a6d1f81499afca2129210a7e2b41fd2c2a9291f9826a8d",
+     "bytes": 1493
+    },
+    "csv": {
+     "path": "report/tables/q3-constraints.csv",
+     "sha256": "949eb53678d6b3fb168967b3589c004d76880e169e8c1657da71bc95894d032f",
+     "bytes": 4034
+    }
+   },
+   "experiments": [
+    "EXP-0079"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0079",
+     "keysCompared": 52,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "记录 28500；verified 19619 / conditional 8201 / not_identifiable 680 / infeasible 0"
+   ],
+   "csvShape": "long",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T16 q3-transfer-stages": {
+   "id": "q3-transfer-stages",
+   "key": "T16 q3-transfer-stages",
+   "title": "问题三：四种迁移策略的转移能量与不增率",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0080/metrics.json",
+     "sha256": "8d3574f53cb3d3b9e0bfc4db2b295b54d7e34b507bd2eb0af2435c12fa85ba3a"
+    },
+    {
+     "path": "experiments/EXP-0080/outputs.json",
+     "sha256": "f35c39dce7e171776b693070f27f786653c47f75c0a8c3441a0870e47948ba75"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q3-transfer-stages.md",
+     "sha256": "361b6f06bf5e18b3e97516b09cdba08fd74fcaf1955fdbab9a6e269c817fa369",
+     "bytes": 1792
+    },
+    "csv": {
+     "path": "report/tables/q3-transfer-stages.csv",
+     "sha256": "572c4a78719d88aeec6429b1c75849d0b953d5ffa3e9fc1979a0d2becc808dcb",
+     "bytes": 1651
+    }
+   },
+   "experiments": [
+    "EXP-0080"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0080",
+     "keysCompared": 41,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0080",
+     "metricKey": "transfer-energy",
+     "artifactValue": 2.261080494465066,
+     "ledgerValue": 2.261080494465066,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0080",
+     "metricKey": "nonincrease-rate",
+     "artifactValue": 1.0,
+     "ledgerValue": 1,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "目标均值自距 4.74908413763155e-16；旧口径 0.6654909915445382"
+   ],
+   "csvShape": "wide",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T17 q3-transfer-columns": {
+   "id": "q3-transfer-columns",
+   "key": "T17 q3-transfer-columns",
+   "title": "问题三：关键列的三组位移与残差",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0080/outputs.json",
+     "sha256": "f35c39dce7e171776b693070f27f786653c47f75c0a8c3441a0870e47948ba75"
+    },
+    {
+     "path": "experiments/EXP-0080/transfer_constraints.csv",
+     "sha256": "d7ff5c9566cf969a415acf602d6e0bd3cf653e3d36dca9444be234d08f9d3458"
+    },
+    {
+     "path": "experiments/EXP-0080/transfers.csv",
+     "sha256": "397a01a274cf7727fddcde07f1bd421bf6774a365e20894d2230d68c9b859b78"
+    },
+    {
+     "path": "outputs/q3/style_and_displacement_scope.json",
+     "sha256": "b78819747e5f08bec7e1d502db613bfe69880da5b9636c51090a827038b7c74b"
+    },
+    {
+     "path": "outputs/q3/zspace_recompute.json",
+     "sha256": "2915a2ee5f254554b66a1e15374df3b7529cd19027410dbd04cdb0ac1141f85d"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q3-transfer-columns.md",
+     "sha256": "97874c0dfba5c3aa03f638aa78c6082f87f9dafaa40773e13fe4f50b783f77c1",
+     "bytes": 1081
+    },
+    "csv": {
+     "path": "report/tables/q3-transfer-columns.csv",
+     "sha256": "19414e9bffeb7a53bbca7dccf8afd0350c17056086d5a2525fbb89560dc5be16",
+     "bytes": 1391
+    }
+   },
+   "experiments": [
+    "EXP-0080"
+   ],
+   "checks": [],
+   "notes": [
+    "z 位移复算失配 0 行；stored 位移源为范围文件"
+   ],
+   "csvShape": "long",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T18 q3-qp-certs": {
+   "id": "q3-qp-certs",
+   "key": "T18 q3-qp-certs",
+   "title": "问题三：198 个 QP 求解证书汇总",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0080/metrics.json",
+     "sha256": "8d3574f53cb3d3b9e0bfc4db2b295b54d7e34b507bd2eb0af2435c12fa85ba3a"
+    },
+    {
+     "path": "experiments/EXP-0080/outputs.json",
+     "sha256": "f35c39dce7e171776b693070f27f786653c47f75c0a8c3441a0870e47948ba75"
+    },
+    {
+     "path": "experiments/EXP-0080/solver_certificates.jsonl",
+     "sha256": "7a9fb090aba3d2be5316e46716c5a47fc65ca9e5f470e12669b94da45778fcbb"
+    },
+    {
+     "path": "outputs/q3/qp_cert_audit.json",
+     "sha256": "713b0143b0e085c8d699d1de3636d811e0ab8b25df187391578ccc6fcb5f0733"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/q3-qp-certs.md",
+     "sha256": "457b2cda6ae36354c3f99974b9a8a900a33a648fc2d337134551e6096671b451",
+     "bytes": 1515
+    },
+    "csv": {
+     "path": "report/tables/q3-qp-certs.csv",
+     "sha256": "199dfc56d4db055db2f8a24bf7c5fb47071d1111c69bcde46e87d1247a48be8f",
+     "bytes": 4143
+    }
+   },
+   "experiments": [
+    "EXP-0080"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0080",
+     "keysCompared": 41,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0080",
+     "metricKey": "qp-max-primal-residual",
+     "artifactValue": 9.989717497660422e-09,
+     "ledgerValue": 9.989717497660422e-09,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0080",
+     "metricKey": "qp-status-optimal",
+     "artifactValue": 198,
+     "ledgerValue": 198,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "证书 198 条；状态 {'optimal': 198}；唯一哈希 198；最大迭代 49"
+   ],
+   "csvShape": "long",
+   "paperIncluded": true,
+   "supportOnly": false
+  },
+  "T19 rob-confirmatory": {
+   "id": "rob-confirmatory",
+   "key": "T19 rob-confirmatory",
+   "title": "四个稳健性检验的确认性结果",
+   "status": "COMPLETE",
+   "complete": true,
+   "reason": null,
+   "inputs": [
+    {
+     "path": "experiments/EXP-0089/metrics.json",
+     "sha256": "50c33007f7506694e8654a895b425c0e3ed68fadad69855a6719f1c7284c6503"
+    },
+    {
+     "path": "experiments/EXP-0090/metrics.json",
+     "sha256": "82ca4280ab18efe439db6cd5e5039de2d4a8d6cd247b2e72ffa945017b2152fa"
+    },
+    {
+     "path": "experiments/EXP-0091/metrics.json",
+     "sha256": "bdf559985d98c514a4cde6b0ba798043aa617ee27747097c59cda0480dd29168"
+    },
+    {
+     "path": "experiments/EXP-0092/metrics.json",
+     "sha256": "0102c81f9e3495760b367982757ca4f72f5438ce7349739709041cbcd6cf84d7"
+    },
+    {
+     "path": "experiments/EXP-0093/metrics.json",
+     "sha256": "3d1184f254551206f75ceee6dae5acad03d122cfaa4bf082998a672c38bfd9cb"
+    },
+    {
+     "path": "experiments/EXP-0095/metrics.json",
+     "sha256": "adf3c7570dfb4de26b65d835c04742d6a68d1f520d85fcca64794d7c50ce7cb8"
+    },
+    {
+     "path": "experiments/EXP-0096/metrics.json",
+     "sha256": "98867def8ad6d2bbd33d409f1cf55f1516c97831227af4d765122993dae78594"
+    },
+    {
+     "path": "experiments/EXP-0097/metrics.json",
+     "sha256": "6fdefee01e8fb9aacc25a37f8452fbd3ae7573c2c88b0fbfafdc144b4099f969"
+    },
+    {
+     "path": "experiments/EXP-0099/metrics.json",
+     "sha256": "5f55ec759a04dba09c4aa2fee8fac4babeedc1537a4a11e491b4beacac50c67a"
+    },
+    {
+     "path": "experiments/EXP-0100/metrics.json",
+     "sha256": "714db6cb0fa4c22f0b199c1c64ed0b22292242a29e31ccf35b6e715d6b063bce"
+    },
+    {
+     "path": "experiments/EXP-0101/metrics.json",
+     "sha256": "184b0b2b522ca5f800d21fd8cd73bba1923b58d431ee1e5c20e17c3403befb41"
+    },
+    {
+     "path": "experiments/EXP-0102/metrics.json",
+     "sha256": "3011f2636fd12df2cbbfde62725a20cf460af2f9ebd58b3acada2390ad4de226"
+    }
+   ],
+   "outputs": {
+    "md": {
+     "path": "report/tables/rob-confirmatory.md",
+     "sha256": "30a93c3f2a1d383a2af6303d74f3e76da0e5b92788b18b4637a90a0b14331ed2",
+     "bytes": 2007
+    },
+    "csv": {
+     "path": "report/tables/rob-confirmatory.csv",
+     "sha256": "07f00452b02d0c7168d10615c0119cc8e31490baf506c42052ee5c710af90e48",
+     "bytes": 2190
+    }
+   },
+   "experiments": [
+    "EXP-0089",
+    "EXP-0090",
+    "EXP-0091",
+    "EXP-0092",
+    "EXP-0093",
+    "EXP-0095",
+    "EXP-0096",
+    "EXP-0097",
+    "EXP-0099",
+    "EXP-0100",
+    "EXP-0101",
+    "EXP-0102"
+   ],
+   "checks": [
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0100",
+     "keysCompared": 90,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0100",
+     "metricKey": "mae",
+     "artifactValue": 0.35422354618559243,
+     "ledgerValue": 0.35422354618559243,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0101",
+     "keysCompared": 90,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0101",
+     "metricKey": "mae",
+     "artifactValue": 0.36243390816790516,
+     "ledgerValue": 0.36243390816790516,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0102",
+     "keysCompared": 90,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0102",
+     "metricKey": "mae",
+     "artifactValue": 0.35763459908881995,
+     "ledgerValue": 0.35763459908881995,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0089",
+     "keysCompared": 18,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0089",
+     "metricKey": "topk-jaccard",
+     "artifactValue": 0.2103333333333333,
+     "ledgerValue": 0.2103333333333333,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0090",
+     "keysCompared": 18,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0090",
+     "metricKey": "topk-jaccard",
+     "artifactValue": 0.20733333333333334,
+     "ledgerValue": 0.20733333333333334,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0091",
+     "keysCompared": 18,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0091",
+     "metricKey": "topk-jaccard",
+     "artifactValue": 0.20533333333333334,
+     "ledgerValue": 0.20533333333333334,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0092",
+     "keysCompared": 44,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0092",
+     "metricKey": "energy-distance",
+     "artifactValue": 0.8777844056665478,
+     "ledgerValue": 0.8777844056665478,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0093",
+     "keysCompared": 44,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0093",
+     "metricKey": "energy-distance",
+     "artifactValue": 0.876453018856588,
+     "ledgerValue": 0.876453018856588,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0099",
+     "keysCompared": 44,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0099",
+     "metricKey": "energy-distance",
+     "artifactValue": 0.8981550487535501,
+     "ledgerValue": 0.8981550487535501,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0095",
+     "keysCompared": 37,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0095",
+     "metricKey": "nonincrease-rate",
+     "artifactValue": 1.0,
+     "ledgerValue": 1,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0096",
+     "keysCompared": 37,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0096",
+     "metricKey": "nonincrease-rate",
+     "artifactValue": 1.0,
+     "ledgerValue": 1,
+     "passed": true
+    },
+    {
+     "check": "metrics.json==ledger(all shared keys)",
+     "experimentId": "EXP-0097",
+     "keysCompared": 37,
+     "passed": true
+    },
+    {
+     "check": "artifact==ledger",
+     "experimentId": "EXP-0097",
+     "metricKey": "nonincrease-rate",
+     "artifactValue": 1.0,
+     "ledgerValue": 1,
+     "passed": true
+    }
+   ],
+   "notes": [
+    "四行分别对应 evidence_manifest 的四个稳健性计划块"
+   ],
+   "csvShape": "long",
+   "paperIncluded": true,
+   "supportOnly": false
+  }
+ },
+ "figures": {
+  "source": "report/evidence_manifest.json#figures (ACTIVE only, current file bytes)",
+  "paperCited": [
+   "FIG-0032",
+   "FIG-0033",
+   "FIG-0034",
+   "FIG-0035",
+   "FIG-0036",
+   "FIG-0037",
+   "FIG-0038",
+   "FIG-0039",
+   "FIG-0040"
+  ],
+  "active": [
+   {
+    "figureId": "FIG-0032",
+    "path": "figures/confirmatory/Q1-per-target-skill.png",
+    "sha256": "2557001da5d9510a8f8afbfd682d4149c2b276b294901892dbc45ee0c8cf5838",
+    "caption": "问题一：逐目标相对误差改善 1−MAE模型/MAE中位数（图低秩，内部嵌套CV折外池化）；A/F30 0.0977、全50维 0.1056，12 个目标为负。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0033",
+    "path": "figures/confirmatory/Q1-model-comparison.png",
+    "sha256": "a461da972ec8e999b9d643e945cf792f262d61c88aa85680fc67e7ba8119122e",
+    "caption": "问题一：四模型同协议折外MAE（内部3×3×3嵌套重验证，非holdout）：中位数0.398、岭0.367、图岭0.366、图低秩0.359；全50维另列。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0034",
+    "path": "figures/confirmatory/Q1-grade-distribution.png",
+    "sha256": "e2cf95cdb0e4fa5d16a79db21f08f1abc8f8136346a2b02612285ea60daa27d4",
+    "caption": "问题一：相对等级 0–6 的折外预测分布与参照分布对照（内部嵌套CV、中秩经验CDF；属相对等级，未恢复人工评分）。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0035",
+    "path": "figures/confirmatory/Q2-network.png",
+    "sha256": "ad567a5eb75ba1b36012efc7d66b8d4e8e1667c348d2bf5cfa2f4f294410afc6",
+    "caption": "问题二：τ=0.5 Spearman 阈值网络（由 EXP-0075 注册输入重算，复现 732 边/51 分量）；严格单体216与扩展15分色，边非因果。",
+    "experimentIds": [
+     "EXP-0075"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0036",
+    "path": "figures/confirmatory/Q2-stability.png",
+    "sha256": "cec5621b88f02790868160137311c8375b26fef886c7738208d467faae976e99",
+    "caption": "问题二：Top-3 入选频率 π 与符号一致性（500 次风格内 bootstrap、3 重复）；0.5 仅参考非判定，500→200 为蒙特卡洛精度变化。",
+    "experimentIds": [
+     "EXP-0075"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0037",
+    "path": "figures/confirmatory/Q3-energy-comparison.png",
+    "sha256": "0e5d64be11e8a391a61de27e52838e8134661332d114d83cb314b2445a523349",
+    "caption": "问题三：归一化经验 V 能量距离（V/D_train）对照；生成设计谱 0.8840 未优于源样本重采样 0.8137，带符号 U 单列不截零。",
+    "experimentIds": [
+     "EXP-0079"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0038",
+    "path": "figures/confirmatory/Q3-per-style-energy.png",
+    "sha256": "6ef2bac1b7b9b8867864f3fc8df85a3f24fdfc9f066e0488c4e2b57678959a6b",
+    "caption": "问题三：逐风格 n_gen 加权能量距离（21 可估风格）；三风格池化 1.8306 与 21 风格池化 0.8840 分列标注、不得互替。",
+    "experimentIds": [
+     "EXP-0079"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0039",
+    "path": "figures/confirmatory/Q3-transfer-shift.png",
+    "sha256": "3c982d2394e3900ef7c91fd4f051d75ba8fd4e48123f9f548ae16efef9ba1e52",
+    "caption": "问题三：迁移三组量分面板——存储位移 |opt−src|、z 空间位移、约束残差 clamp(new−src,0)；残差非位移，按策略区分。",
+    "experimentIds": [
+     "EXP-0080"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0040",
+    "path": "figures/confirmatory/ROB-summary.png",
+    "sha256": "ab3461581ee902afde41bf6897316b67f8f9aedac12035919cdf6ec85f05be70",
+    "caption": "四组稳健性：绝对极差与真实相对极差并排、各自预注册上限；仅2/3冻结种子，含预算扰动与迁移侧饱和（极差0非改善）。",
+    "experimentIds": [],
+    "citedInPaper": true
+   }
+  ]
+ },
+ "ledgerSnapshot": {
+  "revision": 4656,
+  "runtimeRevision": 3317,
+  "updatedAt": "2026-10-27T01:59:15.526Z",
+  "ledgerSha256": "64a6a054bcc60476d91b2835d996de7e829d1d39bb0fc54b4257d841d3c374d4",
+  "semantics": "revision/updatedAt are BUSINESS fields and only change on ledger record edits; runtimeRevision is host/runtime bookkeeping written by the tool host on every call and is not a business change. This snapshot is recorded once per batch, not chased.",
+  "activeRunId": "RUN-0003"
+ },
+ "supportOnlySets": {
+  "note": "四类完整数据集的完整版本保留在支撑材料；正文只保留汇总。完整文件路径与 SHA 由各自条目或下列 supportOnly 清单给出。",
+  "items": [
+   {
+    "name": "q2-full-top3",
+    "tableId": "q2-full-top3",
+    "md": "report/tables/q2-full-top3.md",
+    "csv": "report/tables/q2-full-top3.csv"
+   },
+   {
+    "name": "q2-extended",
+    "tableId": "q2-extended",
+    "md": "report/tables/q2-extended.md",
+    "csv": "report/tables/q2-extended.csv"
+   },
+   {
+    "name": "q3-qp-certs（198 份证书全量）",
+    "inlineSummaryTableId": "q3-qp-certs",
+    "fullData": [
+     "experiments/EXP-0080/solver_certificates.jsonl",
+     "outputs/q3/qp_cert_audit.json"
+    ],
+    "note": "正文保留求解数量/optimal/primal/dual/KKT/violation 汇总额；198 份逐份证书指向上述文件。"
+   },
+   {
+    "name": "q3-transfer-columns（迁移逐行全量）",
+    "inlineSummaryTableId": "q3-transfer-columns",
+    "fullData": [
+     "experiments/EXP-0080/transfers.csv",
+     "experiments/EXP-0080/transfer_constraints.csv",
+     "outputs/q3/zspace_centrescale.csv"
+    ],
+    "note": "正文保留关键列与三组量的汇总；逐行全量指向上述文件。"
+   },
+   {
+    "name": "q1-targets（30 维逐维）",
+    "tableId": "q1-targets",
+    "md": "report/tables/q1-targets.md",
+    "csv": "report/tables/q1-targets.csv"
+   },
+   {
+    "name": "q1-styles（22 风格）",
+    "tableId": "q1-styles",
+    "md": "report/tables/q1-styles.md",
+    "csv": "report/tables/q1-styles.csv"
+   }
+  ]
+ }
+}

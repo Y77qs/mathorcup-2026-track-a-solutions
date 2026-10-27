@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0017",
+  "questionId": "Q1",
+  "modelId": "MODEL-0004",
+  "modelKind": "candidate",
+  "title": "Q1 ROB-0001 seed perturbation: seed 20261025, lambda x1",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": null,
+  "params": {
+    "alphaMultiplier": 1,
+    "dependencies": [
+      "src/target_columns.py",
+      "src/q_common.py",
+      "src/q1_lib.py",
+      "data/splits/SPLIT-0001/train.csv"
+    ],
+    "dependenciesComplete": true,
+    "featuresRef": "EXP-0016 (the same 231 chem__ columns; declared in full on the reference run)",
+    "freezeSources": true,
+    "inputsRestriction": "only SPLIT-0001 train.csv (200 rows); no split mounted",
+    "lambda": 1,
+    "rank": 10,
+    "representation": "rankgauss",
+    "requireSeedReceipt": true,
+    "seed": 20261025,
+    "targetContractId": "TGT-0001"
+  },
+  "datasetId": "DATA-0002",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0002",
+    "path": "data/clean/q1_mapped.csv",
+    "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+    "bytes": 979527,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "2ce0b2c3a72911328c4ed302840b63f3c50e5fcbd49a8744c348c176e2904271",
+  "configProtocolSha256": "23fec133d3df7a1e2a70ca7e4c3b86d8bfdce9d5cae34de6f5a9f651eb5cb460",
+  "configVersion": 1,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/q1_robust.py",
+    "sha256": "253a08ac3abcdb06fde468d10f8e76d3b7492850e711fa35b9a8ba1265e98702",
+    "bytes": 3065
+  },
+  "dependencies": [
+    {
+      "path": "data/splits/SPLIT-0001/train.csv",
+      "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+      "bytes": 687898
+    },
+    {
+      "path": "src/q1_lib.py",
+      "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+      "bytes": 23474
+    },
+    {
+      "path": "src/q1_robust.py",
+      "sha256": "253a08ac3abcdb06fde468d10f8e76d3b7492850e711fa35b9a8ba1265e98702",
+      "bytes": 3065
+    },
+    {
+      "path": "src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365
+    },
+    {
+      "path": "src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435
+    }
+  ],
+  "sourceSnapshot": {
+    "codePath": "experiments/EXP-0017/inputs/src/q1_robust.py",
+    "files": [
+      {
+        "path": "experiments/EXP-0017/inputs/data/splits/SPLIT-0001/train.csv",
+        "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+        "bytes": 687898,
+        "originalPath": "data/splits/SPLIT-0001/train.csv"
+      },
+      {
+        "path": "experiments/EXP-0017/inputs/src/q1_lib.py",
+        "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+        "bytes": 23474,
+        "originalPath": "src/q1_lib.py"
+      },
+      {
+        "path": "experiments/EXP-0017/inputs/src/q1_robust.py",
+        "sha256": "253a08ac3abcdb06fde468d10f8e76d3b7492850e711fa35b9a8ba1265e98702",
+        "bytes": 3065,
+        "originalPath": "src/q1_robust.py"
+      },
+      {
+        "path": "experiments/EXP-0017/inputs/src/q_common.py",
+        "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+        "bytes": 11365,
+        "originalPath": "src/q_common.py"
+      },
+      {
+        "path": "experiments/EXP-0017/inputs/src/target_columns.py",
+        "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "bytes": 29435,
+        "originalPath": "src/target_columns.py"
+      }
+    ],
+    "declaredComplete": true
+  },
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q1_robust.py",
+    "args": [
+      "--seed",
+      "20261025",
+      "--alpha-multiplier",
+      "1.0"
+    ],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/src/q1_robust.py",
+      "--seed",
+      "20261025",
+      "--alpha-multiplier",
+      "1.0"
+    ],
+    "cwd": "experiments/EXP-0017"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261025,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/src/q1_robust.py",
+      "--seed",
+      "20261025",
+      "--alpha-multiplier",
+      "1.0"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261025,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "ed78f7ca0490af39a785abf8d3d8a3b25a33450fd564f73f6b965ce4f0d7b5f2",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": "rob1-q1-seed",
+  "createdAt": "2026-10-24T12:05:18.882Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0017",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "candidate",
+    "title": "Q1 ROB-0001 seed perturbation: seed 20261025, lambda x1",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": null,
+    "params": {
+      "alphaMultiplier": 1,
+      "dependencies": [
+        "src/target_columns.py",
+        "src/q_common.py",
+        "src/q1_lib.py",
+        "data/splits/SPLIT-0001/train.csv"
+      ],
+      "dependenciesComplete": true,
+      "featuresRef": "EXP-0016 (the same 231 chem__ columns; declared in full on the reference run)",
+      "freezeSources": true,
+      "inputsRestriction": "only SPLIT-0001 train.csv (200 rows); no split mounted",
+      "lambda": 1,
+      "rank": 10,
+      "representation": "rankgauss",
+      "requireSeedReceipt": true,
+      "seed": 20261025,
+      "targetContractId": "TGT-0001"
+    },
+    "codeFile": "src/q1_robust.py",
+    "datasetId": "DATA-0002",
+    "splitId": null,
+    "seed": 20261025,
+    "args": [
+      "--seed",
+      "20261025",
+      "--alpha-multiplier",
+      "1.0"
+    ],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0004"
+  }
+}

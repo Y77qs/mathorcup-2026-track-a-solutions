@@ -1,0 +1,133 @@
+{
+  "token": "6c289fefcb632a422552021e",
+  "experimentId": "EXP-0057",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-26T08:36:55.880Z",
+  "endedAt": "2026-10-26T08:37:15.712Z",
+  "durationMs": 19831,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "constraint-records-verified-share": 0.6877894736842105,
+    "constraint-satisfaction": 1.0,
+    "constraint-satisfaction-raw": 0.128,
+    "constraint-satisfaction-repeat1": 1.0,
+    "constraints-conditional": 2739,
+    "constraints-infeasible": 0,
+    "constraints-not-identifiable": 227,
+    "constraints-verified": 6534,
+    "constraints_conditional": 2739,
+    "constraints_infeasible": 0,
+    "constraints_not_identifiable": 227,
+    "constraints_verified": 6534,
+    "covariance-trace-ratio": 1.2121562898917704,
+    "dependence-error": 0.38837212008153443,
+    "dependence-spectrum-mae": 0.006880434069827609,
+    "diversity": 19.6095697689185,
+    "diversity-repeat1": 19.6095697689185,
+    "duplicate-share": 0.0,
+    "duplicate-share-repeat1": 0.0,
+    "duplicate_share": 0.0,
+    "edge-fraction": 0.12334199134199136,
+    "energy-U-signed": 0.9636872814202118,
+    "energy-V-raw": 16.077648428499984,
+    "energy-distance": 0.876453018856588,
+    "energy-distance-raw": 0.8760110423890222,
+    "energy-distance-repeat1": 0.876453018856588,
+    "marginal-error": 0.5012646474687387,
+    "n-cells": 66,
+    "n-cells-excluded-from-energy": 7,
+    "n-linear-negative-design": 0,
+    "n-linear-negative-raw": 0,
+    "n-linear-negative_design": 0,
+    "n-linear-negative_raw": 0,
+    "n-repeats": 1,
+    "n-samples": 250,
+    "nearest-neighbor": 17.750249728196373,
+    "profile-mae": 0.2445210120339369,
+    "profile-pooled-spearman": 0.8219447779111644,
+    "profile-spearman": 0.3863840576230492,
+    "t2n-above-style-bound": 47,
+    "t2n-increase-max": 0.010648161470906423,
+    "t2n-increase-mean": 0.0013095486429052642,
+    "t2n-increases": 98,
+    "t2n_increases": 98
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0057/constraints.csv",
+      "sha256": "d71acc8a92fb1d14ad8d1d1b9d91ea56cf2acf5f72250218596faf7a80c8fd30",
+      "bytes": 2045135,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0057/metrics.json",
+      "sha256": "3d1184f254551206f75ceee6dae5acad03d122cfaa4bf082998a672c38bfd9cb",
+      "bytes": 1601,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0057/outputs.json",
+      "sha256": "66b907c67c798ec0ef024efce1f543f649d8c779fba3a4bb4df809de6783e190",
+      "bytes": 164590,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0057/q3_metrics.csv",
+      "sha256": "098eeb0bd3de5cdc893d77377d1652e3430ddb466aa0b4b6680716f18a7d5065",
+      "bytes": 180068,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0057/run-seed-20261026.json",
+      "sha256": "811c6ce7448d8b01cf6499c822e01a8cc2be333f294fcc75d1fbcd510328dbfa",
+      "bytes": 398,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0057/samples-repeat-1.csv",
+      "sha256": "b3ed87ff694884d48a829774312b9fb3d3242afe98b6bcd6a9512b20e3e7dc3c",
+      "bytes": 1048271,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0057/samples.csv",
+      "sha256": "b3ed87ff694884d48a829774312b9fb3d3242afe98b6bcd6a9512b20e3e7dc3c",
+      "bytes": 1048271,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0057/samples_raw-repeat-1.csv",
+      "sha256": "6fd348b82567f62b5b606c9170e4baba853f10823aa5dd3752455e1a3987e180",
+      "bytes": 1044467,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0057/samples_raw.csv",
+      "sha256": "6fd348b82567f62b5b606c9170e4baba853f10823aa5dd3752455e1a3987e180",
+      "bytes": 1044467,
+      "kind": "data"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q3_fix.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q3_fix.py",
+    "--repeat",
+    "1"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0057",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

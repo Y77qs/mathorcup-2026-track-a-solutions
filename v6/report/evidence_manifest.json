@@ -1,0 +1,702 @@
+{
+ "kind": "paper-evidence-manifest",
+ "generatedFrom": "state/ledger.json",
+ "ledgerRevision": 4656,
+ "draftOnly": true,
+ "citationRule": "only objects listed here may appear in report/paper.md; ids are read from the ledger, never hand-typed",
+ "questions": {
+  "Q1": {
+   "questionId": "Q1",
+   "selectedModelId": "MODEL-0048",
+   "selectionStatus": "provisional",
+   "claim": {
+    "claimId": "CLAIM-0056",
+    "status": "active",
+    "critical": true,
+    "claimType": "contemporaneous_association",
+    "targetContractId": "TGT-0001",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0100",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0101",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0102",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0074",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0073",
+      "metricKey": "mae_all50"
+     }
+    ],
+    "validationIds": [
+     "VAL-0063",
+     "VAL-0064",
+     "VAL-0065"
+    ],
+    "limitations": [
+     "内部 OOF 重验证，不是外部独立测试",
+     "split-integrity 与 holdout-metrics 结构性不可满足，Q1 selection 仍为 provisional",
+     "固定种子复跑（EXP-0083 / VAL-0065）只证确定性重现，不是独立实现",
+     "ROB-0011 只覆盖 2/3 冻结种子（repeat 0/1）；旧 ROB-0007 及其分母=1 口径限制保留为历史",
+     "绝对极差 0.008210 与相对极差 0.023178 分列；判定上限 0.05 沿用既有规则、未按结果调整",
+     "结论只适用于当前候选 MODEL-0048、当前数据与当前协议"
+    ],
+    "statement": "确认轮 Q1：train-only 3×3×3 嵌套 CV 下图正则低秩（MODEL-0048 / EXP-0073）A/F30 等权 MAE = 0.359292，同协议中位数基线（EXP-0074）0.398177，差 0.038886；全 50 维 0.350504。证据：VAL-0063/0064/0065；稳健性**ROB-0011**（统一 wrapper 7d7ab6aca6c2）：参考 EXP-0100（repeat 0）、种子扰动 EXP-0101（repeat 1 / seed 20261026）、参数扰动 EXP-0102（内层 λ 网格 ×0.5，标量 lambdaMultiplier=0.5）→ mae 0.354224 / 0.362434 / 0.357635，**绝对极差 0.008210、相对极差 0.023178 ≤ 0.05（插件原生相对口径）**，decisionPassed=true。三值与旧 ROB-0007 逐位相同，只证当前协议下一致。限制：内部 OOF 非外部测试；split-integrity/holdout-metrics 不可满足、provisional；确定性重现≠独立实现；仅 2/3 种子；旧 ROB-0007 与分母=1 口径限制保留为历史。"
+   },
+   "robustnessClaim": {
+    "claimId": "CLAIM-0059",
+    "status": "active",
+    "critical": false,
+    "claimType": "descriptive",
+    "targetContractId": "TGT-0001",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0100",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0101",
+      "metricKey": "mae"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0102",
+      "metricKey": "mae"
+     }
+    ],
+    "validationIds": [],
+    "limitations": [
+     "仅覆盖三个冻结种子中的两个（重复 0 与 1）",
+     "参数扰动只沿单一方向：内层正则网格整体乘以 0.5",
+     "无留出集；划分完整性与留出指标检查结构性不可满足",
+     "绝对极差与相对极差只描述本组扰动，不构成模型全面稳定的证据",
+     "固定种子的独立复跑只证明确定性重现，不是独立实现"
+    ],
+    "statement": "问题一的稳健性检验同时覆盖种子扰动与内层正则强度扰动：Aroma/Flavour 30 维等权 MAE 分别为 0.3542、0.3624、0.3576，绝对极差 0.0082、相对极差 0.0232，均在预设上限 0.05 之内。该检验只覆盖三个冻结种子中的两个，扰动也只沿单一参数方向（内层正则网格整体乘 0.5）；固定种子的独立复跑只证明确定性重现，不构成独立实现或独立稳健性证据。"
+   },
+   "robustnessPlan": {
+    "robId": "ROB-0011",
+    "preregisteredAt": "2026-10-26T15:16:37.780Z",
+    "executedAt": "2026-10-26T15:17:58.968Z",
+    "experimentIds": [
+     "EXP-0100",
+     "EXP-0101",
+     "EXP-0102"
+    ],
+    "metricKey": "mae",
+    "decisionRule": {
+     "limit": 0.05,
+     "type": "relative-range"
+    },
+    "values": [
+     0.35422354618559243,
+     0.36243390816790516,
+     0.35763459908881995
+    ],
+    "spread": 0.00821036198231273,
+    "decisionPassed": true,
+    "executionStatus": "completed"
+   },
+   "experiment": {
+    "id": "EXP-0073",
+    "status": "succeeded",
+    "metricsSha256": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f",
+    "resultSha256": "0be1a81d74ef4ee8f05702fdb10c25006dce2a1103cfb1d221d1434e07f550cc",
+    "dependencies": 6
+   },
+   "validations": {
+    "VAL-0063": {
+     "checkType": "leakage",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0064": {
+     "checkType": "baseline-compare",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0065": {
+     "checkType": "independent-rerun",
+     "passed": true,
+     "stale": null
+    }
+   }
+  },
+  "Q2": {
+   "questionId": "Q2",
+   "selectedModelId": "MODEL-0050",
+   "selectionStatus": "validated",
+   "claim": {
+    "claimId": "CLAIM-0041",
+    "status": "active",
+    "critical": true,
+    "claimType": "contemporaneous_association",
+    "targetContractId": "TGT-0002",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0075",
+      "metricKey": "topk-jaccard"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0075",
+      "metricKey": "topk-jaccard-point"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0075",
+      "metricKey": "sign_stability_mean"
+     }
+    ],
+    "validationIds": [
+     "VAL-0056",
+     "VAL-0057"
+    ],
+    "limitations": [
+     "216 严格单体化合物与 15 个扩展指标（7 理化 + 5 派生和 + 3 元素/指数）分表报告，扩展指标不参与严格化合物候选",
+     "topk-jaccard 是方法间集合一致性，不是预测准确率",
+     "6.csv 是同源秩相关对照，不是外部验证集；不得称外部验证",
+     "bootstrap 500→200 是预算扰动：Monte-Carlo 精度下降会同时影响 pi 与 Jaccard，不能与选择不稳定混为一谈",
+     "同期关联不等于因果",
+     "固定种子复跑（EXP-0081 / VAL-0057）只证确定性重现，不是独立实现",
+     "ROB-0008 只覆盖 2/3 冻结种子（repeat 0/1）"
+    ],
+    "statement": "确认轮 Q2：在固定 200 行注册训练集（50 行保留集不使用）、3 个冻结重复种子与每次 500 次风格内分层 bootstrap 下，50 维 × 4 方法的 Top-3 平均两两 Jaccard = 0.209111（重复 0.210333 / 0.207333 / 0.209667），点估计 0.197667，符号一致性均值 sign_stability_mean = 0.722554。证据：VAL-0056（leakage，231 列 max|r| = 0.5762）、VAL-0057（独立复跑 = 确定性重现，delta = 0）；稳健性 ROB-0008（ref EXP-0089 / seed EXP-0090 / bootstrap 200 EXP-0091）相对极差 0.005000 ≤ 0.10。限制：Jaccard 是集合一致性不是准确率；216 严格化合物与 15 个扩展指标分表；6.csv 仅同源秩相关对照、不是外部验证；500→200 预算扰动会降低 Monte-Carlo 精度；同期关联不等于因果；确定性重现不等于独立实现；ROB 仅覆盖 2/3 冻结种子。"
+   },
+   "robustnessClaim": {
+    "claimId": "CLAIM-0052",
+    "status": "active",
+    "critical": false,
+    "claimType": "descriptive",
+    "targetContractId": "TGT-0002",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0089",
+      "metricKey": "topk-jaccard"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0090",
+      "metricKey": "topk-jaccard"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0091",
+      "metricKey": "topk-jaccard"
+     }
+    ],
+    "validationIds": [],
+    "limitations": [
+     "仅 2/3 冻结种子",
+     "bootstrap 500→200 降低 Monte-Carlo 精度，会同时影响 pi 与 Jaccard",
+     "Jaccard 是集合一致性不是准确率；6.csv 非外部验证",
+     "绝对极差 0.005000、相对极差 0.023772 只描述本组扰动",
+     "不构成“模型全面稳定”，不与其他问题 decisionPassed 合并",
+     "REV-0054 F1：台账 record 的 “relative spread 0.005000” 因 reference 为自由文本而按分母 1 计算，实为绝对极差"
+    ],
+    "statement": "Q2 稳健性（ROB-0008）：EXP-0089 / EXP-0090 / EXP-0091 的 Top-3 池化 Jaccard = 0.210333 / 0.207333 / 0.205333，**绝对极差 0.005000、真实相对极差 0.023772 ≤ 0.10**（台账 record 的 “relative spread 0.005000” 实为绝对极差，插件分母=1），decisionPassed = true，methods = [multiple-seeds, budget-perturbation]。范围仅本组扰动与 2/3 种子；500→200 降低 Monte-Carlo 精度，不据此宣称强稳健性。"
+   },
+   "robustnessPlan": {
+    "robId": "ROB-0008",
+    "preregisteredAt": "2026-10-26T14:06:44.685Z",
+    "executedAt": "2026-10-26T14:20:38.157Z",
+    "experimentIds": [
+     "EXP-0089",
+     "EXP-0090",
+     "EXP-0091"
+    ],
+    "metricKey": "topk-jaccard",
+    "decisionRule": {
+     "limit": 0.1,
+     "reference": "first linked experiment = the post-plan reference",
+     "type": "relative-range"
+    },
+    "values": [
+     0.2103333333333333,
+     0.20733333333333334,
+     0.20533333333333334
+    ],
+    "spread": 0.004999999999999949,
+    "decisionPassed": true,
+    "executionStatus": "completed"
+   },
+   "experiment": {
+    "id": "EXP-0075",
+    "status": "succeeded",
+    "metricsSha256": "27f90dad44a8268623c106b2b76da62e7434424c5085327a85fa49a954b48bf1",
+    "resultSha256": "cbec8539e5d918b4eb10222d6c70175839a4cfe2d0a3d124c2b3e2e92957545e",
+    "dependencies": 13
+   },
+   "validations": {
+    "VAL-0056": {
+     "checkType": "leakage",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0057": {
+     "checkType": "independent-rerun",
+     "passed": true,
+     "stale": null
+    }
+   }
+  },
+  "Q3gen": {
+   "questionId": "Q3",
+   "selectedModelId": "MODEL-0053",
+   "selectionStatus": "provisional",
+   "claim": {
+    "claimId": "CLAIM-0054",
+    "status": "active",
+    "critical": true,
+    "claimType": "descriptive",
+    "targetContractId": "TGT-0003",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0079",
+      "metricKey": "energy-distance"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0079",
+      "metricKey": "constraint-satisfaction"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0079",
+      "metricKey": "energy-V-raw"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0079",
+      "metricKey": "energy-U-signed"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0079",
+      "metricKey": "diversity"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0079",
+      "metricKey": "duplicate-share"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0079",
+      "metricKey": "nearest-neighbor"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0079",
+      "metricKey": "edge-fraction"
+     }
+    ],
+    "validationIds": [
+     "VAL-0066",
+     "VAL-0068"
+    ],
+    "limitations": [
+     "0.884026 是 21 个可估风格上 177 个可估格（n_gen=729）的 n_gen 加权池化值，不是 198 格也不只是三风格",
+     "Tripel/Kriek/Lambic 三风格 27 格（n_gen=147）单独池化 = 1.830576，不得用池化值替代",
+     "constraint-satisfaction=1.000 是构造性质；source-resample 0.813731 优于生成，不宣称优于基线",
+     "V（无符号）与 U（带符号、不截零）分开；diversity / nearest-neighbor / duplicate-share / edge-fraction 各按定义",
+     "无原生 optimization VAL；生成与迁移不共用成功率；ROB-0009 仅 2/3 种子",
+     "REV-0064 F1/F2：已把 885 cells 更正为 177 可估格，并补回 energy-V-raw / nearest-neighbor / edge-fraction 的 metric ref"
+    ],
+    "statement": "确认轮 Q3 生成（scope 修正）：设计谱（copula-selected）在 21 个可估风格的 177 个可估格上 n_gen 加权池化的归一化经验 V 能量距离 = 0.884026（n_gen=729；原始空间 0.884296），无符号 V = 16.182791，带符号 U = 1.113867（可负、不截零），diversity = 19.735647，duplicate-share = 0.000，nearest-neighbor = 17.632，edge-fraction = 0.119913。**Tripel/Kriek/Lambic 三风格 27 格（n_gen=147）单独池化 = 1.830576**。constraint-satisfaction = 1.000 为约束投影构造性质（未约束原始生成 0.113333）。证据：VAL-0066、VAL-0068；ROB-0009（EXP-0092/0093/0099）绝对极差 0.021702、相对极差 0.024724 ≤ 0.05。限制：source-resample 0.813731 更优；无原生 optimization VAL；生成/迁移不共用成功率；双对象限制；ROB 仅 2/3 种子。"
+   },
+   "robustnessClaim": {
+    "claimId": "CLAIM-0053",
+    "status": "active",
+    "critical": false,
+    "claimType": "descriptive",
+    "targetContractId": "TGT-0003",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0092",
+      "metricKey": "energy-distance"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0093",
+      "metricKey": "energy-distance"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0099",
+      "metricKey": "energy-distance"
+     }
+    ],
+    "validationIds": [],
+    "limitations": [
+     "仅 2/3 冻结种子",
+     "constraint-satisfaction 恒为 1.000 的构造量不参与稳定性判定",
+     "energy-distance 只测分布差异；source-resample 0.813731 仍优于生成",
+     "绝对极差 0.021702、相对极差 0.024724 只描述本组扰动",
+     "不构成“模型全面稳定”，生成与迁移不共用成功率",
+     "REV-0055 F1：台账 record 的 “relative spread 0.021702” 因 reference 为自由文本而按分母 1 计算，实为绝对极差"
+    ],
+    "statement": "Q3 生成侧稳健性（ROB-0009）：EXP-0092 / EXP-0093 / EXP-0099 的归一化经验 V 能量距离 = 0.877784 / 0.876453 / 0.898155，**绝对极差 0.021702、真实相对极差 0.024724 ≤ 0.05**（台账 record 的 “relative spread 0.021702” 实为绝对极差，插件分母=1），decisionPassed = true，methods = [multiple-seeds, param-perturbation]。判定只用分布质量指标；constraint-satisfaction=1.000 为构造性质，未参与。范围仅本组扰动与 2/3 种子。"
+   },
+   "robustnessPlan": {
+    "robId": "ROB-0009",
+    "preregisteredAt": "2026-10-26T14:06:52.880Z",
+    "executedAt": "2026-10-26T14:20:43.580Z",
+    "experimentIds": [
+     "EXP-0092",
+     "EXP-0093",
+     "EXP-0099"
+    ],
+    "metricKey": "energy-distance",
+    "decisionRule": {
+     "limit": 0.05,
+     "reference": "first linked experiment = the post-plan reference",
+     "type": "relative-range"
+    },
+    "values": [
+     0.8777844056665478,
+     0.876453018856588,
+     0.8981550487535501
+    ],
+    "spread": 0.021702029896962127,
+    "decisionPassed": true,
+    "executionStatus": "completed"
+   },
+   "experiment": {
+    "id": "EXP-0079",
+    "status": "succeeded",
+    "metricsSha256": "f6d5e524a9bfd526239e170dddeb4b1bd5d6f1af65a8593b9aa571e4695bfa7c",
+    "resultSha256": "686fa35924d9c5994b448c2272e419d05d5c5372b8c3e965cc26ca66e0cc3dfc",
+    "dependencies": 10
+   },
+   "validations": {
+    "VAL-0066": {
+     "checkType": "leakage",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0068": {
+     "checkType": "independent-rerun",
+     "passed": true,
+     "stale": null
+    }
+   }
+  },
+  "Q3mig": {
+   "questionId": "Q3",
+   "selectedModelId": "MODEL-0053",
+   "selectionStatus": "provisional",
+   "claim": {
+    "claimId": "CLAIM-0055",
+    "status": "active",
+    "critical": true,
+    "claimType": "optimal_under_model",
+    "targetContractId": "TGT-0003",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0080",
+      "metricKey": "nonincrease-rate"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0080",
+      "metricKey": "transfer-energy"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0080",
+      "metricKey": "qp-max-primal-residual"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0080",
+      "metricKey": "qp-max-dual-residual"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0080",
+      "metricKey": "qp-max-constraint-violation"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0080",
+      "metricKey": "qp-status-optimal"
+     }
+    ],
+    "validationIds": [
+     "VAL-0067",
+     "VAL-0069"
+    ],
+    "limitations": [
+     "optimal_under_model 只在 EXP-0080 声明的 z 空间变量（231 维）、box 界、1 条 stale_cap 半空间与「rank-10 二次目标 + λ anchor 项 + L1 项」目标下成立；不是全局最优、不是迁移准确率、不是原生 optimization VAL（EXP-0080 无 params.optimization）",
+     "nonincrease-rate=1.000 构造保证且饱和；source-fixed 平凡对照同取 1.000",
+     "位移 0.001009/0.523886/0.323279 为 qp-quantile-anchor 逐列 max（mean 1.0e-5/0.0939/0.0127）",
+     "3.556e-17/1.804e-16 是约束残差（clamp(new−source,0)），与位移不同量",
+     "58 条 stale_hops 代理越界仅属 target-mean-projection 参照控制",
+     "z 位移可复现≠目标/最优性；双对象限制仍在；ROB-0010 仅 2/3 种子",
+     "REV-0065 F1：目标描述已补 rank-10 二次项与 anchor 项"
+    ],
+    "statement": "确认轮 Q3 迁移（限定为声明模型）：在 EXP-0080 声明的凸 QP（变量 = z 空间 231 维；目标 = rank-10 二次目标 + λ·anchor 项 + L1 项；约束 = box 界 + 1 条 stale_cap 半空间；feasible ≤ 1e-8）下，qp-quantile-anchor / qp-source-anchor / source-fixed 的逐列不增率均 1.000（target-mean-projection 参照控制 0.414141）；198 个 QP 证书全 status=optimal，max primal = 9.9897e-9、max dual = 3.3938e-10、max_constraint_violation = 0.0、max KKT = 5.6167e-9。约束残差最大：nonenal 3.5562e-17、双乙酰 1.8041e-16；qp-quantile-anchor 逐列 stored 位移 max：nonenal 0.001009（mean 1.0e-5）、双乙酰 0.523886（mean 0.0939）、4VG 0.323279（mean 0.0127）。证据：VAL-0067、VAL-0069；ROB-0010（EXP-0095/0096/0097）nonincrease-rate 三值均 1.000（饱和）。限制：声明模型下的 QP 结果与 solver 状态，非全局最优、非迁移准确率、非原生 optimization VAL；58 条仅属参照控制；z 位移可复现≠最优性；source-fixed 平凡；双对象限制；ROB 仅 2/3 种子。"
+   },
+   "robustnessClaim": {
+    "claimId": "CLAIM-0047",
+    "status": "active",
+    "critical": false,
+    "claimType": "descriptive",
+    "targetContractId": "TGT-0003",
+    "refs": [
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0095",
+      "metricKey": "nonincrease-rate"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0096",
+      "metricKey": "nonincrease-rate"
+     },
+     {
+      "kind": "metric",
+      "experimentId": "EXP-0097",
+      "metricKey": "nonincrease-rate"
+     }
+    ],
+    "validationIds": [],
+    "limitations": [
+     "nonincrease-rate 有界且饱和（三次均为 1.000），min 1 ≥ 1 不是改善量，也不能读成强稳健性",
+     "只执行 2/3 冻结种子（repeat 0 与 1）",
+     "迁移侧无真值标签，不报告迁移准确率；transfer-energy 仅作补充读数",
+     "58 条 stale_hops ridge-proxy 越界仅属 target-mean-projection 参照控制，不参与本判定",
+     "不构成“模型全面稳定”的证据，也不能与生成侧 decisionPassed 合并",
+     "原生 optimization VAL 未通过、不声称"
+    ],
+    "statement": "Q3 迁移侧稳健性（ROB-0010，2026-10-26T14:07:01Z 预注册）：参考 EXP-0095（repeat 0 / seed 20261025 / LAMBDA 1.0）、种子扰动 EXP-0096（repeat 1 / seed 20261026）、参数扰动 EXP-0097（目标函数 L1 权重 LAMBDA=2.0，标量 lambdaWeight=2）的逐列不增率三次均为 1.000，极差 0，min 1 ≥ 1（min-value 规则，执行前首次登记并披露来源），decisionPassed = true，satisfiedMethods = [multiple-seeds, param-perturbation]。该指标有界且饱和：1.000 是硬上界约束的构造结果，min 1 ≥ 1 不构成改善或强稳健性证据；范围仅限本组扰动与 2/3 冻结种子。"
+   },
+   "robustnessPlan": {
+    "robId": "ROB-0010",
+    "preregisteredAt": "2026-10-26T14:07:01.242Z",
+    "executedAt": "2026-10-26T14:20:49.044Z",
+    "experimentIds": [
+     "EXP-0095",
+     "EXP-0096",
+     "EXP-0097"
+    ],
+    "metricKey": "nonincrease-rate",
+    "decisionRule": {
+     "limit": 1,
+     "reference": "none: every linked experiment must keep nonincrease-rate at 1.0",
+     "type": "min-value"
+    },
+    "values": [
+     1,
+     1,
+     1
+    ],
+    "spread": 0,
+    "decisionPassed": true,
+    "executionStatus": "completed"
+   },
+   "experiment": {
+    "id": "EXP-0080",
+    "status": "succeeded",
+    "metricsSha256": "8d3574f53cb3d3b9e0bfc4db2b295b54d7e34b507bd2eb0af2435c12fa85ba3a",
+    "resultSha256": "d3ec6f0c163613064ee969985382e8b88828bba7465b98e54bb24c835f5981f5",
+    "dependencies": 11
+   },
+   "validations": {
+    "VAL-0067": {
+     "checkType": "leakage",
+     "passed": true,
+     "stale": null
+    },
+    "VAL-0069": {
+     "checkType": "independent-rerun",
+     "passed": true,
+     "stale": null
+    }
+   }
+  }
+ },
+ "forbiddenInPaper": {
+  "retiredClaims": [
+   "CLAIM-0012",
+   "CLAIM-0014",
+   "CLAIM-0018",
+   "CLAIM-0019",
+   "CLAIM-0021",
+   "CLAIM-0022"
+  ],
+  "pilotExperiments": "EXP-0038..EXP-0072 and EXP-0076/0077 must not be cited as current evidence",
+  "retiredFigures": [
+   "FIG-0001",
+   "FIG-0002",
+   "FIG-0003",
+   "FIG-0004",
+   "FIG-0005",
+   "FIG-0006",
+   "FIG-0007",
+   "FIG-0008",
+   "FIG-0009",
+   "FIG-0010",
+   "FIG-0011",
+   "FIG-0012",
+   "FIG-0013",
+   "FIG-0014",
+   "FIG-0015",
+   "FIG-0016",
+   "FIG-0017",
+   "FIG-0018",
+   "FIG-0019",
+   "FIG-0020",
+   "FIG-0021",
+   "FIG-0022",
+   "FIG-0023",
+   "FIG-0024",
+   "FIG-0025",
+   "FIG-0026",
+   "FIG-0027",
+   "FIG-0028",
+   "FIG-0029",
+   "FIG-0030",
+   "FIG-0031"
+  ]
+ },
+ "figures": {
+  "note": "ACTIVE figures only; sha256 is the CURRENT file bytes. retiredFigures above are history and must not be cited by the paper.",
+  "paperCited": [
+   "FIG-0032",
+   "FIG-0033",
+   "FIG-0034",
+   "FIG-0035",
+   "FIG-0036",
+   "FIG-0037",
+   "FIG-0038",
+   "FIG-0039",
+   "FIG-0040"
+  ],
+  "active": [
+   {
+    "figureId": "FIG-0032",
+    "path": "figures/confirmatory/Q1-per-target-skill.png",
+    "sha256": "2557001da5d9510a8f8afbfd682d4149c2b276b294901892dbc45ee0c8cf5838",
+    "caption": "问题一：逐目标相对误差改善 1−MAE模型/MAE中位数（图低秩，内部嵌套CV折外池化）；A/F30 0.0977、全50维 0.1056，12 个目标为负。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0033",
+    "path": "figures/confirmatory/Q1-model-comparison.png",
+    "sha256": "a461da972ec8e999b9d643e945cf792f262d61c88aa85680fc67e7ba8119122e",
+    "caption": "问题一：四模型同协议折外MAE（内部3×3×3嵌套重验证，非holdout）：中位数0.398、岭0.367、图岭0.366、图低秩0.359；全50维另列。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0034",
+    "path": "figures/confirmatory/Q1-grade-distribution.png",
+    "sha256": "e2cf95cdb0e4fa5d16a79db21f08f1abc8f8136346a2b02612285ea60daa27d4",
+    "caption": "问题一：相对等级 0–6 的折外预测分布与参照分布对照（内部嵌套CV、中秩经验CDF；属相对等级，未恢复人工评分）。",
+    "experimentIds": [
+     "EXP-0073"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0035",
+    "path": "figures/confirmatory/Q2-network.png",
+    "sha256": "ad567a5eb75ba1b36012efc7d66b8d4e8e1667c348d2bf5cfa2f4f294410afc6",
+    "caption": "问题二：τ=0.5 Spearman 阈值网络（由 EXP-0075 注册输入重算，复现 732 边/51 分量）；严格单体216与扩展15分色，边非因果。",
+    "experimentIds": [
+     "EXP-0075"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0036",
+    "path": "figures/confirmatory/Q2-stability.png",
+    "sha256": "cec5621b88f02790868160137311c8375b26fef886c7738208d467faae976e99",
+    "caption": "问题二：Top-3 入选频率 π 与符号一致性（500 次风格内 bootstrap、3 重复）；0.5 仅参考非判定，500→200 为蒙特卡洛精度变化。",
+    "experimentIds": [
+     "EXP-0075"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0037",
+    "path": "figures/confirmatory/Q3-energy-comparison.png",
+    "sha256": "0e5d64be11e8a391a61de27e52838e8134661332d114d83cb314b2445a523349",
+    "caption": "问题三：归一化经验 V 能量距离（V/D_train）对照；生成设计谱 0.8840 未优于源样本重采样 0.8137，带符号 U 单列不截零。",
+    "experimentIds": [
+     "EXP-0079"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0038",
+    "path": "figures/confirmatory/Q3-per-style-energy.png",
+    "sha256": "6ef2bac1b7b9b8867864f3fc8df85a3f24fdfc9f066e0488c4e2b57678959a6b",
+    "caption": "问题三：逐风格 n_gen 加权能量距离（21 可估风格）；三风格池化 1.8306 与 21 风格池化 0.8840 分列标注、不得互替。",
+    "experimentIds": [
+     "EXP-0079"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0039",
+    "path": "figures/confirmatory/Q3-transfer-shift.png",
+    "sha256": "3c982d2394e3900ef7c91fd4f051d75ba8fd4e48123f9f548ae16efef9ba1e52",
+    "caption": "问题三：迁移三组量分面板——存储位移 |opt−src|、z 空间位移、约束残差 clamp(new−src,0)；残差非位移，按策略区分。",
+    "experimentIds": [
+     "EXP-0080"
+    ],
+    "citedInPaper": true
+   },
+   {
+    "figureId": "FIG-0040",
+    "path": "figures/confirmatory/ROB-summary.png",
+    "sha256": "ab3461581ee902afde41bf6897316b67f8f9aedac12035919cdf6ec85f05be70",
+    "caption": "四组稳健性：绝对极差与真实相对极差并排、各自预注册上限；仅2/3冻结种子，含预算扰动与迁移侧饱和（极差0非改善）。",
+    "experimentIds": [],
+    "citedInPaper": true
+   }
+  ]
+ },
+ "qualitySnapshot": {
+  "note": "run modeling_validate quality-report for the authoritative current values; this snapshot is informational",
+  "questions": {
+   "Q1": "provisional",
+   "Q2": "validated",
+   "Q3": "provisional"
+  }
+ }
+}

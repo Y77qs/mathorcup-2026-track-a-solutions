@@ -1,0 +1,2 @@
+
+HARD FAILURES: ['recorded l1_change_z / mean_abs_change_z do not reproduce from opt-src', 'non-increase flags disagree with the recorded stored/physical values']

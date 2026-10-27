@@ -1,0 +1,5 @@
+model,metric,value
+design,primary,1.0
+design_energy_V,primary,0.8840256215416039
+transfer_V,primary,2.261080494465066
+transfer_nonincrease,primary,1.0

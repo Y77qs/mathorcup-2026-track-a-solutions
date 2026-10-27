@@ -1,0 +1,205 @@
+{
+  "definitions": {
+    "pi": "pi(dimension, method, compound) = #distinct bootstrap repeats in which the compound is in that method's Top-3 for that dimension / #distinct bootstrap repeats present in the artifact",
+    "edge_fraction": "share of CELLS lying on a declared edge (floor code / observed support min-max / 0) of the standardised design matrix; a data-domain boundary share, NOT a constraint-adjacency share",
+    "constraint_residual": "transfer_constraints.csv `residual` = clamp(new - source, 0) in stored space for upper bounds, clamp(-new, 0) for lower_zero rows; this is a BOUND residual",
+    "new_minus_source": "transfers.csv stored_new - stored_source (and the calibrated physical equivalent); this is the DESIGN MOVEMENT, not a constraint violation",
+    "empirical_V_vs_U": "V = 2*mean d(G,R) - sum d(G,G)/m^2 - sum d(R,R)/n^2 (unsigned); U = 2*mean d(G,R) - mean d(G,G) - mean d(R,R) is SIGNED, can be negative, never clipped",
+    "rerun_semantics": "fixed-seed independent-rerun is a DETERMINISTIC REPRODUCTION (same code/data/seed); it is not an independent implementation and not external validation",
+    "native_optimization": "the 198-QP batch has NO native optimization-feasibility/optimization-objective VAL; the certificate audit (SCRIPT-0010) and the z-space reconstruction (SCRIPT-0011) are audits, not native checks"
+  },
+  "Q1": {
+    "source": "experiments/EXP-0073/oof_long.csv",
+    "sourceSha256": "c97f8bc8d97bdcd9806f3b6662bab9c6ea4bd638cab588d6282d995991269b1f",
+    "n_rows": 37500,
+    "af30_mae": 0.359291565882192,
+    "all50_mae": 0.350504156920024,
+    "Aroma15_mae": 0.364626380622291,
+    "Flavour15_mae": 0.353956751142093,
+    "Other20_mae": 0.337323043476772,
+    "af30_mae_by_repeat": {
+      "0": 0.354223546185592,
+      "1": 0.362433908167905,
+      "2": 0.361217243293078
+    },
+    "rerunSemantics": "deterministic reproduction only (VAL-0065 / EXP-0083), not an independent implementation",
+    "af30_mae__median": 0.398177328372889,
+    "af30_mae__ridge": 0.366661758010525,
+    "af30_mae__graph-ridge": 0.366411015782692
+  },
+  "Q2": {
+    "per_repeat": {
+      "repeat0": {
+        "n_pairs": 300,
+        "mean_jaccard": 0.210333333333333,
+        "sha256": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075"
+      },
+      "repeat1": {
+        "n_pairs": 300,
+        "mean_jaccard": 0.207333333333333,
+        "sha256": "74bb9d5a08e205a3d679390eca795c0a79ff9a8181340c4f32eb6a26b337f795"
+      },
+      "repeat2": {
+        "n_pairs": 300,
+        "mean_jaccard": 0.209666666666667,
+        "sha256": "275cbc82ed811c8058b4bbdb627fd6632cd464800a3e25bb647cc38eca671c8d"
+      }
+    },
+    "pooled_mean_jaccard": 0.209111111111111,
+    "pi_rows": 300000,
+    "pi_distinct_bootstrap_repeats": 500,
+    "pi_groups": 16032,
+    "pi_definition": "distinct bootstrap repeats containing the candidate / distinct repeats present",
+    "pi_mean_groupwise": 0.037425149701,
+    "pi_below_0.5_groupwise": 15854,
+    "pi_source": "experiments/EXP-0075/bootstrap_pi.csv",
+    "pi_sourceSha256": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+    "set_structure": "list of {dimension, method, items}",
+    "metric_nature": "topk-jaccard is between-method SET AGREEMENT, not predictive accuracy"
+  },
+  "Q3gen": {
+    "source": "experiments/EXP-0079 (confirmatory frozen sources)",
+    "n_samples": 750,
+    "n_chem_cols": 231,
+    "energy_V_unsigned": 16.182791432827685,
+    "energy_U_signed": 1.1138668332620816,
+    "energy_U_note": "signed diagnostic; negative values are preserved, never clipped or square-rooted",
+    "energy_distance_normalised": 0.8840256215416039,
+    "diversity": 19.735647194424246,
+    "duplicate_share": 0.0,
+    "edge_fraction": 0.11991341991341999,
+    "edge_fraction_note": "share of CELLS on a declared edge (floor code / observed support min-max / 0); NOT a constraint-adjacency share",
+    "constraint_satisfaction": 1.0,
+    "constraint_satisfaction_nature": "CONSTRUCTION property of the constrained projection, not an empirical discovery and not a distribution-quality or brewing-validity proof",
+    "definitionsFromArtifact": {
+      "energyDistanceV": "V = 2*mean d(G,R) - sum d(G,G)/m^2 - sum d(R,R)/n^2 on the fold-standardised storage matrix; E_V_norm = V / D_train with D_train the mean pairwise distance of the style's TRAIN rows",
+      "energyDistanceU": "U = 2*mean d(G,R) - mean d(G,G) - mean d(R,R): a SIGNED diagnostic, can be negative, never clipped and never square-rooted",
+      "duplicateShare": "fraction of rows that are exact duplicates of an earlier row of the same block",
+      "edgeFraction": "fraction of cells on a declared edge (floor code / observed support min or max / 0)"
+    },
+    "constraint_residual_max_abs": 0.0,
+    "constraint_residual_note": "bound residual = clamp(new-source,0); NOT a new-source movement",
+    "outputsSha256": "d6a634fa41888ab7b3f9d8dc37c9c2ac32542f2dc218d6c8039406df933f8511",
+    "samplesSha256": "181245c3aaf240a406af03751d52494ea5649313ab416c61bf00d635ea8c9caa",
+    "native_optimization_val": "none (generation has no declared optimization model)"
+  },
+  "Q3transfer": {
+    "source": "experiments/EXP-0080 (confirmatory frozen sources)",
+    "n_rows": 396,
+    "strategies": [
+      "qp-quantile-anchor",
+      "qp-source-anchor",
+      "source-fixed",
+      "target-mean-projection"
+    ],
+    "trivial_control": "source-fixed applies NO transfer (new == source); it is a trivial control, never evidence of transfer quality",
+    "nonincrease_by_strategy": {
+      "qp-quantile-anchor": 1.0,
+      "qp-source-anchor": 1.0,
+      "source-fixed": 1.0,
+      "target-mean-projection": 0.414141414141
+    },
+    "nonincrease_note": "nonincrease-rate = 1.000 for the constrained strategies is a CONSTRUCTION outcome of the hard bound and the metric is saturated/bounded; min 1 >= 1 is not an improvement measure",
+    "n_certificates": 198,
+    "n_optimal": 198,
+    "new_minus_source": {
+      "definition": "stored_new - stored_source (stored space) and physical_new - physical_source (calibrated)",
+      "rows": 99,
+      "per_column": {
+        "DMS": {
+          "max_abs_stored": 0.0,
+          "max_abs_physical": 0.0,
+          "max_positive_physical": 0.0
+        },
+        "X2.3.butanedione": {
+          "max_abs_stored": 0.523885882,
+          "max_abs_physical": 0.523885882,
+          "max_positive_physical": 1.1102230246251565e-16
+        },
+        "X4VG": {
+          "max_abs_stored": 0.3232787575863183,
+          "max_abs_physical": 0.07546703019102159,
+          "max_positive_physical": 0.0
+        },
+        "X.E..2.nonenal": {
+          "max_abs_stored": 0.001008854,
+          "max_abs_physical": 0.001008854,
+          "max_positive_physical": 0.0
+        }
+      }
+    },
+    "constraint_residual": {
+      "definition": "transfer_constraints.csv residual = clamp(new - source, 0) in stored space (upper bounds); clamp(-new,0) for lower_zero",
+      "rows": 15048,
+      "max_by_field": {
+        "chem__X2.3.butanedione": 1.8041124150158791e-16,
+        "chem__X.E..2.nonenal": 3.5561831257524545e-17,
+        "chem__DMS": 0.0,
+        "chem__gamma.nonalactone": 0.0,
+        "chem__ethyl.butyrate": 0.0,
+        "chem__ethyl.isobutyrate": 0.0,
+        "chem__ethyl.nicotinate": 0.0,
+        "chem__ethyl.pentanoate": 0.0
+      },
+      "max_overall": 0.2026579836137913,
+      "reported_examples": {
+        "chem__X.E..2.nonenal": 3.5561831257524545e-17,
+        "chem__X2.3.butanedione": 1.8041124150158791e-16
+      },
+      "label_warning": "3.556e-17 (nonenal) / 1.804e-16 (butanedione) are CONSTRAINT RESIDUALS from transfer_constraints.csv, not transfers.csv new-source differences"
+    },
+    "proxy_residual_scope": {
+      "bound_type": "upper_source_value_proxy",
+      "field": "stale_hops(ridge-proxy)",
+      "verdicts": {
+        "conditional": 338,
+        "infeasible": 58
+      },
+      "only_strategy_with_violations": "target-mean-projection (reference control); QP strategies: 0",
+      "note": "these are proxy excesses of the control, NOT final QP hard-constraint failures"
+    },
+    "max__primal_residual": 9.989717497660422e-09,
+    "max__dual_residual": 3.393784142602385e-10,
+    "max__max_constraint_violation": 0.0,
+    "max__kkt_stationarity_residual": 5.616718630759355e-09,
+    "z_space_movement": {
+      "status": "reproducible from frozen inputs + deterministic code (SCRIPT-0011): 396/396 rows, delta = 0.0",
+      "scope": "proves the declared movement is reproducible; does NOT prove the QP objective or optimality"
+    },
+    "native_optimization_val": "none: 198 QPs have no single declared optimization model + solution.csv",
+    "inputs": {
+      "transfers.csv": "397a01a274cf7727fddcde07f1bd421bf6774a365e20894d2230d68c9b859b78",
+      "transfer_constraints.csv": "d7ff5c9566cf969a415acf602d6e0bd3cf653e3d36dca9444be234d08f9d3458",
+      "solver_certificates.jsonl": "7a9fb090aba3d2be5316e46716c5a47fc65ca9e5f470e12669b94da45778fcbb",
+      "metrics.json": "8d3574f53cb3d3b9e0bfc4db2b295b54d7e34b507bd2eb0af2435c12fa85ba3a"
+    }
+  },
+  "evidence_index": {
+    "confirmatory_experiments": {
+      "Q1": "EXP-0073/EXP-0074",
+      "Q2": "EXP-0075",
+      "Q3gen": "EXP-0079",
+      "Q3transfer": "EXP-0080"
+    },
+    "deterministic_reruns": {
+      "Q1": "EXP-0083 (VAL-0065)",
+      "Q2": "EXP-0081 (VAL-0057)",
+      "Q3gen": "EXP-0084 (VAL-0068)",
+      "Q3transfer": "EXP-0085 (VAL-0069)"
+    },
+    "robustness": {
+      "Q1": "ROB-0007",
+      "Q2": "ROB-0008",
+      "Q3gen": "ROB-0009",
+      "Q3transfer": "ROB-0010"
+    },
+    "qp_evidence": {
+      "clarification": ".rework/QP-EVIDENCE-CLARIFICATION.md",
+      "certificate_audit_script_run": "SCRIPT-0010 (src/q3_cert_audit.py)",
+      "z_space_reconstruction_script_run": "SCRIPT-0011 (src/q3_zspace_recompute.py)",
+      "failed_first_attempt": "SCRIPT-0009 failed (stored-space movement mistaken for z-space movement) - retained",
+      "unresolved_numeric_note": "4/396 upper_source_value_proxy rows differ by 1.0000004e-9 between the audit formula and the recorded residual; retained, not smoothed",
+      "not_native_optimization_val": true
+    }
+  }
+}

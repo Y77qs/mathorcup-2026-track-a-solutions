@@ -1,0 +1,23 @@
+第一，证据层级不齐。问题一的划分完整性与留出指标检查结构性不可满足，选择状态为草稿
+选择；问题三的原生优化可行性与优化目标检查被工具具名拒绝，本文不声称通过；问题二虽为已
+验证选择，但其核心量的语义是集合一致性而非准确率。
+第二，0–6 等级未恢复人工评分。 附件评分工作簿为空白模板， 级别由训练折经验分布标定， 预
+测向中部收缩，整级一致率与二次加权 κ 因此受限。
+第三，关联与迁移都不涉及因果。问题二为同期关联，问题三为声明模型下的优化结果且无迁
+移后真实标签；两者都不支持 “机制已被证实” 的表述。
+第四，稳健性覆盖不全。四组检验只覆盖 2/3 冻结种子；参数扰动为单方向小幅改动；固定种
+子复跑仅证确定性重现；迁移侧指标饱和使极差为零无法解释为稳健。
+第五，附件之间同源，不能互为独立验证；六大来源的交叉相关表对照只能核对接径，不能代
+替外部数据。
+参考文献
+[1] 2026 年 MathorCup 数学应用挑战赛——大数据竞赛. 赛道 A： 啤酒酿造化合物分析与啤酒风味预
+测：初赛题面及附件 1–8. 2026.
+[2] Schreurs M, Piampongsant S, Roncoroni M, et al. Predicting and improving complex beer flavor
+through machine learning. Nature Communications, 2024, 15: 2368. doi:10.1038/s41467-024-46346-0.
+[3] Gibson B, Vidgren V , Peddinti G, Krogerus K. Diacetyl control during brewery fermentation via
+adaptive laboratory engineering of the lager yeast Saccharomyces pastorianus. Journal of Industrial Micro-
+biology & Biotechnology, 2018, 45: 1103–1112. doi:10.1007/s10295-018-2087-4.
+[4] Baldus M, Klie R, Biermann M, et al. On the Behaviour of Dimethyl Sulfoxide in the Brewing
+Process and its Role as Dimethyl Sulfide Precursor in Beer. BrewingScience, 2018, 71(1/2): 1–11.
+doi:10.23763/BrSc18-01baldus.
+25

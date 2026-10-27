@@ -1,0 +1,204 @@
+{
+ "robId": "ROB-0010",
+ "label": "Q3 transfer non-worsening stability (confirmatory)",
+ "questionId": "Q3",
+ "preregisteredAt": "2026-10-26T14:07:01.242Z",
+ "executedAt": "2026-10-26T14:20:49.044Z",
+ "experimentIds": [
+  "EXP-0095",
+  "EXP-0096",
+  "EXP-0097"
+ ],
+ "methods": [
+  "multiple-seeds",
+  "param-perturbation"
+ ],
+ "perturbations": [
+  {
+   "description": "transfer seed block: run the frozen q3_transfer_fix.py on repeat 0 and repeat 1 as two separate post-plan experiments (frozen SEEDS 20261025 / 20261026); compare per-column non-increase rate",
+   "id": "q3transfer-seed-block",
+   "kind": "multiple-seeds"
+  },
+  {
+   "description": "objective-weight perturbation: LAMBDA 1.0 -> 2.0 (weight of the L1 term in the QP objective); ETA/ADMM tolerances, box, half-space and the four strategies unchanged",
+   "id": "q3transfer-lambda",
+   "kind": "param-perturbation"
+  }
+ ],
+ "metricKey": "nonincrease-rate",
+ "decisionRule": {
+  "limit": 1,
+  "reference": "none: every linked experiment must keep nonincrease-rate at 1.0",
+  "type": "min-value"
+ },
+ "seeds": [
+  20261025,
+  20261026
+ ],
+ "repeats": 2,
+ "budget": {
+  "bootstrapIterations": 2000,
+  "bootstrapSeed": 20261024
+ },
+ "dataUse": {
+  "holdoutReuse": 0,
+  "note": "train-only 3x3x3 outer folds; source style Pils/Lager is query-only; NESTED-CV-1 assignment reused unchanged; no holdout consumed"
+ },
+ "values": [
+  1,
+  1,
+  1
+ ],
+ "interval": {
+  "low": 1,
+  "high": 1,
+  "mean": 1,
+  "n": 3
+ },
+ "decisionOutcome": {
+  "supported": true,
+  "passed": true,
+  "message": "min 1 satisfies min-value limit 1"
+ },
+ "decisionPassed": true,
+ "executionStatus": "completed",
+ "conclusion": "min 1 satisfies min-value limit 1",
+ "conclusionScope": "within the declared perturbations only",
+ "satisfiedMethods": [
+  "multiple-seeds",
+  "param-perturbation"
+ ],
+ "pairs": [
+  {
+   "changed": [
+    "seed"
+   ],
+   "changedParams": []
+  },
+  {
+   "changed": [
+    "params"
+   ],
+   "changedParams": [
+    "lambdaWeight"
+   ]
+  }
+ ],
+ "scopeNote": "EXP-0080 transfer; decision metric nonincrease-rate",
+ "supplementary": {
+  "EXP-0095": {
+   "qp-status-optimal": 66,
+   "qp-status-infeasible": 0,
+   "qp-status-not-converged": 0,
+   "qp-max-primal-residual": 9.976405479505956e-09,
+   "qp-max-dual-residual": 3.393784142602385e-10,
+   "qp-max-constraint-violation": 0,
+   "transfer-energy": 2.1861940183930604,
+   "transfer-energy-qp-quantile-anchor": 2.1861940183930604,
+   "transfer-energy-qp-source-anchor": 7.24638535202479,
+   "nonincrease-rate-target-mean-projection": 0.36363636363636365,
+   "qp-solves": 66
+  },
+  "EXP-0096": {
+   "qp-status-optimal": 66,
+   "qp-status-infeasible": 0,
+   "qp-status-not-converged": 0,
+   "qp-max-primal-residual": 9.989717497660422e-09,
+   "qp-max-dual-residual": 3.0063784794975845e-10,
+   "qp-max-constraint-violation": 0,
+   "transfer-energy": 2.3096890629495386,
+   "transfer-energy-qp-quantile-anchor": 2.3096890629495386,
+   "transfer-energy-qp-source-anchor": 7.2316621869585,
+   "nonincrease-rate-target-mean-projection": 0.42424242424242425,
+   "qp-solves": 66
+  },
+  "EXP-0097": {
+   "qp-status-optimal": 66,
+   "qp-status-infeasible": 0,
+   "qp-status-not-converged": 0,
+   "qp-max-primal-residual": 9.912789471211436e-09,
+   "qp-max-dual-residual": 2.3419532979573887e-10,
+   "qp-max-constraint-violation": 0,
+   "transfer-energy": 2.1889469819441043,
+   "transfer-energy-qp-quantile-anchor": 2.1889469819441043,
+   "transfer-energy-qp-source-anchor": 7.29791137168063,
+   "nonincrease-rate-target-mean-projection": 0.36363636363636365,
+   "qp-solves": 66
+  }
+ },
+ "sourceMovement_storedSpace": {
+  "EXP-0095": {
+   "source-fixed": {
+    "rows": 33,
+    "mean_stored_abs_change": 0.0,
+    "max_stored_abs_change": 0.0
+   },
+   "target-mean-projection": {
+    "rows": 33,
+    "mean_stored_abs_change": 271.9330616178196,
+    "max_stored_abs_change": 305.16885253016665
+   },
+   "qp-source-anchor": {
+    "rows": 33,
+    "mean_stored_abs_change": 117.12297183248253,
+    "max_stored_abs_change": 248.41901399642109
+   },
+   "qp-quantile-anchor": {
+    "rows": 33,
+    "mean_stored_abs_change": 285.360279548365,
+    "max_stored_abs_change": 487.1666959400462
+   }
+  },
+  "EXP-0096": {
+   "source-fixed": {
+    "rows": 33,
+    "mean_stored_abs_change": 0.0,
+    "max_stored_abs_change": 0.0
+   },
+   "target-mean-projection": {
+    "rows": 33,
+    "mean_stored_abs_change": 270.86397483856734,
+    "max_stored_abs_change": 306.91386279955555
+   },
+   "qp-source-anchor": {
+    "rows": 33,
+    "mean_stored_abs_change": 108.46328165165461,
+    "max_stored_abs_change": 185.95331598309954
+   },
+   "qp-quantile-anchor": {
+    "rows": 33,
+    "mean_stored_abs_change": 303.9816536912431,
+    "max_stored_abs_change": 469.19692961782084
+   }
+  },
+  "EXP-0097": {
+   "source-fixed": {
+    "rows": 33,
+    "mean_stored_abs_change": 0.0,
+    "max_stored_abs_change": 0.0
+   },
+   "target-mean-projection": {
+    "rows": 33,
+    "mean_stored_abs_change": 271.9330616178196,
+    "max_stored_abs_change": 305.16885253016665
+   },
+   "qp-source-anchor": {
+    "rows": 33,
+    "mean_stored_abs_change": 116.35816701576033,
+    "max_stored_abs_change": 245.9717236453778
+   },
+   "qp-quantile-anchor": {
+    "rows": 33,
+    "mean_stored_abs_change": 288.0130889817014,
+    "max_stored_abs_change": 492.0344735154414
+   }
+  }
+ },
+ "limitations": [
+  "nonincrease-rate = 1.0 under every perturbation; the metric is bounded and saturates, so stability of the CONSTRAINED QPs does not imply the transfer is 'accurate'",
+  "the 58 stale_hops proxy excesses belong exclusively to the target-mean-projection control and are excluded from the decision object (QP strategies: 0)",
+  "z-space l1_change_z is reproducible from frozen inputs (SCRIPT-0011) but that does not prove the QP objective/optimality",
+  "native optimization-feasibility/optimization-objective remain NOT passed and are not claimed here",
+  "two frozen repeats executed (0/1); the third was not run"
+ ]
+}

@@ -1,0 +1,384 @@
+{
+  "token": "26ee8bfe3e3a8fc39dbf7c0c",
+  "experimentId": "EXP-0071",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-26T08:46:51.176Z",
+  "endedAt": "2026-10-26T08:48:04.396Z",
+  "durationMs": 73219,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "topk-jaccard": 0.2091111111111111,
+    "topk-jaccard-rep0": 0.2103333333333333,
+    "topk-jaccard-rep1": 0.20733333333333334,
+    "topk-jaccard-rep2": 0.20966666666666664,
+    "topk-jaccard-point": 0.19766666666666666,
+    "external_6csv_mean_spearman_aligned": 0.9210176180408739,
+    "external_6csv_rows_matched": 44,
+    "external_6csv_mean_spearman_aligned_strict": 0.9080152788388083,
+    "n_strict_candidates": 216,
+    "n_extended_candidates": 15,
+    "pi_mean": 0.42045666666666665,
+    "pi_below_0.5_count": 1263,
+    "pi_below_0.5_denominator": 1800,
+    "sign_stability_mean": 0.7225544444444444,
+    "n_dimensions": 50,
+    "n_methods": 4,
+    "n_repeats": 3,
+    "bootstrap_reps": 500,
+    "seed": 20261025,
+    "external_6csv_mean_spearman_superseded_positional": 0.44505144467935176,
+    "cross_repeat_jaccard": 0.8748333333333335
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0071/bootstrap_pi.csv",
+      "sha256": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+      "bytes": 17178411,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/bootstrap_pi_extended.csv",
+      "sha256": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+      "bytes": 15287285,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/candidate_scores.csv",
+      "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+      "bytes": 1506356,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/extended_top3.csv",
+      "sha256": "53dd5ef364e488b9f021124c3dcd1fc54fa3d6f658a82661855fe2fc4f45bbde",
+      "bytes": 17724,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/extended_top3_by_method.csv",
+      "sha256": "99f0bcff019c2fc9c88877ed246469237f4d4cb5803c4467a0f7a61b4aed7a15",
+      "bytes": 77647,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/metrics.json",
+      "sha256": "27f90dad44a8268623c106b2b76da62e7434424c5085327a85fa49a954b48bf1",
+      "bytes": 813,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/outputs.json",
+      "sha256": "a554a57bd151f26a5eb92b789f7e06501267045c49846443346c8f5d0ed05948",
+      "bytes": 1494277,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/seed-receipt.json",
+      "sha256": "6c17cd392ac727b93077a1b4dc0e46cb87b005bc45a88528625a6fa9d06b8aa4",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/sets.json",
+      "sha256": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075",
+      "bytes": 33311,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/strict_top3.csv",
+      "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+      "bytes": 19358,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/strict_top3_by_method.csv",
+      "sha256": "33171a8c99c898a1e7c3f237ea34e33af70fc5cbda1ddb419fe4c61f7af46d09",
+      "bytes": 84982,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/data/clean/q1_mapped.csv",
+      "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "bytes": 979527,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/data/clean/q2_chem_meta.json",
+      "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+      "bytes": 52977,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/data/clean/q2_raw.csv",
+      "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+      "bytes": 858381,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/data/processed/sensory_name_alignment.csv",
+      "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+      "bytes": 1469,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/data/raw/imported/a55004fb0390299a-6.csv",
+      "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+      "bytes": 42937,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/data/splits/SPLIT-0001/train.csv",
+      "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+      "bytes": 687898,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/src/q1_lib.py",
+      "sha256": "3114006854f14f929f2a969cc57f562d82dfc0e38ed7f0860199da0aa0ee8fdc",
+      "bytes": 23474,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/src/q2_fix.py",
+      "sha256": "fd010c4fc691fa9b161b7364d0f284b75d1177862e357c8637e5a4b1b1424d57",
+      "bytes": 83579,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/src/q2_lib.py",
+      "sha256": "8dfa0625527f14b24f2f859e3856b7416785ec83fc15bb80849a0d0faa84040e",
+      "bytes": 16108,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/src/seed_receipt_wrapper.py",
+      "sha256": "0595f936f0dadaedb46ce795fde892cb3ddbf1e69d065088e2afb39919b75ab2",
+      "bytes": 4571,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0071/inputs/src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/bootstrap_pi.csv",
+      "sha256": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+      "bytes": 17178411,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/bootstrap_pi_extended.csv",
+      "sha256": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+      "bytes": 15287285,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/candidate_scores.csv",
+      "sha256": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+      "bytes": 1506356,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/extended_top3.csv",
+      "sha256": "53dd5ef364e488b9f021124c3dcd1fc54fa3d6f658a82661855fe2fc4f45bbde",
+      "bytes": 17724,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/extended_top3_by_method.csv",
+      "sha256": "99f0bcff019c2fc9c88877ed246469237f4d4cb5803c4467a0f7a61b4aed7a15",
+      "bytes": 77647,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/metrics.json",
+      "sha256": "27f90dad44a8268623c106b2b76da62e7434424c5085327a85fa49a954b48bf1",
+      "bytes": 813,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/outputs.json",
+      "sha256": "a554a57bd151f26a5eb92b789f7e06501267045c49846443346c8f5d0ed05948",
+      "bytes": 1494277,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/sets.json",
+      "sha256": "5eb1c8fed5f43e0a6d1ba4902d94ef9e6913ba8d5169f8a155681109e2f41075",
+      "bytes": 33311,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/strict_top3.csv",
+      "sha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+      "bytes": 19358,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat0/strict_top3_by_method.csv",
+      "sha256": "33171a8c99c898a1e7c3f237ea34e33af70fc5cbda1ddb419fe4c61f7af46d09",
+      "bytes": 84982,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/bootstrap_pi.csv",
+      "sha256": "dfe1e6d89d65c37bc57e501548f09d1bf83382a841433a2911e6fef699953d3f",
+      "bytes": 17184865,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/bootstrap_pi_extended.csv",
+      "sha256": "e6d7e7098e9945e0eb0a32c59e51f8d3c9039ac31ae5ed227413d501636e7944",
+      "bytes": 15286471,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/candidate_scores.csv",
+      "sha256": "3a3bfc9a2b0f34edf7ff74a0d143426408067921611d060618be738173bfa140",
+      "bytes": 1506476,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/extended_top3.csv",
+      "sha256": "7cf9c2f251b5b644e77f5fbf840f3c0780fa05be1fcd43e51e4e57408a93bd18",
+      "bytes": 17653,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/extended_top3_by_method.csv",
+      "sha256": "aab04a75bbe95f0bdef006a3bb8ba388e61d2309c23b3ab5e26ae60a1e9335c8",
+      "bytes": 77576,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/metrics.json",
+      "sha256": "27f90dad44a8268623c106b2b76da62e7434424c5085327a85fa49a954b48bf1",
+      "bytes": 813,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/outputs.json",
+      "sha256": "fc444aa824d115f0a6f0b8ab8920b7db28d6dccff7bce714153954795d28f528",
+      "bytes": 1492946,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/sets.json",
+      "sha256": "74bb9d5a08e205a3d679390eca795c0a79ff9a8181340c4f32eb6a26b337f795",
+      "bytes": 33440,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/strict_top3.csv",
+      "sha256": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+      "bytes": 19412,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat1/strict_top3_by_method.csv",
+      "sha256": "94619576fe22d5e4b3e166fc0b051cf0effc5098054c29720a9dccdf0ef5530a",
+      "bytes": 85075,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/bootstrap_pi.csv",
+      "sha256": "f0f7b68e9c0487d6890d7d788557f41a40e331683bb951047acbf6922e6c4d4e",
+      "bytes": 17184179,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/bootstrap_pi_extended.csv",
+      "sha256": "481a0c27541b3711504297a99a62fdb70881036dc35f60038bae7c20f44ab5ac",
+      "bytes": 15288063,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/candidate_scores.csv",
+      "sha256": "ad767a661dcfa46e93fce306dbd016a490ca52ce20c7d5a26c5101f490495eaf",
+      "bytes": 1506504,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/extended_top3.csv",
+      "sha256": "193bfbbe4b16c314314f9f7d5bd6e81bacd53bfcbe40dd265f735bb053343701",
+      "bytes": 17680,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/extended_top3_by_method.csv",
+      "sha256": "1a8bf19478aad2c189ed3f672b339e1ef72de7cc263093b8f513d12d041ff772",
+      "bytes": 77643,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/metrics.json",
+      "sha256": "27f90dad44a8268623c106b2b76da62e7434424c5085327a85fa49a954b48bf1",
+      "bytes": 813,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/outputs.json",
+      "sha256": "26a9ffa8aae0bc908cb2d36c4106bd1e332dd96af471eaef81bd4d6c30901fe8",
+      "bytes": 1492349,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/sets.json",
+      "sha256": "275cbc82ed811c8058b4bbdb627fd6632cd464800a3e25bb647cc38eca671c8d",
+      "bytes": 33444,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/strict_top3.csv",
+      "sha256": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+      "bytes": 19497,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0071/repeat2/strict_top3_by_method.csv",
+      "sha256": "d1256feefec3b2f5a596fb0541319f68935ce9e251d3d90f01b3556318ffcee3",
+      "bytes": 85209,
+      "kind": "data"
+    }
+  ],
+  "figures": [],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0071/inputs/src/seed_receipt_wrapper.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0071/inputs/src/seed_receipt_wrapper.py",
+    "--target",
+    "src/q2_fix.py",
+    "--patch-align-to",
+    "data/processed/sensory_name_alignment.csv",
+    "--repeat",
+    "all"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/experiments/EXP-0071",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

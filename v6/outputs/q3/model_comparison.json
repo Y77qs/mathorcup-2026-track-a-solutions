@@ -1,0 +1,18 @@
+{
+  "design": {
+    "constraint_satisfaction": 1.0,
+    "energy_V": 0.8840256215416039,
+    "diversity": 19.735647194424246
+  },
+  "copyReference": {
+    "energy_V": 0.8137,
+    "note": "same-style training-row resampling; the design is WORSE on V"
+  },
+  "transfer": {
+    "nonincrease_rate": 1.0,
+    "transfer_energy_V": 2.261080494465066,
+    "target_mean_projection_energy_V": 6.94148284204317,
+    "qp_status_optimal": 198,
+    "qp_max_primal_residual": 9.989717497660422e-09
+  }
+}

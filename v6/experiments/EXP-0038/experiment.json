@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0038",
+  "questionId": "Q1",
+  "modelId": "MODEL-0017",
+  "modelKind": "baseline",
+  "title": "Q1 baseline (fixed v2): training-median baseline with the A/F30 primary metric (supersedes EXP-0037 metric definition)",
+  "assumptions": [
+    "training median per sensory target is a fair constant baseline",
+    "outer test rows are never used to fit the median",
+    "the primary metric is the A/F30 uniform MAE, identical to the candidate definition (EXP-0038 replaces EXP-0037 whose mae was accidentally the 50-dim value)"
+  ],
+  "equations": [],
+  "algorithm": null,
+  "params": {
+    "dependencies": [
+      "data/splits/NESTED-CV-1/splits.csv"
+    ],
+    "family": "median",
+    "features": [],
+    "metricDefinition": "mae = uniform-average MAE over the 30 Aroma/Flavour targets; mae_all50 is secondary",
+    "protocol": "3x3x3 nested CV, seeds 20261025-27, style-stratified",
+    "targetContractId": "TGT-0001"
+  },
+  "datasetId": "DATA-0002",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0002",
+    "path": "data/clean/q1_mapped.csv",
+    "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+    "bytes": 979527,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+  "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+  "configVersion": 2,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/q1_baseline_fix.py",
+    "sha256": "e3a5f1b56886454073019e273a728b972e0974455a76ccf7eb8d8bc9044d4405",
+    "bytes": 4186
+  },
+  "dependencies": [
+    {
+      "path": "data/splits/NESTED-CV-1/splits.csv",
+      "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "bytes": 58959
+    },
+    {
+      "path": "src/q1_baseline_fix.py",
+      "sha256": "e3a5f1b56886454073019e273a728b972e0974455a76ccf7eb8d8bc9044d4405",
+      "bytes": 4186
+    },
+    {
+      "path": "src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536
+    }
+  ],
+  "sourceSnapshot": null,
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/q1_baseline_fix.py",
+    "args": [],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q1_baseline_fix.py"
+    ],
+    "cwd": "experiments/EXP-0038"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261025,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q1_baseline_fix.py"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261025,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "9cf5e166b9645a7383427322a33be1a7d711bb9a86779f72bf853dd7c1505da4",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": null,
+  "createdAt": "2026-10-26T07:56:09.489Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0038",
+  "registration": {
+    "questionId": "Q1",
+    "modelKind": "baseline",
+    "title": "Q1 baseline (fixed v2): training-median baseline with the A/F30 primary metric (supersedes EXP-0037 metric definition)",
+    "assumptions": [
+      "training median per sensory target is a fair constant baseline",
+      "outer test rows are never used to fit the median",
+      "the primary metric is the A/F30 uniform MAE, identical to the candidate definition (EXP-0038 replaces EXP-0037 whose mae was accidentally the 50-dim value)"
+    ],
+    "equations": [],
+    "algorithm": null,
+    "params": {
+      "dependencies": [
+        "data/splits/NESTED-CV-1/splits.csv"
+      ],
+      "family": "median",
+      "features": [],
+      "metricDefinition": "mae = uniform-average MAE over the 30 Aroma/Flavour targets; mae_all50 is secondary",
+      "protocol": "3x3x3 nested CV, seeds 20261025-27, style-stratified",
+      "targetContractId": "TGT-0001"
+    },
+    "codeFile": "src/q1_baseline_fix.py",
+    "datasetId": "DATA-0002",
+    "splitId": null,
+    "seed": 20261025,
+    "args": [],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0017"
+  }
+}

@@ -1,0 +1,31 @@
+block,label,verdict,count,share,_source
+status,已验证（verified）,verified,19619,0.6884,experiments/EXP-0079/constraints.csv#verdict | experiments/EXP-0079/metrics.json#constraints-verified
+status,条件成立（conditional）,conditional,8201,0.2878,experiments/EXP-0079/constraints.csv#verdict | experiments/EXP-0079/metrics.json#constraints-conditional
+status,不可识别（not identifiable）,not_identifiable,680,0.0239,experiments/EXP-0079/constraints.csv#verdict | experiments/EXP-0079/metrics.json#constraints-not-identifiable
+status,不可行（infeasible）,infeasible,0,0.0000,experiments/EXP-0079/constraints.csv#verdict | experiments/EXP-0079/metrics.json#constraints-infeasible
+status,合计,total,28500,1.0000,experiments/EXP-0079/constraints.csv#rows
+class,缺陷硬阈值·二甲基硫上界,verified,750,1.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·二甲基硫上界,conditional,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·二甲基硫上界,not_identifiable,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·二甲基硫上界,infeasible,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·4-乙烯基愈创木酚上界,verified,256,0.3413,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·4-乙烯基愈创木酚上界,conditional,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·4-乙烯基愈创木酚上界,not_identifiable,494,0.6587,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·4-乙烯基愈创木酚上界,infeasible,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·双乙酰上界,verified,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·双乙酰上界,conditional,750,1.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·双乙酰上界,not_identifiable,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,缺陷硬阈值·双乙酰上界,infeasible,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,反-2-壬烯醛化学不增（训练 q90 上界）,verified,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,反-2-壬烯醛化学不增（训练 q90 上界）,conditional,750,1.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,反-2-壬烯醛化学不增（训练 q90 上界）,not_identifiable,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,反-2-壬烯醛化学不增（训练 q90 上界）,infeasible,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,老化酒花代理上界（岭回归代理）,verified,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,老化酒花代理上界（岭回归代理）,conditional,750,1.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,老化酒花代理上界（岭回归代理）,not_identifiable,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,老化酒花代理上界（岭回归代理）,infeasible,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,线性非负（33 列）,verified,18613,0.7520,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,线性非负（33 列）,conditional,5951,0.2404,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,线性非负（33 列）,not_identifiable,186,0.0075,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,线性非负（33 列）,infeasible,0,0.0000,experiments/EXP-0079/constraints.csv#field/bound_type × verdict
+class,合计,total,28500,1.0000,experiments/EXP-0079/constraints.csv#rows

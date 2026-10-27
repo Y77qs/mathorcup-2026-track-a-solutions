@@ -1,0 +1,28 @@
+[q3_fix] repeats=[0] rows=250 elapsed=19.0s
+  constraint-satisfaction      1.0
+  constraint-satisfaction-raw  0.084
+  energy-distance              0.8777844056665478
+  energy-V-raw                 16.044878311680908
+  energy-U-signed              1.129831590640468
+  diversity                    19.68777093870324
+  duplicate-share              0.0
+  n-linear-negative-raw        0
+  n-linear-negative-design     0
+  t2n-increases                131
+  profile-mae                  0.24451826849022068
+  profile-spearman             0.39275831932773103
+  constraints verified/conditional/not_identifiable/infeasible: 6547/2725/228/0
+[q3_fix] repeats=[0] rows=250 elapsed=18.9s
+  constraint-satisfaction      1.0
+  constraint-satisfaction-raw  0.084
+  energy-distance              0.8777844056665478
+  energy-V-raw                 16.044878311680908
+  energy-U-signed              1.129831590640468
+  diversity                    19.68777093870324
+  duplicate-share              0.0
+  n-linear-negative-raw        0
+  n-linear-negative-design     0
+  t2n-increases                131
+  profile-mae                  0.24451826849022068
+  profile-spearman             0.39275831932773103
+  constraints verified/conditional/not_identifiable/infeasible: 6547/2725/228/0

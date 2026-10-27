@@ -1,0 +1,17 @@
+{
+  "kind": "tiny synthetic deterministic algebra check; not contest model training",
+  "dimensions": {
+    "n": 17,
+    "p": 6,
+    "q": 4,
+    "r": 2
+  },
+  "eigen_vs_whitened_SVD_max_abs_beta_difference": 2.7755575615628914e-16,
+  "closed_form_objective": 3.228544560454454,
+  "spectral_optimum_certificate": 3.2285445604544543,
+  "certificate_abs_difference": 4.440892098500626e-16,
+  "naive_unweighted_truncated_ridge_objective": 3.253979732613883,
+  "numerical_rank": 2,
+  "minimum_gap_among_100_random_rank2_candidates": 16.685982508124944,
+  "intercept_residual_mean_max_abs": 8.22871182957469e-16
+}

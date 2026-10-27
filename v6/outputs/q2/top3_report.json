@@ -1,0 +1,60 @@
+{
+  "protocol": "fixed 200-row training set (SPLIT-0001/train) + 3 seed blocks x 500 stratified bootstrap; NOT nested CV, no OOF",
+  "categoryCounts": {
+    "single_compound": 216,
+    "element_or_index": 3,
+    "physical_parameter": 7,
+    "derived_sum": 5,
+    "strictSize": 216,
+    "strictSizeExpected": 216,
+    "strictSizeMatchesExpected": true,
+    "metaSingleCompoundCount": 219,
+    "metaReclassified": [
+      "iron",
+      "protein.g.L.",
+      "betaglucan.mg.L."
+    ],
+    "reason": "meta tags 219 single_compound features; the 3 element_or_index members (iron, protein.g.L., betaglucan.mg.L.) are reclassified out of the strict universe, 219 - 3 = 216"
+  },
+  "mappingAssertions": [
+    {
+      "id": "M1",
+      "description": "every 6.csv chemistry row maps to exactly one feature by name",
+      "passed": true,
+      "detail": "44/44 matched"
+    },
+    {
+      "id": "M2",
+      "description": "no two 6.csv rows map to the same feature",
+      "passed": true,
+      "detail": "44 distinct features"
+    },
+    {
+      "id": "M3",
+      "description": "meta corrIndex equals the FEATURE_COLS position for every matched row",
+      "passed": true,
+      "detail": "name and index spaces agree"
+    },
+    {
+      "id": "M4",
+      "description": "every 6.csv sensory column maps to exactly one of the 50 targets",
+      "passed": true,
+      "detail": "50/50 matched"
+    },
+    {
+      "id": "M5",
+      "description": "literal dictionary == alignment table == 6.csv header set",
+      "passed": true,
+      "detail": "three independent sources agree on 50/50"
+    },
+    {
+      "id": "M6",
+      "description": "positional reading of the sensory columns is wrong (evidence, not a guess)",
+      "passed": true,
+      "detail": "3 columns differ: Carbonation, Aftertaste, Body"
+    }
+  ],
+  "piMean": 0.42045666666666665,
+  "piBelowHalf": 1263,
+  "note": "6.csv is same-source corroboration, not an independent external validation set"
+}

@@ -1,0 +1,195 @@
+{
+  "kind": "paper-source-independent-review",
+  "reviewer": "paper-reviewer",
+  "scope": "report/paper.md (DRAFT source) vs state/ledger.json / report/evidence_manifest.json / report/tables/**",
+  "reviewedAt": "2026-10-27T00:49Z",
+  "verdict": "findings",
+  "severityCounts": {
+    "critical": 0,
+    "major": 4,
+    "minor": 5
+  },
+  "files": {
+    "report/paper.md": {
+      "path": "report/paper.md",
+      "sha256": "be1ac20d89e01a3ebb085ee2ee0ba79d54843caa165d0ec3cdf1bcdf00cffcdf",
+      "note": "changed by another writer at 2026-10-27T08:44:31 local (12482c38... -> be1ac20d...): q1-styles table moved from body to Appendix A, +1 net line; audited content is be1ac20d"
+    },
+    "report/evidence_manifest.json": {
+      "path": "report/evidence_manifest.json",
+      "sha256": "0b65d24a4f86d4ea86b7b8ffe2587219303344e3e1bc94c5c4942a6da30cf69b",
+      "ledgerRevision": 4614
+    },
+    "report/tables/INDEX.json": {
+      "path": "report/tables/INDEX.json",
+      "sha256": "1615bc7c69914f73352544ff5497a27072afe77cb185c0ff95065175b1e3a764",
+      "recordedLedgerSha256": "85f272927af22d6b3f43b1b4c7754dc1625800f511e300d76ae18a775c67c196",
+      "recordedLedgerRevision": 4615
+    },
+    "state/ledger.json": {
+      "path": "state/ledger.json",
+      "revision": 4615,
+      "updatedAt": "2026-10-26T15:35:58.351Z",
+      "observedSha256Sequence": [
+        "5432caa7...",
+        "c31665f9...",
+        "c3e4e8de...",
+        "48705104...",
+        "3063efe8...",
+        "44697738...",
+        "be4e926c...",
+        "8d59e056..."
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "major",
+      "file": "report/paper.md",
+      "line": 478,
+      "title": "Q3 可估生成样本数占位符解析为 750，与同句'分母口径为 729'及 CLAIM-0054 冲突",
+      "evidence": "experiments/EXP-0079/metrics.json n-samples=750, n-cells=198, n-cells-excluded-from-energy=21; recomputed estimable n_gen=729 over 177 cells; evidence_manifest.json:323",
+      "fixBatch": "this-batch-text"
+    },
+    {
+      "id": "F2",
+      "severity": "major",
+      "file": "report/paper.md",
+      "lines": [20, 727, 749],
+      "title": "Q1 稳健性被表述为预注册，但 CLAIM-0057 记录 ROB-0011 属来源一致性修复、非首次预注册且三值与旧 ROB-0007 逐位相同（披露缺口）",
+      "evidence": "report/evidence_manifest.json:96, :59; ledger claims[CLAIM-0057].statement; grep ROB-0007/非首次预注册 = 0 hits in paper.md",
+      "fixBatch": "this-batch-text"
+    },
+    {
+      "id": "F3",
+      "severity": "major",
+      "file": "report/paper.md",
+      "lines": [674, 676, 679, 784],
+      "title": "q3-transfer-stages '逐列不增率' 0.4141 实际是含 stale_hops 代理的综合不增率；四条 cap 列逐列不增率为 1.0000",
+      "evidence": "EXP-0080 outputs.nonincrease_by_strategy['target-mean-projection']: perField all 1.0, staleProxyRate=0.4141414; transfers.csv nonincrease_all False=58/99 but all four cap flags True; 58 infeasible rows all target-mean-projection + upper_source_value_proxy + stale_hops",
+      "fixBatch": "next-batch-table-regeneration"
+    },
+    {
+      "id": "F4",
+      "severity": "major",
+      "file": "report/paper.md",
+      "lines": [72, 78],
+      "title": "数据类别表 37+33+161+5(+50) 相加 236≠231；派生汇总量 5 已含在 37/161 内，被重复计数",
+      "evidence": "outputs/audit/v6/v6_constants.json counts {chemFeatures:231, log10Calibrated:37, linearCalibrated:33, uncalibrated:161, derived:5}; features.kcalperc.tier=calibrated_log10",
+      "fixBatch": "this-batch-text"
+    },
+    {
+      "id": "F5",
+      "severity": "minor",
+      "file": "report/paper.md",
+      "line": 584,
+      "title": "'显著高于'为未登记显著性检验的正面表述",
+      "evidence": "style_and_displacement_scope.json point values 1.8305765 vs 0.8840256, no test statistic",
+      "fixBatch": "this-batch-text"
+    },
+    {
+      "id": "F6",
+      "severity": "minor",
+      "file": "report/paper.md",
+      "line": 50,
+      "title": "'加密检查'误写；实际为 leakage 检查（VAL-0066）",
+      "evidence": "ledger VAL-0066.checkType=leakage, VAL-0068.checkType=independent-rerun",
+      "fixBatch": "this-batch-text"
+    },
+    {
+      "id": "F7",
+      "severity": "minor",
+      "file": "report/tables/INDEX.json",
+      "line": null,
+      "title": "INDEX selfCheck 记录的台账 sha256(85f2729...) 与当前台账不符；审查期间台账被并发改写（8 个字节版本，revision 恒 4615）",
+      "evidence": "INDEX.selfCheck.ledger; sha256 sequence in files.state/ledger.json; manifest ledgerRevision=4614 vs ledger=4615",
+      "fixBatch": "next-batch-regenerate-index"
+    },
+    {
+      "id": "F8",
+      "severity": "minor",
+      "file": "report/paper.md",
+      "lines": [806, 818],
+      "title": "CLAIM-0056 limitation 6（结论只适用于当前候选 MODEL-0048/当前数据/协议）未进入正文边界文字",
+      "evidence": "evidence_manifest.json:61; grep MODEL-/只适用于 = 0 hits in paper.md",
+      "fixBatch": "this-batch-text"
+    },
+    {
+      "id": "F9",
+      "severity": "minor",
+      "file": "report/paper.md",
+      "lines": [563, 566, 571, 574],
+      "title": "q3-quality 单行混用 729/750 两种分母：edge-fraction/duplicate-share 按 231×750，其余按 177 格/729 份；行标注'全部可估格'不精确",
+      "evidence": "EXP-0079 outputs.comparisons edge-fraction 0.1199134 = 20775/173250; diversity 19.7356472 = 729-weighted",
+      "fixBatch": "next-batch-table-regeneration"
+    }
+  ],
+  "checklist": {
+    "claimTextConsistency": "pass-with-gaps (F2, F8)",
+    "overclaimScan": "pass (F5 minor)",
+    "numericSpotCheck": "pass (30 cells recomputed from raw artifacts; 19/19 table fragments hash-consistent; 59/59 inputs hash-consistent)",
+    "retiredForbiddenObjects": "pass (0 hits)",
+    "placeholders": "pass-with-semantic-mismatch (F1)",
+    "scopeHonesty": "pass-with-labels (F3, F9)",
+    "evidenceHierarchy": "pass"
+  },
+  "unresolved": [
+    "validation staleness not independently verifiable (check-stale not run this batch; ledger validation records carry no stale field; manifest stale=null)",
+    "named-refusal receipts for split-integrity/holdout-metrics/optimization checks appear only in validationPlans.protocolNote and Q3 selection reason, not as validation records",
+    "paper.md and state/ledger.json were modified by other writers during the audit window"
+  ],
+  "coverage": {
+    "activeClaimsChecked": 8,
+    "tablesHashChecked": 19,
+    "tableInputsHashChecked": 59,
+    "metricPlaceholdersChecked": 77,
+    "distinctMetricPlaceholders": 59,
+    "claimPlaceholdersChecked": 8,
+    "numericCellsRecomputed": 30
+  },
+  "rev2": {
+    "reviewedAt": "2026-10-27T00:56Z",
+    "paperSha256": "1822930befc84ef3b4f7b25d6e28ae7ead1c7d61ff032196ea42cf5e512a11c5",
+    "indexSha256": "a06c594853cf1b9626f3f1ac000a5ee90da43ac1a3e997d1f9d679716f7b5ec6",
+    "overall": "findings",
+    "severityCounts": {
+      "critical": 0,
+      "major": 0,
+      "minor": 3
+    },
+    "requestedItems": {
+      "F1": "resolved",
+      "F2": "resolved",
+      "F3-text": "resolved",
+      "F3-table": "resolved",
+      "F4": "resolved",
+      "F5": "resolved",
+      "F6": "resolved",
+      "F8": "resolved",
+      "F9-table": "resolved"
+    },
+    "blockChain": "19/19 consistent (block-header sha256 == INDEX outputs.md.sha256 == report/tables/<id>.md bytes == inline body)",
+    "open": {
+      "N2": {
+        "severity": "minor",
+        "file": "report/paper.md",
+        "line": 683,
+        "title": "'四个综合 1.000' should be '三个综合 1.000' (target-mean-projection = 0.4141)"
+      },
+      "N3": {
+        "severity": "minor",
+        "file": "report/paper.md",
+        "lines": [18, 751, 764, 802],
+        "title": "composite metric still called '逐列不增率' although §6.10 now names it '综合不增率（含代理）'"
+      },
+      "F7": {
+        "severity": "minor",
+        "file": "report/tables/INDEX.json",
+        "title": "INDEX selfCheck ledger sha256 (0b875be1...) != current ledger bytes; ledger rewritten many times in audit window with revision frozen at 4615"
+      }
+    },
+    "previouslyResolvedButNowVerified": ["F1", "F2", "F3", "F4", "F5", "F6", "F8", "F9"],
+    "note": "REV-1 findings remain recorded above as history; REV-2 statuses supersede them."
+  }
+}

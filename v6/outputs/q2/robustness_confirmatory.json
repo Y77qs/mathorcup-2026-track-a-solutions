@@ -1,0 +1,122 @@
+{
+ "robId": "ROB-0008",
+ "label": "Q2 topk-jaccard stability (confirmatory)",
+ "questionId": "Q2",
+ "preregisteredAt": "2026-10-26T14:06:44.685Z",
+ "executedAt": "2026-10-26T14:20:38.157Z",
+ "experimentIds": [
+  "EXP-0089",
+  "EXP-0090",
+  "EXP-0091"
+ ],
+ "methods": [
+  "multiple-seeds",
+  "budget-perturbation"
+ ],
+ "perturbations": [
+  {
+   "description": "seed block: run the frozen q2_fix.py on repeat 0 and repeat 1 as two separate post-plan experiments (frozen SEEDS 20261025 / 20261026); compare pooled topk-jaccard",
+   "id": "q2-seed-block",
+   "kind": "multiple-seeds"
+  },
+  {
+   "description": "bootstrap budget perturbation: --reps 500 -> 200 with the same frozen protocol and seed, separating Monte-Carlo error from selection instability",
+   "id": "q2-bootstrap-reps",
+   "kind": "budget-perturbation"
+  }
+ ],
+ "metricKey": "topk-jaccard",
+ "decisionRule": {
+  "limit": 0.1,
+  "reference": "first linked experiment = the post-plan reference",
+  "type": "relative-range"
+ },
+ "seeds": [
+  20261025,
+  20261026
+ ],
+ "repeats": 2,
+ "budget": {
+  "bootstrapIterations": 500,
+  "bootstrapSeed": 20261024
+ },
+ "dataUse": {
+  "holdoutReuse": 0,
+  "note": "fixed 200-row registered training set; the 50 test rows are never used; SPLIT-0001 assignment reused unchanged; 6.csv is same-source rank corroboration, NOT external validation"
+ },
+ "values": [
+  0.2103333333333333,
+  0.20733333333333334,
+  0.20533333333333334
+ ],
+ "interval": {
+  "low": 0.20533333333333334,
+  "high": 0.2093333333333333,
+  "mean": 0.20766666666666667,
+  "n": 3
+ },
+ "decisionOutcome": {
+  "supported": true,
+  "passed": true,
+  "message": "relative spread 0.005000 <= 0.1"
+ },
+ "decisionPassed": true,
+ "executionStatus": "completed",
+ "conclusion": "relative spread 0.005000 <= 0.1",
+ "conclusionScope": "within the declared perturbations only",
+ "satisfiedMethods": [
+  "multiple-seeds",
+  "budget-perturbation"
+ ],
+ "pairs": [
+  {
+   "changed": [
+    "seed",
+    "budget"
+   ],
+   "changedParams": []
+  },
+  {
+   "changed": [
+    "budget"
+   ],
+   "changedParams": []
+  }
+ ],
+ "scopeNote": "MODEL-0050 / EXP-0075; fixed 200-row train set, 50 test rows unused",
+ "supplementary": {
+  "EXP-0089": {
+   "topk-jaccard-point": 0.19766666666666666,
+   "sign_stability_mean": 0.7203133333333334,
+   "cross_repeat_jaccard": null,
+   "pi_mean": 0.41860333333333327,
+   "pi_below_0.5_count": 423,
+   "n_strict_candidates": 216,
+   "n_extended_candidates": 15
+  },
+  "EXP-0090": {
+   "topk-jaccard-point": 0.19766666666666666,
+   "sign_stability_mean": 0.7246566666666666,
+   "cross_repeat_jaccard": null,
+   "pi_mean": 0.42080666666666666,
+   "pi_below_0.5_count": 419,
+   "n_strict_candidates": 216,
+   "n_extended_candidates": 15
+  },
+  "EXP-0091": {
+   "topk-jaccard-point": 0.19766666666666666,
+   "sign_stability_mean": 0.7149833333333333,
+   "cross_repeat_jaccard": null,
+   "pi_mean": 0.419125,
+   "pi_below_0.5_count": 423,
+   "n_strict_candidates": 216,
+   "n_extended_candidates": 15
+  }
+ },
+ "limitations": [
+  "topk-jaccard is between-method set agreement, NOT predictive accuracy",
+  "6.csv is same-source rank corroboration, not an external validation set",
+  "the seed pair also changes bootstrapSeed, so it additionally registers as a budget difference; the decisive budget perturbation is 500->200 (EXP-0091)",
+  "two frozen repeats executed (0/1); the third was not run"
+ ]
+}

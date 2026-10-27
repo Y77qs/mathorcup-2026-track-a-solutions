@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-26",
+  "kind": "review_and_unexecuted_proposal",
+  "source_commit": "0c08bb25d6ec675f0908fb2ab888172277e631c8",
+  "selected_original_files_verified_unchanged": [
+    "v5/src/q1_robust.py",
+    "v5/src/make_paper_figures.py",
+    "v5/src/q1_lib.py",
+    "v5/src/ablation_summary.py",
+    "v5/src/prepare_base.py",
+    "v5/src/prepare_q1mapped.py",
+    "v5/src/prepare_q3.py",
+    "v5/src/q3_lib.py",
+    "v5/src/q3_generate.py",
+    "v5/src/q3_baseline.py",
+    "v5/src/build_paper.py",
+    "v5/src/q1_fusion.py",
+    "v5/src/q_common.py",
+    "v5/src/q1_candidate.py",
+    "v5/src/q3_robust.py",
+    "v5/src/q1_baseline.py",
+    "v5/src/q2_lib.py",
+    "v5/src/q1_grade_all.py",
+    "v5/src/q2_robust.py",
+    "v5/src/q2_baseline.py",
+    "v5/src/target_columns.py",
+    "v5/src/headline_audit.py",
+    "v5/src/q2_topk.py",
+    "v5.1/paper/paper_revised.md"
+  ],
+  "entries": [
+    {
+      "path": "00_阅读入口与裁决.md",
+      "bytes": 4764,
+      "sha256": "5c9219aae73b5fc010be25903da40d1812a13cd030b172792778df4bba4dd6b2"
+    },
+    {
+      "path": "01_独立复核与修复优先级.md",
+      "bytes": 9197,
+      "sha256": "2834631ef4d0a0ca79fa48dadd10ba618e7ced182f10f1b0c361cf638c182d10"
+    },
+    {
+      "path": "02_改进建模方案.md",
+      "bytes": 17648,
+      "sha256": "06315c8c8d9c301b04c225cdfb6c8e77902388eddb569c6fcc541d8a69c72ab0"
+    },
+    {
+      "path": "03_插件重跑清单与提示词.md",
+      "bytes": 19355,
+      "sha256": "137bb6232d843238fb65dd7f3e8c16e3d91fb4105de596dea72b48141784b9fa"
+    },
+    {
+      "path": "calibrated_positive_value_conflicts.csv",
+      "bytes": 7162,
+      "sha256": "681c9dc2078c597b6c2635363657e30c8ecda5f33b167e4cf5756ef3828b0101"
+    },
+    {
+      "path": "experiment_plan.json",
+      "bytes": 7129,
+      "sha256": "f4bac62817072309a964b4e22031f5de9b927f3546fdf6c7661a939b5c681a8d"
+    },
+    {
+      "path": "independent_closed_form_check.json",
+      "bytes": 608,
+      "sha256": "8e1511ea1d50617e4d5b37748bca973935e70afdb652507d4cbdec556335b318"
+    },
+    {
+      "path": "independent_critic.md",
+      "bytes": 16372,
+      "sha256": "3ff2d5e9941c1f8eb1f947899370e5fc293f40a6de20e8b00199f959da1e7b07"
+    },
+    {
+      "path": "independent_recheck.json",
+      "bytes": 2962,
+      "sha256": "82e80949cd0315e40e6f74c9814d27e6ab56316389e1831699f39eca69bf8fef"
+    },
+    {
+      "path": "independent_recheck.py",
+      "bytes": 10101,
+      "sha256": "4681d463a4563822138d49e707b14547ff8b8b4c4fcb1793c207e2a7c5b10f4e"
+    },
+    {
+      "path": "negative_concentrations_rechecked.csv",
+      "bytes": 7990,
+      "sha256": "719efbe6a6c1d890e3eb53da6900862282b1a758cc7f1a95c000b13e0cf57b0b"
+    },
+    {
+      "path": "physical_review.md",
+      "bytes": 15117,
+      "sha256": "a5976e6e3c6ca0afa365f1e2a09efa9449f3b2ff35b30e1904b45f5c57464117"
+    },
+    {
+      "path": "physical_review_check.py",
+      "bytes": 6201,
+      "sha256": "1404e2085d91750975c7aba211c74cbdf8c747ff3c8657e8c3915d4f55950c3d"
+    },
+    {
+      "path": "physical_review_evidence.json",
+      "bytes": 25264,
+      "sha256": "0f10ebb38ee179ea71fb8b32634e36d5753509884d5a4fb164c631839f0a1e58"
+    },
+    {
+      "path": "sensory_name_alignment.csv",
+      "bytes": 1469,
+      "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912"
+    },
+    {
+      "path": "statistics_protocol.md",
+      "bytes": 24126,
+      "sha256": "c974b6c1019637827fda1f3fbcfadd18b042aecdbbcad56def94a00b805ffa63"
+    },
+    {
+      "path": "t2n_rechecked.csv",
+      "bytes": 586,
+      "sha256": "09432f3af10601822f3db5efccdaee554e9ca35ec5a74760d3f4a60439e03825"
+    }
+  ]
+}

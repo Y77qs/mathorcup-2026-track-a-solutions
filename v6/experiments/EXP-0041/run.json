@@ -1,0 +1,17 @@
+{
+  "pid": 57043,
+  "token": "a3c5cb58d534cae387c86119",
+  "experimentId": "EXP-0041",
+  "startedAt": "2026-10-26T08:02:29.748Z",
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "cmd": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/q2_fix.py",
+    "--repeat",
+    "all"
+  ],
+  "childPid": 57046,
+  "childPgid": 57046,
+  "host": "baozhashizitoudeMacBook-Air.local",
+  "projectDir": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6"
+}

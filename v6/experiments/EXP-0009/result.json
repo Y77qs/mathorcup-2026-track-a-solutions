@@ -1,0 +1,296 @@
+{
+  "token": "bbfba130d3ccfa6bd06ca1a5",
+  "experimentId": "EXP-0009",
+  "status": "succeeded",
+  "exitCode": 0,
+  "startedAt": "2026-10-24T11:58:36.390Z",
+  "endedAt": "2026-10-24T11:58:54.185Z",
+  "durationMs": 17794,
+  "timedOut": false,
+  "cancelled": false,
+  "metrics": {
+    "ablation-independent-marginals-delta": -0.007562443039906247,
+    "ablation-independent-marginals-dependence-spectrum-mae": 0.015080825057399824,
+    "ablation-independent-marginals-energy": 0.227161952032523,
+    "ablation-no-floor-delta": 0.34154813477631785,
+    "ablation-no-floor-dependence-spectrum-mae": 0.0045452215407471176,
+    "ablation-no-floor-energy": 0.5762725298487471,
+    "ablation-no-shrinkage-delta": 0.03413553990725632,
+    "ablation-no-shrinkage-dependence-spectrum-mae": 0.0037354686196222225,
+    "ablation-no-shrinkage-energy": 0.2688599349796856,
+    "ablation-normal-generation-delta": -0.0036140171483155237,
+    "ablation-normal-generation-energy": 0.23111037792411374,
+    "ablation-quantile-transfer-delta": 0.0028866607187458026,
+    "ablation-quantile-transfer-energy": 0.0028866607187458026,
+    "ablation-quantile-transfer-mahalanobis": 1.4813209885603504,
+    "ablation-quantile-transfer-mahalanobis-delta": 1.048500720611653,
+    "constraint-satisfaction": 1.0,
+    "constraint-satisfaction-from-csv": 1.0,
+    "constraint-satisfaction-unconstrained": 0.136,
+    "defect-exceedance-rate": 0.0,
+    "defect-exceedance-rate-real": 0.844,
+    "defect-exceedance-rate-unconstrained": 0.852,
+    "dependence-spectrum-mae": 0.00625849134236056,
+    "dependence-spectrum-mae-unconstrained": 0.006285257084777748,
+    "energy-distance-normalized": 0.23472439507242926,
+    "energy-distance-normalized-equal-weight": 0.3890553148324855,
+    "energy-distance-normalized-unconstrained": 0.23111037792411374,
+    "energy-distance-real-reference": 0.18418128739199716,
+    "kappa": 5.0,
+    "kappa_R": 20.0,
+    "n-generation": 250.0,
+    "n-style-holdout": 49.0,
+    "n-transfer": 11.0,
+    "profile-mae": 0.012835955493446518,
+    "profile-spearman": 0.8109003601440575,
+    "proxy-cv-r2-stale": 0.05025260385796093,
+    "proxy-cv-r2-t2n": 0.0548889784422808,
+    "style-holdout-energy-distance-normalized": 0.3590035848831178,
+    "style-holdout-kappa": 5.0,
+    "style-holdout-kappa_R": 20.0,
+    "target-mahalanobis": 0.4328202679486975,
+    "transfer-energy-normalized": 0.0,
+    "transfer-energy-raw-e2": -0.3195653428480014,
+    "transfer-mean-l1": 7.189867103957863,
+    "transfer-nonworsen-rate": 1.0,
+    "transfer-nonworsen-rate-bootstrap-high": 1.0,
+    "transfer-nonworsen-rate-bootstrap-low": 0.2727272727272727,
+    "transfer-pareto-nonworsen-min": 1.0,
+    "transfer-quantile-energy-normalized": 0.0028866607187458026,
+    "transfer-quantile-energy-raw-e2": -0.6166780541069414,
+    "transfer-scenario-strict-nonworsen-min": 0.18181818181818182,
+    "transfer-source-energy-normalized": 0.5179285868856011,
+    "transfer-source-energy-raw-e2": 4.551653721662717
+  },
+  "metricsError": null,
+  "outputs": [
+    {
+      "path": "experiments/EXP-0009/figures.json",
+      "sha256": "0fdebe95c10e8580d5c0ab1b91afc03fa1208bea42af030045a89c59ecf8c42e",
+      "bytes": 1261,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/metrics.json",
+      "sha256": "0e4d79b0cfb28e8cb52483c5e17dfd9a2a12bb2af00ee1e34bc19cc7680da142",
+      "bytes": 2609,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/outputs.json",
+      "sha256": "0ecdac4b62152803326f93a6688f9a4525bc598330af08cf624d47e025acad37",
+      "bytes": 61890,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/run-seed-20261024.json",
+      "sha256": "ad4b24e22361277ed5180d57c6ebd08233b143edd0e59d2e515bc408959b531b",
+      "bytes": 2707,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/run-seed-20261025.json",
+      "sha256": "5b1933097f812cb1f1f22b7c5051b85a2c280aa9d78ac7605774095c5287003d",
+      "bytes": 2703,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/run-seed-20261026.json",
+      "sha256": "4da401773d64c8f5cd1160f0921b43586c5dd489f7c6bfee866e3ade05da478e",
+      "bytes": 2701,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/samples.csv",
+      "sha256": "ecbe6960a3b171a98ea6c8d39b13e252592ab5a771981d88d3ca87bd8863c665",
+      "bytes": 1300786,
+      "kind": "data"
+    },
+    {
+      "path": "experiments/EXP-0009/seed-receipt.json",
+      "sha256": "884893ea21ded490d35ebd7c54fe32eca685c6753afed43489a1a4f7b4fbc00e",
+      "bytes": 45,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/figures/ablation-comparison.png",
+      "sha256": "63153604c807eac5665b33fb686dae96c86b5ed69d631644374f1610f8410311",
+      "bytes": 34755,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0009/figures/defect-exceedance.png",
+      "sha256": "de50a1d57a9e77388288e88672b75c0090f55e3add92e7939dc423c35e92a0be",
+      "bytes": 44737,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0009/figures/energy-distance-by-style.png",
+      "sha256": "1bec850a71a6efd7370d5974966c5292adf1102a2820c7f550fb44bb9db298bd",
+      "bytes": 64443,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0009/figures/profile-recovery.png",
+      "sha256": "f68b0e77d832326b4f03f095979b8aa6fc7249c305348c364e7f9c163654160d",
+      "bytes": 112584,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0009/figures/transfer-pareto.png",
+      "sha256": "ea25faf2342e3b4a74858078d2837904b44c6508f584f1ff80ca4a06042ce59f",
+      "bytes": 49060,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0009/figures/transfer-scenarios.png",
+      "sha256": "b020b99397afeb7424e9b1b0783c7917fba84c9e447e14aef23878ab402895f1",
+      "bytes": 39933,
+      "kind": "figure"
+    },
+    {
+      "path": "experiments/EXP-0009/inputs/data/clean/q3_style_protocol.json",
+      "sha256": "bac88751b98512a96cc6cd6e5e6d07f53dfd8c077f097ab3ee1e0ebb5026daf8",
+      "bytes": 3703,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/inputs/data/clean/q3_thresholds.json",
+      "sha256": "4e593b48855f29176478b5f46abdc5823bd24809134670f266139947d86d8f61",
+      "bytes": 5531,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/inputs/data/processed/q1_grade_params.json",
+      "sha256": "d85d2a7bb3c4ac248deaacf73bbfbfc281fcaff2e9a15990b0c30e9626381fa4",
+      "bytes": 147244,
+      "kind": "json"
+    },
+    {
+      "path": "experiments/EXP-0009/inputs/src/q3_generate.py",
+      "sha256": "f5195c7d1435edd49e4ecbe7c9facf328d8ab8e3b825c334cd15f3bc9093609b",
+      "bytes": 62821,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0009/inputs/src/q3_lib.py",
+      "sha256": "364afe5a45064cba5d1ffdafddabee94c7226ea0ebbfe04b06254a49d256de28",
+      "bytes": 52200,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0009/inputs/src/q_common.py",
+      "sha256": "dcd31bdc68ce9606059f5e37e4296752d7d0fad312384b60dfed0f9638a467ee",
+      "bytes": 11365,
+      "kind": "file"
+    },
+    {
+      "path": "experiments/EXP-0009/inputs/src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435,
+      "kind": "file"
+    }
+  ],
+  "figures": [
+    {
+      "path": "experiments/EXP-0009/figures/ablation-comparison.png",
+      "name": "ablation-comparison.png",
+      "sha256": "63153604c807eac5665b33fb686dae96c86b5ed69d631644374f1610f8410311",
+      "bytes": 34755,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0009/figures/defect-exceedance.png",
+      "name": "defect-exceedance.png",
+      "sha256": "de50a1d57a9e77388288e88672b75c0090f55e3add92e7939dc423c35e92a0be",
+      "bytes": 44737,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0009/figures/energy-distance-by-style.png",
+      "name": "energy-distance-by-style.png",
+      "sha256": "1bec850a71a6efd7370d5974966c5292adf1102a2820c7f550fb44bb9db298bd",
+      "bytes": 64443,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0009/figures/profile-recovery.png",
+      "name": "profile-recovery.png",
+      "sha256": "f68b0e77d832326b4f03f095979b8aa6fc7249c305348c364e7f9c163654160d",
+      "bytes": 112584,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0009/figures/transfer-pareto.png",
+      "name": "transfer-pareto.png",
+      "sha256": "ea25faf2342e3b4a74858078d2837904b44c6508f584f1ff80ca4a06042ce59f",
+      "bytes": 49060,
+      "missing": false
+    },
+    {
+      "path": "experiments/EXP-0009/figures/transfer-scenarios.png",
+      "name": "transfer-scenarios.png",
+      "sha256": "b020b99397afeb7424e9b1b0783c7917fba84c9e447e14aef23878ab402895f1",
+      "bytes": 39933,
+      "missing": false
+    },
+    {
+      "path": "figures/ablation-comparison.png",
+      "name": "ablation-comparison.png",
+      "sha256": "63153604c807eac5665b33fb686dae96c86b5ed69d631644374f1610f8410311",
+      "bytes": 34755,
+      "missing": true
+    },
+    {
+      "path": "figures/defect-exceedance.png",
+      "name": "defect-exceedance.png",
+      "sha256": "de50a1d57a9e77388288e88672b75c0090f55e3add92e7939dc423c35e92a0be",
+      "bytes": 44737,
+      "missing": true
+    },
+    {
+      "path": "figures/energy-distance-by-style.png",
+      "name": "energy-distance-by-style.png",
+      "sha256": "1bec850a71a6efd7370d5974966c5292adf1102a2820c7f550fb44bb9db298bd",
+      "bytes": 64443,
+      "missing": true
+    },
+    {
+      "path": "figures/profile-recovery.png",
+      "name": "profile-recovery.png",
+      "sha256": "f68b0e77d832326b4f03f095979b8aa6fc7249c305348c364e7f9c163654160d",
+      "bytes": 112584,
+      "missing": true
+    },
+    {
+      "path": "figures/transfer-pareto.png",
+      "name": "transfer-pareto.png",
+      "sha256": "ea25faf2342e3b4a74858078d2837904b44c6508f584f1ff80ca4a06042ce59f",
+      "bytes": 49060,
+      "missing": true
+    },
+    {
+      "path": "figures/transfer-scenarios.png",
+      "name": "transfer-scenarios.png",
+      "sha256": "b020b99397afeb7424e9b1b0783c7917fba84c9e447e14aef23878ab402895f1",
+      "bytes": 39933,
+      "missing": true
+    }
+  ],
+  "failure": null,
+  "error": null,
+  "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+  "script": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0009/inputs/src/q3_generate.py",
+  "argv": [
+    "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0009/inputs/src/q3_generate.py"
+  ],
+  "cwd": "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v3/experiments/EXP-0009",
+  "timeoutSeconds": 1800.0,
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "signal": null
+}

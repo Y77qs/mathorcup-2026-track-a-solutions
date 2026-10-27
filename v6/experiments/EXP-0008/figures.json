@@ -1,0 +1,16 @@
+{
+  "figures": [
+    {
+      "name": "baseline-energy-distance.png",
+      "path": "figures/baseline-energy-distance.png",
+      "sha256": "523af105ce88651a31810632e2cf3e0aa866da9ce385547d260f66ae5014958f",
+      "bytes": 65204
+    },
+    {
+      "name": "baseline-defect-exceedance.png",
+      "path": "figures/baseline-defect-exceedance.png",
+      "sha256": "e6eea06e78e7c4154f1b0e51529e27242d8fdf4f31a6a4334e938f2a2540cca3",
+      "bytes": 39931
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "projectId": "beer-2026-a-v3",
+  "id": "EXP-0064",
+  "questionId": "Q2",
+  "modelId": "MODEL-0040",
+  "modelKind": "candidate",
+  "title": "Q2 ROB-0005 perturbation A: repeat 0 via frozen script wrapper with seed receipt",
+  "assumptions": [],
+  "equations": [],
+  "algorithm": null,
+  "params": {
+    "dependencies": [
+      "data/splits/SPLIT-0001/train.csv",
+      "data/clean/q1_mapped.csv",
+      "data/clean/q2_chem_meta.json",
+      "data/raw/imported/a55004fb0390299a-6.csv",
+      "MathorCup_A_独立审查与重跑方案/sensory_name_alignment.csv"
+    ],
+    "family": "consensus-4method",
+    "metricDefinition": "topk-jaccard for ROB-0005 seed block A",
+    "perturbation": "seed-block",
+    "perturbationPlan": "ROB-0005",
+    "protocol": "wrapper-run of frozen q2_fix.py on repeat 0 (seed 20261025) with runner-verified seed receipt",
+    "requireSeedReceipt": true,
+    "targetContractId": "TGT-0002",
+    "wrappedTarget": "src/q2_fix.py"
+  },
+  "datasetId": "DATA-0001",
+  "splitId": null,
+  "dataset": {
+    "id": "DATA-0001",
+    "path": "data/clean/q2_raw.csv",
+    "sha256": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+    "bytes": 858381,
+    "targetColumn": "A_malt_all",
+    "profileHash": null
+  },
+  "split": null,
+  "configSha256": "728811fc888fef0b4d16b0513be5bac87ab5c420f5809861c14052cc9e5c3733",
+  "configProtocolSha256": "215d0941a803e1fc4420fa9c580834b41c5cf6a87f1e1b0a1d6a64fd45947abc",
+  "configVersion": 2,
+  "attempt": 1,
+  "retryOf": null,
+  "retryReason": null,
+  "code": {
+    "path": "src/seed_receipt_wrapper.py",
+    "sha256": "0463b060f8fdcb220f8ee936507d02bb25050006b48085520eda60fbe6c38611",
+    "bytes": 3149
+  },
+  "dependencies": [
+    {
+      "path": "MathorCup_A_独立审查与重跑方案/sensory_name_alignment.csv",
+      "sha256": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+      "bytes": 1469
+    },
+    {
+      "path": "data/clean/q1_mapped.csv",
+      "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "bytes": 979527
+    },
+    {
+      "path": "data/clean/q2_chem_meta.json",
+      "sha256": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+      "bytes": 52977
+    },
+    {
+      "path": "data/raw/imported/a55004fb0390299a-6.csv",
+      "sha256": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+      "bytes": 42937
+    },
+    {
+      "path": "data/splits/SPLIT-0001/train.csv",
+      "sha256": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+      "bytes": 687898
+    },
+    {
+      "path": "src/seed_receipt_wrapper.py",
+      "sha256": "0463b060f8fdcb220f8ee936507d02bb25050006b48085520eda60fbe6c38611",
+      "bytes": 3149
+    }
+  ],
+  "sourceSnapshot": null,
+  "command": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "script": "src/seed_receipt_wrapper.py",
+    "args": [
+      "--target",
+      "src/q2_fix.py",
+      "--repeat",
+      "0"
+    ],
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+      "--target",
+      "src/q2_fix.py",
+      "--repeat",
+      "0"
+    ],
+    "cwd": "experiments/EXP-0064"
+  },
+  "environment": {
+    "python": "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+    "pythonVersion": "3.12.14",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "modules": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2",
+      "sympy": "1.14.0",
+      "sklearn": "1.9.1"
+    },
+    "seed": 20261025,
+    "timeoutSeconds": 1800,
+    "argv": [
+      "/Users/baozhashizitou/Documents/Codex/2026-10-23/qing/work/reference-quality-env/bin/python",
+      "/Users/baozhashizitou/Documents/MATHORCUP/work/my-new-contest-v6/src/seed_receipt_wrapper.py",
+      "--target",
+      "src/q2_fix.py",
+      "--repeat",
+      "0"
+    ],
+    "host": "baozhashizitoudeMacBook-Air.local"
+  },
+  "seed": 20261025,
+  "timeoutSeconds": 1800,
+  "rerunOf": null,
+  "requestSignature": "4e611b8f4970bc8e21993bbf738eb0b2881489d87ea6459cd30729e8d4dca130",
+  "verifiedRerun": false,
+  "trainOnlyIsolation": null,
+  "outputIsolation": "macos-seatbelt-v1",
+  "idempotencyKey": null,
+  "createdAt": "2026-10-26T08:41:50.850Z",
+  "startedAt": null,
+  "endedAt": null,
+  "exitCode": null,
+  "durationMs": null,
+  "metrics": {},
+  "metricRefs": [],
+  "outputFiles": [],
+  "figures": [],
+  "pid": null,
+  "token": null,
+  "logs": null,
+  "failure": null,
+  "metricsError": null,
+  "dir": "experiments/EXP-0064",
+  "registration": {
+    "questionId": "Q2",
+    "modelKind": "candidate",
+    "title": "Q2 ROB-0005 perturbation A: repeat 0 via frozen script wrapper with seed receipt",
+    "assumptions": [],
+    "equations": [],
+    "algorithm": null,
+    "params": {
+      "dependencies": [
+        "data/splits/SPLIT-0001/train.csv",
+        "data/clean/q1_mapped.csv",
+        "data/clean/q2_chem_meta.json",
+        "data/raw/imported/a55004fb0390299a-6.csv",
+        "MathorCup_A_独立审查与重跑方案/sensory_name_alignment.csv"
+      ],
+      "family": "consensus-4method",
+      "metricDefinition": "topk-jaccard for ROB-0005 seed block A",
+      "perturbation": "seed-block",
+      "perturbationPlan": "ROB-0005",
+      "protocol": "wrapper-run of frozen q2_fix.py on repeat 0 (seed 20261025) with runner-verified seed receipt",
+      "requireSeedReceipt": true,
+      "targetContractId": "TGT-0002",
+      "wrappedTarget": "src/q2_fix.py"
+    },
+    "codeFile": "src/seed_receipt_wrapper.py",
+    "datasetId": "DATA-0001",
+    "splitId": null,
+    "seed": 20261025,
+    "args": [
+      "--target",
+      "src/q2_fix.py",
+      "--repeat",
+      "0"
+    ],
+    "timeoutSeconds": 1800,
+    "modelId": "MODEL-0040"
+  }
+}

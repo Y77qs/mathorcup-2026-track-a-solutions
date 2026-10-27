@@ -1,0 +1,40 @@
+{
+  "figures": [
+    {
+      "name": "energy-distance-by-style.png",
+      "path": "figures/energy-distance-by-style.png",
+      "sha256": "811238e12fbc1f2e1500ca3247d026c11d73d6bb0bf0c3c79494fc1150b01a08",
+      "bytes": 64478
+    },
+    {
+      "name": "defect-exceedance.png",
+      "path": "figures/defect-exceedance.png",
+      "sha256": "de50a1d57a9e77388288e88672b75c0090f55e3add92e7939dc423c35e92a0be",
+      "bytes": 44737
+    },
+    {
+      "name": "transfer-pareto.png",
+      "path": "figures/transfer-pareto.png",
+      "sha256": "ea25faf2342e3b4a74858078d2837904b44c6508f584f1ff80ca4a06042ce59f",
+      "bytes": 49060
+    },
+    {
+      "name": "transfer-scenarios.png",
+      "path": "figures/transfer-scenarios.png",
+      "sha256": "b020b99397afeb7424e9b1b0783c7917fba84c9e447e14aef23878ab402895f1",
+      "bytes": 39933
+    },
+    {
+      "name": "ablation-comparison.png",
+      "path": "figures/ablation-comparison.png",
+      "sha256": "773b3e278a464ac650721c5a7233007cb9fa77ec7f4216fdefaff19f73750d7c",
+      "bytes": 34659
+    },
+    {
+      "name": "profile-recovery.png",
+      "path": "figures/profile-recovery.png",
+      "sha256": "35d9af7e9ee593a08ecbfe7218ed430049315b14445065e1f3637abefa8950a6",
+      "bytes": 112455
+    }
+  ]
+}
