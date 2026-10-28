@@ -1,0 +1,134 @@
+{
+  "pdf_sha256": "3defeac7f5eb6cc847bbf3877caec3af95ef2e9cb0ce48286515d99a7ff61d5b",
+  "total_pages": 58,
+  "reference_first_physical_page": 31,
+  "AI_statement_physical_page": 32,
+  "appendix_A_physical_page": 33,
+  "appendix_C_physical_page": 35,
+  "body_including_AI_last_printed_page": 30,
+  "appendices_excluded_from_body": true,
+  "body_within_30_pages": true,
+  "table_count": 20,
+  "figure_count": 10,
+  "tables": [
+    {
+      "label": "q1-models",
+      "number": 1,
+      "printed_page": 5
+    },
+    {
+      "label": "q1-groups",
+      "number": 2,
+      "printed_page": 6
+    },
+    {
+      "label": "q1-grades",
+      "number": 3,
+      "printed_page": 7
+    },
+    {
+      "label": "q1-scores-aroma",
+      "number": 4,
+      "printed_page": 8
+    },
+    {
+      "label": "q1-scores-flavour",
+      "number": 5,
+      "printed_page": 8
+    },
+    {
+      "label": "q2-universe",
+      "number": 6,
+      "printed_page": 9
+    },
+    {
+      "label": "q2-core-top3",
+      "number": 7,
+      "printed_page": 11
+    },
+    {
+      "label": "q3-raw-design",
+      "number": 8,
+      "printed_page": 15
+    },
+    {
+      "label": "q3-quality",
+      "number": 9,
+      "printed_page": 17
+    },
+    {
+      "label": "q3-profile-chem",
+      "number": 10,
+      "printed_page": 18
+    },
+    {
+      "label": "q3-profile-sensory",
+      "number": 11,
+      "printed_page": 19
+    },
+    {
+      "label": "q3-transfer-example",
+      "number": 12,
+      "printed_page": 21
+    },
+    {
+      "label": "q3-qp-certs",
+      "number": 13,
+      "printed_page": 22
+    },
+    {
+      "label": "q3-transfer-stages",
+      "number": 14,
+      "printed_page": 23
+    },
+    {
+      "label": "q3-defect-control",
+      "number": 15,
+      "printed_page": 24
+    },
+    {
+      "label": "q3-transfer-columns",
+      "number": 16,
+      "printed_page": 24
+    },
+    {
+      "label": "q3-anchor-ablation",
+      "number": 17,
+      "printed_page": 25
+    },
+    {
+      "label": "rob-confirmatory",
+      "number": 18,
+      "printed_page": 27
+    },
+    {
+      "label": "q2-stability",
+      "number": 19,
+      "printed_page": 31
+    },
+    {
+      "label": "q3-constraints",
+      "number": 20,
+      "printed_page": 32
+    }
+  ],
+  "no_overfull_missing_glyphs_undefined_refs_or_rerun_warnings": true,
+  "no_rotated_tables": true,
+  "no_empty_item": true,
+  "appendix_headings_fixed": 5,
+  "no_visible_internal_table_IDs_or_escaped_math": true,
+  "scientific_scope": "Result-preserving paper revision; not independent rerun of all support.",
+  "package_rebuild_validation": {
+    "delivered_tex_rebuilt_from_included_baseline_and_patch_scripts": true,
+    "rebuilt_main_and_appendix_byte_identical": true,
+    "standalone_source_project_two_pass_xelatex_success": true,
+    "standalone_pdf_all58_pages_text_identical": true,
+    "standalone_final_log_has_no_overfull_missing_glyphs_undefined_refs_or_rerun_warnings": true,
+    "zip_integrity_and_manifest_hashes": "passed",
+    "full_model_pipeline_rerun": false
+  },
+  "archive_version": "v6.3",
+  "baseline_archive_version": "v6.2",
+  "baseline_commit": "c42dae7849a52f08162545a83f52ea82b0c7e47d",
+  "paper_content_changed_since_verified_revision": false
+}
