@@ -1,0 +1,7 @@
+{
+  "question": "Q3",
+  "task": "style-conditional generation of chemical spectra + Pils/Lager->Tripel constrained transfer",
+  "noPredictionTarget": true,
+  "inputs": "231 measured chemical/physicochemical columns of the beer (data/clean/q3.csv)",
+  "whyOpenQuestion": "no labelled post-transfer observation exists, so the task is design under declared constraints, not supervised prediction"
+}

@@ -1,0 +1,52 @@
+block,entity,repeat,fold,n_cells,n_samples,denominator,metric,value,value_before,value_after,note
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,stored_value,12596.43287,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,second_largest_value,76.83280489,,,"linear concentration column, no declared defect threshold; second-largest row is beer 177"
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,max_over_second_ratio,163.94602394164917,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,rank_of_beer156,1.0,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,n_rows,250.0,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,n_missing,0.0,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,minimum,0.000297441,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,q25,0.02464786175,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,median,0.052860077500000005,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,q75,0.0979521145,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,q90,0.2952054277999999,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,q99,29.08510278469996,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,mean,51.28553673946799,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,std,795.0379379134027,,,
+coordinate,beer156 (Kriek) / chem__X2.methyltetrahydrofuran.3.one,,,,,,mad,0.031844803500000005,,,
+standardized_coordinate,beer156 (Kriek),0,2,,,"centre=0.961937 scale=6.455277 (fold train rows, n=174)",z_coordinate,1951.1898497081622,,,beer156 is held out in this outer fold
+standardized_coordinate,beer156 (Kriek),1,0,,,"centre=1.012101 scale=6.637630 (fold train rows, n=174)",z_coordinate,1897.5779075149042,,,beer156 is held out in this outer fold
+standardized_coordinate,beer156 (Kriek),2,1,,,"centre=1.031037 scale=6.583804 (fold train rows, n=174)",z_coordinate,1913.088909635374,,,beer156 is held out in this outer fold
+kriek_fold_energy,Kriek,0,0,1,4,single-cell V / D_train; D_train from Kriek training rows,V_raw,,15.7364119762509,15.73641197626102,beer156 in training
+kriek_fold_energy,Kriek,0,0,1,4,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,0.7676478895784954,0.8176765711046664,beer156 in training
+kriek_fold_energy,Kriek,0,0,1,4,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,20.499518320686768,19.245276839718436,beer156 in training
+kriek_fold_energy,Kriek,0,1,1,3,single-cell V / D_train; D_train from Kriek training rows,V_raw,,13.409002863416942,13.409000256081105,beer156 in training
+kriek_fold_energy,Kriek,0,1,1,3,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,0.7035650298548738,0.7473611528343064,beer156 in training
+kriek_fold_energy,Kriek,0,1,1,3,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,19.058654558460436,17.941794546356288,beer156 in training
+kriek_fold_energy,Kriek,0,2,1,3,single-cell V / D_train; D_train from Kriek training rows,V_raw,,441.8279679034249,13.872914250204897,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,0,2,1,3,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,22.785018481921632,0.7154246757307066,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,0,2,1,3,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,19.391161269146455,19.39115985346137,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,1,0,1,3,single-cell V / D_train; D_train from Kriek training rows,V_raw,,432.226864199326,13.052601802175255,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,1,0,1,3,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,23.92694017795353,0.7225576727377756,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,1,0,1,3,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,18.064443718448512,18.06444287376932,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,1,1,1,4,single-cell V / D_train; D_train from Kriek training rows,V_raw,,13.17017221719334,13.113805314557531,beer156 in training
+kriek_fold_energy,Kriek,1,1,1,4,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,0.6187091131161409,0.6539586887307396,beer156 in training
+kriek_fold_energy,Kriek,1,1,1,4,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,21.28653342579925,20.052956770113347,beer156 in training
+kriek_fold_energy,Kriek,1,2,1,3,single-cell V / D_train; D_train from Kriek training rows,V_raw,,13.264387515673207,12.698316342963597,beer156 in training
+kriek_fold_energy,Kriek,1,2,1,3,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,0.6571549358647673,0.6650716761828525,beer156 in training
+kriek_fold_energy,Kriek,1,2,1,3,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,20.184566518119894,19.093154614319143,beer156 in training
+kriek_fold_energy,Kriek,2,0,1,3,single-cell V / D_train; D_train from Kriek training rows,V_raw,,15.418612632985894,15.418612632976611,beer156 in training
+kriek_fold_energy,Kriek,2,0,1,3,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,0.76741565230385,0.8121139879907054,beer156 in training
+kriek_fold_energy,Kriek,2,0,1,3,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,20.091605620367332,18.985773993530913,beer156 in training
+kriek_fold_energy,Kriek,2,1,1,3,single-cell V / D_train; D_train from Kriek training rows,V_raw,,433.44370802223546,14.032281554211941,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,2,1,1,3,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,22.611664197862662,0.7320287626825375,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,2,1,1,3,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,19.16903170989096,19.169030329887995,beer156 held out -> bad fold
+kriek_fold_energy,Kriek,2,2,1,4,single-cell V / D_train; D_train from Kriek training rows,V_raw,,11.916892439944458,11.916864172072472,beer156 in training
+kriek_fold_energy,Kriek,2,2,1,4,single-cell V / D_train; D_train from Kriek training rows,V_normalized,,0.5841234529414667,0.6220721344460743,beer156 in training
+kriek_fold_energy,Kriek,2,2,1,4,single-cell V / D_train; D_train from Kriek training rows,D_train_denominator,,20.40132506225292,19.156723974919522,beer156 in training
+scope_before_after,all styles,,,177,729,n_gen-weighted over 177 estimable cells (729 generated spectra); V_normalized divides by each cell's D_train,V_normalized,,0.8726874826148657,0.5974657824828313,distance-evaluation-only coordinate drop; delivered primary metric unchanged
+scope_before_after,all styles,,,177,729,n_gen-weighted over 177 estimable cells (729 generated spectra); V_normalized divides by each cell's D_train,V_raw,,15.99994601104919,10.779932680426642,distance-evaluation-only coordinate drop; delivered primary metric unchanged
+scope_before_after,Kriek,,,9,30,n_gen-weighted over 9 estimable cells (30 generated spectra); V_normalized divides by each cell's D_train,V_normalized,,7.40790657499428,0.7186167787200858,distance-evaluation-only coordinate drop; delivered primary metric unchanged
+scope_before_after,Kriek,,,9,30,n_gen-weighted over 9 estimable cells (30 generated spectra); V_normalized divides by each cell's D_train,V_raw,,140.40218453149137,13.683983545580144,distance-evaluation-only coordinate drop; delivered primary metric unchanged
+scope_before_after,Tripel + Kriek + Lambic,,,27,147,n_gen-weighted over 27 estimable cells (147 generated spectra); V_normalized divides by each cell's D_train,V_normalized,,1.8078909138627393,0.4427160480350104,distance-evaluation-only coordinate drop; delivered primary metric unchanged
+scope_before_after,Tripel + Kriek + Lambic,,,27,147,n_gen-weighted over 27 estimable cells (147 generated spectra); V_normalized divides by each cell's D_train,V_raw,,33.78288729066554,7.9213390930078935,distance-evaluation-only coordinate drop; delivered primary metric unchanged

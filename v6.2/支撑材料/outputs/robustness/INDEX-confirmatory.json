@@ -1,0 +1,80 @@
+{
+ "kind": "confirmatory-robustness.index",
+ "derivedFromLedgerRevision": 4952,
+ "confirmatory": [
+  {
+   "robId": "ROB-0007",
+   "file": "outputs/q1/robustness_confirmatory.json",
+   "decisionPassed": true
+  },
+  {
+   "robId": "ROB-0015",
+   "file": "outputs/q2/robustness_confirmatory.json",
+   "decisionPassed": true
+  },
+  {
+   "robId": "ROB-0016",
+   "file": "outputs/q3/robustness_generation_confirmatory.json",
+   "decisionPassed": true
+  },
+  {
+   "robId": "ROB-0017",
+   "file": "outputs/q3/robustness_transfer_confirmatory.json",
+   "decisionPassed": true
+  }
+ ],
+ "q1ProvenanceRepairTwin": {
+  "robId": "ROB-0011",
+  "note": "same design and same values as ROB-0007 on the provenance-consistent wrapper"
+ },
+ "superseded_plans_NOT_current_evidence": [
+  "ROB-0008",
+  "ROB-0009",
+  "ROB-0010"
+ ],
+ "pending_plans_NOT_executed": [
+  "ROB-0012",
+  "ROB-0013",
+  "ROB-0014"
+ ],
+ "pilot_plans_NOT_confirmatory": [
+  "ROB-0001",
+  "ROB-0002",
+  "ROB-0003",
+  "ROB-0004",
+  "ROB-0005",
+  "ROB-0006"
+ ],
+ "supplementarySeedBlocks_NOT_in_plan_record": [
+  {
+   "block": "Q2",
+   "experimentId": "EXP-0131",
+   "note": "repeat-2 frozen seed block executed AFTER the plan was registered; NOT part of the ROB-0015 execution set and not merged into its values/spread/decision"
+  },
+  {
+   "block": "Q3gen",
+   "experimentId": "EXP-0132",
+   "note": "repeat-2 frozen seed block executed AFTER the plan was registered; NOT part of the ROB-0016 execution set and not merged into its values/spread/decision"
+  },
+  {
+   "block": "Q3mig",
+   "experimentId": "EXP-0133",
+   "note": "repeat-2 frozen seed block executed AFTER the plan was registered; NOT part of the ROB-0017 execution set and not merged into its values/spread/decision"
+  }
+ ],
+ "separationNote": "ROB-0001..ROB-0006 belong to the pilot/exploratory round and are NOT linked to any ledger record of this batch; ROB-0008/0009/0010 are the previous confirmatory round and were replaced; ROB-0012/0013/0014 were pre-registered but never executed and are pending history. This index deliberately does not merge any of those values with the current ones.",
+ "notExecuted": [
+  "ROB-0012",
+  "ROB-0013",
+  "ROB-0014"
+ ],
+ "survivingStructuralGaps": {
+  "Q1": [
+   "split-integrity (EXP-0073 has no splitId)",
+   "holdout-metrics (no holdout in train-only nested CV)"
+  ],
+  "Q3": [
+   "native optimization-feasibility/optimization-objective not passed"
+  ]
+ }
+}

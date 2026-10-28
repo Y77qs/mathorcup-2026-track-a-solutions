@@ -1,0 +1,1198 @@
+{
+  "schemaVersion": "q2-v62-regen/1",
+  "purpose": "从 EXP-0107 已保存产物确定性地重建 Q2 v6.2 交付表，并修复同模块替代候选重复已交付 Top-3 的缺陷；不重跑 bootstrap、不重训练任何模型。",
+  "script": {
+    "path": "src/q2_v62_regen.py",
+    "sha256": "00506535c02d41af500549cd4e32219283e02deedfd83e3afd16c4bc58c599e9",
+    "command": "python src/q2_v62_regen.py"
+  },
+  "sourceFix": {
+    "path": "src/q2_fix.py",
+    "sha256": "ed9c581e5028d572936fe8de321e2a09988abc273fe082ca4ebc8e4362af82cf",
+    "change": "module_alternatives()/module_alternative_report() 先剔除 delivered Top-3 再取替代候选"
+  },
+  "inputs": {
+    "data/splits/SPLIT-0001/train.csv": "bf6bad1d336c3e635d5f15f5bf145718551755663219a3ee148d5c9763f7c954",
+    "data/clean/q1_mapped.csv": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+    "data/clean/q2_raw.csv": "4948a908ab943d02591e791533fe70c8c962d7c506bef77e6ad0f1bf8e732a86",
+    "data/clean/q2_chem_meta.json": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4",
+    "data/raw/imported/a55004fb0390299a-6.csv": "a55004fb0390299a5c8089f0c37d3bfc006e7049963c84d7d9652affabe614ae",
+    "data/processed/sensory_name_alignment.csv": "971a0e47e1b3651e27b95d49a35bd24098f0f0975b78cafca2e414640d642912",
+    "src/q2_fix.py": "ed9c581e5028d572936fe8de321e2a09988abc273fe082ca4ebc8e4362af82cf",
+    "src/q2_v62_regen.py": "00506535c02d41af500549cd4e32219283e02deedfd83e3afd16c4bc58c599e9",
+    "experiments/EXP-0107/repeat0/candidate_scores.csv": "9ecc6b227ca324ed5d39b97744a552c5437bf362fd4c0516005ca4cbac816804",
+    "experiments/EXP-0107/repeat0/bootstrap_pi.csv": "2b2d359079ed999bd4eeab69899e1ccea23578f7cf578e6d3d09665daa9728c7",
+    "experiments/EXP-0107/repeat0/bootstrap_pi_extended.csv": "d58ffcf7a40f279a24687a83e646515010acf285d0c3e90c017c3e97aca3a04a",
+    "experiments/EXP-0107/repeat0/sign_counts.csv": "7091f85285154d59ddd87e93790d86aa72919efa893b9fbc9517a023e51d879c",
+    "experiments/EXP-0107/repeat0/outputs.json": "eab2f6c83ace772248afb20ecf46557e345dfbfe4921d7ad13183bba89fe7d8f",
+    "experiments/EXP-0107/repeat1/candidate_scores.csv": "3a3bfc9a2b0f34edf7ff74a0d143426408067921611d060618be738173bfa140",
+    "experiments/EXP-0107/repeat1/bootstrap_pi.csv": "dfe1e6d89d65c37bc57e501548f09d1bf83382a841433a2911e6fef699953d3f",
+    "experiments/EXP-0107/repeat1/bootstrap_pi_extended.csv": "e6d7e7098e9945e0eb0a32c59e51f8d3c9039ac31ae5ed227413d501636e7944",
+    "experiments/EXP-0107/repeat1/sign_counts.csv": "80544959afbfea5af37f07cc15ef1b1f297d125dc018db4155a3d0fc8726390a",
+    "experiments/EXP-0107/repeat1/outputs.json": "40fe8dda9e96f1887cc4b12d940d9e63bf1263fda86b17b2b0b2abaa4951e4d5",
+    "experiments/EXP-0107/repeat2/candidate_scores.csv": "ad767a661dcfa46e93fce306dbd016a490ca52ce20c7d5a26c5101f490495eaf",
+    "experiments/EXP-0107/repeat2/bootstrap_pi.csv": "f0f7b68e9c0487d6890d7d788557f41a40e331683bb951047acbf6922e6c4d4e",
+    "experiments/EXP-0107/repeat2/bootstrap_pi_extended.csv": "481a0c27541b3711504297a99a62fdb70881036dc35f60038bae7c20f44ab5ac",
+    "experiments/EXP-0107/repeat2/sign_counts.csv": "05460b3996c08e764d5a5bba34665134cfe98909971a5cfdc0ddfbb4894a3046",
+    "experiments/EXP-0107/repeat2/outputs.json": "da073c95932909f308639ae3ff26d4c3e2120d35c082802bf55dfd24ad5163d1"
+  },
+  "assertions": [
+    {
+      "id": "definition.selfTest",
+      "passed": true,
+      "detail": {
+        "passed": true,
+        "detail": "方向稳定性定义自检（手工向量）全部通过"
+      }
+    },
+    {
+      "id": "reconstruct.repeat0.candidate_score",
+      "passed": true,
+      "detail": {
+        "maxAbsDiff": 0.0,
+        "tolerance": 1e-12,
+        "detail": "重建的 consensus 百分位分与 candidate_scores.csv 的 score 列一致（仅允许浮点末位误差）"
+      }
+    },
+    {
+      "id": "reconstruct.repeat0.candidate_pi",
+      "passed": true,
+      "detail": {
+        "maxAbsDiff": 0.0,
+        "detail": "由 bootstrap_pi*.csv 重建的 pi 与 candidate_scores.csv 的 pi 列逐位一致"
+      }
+    },
+    {
+      "id": "regression.repeat0.strict_top3.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat0/strict_top3.csv",
+        "rows": 150,
+        "columnsCompared": 21,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat0.strict_top3_by_method.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat0/strict_top3_by_method.csv",
+        "rows": 600,
+        "columnsCompared": 22,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat0.extended_top3.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat0/extended_top3.csv",
+        "rows": 150,
+        "columnsCompared": 21,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat0.extended_top3_by_method.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat0/extended_top3_by_method.csv",
+        "rows": 600,
+        "columnsCompared": 22,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat0.strict_lowpi_sign_status.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat0/strict_lowpi_sign_status.csv",
+        "rows": 95,
+        "columnsCompared": 23,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "dedup.repeat0.strictConsensus150.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat0.strictByMethod600.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat0.extendedConsensus150.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat0.extendedByMethod600.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat0.lowPiRows.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat0.preFixRecorded",
+      "passed": true,
+      "detail": {
+        "observed": {
+          "strictConsensus150": [
+            34,
+            11
+          ],
+          "strictByMethod600": 86,
+          "strictByMethod600_vsConsensusTop3": 95,
+          "extendedConsensus150": 2,
+          "extendedByMethod600": 12
+        },
+        "recorded": {
+          "strictConsensus150": [
+            34,
+            11
+          ],
+          "strictByMethod600": 86,
+          "strictByMethod600_vsConsensusTop3": 95,
+          "extendedConsensus150": 2,
+          "extendedByMethod600": 12
+        },
+        "detail": "复现记录在案的修复前重叠：consensus 150 行 34 个（其中 rank 3 为 11 个），by-method 对自身方法 Top-3 86 个、对 consensus Top-3 95 个，extended 为 2 / 12"
+      }
+    },
+    {
+      "id": "dedup.repeat0.replaced.valid",
+      "passed": true,
+      "detail": {
+        "changed": {
+          "strictConsensus150": 78,
+          "strictByMethod600": 269,
+          "extendedConsensus150": 91,
+          "extendedByMethod600": 354,
+          "lowPiRows": 54
+        },
+        "invalid": {},
+        "detail": "每个被替换的替代候选都是同模块内未交付的候选或 'none'"
+      }
+    },
+    {
+      "id": "reconstruct.repeat1.candidate_score",
+      "passed": true,
+      "detail": {
+        "maxAbsDiff": 0.0,
+        "tolerance": 1e-12,
+        "detail": "重建的 consensus 百分位分与 candidate_scores.csv 的 score 列一致（仅允许浮点末位误差）"
+      }
+    },
+    {
+      "id": "reconstruct.repeat1.candidate_pi",
+      "passed": true,
+      "detail": {
+        "maxAbsDiff": 0.0,
+        "detail": "由 bootstrap_pi*.csv 重建的 pi 与 candidate_scores.csv 的 pi 列逐位一致"
+      }
+    },
+    {
+      "id": "regression.repeat1.strict_top3.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat1/strict_top3.csv",
+        "rows": 150,
+        "columnsCompared": 21,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat1.strict_top3_by_method.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat1/strict_top3_by_method.csv",
+        "rows": 600,
+        "columnsCompared": 22,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat1.extended_top3.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat1/extended_top3.csv",
+        "rows": 150,
+        "columnsCompared": 21,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat1.extended_top3_by_method.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat1/extended_top3_by_method.csv",
+        "rows": 600,
+        "columnsCompared": 22,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat1.strict_lowpi_sign_status.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat1/strict_lowpi_sign_status.csv",
+        "rows": 93,
+        "columnsCompared": 23,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "dedup.repeat1.strictConsensus150.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat1.strictByMethod600.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat1.extendedConsensus150.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat1.extendedByMethod600.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat1.lowPiRows.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat1.replaced.valid",
+      "passed": true,
+      "detail": {
+        "changed": {
+          "strictConsensus150": 78,
+          "strictByMethod600": 280,
+          "extendedConsensus150": 94,
+          "extendedByMethod600": 352,
+          "lowPiRows": 51
+        },
+        "invalid": {},
+        "detail": "每个被替换的替代候选都是同模块内未交付的候选或 'none'"
+      }
+    },
+    {
+      "id": "reconstruct.repeat2.candidate_score",
+      "passed": true,
+      "detail": {
+        "maxAbsDiff": 0.0,
+        "tolerance": 1e-12,
+        "detail": "重建的 consensus 百分位分与 candidate_scores.csv 的 score 列一致（仅允许浮点末位误差）"
+      }
+    },
+    {
+      "id": "reconstruct.repeat2.candidate_pi",
+      "passed": true,
+      "detail": {
+        "maxAbsDiff": 0.0,
+        "detail": "由 bootstrap_pi*.csv 重建的 pi 与 candidate_scores.csv 的 pi 列逐位一致"
+      }
+    },
+    {
+      "id": "regression.repeat2.strict_top3.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat2/strict_top3.csv",
+        "rows": 150,
+        "columnsCompared": 21,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat2.strict_top3_by_method.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat2/strict_top3_by_method.csv",
+        "rows": 600,
+        "columnsCompared": 22,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat2.extended_top3.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat2/extended_top3.csv",
+        "rows": 150,
+        "columnsCompared": 21,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat2.extended_top3_by_method.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat2/extended_top3_by_method.csv",
+        "rows": 600,
+        "columnsCompared": 22,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "regression.repeat2.strict_lowpi_sign_status.csv",
+      "passed": true,
+      "detail": {
+        "file": "repeat2/strict_lowpi_sign_status.csv",
+        "rows": 95,
+        "columnsCompared": 23,
+        "excludedColumns": [
+          "alternative_rank4",
+          "module_rank4_to_10",
+          "same_module_alternative_exists"
+        ],
+        "failures": [],
+        "failureCount": 0,
+        "detail": "除 alternative_rank4 / module_rank4_to_10 / same_module_alternative_exists 外，所有单元格与原 EXP-0107 文件逐格一致（浮点容差 1e-12）"
+      }
+    },
+    {
+      "id": "dedup.repeat2.strictConsensus150.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat2.strictByMethod600.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat2.extendedConsensus150.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat2.extendedByMethod600.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat2.lowPiRows.postFixOverlap",
+      "passed": true,
+      "detail": {
+        "rowsWithDeliveredAlternative": 0,
+        "detail": "修复后同模块替代候选不再重复任何已交付 Top-3 成员"
+      }
+    },
+    {
+      "id": "dedup.repeat2.replaced.valid",
+      "passed": true,
+      "detail": {
+        "changed": {
+          "strictConsensus150": 78,
+          "strictByMethod600": 272,
+          "extendedConsensus150": 94,
+          "extendedByMethod600": 351,
+          "lowPiRows": 51
+        },
+        "invalid": {},
+        "detail": "每个被替换的替代候选都是同模块内未交付的候选或 'none'"
+      }
+    },
+    {
+      "id": "denominators.pooled.rowLevelConsistency",
+      "passed": true,
+      "detail": {
+        "meanOfRepeatMeans": 0.9816877777777777,
+        "rowLevelMean": 0.9816877777777778
+      }
+    },
+    {
+      "id": "denominators.strictConsensus150.mean",
+      "passed": true,
+      "detail": {
+        "rows": 150,
+        "meanSignStability": 0.9994666666666667,
+        "roundedTo7": 0.9994667,
+        "expected": 0.9994667,
+        "detail": "strictConsensus150 的 sign_stability 均值四舍五入到 7 位小数应为 0.9994667"
+      }
+    },
+    {
+      "id": "denominators.singleRepeat600.mean",
+      "passed": true,
+      "detail": {
+        "rows": 600,
+        "meanSignStability": 0.98198,
+        "roundedTo7": 0.98198,
+        "expected": 0.98198,
+        "detail": "singleRepeat600 的 sign_stability 均值四舍五入到 7 位小数应为 0.98198"
+      }
+    },
+    {
+      "id": "denominators.pooled3x600.mean",
+      "passed": true,
+      "detail": {
+        "rows": 1800,
+        "meanSignStability": 0.9816877777777778,
+        "roundedTo7": 0.9816878,
+        "expected": 0.9816878,
+        "detail": "pooled3x600 的 sign_stability 均值四舍五入到 7 位小数应为 0.9816878"
+      }
+    },
+    {
+      "id": "summary.repeat0.fields",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "detail": "原 sign_stability_summary.json 的全部顶层字段均保留"
+      }
+    },
+    {
+      "id": "summary.repeat1.fields",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "detail": "原 sign_stability_summary.json 的全部顶层字段均保留"
+      }
+    },
+    {
+      "id": "summary.repeat2.fields",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "detail": "原 sign_stability_summary.json 的全部顶层字段均保留"
+      }
+    },
+    {
+      "id": "sync.submissionTree",
+      "passed": true,
+      "detail": {
+        "files": 20,
+        "target": "支撑材料/outputs/q2",
+        "detail": "交付材料目录与 v62_clean 逐字节一致（manifest 在镜像校验后写入并同步）"
+      }
+    }
+  ],
+  "denominators": {
+    "bootstrapReps": 500,
+    "validDenominator": "reps - n_invalid",
+    "legacyDenominator": "reps (the superseded denominator)",
+    "legacyComparableReps": 500,
+    "cells": 11550,
+    "repeatCount": 3,
+    "deliveredRowsStrictAllMethods": 600,
+    "deliveredRowsStrictConsensus": 150,
+    "strictConsensus150": {
+      "rows": 150,
+      "board": "strict",
+      "method": "consensus",
+      "meanSignStability": 0.9994666666666667,
+      "note": "150 行 strict consensus 交付表（50 维 x 3 名）的 sign_stability 均值",
+      "source": "repeat{r}/strict_top3.csv"
+    },
+    "singleRepeat600": {
+      "rows": 600,
+      "board": "strict",
+      "methods": [
+        "total_spearman",
+        "within_style_spearman",
+        "graph_lowrank",
+        "consensus"
+      ],
+      "meanSignStability": 0.98198,
+      "note": "单次重复 4 方法 x 50 维 x 3 名 = 600 行的 sign_stability 均值",
+      "source": "repeat{r}/strict_top3_by_method.csv"
+    },
+    "pooled3x600": {
+      "rows": 1800,
+      "board": "strict",
+      "methods": [
+        "total_spearman",
+        "within_style_spearman",
+        "graph_lowrank",
+        "consensus"
+      ],
+      "repeats": [
+        0,
+        1,
+        2
+      ],
+      "meanSignStability": 0.9816877777777778,
+      "meanSignStability_legacy": 0.7225544444444444,
+      "note": "三次重复的 600 行按方法表合并（1800 行）的 sign_stability 均值",
+      "source": "repeat{0,1,2}/strict_top3_by_method.csv"
+    }
+  },
+  "preFixOverlap": {
+    "0": {
+      "strictConsensus150": {
+        "rowsWithDeliveredAlternative": 34,
+        "rank1Rows": 12,
+        "rank2Rows": 11,
+        "rank3Rows": 11
+      },
+      "strictByMethod600": {
+        "rowsWithDeliveredAlternative": 86,
+        "rank1Rows": 28,
+        "rank2Rows": 29,
+        "rank3Rows": 29
+      },
+      "strictByMethod600_vsConsensusTop3": {
+        "rowsWithDeliveredAlternative": 95
+      },
+      "extendedConsensus150": {
+        "rowsWithDeliveredAlternative": 2,
+        "rank1Rows": 1,
+        "rank2Rows": 1,
+        "rank3Rows": 0
+      },
+      "extendedByMethod600": {
+        "rowsWithDeliveredAlternative": 12,
+        "rank1Rows": 4,
+        "rank2Rows": 5,
+        "rank3Rows": 3
+      },
+      "lowPiRows": {
+        "rowsWithDeliveredAlternative": 26
+      }
+    },
+    "1": {
+      "strictConsensus150": {
+        "rowsWithDeliveredAlternative": 38,
+        "rank1Rows": 13,
+        "rank2Rows": 13,
+        "rank3Rows": 12
+      },
+      "strictByMethod600": {
+        "rowsWithDeliveredAlternative": 89,
+        "rank1Rows": 28,
+        "rank2Rows": 31,
+        "rank3Rows": 30
+      },
+      "strictByMethod600_vsConsensusTop3": {
+        "rowsWithDeliveredAlternative": 98
+      },
+      "extendedConsensus150": {
+        "rowsWithDeliveredAlternative": 2,
+        "rank1Rows": 1,
+        "rank2Rows": 1,
+        "rank3Rows": 0
+      },
+      "extendedByMethod600": {
+        "rowsWithDeliveredAlternative": 12,
+        "rank1Rows": 4,
+        "rank2Rows": 5,
+        "rank3Rows": 3
+      },
+      "lowPiRows": {
+        "rowsWithDeliveredAlternative": 28
+      }
+    },
+    "2": {
+      "strictConsensus150": {
+        "rowsWithDeliveredAlternative": 30,
+        "rank1Rows": 10,
+        "rank2Rows": 10,
+        "rank3Rows": 10
+      },
+      "strictByMethod600": {
+        "rowsWithDeliveredAlternative": 84,
+        "rank1Rows": 26,
+        "rank2Rows": 29,
+        "rank3Rows": 29
+      },
+      "strictByMethod600_vsConsensusTop3": {
+        "rowsWithDeliveredAlternative": 96
+      },
+      "extendedConsensus150": {
+        "rowsWithDeliveredAlternative": 2,
+        "rank1Rows": 1,
+        "rank2Rows": 1,
+        "rank3Rows": 0
+      },
+      "extendedByMethod600": {
+        "rowsWithDeliveredAlternative": 12,
+        "rank1Rows": 4,
+        "rank2Rows": 4,
+        "rank3Rows": 4
+      },
+      "lowPiRows": {
+        "rowsWithDeliveredAlternative": 20
+      }
+    }
+  },
+  "postFixOverlap": {
+    "0": {
+      "strictConsensus150": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "strictByMethod600": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "extendedConsensus150": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "extendedByMethod600": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "lowPiRows": {
+        "rowsWithDeliveredAlternative": 0
+      }
+    },
+    "1": {
+      "strictConsensus150": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "strictByMethod600": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "extendedConsensus150": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "extendedByMethod600": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "lowPiRows": {
+        "rowsWithDeliveredAlternative": 0
+      }
+    },
+    "2": {
+      "strictConsensus150": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "strictByMethod600": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "extendedConsensus150": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "extendedByMethod600": {
+        "rowsWithDeliveredAlternative": 0,
+        "rank1Rows": 0,
+        "rank2Rows": 0,
+        "rank3Rows": 0
+      },
+      "lowPiRows": {
+        "rowsWithDeliveredAlternative": 0
+      }
+    }
+  },
+  "replaced": {
+    "0": {
+      "strictConsensus150": 78,
+      "strictByMethod600": 269,
+      "extendedConsensus150": 91,
+      "extendedByMethod600": 354,
+      "lowPiRows": 54
+    },
+    "1": {
+      "strictConsensus150": 78,
+      "strictByMethod600": 280,
+      "extendedConsensus150": 94,
+      "extendedByMethod600": 352,
+      "lowPiRows": 51
+    },
+    "2": {
+      "strictConsensus150": 78,
+      "strictByMethod600": 272,
+      "extendedConsensus150": 94,
+      "extendedByMethod600": 351,
+      "lowPiRows": 51
+    }
+  },
+  "regressionCheck": {
+    "0": {
+      "strict_top3.csv": {
+        "passed": true,
+        "rows": 150,
+        "failures": 0,
+        "cellsCompared": 3000,
+        "exactStringMatches": 3000,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 78
+        }
+      },
+      "strict_top3_by_method.csv": {
+        "passed": true,
+        "rows": 600,
+        "failures": 0,
+        "cellsCompared": 12600,
+        "exactStringMatches": 12600,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 269
+        }
+      },
+      "extended_top3.csv": {
+        "passed": true,
+        "rows": 150,
+        "failures": 0,
+        "cellsCompared": 3000,
+        "exactStringMatches": 3000,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 91
+        }
+      },
+      "extended_top3_by_method.csv": {
+        "passed": true,
+        "rows": 600,
+        "failures": 0,
+        "cellsCompared": 12600,
+        "exactStringMatches": 12600,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 354
+        }
+      },
+      "strict_lowpi_sign_status.csv": {
+        "passed": true,
+        "rows": 95,
+        "failures": 0,
+        "cellsCompared": 1900,
+        "exactStringMatches": 1900,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 54,
+          "module_rank4_to_10": 78,
+          "same_module_alternative_exists": 1
+        }
+      }
+    },
+    "1": {
+      "strict_top3.csv": {
+        "passed": true,
+        "rows": 150,
+        "failures": 0,
+        "cellsCompared": 3000,
+        "exactStringMatches": 3000,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 78
+        }
+      },
+      "strict_top3_by_method.csv": {
+        "passed": true,
+        "rows": 600,
+        "failures": 0,
+        "cellsCompared": 12600,
+        "exactStringMatches": 12600,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 280
+        }
+      },
+      "extended_top3.csv": {
+        "passed": true,
+        "rows": 150,
+        "failures": 0,
+        "cellsCompared": 3000,
+        "exactStringMatches": 3000,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 94
+        }
+      },
+      "extended_top3_by_method.csv": {
+        "passed": true,
+        "rows": 600,
+        "failures": 0,
+        "cellsCompared": 12600,
+        "exactStringMatches": 12600,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 352
+        }
+      },
+      "strict_lowpi_sign_status.csv": {
+        "passed": true,
+        "rows": 93,
+        "failures": 0,
+        "cellsCompared": 1860,
+        "exactStringMatches": 1860,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 51,
+          "module_rank4_to_10": 79,
+          "same_module_alternative_exists": 1
+        }
+      }
+    },
+    "2": {
+      "strict_top3.csv": {
+        "passed": true,
+        "rows": 150,
+        "failures": 0,
+        "cellsCompared": 3000,
+        "exactStringMatches": 3000,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 78
+        }
+      },
+      "strict_top3_by_method.csv": {
+        "passed": true,
+        "rows": 600,
+        "failures": 0,
+        "cellsCompared": 12600,
+        "exactStringMatches": 12600,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 272
+        }
+      },
+      "extended_top3.csv": {
+        "passed": true,
+        "rows": 150,
+        "failures": 0,
+        "cellsCompared": 3000,
+        "exactStringMatches": 3000,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 94
+        }
+      },
+      "extended_top3_by_method.csv": {
+        "passed": true,
+        "rows": 600,
+        "failures": 0,
+        "cellsCompared": 12600,
+        "exactStringMatches": 12600,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 351
+        }
+      },
+      "strict_lowpi_sign_status.csv": {
+        "passed": true,
+        "rows": 95,
+        "failures": 0,
+        "cellsCompared": 1900,
+        "exactStringMatches": 1900,
+        "floatWithinTolerance": 0,
+        "maxAbsDiff": 0.0,
+        "excludedColumnChanges": {
+          "alternative_rank4": 51,
+          "module_rank4_to_10": 81,
+          "same_module_alternative_exists": 1
+        }
+      }
+    }
+  },
+  "outputs": {
+    "repeat0/extended_top3.csv": {
+      "bytes": 25201,
+      "sha256": "f121d84a1c2671c4ec258681195078e73c7ad8938df4fcf4f11d76971153aa74"
+    },
+    "repeat0/extended_top3_by_method.csv": {
+      "bytes": 107957,
+      "sha256": "cc976cc1144b3cb17257925cafda34ae00bd72d5eecb460d9c8bd3edc967089f"
+    },
+    "repeat0/sign_stability_summary.json": {
+      "bytes": 36131,
+      "sha256": "48de586225b2866aeb64336704198c4c668b8c8a23639e8e752973e59735b656"
+    },
+    "repeat0/strict_lowpi_sign_status.csv": {
+      "bytes": 30345,
+      "sha256": "7038be697fcd88924235f8d0e31d223ee96dc8131dd245ddfa60ecf36fd7e78a"
+    },
+    "repeat0/strict_top3.csv": {
+      "bytes": 27350,
+      "sha256": "a7f558de45c3e17d53c69264abd720a0ea0aa8077642aa9f31700fce427671be"
+    },
+    "repeat0/strict_top3_by_method.csv": {
+      "bytes": 117173,
+      "sha256": "1c1098c34c895ee16435cfaa3cdded8d05d2d173b97716fad262f04374e410c8"
+    },
+    "repeat1/extended_top3.csv": {
+      "bytes": 25116,
+      "sha256": "a4a03fdf80e780872bf120705733a6060edfb4020b53e30ee02a137675444cf9"
+    },
+    "repeat1/extended_top3_by_method.csv": {
+      "bytes": 107680,
+      "sha256": "e9cfefd1512f24ebe0892b6f10ec9de406f38b165d268994e6abf2ae0bff0f47"
+    },
+    "repeat1/sign_stability_summary.json": {
+      "bytes": 36226,
+      "sha256": "e5ddcedf210f7a97083c2a742c67d56ca5178765897a67b3387c4fbb4180bf18"
+    },
+    "repeat1/strict_lowpi_sign_status.csv": {
+      "bytes": 30136,
+      "sha256": "4fc316d31501a0b51908e75cb053799c8c66688a09571854c6408b7c8d7a1a80"
+    },
+    "repeat1/strict_top3.csv": {
+      "bytes": 27278,
+      "sha256": "e5453c11cb05c2fd31f246c2f3ee7497522195ed7ada60435a5fea6dfb0811e5"
+    },
+    "repeat1/strict_top3_by_method.csv": {
+      "bytes": 116788,
+      "sha256": "5793437c5f3c728c7c49aa4d5989f0b4941d217a931f2bb16d04a5ee3d9fcae4"
+    },
+    "repeat2/extended_top3.csv": {
+      "bytes": 25079,
+      "sha256": "d06d61dd1b8f52e1d66f658a89052b8ff97dc688859fd8692b7bb56a64f895d9"
+    },
+    "repeat2/extended_top3_by_method.csv": {
+      "bytes": 107692,
+      "sha256": "9f7cc82df5e15f7ca026efb60f845ceb25aa74feeb4b50054e00813e9c83f79e"
+    },
+    "repeat2/sign_stability_summary.json": {
+      "bytes": 36245,
+      "sha256": "91d44a73498b39c690feb5c7d11b51c15176b9db79ec6f3b86ac756c94ab3057"
+    },
+    "repeat2/strict_lowpi_sign_status.csv": {
+      "bytes": 30985,
+      "sha256": "553dcd7c604a573b36c20f26e74776d879f59456925cf8a555fa7256e8a15fb2"
+    },
+    "repeat2/strict_top3.csv": {
+      "bytes": 27415,
+      "sha256": "f69e86f4312adbb2d353b94f0e0a768d73e449377bb0d024163599302456e1e4"
+    },
+    "repeat2/strict_top3_by_method.csv": {
+      "bytes": 117105,
+      "sha256": "2146c6a017d2b905408382f1b2b23ce6cc4bf4b43137196be367f3388762280d"
+    },
+    "sign_stability_summary.json": {
+      "bytes": 218761,
+      "sha256": "5922f4bc46872e3b0ed3e60306fb582a1b98839f3c588437b64e5f9cfc94ec38"
+    },
+    "REPORT.md": {
+      "bytes": 5909,
+      "sha256": "5101868545ef7a8608fa7669d445b814ee0c3da2c04ab1b40c2b4f054eaa3f58"
+    }
+  },
+  "sync": {
+    "target": "FINAL_SUBMISSION_v6.2/支撑材料/outputs/q2",
+    "mirrors": "outputs/q2/v62_clean/"
+  },
+  "determinism": "同一输入重复运行应产生逐字节相同的全部输出（脚本不含时间戳/随机数）。"
+}

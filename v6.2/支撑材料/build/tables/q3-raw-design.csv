@@ -1,0 +1,13 @@
+指标,raw_value,design_value,_source
+归一化经验能量距离 V,0.8736462244253004,0.8726874826148657,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+无符号能量 V,16.017829813536604,15.99994601104919,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+带符号能量 U,1.6043596165015888,1.6153896894821214,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+约束满足率,0.12666666666666668,1.0,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+负浓度格数,0,0,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+约束投影轮数（均值）,,1.3232323232323233,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+约束投影轮数（最大）,,4,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+约束投影最大残差,,0.0,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+全列平均绝对改动（标准化单位）,,0.008872109952106877,"experiments/EXP-0109/outputs.json#q3.comparisons.copula-selected | experiments/EXP-0109/metrics.json | experiments/EXP-0109/outputs.json#q3.projection_rounds,raw_design_change"
+改动最大的列：二甲基硫（DMS）,,0.5720095134184826,experiments/EXP-0109/outputs.json#q3.raw_design_change.top_changed_columns
+"改动最大的列：双乙酰（2,3-丁二酮）",,0.2888495967249325,experiments/EXP-0109/outputs.json#q3.raw_design_change.top_changed_columns
+改动最大的列：反-2-壬烯醛,,0.05130719455238723,experiments/EXP-0109/outputs.json#q3.raw_design_change.top_changed_columns

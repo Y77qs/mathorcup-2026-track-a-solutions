@@ -1,0 +1,91 @@
+{
+ "kind": "q3-robustness.confirmatory",
+ "generatedFrom": "state/ledger.json",
+ "pilotExcluded": [
+  "ROB-0001",
+  "ROB-0002",
+  "ROB-0003",
+  "ROB-0004",
+  "ROB-0005",
+  "ROB-0006",
+  "EXP-0076",
+  "EXP-0077"
+ ],
+ "q3_generation": {
+  "robId": "ROB-0009",
+  "questionId": "Q3",
+  "preregisteredAt": "2026-10-26T14:06:52.880Z",
+  "executedAt": "2026-10-26T14:20:43.580Z",
+  "experimentIds": [
+   "EXP-0092",
+   "EXP-0093",
+   "EXP-0099"
+  ],
+  "metricKey": "energy-distance",
+  "decisionRule": {
+   "limit": 0.05,
+   "reference": "first linked experiment = the post-plan reference",
+   "type": "relative-range"
+  },
+  "values": [
+   0.8777844056665478,
+   0.876453018856588,
+   0.8981550487535501
+  ],
+  "mean": 0.884130824425562,
+  "spread": 0.021702029896962127,
+  "ruleMessage": "relative spread 0.021702 <= 0.05",
+  "relativeSpreadFromValues": 0.024723644845892012,
+  "labelNote": "the plan message prints spread/1 when decisionRule.reference is free text; relativeSpreadFromValues = spread/|first value|",
+  "decisionPassed": true,
+  "executionStatus": "completed",
+  "satisfiedMethods": [
+   "multiple-seeds",
+   "param-perturbation"
+  ],
+  "limitations": [
+   "只覆盖 2/3 冻结种子",
+   "constraint-satisfaction 是构造量、不参与判定",
+   "energy-distance 只测分布差异；source-resample 更优，不宣称优于基线"
+  ]
+ },
+ "q3_transfer": {
+  "robId": "ROB-0010",
+  "questionId": "Q3",
+  "preregisteredAt": "2026-10-26T14:07:01.242Z",
+  "executedAt": "2026-10-26T14:20:49.044Z",
+  "experimentIds": [
+   "EXP-0095",
+   "EXP-0096",
+   "EXP-0097"
+  ],
+  "metricKey": "nonincrease-rate",
+  "decisionRule": {
+   "limit": 1,
+   "reference": "none: every linked experiment must keep nonincrease-rate at 1.0",
+   "type": "min-value"
+  },
+  "values": [
+   1,
+   1,
+   1
+  ],
+  "mean": 1,
+  "spread": 0,
+  "ruleMessage": "min 1 satisfies min-value limit 1",
+  "relativeSpreadFromValues": 0.0,
+  "labelNote": "the plan message prints spread/1 when decisionRule.reference is free text; relativeSpreadFromValues = spread/|first value|",
+  "decisionPassed": true,
+  "executionStatus": "completed",
+  "satisfiedMethods": [
+   "multiple-seeds",
+   "param-perturbation"
+  ],
+  "limitations": [
+   "nonincrease-rate 饱和，min 1>=1 不是改善量",
+   "只覆盖 2/3 冻结种子",
+   "无原生 optimization VAL；58 条代理越界仅属参照控制"
+  ]
+ },
+ "note": "generation and transfer are separate components; do not merge them into one Q3 success rate"
+}

@@ -1,0 +1,6 @@
+模型,grade_mae,exact_agreement,qwk,grade0,grade1,grade2,grade3,grade4,grade5,grade6,_source
+图正则低秩,1.41112,0.22890666666666667,0.33208074241098406,1315,1915,4151,9493,13092,7140,394,experiments/EXP-0073/outputs.json#q1.grade.perModel.graph-lowrank
+图 Ridge,1.4390666666666667,0.21501333333333333,0.259026387812079,412,1007,3156,11488,15347,5985,105,experiments/EXP-0073/outputs.json#q1.grade.perModel.graph-ridge
+普通 Ridge,1.4401066666666666,0.21048,0.2389627411535259,141,699,2787,12102,16372,5388,11,experiments/EXP-0073/outputs.json#q1.grade.perModel.ridge
+最小中位数基线,1.5072266666666667,0.16504,0.0,0,0,0,37500,0,0,0,experiments/EXP-0073/outputs.json#q1.grade.perModel.median
+参照等级（真实标签同映射）,,,,3190,6229,6227,6189,6259,6211,3195,experiments/EXP-0073/outputs.json#q1.grade.perModel.*.grade_counts_reference

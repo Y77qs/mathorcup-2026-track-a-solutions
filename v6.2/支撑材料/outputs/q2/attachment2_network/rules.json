@@ -1,0 +1,40 @@
+{
+  "source": "pre-declared rule from MathorCup_A_v6_面向复赛修改说明.md §5",
+  "threshold": 0.5,
+  "comparator": ">=",
+  "undirected": true,
+  "selfLoops": false,
+  "edgeRule": "edge {i, j} for i < j iff |rho_ij| >= threshold",
+  "signRule": "sign of rho_ij is kept on the edge; the graph is undirected in topology, signed in value",
+  "nodeRule": "all 231 chemistry features of data/clean/q2_chem_meta.json, in corrIndex order",
+  "thresholdSource": "fixed by the v6 task list before looking at the measured counts; not tuned",
+  "inputs": {
+    "data/raw/imported/415709ac10f2f730-2.csv": "415709ac10f2f730d31f249bd6ac108250bdfbfd62e0055f4d8db9b41ec9cc4c",
+    "data/clean/q2_chem_meta.json": "9c4eef18dcfec1f8a67941bb9e2728efdae766ca6831b4d56007624f0fcd10b4"
+  },
+  "alignment": {
+    "rule": "position (corrIndex) is used ONLY after it is verified by the corrLabel text on both axes",
+    "exactRowLabelMatches": 231,
+    "exactColumnLabelMatches": 231,
+    "n": 231,
+    "positionalUsed": true,
+    "nameJoinUsed": false
+  },
+  "measured": {
+    "nodes": 231,
+    "edges": 645,
+    "components": 52,
+    "largestComponent": 175,
+    "positiveEdges": 629,
+    "negativeEdges": 16,
+    "isolatedNodes": 48
+  },
+  "expected": {
+    "nodes": 231,
+    "edges": 645,
+    "components": 52,
+    "largestComponent": 175
+  },
+  "matchesExpected": true,
+  "scope": "descriptive, same-source with the attachment: Q2 network/factor interpretation only. The predictive training graph is rebuilt inside every training resample at tau = 0.5 (q2_fix.py -> q1_lib.build_graph); this full-sample table never enters the validation."
+}

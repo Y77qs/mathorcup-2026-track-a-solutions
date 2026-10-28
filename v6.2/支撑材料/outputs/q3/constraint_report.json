@@ -1,0 +1,13 @@
+{
+  "designConstraintSatisfaction": 1.0,
+  "rawConstraintSatisfaction": 0.11333333333333333,
+  "constraintRecordCounts": {
+    "verified": 19619,
+    "conditional": 8201,
+    "not_identifiable": 680,
+    "infeasible": 0
+  },
+  "linearNegativeDesign": 0,
+  "constructionNote": "constraint-satisfaction=1.000 is an invariant of the projection loop, not an empirical finding",
+  "boundClamping": "508/750 rows sit exactly at the DMS bound, 361/750 at the diacetyl bound, 46/750 at the 4VG bound"
+}

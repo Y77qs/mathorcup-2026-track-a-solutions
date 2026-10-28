@@ -1,0 +1,160 @@
+level,strategy,repeat,fold,source_beer,m_sources,n_target_reference,d_target,V,V_normalized,U,max_constraint_violation,stale_halfspace_residual,l1_change_z,mean_abs_change_z,n_constraint_violations,note
+pooled,source-fixed,,,,99,,,7.196326285149654,0.3957781788879555,4.817735233962364,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,0,0,,11,18,20.214086415311137,7.07626282241629,0.35006592318989904,4.534800850757016,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,0,1,,11,19,19.04900893452032,7.171908006268197,0.37649769764511876,4.799588229918761,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,0,2,,11,19,15.668163770819502,7.424197009702636,0.4738396354733994,5.207468445299208,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,1,0,,11,19,19.354597097513572,6.665655872451502,0.3443965192800536,4.264779338000391,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,1,1,,11,18,19.78960248923023,7.907370730134247,0.39957198404755956,5.383244600403447,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,1,2,,11,19,16.046394931362386,7.074381626564918,0.44087046696938564,4.843303599280947,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,2,0,,11,19,19.68963983194645,7.050398619770622,0.3580765661508621,4.605780219770935,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,2,1,,11,19,18.070655070279575,6.970204675118691,0.38571953523602137,4.627661679523133,,,,,,reproduced control (EXP-0110 artifact)
+fold,source-fixed,2,2,,11,18,17.152777630636407,7.426557203919781,0.43296528199930023,5.092990142707439,,,,,,reproduced control (EXP-0110 artifact)
+pooled,target-mean-projection,,,,99,,,6.94148284204317,0.3794022877525747,5.8913686262015315,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,0,0,,11,18,20.214086415311137,7.576779100232034,0.3748266898915111,6.3839946862111105,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,0,1,,11,19,19.04900893452032,7.004548503300125,0.36771196482598056,5.936350093486638,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,0,2,,11,19,15.668163770819502,6.24438836317101,0.3985398962194027,5.355779350959514,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,1,0,,11,19,19.354597097513572,7.207989002593806,0.3724174141305062,6.125023963548713,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,1,1,,11,18,19.78960248923023,7.334632462515387,0.37063061102450107,6.1707236908439675,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,1,2,,11,19,16.046394931362386,6.361085840771832,0.3964183773352858,5.445694332558503,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,2,0,,11,19,19.68963983194645,7.367208195841002,0.37416673228769287,6.265882052608585,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,2,1,,11,19,18.070655070279575,6.73636515686777,0.37277924517229744,5.718360140910757,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection,2,2,,11,18,17.152777630636407,6.640348953095579,0.3871296588859939,5.620509324685994,,,,,,reproduced control (EXP-0110 artifact)
+pooled,target-mean-projection-full,,,,99,,,6.379240954520166,0.3484579723871347,5.2545558755628745,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,0,0,,11,18,20.214086415311137,7.122335237695275,0.3523451464173256,5.870208619944634,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,0,1,,11,19,19.04900893452032,6.479221799382035,0.34013432518478637,5.344821522856005,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,0,2,,11,19,15.668163770819502,5.516683701942911,0.3520951007811918,4.52376062098911,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,1,0,,11,19,19.354597097513572,6.573731586416315,0.3396470385457325,5.409088313072708,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,1,1,,11,18,19.78960248923023,6.631648955911945,0.3351077395071972,5.374677340720758,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,1,2,,11,19,16.046394931362386,6.006753938659049,0.3743366634283043,5.043284175351264,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,2,0,,11,19,19.68963983194645,6.919196377146417,0.35141304951246577,5.761741086421523,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,2,1,,11,19,18.070655070279575,6.108922023759032,0.3380575856271114,5.003773329556083,,,,,,reproduced control (EXP-0110 artifact)
+fold,target-mean-projection-full,2,2,,11,18,17.152777630636407,6.054674969768513,0.3529851024800973,4.959647871153788,,,,,,reproduced control (EXP-0110 artifact)
+pooled,qp-source-anchor,,,,99,,,7.090616932081723,0.38998678314733903,4.731512559497442,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,0,0,,11,18,20.214086415311137,6.979525285687078,0.34528027348297297,4.454954621274453,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,0,1,,11,19,19.04900893452032,7.04039985812711,0.3695940236223316,4.686410243557884,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,0,2,,11,19,15.668163770819502,7.332524385878989,0.46798875050917793,5.137629186202743,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,1,0,,11,19,19.354597097513572,6.564722866769557,0.3391815822202213,4.181308797910475,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,1,1,,11,18,19.78960248923023,7.786020477226476,0.39343996330718284,5.280144911965962,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,1,2,,11,19,16.046394931362386,6.977715270707858,0.4348462879391084,4.7661707543531975,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,2,0,,11,19,19.68963983194645,6.963701063374916,0.35367335933064187,4.538102196832398,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,2,1,,11,19,18.070655070279575,6.849604110351951,0.3790457005411691,4.528618398555178,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-source-anchor,2,2,,11,18,17.152777630636407,7.321339070611572,0.4268311073732455,5.010273924824688,,,,,,reproduced control (EXP-0110 artifact)
+pooled,qp-quantile-anchor,,,,99,,,2.0798861351916886,0.11341058752359791,-0.3456899316462696,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,0,0,,11,18,20.214086415311137,2.309828583266654,0.11426826500143371,-0.3238055311668475,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,0,1,,11,19,19.04900893452032,2.0462428233418635,0.10741990989534862,-0.44296093302364525,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,0,2,,11,19,15.668163770819502,1.7395346705657513,0.11102351851883709,-0.3948008383375612,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,1,0,,11,19,19.354597097513572,2.0912594743686235,0.10804975499269273,-0.37329453921577027,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,1,1,,11,18,19.78960248923023,2.514942528440482,0.12708403464946544,-0.11778647650661966,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,1,2,,11,19,16.046394931362386,1.8758620830931214,0.11690240026604251,-0.34443124835646266,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,2,0,,11,19,19.68963983194645,2.202909892092965,0.11188167538335274,-0.3766846974165361,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,2,1,,11,19,18.070655070279575,1.871203110599975,0.10354926832052166,-0.500268319451191,,,,,,reproduced control (EXP-0110 artifact)
+fold,qp-quantile-anchor,2,2,,11,18,17.152777630636407,2.0671920509557644,0.1205164606846866,-0.23717680134179275,,,,,,reproduced control (EXP-0110 artifact)
+pooled,anchor-direct-projection,,,,99,,,2.0903158463848044,0.11396213288085463,-0.3563335493081134,2.220446049250313e-16,,,,0,"new ablation (review §4.1); same anchor, same box + corrected stale half-space, no PCA quadratic, no L1"
+fold,anchor-direct-projection,0,0,,11,18,20.214086415311137,2.32471863510899,0.11500488260246748,-0.3294874274083135,5.551115123125783e-17,,,,0,new ablation (review §4.1)
+fold,anchor-direct-projection,0,1,,11,19,19.04900893452032,2.0578208009354135,0.10802770936845237,-0.4531079412290957,2.7755575615628914e-17,,,,0,new ablation (review §4.1)
+fold,anchor-direct-projection,0,2,,11,19,15.668163770819502,1.7443614780157812,0.11133158317278329,-0.4153263594954577,4.163336342344337e-17,,,,0,new ablation (review §4.1)
+fold,anchor-direct-projection,1,0,,11,19,19.354597097513572,2.101205130220478,0.1085636202931041,-0.3821906500667822,5.551115123125783e-17,,,,0,new ablation (review §4.1)
+fold,anchor-direct-projection,1,1,,11,18,19.78960248923023,2.5378677158093446,0.12824248072645655,-0.11303004250852666,2.7755575615628914e-17,,,,0,new ablation (review §4.1)
+fold,anchor-direct-projection,1,2,,11,19,16.046394931362386,1.8820490062866462,0.11728796495019675,-0.35942165455655584,3.0357660829594124e-17,,,,0,new ablation (review §4.1)
+fold,anchor-direct-projection,2,0,,11,19,19.68963983194645,2.2175079340802597,0.11262308264686244,-0.3882560702394606,2.7755575615628914e-17,,,,0,new ablation (review §4.1)
+fold,anchor-direct-projection,2,1,,11,19,18.070655070279575,1.8738033816212258,0.10369316299457404,-0.5152497736475219,5.551115123125783e-17,,,,0,new ablation (review §4.1)
+fold,anchor-direct-projection,2,2,,11,18,17.152777630636407,2.0735085353850984,0.12088470917279456,-0.2509320246213065,2.7755575615628914e-17,,,,0,new ablation (review §4.1)
+point,anchor-direct-projection,0,0,124,,,,,,,5.551115123125783e-17,-0.0026158056736987206,89.29567877254138,0.3865613799677116,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,81,,,,,,,5.551115123125783e-17,0.0,110.08976168432213,0.4765790549104854,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,218,,,,,,,0.0,-2.42861286636753e-17,113.29503725716089,0.4904547067409562,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,96,,,,,,,5.551115123125783e-17,-0.0070442677510501595,125.02044045276719,0.5412140279340572,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,230,,,,,,,5.551115123125783e-17,-2.0816681711721685e-17,110.36109778519322,0.4777536700657715,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,185,,,,,,,5.551115123125783e-17,2.7755575615628914e-17,108.2422611756602,0.4685812172106502,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,139,,,,,,,5.551115123125783e-17,-0.025155094842849827,119.93524204754644,0.5192001820240105,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,209,,,,,,,5.551115123125783e-17,-0.010992753255016113,116.24698529374604,0.5032337025703292,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,119,,,,,,,5.551115123125783e-17,3.122502256758253e-17,94.11135352268114,0.40740845680814347,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,90,,,,,,,5.551115123125783e-17,-0.030363799039278286,115.43571896840575,0.49972172713595564,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,0,28,,,,,,,5.551115123125783e-17,0.0,122.42114746763406,0.5299616773490652,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,124,,,,,,,0.0,-0.0011118179168344497,99.82545188891767,0.43214481337193794,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,81,,,,,,,0.0,-5.204170427930421e-18,120.33662033425111,0.5209377503647235,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,218,,,,,,,0.0,0.0,122.74403577587111,0.5313594622332083,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,96,,,,,,,0.0,-0.0012926834351239813,117.733999617026,0.5096709940130996,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,230,,,,,,,6.938893903907228e-18,6.938893903907228e-18,120.08245480388551,0.5198374666834871,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,185,,,,,,,2.7755575615628914e-17,2.7755575615628914e-17,121.79212307636523,0.5272386280362131,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,139,,,,,,,6.938893903907228e-18,6.938893903907228e-18,128.58341499415064,0.5566381601478383,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,209,,,,,,,2.7755575615628914e-17,2.7755575615628914e-17,133.29958799357462,0.577054493478678,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,119,,,,,,,0.0,-6.938893903907228e-18,117.77643492559156,0.5098546966475825,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,90,,,,,,,0.0,-3.469446951953614e-17,118.60533856933425,0.5134430241096721,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,1,28,,,,,,,0.0,-0.026721648710185196,107.01350771415085,0.4632619381564972,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,124,,,,,,,0.0,0.0,89.3591438520076,0.3868361205714615,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,81,,,,,,,0.0,-0.008137461284628132,104.11995421182115,0.4507357325187063,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,218,,,,,,,3.469446951953614e-18,3.469446951953614e-18,108.80752009289839,0.47102822551038265,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,96,,,,,,,0.0,0.0,123.1034672415505,0.5329154426041147,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,230,,,,,,,0.0,-4.0115480381963664e-18,105.43620583024838,0.4564337914729367,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,185,,,,,,,1.3877787807814457e-17,1.3877787807814457e-17,108.08153954875073,0.4678854525919945,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,139,,,,,,,0.0,-0.026493883999695662,107.02676486970574,0.4633193284402846,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,209,,,,,,,0.0,0.0,120.51818276784451,0.5217237349257338,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,119,,,,,,,0.0,-0.003351959179136824,104.6327226440723,0.45295550928169825,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,90,,,,,,,0.0,-1.3877787807814457e-17,115.76473428689079,0.5011460358739861,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,0,2,28,,,,,,,4.163336342344337e-17,4.163336342344337e-17,114.53710850003007,0.4958316385282687,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,124,,,,,,,1.3877787807814457e-17,1.3877787807814457e-17,75.80642916997323,0.3281663600431741,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,81,,,,,,,0.0,-1.962405932198763e-17,103.29627912503312,0.4471700395023079,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,218,,,,,,,2.7755575615628914e-17,2.7755575615628914e-17,100.17544850632322,0.4336599502438235,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,96,,,,,,,0.0,0.0,121.70570017945073,0.5268645029413451,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,230,,,,,,,5.551115123125783e-17,-0.013455261617302476,91.93855028688796,0.39800238219432016,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,185,,,,,,,0.0,0.0,94.12445891596175,0.4074651901123885,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,139,,,,,,,5.551115123125783e-17,-0.04841934186447351,106.12397666419022,0.4594111543904339,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,209,,,,,,,5.551115123125783e-17,-0.010318591474599764,114.94699492651107,0.49760603864290504,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,119,,,,,,,0.0,-1.3877787807814457e-17,92.9719362454156,0.4024759144823186,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,90,,,,,,,2.9434394917086937e-18,2.9434394917086937e-18,103.90450674383257,0.4498030594971107,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,0,28,,,,,,,0.0,0.0,114.54456487094626,0.49586391719024353,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,124,,,,,,,0.0,0.0,97.62876053174767,0.42263532697726264,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,81,,,,,,,0.0,-0.005137158103428673,125.83360907916008,0.5447342384379225,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,218,,,,,,,0.0,-2.168404344971009e-17,129.81883084749163,0.561986280725072,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,96,,,,,,,0.0,-2.7755575615628914e-17,142.1084700529372,0.6151881820473473,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,230,,,,,,,0.0,-2.42861286636753e-17,125.44811134276449,0.5430654170682445,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,185,,,,,,,0.0,-2.0816681711721685e-17,146.9069433097408,0.6359607935486614,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,139,,,,,,,0.0,-0.001357088306773232,126.99033405819557,0.5497417058796346,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,209,,,,,,,2.7755575615628914e-17,2.7755575615628914e-17,128.45806584388689,0.5560955231337095,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,119,,,,,,,0.0,0.0,129.8014891387353,0.5619112083927935,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,90,,,,,,,6.938893903907228e-18,6.938893903907228e-18,134.38586636350692,0.5817569972446187,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,1,28,,,,,,,2.7755575615628914e-17,2.7755575615628914e-17,119.87132106763892,0.5189234678252767,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,124,,,,,,,0.0,-1.3877787807814457e-17,83.96895576530483,0.3635019730099776,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,81,,,,,,,0.0,0.0,107.26443205895586,0.46434819073141065,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,218,,,,,,,3.469446951953614e-18,3.469446951953614e-18,110.55662123079551,0.4786000919082057,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,96,,,,,,,0.0,0.0,110.35399125746008,0.47772290587645055,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,230,,,,,,,0.0,-3.2959746043559335e-17,113.9230041829951,0.4931731782813641,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,185,,,,,,,0.0,0.0,111.42505744662895,0.48235955604601277,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,139,,,,,,,3.0357660829594124e-17,3.0357660829594124e-17,113.6641518063804,0.492052605222426,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,209,,,,,,,0.0,0.0,125.90346882912957,0.5450366615979635,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,119,,,,,,,0.0,-0.037029829724431404,109.76887289349597,0.47518992594587,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,90,,,,,,,0.0,0.0,123.18165884516124,0.5332539343946374,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,1,2,28,,,,,,,0.0,-6.938893903907228e-18,121.87966261926428,0.5276175870963822,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,124,,,,,,,0.0,-0.048553788594719566,98.84206156019707,0.4278877123818055,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,81,,,,,,,0.0,-0.04212042544634465,107.52862923893474,0.46549190146724995,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,218,,,,,,,0.0,-0.0038971976202485034,114.1440038170402,0.49412988665385366,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,96,,,,,,,0.0,-0.026481866123059722,129.70528706477927,0.5614947491981787,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,230,,,,,,,0.0,-0.06619780984156862,115.37856230099098,0.4994742956752856,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,185,,,,,,,2.7755575615628914e-17,2.7755575615628914e-17,115.6011970840404,0.5004380826148935,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,139,,,,,,,0.0,-0.07348187408109316,112.67784460878933,0.4877828770943261,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,209,,,,,,,0.0,-0.09704160074004745,147.70511264068944,0.6394160720376166,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,119,,,,,,,0.0,-0.07047217459834137,111.46127366110292,0.48251633619525075,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,90,,,,,,,0.0,-0.03540987201163782,120.85406719945635,0.5231777800842267,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,0,28,,,,,,,0.0,-0.008896756022396868,138.78745626389104,0.6008114989778833,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,124,,,,,,,5.551115123125783e-17,-1.3877787807814457e-17,94.23844512392688,0.40795863690011636,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,81,,,,,,,5.551115123125783e-17,1.3877787807814457e-17,124.02341014295399,0.5368978794067273,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,218,,,,,,,8.673617379884035e-18,8.673617379884035e-18,108.23108349979822,0.4685328290034555,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,96,,,,,,,5.551115123125783e-17,0.0,127.3328628810759,0.5512245146366922,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,230,,,,,,,5.551115123125783e-17,-1.3877787807814457e-17,110.09049574461851,0.47658223266068617,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,185,,,,,,,5.551115123125783e-17,0.0,114.42522886505948,0.4953473111041536,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,139,,,,,,,1.3877787807814457e-17,1.3877787807814457e-17,119.85958285052271,0.5188726530325659,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,209,,,,,,,5.551115123125783e-17,5.551115123125783e-17,121.40525994850762,0.5255638958809854,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,119,,,,,,,5.551115123125783e-17,-1.734723475976807e-18,120.7718639330127,0.5228219217879337,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,90,,,,,,,5.551115123125783e-17,2.7755575615628914e-17,118.72537278840399,0.5139626527636536,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,1,28,,,,,,,1.3877787807814457e-17,1.3877787807814457e-17,104.04824284134222,0.45042529368546413,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,124,,,,,,,0.0,0.0,92.19225255266505,0.3991006604011474,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,81,,,,,,,0.0,-0.037834519621003114,112.66298038798439,0.48771852981811425,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,218,,,,,,,0.0,-6.938893903907228e-18,101.12850388289485,0.4377857310947829,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,96,,,,,,,2.7755575615628914e-17,2.7755575615628914e-17,120.1218338163849,0.5200079385990689,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,230,,,,,,,0.0,-0.012394019856730071,99.952364692846,0.4326942194495498,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,185,,,,,,,0.0,0.0,99.77516120811944,0.4319271047970539,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,139,,,,,,,0.0,-0.03359252987373179,107.41649463402399,0.46500647027716013,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,209,,,,,,,0.0,-0.03947741274434308,107.5410014724227,0.4655454609195788,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,119,,,,,,,0.0,-0.019092117672901424,103.50783776684514,0.4480858777785504,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,90,,,,,,,0.0,-0.010803444571740258,103.75075220094652,0.4491374554153529,0,"projected quantile anchor, delivered point"
+point,anchor-direct-projection,2,2,28,,,,,,,0.0,-0.019183232402316987,108.89560976331776,0.4714095660749687,0,"projected quantile anchor, delivered point"

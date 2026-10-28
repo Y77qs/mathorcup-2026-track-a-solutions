@@ -1,0 +1,7 @@
+model,metric,value,definition
+median,mae,0.39817732837288883,"A/F30 uniform MAE, pooled 750 OOF rows"
+ridge_gamma0_r50,mae,0.3666617580105253,"true OLS ridge, gamma=0"
+graph_ridge_r50,mae,0.3664110157826924,"gamma>0, r=50"
+graph_lowrank,mae,0.35929156588219174,inner-selected r (all folds r=6)
+graph_lowrank,mae_all50,0.350504156920024,secondary 50-target MAE
+graph_lowrank,skill_af30,0.09765940881064172,1 - mae/mae_median

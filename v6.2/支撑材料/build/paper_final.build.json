@@ -1,0 +1,51 @@
+{
+ "source": "FINAL_SUBMISSION_v6.2/build/paper_final.md",
+ "sourceSha256": "7d5dd4aef7264e9d97c76bb3b91c8664b14dd8027c4d02b20797907f5b2c6e47",
+ "preprocessed": "FINAL_SUBMISSION_v6.2/build/out/paper.pandoc.md",
+ "preprocessedSha256": "f1cecdd6ee7f86c817f165b40399cf6dc4a016624b30bb4dbcaa4f7bb6bcbd9f",
+ "tex": "FINAL_SUBMISSION_v6.2/build/out/paper_final.tex",
+ "texSha256": "eec52ef0a981ecdda77d0ec7e714646e460b1aa8188915f094dae61127763ee9",
+ "tables": 20,
+ "layouts": {
+  "q1-models": "minipage-resizebox",
+  "q1-groups": "minipage-tabular",
+  "q1-grades": "sidewaystable",
+  "q1-scores-aroma": "sidewaystable",
+  "q1-scores-flavour": "sidewaystable",
+  "q2-universe": "minipage-p",
+  "q2-core-top3": "longtable",
+  "q3-raw-design": "minipage-p",
+  "q3-quality": "minipage-p",
+  "q3-profile-chem": "longtable",
+  "q3-profile-sensory": "longtable",
+  "q3-transfer-example": "longtable",
+  "q3-qp-certs": "longtable",
+  "q3-transfer-stages": "minipage-p",
+  "q3-defect-control": "minipage-p",
+  "q3-transfer-columns": "minipage-p",
+  "q3-anchor-ablation": "minipage-p",
+  "rob-confirmatory": "sidewaystable",
+  "q2-stability": "longtable",
+  "q3-constraints": "minipage-p"
+ },
+ "claims": [],
+ "figures": [
+  "src:figures/confirmatory_v2/Q1-grade-distribution.png",
+  "src:figures/confirmatory_v2/Q1-model-comparison.png",
+  "src:figures/confirmatory_v2/Q1-per-target-skill.png",
+  "src:figures/confirmatory_v2/Q2-attachment2-network.png",
+  "src:figures/confirmatory_v2/Q2-network.png",
+  "src:figures/confirmatory_v2/Q2-stability.png",
+  "src:figures/confirmatory_v2/Q3-energy-comparison.png",
+  "src:figures/confirmatory_v2/Q3-per-style-energy.png",
+  "src:figures/confirmatory_v2/Q3-transfer-shift.png",
+  "src:figures/confirmatory_v2/ROB-summary.png"
+ ],
+ "texNormalization": {
+  "ltcaptype_none_removed": 5,
+  "texttt_breakpoints": 84,
+  "display_math_fitted": 20,
+  "changed": 1
+ },
+ "rejects": []
+}

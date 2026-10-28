@@ -1,0 +1,11 @@
+{
+  "status": "preregistered-not-executed",
+  "plans": [
+    "ROB-0004"
+  ],
+  "decisionRule": {
+    "type": "relative-range",
+    "limit": 0.05
+  },
+  "note": "the perturbation experiments are NOT run yet; this file must not be read as a pass"
+}

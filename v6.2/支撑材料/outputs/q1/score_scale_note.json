@@ -1,0 +1,184 @@
+{
+  "artifact": "outputs/q1/score_scale_note.json",
+  "purpose": "pin the label scale, separate the evaluation (OOF) predictions from the display (full-sample refit) scores, and define the A/F30 metric in one place",
+  "frozenModel": {
+    "experimentId": "EXP-0073",
+    "modelId": "MODEL-0048",
+    "family": "graph-lowrank",
+    "title": "graph-regularised low-rank multi-output regression, nested 3x3x3 protocol",
+    "protocol": {
+      "repeats": 3,
+      "outerFolds": 3,
+      "innerFolds": 3,
+      "seeds": [
+        20261025,
+        20261026,
+        20261027
+      ],
+      "pooledOofRows": 750,
+      "splits": "data/splits/NESTED-CV-1/splits.csv"
+    },
+    "sourceCode": "src/q1_fix.py",
+    "randomness": "none in the fit: src/q1_fix.py draws no random number; the seed only labels the frozen repeat/selection protocol"
+  },
+  "displayFit": {
+    "fitIdentity": "full-sample-refit",
+    "config": {
+      "representation": "rankgauss",
+      "lambda": 1.0,
+      "gamma": 0.1,
+      "rank": 6
+    },
+    "configSelectionRule": "the graph-lowrank cell with the lowest MEAN frozen inner-validation pooled A/F30 MAE over the 9 frozen outer folds in experiments/EXP-0073/inner_grid.json; each fold's value is that fold's pooled inner-validation MAE, so the aggregate uses no outer-test row and no 250-row fit statistic",
+    "seed": 20261025,
+    "modelCode": "src/q1_fix.py (Preprocessor / graph_laplacian / fit_and_predict, read-only)",
+    "trainingRows": 250,
+    "designColumns": 240,
+    "graphEdges": 644,
+    "graphTau": 0.5,
+    "sensitivityAcrossSelectedCells": [
+      {
+        "config": {
+          "representation": "rankgauss",
+          "lambda": 1.0,
+          "gamma": 0.0,
+          "rank": 6
+        },
+        "maxAbsScoreDifference": 0.08455066335467576
+      },
+      {
+        "config": {
+          "representation": "rankgauss",
+          "lambda": 1.0,
+          "gamma": 1.0,
+          "rank": 6
+        },
+        "maxAbsScoreDifference": 0.2386106567643429
+      },
+      {
+        "config": {
+          "representation": "zscore",
+          "lambda": 1.0,
+          "gamma": 0.1,
+          "rank": 6
+        },
+        "maxAbsScoreDifference": 0.732742486842151
+      }
+    ],
+    "notAnExperiment": "no experiment id is created here: this refit produces display scores only and is not registered as evaluation evidence"
+  },
+  "labelScale": {
+    "whereTheLabelComesFrom": "data/clean/q1_mapped.csv == data/raw 4.csv: the trained panel's 0-6 card rating AFTER the dataset's own standardisation/centring, i.e. a continuous value with negative numbers, NOT the original discrete 0-6 score",
+    "observedScale": {
+      "meanOfTargetMeans": 0.005427925735280001,
+      "meanTargetStandardDeviation": 0.5668049817531405,
+      "min": -2.150728655,
+      "max": 6.172383248,
+      "nLabels": 12500
+    },
+    "whatTheCodeActuallyDoes": "per-target CENTRING only: y_centred = y - mean(training y). The code does NOT divide the targets by the training standard deviation (that was the wrong description in the earlier paper text, not the implementation)",
+    "whereItIsImplemented": {
+      "file": "src/q1_fix.py",
+      "functions": [
+        "moments",
+        "fit_and_predict"
+      ],
+      "detail": "moments() stores y_bar and y_centred and the normal equations use only Zc^T Yc/n; fit_and_predict() adds y_bar back. No target-scale field exists anywhere in the Q1 model path",
+      "solver": "B = A^{-1} C Vr Vr^T with A = Zc^T Zc/n + lambda I + gamma L and C = Zc^T Yc/n; the objective is ||Yc - Zc B||_F^2/n + lambda ||B||^2 + gamma tr(B^T L B)"
+    },
+    "whyTheScaleMatters": "the penalties act on B, so rescaling target columns changes B and therefore the fitted predictions: the low-rank fit is NOT scale-invariant, and no claim here is transferred from a standardised-target model. Every reported error is on the given 4.csv label scale",
+    "whatIsReportedOnThisScale": "mae (A/F30 equal-weight), mae_all50, per-target MAE/R2/skill and the per-style MAE in EXP-0073; all of them are label-scale errors, not 0-6 grade errors"
+  },
+  "oofVsDisplay": {
+    "evaluationTable": "oof_predictions_750.csv",
+    "evaluationSource": "experiments/EXP-0073/predictions.csv + oof_long.csv (frozen OOF)",
+    "displayTable": "beer_scores_250.csv",
+    "displaySource": "full-sample refit of the frozen model on all 250 rows",
+    "displayScoresUsedInAnyMetric": false,
+    "rule": "no MAE / R2 / QWK / baseline / claim number is computed from the display scores; every evaluation number is recomputed from the frozen OOF rows only",
+    "diagnosticOnly": {
+      "maxAbsDifferenceDisplayVsOofMean": 1.352479036739708,
+      "meaning": "the two tables are different objects; this is a separation diagnostic, not an error estimate and not used anywhere"
+    }
+  },
+  "af30Metric": {
+    "metricKey": "mae",
+    "definition": "A/F30 equal-weight mean of |y_true - y_pred| over the CONCATENATED 750 OOF rows (250 beers x 3 repeats); equal weight over the 30 Aroma15+Flavour15 targets; a pooled row metric, NOT the mean of three per-repeat scores",
+    "mae_af30_recomputed_from_frozen_oof": 0.3592915658821918,
+    "mae_af30_registered": 0.35929156588219174,
+    "mae_af30_abs_difference": 5.551115123125783e-17,
+    "mae_af30_exp_metrics_json": 0.35929156588219174,
+    "tolerance": {
+      "kind": "relative",
+      "value": 1e-09,
+      "passed": true
+    },
+    "mae_all50_recomputed": 0.35050415692002407,
+    "mae_all50_registered": 0.350504156920024,
+    "baseline_median_af30_recomputed": 0.3981773283728889,
+    "baseline_median_af30_registered": 0.39817732837288883,
+    "baseline_median_af30_exp0074_metrics_json": 0.39817732837288883,
+    "skill_af30": 0.09765940881064172,
+    "evaluationRows": 750,
+    "evaluationModel": "graph-lowrank",
+    "note": "these numbers come only from experiments/EXP-0073/oof_long.csv (and the median rows of the same file); the full-sample display scores are NOT used"
+  },
+  "grades": {
+    "rule": "a = mid-rank empirical CDF of the 200 frozen training labels (data/processed/q1_grade_params.json trainValues, SPLIT-0001 train rows); g_cont = 6a; g = clip(floor(6a + 0.5), 0, 6)",
+    "scope": "relative inferred grade WITHIN THE TRAINING LABEL DISTRIBUTION; the same rule as src/q1_grade_all.py midpoint_cdf and v6_common.to_grade",
+    "meaningOf0And6": "0 = lowest relative band of the training distribution, NOT 'the flavour is absent'; 6 = highest relative band, NOT 'the panel gave full marks'",
+    "whatItIsNot": "not the original human 0-6 score and not calibrated to the paper card; recovering the original discrete card score is not identifiable from 4.csv",
+    "whereItIsUsed": "display table only (grades_250.csv); the evaluation numbers in EXP-0073 are label-scale MAE and are not grade metrics",
+    "referenceSizePerTarget": 200
+  },
+  "dimensionMap": {
+    "artifact": "outputs/q1/dimension_map.csv",
+    "labelledDimensions": 50,
+    "unlabelledCardItems": 1,
+    "af30": 30,
+    "groups": {
+      "Aroma15": 15,
+      "Flavour15": 15,
+      "Other20": 20,
+      "UnlabelledCardItem": 1
+    },
+    "categories": {
+      "Aroma": 15,
+      "Aroma/Flavour": 1,
+      "Flavour": 15,
+      "Overall": 1,
+      "Palate": 4,
+      "Taste": 15
+    },
+    "cardAliases": {
+      "A_esters_fruity": "A_ester_fruity",
+      "F_esters_fruity": "F_ester_fruity",
+      "X4vg": "4vg"
+    },
+    "unlabelledCardItemNote": "printed once on the 3.xlsx sensory card, spanning the Aroma and Flavour columns; 4.csv has no acetaldehyde label column (4.csv = 3 keys + exactly the 50 labelled dimensions), so nothing is predicted or graded for it and no truth is fabricated. The only acetaldehyde sensory columns in the attachments are the external Ratebeer columns of 7.csv, which are not trained-panel labels and are not used by Q1.",
+    "hasLabelInCardsheetMeaning": "1 = the dimension has a trained-panel label column in 4.csv and is defined on the 3.xlsx card; 0 = the card defines the item but no label column exists, so it is listed without prediction, grading or fabricated truth",
+    "externalDescriptorsNotLabels": "the Ratebeer sensory descriptors of 7.csv / 8.xlsx are external support data, not Q1 labels: e.g. palate_acetaldehyde is 250/250 missing in 7.csv. They are deliberately not mapped as dimensions here"
+  },
+  "rowAndColumnContract": {
+    "beer_scores_250.csv": "exactly 250 rows = 250 unique beers, sorted by beer ascending; columns: beer,row,style, the 50 dimension columns in the frozen TARGETS_50 order, then fit_identity/source_experiment/source_script/note",
+    "grades_250.csv": "same 250-row key order; per dimension a g6__<dimension> (int 0-6) and a g_cont__<dimension> (continuous 0-6) column",
+    "oof_predictions_750.csv": "exactly 750 rows = 250 beers x 3 repeats, one row per (repeat,beer); per dimension the columns y_true__<dimension> and y_pred__<dimension> (the 'target' axis is carried by the column names); the tidy per-target form is oof_predictions_long_37500.csv",
+    "dimension_map.csv": "51 rows = 50 labelled dimensions in TARGETS_50 order + 1 unlabelled sensory-card item (acetaldehyde)",
+    "floatFormat": {
+      "evaluationArtifacts": "shortest round-trip decimal (pandas default), i.e. exactly the text of the frozen EXP-0073 files; read them with a correctly rounding parser (pandas float_precision=round_trip) if bit-exact reproduction is needed",
+      "displayArtifacts": "%.12g (display tables only; no metric is computed from them)"
+    }
+  },
+  "whatThisExportDoesNotDo": [
+    "it does not re-train, re-register or overwrite experiments/EXP-0073 or experiments/EXP-0074",
+    "it does not create any new evaluation number: the A/F30 and median-baseline values are recomputed from the frozen OOF rows and only checked against the registered ones",
+    "it does not put the full-sample display scores into any metric, claim, figure or grade comparison",
+    "it does not invent a label or a score for the unlabelled acetaldehyde card item"
+  ],
+  "limitations": [
+    "no external or holdout evaluation exists for Q1: all evaluation numbers are internal nested CV (750 pooled OOF rows); the display scores are a full-sample refit and their in-sample fit error is deliberately not reported as a performance estimate",
+    "the 0-6 grades are relative bands of the training label distribution; they are not the original human card scores and must not be presented as recovered ground truth",
+    "the acetaldehyde card item has no label in 4.csv, so it is not predicted or graded; no number is invented for it",
+    "the display refit happens to select gamma = 0.1 (graph penalty active) by the frozen inner-CV aggregate; gamma = 0.0 was selected in 3 of 9 outer folds, so the graph penalty is not universally helpful and that is reported, not hidden"
+  ]
+}

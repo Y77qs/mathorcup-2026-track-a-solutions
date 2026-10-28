@@ -1,0 +1,35 @@
+{
+ "purpose": "版本映射：sign_stability_summary.json 的 legacyReproduction.referenceSha256 指向的旧导出，与其身份和被取代后的当前文件一一对应，避免把历史哈希误当当前结果。",
+ "currentSchemaVersion": "q2-sign-stability-v62/1",
+ "supersededSchemaVersion": "q2-sign-stability/1",
+ "currentEntry": "outputs/q2/v62_clean/",
+ "mapping": [
+  {
+   "repeat": 0,
+   "referenceFile": "experiments/EXP-0075/repeat0/strict_top3.csv",
+   "referenceSha256": "4f2e1465ad418454ca4559a4a2ed70de575ce21e38c815b6f88a3f3e49c12640",
+   "identity": "旧导出的 Q2 符号稳定性表（EXP-0075 时代，schema q2-sign-stability/1）",
+   "role": "历史对照，仅用于复现旧口径 P(rho>0)；不是当前交付结果",
+   "supersededBy": "outputs/q2/v62_clean/repeat0/strict_top3.csv",
+   "supersededBySha256": "a7f558de45c3e17d53c69264abd720a0ea0aa8077642aa9f31700fce427671be"
+  },
+  {
+   "repeat": 1,
+   "referenceFile": "experiments/EXP-0075/repeat1/strict_top3.csv",
+   "referenceSha256": "38a4a1a65bbb1e0657eb1e3417a2e253c8c1c8b2aba98ccaa5ce066507e3bc56",
+   "identity": "旧导出的 Q2 符号稳定性表（EXP-0075 时代，schema q2-sign-stability/1）",
+   "role": "历史对照，仅用于复现旧口径 P(rho>0)；不是当前交付结果",
+   "supersededBy": "outputs/q2/v62_clean/repeat1/strict_top3.csv",
+   "supersededBySha256": "e5453c11cb05c2fd31f246c2f3ee7497522195ed7ada60435a5fea6dfb0811e5"
+  },
+  {
+   "repeat": 2,
+   "referenceFile": "experiments/EXP-0075/repeat2/strict_top3.csv",
+   "referenceSha256": "b817ed0c98cef045ae36d8c0186ff07328106a972c31b78c1e41cd921c197025",
+   "identity": "旧导出的 Q2 符号稳定性表（EXP-0075 时代，schema q2-sign-stability/1）",
+   "role": "历史对照，仅用于复现旧口径 P(rho>0)；不是当前交付结果",
+   "supersededBy": "outputs/q2/v62_clean/repeat2/strict_top3.csv",
+   "supersededBySha256": "f69e86f4312adbb2d353b94f0e0a768d73e449377bb0d024163599302456e1e4"
+  }
+ ]
+}

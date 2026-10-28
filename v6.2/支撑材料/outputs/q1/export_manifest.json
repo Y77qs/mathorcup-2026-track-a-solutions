@@ -1,0 +1,657 @@
+{
+  "artifact": "outputs/q1/export_manifest.json",
+  "generatedBy": {
+    "script": "src/q1_export_scores.py",
+    "scriptSha256": "4b0f44c5dc8afb65d538b3fcc7baf237743990d0e20bcaa22e787b52075c6128",
+    "interpreter": "python",
+    "pythonVersion": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "registeredSeed": 20261025,
+    "deterministic": "no timestamps, no random draws, no environment paths and no runtime seconds are written into any artifact; two runs produce byte-identical files (the run directory only receives copies plus run.json)"
+  },
+  "sources": [
+    {
+      "path": "experiments/EXP-0073/oof_long.csv",
+      "sha256": "c97f8bc8d97bdcd9806f3b6662bab9c6ea4bd638cab588d6282d995991269b1f",
+      "bytes": 9545500,
+      "role": "frozen OOF predictions, all four models",
+      "readOnly": true
+    },
+    {
+      "path": "experiments/EXP-0073/predictions.csv",
+      "sha256": "4ccabae472927d78084b7ed7b815b1cd9a7dc77071101e8c043f733537edb9c5",
+      "bytes": 1255969,
+      "role": "frozen OOF predictions, candidate graph-lowrank",
+      "readOnly": true
+    },
+    {
+      "path": "experiments/EXP-0073/metrics.json",
+      "sha256": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f",
+      "bytes": 4545,
+      "role": "frozen candidate metrics (registered MAE values)",
+      "readOnly": true
+    },
+    {
+      "path": "experiments/EXP-0073/outputs.json",
+      "sha256": "f92305bc01691e9c5d17df98fd1fee367f646210f538d933815236b52385f3da",
+      "bytes": 180522,
+      "role": "frozen protocol / grade / check record",
+      "readOnly": true
+    },
+    {
+      "path": "experiments/EXP-0073/inner_grid.json",
+      "sha256": "bdc11114cc0245f383cba43ae2b1a849497c10b89cfac71a08751263e2a06211",
+      "bytes": 223067,
+      "role": "frozen inner-CV grid (display-fit config provenance)",
+      "readOnly": true
+    },
+    {
+      "path": "experiments/EXP-0073/experiment.json",
+      "sha256": "4e4f9c561f35ed57731613f7649c2a629bcb85e811d4f37ad874aa937d498a89",
+      "bytes": 22389,
+      "role": "frozen registration (dependency hashes, seed, code)",
+      "readOnly": true
+    },
+    {
+      "path": "experiments/EXP-0073/result.json",
+      "sha256": "0be1a81d74ef4ee8f05702fdb10c25006dce2a1103cfb1d221d1434e07f550cc",
+      "bytes": 8427,
+      "role": "frozen output-file hashes",
+      "readOnly": true
+    },
+    {
+      "path": "experiments/EXP-0074/metrics.json",
+      "sha256": "19a74561eb67f0bd124c93f4d8beea1c078b36a69ccb7895f2b981d675154e1e",
+      "bytes": 337,
+      "role": "frozen median-baseline metrics",
+      "readOnly": true
+    },
+    {
+      "path": "experiments/EXP-0074/outputs.json",
+      "sha256": "d626b9c989bf29cddd833939ff3eb12237f2a2c0c023523e8e56031c1a352c4a",
+      "bytes": 901,
+      "role": "frozen median-baseline record",
+      "readOnly": true
+    },
+    {
+      "path": "data/clean/q1_mapped.csv",
+      "sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+      "bytes": 979527,
+      "role": "Q1 design table + 50 labels (4.csv values)",
+      "readOnly": true
+    },
+    {
+      "path": "data/processed/q1_grade_params.json",
+      "sha256": "d85d2a7bb3c4ac248deaacf73bbfbfc281fcaff2e9a15990b0c30e9626381fa4",
+      "bytes": 147244,
+      "role": "frozen 0-6 relative grade reference (200 train labels)",
+      "readOnly": true
+    },
+    {
+      "path": "data/splits/NESTED-CV-1/splits.csv",
+      "sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+      "bytes": 58959,
+      "role": "frozen nested-CV split table",
+      "readOnly": true
+    },
+    {
+      "path": "data/splits/NESTED-CV-1/manifest.json",
+      "sha256": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+      "bytes": 4548,
+      "role": "frozen split manifest",
+      "readOnly": true
+    },
+    {
+      "path": "data/raw/imported/fe4dcabd48431e6d-3.xlsx",
+      "sha256": "fe4dcabd48431e6d677c095962ea9c447e10e509c4f3f8dd511a48c5541ab587",
+      "bytes": 163364,
+      "role": "0-6 sensory card (3.xlsx): dimension names, no values",
+      "readOnly": true
+    },
+    {
+      "path": "data/raw/imported/43a7b38682ed81ce-4.csv",
+      "sha256": "43a7b38682ed81ce64d97ebc1874c09dffac023ade4877f34e3c83ef7d42dc1c",
+      "bytes": 162887,
+      "role": "trained-panel label table (4.csv): 250 x 53",
+      "readOnly": true
+    },
+    {
+      "path": "src/q1_fix.py",
+      "sha256": "2fb4b4b09216fb3ce3c15542e15e434863d9c70245d96f1185d6fa616fca2c12",
+      "bytes": 56723,
+      "role": "frozen model code reused read-only for the display refit",
+      "readOnly": true
+    },
+    {
+      "path": "src/target_columns.py",
+      "sha256": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+      "bytes": 29435,
+      "role": "frozen feature/target constants",
+      "readOnly": true
+    },
+    {
+      "path": "src/v6_common.py",
+      "sha256": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+      "bytes": 13536,
+      "role": "frozen protocol constants",
+      "readOnly": true
+    }
+  ],
+  "frozenRegistrationCrossCheck": {
+    "dependencyHashesCompared": {
+      "data/clean/q1_mapped.csv": {
+        "registered": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+        "actual": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+        "match": true
+      },
+      "data/splits/NESTED-CV-1/manifest.json": {
+        "registered": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+        "actual": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+        "match": true
+      },
+      "data/splits/NESTED-CV-1/splits.csv": {
+        "registered": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+        "actual": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+        "match": true
+      },
+      "src/q1_fix.py": {
+        "registered": "2fb4b4b09216fb3ce3c15542e15e434863d9c70245d96f1185d6fa616fca2c12",
+        "actual": "2fb4b4b09216fb3ce3c15542e15e434863d9c70245d96f1185d6fa616fca2c12",
+        "match": true
+      },
+      "src/target_columns.py": {
+        "registered": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "actual": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "match": true
+      },
+      "src/v6_common.py": {
+        "registered": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+        "actual": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+        "match": true
+      }
+    },
+    "outputHashesCompared": {
+      "experiments/EXP-0073/inner_grid.json": {
+        "recorded": "bdc11114cc0245f383cba43ae2b1a849497c10b89cfac71a08751263e2a06211",
+        "actual": "bdc11114cc0245f383cba43ae2b1a849497c10b89cfac71a08751263e2a06211",
+        "match": true
+      },
+      "experiments/EXP-0073/metrics.json": {
+        "recorded": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f",
+        "actual": "1dcce1aa7f7398343d8de17381d085b19d55a17ea52f25aa6f8c1b254f8f6a9f",
+        "match": true
+      },
+      "experiments/EXP-0073/oof_long.csv": {
+        "recorded": "c97f8bc8d97bdcd9806f3b6662bab9c6ea4bd638cab588d6282d995991269b1f",
+        "actual": "c97f8bc8d97bdcd9806f3b6662bab9c6ea4bd638cab588d6282d995991269b1f",
+        "match": true
+      },
+      "experiments/EXP-0073/outputs.json": {
+        "recorded": "f92305bc01691e9c5d17df98fd1fee367f646210f538d933815236b52385f3da",
+        "actual": "f92305bc01691e9c5d17df98fd1fee367f646210f538d933815236b52385f3da",
+        "match": true
+      },
+      "experiments/EXP-0073/predictions.csv": {
+        "recorded": "4ccabae472927d78084b7ed7b815b1cd9a7dc77071101e8c043f733537edb9c5",
+        "actual": "4ccabae472927d78084b7ed7b815b1cd9a7dc77071101e8c043f733537edb9c5",
+        "match": true
+      },
+      "experiments/EXP-0073/predictions_all_models.csv": {
+        "recorded": "3c8d37ec4f709c94e455d18b8ad3b4c7235ac08b61a84fb3ee5dc0969689aaf9",
+        "actual": "3c8d37ec4f709c94e455d18b8ad3b4c7235ac08b61a84fb3ee5dc0969689aaf9",
+        "match": true
+      },
+      "experiments/EXP-0073/inputs/data/clean/q1_mapped.csv": {
+        "recorded": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+        "actual": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+        "match": true
+      },
+      "experiments/EXP-0073/inputs/data/splits/NESTED-CV-1/manifest.json": {
+        "recorded": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+        "actual": "0353e7da54e9dbed5a6f1864d336202c7416a2e65607f5f4e220a4a1eb24b4a4",
+        "match": true
+      },
+      "experiments/EXP-0073/inputs/data/splits/NESTED-CV-1/splits.csv": {
+        "recorded": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+        "actual": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+        "match": true
+      },
+      "experiments/EXP-0073/inputs/src/q1_fix.py": {
+        "recorded": "2fb4b4b09216fb3ce3c15542e15e434863d9c70245d96f1185d6fa616fca2c12",
+        "actual": "2fb4b4b09216fb3ce3c15542e15e434863d9c70245d96f1185d6fa616fca2c12",
+        "match": true
+      },
+      "experiments/EXP-0073/inputs/src/target_columns.py": {
+        "recorded": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "actual": "1d8085bb9ac1ce4f54c8d29867d6f513b5770f954672d7b86b945540609d6126",
+        "match": true
+      },
+      "experiments/EXP-0073/inputs/src/v6_common.py": {
+        "recorded": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+        "actual": "79d480f70e5b1f3b9c152628313ceb20f1a9e12302c3c6434677eedd8c7502a4",
+        "match": true
+      }
+    },
+    "mismatches": [],
+    "passed": true,
+    "rule": "every input used here still has the sha256 EXP-0073 was registered with"
+  },
+  "evaluation": {
+    "metricKey": "mae",
+    "definition": "A/F30 equal-weight mean of |y_true - y_pred| over the CONCATENATED 750 OOF rows (250 beers x 3 repeats); equal weight over the 30 Aroma15+Flavour15 targets; a pooled row metric, NOT the mean of three per-repeat scores",
+    "mae_af30_recomputed_from_frozen_oof": 0.3592915658821918,
+    "mae_af30_registered": 0.35929156588219174,
+    "mae_af30_abs_difference": 5.551115123125783e-17,
+    "mae_af30_exp_metrics_json": 0.35929156588219174,
+    "tolerance": {
+      "kind": "relative",
+      "value": 1e-09,
+      "passed": true
+    },
+    "mae_all50_recomputed": 0.35050415692002407,
+    "mae_all50_registered": 0.350504156920024,
+    "baseline_median_af30_recomputed": 0.3981773283728889,
+    "baseline_median_af30_registered": 0.39817732837288883,
+    "baseline_median_af30_exp0074_metrics_json": 0.39817732837288883,
+    "skill_af30": 0.09765940881064172,
+    "evaluationRows": 750,
+    "evaluationModel": "graph-lowrank",
+    "note": "these numbers come only from experiments/EXP-0073/oof_long.csv (and the median rows of the same file); the full-sample display scores are NOT used"
+  },
+  "displayFit": {
+    "fitIdentity": "full-sample-refit",
+    "why": "the evaluation must stay on OOF predictions; the 250-beer score table is a display artifact produced by one refit on all 250 rows",
+    "config": {
+      "representation": "rankgauss",
+      "lambda": 1.0,
+      "gamma": 0.1,
+      "rank": 6
+    },
+    "configSelection": {
+      "rule": "the graph-lowrank cell with the lowest MEAN frozen inner-validation pooled A/F30 MAE over the 9 frozen outer folds in experiments/EXP-0073/inner_grid.json; each fold's value is that fold's pooled inner-validation MAE, so the aggregate uses no outer-test row and no 250-row fit statistic",
+      "meanInnerMaeAf30": 0.3643200520939663,
+      "runnerUp": {
+        "config": {
+          "representation": "rankgauss",
+          "lambda": 1.0,
+          "gamma": 0.0,
+          "rank": 6
+        },
+        "meanInnerMaeAf30": 0.36458746330645914
+      },
+      "marginToRunnerUp": 0.0002674112124928518,
+      "topFiveCells": [
+        {
+          "representation": "rankgauss",
+          "lambda": 1.0,
+          "gamma": 0.1,
+          "rank": 6,
+          "meanInnerMaeAf30": 0.3643200520939663
+        },
+        {
+          "representation": "rankgauss",
+          "lambda": 1.0,
+          "gamma": 0.0,
+          "rank": 6,
+          "meanInnerMaeAf30": 0.36458746330645914
+        },
+        {
+          "representation": "rankgauss",
+          "lambda": 1.0,
+          "gamma": 1.0,
+          "rank": 6,
+          "meanInnerMaeAf30": 0.3651133172693354
+        },
+        {
+          "representation": "zscore",
+          "lambda": 1.0,
+          "gamma": 0.1,
+          "rank": 6,
+          "meanInnerMaeAf30": 0.36728196195830254
+        },
+        {
+          "representation": "zscore",
+          "lambda": 1.0,
+          "gamma": 0.0,
+          "rank": 6,
+          "meanInnerMaeAf30": 0.36732968474602956
+        }
+      ],
+      "nCandidateCells": 54
+    },
+    "frozenPerFoldSelections": [
+      {
+        "repeat": 0,
+        "outer_fold": 0,
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 0.1,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.36864156523931707
+      },
+      {
+        "repeat": 0,
+        "outer_fold": 1,
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 0.1,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.3669191784183669
+      },
+      {
+        "repeat": 0,
+        "outer_fold": 2,
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 0.0,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.35594632326430947
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 0,
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 1.0,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.36454851156839263
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 1,
+        "representation": "zscore",
+        "lambda": 1.0,
+        "gamma": 0.1,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.36486799357973615
+      },
+      {
+        "repeat": 1,
+        "outer_fold": 2,
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 1.0,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.36359357426637334
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 0,
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 0.1,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.3784819014740831
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 1,
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 0.0,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.35095644007683013
+      },
+      {
+        "repeat": 2,
+        "outer_fold": 2,
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 0.0,
+        "rank": 6,
+        "pooledInnerMaeAf30": 0.3595097842202981
+      }
+    ],
+    "selectedCellFrequency": [
+      {
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 0.0,
+        "rank": 6,
+        "timesSelected": 3
+      },
+      {
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 0.1,
+        "rank": 6,
+        "timesSelected": 3
+      },
+      {
+        "representation": "rankgauss",
+        "lambda": 1.0,
+        "gamma": 1.0,
+        "rank": 6,
+        "timesSelected": 2
+      },
+      {
+        "representation": "zscore",
+        "lambda": 1.0,
+        "gamma": 0.1,
+        "rank": 6,
+        "timesSelected": 1
+      }
+    ],
+    "fit": {
+      "nTrainRows": 250,
+      "nDesignColumns": 240,
+      "interceptRule": "b = ybar - zbar @ B",
+      "coefficientNorm": 0.9652962482681694,
+      "imputationMedianCells": 73,
+      "graph": {
+        "tau": 0.5,
+        "nodes": 231,
+        "edges": 644,
+        "isolatedNodes": 49,
+        "minEigenvalue231": -5.87859641332926e-15,
+        "nonFiniteRho": 0,
+        "indicatorBlock": "zero (missing indicators are not connected on the chemistry graph)"
+      }
+    },
+    "sensitivityToOtherSelectedCells": [
+      {
+        "config": {
+          "representation": "rankgauss",
+          "lambda": 1.0,
+          "gamma": 0.0,
+          "rank": 6
+        },
+        "occurrencesInFrozenSelection": 3,
+        "maxAbsScoreDifference": 0.08455066335467576,
+        "meanAbsScoreDifference": 0.009307736288215867
+      },
+      {
+        "config": {
+          "representation": "rankgauss",
+          "lambda": 1.0,
+          "gamma": 1.0,
+          "rank": 6
+        },
+        "occurrencesInFrozenSelection": 2,
+        "maxAbsScoreDifference": 0.2386106567643429,
+        "meanAbsScoreDifference": 0.024517757330870867
+      },
+      {
+        "config": {
+          "representation": "zscore",
+          "lambda": 1.0,
+          "gamma": 0.1,
+          "rank": 6
+        },
+        "occurrencesInFrozenSelection": 1,
+        "maxAbsScoreDifference": 0.732742486842151,
+        "meanAbsScoreDifference": 0.05680811061330222
+      }
+    ],
+    "evaluationLeakage": "the display fit sees all 250 rows by construction because it is not an evaluation; it never substitutes an OOF prediction and no metric is computed from it"
+  },
+  "artifacts": [
+    {
+      "path": "outputs/q1/oof_predictions_750.csv",
+      "sha256": "af212daff0ad9e204a93159b406eb4387fcf6274139922105630eab579646b0e",
+      "bytes": 1255969,
+      "rows": 750,
+      "cols": 106,
+      "role": "frozen 750-row OOF predictions (250 beers x 3 repeats)",
+      "chain": "evaluation",
+      "source": "EXP-0073/predictions.csv (model=graph-lowrank), cross-checked cell-by-cell against EXP-0073/oof_long.csv",
+      "floatFormat": "shortest round-trip decimal (pandas default, same text as the frozen files)"
+    },
+    {
+      "path": "outputs/q1/oof_predictions_long_37500.csv",
+      "sha256": "e592bc267dc98b3ab14512c1fe135d07b18f883a2a670ae8c177e61d5874774f",
+      "bytes": 2606072,
+      "rows": 37500,
+      "cols": 9,
+      "role": "tidy one row per (repeat, beer, target)",
+      "chain": "evaluation",
+      "source": "EXP-0073/oof_long.csv rows with model=graph-lowrank (37500 rows)",
+      "floatFormat": "shortest round-trip decimal (pandas default, same text as the frozen files)"
+    },
+    {
+      "path": "outputs/q1/beer_scores_250.csv",
+      "sha256": "8d71027c6447a47a128d09dc24c1bbeac3736d25c33c6ba717ec9af7c17f98e7",
+      "bytes": 263651,
+      "rows": 250,
+      "cols": 57,
+      "role": "250 beers x 50 continuous full-sample-refit scores",
+      "chain": "display",
+      "source": "full-sample refit of the EXP-0073 model (config below) on data/clean/q1_mapped.csv; no EXP-0073 prediction is reused",
+      "floatFormat": "%.12g"
+    },
+    {
+      "path": "outputs/q1/grades_250.csv",
+      "sha256": "5e9b90a7eaf8f4afd07d4b9533815c4f5c627415995106dccff6907983ef14e9",
+      "bytes": 166286,
+      "rows": 250,
+      "cols": 109,
+      "role": "continuous + discrete 0-6 relative inferred grades",
+      "chain": "display",
+      "source": "beer_scores_250.csv + data/processed/q1_grade_params.json (200 training labels per target)",
+      "floatFormat": "%.12g"
+    },
+    {
+      "path": "outputs/q1/dimension_map.csv",
+      "sha256": "57569363a936cf53e0eac458048b5fb17970b37e7a478ea1d50cd72dff30ba7e",
+      "bytes": 23490,
+      "rows": 51,
+      "cols": 10,
+      "role": "50 labelled dimensions + 1 unlabelled card item",
+      "chain": "mapping",
+      "source": "data/raw 3.xlsx (card names) + 4.csv (labels) + 8.xlsx (categories)",
+      "floatFormat": null
+    },
+    {
+      "path": "outputs/q1/score_scale_note.json",
+      "sha256": "02d84d8c5b916a9d4a330746f505fdc44a3cc020a478a18d8add751cf8e05410",
+      "bytes": 10809,
+      "rows": null,
+      "cols": null,
+      "role": "label scale, OOF/display boundary, A/F30 definition",
+      "chain": "notes",
+      "source": "generated from the frozen sources + the two tables above",
+      "floatFormat": null
+    }
+  ],
+  "checks": {
+    "oofRows750": {
+      "value": 750,
+      "passed": true
+    },
+    "oofUniqueBeerRepeat": {
+      "value": 750,
+      "passed": true
+    },
+    "oofBeersPerRepeat": {
+      "0": 250,
+      "1": 250,
+      "2": 250
+    },
+    "oofFoldMatchesFrozenSplits": {
+      "rowsChecked": 750,
+      "mismatches": 0,
+      "passed": true
+    },
+    "displayTable": {
+      "rows": 250,
+      "uniqueBeer": 250,
+      "dimensionColumns": 50,
+      "missingCells": 0,
+      "passed": true
+    },
+    "gradeTable": {
+      "rows": 250,
+      "discreteMin": 0,
+      "discreteMax": 6,
+      "continuousMin": 0.0,
+      "continuousMax": 5.91,
+      "passed": true
+    },
+    "dimensionMap": {
+      "rows": 51,
+      "labelled": 50,
+      "unlabelledCardItems": 1,
+      "af30": 30,
+      "af50": 50,
+      "groupCounts": {
+        "Aroma15": 15,
+        "Flavour15": 15,
+        "Other20": 20,
+        "UnlabelledCardItem": 1
+      },
+      "categoryCounts": {
+        "Aroma": 15,
+        "Aroma/Flavour": 1,
+        "Flavour": 15,
+        "Overall": 1,
+        "Palate": 4,
+        "Taste": 15
+      },
+      "cardAliases": {
+        "A_esters_fruity": "A_ester_fruity",
+        "F_esters_fruity": "F_ester_fruity",
+        "X4vg": "4vg"
+      },
+      "unlabelledCardItemEvidence": {
+        "cardFile": "data/raw/imported/fe4dcabd48431e6d-3.xlsx",
+        "cardSheet": "3.xlsx beer_1",
+        "cardItemText": "Acetaldehyde (green apples, peel)",
+        "printedOnCardSheet": true,
+        "presentInSummaryHeader": false,
+        "presentInLabelTable": false
+      }
+    },
+    "exportedOofMatchesFrozenSourceExactly": {
+      "cellsCompared": 75000,
+      "mismatches": 0,
+      "longCellsCompared": 150000,
+      "longMismatches": 0,
+      "parseMode": "pandas float_precision=round_trip (the default fast parser can be a few ulps off on 16-17 digit decimals)",
+      "passed": true
+    },
+    "maeAf30RecomputedFromWrittenOof": {
+      "value": 0.3592915658821918,
+      "registered": 0.35929156588219174,
+      "absDifference": 5.551115123125783e-17,
+      "toleranceRelative": 1e-09,
+      "passed": true
+    },
+    "maeAf30RecomputedFromFrozenOofLong": {
+      "value": 0.3592915658821918,
+      "registered": 0.35929156588219174,
+      "absDifference": 5.551115123125783e-17,
+      "passed": true
+    },
+    "baselineMedianAf30": {
+      "recomputed": 0.3981773283728889,
+      "registered": 0.39817732837288883,
+      "exp0074MetricsJson": 0.39817732837288883,
+      "passed": true
+    },
+    "displayNotInEvaluationChain": {
+      "displayScoresUsedInAnyMetric": false,
+      "passed": true
+    }
+  }
+}

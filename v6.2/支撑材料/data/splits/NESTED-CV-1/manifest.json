@@ -1,0 +1,259 @@
+{
+  "kind": "nested-cv-manifest",
+  "purpose": "frozen internal re-validation protocol for the R00-R03 rerun; NOT an external test set",
+  "seeds": [
+    20261025,
+    20261026,
+    20261027
+  ],
+  "repeats": 3,
+  "outer_folds": 3,
+  "inner_folds": 3,
+  "stratify": "tasting_category_fine",
+  "assignment": "per-style shuffled round-robin, start rotated by repeat (outer) / fold (inner)",
+  "splits_csv": "data/splits/NESTED-CV-1/splits.csv",
+  "splits_sha256": "8ad8e75dcedcb2c1336cf4db5caa9542f6827c557e6588344d36fbf2ae41ad81",
+  "source_data": "data/clean/q1_mapped.csv",
+  "source_sha256": "2e317968fa68b7c2b43978d79222eb332a43d1d691c12b36622f22654fbfb30b",
+  "n_rows": 2250,
+  "fold_checks": {
+    "r0f0": {
+      "n_train": 159,
+      "n_test": 91,
+      "styles_train": 22,
+      "styles_test": 22
+    },
+    "r0f1": {
+      "n_train": 167,
+      "n_test": 83,
+      "styles_train": 22,
+      "styles_test": 22
+    },
+    "r0f2": {
+      "n_train": 174,
+      "n_test": 76,
+      "styles_train": 22,
+      "styles_test": 22
+    },
+    "r1f0": {
+      "n_train": 174,
+      "n_test": 76,
+      "styles_train": 22,
+      "styles_test": 22
+    },
+    "r1f1": {
+      "n_train": 159,
+      "n_test": 91,
+      "styles_train": 22,
+      "styles_test": 22
+    },
+    "r1f2": {
+      "n_train": 167,
+      "n_test": 83,
+      "styles_train": 22,
+      "styles_test": 22
+    },
+    "r2f0": {
+      "n_train": 167,
+      "n_test": 83,
+      "styles_train": 22,
+      "styles_test": 22
+    },
+    "r2f1": {
+      "n_train": 174,
+      "n_test": 76,
+      "styles_train": 22,
+      "styles_test": 22
+    },
+    "r2f2": {
+      "n_train": 159,
+      "n_test": 91,
+      "styles_train": 22,
+      "styles_test": 22
+    }
+  },
+  "style_counts": {
+    "Amber": {
+      "n": 12,
+      "outer_test_counts": [
+        4,
+        4,
+        4
+      ]
+    },
+    "Blond": {
+      "n": 31,
+      "outer_test_counts": [
+        11,
+        10,
+        10
+      ]
+    },
+    "Brett/cofermented": {
+      "n": 6,
+      "outer_test_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    "Brown": {
+      "n": 12,
+      "outer_test_counts": [
+        4,
+        4,
+        4
+      ]
+    },
+    "Brut": {
+      "n": 4,
+      "outer_test_counts": [
+        2,
+        1,
+        1
+      ]
+    },
+    "Christmas": {
+      "n": 9,
+      "outer_test_counts": [
+        3,
+        3,
+        3
+      ]
+    },
+    "Dubbel": {
+      "n": 10,
+      "outer_test_counts": [
+        4,
+        3,
+        3
+      ]
+    },
+    "Faro": {
+      "n": 3,
+      "outer_test_counts": [
+        1,
+        1,
+        1
+      ]
+    },
+    "Flanders old brown": {
+      "n": 5,
+      "outer_test_counts": [
+        2,
+        2,
+        1
+      ]
+    },
+    "Fruitbeer": {
+      "n": 8,
+      "outer_test_counts": [
+        3,
+        3,
+        2
+      ]
+    },
+    "Hoppy": {
+      "n": 17,
+      "outer_test_counts": [
+        6,
+        6,
+        5
+      ]
+    },
+    "Kriek": {
+      "n": 10,
+      "outer_test_counts": [
+        4,
+        3,
+        3
+      ]
+    },
+    "Lambic": {
+      "n": 11,
+      "outer_test_counts": [
+        4,
+        4,
+        3
+      ]
+    },
+    "Low/No alcohol": {
+      "n": 8,
+      "outer_test_counts": [
+        3,
+        3,
+        2
+      ]
+    },
+    "Pils/Lager": {
+      "n": 11,
+      "outer_test_counts": [
+        4,
+        4,
+        3
+      ]
+    },
+    "Saison": {
+      "n": 10,
+      "outer_test_counts": [
+        4,
+        3,
+        3
+      ]
+    },
+    "Scotch": {
+      "n": 5,
+      "outer_test_counts": [
+        2,
+        2,
+        1
+      ]
+    },
+    "Stout/Porter": {
+      "n": 13,
+      "outer_test_counts": [
+        5,
+        4,
+        4
+      ]
+    },
+    "Strong ale": {
+      "n": 18,
+      "outer_test_counts": [
+        6,
+        6,
+        6
+      ]
+    },
+    "Tripel": {
+      "n": 28,
+      "outer_test_counts": [
+        10,
+        9,
+        9
+      ]
+    },
+    "West Flanders ale": {
+      "n": 7,
+      "outer_test_counts": [
+        3,
+        2,
+        2
+      ]
+    },
+    "Wheat": {
+      "n": 12,
+      "outer_test_counts": [
+        4,
+        4,
+        4
+      ]
+    }
+  },
+  "notes": [
+    "role=inner means: inside this outer fold's TRAINING set the beer sits in inner fold `inner_fold`",
+    "for inner iteration j: valid = (inner_fold == j), train = the other inner folds",
+    "outer_test rows are never used for fitting, tuning or calibration",
+    "Faro (n=3) has 2 outer-training rows, so some inner folds hold 0 rows of that style; this is recorded, not padded"
+  ]
+}

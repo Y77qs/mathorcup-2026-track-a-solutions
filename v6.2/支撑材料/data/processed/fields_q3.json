@@ -1,0 +1,1712 @@
+[
+ {
+  "name": "row",
+  "type": "integer",
+  "unit": null,
+  "description": "0-based position in 1.csv/4.csv (row-aligned)."
+ },
+ {
+  "name": "beer",
+  "type": "integer",
+  "unit": null,
+  "description": "1.csv/4.csv beer label (permutation of 1..250); join key."
+ },
+ {
+  "name": "beer_id",
+  "type": "string",
+  "unit": null,
+  "description": "1.csv EAN-like code; truncated in 4.csv/7.csv, so not a join key."
+ },
+ {
+  "name": "tasting_category_fine",
+  "type": "string",
+  "unit": null,
+  "description": "tasting_category_fine, 22 styles: the Q3 conditioning label."
+ },
+ {
+  "name": "chem__acetaldehyde",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'acetaldehyde', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__CS2",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'CS2', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__DES",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'DES', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__DMS",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'DMS', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl_2.methyl_butyrate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl_2.methyl_butyrate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl_acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl_acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl_decanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl_decanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl_hexanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl_hexanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl_isovalerate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl_isovalerate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl_octanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl_octanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl_propionate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl_propionate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__H2S",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'H2S', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isoamyl_alcohol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isoamyl_alcohol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isobutanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isobutanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isobutyl_acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isobutyl_acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isopentyl_acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isopentyl_acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__MeSH",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'MeSH', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__octyl_acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'octyl_acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__phenethyl_acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'phenethyl_acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__phenethyl_alcohol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'phenethyl_alcohol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X4VG",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X4VG', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__SO2.mg.L.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'SO2.mg.L.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__acetic_acid.g.L.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'acetic_acid.g.L.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ammonia.mg.L.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ammonia.mg.L.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__color.EBC.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'color.EBC.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__betaglucan.mg.L.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'betaglucan.mg.L.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__lactic_acid.mg.L.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'lactic_acid.mg.L.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__glycerol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'glycerol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__iron",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'iron', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__pH",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'pH', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__protein.g.L.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'protein.g.L.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__bitterness",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'bitterness', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__GFS",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'GFS', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethanol..v.v.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethanol..v.v.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__CO2.PSI.",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'CO2.PSI.', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__unfermentables",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'unfermentables', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__kcalperc",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'kcalperc', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X1.propanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X1.propanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.3.butanedione",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.3.butanedione', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X3.methylbutanal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X3.methylbutanal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__propylene.glycol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'propylene.glycol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__propyl.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'propyl.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.pentanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.pentanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.methyl.1.butanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.methyl.1.butanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isopentyl.formate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isopentyl.formate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.isobutyrate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.isobutyrate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X3.methyl.2.butenal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X3.methyl.2.butenal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.methyltetrahydrofuran.3.one",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.methyltetrahydrofuran.3.one', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.butyrate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.butyrate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__butyl.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'butyl.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__methylpyrazine",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'methylpyrazine', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__furfural",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'furfural', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.lactate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.lactate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X3Z.hexenol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X3Z.hexenol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.hexanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.hexanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__styrene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'styrene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.furanmethanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.furanmethanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X3.methyl.2.hexanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X3.methyl.2.hexanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X3.furanmethanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X3.furanmethanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.acetylfuran",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.acetylfuran', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.6.dimethyl.pyrazine",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.6.dimethyl.pyrazine', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__amyl.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'amyl.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.tiglate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.tiglate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__benzaldehyde",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'benzaldehyde', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X5.methylfurfural",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X5.methylfurfural', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.heptanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.heptanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X1.octen.3.ol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X1.octen.3.ol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X3.methylthio.propanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X3.methylthio.propanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isomaltol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isomaltol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X6.methyl.5.hepten.2.one",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X6.methyl.5.hepten.2.one', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.pentyl.furan",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.pentyl.furan', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.hex..3E..enoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.hex..3E..enoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__alpha.phellandrene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'alpha.phellandrene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__dehydroxy.cis.linalool.oxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'dehydroxy.cis.linalool.oxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__hexyl.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'hexyl.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isopentyl.butanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isopentyl.butanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.ethyl.1.hexanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.ethyl.1.hexanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__beta.phellandrene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'beta.phellandrene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__limonene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'limonene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__eucalyptol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'eucalyptol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__benzyl.alcohol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'benzyl.alcohol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.hex..2E..enoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.hex..2E..enoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__phenylacetaldehyde",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'phenylacetaldehyde', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E..beta.ocimene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E..beta.ocimene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__prenyl.isobutyrate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'prenyl.isobutyrate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.furoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.furoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ortho.cresol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ortho.cresol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.5.methylhexanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.5.methylhexanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.acetylpyrrole",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.acetylpyrrole', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isoamyl.lactate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isoamyl.lactate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.octanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.octanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__cis.linalool.oxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'cis.linalool.oxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__meta.cymenene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'meta.cymenene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__terpinolene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'terpinolene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__linalool",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'linalool', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__nonan.2.ol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'nonan.2.ol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.nonanal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.nonanal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.methyl.benzofuran",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.methyl.benzofuran', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__heptyl.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'heptyl.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X4.methyl.1.pentanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X4.methyl.1.pentanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__neo.allo.ocimene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'neo.allo.ocimene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__x.methyl.1.octanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'x.methyl.1.octanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__trans.dihydro.beta.terpineol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'trans.dihydro.beta.terpineol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__cis.beta.terpineol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'cis.beta.terpineol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__y.methyl.1.octanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'y.methyl.1.octanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__camphor",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'camphor', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isobutyl.hexanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isobutyl.hexanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__nerol.oxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'nerol.oxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E..2.nonenal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E..2.nonenal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__cis.dihydro.beta.terpineol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'cis.dihydro.beta.terpineol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X4.ethyl.phenol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X4.ethyl.phenol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isoborneol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isoborneol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.benzoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.benzoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.nonanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.nonanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__terpinen.4.ol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'terpinen.4.ol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__diethyl.succinate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'diethyl.succinate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__vinyl.caprylate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'vinyl.caprylate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X1.alpha.terpineol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X1.alpha.terpineol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl..E..linalool",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl..E..linalool', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.nicotinate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.nicotinate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__citronellol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'citronellol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__nerol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'nerol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__hydroxy.methyl.furfural",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'hydroxy.methyl.furfural', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__E.ocimenone",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'E.ocimenone', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__cumin.aldehyde",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'cumin.aldehyde', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.phenylacetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.phenylacetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isopentyl.hexanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isopentyl.hexanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__geraniol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'geraniol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__beta.cyclohomocitral",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'beta.cyclohomocitral', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__E.cinnamaldehyde",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'E.cinnamaldehyde', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.decanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.decanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__neryl.formate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'neryl.formate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X4.ethyl.guaiacol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X4.ethyl.guaiacol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.undecanone",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.undecanone', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__trans.dihydro.alpha.terpinyl.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'trans.dihydro.alpha.terpinyl.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__terpinen.4.ol.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'terpinen.4.ol.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.undecanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.undecanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__delta.terpinyl.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'delta.terpinyl.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E.E..2.4.decadienal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E.E..2.4.decadienal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__methyl.geranate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'methyl.geranate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__car.3.en.2.one",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'car.3.en.2.one', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__dimethoxy..E..citral",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'dimethoxy..E..citral', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.butyloctanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.butyloctanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X4.methoxysalicylaldehyde",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X4.methoxysalicylaldehyde', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.hydrocinnamate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.hydrocinnamate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__eugenol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'eugenol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__gamma.nonalactone",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'gamma.nonalactone', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__methyl.para.anisate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'methyl.para.anisate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E..beta.damascenone",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E..beta.damascenone', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl..9..decenoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl..9..decenoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__vanillin",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'vanillin', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__geosmin",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'geosmin', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__dodecanal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'dodecanal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X4.8.alpha.epoxy.caryophyllane",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X4.8.alpha.epoxy.caryophyllane', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__E.caryophyllene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'E.caryophyllene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E..alpha.ionone",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E..alpha.ionone', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__perillyl.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'perillyl.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__beta.humulene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'beta.humulene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.phenyl.ethyl.butyrate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.phenyl.ethyl.butyrate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.Z..beta.farnesene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.Z..beta.farnesene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__pentyl.octanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'pentyl.octanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E..beta.farnesene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E..beta.farnesene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.methylbutyl.octanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.methylbutyl.octanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__alpha.humulene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'alpha.humulene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__neryl.propanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'neryl.propanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X9.epi..E..caryophyllene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X9.epi..E..caryophyllene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl..E..cinnamate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl..E..cinnamate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__linalool.isovalerate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'linalool.isovalerate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__alpha.terpinyl.isobutanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'alpha.terpinyl.isobutanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.dodecanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.dodecanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__germacrene.D",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'germacrene.D', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E..beta.ionone",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E..beta.ionone', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__valencene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'valencene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__neryl.isobutanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'neryl.isobutanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__E.methyl.isoeugenol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'E.methyl.isoeugenol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.Z..dihydro.apofarnesal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.Z..dihydro.apofarnesal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__butylated.hydroxytoluene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'butylated.hydroxytoluene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E..dihydro.apofarnesal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E..dihydro.apofarnesal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__Z.nerolidol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'Z.nerolidol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X.E..ortho.methoxy.cinnamaldehyde",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X.E..ortho.methoxy.cinnamaldehyde', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__alpha.calacorene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'alpha.calacorene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__E.nerolidol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'E.nerolidol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__dihydroisocaryophyllene.epoxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'dihydroisocaryophyllene.epoxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__caryophyllene.alcohol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'caryophyllene.alcohol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__neryl.isovalerate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'neryl.isovalerate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__spathulenol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'spathulenol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__caryophyllene.oxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'caryophyllene.oxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__humulene.epoxide.II",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'humulene.epoxide.II', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__alloaromadendrene.epoxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'alloaromadendrene.epoxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X1.10.di.epi.cubenol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X1.10.di.epi.cubenol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isopropyl.laurate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isopropyl.laurate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__caryophylla.4.12..8.13..dien.5.alpha.ol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'caryophylla.4.12..8.13..dien.5.alpha.ol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__gamma.eudesmol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'gamma.eudesmol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__alpha.muurolol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'alpha.muurolol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X1.2.dihydro.8.hydroxy..2E..linalool",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X1.2.dihydro.8.hydroxy..2E..linalool', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__tau.cadinol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'tau.cadinol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__selin.11.en.4.alpha.ol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'selin.11.en.4.alpha.ol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__alpha.eudesmol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'alpha.eudesmol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X14.hydroxy.9.epi..E..caryophyllene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X14.hydroxy.9.epi..E..caryophyllene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__tau.muurolol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'tau.muurolol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__n.tetradecanol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'n.tetradecanol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__foeniculin",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'foeniculin', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__cadalene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'cadalene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.3.dihydro.farnesol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.3.dihydro.farnesol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2E.6Z.farnesal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2E.6Z.farnesal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__caryophyllene.acetate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'caryophyllene.acetate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X14.hydroxy.alpha.humulene",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X14.hydroxy.alpha.humulene', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2Z.6E.farnesal",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2Z.6E.farnesal', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2Z.6Z.farnesol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2Z.6Z.farnesol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2Z.6E.farnesol",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2Z.6E.farnesol', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ambroxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ambroxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__benzyl.benzoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'benzyl.benzoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2E.6E.methyl.farnesoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2E.6E.methyl.farnesoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.tetradecanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.tetradecanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.ethylhexylsalicylate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.ethylhexylsalicylate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isopropyl.tetradecanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isopropyl.tetradecanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.pentadecanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.pentadecanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__methyl.hexadecanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'methyl.hexadecanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__Z.Z.geranyl.linalool",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'Z.Z.geranyl.linalool', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.hexadecanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.hexadecanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__manool.oxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'manool.oxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X13.epi.manool.oxide",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X13.epi.manool.oxide', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__isopropyl.hexadecanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'isopropyl.hexadecanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__manool",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'manool', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.octadecanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.octadecanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__ethyl.pentanoate",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'ethyl.pentanoate', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__X2.ethyl.3.methylpyrazine",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'X2.ethyl.3.methylpyrazine', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__esters_sum",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'esters_sum', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__aroma_hops_sum",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'aroma_hops_sum', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__acids_sum",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'acids_sum', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "chem__sulfur_sum",
+  "type": "number",
+  "unit": "stored chemistry value",
+  "description": "1.csv column 'sulfur_sum', stored value; the generator works in this space and inverts the calibrated scale for threshold checks."
+ },
+ {
+  "name": "A_malt_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_malt_all', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_malt_grain",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_malt_grain', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_malt_bread",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_malt_bread', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_malt_cara",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_malt_cara', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_malt_burn",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_malt_burn', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_hops_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_hops_all', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_hops_citrus",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_hops_citrus', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_hops_tropical",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_hops_tropical', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_hops_noble",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_hops_noble', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_hops_woody",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_hops_woody', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_esters_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_esters_all', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_esters_ethac",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_esters_ethac', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_esters_isoaa",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_esters_isoaa', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_esters_flower",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_esters_flower', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "A_esters_fruity",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'A_esters_fruity', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_malt_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_malt_all', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_malt_grain",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_malt_grain', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_malt_bread",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_malt_bread', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_malt_cara",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_malt_cara', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_malt_burn",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_malt_burn', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_hops_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_hops_all', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_hops_citrus",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_hops_citrus', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_hops_tropical",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_hops_tropical', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_hops_noble",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_hops_noble', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_hops_woody",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_hops_woody', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_esters_all",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_esters_all', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_esters_ethac",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_esters_ethac', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_esters_isoaa",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_esters_isoaa', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_esters_flower",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_esters_flower', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "F_esters_fruity",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'F_esters_fruity', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "acidity",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'acidity', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "bitternes",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'bitternes', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "sweetness",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'sweetness', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "X4vg",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'X4vg', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "diacetyl",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'diacetyl', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "dms",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'dms', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "metallic",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'metallic', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "stale_hops",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'stale_hops', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "t2n",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 't2n', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "orange",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'orange', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "coriander",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'coriander', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "clove",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'clove', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "lactic",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'lactic', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "acetic",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'acetic', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "barnyard",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'barnyard', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "alcohol",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'alcohol', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "aftertaste",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'aftertaste', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "body",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'body', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "co2",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'co2', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ },
+ {
+  "name": "overall",
+  "type": "number",
+  "unit": "standardized sensory label",
+  "description": "4.csv standardized sensory label 'overall', EVALUATION-ONLY reference for the sensory profile comparison; never a generator input."
+ }
+]

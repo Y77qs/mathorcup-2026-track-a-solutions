@@ -1,0 +1,100 @@
+{
+ "kind": "mathorcup-2026-a-v6.2-final-package",
+ "deliverables": [
+  {
+   "name": "论文正式版.pdf",
+   "role": "论文",
+   "bytes": 3230189,
+   "sha256": "20d71fa86969903d29e33ec4ae877be61022a04348c87cfa90d7f9b890a1a5f9"
+  },
+  {
+   "name": "paper_final.md",
+   "role": "论文源（Markdown）",
+   "bytes": 121854,
+   "sha256": "7d5dd4aef7264e9d97c76bb3b91c8664b14dd8027c4d02b20797907f5b2c6e47"
+  },
+  {
+   "name": "paper_final.tex",
+   "role": "论文源（LaTeX）",
+   "bytes": 160760,
+   "sha256": "8c9a9e3d64b54c2d812724f6a3c994b8c25275bbd1371f1dca21b3071bcdeab3"
+  },
+  {
+   "name": "AI工具使用详情说明.pdf",
+   "role": "AI 工具使用详情说明",
+   "bytes": 244030,
+   "sha256": "5e90c9ae3e5932703da62ce2d8cc61ffe00907043f18a6a1f2d17d17cba0ab62"
+  },
+  {
+   "name": "AI工具使用详情说明.tex",
+   "role": "AI 说明源（LaTeX）",
+   "bytes": 21653,
+   "sha256": "6c71c2ff7baae70f59319b5e7cddb77b54152eec04350444e595714b7c346fb3"
+  },
+  {
+   "name": "AI工具使用详情说明.md",
+   "role": "AI 说明源（Markdown）",
+   "bytes": 18083,
+   "sha256": "032c4bfd3869e2484a2388ceddaf92430d130bee66c38d37b5aaa92f607a991c"
+  }
+ ],
+ "supportMaterial": {
+  "root": "支撑材料/",
+  "files": 262
+ },
+ "audit": {
+  "totalPages": 58,
+  "draftPages": [],
+  "tocPage2": true,
+  "unresolvedPlaceholders": 0,
+  "headerViolations": 0,
+  "footerOffcentre": 0,
+  "figureLabels": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "tableLabels": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20
+  ],
+  "firstNumberedPage": 3,
+  "pagesWithoutNumber": [
+   1,
+   2
+  ],
+  "overfullHbox": 0
+ },
+ "paper": {
+  "bodyPrintedPages": "1-29",
+  "totalPages": 58,
+  "appendixCCoreSourcePages": 24,
+  "appendixCFunctions": 101,
+  "appendixCCodeLines": 2377
+ }
+}

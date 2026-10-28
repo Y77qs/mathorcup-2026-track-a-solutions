@@ -1,0 +1,6 @@
+类别,kind,n,strict_table,extended_table,remark,_source
+单体化合物,single_compound,216,是,否,严格榜唯一允许的宇宙：参与 50 维 Top-3 选择,experiments/EXP-0107/candidate_scores.csv#kind(distinct compounds);experiments/EXP-0107/outputs.json#q2.category_counts.single_compound
+元素/指数,element_or_index,3,否,是,元素/指数项，非单体化合物，移出严格榜,experiments/EXP-0107/candidate_scores.csv#kind(distinct compounds);experiments/EXP-0107/outputs.json#q2.category_counts.element_or_index
+理化参数,physical_parameter,7,否,是,理化参数，非化合物丰度，只进扩展榜,experiments/EXP-0107/candidate_scores.csv#kind(distinct compounds);experiments/EXP-0107/outputs.json#q2.category_counts.physical_parameter
+派生和,derived_sum,5,否,是,派生汇总量，不是独立化合物，只进扩展榜,experiments/EXP-0107/candidate_scores.csv#kind(distinct compounds);experiments/EXP-0107/outputs.json#q2.category_counts.derived_sum
+合计,total,231,—,—,候选矩阵 231×50,experiments/EXP-0107/candidate_scores.csv#compounds
