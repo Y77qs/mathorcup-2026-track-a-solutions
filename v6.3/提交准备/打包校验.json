@@ -1,0 +1,12 @@
+{
+  "files_in_support_zip": 475,
+  "support_zip_bytes": 24244415,
+  "support_zip_sha256": "452f8eeecae82c730046d2f20dc7e35d76fdb8c06eaac2f4e66d4bcee726a32e",
+  "all_archive_members_hash_verified": true,
+  "all_73_programs_present_and_hash_verified": true,
+  "raw_contest_attachments_excluded": true,
+  "status": "submission_preparation_pending_true_AI_history_pledge_and_final_submission",
+  "fresh_unzip_paper_rebuild_passed": true,
+  "fresh_unzip_all_491_page_content_streams_identical": true,
+  "rebuild_output_sha256": "67dcdf6ee345fec46cc33076c4f32ac7b6628b706ee4940f9421e7bdf59d1eac"
+}

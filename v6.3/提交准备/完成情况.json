@@ -1,0 +1,24 @@
+{
+  "version": "v6.3-submission-preparation",
+  "date": "2026-10-29",
+  "team_id": "MCB2604237",
+  "track": "A",
+  "main_model_changed": false,
+  "model_core_roles_rerun_passed": 4,
+  "metric_comparisons_passed": 19,
+  "full_table_comparisons_passed": 20,
+  "synthetic_cases_passed": 5,
+  "Q3_oracle_checks_passed": 91,
+  "Q3_diagnostic_assertions_passed": 54,
+  "summary_corrections": 11,
+  "paper_pages": 491,
+  "body_including_references_AI_pages": 30,
+  "appendix_programs": 73,
+  "model_python_AST_identical": 63,
+  "formal_submission_ready": false,
+  "remaining": [
+    "actual_AI_versions_dates_key_interactions_and_human_contribution",
+    "actual_signed_pledge",
+    "system_filename_mapping_and_submission_receipt"
+  ]
+}
